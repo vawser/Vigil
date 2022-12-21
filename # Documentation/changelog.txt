@@ -1,0 +1,20 @@
+﻿#-------------------------------------------------
+# Changelog
+#-------------------------------------------------
+# Boss Rebirth
+- Added the ability to revive defeated bosses, allowing the player to face them once more.
+ - Available at the Jar of Rebirth, found within the Roundtable Hold.
+ - Each revival costs 1 Larval Tear.
+
+# Quickstart
+- Added the ability to quickly start in Roundtable Hold, with Torrent unlocked and the initial flasks.
+ - Available at the Jar of Haste, found in the starting room after character creation.
+
+# Drops
+- Larval Tear:
+ - Added 5% drop chance from:
+  - Silver Tear 
+  - Silver Tear Orbs
+  
+# Localization
+- Changed the loading tips to instead show interesting pieces of lore from various item descriptions.
