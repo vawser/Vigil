@@ -366,6 +366,9 @@ $Event(0, Default, function() {
     InitializeEvent(0, 9943, 0);
     InitializeEvent(0, 9940, 0);
     InitializeEvent(0, 1700, 0);
+    
+    // Vigil
+    InitializeEvent(0, 11000, 0);
 });
 
 $Event(50, Default, function() {
@@ -6489,5 +6492,14 @@ $Event(9950, Default, function(X0_4, X4_4) {
     WaitFor(EventFlag(X0_4));
     SetEventFlagID(X4_4, ON);
 });
+
+//----------------------------
+// Vigil
+//----------------------------
+$Event(11000, Default, function() {
+    // Base SpEffects
+    SetSpEffect(10000, 7000000);
+});
+
 
 

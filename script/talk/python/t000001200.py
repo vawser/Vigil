@@ -605,6 +605,10 @@ def t000001200_x38():
                 # Graces
                 SetEventFlag(71801, 1) 
                 SetEventFlag(76101, 1)
+                
+                # Map
+                SetEventFlag(62010, 1)
+                
                 return 0
             # Cancel
             elif GetTalkListEntryResult() == 2:

@@ -1,5 +1,5 @@
 ﻿#-------------------------------------------------
-# Changelog
+# Systems
 #-------------------------------------------------
 # Boss Rebirth
 - Added the ability to revive defeated bosses, allowing the player to face them once more.
@@ -8,13 +8,42 @@
 
 # Quickstart
 - Added the ability to quickly start in Roundtable Hold, with Torrent unlocked and the initial flasks.
- - Available at the Jar of Haste, found in the starting room after character creation.
+ - Available at the Jar of Promise, found in the starting room after character creation.
 
+#-------------------------------------------------
+# Player
+#-------------------------------------------------
+# Movement
+- The player moves 20% faster.
+- The player rolls 30% further.
+- The player backsteps 30% further.
+- The player jumps 30% further horizontally.
+
+# Mount
+- Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.
+
+# Rally
+- The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
+
+#-------------------------------------------------
+# Content
+#-------------------------------------------------
 # Drops
 - Larval Tear:
  - Added 5% drop chance from:
   - Silver Tear 
   - Silver Tear Orbs
+
+# Great Runes
+- Malenia's Great Rune:
+ - Has a new effect:
+ - An enemy kill grant 1 stack of Scarlet Fury:
+  - Boosts overall damage by 1% and stacks. 
+  - Each stack lasts for 120 seconds.
   
+#-------------------------------------------------
+# Misc
+#-------------------------------------------------
 # Localization
 - Changed the loading tips to instead show interesting pieces of lore from various item descriptions.
+
