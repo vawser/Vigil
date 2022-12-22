@@ -6497,9 +6497,30 @@ $Event(9950, Default, function(X0_4, X4_4) {
 // Vigil
 //----------------------------
 $Event(11000, Default, function() {
-    // Base SpEffects
+    EndIf(ThisEventSlot());
+    
+    // Default Setup - Applied only once
+    if(!EventFlag(1047610010))
+    {
+        SetEventFlagID(60120, ON); // Crafting Kit
+        SetEventFlagID(1047610010, ON); // Default setup complete
+    }
+    
+    // Passive: Rally
     SetSpEffect(10000, 7000000);
+    
+    // Passive: FP Regeneration
+    InitializeEvent(0, 11010, 0);
 });
 
-
+//-------------------
+// FP
+//-------------------
+$Event(11010, Default, function() {
+    SetSpEffect(10000, 7000001);
+    
+    WaitFixedTimeSeconds(0.9);
+    
+    RestartEvent();
+});
 

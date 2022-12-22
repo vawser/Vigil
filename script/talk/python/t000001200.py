@@ -617,35 +617,6 @@ def t000001200_x38():
                 return 2
    
             return 0
-        # Move to Roundtable Hold
-        elif GetTalkListEntryResult() == 4:
-            assert t000001200_x101(80102120)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610012, 1)
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
-            return 0
         else:
             """State 31"""
             return 0

@@ -18,12 +18,16 @@
 - The player rolls 30% further.
 - The player backsteps 30% further.
 - The player jumps 30% further horizontally.
+- The player regenerates 1% of their FP every second passively.
 
 # Mount
 - Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.
 
 # Rally
 - The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
+
+# Crafting
+- The ability to craft items is automatically available, you no longer need to purchase a crafting kit.
 
 #-------------------------------------------------
 # Content
@@ -41,6 +45,19 @@
   - Boosts overall damage by 1% and stacks. 
   - Each stack lasts for 120 seconds.
   
+#-------------------------------------------------
+# World
+#-------------------------------------------------
+# m60_41_35_00 - Limgrave: Church of Dragon Communion
+- Added 2 patrolling Grafted Scions.
+- Added 1 Banished Knight by ruins.
+
+# m60_41_36_00 - Limgrave: Coastal Cave Entrance
+- Added multiple Demi-human.
+- Added 2 large Demi-human.
+- Added 1 Demi-human shaman.
+- Added 3 Large Land Octopus.
+
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------

@@ -14,6 +14,8 @@
 104761_0000 Systems
 #------------------------------------
 1047610010 Default Setup flag
+1047610011 Quickstart taken
+1047610012 Quickstart items given
 
 #------------------------------------
 104762_0000 Random
