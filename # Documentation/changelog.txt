@@ -64,3 +64,4 @@
 # Localization
 - Changed the loading tips to instead show interesting pieces of lore from various item descriptions.
 
+ 
