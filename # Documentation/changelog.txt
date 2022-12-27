@@ -18,7 +18,7 @@
 - The player rolls 30% further.
 - The player backsteps 30% further.
 - The player jumps 30% further horizontally.
-- The player regenerates 1% of their FP every second passively.
+- The player regenerates 1 + 1% FP every second passively.
 
 # Mount
 - Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.
