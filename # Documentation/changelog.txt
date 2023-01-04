@@ -3,12 +3,12 @@
 #-------------------------------------------------
 # Boss Rebirth
 - Added the ability to revive defeated bosses, allowing the player to face them once more.
- - Available at the Jar of Rebirth, found within the Roundtable Hold.
- - Each revival costs 1 Larval Tear.
+    - Available at the Jar of Rebirth, found within the Roundtable Hold.
+    - Each revival costs 1 Larval Tear.
 
 # Quickstart
 - Added the ability to quickly start in Roundtable Hold, with Torrent unlocked and the initial flasks.
- - Available at the Jar of Promise, found in the starting room after character creation.
+    - Available at the Jar of Promise, found in the starting room after character creation.
 
 #-------------------------------------------------
 # Player
@@ -23,28 +23,23 @@
 # Mount
 # - Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.
 
-# Rally
+# Combat
 - The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
-
-# Crafting
-- The ability to craft items is automatically available, you no longer need to purchase a crafting kit.
+- Stealth attacks now deal +100% damage against enemies.
 
 #-------------------------------------------------
-# Content
+# Enemies
 #-------------------------------------------------
-# Drops
-- Larval Tear:
- - Added 5% drop chance from:
-  - Silver Tear 
-  - Silver Tear Orbs
+# Lock-on Camera
+- Expanded the FOV and distance of the lock-on camera for several larger enemies to make it easier to fight them.
 
-# Great Runes
-- Malenia's Great Rune:
- - Has a new effect:
- - An enemy kill grant 1 stack of Scarlet Fury:
-  - Boosts overall damage by 1% and stacks. 
-  - Each stack lasts for 120 seconds.
-  
+# Runes
+- All normal enemies now drop 20% more runes than vanilla.
+
+# Aux
+- Enemies are now vulnerable to Blight and Madness.
+    - Blight will remove 25% HP from the enemy when inflicted.
+ 
 #-------------------------------------------------
 # World
 #-------------------------------------------------
@@ -58,10 +53,292 @@
 - Added 1 Demi-human shaman.
 - Added 3 Large Land Octopus.
 
+# m19_00_00_00 - Stone Plateform
+- You can now use Torrent in the Radagon and Elden Beast arenas.
+
+#-------------------------------------------------
+# Items
+#-------------------------------------------------
+# New Items
+- Added the Holding Rune:
+    - Crafted with 1,100 runes.
+    - Used to as a store for runes, as it costs 1,100 to craft, but returns only 1,000.
+ 
+# Item Effects
+- Silver-Pickled Fowl Foot: 
+    - Now lasts until death.
+ 
+- Gold-Pickled Fowl Foot: 
+    - Now lasts until death.
+ 
+- Exalted Flesh:
+    - Now lasts 60 seconds.
+    
+# Crafting
+- The ability to craft items is automatically available, you no longer need to purchase a crafting kit.
+- Arrow and bolt crafts now produce 25 (was 10).
+- Added Rune Arc as a default crafting option.
+- Added Starlight Shards as a crafting option after defeating Rennala.
+- Added Larval Tear as a crafting option after defeating Rennala.
+- Added Stonesword Key as a crafting option after defeating Godrick.
+- Added Imbued Sword Key as a crafting option after defeating Morgott.
+- Added Glintstone Scrap as a crafting option to Glintstone Craftsman's Cookbook [1].
+- Added Large Glintstone Scrap as a crafting option to Glintstone Craftsman's Cookbook [4].
+- Added Explosive Stone as a crafting option to Armorer's Cookbook [2].
+- Added Explosive Stone Clump as a crafting option to Armorer's Cookbook [4].
+- Added Poisoned Stone as a crafting option to Nomadic Warrior's Cookbook [3].
+- Added Poisoned Stone Clump as a crafting option to Nomadic Warrior's Cookbook [8].
+
+# Remembrances
+- The boss weapons that can being dual wielded may now be forged twice.
+
+# Drops
+- Increased equipment drop rate from enemies significantly. In general the chance will be 5% or higher.
+- Increased reinforcement material drop rate from enemies significantly.
+- Added 5% drop chance for Larval Tear to Silver Tear  and Silver Tear Orbs enemies.
+
+# World Pickups
+- All one-time material pickups now respawn on map reload.
+
+#-------------------------------------------------
+# Armor
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Weapons
+#-------------------------------------------------
+- Weapon reinforcement for weapons that use Smithing Stones is now 1/1/2, whereas it was 2/4/6 in vanilla.
+- Ash of Wars are available on a wider selection of weapon types.
+
+- Hammer Category:
+    - Increased stamina damage by 20%.
+    - Increased poise damage by 20%.
+
+- Great Hammer Category:
+    - Increased stamina damage by 20%.
+    - Increased poise damage by 20%.
+    
+- Flail Category:
+    - Increased stamina damage by 20%.
+    - Increased poise damage by 30%.
+    
+- Colossal Weapon Category:
+    - Increased stamina damage by 10%.
+    - Increased poise damage by 20%.
+    
+- Axe Category:
+    - Increased stamina damage by 40%.
+    
+- Greataxe Category:
+    - Increased stamina damage by 40%.
+    
+- Serpentbone Blade:
+    - Now has ARC scaling.
+
+- Frozen Needle:
+    - Now has ARC scaling.
+
+- Helphen's Steeple:
+    - Now has FTH scaling (affects Magic damage).
+    
+- Death's Poker:
+    - Now has FTH scaling (affects Magic damage).
+    
+- Death Ritual Spear:
+    - Now has FTH scaling (affects Magic damage).
+        
+- Great Mace:
+    - Increased base physical damage.
+    
+- Varre's Bouquet:
+    - Increased base physical damage.
+    - Increased DEX scaling.
+    
+#-------------------------------------------------
+# Catalysts
+#-------------------------------------------------
+- Prince of Death's Staff:
+    - INT and FTH correction is applied higher, earlier.
+        
+- Gelmir Glintstone Staff:
+    - Increased INT and FTH scaling.
+    
+#-------------------------------------------------
+# Spells
+#-------------------------------------------------
+- Ancient Death Rancor:
+    - Increased base damage of the bullets.
+
+#-------------------------------------------------
+# Great Runes
+#-------------------------------------------------
+- Morgott's Great Rune
+    - Now restores 2% HP every second instead of raising max HP.
+ 
+- Rykard's Great Rune
+    - Has a new effect: an enemy kill grant 1 stack of Alacrity:
+    - Boosts stamina recovery by 5 and stacks. 
+    - Each stack lasts for 30 seconds.
+  
+- Mohg's Great Rune
+    - Now grants immunity to Hemorrhage.
+ 
+- Malenia's Great Rune:
+    - Has a new effect: an enemy kill grant 1 stack of Scarlet Fury:
+    - Boosts overall damage by 1% and stacks. 
+    - Each stack lasts for 120 seconds.
+  
+#-------------------------------------------------
+# Talismans
+#-------------------------------------------------
+# New Talismans
+- Fractured Blade
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Deific enemies by 25%.
+    - Found in Deeproot Depths.
+    - Deific enemies are:
+        - Elden Beast
+        - Radagon
+        - Gurranq/Beast Clergyman
+        - Maliketh
+        - Black Blade Kindred
+        
+- Aberrant Eye 3054
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Bestial enemies by 25%.
+    - Found in the Frenzied Flame Village in Liurnia.
+    - Beastial enemies are animals or humanoids with some aspect of animal about them.
+        
+# Talisman Effects
+- Crimson Amber Medallion
+    - +0 Effect: Boosts maximum HP by 10%.
+    - +1 Effect: Boosts maximum HP by 15%.
+    - +2 Effect: Boosts maximum HP by 20%.
+
+- Cerulean Amber Medallion
+    - +0 Effect: Boosts maximum FP by 10%.
+    - +1 Effect: Boosts maximum FP by 15%.
+    - +2 Effect: Boosts maximum FP by 20%.
+
+- Viridian Amber Medallion
+    - +0 Effect: Boosts maximum stamina by 10%.
+    - +1 Effect: Boosts maximum stamina by 15%.
+    - +2 Effect: Boosts maximum stamina by 20%.
+
+- Arsenal Charm
+    - +0 Effect: Boosts maximum equipment load by 15%.
+    - +1 Effect: Boosts maximum equipment load by 20%.
+
+- Great-Jar's Arsenal
+    - +0 Effect: Boosts maximum equipment load by 25%.
+
+- Erdtree's Favor
+    - +0 Effect: Raises maximum HP, stamina, and equip load by 5%.
+    - +1 Effect: Raises maximum HP, stamina, and equip load by 7.5%.
+    - +2 Effect: Raises maximum HP, stamina, and equip load by 10%.
+
+- Green Turtle Talisman
+    - +0 Effect: Raises stamina recovery speed by 10.
+
+- Stalwart Horn Charm
+    - +0 Effect: Raises robustness by 250.
+    - +1 Effect: Raises robustness by 500.
+
+- Immunizing Horn Charm
+    - +0 Effect: Raises immunity by 250.
+    - +1 Effect: Raises immunity by 500.
+
+- Clarifying Horn Charm
+    - +0 Effect: Raises focus by 250.
+    - +1 Effect: Raises focus by 500.
+
+- Prince of Death's Pustule
+    - +0 Effect: Raises vitality by 250.
+
+- Prince of Death's Cyst
+    - +0 Effect: Raises vitality by 500.
+
+- Mottled Necklace
+    - +0 Effect: Raises immunity, robustness, and focus by 150.
+    - +1 Effect: Raises immunity, robustness, and focus by 300.
+
+- Millicent's Prosthesis
+    - +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
+
+- Magic Scorpion Charm
+    - +0 Effect: Raises magic attack power by 15%, but lowers physical damage negation by 15%.
+
+- Lightning Scorpion Charm
+    - +0 Effect: Raises lightning attack power by 15%, but lowers physical damage negation by 15%.
+
+- Fire Scorpion Charm
+    - +0 Effect: Raises fire attack power by 15%, but lowers physical damage negation by 15%.
+
+- Sacred Scorpion Charm
+    - +0 Effect: Raises holy attack power by 15%, but lowers physical damage negation by 15%.
+
+- Rotten Winged Sword Insignia
+    - +0 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+
+- Roar Medallion
+    - +0 Effect: Enhances roars and breath attacks by 25%.
+
+- Graven-School Talisman
+    - +0 Effect: Raises potency of sorceries by 5%.
+
+- Graven-Mass Talisman
+    - +0 Effect: Raises potency of sorceries by 10%.
+
+- Faithful's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 5%.
+
+- Flock's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 10%.
+
+- Dragoncrest Shield Talisman
+    - +0 Effect: Boosts physical damage negation by 5%.
+    - +1 Effect: Boosts physical damage negation by 10%.
+    - +2 Effect: Boosts physical damage negation by 15%.
+
+- Dragoncrest Greatshield Talisman
+    - +0 Effect: Boosts physical damage negation by 20%.
+
+- Spelldrake Talisman
+    - +0 Effect: Boosts magic damage negation by 10%.
+    - +1 Effect: Boosts magic damage negation by 15%.
+    - +2 Effect: Boosts magic damage negation by 20%.
+
+- Flamedrake Talisman
+    - +0 Effect: Boosts fire damage negation by 10%.
+    - +1 Effect: Boosts fire damage negation by 15%.
+    - +2 Effect: Boosts fire damage negation by 20%.
+
+- Boltdrake Talisman
+    - +0 Effect: Boosts lightning damage negation by 10%.
+    - +1 Effect: Boosts lightning damage negation by 15%.
+    - +2 Effect: Boosts lightning damage negation by 20%.
+
+- Haligdrake Talisman
+    - +0 Effect: Boosts holy damage negation by 10%.
+    - +1 Effect: Boosts holy damage negation by 15%.
+    - +2 Effect: Boosts holy damage negation by 20%. 
+
+- Pearldrake Talisman
+    - +0 Effect: Boosts non-physical damage negation by 5%.
+    - +1 Effect: Boosts non-physical damage negation by 7.5%.
+    - +2 Effect: Boosts non-physical damage negation by 10%.
+
+- Assassin's Cerulean Dagger
+    - +0 Effect: Critical hits restore FP, restoring 30 FP.
+
+- Daedicar's Woe
+    - +0 Effect: Increases damage taken by 100%, but provides immunity to all status effects.
+
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
 # Localization
+- Added explicit values in the descriptions for talismans.
 - Changed the loading tips to instead show interesting pieces of lore from various item descriptions.
 
  
