@@ -16,8 +16,39 @@
 1047610010 Default Setup flag
 1047610011 Quickstart taken
 1047610012 Quickstart items given
+1047610013 Tarnished's Wizened Finger - Removal Script triggered
 
 1047610100 Hidden Helm enabled
+
+# Custom Class
+1047610200 Given Tokens
+1047610210 Itemlot flag
+
+# Time
+1047610400
+1047610410 Time Setting: Randomise Time on Spawn
+1047610411 Time Setting: Force Day on Spawn
+1047610412 Time Setting: Force Noon on Spawn
+1047610413 Time Setting: Force Night on Spawn
+
+# Weather
+1047610500
+1047610510 Force Weather: Default
+1047610511 Force Weather: Rain
+1047610512 Force Weather: Snow
+1047610513 Force Weather: Windy Rain
+1047610514 Force Weather: Fog
+1047610515 Force Weather: Cloudless
+1047610516 Force Weather: Flat Clouds
+1047610517 Force Weather: Puffy Clouds
+1047610518 Force Weather: Rainy Clouds
+1047610519 Force Weather: Windy Fog
+1047610520 Force Weather: Heavy Snow
+1047610521 Force Weather: Heavy Fog
+1047610522 Force Weather: Windy, Puffy Clouds
+1047610523 Force Weather: Rainy, Heavy Fog
+1047610524 Force Weather: Snowy, Heavy Fog
+1047610525 Force Weather: Scattered Rain
 
 #------------------------------------
 104762_0000 Random

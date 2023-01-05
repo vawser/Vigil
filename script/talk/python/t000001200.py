@@ -549,11 +549,11 @@ def t000001200_x38():
         # Select Modifiers
         # AddTalkListData(2, 80102011, -1)
         
-        # Quickstart
-        AddTalkListDataIf(GetEventFlag(1047610011) == 0, 3, 80102012, -1)
+        # Travel to Roundtable Hold - No Finger
+        AddTalkListDataIf(GetEventFlag(1047610011) == 0 and GetEventFlag(60210) == 0, 1, 80102000, -1)
         
-        # Move to Roundtable Hold
-        AddTalkListDataIf(GetEventFlag(1047610012) == 0 and GetEventFlag(71190) == 1, 4, 80102013, -1)
+        # Travel to Roundtable Hold - Has Finger
+        AddTalkListDataIf(GetEventFlag(1047610011) == 0 and GetEventFlag(60210) == 1, 2, 80102000, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -563,13 +563,12 @@ def t000001200_x38():
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         """State 2"""
         
-        # Difficulty
+        # Quickstart - No Finger
         if GetTalkListEntryResult() == 1:
-            assert t000001200_x40()
-            assert not CheckSpecificPersonGenericDialogIsOpen(0)
+            assert t000001200_x101(80102103)
             return 0
-        # Quickstart
-        elif GetTalkListEntryResult() == 3:
+        # Quickstart - Has Finger
+        elif GetTalkListEntryResult() == 2:
             assert t000001200_x101(80102100)
             
             c1_110()
@@ -622,99 +621,6 @@ def t000001200_x38():
             return 0
         """State 10"""
         assert CheckSpecificPersonTalkHasEnded(0) == 1
-
-# Difficulty
-def t000001200_x40():
-    c1_110()
-    
-    while True:
-        ClearTalkListData()
-        
-        # Peaceful
-        AddTalkListData(1, 80102000, -1)
-        
-        # Easy
-        AddTalkListData(2, 80102001, -1)
-        
-        # Normal
-        AddTalkListData(3, 80102002, -1)
-        
-        # Hard
-        AddTalkListData(4, 80102003, -1)
-        
-        # Nightmare
-        AddTalkListData(5, 80102004, -1)
-        
-        # Leave
-        AddTalkListData(99, 20000009, -1)
-        
-        ShowShopMessage(1)
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Peaceful
-        if GetTalkListEntryResult() == 1:
-            assert t000001200_x100(1047610101, 80102030, 80102040, 80102020)
-            return 0
-        # Easy
-        elif GetTalkListEntryResult() == 2:
-            assert t000001200_x100(1047610102, 80102031, 80102041, 80102021)
-            return 0
-        # Normal
-        elif GetTalkListEntryResult() == 3:
-            assert t000001200_x100(1047610103, 80102032, 80102042, 80102022)
-            return 0
-        # Hard
-        elif GetTalkListEntryResult() == 4:
-            assert t000001200_x100(1047610104, 80102033, 80102043, 80102023)
-            return 0
-        # Nightmare
-        elif GetTalkListEntryResult() == 5:
-            assert t000001200_x100(1047610105, 80102034, 80102044, 80102024)
-            return 0
-        else:
-            return 0
-        assert CheckSpecificPersonTalkHasEnded(0) == 1
-
-# Change Difficulty
-def t000001200_x100(flag=_, desc_text=_, prompt_text=_, switch_text=_):
-    # Description
-    assert t000001200_x101(desc_text)
-        
-    c1_110()
-    
-    ClearTalkListData()
-    
-    # Switch to X
-    AddTalkListData(1, prompt_text, -1)
-    
-    # Cancel
-    AddTalkListData(2, 80102045, -1)
-    
-    OpenConversationChoicesMenu(0)
-    
-    assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-    if GetTalkListEntryResult() == 1:
-        SetEventFlag(1047610101, 0)
-        SetEventFlag(1047610102, 0)
-        SetEventFlag(1047610103, 0)
-        SetEventFlag(1047610104, 0)
-        SetEventFlag(1047610105, 0)
-        
-        SetEventFlag(flag, 1)
-        
-        SetEventFlag(1047610100, 1)
-        
-        # Switch
-        assert t000001200_x101(switch_text)
-        
-        return 0
-    elif GetTalkListEntryResult() == 2:
-        return 1
-    else:
-        return 2
-        
-    return 0
 
 # Description Prompt
 def t000001200_x101(action1=_):

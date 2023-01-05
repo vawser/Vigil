@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #-----------------------------------------------------
-# Banished Outcast
+# Stone of Ascension
 #-----------------------------------------------------
 def t000001400_1():
     """State 0,1"""
@@ -545,11 +545,20 @@ def t000001400_x38():
     while True:
         ClearTalkListData()
 
-        # Accolades
-        # AddTalkListData(1, 80104000, -1)
-
-        # Tribulations
-        AddTalkListData(2, 80105000, -1)
+        # Weapons
+        AddTalkListData(1, 99999000, -1)
+        
+        # Spells
+        AddTalkListData(2, 99999002, -1)
+        
+        # Armor
+        AddTalkListData(3, 99999001, -1)
+        
+        # Talismans
+        AddTalkListData(4, 99999003, -1)
+        
+        # Ammunition
+        AddTalkListData(5, 99999004, -1)
        
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -558,185 +567,32 @@ def t000001400_x38():
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
-        # Accolades
+        # Weapons
         if GetTalkListEntryResult() == 1:
-            assert t000001400_x100()
-            continue
-        # Tribulations
+            """State 3"""
+            OpenDragonCommunionShop(9100000, 9109999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Spells
         elif GetTalkListEntryResult() == 2:
-            assert t000001400_x200()
-            continue
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-
-#----------------------------------------------------------
-# Accolades
-#----------------------------------------------------------
-def t000001400_x100():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Champion of the Realm
-        AddTalkListData(1, 80104010, -1)
-       
-        # Untouchable
-        AddTalkListData(2, 80104011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Champion of the Realm
-        if GetTalkListEntryResult() == 1:
-            assert t000001400_x101(1047610800, 80104110, 80104001, 80104002, 1047610801, 200000)
-            return 0
-        # Untouchable
-        elif GetTalkListEntryResult() == 2:
-            assert t000001400_x102(1047610810, 80104111, 80104001, 80104002, 1047610811, 200010, 1047610813, 80104003)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-     
-# Accolade Check - Standard
-def t000001400_x101(flag=_, description_text=_, completion_text=_, reward_text=_, reward_flag=_, reward_lot=_):
-    if GetEventFlag(flag) == 0:
-        assert t000001400_x301(description_text)
-    elif GetEventFlag(flag) == 1 and GetEventFlag(reward_flag) == 0:
-        SetEventFlag(reward_flag, 1)
-        assert t000001400_x301(reward_text)
-        AwardItemLot(reward_lot)
-    else:
-        assert t000001400_x301(completion_text)
-    return 0
-    
-# Accolade Check - Failable
-def t000001400_x102(flag=_, description_text=_, completion_text=_, reward_text=_, reward_flag=_, reward_lot=_, fail_flag=_, fail_text=_):
-    if GetEventFlag(fail_flag) == 1:
-        assert t000001400_x301(fail_text)
-    elif GetEventFlag(flag) == 0:
-        assert t000001400_x301(description_text)
-    elif GetEventFlag(flag) == 1 and GetEventFlag(reward_flag) == 0:
-        SetEventFlag(reward_flag, 1)
-        assert t000001400_x301(reward_text)
-        AwardItemLot(reward_lot)
-    else:
-        assert t000001400_x301(completion_text)
-    return 0
-    
-#----------------------------------------------------------
-# Tribulations
-#----------------------------------------------------------
-def t000001400_x200():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Overwhelming Odds
-        # AddTalkListData(1, 80105100, -1)
-       
-        # Unflinching Foes
-        AddTalkListData(2, 80105101, -1)
-        
-        # Brain Fog
-        AddTalkListData(3, 80105102, -1)
-        
-        # Crushing Blows
-        AddTalkListData(4, 80105103, -1)
-        
-        # Undying Wish
-        AddTalkListData(5, 80105104, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Overwhelming Odds
-        if GetTalkListEntryResult() == 1:
-            assert t000001400_x201(1047610901, 80105400, 80105300, 80105200)
-            continue
-        # Unflinching Foes
-        elif GetTalkListEntryResult() == 2:
-            assert t000001400_x201(1047610902, 80105401, 80105301, 80105201)
-            continue
-        # Brain Fog
+            """State 6"""
+            OpenDragonCommunionShop(9120000, 9129999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Armor
         elif GetTalkListEntryResult() == 3:
-            assert t000001400_x201(1047610903, 80105402, 80105302, 80105202)
-            continue
-        # Crushing Blows
+            """State 5"""
+            OpenDragonCommunionShop(9110000, 9119999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Talismans
         elif GetTalkListEntryResult() == 4:
-            assert t000001400_x201(1047610904, 80105403, 80105303, 80105203)
-            continue
-        # Undying Wish
+            """State 7"""
+            OpenDragonCommunionShop(9130000, 9139999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Ammunition
         elif GetTalkListEntryResult() == 5:
-            assert t000001400_x201(1047610905, 80105404, 80105304, 80105204)
-            continue
+            """State 8"""
+            OpenDragonCommunionShop(9140000, 9149999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
-            
-# Tribulation Menu
-def t000001400_x201(flag=_, enable_text=_, disable_text=_, effect_text=_):
-    c1110()
-    
-    while True:
-        ClearTalkListData()
 
-        # Toggle
-        AddTalkListData(1, 80105001, -1)
-       
-        # View Effect
-        AddTalkListData(2, 80105002, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Toggle
-        if GetTalkListEntryResult() == 1:
-            if GetEventFlag(flag) == 0:
-                SetEventFlag(flag, 1)
-                assert t000001400_x301(enable_text)
-            else:
-                SetEventFlag(flag, 0)
-                assert t000001400_x301(disable_text)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001400_x301(effect_text)
-            continue
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-    
-#----------------------------------------------------------
-# Utility
-#----------------------------------------------------------
-def t000001400_x300(action1=_):
-    """State 0,1"""
-    OpenGenericDialog(7, action1, 1, 0, 1)
-    assert not CheckSpecificPersonGenericDialogIsOpen(0)
-    """State 2"""
-    return 0
-    
-# Description Prompt
-def t000001400_x301(action1=_):
-    """State 0,1"""
-    OpenGenericDialog(8, action1, 1, 0, 1)
-    assert not CheckSpecificPersonGenericDialogIsOpen(0)
-    """State 2"""
-    return 0
-    

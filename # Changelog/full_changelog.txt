@@ -3,16 +3,17 @@
 #-------------------------------------------------
 # Boss Rebirth
 - Added the ability to revive defeated bosses, allowing the player to face them once more.
-    - Available at the Jar of Rebirth, found within the Roundtable Hold.
-    - Each revival costs 1 Larval Tear.
+- Available at the Jar of Rebirth, found within the Roundtable Hold.
+- Each revival costs 1 Larval Tear.
 
 # Quickstart
 - Added the ability to quickly start in Roundtable Hold, with Torrent unlocked and the initial flasks.
-    - Available at the Jar of Promise, found in the starting room after character creation.
+- Available at the Jar of Promise, found in the starting room after character creation.
+- You must first pickup the Tarnished's Wizened Finger before you can use the option.
 
 # Cosmetics
 - Added the ability to Hide/Show Helm at the Clouded Mirror Stand in the Roundtable Hold.
-    - This will hide your helm visually, allowing you to wear any helm and still see your character's head.
+- This will hide your helm visually, allowing you to wear any helm and still see your character's head.
 
 # Time Shift
 - Added the ability to set a specific time of day when you reload/respawn.
@@ -22,6 +23,13 @@
 - Added the ability to set a specific weather when you reload/respawn.
 - Appears at any grace under the Weather Shift option.
 
+# Statue of Draconic Communion
+- Added the ability to make a custom loadout at the start of the game.
+- During character creation, select the "Draconic Mark" gift. 
+- You will be awards 8 Dragon Hearts, that may be spent at the Statue of Draconic Communion, which is visible in the starting room.
+- The entire selection for each category is available, allowing you to make a custom build.
+- Once the Tarnished's Wizened Finger has been picked up, the Statue will no longer be accessible (upon reload), and any excess Dragon Hearts are removed.
+    
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -152,6 +160,9 @@
 
 - Buffability:
     - All weapons can now be buffed by buff items/spells.
+    
+- Ammunition Category:
+    - Increased the max held for ammunition to 250.
 
 - Hammer Category:
     - Increased stamina damage by 20%.
