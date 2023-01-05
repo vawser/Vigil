@@ -6781,3 +6781,19 @@ $Event(9005996, Default, function(X0_4, X4_4) {
         SetCharacterInvincibility(X0_4, Enabled);
     }
 });
+
+// Vigil - Toggle Effect based on Event Flag
+$Event(9005997, Default, function(X0_4, X4_4) {
+    if(EventFlag(X0_4))
+    {
+        SetSpEffect(10000, X4_4);
+    }
+    else
+    {
+        ClearSpEffect(10000, X4_4);
+    }
+    
+    WaitFixedTimeSeconds(0.9);
+    
+    RestartEvent();
+});

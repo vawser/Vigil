@@ -10,6 +10,10 @@
 - Added the ability to quickly start in Roundtable Hold, with Torrent unlocked and the initial flasks.
     - Available at the Jar of Promise, found in the starting room after character creation.
 
+# Cosmetics
+- Added the ability to Hide/Show Helm at the Clouded Mirror Stand in the Roundtable Hold.
+    - This will hide your helm visually, allowing you to wear any helm and still see your character's head.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -26,6 +30,12 @@
 # Combat
 - The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
 - Stealth attacks now deal +100% damage against enemies.
+
+#-------------------------------------------------
+# Bosses
+#-------------------------------------------------
+- Malenia:
+    - Reduced the amount of HP she recovers on hit.
 
 #-------------------------------------------------
 # Enemies
@@ -111,6 +121,7 @@
 # Weapons
 #-------------------------------------------------
 - Weapon reinforcement for weapons that use Smithing Stones is now 1/1/2, whereas it was 2/4/6 in vanilla.
+- All weapons can change their Ashes of War now.
 - Ash of Wars are available on a wider selection of weapon types.
 
 - Hammer Category:

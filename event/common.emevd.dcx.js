@@ -6511,6 +6511,9 @@ $Event(11000, Default, function() {
     
     // Passive: FP Regeneration
     InitializeEvent(0, 11010, 0);
+    
+    // Toggle: Hidden Helm
+    InitializeEvent(0, 11011, 1047610100, 7000030);
 });
 
 //-------------------
@@ -6518,6 +6521,24 @@ $Event(11000, Default, function() {
 //-------------------
 $Event(11010, Default, function() {
     SetSpEffect(10000, 7000001);
+    
+    WaitFixedTimeSeconds(0.9);
+    
+    RestartEvent();
+});
+
+//-------------------
+// Vigil - Toggle Effect based on Event Flag
+//-------------------
+$Event(11011, Default, function(X0_4, X4_4) {
+    if(EventFlag(X0_4))
+    {
+        SetSpEffect(10000, X4_4);
+    }
+    else
+    {
+        ClearSpEffect(10000, X4_4);
+    }
     
     WaitFixedTimeSeconds(0.9);
     
