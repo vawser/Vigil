@@ -1,7 +1,8 @@
 ﻿-- Fixed decompiled c0000.hks for Elden Ring
--- ExecMagic (line 2090), moving an if block so left-hand casting works as intended
--- Updated for 1.08.1
---
+-- Supports ER version 1.08.1
+-- 2022-12-15 - AshenOne: ExecMagic (line 2090), moving an if block so left-hand casting works as intended
+-- 2022-12-16 - ivi: Updated for 1.08.1
+-- 2022-12-28 - Kirnifr: fixed Torrent dash
 
 JUMP_STATE_1 = 0
 JUMP_STATE_2 = 0
@@ -32,9 +33,9 @@ IS_ATTACKED_JUMPMAGIC = FALSE
 
 -- Vigil
 g_MoveMovementMultiplier = 1.2
-g_RollMovementMultiplier = 1.3
-g_BackstepMovementMultiplier = 1.3
-g_JumpMovementMultiplier = 1.3
+g_RollMovementMultiplier = 1.25
+g_BackstepMovementMultiplier = 1.25
+g_JumpMovementMultiplier = 1.25
 
 function ExecEvent(state)
     ResetRequest()
@@ -2860,11 +2861,8 @@ function ExecJump()
         ResetRequest()
         return FALSE
     end
-    
     AddStamina(STAMINA_REDUCE_JUMP)
-    
     SetWeightIndex()
-    
     if GetVariable("EvasionWeightIndex") == EVASION_WEIGHT_INDEX_OVERWEIGHT and env(700) == FALSE then
         local jumpangle = env(407) * 0.009999999776482582
         if jumpangle > -45 and jumpangle < 45 then
@@ -2881,9 +2879,7 @@ function ExecJump()
         ExecEventAllBody("W_Jump_Overweight")
         return TRUE
     end
-    
     local style = c_Style
-    
     if style == HAND_RIGHT then
         SetVariable("JumpAttack_HandCondition", 0)
     elseif style == HAND_RIGHT_BOTH then
@@ -2895,25 +2891,20 @@ function ExecJump()
             SetVariable("JumpAttack_HandCondition", 1)
         end
     end
-    
     SetVariable("JumpAttackForm", 0)
     SetVariable("JumpUseMotion_Bool", false)
     SetVariable("JumpMotion_Override", 0.009999999776482582)
     SetVariable("JumpAttack_Land", 0)
     SetVariable("SwingPose", 0)
-    
     if GetVariable("IsEnableToggleDashTest") == 2 then
         SetVariable("ToggleDash", 0)
     end
-    
     local JumpMoveLevel = 0
-    
     if GetVariable("LocomotionState") == 1 and GetVariable("MoveSpeedIndex") == 2 then
         JumpMoveLevel = 2
     elseif GetVariable("MoveSpeedLevel") >= 0.6000000238418579 then
         JumpMoveLevel = 1
     end
-    
     if env(1116, 503520) == TRUE then
         JumpMoveLevel = 0
     elseif env(1116, 5520) == TRUE then
@@ -2925,7 +2916,6 @@ function ExecJump()
     elseif env(1116, 4100) == TRUE then
         JumpMoveLevel = 0
     end
-    
     if JumpMoveLevel == 2 then
         if env(700) == TRUE then
             act(4001)
@@ -2973,12 +2963,10 @@ function ExecJump()
         ExecEvent("W_Jump_F")
         return TRUE
     end
-    
     SetVariable("JumpReachSelector", 0)
     if env(700) == TRUE then
         act(4001)
     end
-    
     act(2025, env(404))
     SetAIActionState()
     ExecEvent("W_Jump_N")
@@ -3184,7 +3172,6 @@ function ExecEvasion(backstep_limit, estep, is_usechainrecover)
         return FALSE
     end
     local request = GetEvasionRequest()
-    
     if env(1106, ACTION_ARM_L3) == TRUE and FALSE == c_IsStealth then
         StealthTransitionIndexUpdate()
         ExecEvent("W_Stealth_to_Stealth_Idle")
@@ -3220,21 +3207,17 @@ function ExecEvasion(backstep_limit, estep, is_usechainrecover)
                 return FALSE
             end
         end
-        
         if env(1001) <= 0 then
             ResetRequest()
             return FALSE
         elseif env(224) > 150 then
             return FALSE
         end
-        
         local rollingEvent = "W_Rolling"
         local is_selfTrans = FALSE
-        
         if TRUE == IsNodeActive("Rolling_CMSG") then
             is_selfTrans = TRUE
         end
-        
         if estep == ESTEP_DOWN then
             rollingEvent = "W_EStepDown"
         elseif TRUE == c_IsStealth and GetVariable("EvasionWeightIndex") ~= EVASION_WEIGHT_INDEX_OVERWEIGHT then
@@ -3242,13 +3225,10 @@ function ExecEvasion(backstep_limit, estep, is_usechainrecover)
         elseif is_selfTrans == TRUE then
             rollingEvent = rollingEvent .. "_Selftrans"
         end
-        
         AddStamina(STAMINA_REDUCE_ROLLING)
-        
         if GetVariable("IsEnableToggleDashTest") == 2 then
             SetVariable("ToggleDash", 0)
         end
-        
         local turn_angle_real = 200
         if not (GetVariable("IsLockon") ~= false or FALSE ~= env(234) or FALSE ~= env(1007)) or env(1116, 100002) == TRUE then
             SetVariable("RollingOverweightIndex", 0)
@@ -3305,15 +3285,12 @@ function ExecEvasion(backstep_limit, estep, is_usechainrecover)
                 turn_angle_real = 360 - turn_angle_real
             end
         end
-        
         SetVariable("TurnAngleReal", turn_angle_real)
-        
         if is_selfTrans == TRUE then
             SetVariable("RollingAngleRealSelftrans", c_RollingAngle)
         else
             SetVariable("RollingAngleReal", c_RollingAngle)
         end
-            
         ExecEventAllBody(rollingEvent)
     elseif request == ATTACK_REQUEST_EMERGENCYSTEP then
         if MoveStart(ALLBODY, Event_ChainRecover, FALSE) then
@@ -5075,7 +5052,6 @@ end
 function EvasionCommonFunction(fall_type, r1, r2, l1, l2, b1, b2, quick_type)
     SetAIActionState()
     SetEnableAimMode()
-    
     if ExecPassiveAction(FALSE, fall_type, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -6077,11 +6053,9 @@ end
 function Rolling_onUpdate()
     act(129, TRUE)
     SetThrowAtkInvalid()
-    
     if TRUE == env(1116, 100390) then
         ResetDamageCount()
     end
-    
     SetEnableAimMode()
     
     act(2001, g_RollMovementMultiplier)
@@ -6102,13 +6076,10 @@ end
 
 function Rolling_Selftrans_onUpdate()
     act(129, TRUE)
-    
     SetThrowAtkInvalid()
-    
     if TRUE == env(1116, 100390) then
         ResetDamageCount()
     end
-    
     SetEnableAimMode()
     
     act(2001, g_RollMovementMultiplier)
@@ -15669,7 +15640,6 @@ IsEnableFeedAddBlend = FALSE
 function RideCommonFunction(r1, r2, l1, l2)
     Ride_HeadDown_Rate = EaseInOutVal(g_TimeActEditor_07, Ride_HeadDown_Rate, 0.800000011920929, 1.5, "EaseInOutStartVal1", "EaseInOutTargetVal1", "EaseInOutTimer1")
     act(3004, "AddBlend02", Ride_HeadDown_Rate)
-    
     if RideReActionFunction() == TRUE then
         return TRUE
     elseif TRUE == ExecRideDashAccelerate() then
@@ -15678,17 +15648,12 @@ function RideCommonFunction(r1, r2, l1, l2)
         return TRUE
     elseif TRUE == ExecRideOff(FALSE, FALSE) then
         return TRUE
-        
     end
     local attackHand = HAND_RIGHT
-    
     if c_Style == HAND_LEFT_BOTH then
         attackHand = HAND_LEFT
     end
-    
     local isShield = GetEquipType(attackHand, WEAPON_CATEGORY_LARGE_SHIELD, WEAPON_CATEGORY_SMALL_SHIELD, WEAPON_CATEGORY_MIDDLE_SHIELD)
-    
-    -- Jump
     if TRUE == env(1106, 6) and (not (env(2003, TAE_FLAG_CHARGING) == 1 or FALSE ~= env(1116, 100280)) or isShield == TRUE) then
         if env(1001) <= 0 then
             ResetRequest()
@@ -15713,7 +15678,6 @@ function RideCommonFunction(r1, r2, l1, l2)
             
             -- Normal Jump
             act(1001, STAMINA_REDUCE_RIDE_JUMP)
-            
             if 1.5 <= GetVariable("MoveSpeedLevel") then
                 FireRideEvent("W_RideJump_D", "W_RideJump_D", FALSE)
             elseif GetVariable("MoveSpeedLevel") >= 0.6000000238418579 then
@@ -15721,11 +15685,9 @@ function RideCommonFunction(r1, r2, l1, l2)
             else
                 FireRideEvent("W_RideJump_N", "W_RideJump_N", FALSE)
             end
-            
             return TRUE
         end
     end
-    
     if TRUE == ExecRideHandChange(HAND_RIGHT, FALSE) then
         return TRUE
     elseif TRUE == ExecRideMagic() then
@@ -15789,7 +15751,7 @@ function ExecRideDashAccelerate()
             act(9000, "RideDashAccel")
         end
         local evasionRequest = env(1108, ACTION_ARM_SP_MOVE)
-        if (env(1105) == TRUE or env(300) == TRUE) and evasionRequest > 0 and 0 >= RideDashAccelerateTest and env(1001) > 0 then
+        if (env(1105) == TRUE or env(300) == TRUE) and evasionRequest > 0 and 0 > RideDashAccelerateTest and env(1001) > 0 then
             act(1001, STAMINA_REDUCE_RIDE_DASH)
             if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
                 FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
@@ -17321,14 +17283,12 @@ end
 
 function Jump_Update()
     UpdateRightArmAdd()
-    
     if Jump_LeftWeaponRef == FALSE and (IsNodeActive("Jump_N Selector_Magic_Left") == TRUE or IsNodeActive("Jump_F Selector_Magic_Left") == TRUE or IsNodeActive("Jump_D Selector_Magic_Left") == TRUE or IsNodeActive("Jump_Loop_Magic_Left_CMSG") == TRUE or IsNodeActive("Jump_Land_Common_Magic_Left_Swing_Selector") == TRUE or IsNodeActive("JumpMagic_Start_Falling_ConditionSelector_Left") == TRUE or IsNodeActive("JumpMagic_Start_Falling_F_ConditionSelector_Left") == TRUE or IsNodeActive("JumpMagic_Start_Falling_D_ConditionSelector_Left") == TRUE or IsNodeActive("JumpMagic_Start_Falling_D_ConditionSelector_Left") == TRUE) then
         SetAttackHand(HAND_LEFT)
         SetGuardHand(HAND_LEFT)
         Jump_InitWeaponRef = TRUE
         Jump_LeftWeaponRef = TRUE
     end
-    
     if FALSE == Jump_InitWeaponRef then
         local hand = HAND_RIGHT
         if c_Style == HAND_LEFT_BOTH then
@@ -17362,11 +17322,9 @@ end
 
 function Act_Jump()
     SetEnableAimMode()
-    
     if env(1116, 32) == FALSE then
         SetThrowAtkInvalid()
     end
-    
     local damage_type = env(202)
     
     act(2001, g_JumpMovementMultiplier)

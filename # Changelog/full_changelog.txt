@@ -17,19 +17,21 @@
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
-# Movement
-# - The player moves 20% faster.
-# - The player rolls 30% further.
-# - The player backsteps 30% further.
-# - The player jumps 30% further horizontally.
+# Stats
 - The player regenerates 1 + 1% FP every second passively.
-
-# Mount
-# - Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.
 
 # Combat
 - The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
 - Stealth attacks now deal +100% damage against enemies.
+
+# Movement
+- The player moves 20% faster.
+- The player rolls 25% further.
+- The player backsteps 25% further.
+- The player jumps 25% further horizontally.
+
+# Mount
+- Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.
 
 #-------------------------------------------------
 # Bosses
@@ -118,13 +120,23 @@
 #-------------------------------------------------
 - Chest armor between the weight of 10 and 19.9 gives weak stagger prevention from blows.
 - Chest armor above the weight of 20 gives medium stagger prevention from blows.
- 
+- Made the Deathbed Smalls armor available. Found with the Deathbed Dress.
+
 #-------------------------------------------------
 # Weapons
 #-------------------------------------------------
-- Weapon reinforcement for weapons that use Smithing Stones is now 1/1/2, whereas it was 2/4/6 in vanilla.
-- All weapons can change their Ashes of War now.
-- Ash of Wars are available on a wider selection of weapon types.
+- Reinforcement:
+    - Weapon reinforcement for weapons that use Smithing Stones is now 1/1/2, whereas it was 2/4/6 in vanilla.
+    
+- Ashes of War:
+    - All weapons can change their Ashes of War now.
+    - Ash of Wars are available on a wider selection of weapon types.
+
+- Affinities:
+    - Sacred Affinity now boosts Undead damage by 10%.
+
+- Buffability:
+    - All weapons can now be buffed by buff items/spells.
 
 - Hammer Category:
     - Increased stamina damage by 20%.
@@ -148,6 +160,19 @@
 - Greataxe Category:
     - Increased stamina damage by 40%.
     
+- Light Bow Category
+    - Increased physical damage by 20%.
+    
+- Bow Category
+    - Increased physical damage by 20%.
+    
+- Greatbow Category
+    - Increased stamina damage by 30%.
+    - Increased poise damage by 30%.
+    
+- Ballista Category
+    - Increased poise damage by 30%.
+    
 - Serpentbone Blade:
     - Now has ARC scaling.
 
@@ -169,6 +194,21 @@
 - Varre's Bouquet:
     - Increased base physical damage.
     - Increased DEX scaling.
+    
+- Godskin Stitcher:
+    - Now deals +20% damage against Deific enemies.
+    
+- Godskin Peeler:
+    - Now deals +20% damage against Deific enemies.
+    
+- Godslayer's Greatsword:
+    - Now deals +20% damage against Deific enemies.
+    
+- Beast-Repellent Torch:
+    - Now deals +20% damage against Bestial enemies.
+    
+- Meteorite Staff:
+    - Reduced the INT scaling slightly.
     
 #-------------------------------------------------
 # Catalysts

@@ -3,3 +3,24 @@
 #-------------------------------------------------
 Check Rennala's stake of marika:
     use new character
+    
+#-----
+Implement proof of concept: Gauntlet of Glory
+    Basic 10 wave system:
+        1 - Easy (10+)
+        2 - Medium (8+)
+        3 - Hard (2-4)
+        4 - Medium (8+)
+        5 - Miniboss
+        6 - Easy (20+)
+        7 - Medium (12+)
+        8 - Hard (3-5)
+        9 - Medium (20+)
+        10 - Boss
+        
+- Survival rewards Runes and Gladiator Marks
+- Gladiator Marks are spent at the Glorious Merchant:
+    - Offers reinforcement materials (gated on game progression).
+    - Offers a 3 unique rings.
+    
+    
