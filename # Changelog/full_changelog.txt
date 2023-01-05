@@ -28,7 +28,11 @@
 - During character creation, select the "Draconic Mark" gift. 
 - You will be awards 8 Dragon Hearts, that may be spent at the Statue of Draconic Communion, which is visible in the starting room.
 - The entire selection for each category is available, allowing you to make a custom build.
-- Once the Tarnished's Wizened Finger has been picked up, the Statue will no longer be accessible (upon reload), and any excess Dragon Hearts are removed.
+- Once the Tarnished's Wizened Finger has been picked up, the Statue will no longer be accessible, and any excess Dragon Hearts are removed.
+
+# Altar of Advancement
+- Added the ability to enter a new Journey cycle immediately at the start of the game.
+- Turn around after spawning in, and use the Altar of Advancement to go ahead by one Journey cycle.
     
 #-------------------------------------------------
 # Player
