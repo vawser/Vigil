@@ -56,6 +56,9 @@
 # m19_00_00_00 - Stone Plateform
 - You can now use Torrent in the Radagon and Elden Beast arenas.
 
+# m13_00_00_00 - Crumbling Farum Azula
+- Added a Stake of Marika to the Placidusax boss fight.
+
 #-------------------------------------------------
 # Items
 #-------------------------------------------------

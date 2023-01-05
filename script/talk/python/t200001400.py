@@ -593,7 +593,7 @@ def t200001400_x39():
             # action:22000001:"Cosmetics"
             AddTalkListData(2, 22000001, -1)
             # Boss Rebirth
-            AddTalkListData(3, 80000000, -1)
+            # AddTalkListData(3, 80000000, -1)
             
             # action:22000002:"Leave"
             AddTalkListData(99, 22000002, -1)
