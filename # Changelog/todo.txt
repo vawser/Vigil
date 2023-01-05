@@ -5,6 +5,9 @@ Check Rennala's stake of marika:
     use new character
     
 #-----
+Add more spirit summons based on bosses/NPC characters
+
+#-----
 Implement proof of concept: Gauntlet of Glory
     Basic 10 wave system:
         1 - Easy (10+)

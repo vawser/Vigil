@@ -1,8 +1,6 @@
-﻿-- Fixed decompiled c0000.hks for Elden Ring
--- Supports ER version 1.08.1
--- 2022-12-15 - AshenOne: ExecMagic (line 2090), moving an if block so left-hand casting works as intended
--- 2022-12-16 - ivi: Updated for 1.08.1
--- 2022-12-28 - Kirnifr: fixed Torrent dash
+﻿-------------------------------
+-- Vigil HKS
+-------------------------------
 
 JUMP_STATE_1 = 0
 JUMP_STATE_2 = 0

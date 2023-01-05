@@ -14,21 +14,36 @@
 - Added the ability to Hide/Show Helm at the Clouded Mirror Stand in the Roundtable Hold.
     - This will hide your helm visually, allowing you to wear any helm and still see your character's head.
 
+# Time Shift
+- Added the ability to set a specific time of day when you reload/respawn.
+- Appears at any grace under the Time Shift option.
+    
+# Weather Shift
+- Added the ability to set a specific weather when you reload/respawn.
+- Appears at any grace under the Weather Shift option.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
 # Stats
 - The player regenerates 1 + 1% FP every second passively.
+- Investment into Vigor grants more HP quicker, and caps out at 2500 at 99 Vigor.
+- Investment into Mind grants more FP quicker, and caps out at 500 at 99 Mind.
+- Stamina now starts at 100.
+- Investment into Endurance grants more Stamina quicker, and caps out at 200 at 99 Endurance.
 
 # Combat
 - The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
-- Stealth attacks now deal +100% damage against enemies.
 
 # Movement
 - The player moves 20% faster.
 - The player rolls 25% further.
 - The player backsteps 25% further.
 - The player jumps 25% further horizontally.
+
+# Stealth
+- Stealth attacks now deal +100% damage against enemies by default.
+
 
 # Mount
 - Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.

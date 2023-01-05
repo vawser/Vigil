@@ -6514,6 +6514,30 @@ $Event(11000, Default, function() {
     
     // Toggle: Hidden Helm
     InitializeEvent(0, 11011, 1047610100, 7000030);
+    
+    // Time Shift
+    InitializeEvent(0, 11012, 0); // Randomise Time on Spawn
+    InitializeEvent(0, 11013, 0); // Force Day on Spawn
+    InitializeEvent(0, 11014, 0); // Force Noon on Spawn
+    InitializeEvent(0, 11015, 0); // Force Night on Spawn
+    
+    // Weather Shift
+    InitializeEvent(0, 11016, 1047610510, Weather.Default);
+    InitializeEvent(1, 11016, 1047610511, Weather.Rain);
+    InitializeEvent(2, 11016, 1047610512, Weather.Snow);
+    InitializeEvent(3, 11016, 1047610513, Weather.WindyRain);
+    InitializeEvent(4, 11016, 1047610514, Weather.Fog);
+    InitializeEvent(5, 11016, 1047610515, Weather.Cloudless);
+    InitializeEvent(6, 11016, 1047610516, Weather.FlatClouds);
+    InitializeEvent(7, 11016, 1047610517, Weather.PuffyClouds);
+    InitializeEvent(8, 11016, 1047610518, Weather.RainyClouds);
+    InitializeEvent(9, 11016, 1047610519, Weather.WindyFog);
+    InitializeEvent(10, 11016, 1047610520, Weather.HeavySnow);
+    InitializeEvent(11, 11016, 1047610521, Weather.HeavyFog);
+    InitializeEvent(12, 11016, 1047610522, Weather.WindyPuffyClouds);
+    InitializeEvent(13, 11016, 1047610523, Weather.RainyHeavyFog);
+    InitializeEvent(14, 11016, 1047610524, Weather.SnowyHeavyFog);
+    InitializeEvent(15, 11016, 1047610525, Weather.ScatteredRain);
 });
 
 //-------------------
@@ -6545,3 +6569,176 @@ $Event(11011, Default, function(X0_4, X4_4) {
     RestartEvent();
 });
 
+//-------------------
+// Randomise Time on Spawn
+//-------------------
+$Event(11012, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Randomise Time on Spawn is not ON
+    EndIf(!EventFlag(1047610410));
+    
+    // Select random flag, used to randomise time
+    BatchSetEventFlags(1047620000, 1047620024, OFF);
+    RandomlySetEventFlagInRange(1047620000, 1047620024, ON);
+    
+    if (EventFlag(1047620000))
+    {
+        SetCurrentTime(0, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620001))
+    {
+        SetCurrentTime(1, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620002))
+    {
+        SetCurrentTime(2, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620003))
+    {
+        SetCurrentTime(3, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620004))
+    {
+        SetCurrentTime(4, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620005))
+    {
+        SetCurrentTime(5, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620006))
+    {
+        SetCurrentTime(6, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620007))
+    {
+        SetCurrentTime(7, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620008))
+    {
+        SetCurrentTime(8, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620009))
+    {
+        SetCurrentTime(9, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620010))
+    {
+        SetCurrentTime(10, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620011))
+    {
+        SetCurrentTime(11, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620012))
+    {
+        SetCurrentTime(12, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620013))
+    {
+        SetCurrentTime(13, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620014))
+    {
+        SetCurrentTime(14, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620015))
+    {
+        SetCurrentTime(15, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620016))
+    {
+        SetCurrentTime(16, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620017))
+    {
+        SetCurrentTime(17, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620018))
+    {
+        SetCurrentTime(18, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620019))
+    {
+        SetCurrentTime(19, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620020))
+    {
+        SetCurrentTime(20, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620021))
+    {
+        SetCurrentTime(21, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620022))
+    {
+        SetCurrentTime(22, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(1047620023))
+    {
+        SetCurrentTime(23, 0, 0, false, false, false, 0, 0, 0);
+    }
+    
+    EndEvent();
+});
+
+//-------------------
+// Force Day on Spawn
+//-------------------
+$Event(11013, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Force Day on Spawn is not ON
+    EndIf(!EventFlag(1047610411));
+    
+    SetCurrentTime(6, 0, 0, false, false, false, 0, 0, 0);
+    
+    EndEvent();
+});
+
+//-------------------
+// Force Noon on Spawn
+//-------------------
+$Event(11014, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Force Noon on Spawn is not ON
+    EndIf(!EventFlag(1047610412));
+    
+    SetCurrentTime(12, 0, 0, false, false, false, 0, 0, 0);
+    
+    EndEvent();
+});
+
+//-------------------
+// Force Night on Spawn
+//-------------------
+$Event(11015, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Force Night on Spawn is not ON
+    EndIf(!EventFlag(1047610413));
+    
+    SetCurrentTime(20, 0, 0, false, false, false, 0, 0, 0);
+    
+    EndEvent();
+});
+
+//-------------------
+// Change Weather
+//-------------------
+$Event(11016, Default, function(X0_4, X4_4) {
+    // Check if force weather flag is ON
+    if(EventFlag(X0_4))
+    {
+        // Only change if not already active
+        if(!WeatherActive(X4_4, 0, 0))
+        {
+            ChangeWeather(X4_4, -1, true);
+        }
+    }
+
+    // Loop to allow for updates in real-time
+    WaitFixedTimeSeconds(1.0);
+    RestartEvent();
+});
