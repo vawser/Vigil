@@ -1639,7 +1639,7 @@ def t000001300_x102():
             assert t000001300_x123(11000850, 71101, 9105, 61105, 80021200)
         # Morgott, the Omen King
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(11000800, 71100, 9104, 61104, 80021201)
+            assert t000001300_x125(11000800, 71100, 9104, 61104, 9100, 61100, 80021201)
         # Mohg, The Omen
         elif GetTalkListEntryResult() == 3:
             assert t000001300_x123(35000800, 73500, 9125, 61125, 80021202)

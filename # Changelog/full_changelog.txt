@@ -116,7 +116,9 @@
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------
-
+- Chest armor between the weight of 10 and 19.9 gives weak stagger prevention from blows.
+- Chest armor above the weight of 20 gives medium stagger prevention from blows.
+ 
 #-------------------------------------------------
 # Weapons
 #-------------------------------------------------
