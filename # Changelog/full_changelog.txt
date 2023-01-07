@@ -1,5 +1,5 @@
 ﻿#-------------------------------------------------
-# Systems
+# Features
 #-------------------------------------------------
 # Boss Rebirth
 - Added the ability to revive defeated bosses, allowing the player to face them once more.
@@ -168,8 +168,29 @@
 # Weapons
 #-------------------------------------------------
 - Reinforcement:
-    - Weapon reinforcement for weapons that use Smithing Stones is now 1/1/2, whereas it was 2/4/6 in vanilla.
-    
+    - Changed the reinforcement materials tiers, from 8/9 to 4:
+    - Standard:
+        - Crude Erdstone (replaces 1/2/3 Smithing Stone)
+        - Rough Erdstone (replaces 4/5/6 Smithing Stone)
+        - Refined Erdstone (replaces 7/8 Smithing Stone)
+        - Pure Erdstone (replaces Ancient Dragon Smithing Stone)
+    - Somber:
+        - Crude Somberstone (replaces 1/2/3 Smithing Stone)
+        - Rough Somberstone (replaces 4/5/6 Smithing Stone)
+        - Refined Somberstone (replaces 7/8/9 Smithing Stone)
+        - Pure Somberstone (replaces Somber Ancient Dragon Smithing Stone)
+    - All treasures containing the old materials have been changed to the new ones.
+    - Standard Reinforcement now takes the following to reach +25:
+        - 10 Crude Erdstone
+        - 10 Rough Erdstone
+        - 10 Refined Erdstone
+        - 1 Pure Erdstone
+    - Standard Reinforcement now takes the following to reach +10:
+        - 9 Crude Somberstone
+        - 9 Rough Somberstone
+        - 9 Refined Somberstone
+        - 1 Pure Erdstone
+
 - Ashes of War:
     - All weapons can change their Ashes of War now.
     - Ash of Wars are available on a wider selection of weapon types.

@@ -13,6 +13,12 @@ Add basic dummy setup in Roundtable Hold
 Add more spirit summons based on bosses/NPC characters
 
 #-----
+Increase enemy density in open world
+    
+#-----
+Adjust enemies in dungeons to add more variety
+
+#-----
 Implement proof of concept: Gauntlet of Glory
     Basic 10 wave system:
         1 - Easy (10+)
@@ -31,9 +37,7 @@ Implement proof of concept: Gauntlet of Glory
     - Offers reinforcement materials (gated on game progression).
     - Offers a 3 unique rings.
     
-#-----
-Increase enemy density in open world:
     
     
-#-----
-Adjust enemies in dungeons to add more variety:
+    
+34000001 Duelist Atticus

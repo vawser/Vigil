@@ -24,6 +24,9 @@
 1047610200 Given Tokens
 1047610210 Itemlot flag
 
+# Gauntlet
+1047610300 Start Gauntlet
+
 # Time
 1047610400
 1047610410 Time Setting: Randomise Time on Spawn

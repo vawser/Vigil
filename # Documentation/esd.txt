@@ -1,7 +1,7 @@
 ﻿t000001200 Jar of Promise
 t000001300 Jar of Rebirth
 t000001400 Statue of Draconic Communion
-t000001500 Altar of 
-t000001600 
+t000001500 Altar of Advancement
+t000001600 Duelist Atticus
 t000001700 
 t000001800
