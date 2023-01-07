@@ -107,6 +107,12 @@
 # m13_00_00_00 - Crumbling Farum Azula
 - Added a Stake of Marika to the Placidusax boss fight.
 
+# m60_41_37_00 - Stormfoot Catacomb Entrance
+- Added 2 patrolling Omens.
+
+# m60_42_36_00 - Church of Elleh
+- Added patrolling platoon: 1 Kaiden Sellsword and 4 Commoners.
+
 #-------------------------------------------------
 # Items
 #-------------------------------------------------

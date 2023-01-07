@@ -31,8 +31,9 @@ Implement proof of concept: Gauntlet of Glory
     - Offers reinforcement materials (gated on game progression).
     - Offers a 3 unique rings.
     
-m60_42_40_00
-
-1042401500
-1042403500
-1042408500
+#-----
+Increase enemy density in open world:
+    
+    
+#-----
+Adjust enemies in dungeons to add more variety:

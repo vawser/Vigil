@@ -6107,6 +6107,7 @@ $Event(90005872, Default, function(X0_4, X4_4, X8_4) {
     RestartEvent();
 });
 
+// Evergaol: Player End Battle
 $Event(90005880, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_1, X21_1, X22_1, X23_1, X24_4) {
     EndIf(EventFlag(X0_4));
     EndIf(!PlayerIsInOwnWorld());
@@ -6126,6 +6127,7 @@ $Event(90005880, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_1, X21_1,
     EndEvent();
 });
 
+// Evergaol: Player Start Battle
 $Event(90005881, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_1, X25_1, X26_1, X27_1, X28_4) {
     SetEventFlagID(X8_4, OFF);
     SetEventFlagID(X12_4, OFF);
@@ -6152,6 +6154,7 @@ $Event(90005881, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_1,
     WarpPlayer(X24_1, X25_1, X26_1, X27_1, X28_4, 0);
 });
 
+// Evergaol: Boss Battle Setup
 $Event(90005882, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4, X32_4, X36_4, X40_4, X44_4) {
     if (EventFlag(X0_4)) {
         DisableCharacter(X12_4);
@@ -6210,6 +6213,7 @@ L0:
     DisplayBossHealthBar(Enabled, X12_4, 0, X36_4);
 });
 
+// Evergaol: 
 $Event(90005883, Restart, function(X0_4, X4_4, X8_4) {
     ForceAnimationPlayback(X8_4, 0, true, false, false);
     EndIf(!PlayerIsInOwnWorld());
@@ -6228,6 +6232,7 @@ $Event(90005883, Restart, function(X0_4, X4_4, X8_4) {
     RestartEvent();
 });
 
+// Evergaol: Play Animation on Secondary Etnity
 $Event(90005884, Restart, function(X0_4, X4_4, X8_4, X12_4) {
     SetSpEffect(X8_4, 9531);
     DisableCharacterAI(X8_4);
@@ -6242,6 +6247,7 @@ $Event(90005884, Restart, function(X0_4, X4_4, X8_4, X12_4) {
     EnableAsset(X12_4);
 });
 
+// Evergaol: Boss BGM Control
 $Event(90005885, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     DisableNetworkSync();
     if (EventFlag(X0_4)) {
@@ -6281,6 +6287,55 @@ L1:
     } else {
         SetBossBGM(925000, BossBGMState.Stop1);
     }
+});
+
+// Evergaol: Player End Battle
+// Alternate of 90005880 that takes _4 for the _1 args
+$Event(90005886, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X21_4, X22_4, X23_4, X24_4) {
+    EndIf(EventFlag(X0_4));
+    EndIf(!PlayerIsInOwnWorld());
+    EndIf(!EventFlag(X4_4));
+    WaitFor(CharacterDead(X12_4));
+    WaitFixedTimeSeconds(3);
+    HandleBossDefeatAndDisplayBanner(X12_4, TextBannerType.EnemyFelled);
+    DeactivateGparamOverride(10);
+    AwardItemsIncludingClients(X16_4);
+    SetNetworkconnectedEventFlagID(X0_4, ON);
+    WaitFixedTimeSeconds(5);
+    SetSpEffect(20000, 8870);
+    WaitFixedTimeSeconds(2);
+    SetEventFlagID(X8_4, ON);
+    SetEventFlagID(9295, ON);
+    WarpPlayer(X20_4, X21_4, X22_4, X23_4, X24_4, 0);
+    EndEvent();
+});
+
+// Evergaol: Player Start Battle
+// Alternate of 90005881 that takes _4 for the _1 args
+$Event(90005887, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X25_4, X26_4, X27_4, X28_4) {
+    SetEventFlagID(X8_4, OFF);
+    SetEventFlagID(X12_4, OFF);
+    EndIf(!PlayerIsInOwnWorld());
+    EndIf(EventFlag(X0_4));
+    EndIf(EventFlag(X4_4));
+    WaitFor(
+        !HasMultiplayerState(MultiplayerState.MultiplayerPending)
+            && HasMultiplayerState(MultiplayerState.Singleplayer)
+            && ActionButtonInArea(9230, X20_4));
+    DisplayGenericDialogAndSetEventFlags(X16_4, PromptType.YESNO, NumberofOptions.TwoButtons, X20_4, 3, X8_4, X12_4, X12_4);
+    RestartIf(EventFlag(X12_4));
+    RestartIf(
+        HasMultiplayerState(MultiplayerState.Multiplayer)
+            || HasMultiplayerState(MultiplayerState.MultiplayerPending));
+    SetNetworkconnectedEventFlagID(X4_4, ON);
+    SetSpEffect(10000, 514);
+    WaitFixedTimeFrames(1);
+    ForceAnimationPlayback(10000, 60450, false, false, false);
+    WaitFixedTimeSeconds(1.5);
+    WarpCharacterAndCopyFloorWithFadeout(10000, TargetEntityType.Area, X28_4, -1, 10000, true, true);
+    SetEventFlagID(9021, ON);
+    EndEvent();
+    WarpPlayer(X24_4, X25_4, X26_4, X27_4, X28_4, 0);
 });
 
 $Event(91005600, Restart, function(X0_4, X4_4, X8_4) {
