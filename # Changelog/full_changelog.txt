@@ -82,6 +82,15 @@
 #-------------------------------------------------
 # World
 #-------------------------------------------------
+# Area Scaling
+- Reduced the max HP and damage area scaling applied to enemies in:
+ - Leyndell Sewers
+ - Mountaintops of the Giants
+ - Crumbling Farum Azula
+ - Ashen Leyndell
+ - Consecrated Snowfields
+ - Haligtree and Elphael
+
 # m60_41_35_00 - Limgrave: Church of Dragon Communion
 - Added 2 patrolling Grafted Scions.
 - Added 1 Banished Knight by ruins.
@@ -140,7 +149,7 @@
 - Added 5% drop chance for Larval Tear to Silver Tear  and Silver Tear Orbs enemies.
 
 # World Pickups
-- All one-time material pickups now respawn on map reload.
+- Most one-time material pickups now respawn on map reload.
 
 #-------------------------------------------------
 # Armor

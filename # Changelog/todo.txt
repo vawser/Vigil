@@ -5,6 +5,11 @@ Check Rennala's stake of marika:
     use new character
     
 #-----
+Add basic dummy setup in Roundtable Hold
+    Change door to be openable
+    Add single dummy, with original system tweaks
+    
+#-----
 Add more spirit summons based on bosses/NPC characters
 
 #-----
@@ -26,4 +31,8 @@ Implement proof of concept: Gauntlet of Glory
     - Offers reinforcement materials (gated on game progression).
     - Offers a 3 unique rings.
     
-    
+m60_42_40_00
+
+1042401500
+1042403500
+1042408500
