@@ -26,6 +26,7 @@
 
 # Arena Challenge
 1047610300 Warp to Arena
+1047610301 Gladiatorial Mark reward
 
 1047610310 Type: Demi-Human Deluge
 1047610311 Type: Godrick's Own

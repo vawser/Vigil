@@ -36,20 +36,26 @@
     
 # Gladiator's Gauntlet
 - Added a PVE challenge mode, where you face up against a swarm of enemies, and try and survive until the end.
-
+- Survival to the end will grant:
+    - Reinforcement material, the type depending on the difficulty selected.
+    - Gladiatorial Engraving, 1 or more depending on the difficulty selected.
+    
+- Available at the Limgrave Colliseum, talk to Duelist Atticus.
+- You can switch the Gauntlet type and difficulty via Atticus.
+- You can purchase rewards from Atticus in exchange for Gladiatorial Engravings.
+ 
 - Types:
-    - Demi-Human Deluge
-    - Godrick's Own
+    - Demi-Human Deluge: Demi-Humans, Demi-Human Shamans, Overgrown Demi-Humans, Demi-Human Chiefs and Demi-Human Queen Shivarra.
+    - Godrick's Own: Godrick Footmen, Soldiers, Knights, and a Disgraced Scion.
     
 - Difficulties:
     - Standard: 100% Rune Amount, 100% HP, 100% Damage, 15 seconds between enemy batches
     - Hard: 200% Rune Amount, 200% HP, 100% Damage, 12 seconds between enemy batches.
     - Nightmare: 500% Rune Amount, 300% HP, 125% Damage, 9 seconds between enemy batches.
 
-- Available at the Limgrave Colliseum, talk to Duelist Atticus.
- - You can switch thte Gauntlet type and difficulty via Atticus.
-
-
+- Rewards:
+    - Gladiatorial Mark: 30 Gladiatorial Engravings
+    
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -340,11 +346,16 @@
         - Maliketh
         - Black Blade Kindred
         
-- Aberrant Eye 3054
+- Aberrant Eye
     - Weight: 2.0
     - +0 Effect: Raises attack power against Bestial enemies by 25%.
     - Found in the Frenzied Flame Village in Liurnia.
     - Beastial enemies are animals or humanoids with some aspect of animal about them.
+        
+- Gladiatorial Mark
+    - Weight: 1.0
+    - +0 Effect: Reduces weapon stamina consumption by 25%.
+    - Purchased from Duelist Atticus for 30 Gladiatorial Engravings.
         
 # Talisman Effects
 - Crimson Amber Medallion

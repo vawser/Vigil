@@ -553,6 +553,9 @@ def t000001600_x100():
         # Gauntlet Difficulty
         AddTalkListData(3, 80105002, -1)
         
+        # Gauntlet Rewards
+        AddTalkListData(4, 80105300, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -593,6 +596,8 @@ def t000001600_x100():
             continue
         elif GetTalkListEntryResult() == 3:
             assert t000001600_x102()
+        elif GetTalkListEntryResult() == 4:
+            assert t000001600_x103()
             continue
         else:
             """State 6,8"""
@@ -810,6 +815,58 @@ def t000001600_x102():
         elif GetTalkListEntryResult() == 11:
             return 0
         elif GetTalkListEntryResult() == 12:
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+            
+# Rewards
+def t000001600_x103():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Gladiatorial Mark
+        AddTalkListDataIf(GetEventFlag(1047610301) == 0, 1, 80105310, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000001600_x110(80105311)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80105301, -1)
+            
+            # No
+            AddTalkListData(2, 80105302, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                if ComparePlayerInventoryNumber(3, 3720, 4, 30, 0):
+                    PlayerEquipmentQuantityChange(3, 3720, -30)
+                    AwardItemLot(3110)
+                else:
+                    assert t000001600_x110(80105312)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
             return 0
         else:
             """State 6,8"""
