@@ -38,7 +38,8 @@
 - Added a PVE challenge mode, where you face up against a swarm of enemies, and try and survive until the end.
 
 - Types:
-    - Demi-Human
+    - Demi-Human Deluge
+    - Godrick's Own
     
 - Difficulties:
     - Standard: 100% Rune Amount, 100% HP, 100% Damage, 15 seconds between enemy batches

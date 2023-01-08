@@ -27,7 +27,9 @@
 # Arena Challenge
 1047610300 Warp to Arena
 
-1047610310 Type: Demi-Human
+1047610310 Type: Demi-Human Deluge
+1047610311 Type: Godrick's Own
+1047610312 Type: 
 
 1047610390 Difficulty: Standard
 1047610391 Difficulty: Hard
