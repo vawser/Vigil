@@ -34,6 +34,21 @@
 - Added the ability to enter a new Journey cycle immediately at the start of the game.
 - Turn around after spawning in, and use the Altar of Advancement to go ahead by one Journey cycle.
     
+# Gladiator's Gauntlet
+- Added a PVE challenge mode, where you face up against a swarm of enemies, and try and survive until the end.
+
+- Types:
+    - Demi-Human
+    
+- Difficulties:
+    - Standard: 100% Rune Amount, 100% HP, 100% Damage, 15 seconds between enemy batches
+    - Hard: 200% Rune Amount, 200% HP, 100% Damage, 12 seconds between enemy batches.
+    - Nightmare: 500% Rune Amount, 300% HP, 125% Damage, 9 seconds between enemy batches.
+
+- Available at the Limgrave Colliseum, talk to Duelist Atticus.
+ - You can switch thte Gauntlet type and difficulty via Atticus.
+
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -55,7 +70,6 @@
 
 # Stealth
 - Stealth attacks now deal +100% damage against enemies by default.
-
 
 # Mount
 - Torrent can now spiritspring jump for 6 seconds after being fed a Rowa Raisin, Sweet Raisin or Frozen Raisin.

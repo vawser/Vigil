@@ -37,7 +37,20 @@ Implement proof of concept: Gauntlet of Glory
     - Offers reinforcement materials (gated on game progression).
     - Offers a 3 unique rings.
     
-    
-    
-    
 34000001 Duelist Atticus
+
+# Tier 1
+Demi-Human - Normal
+1042400500 -> 1042400518
+
+Overgrown Demi-Human 
+1042400520 -> 1042400529
+
+Demi-Human Shaman 
+1042400530 -> 1042400539
+
+Demi-Human Chief
+1042400550 -> 1042400555
+
+Demi-Human Queen 
+1042400590 

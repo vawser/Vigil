@@ -6504,6 +6504,10 @@ $Event(11000, Default, function() {
     {
         SetEventFlagID(60120, ON); // Crafting Kit
         SetEventFlagID(1047610010, ON); // Default setup complete
+        
+        // Arena Defaults
+        SetEventFlagID(1047610390, ON); // Standard
+        SetEventFlagID(1047610310, ON); // Demi-Human
     }
     
     // Passive: Rally
@@ -6742,5 +6746,3 @@ $Event(11016, Default, function(X0_4, X4_4) {
     WaitFixedTimeSeconds(1.0);
     RestartEvent();
 });
-
-

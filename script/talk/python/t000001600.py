@@ -544,8 +544,14 @@ def t000001600_x100():
         ClearTalkListData()
         c1_110()
         
-        # Start Gauntlet
+        # Face the Gauntlet
         AddTalkListData(1, 80105000, -1)
+        
+        # Gauntlet Type
+        AddTalkListData(2, 80105001, -1)
+        
+        # Gauntlet Difficulty
+        AddTalkListData(3, 80105002, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -555,9 +561,228 @@ def t000001600_x100():
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
         if GetTalkListEntryResult() == 1:
-            SetEventFlag(1047610300, 1)
-            continue
+            assert t000001600_x110(80105010)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610300, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        elif GetTalkListEntryResult() == 2:
+            assert t000001600_x101()
+            return 0
+        elif GetTalkListEntryResult() == 3:
+            assert t000001600_x102()
+            return 0
         else:
             """State 6,8"""
             return 0
             
+# Type
+def t000001600_x101():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Demi-Human
+        AddTalkListDataIf(GetEventFlag(1047610310) == 0, 1, 80105100, -1)
+        # Demi-Human (selected)
+        AddTalkListDataIf(GetEventFlag(1047610310) == 1, 10, 80105101, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000001600_x110(80105102)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610310, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        elif GetTalkListEntryResult() == 10:
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+            
+# Difficulty
+def t000001600_x102():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Standard
+        AddTalkListDataIf(GetEventFlag(1047610390) == 0, 1, 80105200, -1)
+        # Standard (selected)
+        AddTalkListDataIf(GetEventFlag(1047610390) == 1, 10, 80105201, -1)
+        
+        # Hard
+        AddTalkListDataIf(GetEventFlag(1047610391) == 0, 2, 80105210, -1)
+        # Hard (selected)
+        AddTalkListDataIf(GetEventFlag(1047610391) == 1, 11, 80105211, -1)
+        
+        # Nightmare
+        AddTalkListDataIf(GetEventFlag(1047610392) == 0, 3, 80105220, -1)
+        # Nightmare (selected)
+        AddTalkListDataIf(GetEventFlag(1047610392) == 1, 12, 80105221, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000001600_x110(80105202)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610390, 1)
+                SetEventFlag(1047610391, 0)
+                SetEventFlag(1047610392, 0)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        elif GetTalkListEntryResult() == 2:
+            assert t000001600_x110(80105212)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610390, 0)
+                SetEventFlag(1047610391, 1)
+                SetEventFlag(1047610392, 0)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        elif GetTalkListEntryResult() == 3:
+            assert t000001600_x110(80105222)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610390, 0)
+                SetEventFlag(1047610391, 0)
+                SetEventFlag(1047610392, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        elif GetTalkListEntryResult() == 10:
+            return 0
+        elif GetTalkListEntryResult() == 11:
+            return 0
+        elif GetTalkListEntryResult() == 12:
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+            
+# Description Prompt
+def t000001600_x110(action1=_):
+    """State 0,1"""
+    OpenGenericDialog(8, action1, 1, 0, 1)
+    assert not CheckSpecificPersonGenericDialogIsOpen(0)
+    """State 2"""
+    return 0
+    

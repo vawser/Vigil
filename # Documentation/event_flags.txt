@@ -24,8 +24,14 @@
 1047610200 Given Tokens
 1047610210 Itemlot flag
 
-# Gauntlet
-1047610300 Start Gauntlet
+# Arena Challenge
+1047610300 Warp to Arena
+
+1047610310 Type: Demi-Human
+
+1047610390 Difficulty: Standard
+1047610391 Difficulty: Hard
+1047610392 Difficulty: Nightmare
 
 # Time
 1047610400
