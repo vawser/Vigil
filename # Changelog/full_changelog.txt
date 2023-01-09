@@ -36,7 +36,7 @@
     
 # Gladiator's Gauntlet
 - Added a survival horde minigame, where you can choose to face up against a horde of enemies, attempting to survive until the end.
-- Found at the Great Colliseum in Caelid. You can talk to Duelist Atticus outside the Limgrave Colliseum to be teleported to it.
+- Found at the Great Colosseum in Caelid. You can talk to Duelist Atticus outside the Limgrave Colosseum to be teleported to it.
 - You can switch the Gauntlet type and difficulty via Atticus.
 - You can purchase rewards from Atticus in exchange for Gladiatorial Engravings.
 

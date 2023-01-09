@@ -19,28 +19,12 @@ Increase enemy density in open world
 Adjust enemies in dungeons to add more variety
 
 #-----
-Implement proof of concept: Gauntlet of Glory
-    Basic 10 wave system:
-        1 - Easy (10+)
-        2 - Medium (8+)
-        3 - Hard (2-4)
-        4 - Medium (8+)
-        5 - Miniboss
-        6 - Easy (20+)
-        7 - Medium (12+)
-        8 - Hard (3-5)
-        9 - Medium (20+)
-        10 - Boss
-        
-- Survival rewards Runes and Gladiator Marks
-- Gladiator Marks are spent at the Glorious Merchant:
-    - Offers reinforcement materials (gated on game progression).
-    - Offers a 3 unique rings.
+Gladiator's Gauntlet:
+    Add boss music selection NPC:
+        Bard Alicent
     
-AEG092_100 fogwall
-
-60 47 42
-
-1047421950
-
-64484002
+    Get the BGM ids from the main bosses
+    
+    Add in a 3rd swarm type.
+    Add in a boss rush type.
+        Disable tree for the boss rush types.
