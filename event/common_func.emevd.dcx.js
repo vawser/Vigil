@@ -3537,6 +3537,8 @@ $Event(90005616, Default, function(X0_4, X4_4) {
     DisplayBlinkingMessage(20600);
 });
 
+// Stonesword Key: 
+// X12_4 is 0 for the single-key statues
 $Event(90005620, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4) {
     DisableNetworkSync();
     if (EventFlag(X0_4)) {
@@ -3561,30 +3563,35 @@ L0:
             WaitFixedTimeSeconds(0.5);
             RestartEvent();
         }
+// One-key Statue Check
 L1:
         StoreItemAmountHeldInEventValue(ItemType.Goods, 8000, 9580, 8);
-        GotoIf(L2, X12_4 != 0);
+        GotoIf(L2, X12_4 != 0); 
         GotoIf(L3, EventValue(9580, 8) >= 1);
+// Two-key Statue Check
 L2:
         GotoIf(L4, EventValue(9580, 8) >= 2);
         ForceAnimationPlayback(10000, 50050, false, false, false);
         WaitFixedTimeSeconds(1.4);
+        
         if (EventValue(9580, 8) < 1) {
-            DisplayGenericDialog(308000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 3);
+            DisplayGenericDialog(308000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 1); // No Stonesword Key
             RestartEvent();
         }
 L5:
-        DisplayGenericDialog(408000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 3);
+        DisplayGenericDialog(408000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 1); // Not enough Stonesword Key
         RestartEvent();
+// One-key Statue Unlock
 L3:
         IssueShortWarpRequest(10000, TargetEntityType.Asset, X4_4, 191);
         ForceAnimationPlayback(10000, 60810, false, false, false);
         WaitFixedTimeSeconds(2.7);
-        DisplayGenericDialog(208000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 3);
+        //DisplayGenericDialog(208000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 1);
         EnableAsset(X8_4);
         RemoveItemFromPlayer(ItemType.Goods, 8000, 1);
         SetNetworkconnectedEventFlagID(X0_4, ON);
         Goto(L8);
+// Two-key Statue Unlock
 L4:
         IssueShortWarpRequest(10000, TargetEntityType.Asset, X4_4, 191);
         ForceAnimationPlayback(10000, 60810, false, false, false);
@@ -3592,7 +3599,7 @@ L4:
         EnableAsset(X8_4);
         ForceAnimationPlayback(10000, 60811, false, false, false);
         WaitFixedTimeSeconds(1.5);
-        DisplayGenericDialog(208000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 3);
+        //DisplayGenericDialog(208000, PromptType.OKCANCEL, NumberofOptions.NoButtons, X4_4, 1);
         EnableAsset(X12_4);
         RemoveItemFromPlayer(ItemType.Goods, 8000, 2);
         SetNetworkconnectedEventFlagID(X0_4, ON);

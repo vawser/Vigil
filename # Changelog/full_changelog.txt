@@ -114,6 +114,9 @@
  - Consecrated Snowfields
  - Haligtree and Elphael
 
+# Interactions
+- Stonesword Key statues will no longer show a message on successful use, allowing for a smoother getaway in a hostile situation.
+
 # m60_41_35_00 - Limgrave: Church of Dragon Communion
 - Added 2 patrolling Grafted Scions.
 - Added 1 Banished Knight by ruins.
@@ -153,6 +156,9 @@
  
 - Exalted Flesh:
     - Now lasts 60 seconds.
+    
+- Spectral Steed Whistle:
+    - No longer prompts you to select an option when re-summoning Torrent after he has 'died', instead it will automatically use a flask.
     
 # Crafting
 - The ability to craft items is automatically available, you no longer need to purchase a crafting kit.
@@ -491,4 +497,6 @@
 # Localization
 - Added explicit values in the descriptions for talismans.
 - Changed the loading tips to instead show interesting pieces of lore from various item descriptions.
+
+# Misc
 - Increased world map scroll speed.
