@@ -219,6 +219,7 @@
     - Ash of Wars are available on a wider selection of weapon types.
 
 - Affinities:
+    - Whetblades have been removed. Picking up the Whetstone Knife will enable all of the affinity types immediately.
     - Sacred Affinity now boosts Undead damage by 10%.
 
 - Buffability:
@@ -490,5 +491,4 @@
 # Localization
 - Added explicit values in the descriptions for talismans.
 - Changed the loading tips to instead show interesting pieces of lore from various item descriptions.
-
- 
+- Increased world map scroll speed.
