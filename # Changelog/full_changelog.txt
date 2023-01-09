@@ -35,15 +35,11 @@
 - Turn around after spawning in, and use the Altar of Advancement to go ahead by one Journey cycle.
     
 # Gladiator's Gauntlet
-- Added a PVE challenge mode, where you face up against a swarm of enemies, and try and survive until the end.
-- Survival to the end will grant:
-    - Reinforcement material, the type depending on the difficulty selected.
-    - Gladiatorial Engraving, 1 or more depending on the difficulty selected.
-    
-- Available at the Limgrave Colliseum, talk to Duelist Atticus.
+- Added a survival horde minigame, where you can choose to face up against a horde of enemies, attempting to survive until the end.
+- Found at the Great Colliseum in Caelid. You can talk to Duelist Atticus outside the Limgrave Colliseum to be teleported to it.
 - You can switch the Gauntlet type and difficulty via Atticus.
 - You can purchase rewards from Atticus in exchange for Gladiatorial Engravings.
- 
+
 - Types:
     - Demi-Human Deluge: Demi-Humans, Demi-Human Shamans, Overgrown Demi-Humans, Demi-Human Chiefs and Demi-Human Queen Shivarra.
     - Godrick's Own: Godrick Footmen, Soldiers, Knights, and a Disgraced Scion.
@@ -55,6 +51,10 @@
 
 - Rewards:
     - Gladiatorial Mark: 30 Gladiatorial Engravings
+    
+- Surviving to the end of a gauntlet will grant:
+    - Reinforcement material, the type depending on the difficulty selected.
+    - Gladiatorial Engraving, 1 or more depending on the difficulty selected.
     
 #-------------------------------------------------
 # Player

@@ -37,3 +37,10 @@ Implement proof of concept: Gauntlet of Glory
     - Offers reinforcement materials (gated on game progression).
     - Offers a 3 unique rings.
     
+AEG092_100 fogwall
+
+60 47 42
+
+1047421950
+
+64484002
