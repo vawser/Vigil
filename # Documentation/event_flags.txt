@@ -33,6 +33,31 @@
 1047610311 Type: Godrick's Own
 1047610312 Type: 
 
+1047610350 Music: None
+1047610351 Music: Godfrey, First Elden Lord         # 472001
+1047610352 Music: Grafted Scion                     # 920900
+1047610353 Music: Margit, the Fell Omen             # 213000
+1047610354 Music: Rennala, Queen of the Full Moon   # 203000
+1047610355 Music: Red Wolf of Radagon               # 921400
+1047610356 Music: Rykard, Lord of Blasphemy         # 471000
+1047610357 Music: Godskin Noble                     # 356000
+1047610358 Music: Abductor Virgins                  # 931000
+1047610359 Music: Starscourge Radahn                # 473000
+1047610360 Music: Morgott, the Omen King            # 213001
+1047610361 Music: Ancestor Spirit                   # 467000
+1047610362 Music: Dragonkin Soldier of Nokstella    # 920300
+1047610363 Music: Astel, Naturalborn of the Void    # 920700
+1047610364 Music: Mohg, Lord of Blood               # 480000
+1047610365 Music: Fire Giant                        # 476000
+1047610366 Music: Hoarah Loux                       # 472000
+1047610367 Music: Sir Gideon Ofnir                  # 921100
+1047610368 Music: Maliketh, The Black Blade         # 211000
+1047610369 Music: Dragonlord Placidusax             # 452000
+1047610370 Music: Malenia, Blade of Miquella        # 212000
+1047610371 Music: Loretta, Knight of the Haligtree  # 920200
+1047610372 Music: Radagon of the Golden Order       # 219000
+ 
+
 1047610390 Difficulty: Standard
 1047610391 Difficulty: Hard
 1047610392 Difficulty: Nightmare

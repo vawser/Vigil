@@ -1715,7 +1715,7 @@ def t000001300_x104():
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
-        # BDragonkin Soldier of Nokstella 
+        # Dragonkin Soldier of Nokstella 
         if GetTalkListEntryResult() == 1:
             assert t000001300_x123(12010800, 71210, 9109, 61109, 80021400)
         else:

@@ -28,3 +28,9 @@ Gladiator's Gauntlet:
     Add in a 3rd swarm type.
     Add in a boss rush type.
         Disable tree for the boss rush types.
+        
+    310000 Duelist Helm
+    310300 Duelist Greaves
+    2000000 Rotten Duelist Helm
+    2000300 Rotten Duelist Greaves
+    23040000 Duelist Greataxe

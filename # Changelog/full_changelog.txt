@@ -56,6 +56,8 @@
     - Reinforcement material, the type depending on the difficulty selected.
     - Gladiatorial Engraving, 1 or more depending on the difficulty selected.
     
+- Bard Sangeet is present in the Colosseum entrance area. He offers various Duelist equipment pieces, and allows you to adjust the gauntlet music between several different boss themes.
+    
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

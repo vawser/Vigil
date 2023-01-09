@@ -4,4 +4,4 @@ t000001400 Statue of Draconic Communion
 t000001500 Altar of Advancement
 t000001600 Duelist Atticus - Caelid
 t000001700 Duelist Atticus - Limgrave
-t000001800
+t000001800 Bard Sangeet
