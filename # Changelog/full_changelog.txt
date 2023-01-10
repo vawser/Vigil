@@ -43,6 +43,7 @@
 - Types:
     - Demi-Human Deluge: Demi-Humans, Demi-Human Shamans, Overgrown Demi-Humans, Demi-Human Chiefs and Demi-Human Queen Shivarra.
     - Godrick's Own: Godrick Footmen, Soldiers, Knights, and a Disgraced Scion.
+    - Revenge of the Gladiators: Grave Warden Duelists, Stone Watchdogs, and the Ulceration of War.
     
 - Difficulties:
     - Standard: 100% Rune Amount, 100% HP, 100% Damage, 15 seconds between enemy batches

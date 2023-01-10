@@ -31,7 +31,7 @@
 
 1047610310 Type: Demi-Human Deluge
 1047610311 Type: Godrick's Own
-1047610312 Type: 
+1047610312 Type: Revenge of the Gladiators
 
 1047610350 Music: None
 1047610351 Music: Godfrey, First Elden Lord         # 472001
