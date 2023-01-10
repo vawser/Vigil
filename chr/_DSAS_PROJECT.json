@@ -1,6 +1,6 @@
 {
   "GameDirectory": "C:\\Users\\Xylozi\\Documents\\Fromsoft\\# Mods\\Vigil\\Mod\\",
-  "ModEngineDirectory": "",
+  "ModEngineDirectory": "C:\\Users\\Xylozi\\Documents\\Fromsoft\\# Mods\\Vigil\\Mod\\",
   "LoadLooseParams": false,
   "LoadUnpackedGameFiles": false,
   "WorldViews": [
@@ -9,12 +9,12 @@
       "LockAspectRatioDuringRemo": true,
       "Name": null,
       "CameraLocationInWorld": {
-        "Position": "0, 0, 0",
+        "Position": "3.6199484, 6.329357, 0.27855015",
         "Rotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0,
-          "W": 1.0
+          "X": -0.36775523,
+          "Y": 0.58793604,
+          "Z": 0.3405441,
+          "W": 0.634915
         },
         "Scale": "1, 1, 1",
         "OverrideMatrixWorld": {
@@ -37,12 +37,12 @@
         }
       },
       "CameraLocationInWorld_CloserForSound": {
-        "Position": "0, 0, 8",
+        "Position": "3.6199484, 6.329357, 0.27855015",
         "Rotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0,
-          "W": 1.0
+          "X": -0.36775523,
+          "Y": 0.58793604,
+          "Z": 0.3405441,
+          "W": 0.634915
         },
         "Scale": "1, 1, 1",
         "OverrideMatrixWorld": {
@@ -64,26 +64,26 @@
           "M44": 1.0
         }
       },
-      "RootMotionFollow_EnableWrap": false,
+      "RootMotionFollow_EnableWrap": true,
       "RootMotionFollow_Translation": "0, 0, 0",
-      "RootMotionFollow_Rotation": 0.0,
+      "RootMotionFollow_Rotation": -0.0,
       "CameraOrbitOrigin": "0, 0, 0",
       "CameraOrbitOriginOffset": "0, 0, 0",
       "CameraOrbigtDefaultHeightForRootMotion": 0.0,
       "CameraLookDirection": {
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0,
-        "W": 1.0
+        "X": -0.36775523,
+        "Y": 0.58793604,
+        "Z": 0.3405441,
+        "W": 0.634915
       },
-      "OrbitCamEuler": "0, 0, 0",
-      "OrbitCamDistanceInput": 8.0,
+      "OrbitCamEuler": "-1.0499994, 1.493999, 0",
+      "OrbitCamDistanceInput": 7.2967367,
       "ProjectionVerticalFoV": 43.0,
       "ProjectionSkyboxVerticalFov": 70.0,
       "ProjectionNearClipDist": 0.1,
       "ProjectionFarClipDist": 10000.0,
       "Matrix_Projection": {
-        "M11": 2.5915363,
+        "M11": 6.5438795,
         "M12": 0.0,
         "M13": 0.0,
         "M14": 0.0,
@@ -101,7 +101,7 @@
         "M44": 0.0
       },
       "Matrix_Projection_Skybox": {
-        "M11": 1.4579011,
+        "M11": 3.681341,
         "M12": 0.0,
         "M13": 0.0,
         "M14": 0.0,
@@ -137,35 +137,35 @@
         "M44": 1.0
       },
       "Matrix_View": {
-        "M11": 1.0,
-        "M12": 0.0,
-        "M13": 0.0,
+        "M11": 0.07672185,
+        "M12": -0.86486626,
+        "M13": 0.49610505,
         "M14": 0.0,
         "M21": 0.0,
-        "M22": 1.0,
-        "M23": 0.0,
+        "M22": 0.4975716,
+        "M23": 0.86742294,
         "M24": 0.0,
-        "M31": 0.0,
-        "M32": 0.0,
-        "M33": 1.0,
+        "M31": -0.99705255,
+        "M32": -0.066550314,
+        "M33": 0.03817463,
         "M34": 0.0,
         "M41": 0.0,
-        "M42": 0.0,
-        "M43": -8.0,
+        "M42": 5.5506825E-07,
+        "M43": -7.2967377,
         "M44": 1.0
       },
       "Matrix_View_Skybox": {
-        "M11": 1.0,
-        "M12": 0.0,
-        "M13": 0.0,
+        "M11": 0.07672185,
+        "M12": -0.86486626,
+        "M13": 0.49610505,
         "M14": 0.0,
         "M21": 0.0,
-        "M22": 1.0,
-        "M23": 0.0,
+        "M22": 0.4975716,
+        "M23": 0.86742294,
         "M24": 0.0,
-        "M31": 0.0,
-        "M32": 0.0,
-        "M33": 1.0,
+        "M31": -0.99705255,
+        "M32": -0.066550314,
+        "M33": 0.03817463,
         "M34": 0.0,
         "M41": 0.0,
         "M42": 0.0,
@@ -174,12 +174,12 @@
       },
       "DisableAllInput": false,
       "RequestRecenter": false,
-      "FollowingLockon": true,
-      "FollowingLockonDummyPoly": -1,
+      "FollowingLockon": false,
+      "FollowingLockonDummyPoly": 220,
       "AngleSnap": 0.7853982,
       "AngleSnapEnable": false,
       "PivotPrimIsEnabled": false,
-      "OrbitCamCenter_DummyPolyFollowRefPoint": "0, 0, 0",
+      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.068226784, 0.027893841, -0.29427898",
       "OrbitCamCenter_DummyPolyFollowRefPoint_Init": "0, 0, 0",
       "OverallMouseSpeedMult": 1.0,
       "CameraTurnSpeedMouse": 1.0,
@@ -222,10 +222,10 @@
         "M43": 0.0,
         "M44": 1.0
       },
-      "OrbitCamDistance": 8.0,
+      "OrbitCamDistance": 7.2967367,
       "ProjectionIsOrthographic": false,
       "ProjectionVerticalFovRatio": 1.0,
-      "PivotPrimVisRatio": 0.94596386
+      "PivotPrimVisRatio": 0.0
     }
   ]
 }

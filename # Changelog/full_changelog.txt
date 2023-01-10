@@ -71,6 +71,18 @@
 # Combat
 - The player automatically has the ability to rally back damage, the same as Malenia's Great Rune.
 
+# Deflection
+- Added the ability to deflect when blocking.
+
+- Standard Deflect:
+    - 5 frames during block start animation
+    - Grants 25% guard absorption whilst active
+    
+- Perfect Deflect:
+    - 3 frames during block start animation
+    - Grants 100% guard absorption and stability whilst active
+    - If hit by an enemy with this active, you will automatically emit a Storm Burst, staggering the enemy if they are susceptible.
+        
 # Movement
 - The player moves 20% faster.
 - The player rolls 25% further.
@@ -223,6 +235,7 @@
 - Ashes of War:
     - All weapons can change their Ashes of War now.
     - Ash of Wars are available on a wider selection of weapon types.
+    - FP costs of all Ashes of War increased by 20% to account for the passive FP regeneration.
 
 - Affinities:
     - Whetblades have been removed. Picking up the Whetstone Knife will enable all of the affinity types immediately.

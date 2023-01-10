@@ -406,12 +406,18 @@ function ExecGuard(event, blend_type)
         elseif TRUE == IsEnableGuard() then
             local style = c_Style
             local hand = HAND_LEFT
+            
             if style == HAND_RIGHT_BOTH then
                 hand = HAND_RIGHT
             end
+            
+            -- Vigil: Is Guarding
+            act(2002, 150000)
+    
             local kind = env(225, hand)
             local sp_kind = env(345, hand)
             local guardindex = env(278, hand)
+            
             if kind == WEAPON_CATEGORY_TORCH and style == HAND_RIGHT then
                 guardindex = GUARD_STYLE_TORCH
                 if sp_kind == 250 then
@@ -426,15 +432,19 @@ function ExecGuard(event, blend_type)
             elseif (style == HAND_RIGHT_BOTH or style == HAND_LEFT_BOTH) and env(358) ~= 15 and env(358) ~= 0 and env(358) ~= 2 and env(358) ~= 3 then
                 guardindex = GUARD_STYLE_DEFAULT
             end
+            
             if env(1116, 172) == TRUE then
                 SetVariable("GuardStartType", 1)
             else
                 SetVariable("GuardStartType", 0)
             end
+            
             SetVariable("IndexGuardStyle", guardindex)
+            
             if blend_type == ALLBODY and MoveStart(LOWER, Event_MoveLong, FALSE) == TRUE then
                 blend_type = UPPER
             end
+            
             ExecEventHalfBlend(event, blend_type)
             return TRUE
         end
@@ -3735,6 +3745,12 @@ function ExecDamage(is_parry, is_attackwhileguard)
     local damage_level = env(236)
     local damage_type = env(202)
     local is_damaged = env(256)
+    
+    -- Vigil: Is Hit
+    if is_damaged == TRUE then
+        act(2002, 150001) 
+    end
+            
     if env(362, 32) == TRUE then
         act(141, DAMAGE_FLAG_SMALL)
         ResetRequest()
@@ -3757,6 +3773,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         else
         end
     end
+    
     if damage_level <= DAMAGE_LEVEL_NONE and (is_damaged == FALSE or env(336) == TRUE) and (damage_type == DAMAGE_TYPE_INVALID or damage_type == DAMAGE_TYPE_WEAK_POINT or damage_type == DAMAGE_LEVEL_MINIMUM) then
         return FALSE
     elseif env(334, 1) == TRUE then
@@ -3767,6 +3784,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         ResetDamageCount()
         return TRUE
     end
+    
     local attack_dir = env(1119)
     local damage_angle = env(222)
     local style = c_Style
@@ -3868,7 +3886,9 @@ function ExecDamage(is_parry, is_attackwhileguard)
         elseif env(1116, 176) == TRUE then
             return FALSE
         end
+        
         local guardindex = GUARD_STYLE_DEFAULT
+        
         if style == HAND_RIGHT then
             guardindex = env(278, HAND_LEFT)
             if TRUE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_TORCH) then
@@ -13468,6 +13488,8 @@ end
 function Update()
     GetConstVariable()
     SetStyleSpecialEffect()
+    TrackDeflection()
+    
     act(101, FALSE)
     if env(1108, ACTION_ARM_ACTION) > 0 then
         SetThrowAtkInvalid()
@@ -18751,6 +18773,35 @@ function AddBlendSpeak_onUpdate()
         SetVariable("AddBlendSpeakIndex", math.random(0, 2))
         act(9000, "AddBlendSpeak_end")
         ExecEventAllBody("W_AddBlendSpeak")
+    end
+end
+
+------------------------------------------
+-- Vigil
+------------------------------------------
+-- Each Guard start animation has been given two SpEffects:
+--  Standard: 150010
+--  5 frames
+--  0.5 duration
+--  This applies some minor guard buffs whilst active
+--
+--  Perfect: 150020
+--  3 frame
+--  0.1 duration
+--  This applies major guard buffs whilst active, and triggers the Deflect bullet 
+--  if hit whilst guarding with the SpEffect active.
+
+-- VFX 61040 is useful in the trigger SpEffects for seeing the frames when testing
+function TrackDeflection()
+    -- Is Guarding + Is Hit
+    if env(1116, 150000) == TRUE and env(1116, 150001) == TRUE then
+    
+         -- Perfect Deflect
+        if env(1116, 150020) == TRUE then
+            act(2002, 150100) -- Deflect: Storm Stomp
+            
+            -- Add more variants here
+        end
     end
 end
 
