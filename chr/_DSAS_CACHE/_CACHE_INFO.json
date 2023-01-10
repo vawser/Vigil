@@ -1,3 +1,20 @@
 {
-  "Entries": []
+  "Entries": [
+    {
+      "BhdName": "data0",
+      "EncMD5Hash": "nzwUbZhQ6L6qrGmeGRMQAQ=="
+    },
+    {
+      "BhdName": "data3",
+      "EncMD5Hash": "zAY3y8KnVTs89VKcLHy8fA=="
+    },
+    {
+      "BhdName": "data1",
+      "EncMD5Hash": "W1oj/1oefxQ26HTeDqD/xg=="
+    },
+    {
+      "BhdName": "data2",
+      "EncMD5Hash": "jdukzMnB9peMboU8cUywGA=="
+    }
+  ]
 }

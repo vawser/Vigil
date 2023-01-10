@@ -18779,28 +18779,60 @@ end
 ------------------------------------------
 -- Vigil
 ------------------------------------------
--- Each Guard start animation has been given two SpEffects:
---  Standard: 150010
---  5 frames
---  0.5 duration
---  This applies some minor guard buffs whilst active
---
---  Perfect: 150020
---  3 frame
---  0.1 duration
---  This applies major guard buffs whilst active, and triggers the Deflect bullet 
---  if hit whilst guarding with the SpEffect active.
-
+-- Each Guard Start animation in the TAE has a Standard and Perfect Deflect window applied (via SpEffect).
 -- VFX 61040 is useful in the trigger SpEffects for seeing the frames when testing
 function TrackDeflection()
+    -- Perfect Deflect visual
+    if env(1116, 150970) == TRUE then
+        if env(1116, 150020) == TRUE or env(1116, 150021) == TRUE then
+            act(2002, 150971)
+        end
+    end
+
     -- Is Guarding + Is Hit
     if env(1116, 150000) == TRUE and env(1116, 150001) == TRUE then
-    
-         -- Perfect Deflect
-        if env(1116, 150020) == TRUE then
-            act(2002, 150100) -- Deflect: Storm Stomp
+        -- Deflect hasn't occured for 1 second
+        if env(1116, 150002) == FALSE then
+            -- Using normal Perfect Deflect window
+            if env(1116, 150020) == TRUE then
+                HandleDeflect()
+            end
             
-            -- Add more variants here
+            -- Using extended Perfect Deflect window
+            if env(1116, 150960) == TRUE then
+                if env(1116, 150020) == TRUE or env(1116, 150021) == TRUE then
+                    HandleDeflect()
+                end
+            end
+        end
+    end
+end
+
+function HandleDeflect()
+    act(2002, 150002) -- Deflect Cooldown
+                    
+    -- Fire the deflect bullet based on the marker SpEffects the player has
+    FireBulletForDeflect(150900, 150100) -- Storm
+    FireBulletForDeflect(150901, 150110) -- Holy
+    FireBulletForDeflect(150902, 150120) -- Moon
+    FireBulletForDeflect(150903, 150130) -- Fire
+    FireBulletForDeflect(150904, 150140) -- Thorn
+end
+
+function FireBulletForDeflect(deflect_type, bullet_effect)
+    if env(1116, deflect_type) == TRUE then
+        -- Order is important: player can have all present, 
+        -- so only the highest should be used
+        
+        -- Perfected
+        if env(1116, 150952) == TRUE then
+            act(2002, bullet_effect + 2) 
+        -- Improved
+        elseif env(1116, 150951) == TRUE then
+            act(2002, bullet_effect + 1) 
+        -- Standard
+        elseif env(1116, 150950) == TRUE then
+            act(2002, bullet_effect) 
         end
     end
 end

@@ -6509,6 +6509,11 @@ $Event(11000, Default, function() {
         SetEventFlagID(1047610390, ON); // Difficulty: Standard
         SetEventFlagID(1047610310, ON); // Type: Demi-Human
         SetEventFlagID(1047610351, ON); // Music: Godfrey, First Elden Lord
+        
+        // Deflection Defaults
+        SetEventFlagID(1047610600, ON);  // Selected Deflect Type: Storm
+        SetEventFlagID(1047610610, ON);  // Unlocked eflect Level: Standard
+        SetEventFlagID(1047610620, ON); // Unlocked Deflect Type: Storm
     }
     
     // Passive: Rally
@@ -6546,6 +6551,21 @@ $Event(11000, Default, function() {
     
     // Whetblades
     InitializeEvent(0, 11017, 0);
+    
+    // Selected Deflection Type
+    InitializeEvent(0, 11020, 1047610600, 150900); // Storm
+    InitializeEvent(1, 11020, 1047610601, 150901); // Holy
+    InitializeEvent(2, 11020, 1047610602, 150902); // Moon
+    InitializeEvent(3, 11020, 1047610603, 150903); // Fire
+    InitializeEvent(4, 11020, 1047610604, 150904); // Thorn
+    
+    // Unlocked Deflection Level
+    InitializeEvent(5, 11020, 1047610610, 150950); // Standard
+    InitializeEvent(6, 11020, 1047610611, 150951); // Improved
+    InitializeEvent(7, 11020, 1047610612, 150952); // Perfected
+    
+    // Perfect Deflect Visual
+    InitializeEvent(8, 11020, 1047610630, 150970); // Perfected
 });
 
 //-------------------
@@ -6782,4 +6802,23 @@ $Event(11017, Default, function() {
         SetEventFlagID(65820, ON);
         SetEventFlagID(65830, ON);
     }
+});
+
+//-------------------
+// Deflection Variable Tracker
+//-------------------
+$Event(11020, Default, function(X0_4, X4_4) {
+    if(EventFlagState(X0_4, TargetEventFlagType.EventFlag, CHANGE))
+    {
+        if(EventFlag(X0_4))
+        {
+            SetSpEffect(10000, X4_4);
+        }
+        else
+        {
+            ClearSpEffect(10000, X4_4);
+        }
+    }
+    
+    RestartEvent();
 });

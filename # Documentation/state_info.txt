@@ -1,4 +1,2 @@
 ﻿290 Crucible Feather Talisman
 
-5000 Standard Deflect Bullet
-5001 Perfect Deflect Bullet

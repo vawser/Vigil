@@ -21,46 +21,37 @@ Adjust enemies in dungeons to add more variety
 #-----
 Gladiator's Gauntlet:
     Add in a 3rd swarm type.
-    Add in a boss rush type.
-        Disable tree for the boss rush types.
         
 #-----
-Deflect:
+Deflection
+    Add Master Kiro:
+        Toggle Perfect Deflect bullet type
+        Toggle Deflect window markers
+            
+    Add talisman - Shinobi Whetstone: expands deflect window
+    
+    Add item - Tome: Golden Burst
+    Add item - Tome: Moonlit Burst
+    Add item - Tome: Searing Burst
+    Add item - Tome: Vampiric Burst
+    
+Mysterious Shinobi
 
+1047610600 Deflect Type: Storm
+1047610601 Deflect Type: Holy
+1047610602 Deflect Type: Moon
+1047610603 Deflect Type: Fire
+1047610604 Deflect Type: Thorn
 
-        
-Act(2002, 150002) -- Hit during Guard
-        
-a00
-a02
-a03
-a10
-a12
-a13
-a14
-a15
-a16
+1047610610 Deflect Level: Standard
+1047610611 Deflect Level: Improved
+1047610612 Deflect Level: Perfected
 
-a000_019000
-a000_019001
-a000_019010
-a000_019020
-a000_019021
+3800 Tome: Holy Burst
+3801 Tome: Moonlit Burst
+3802 Tome: Searing Burst
+3803 Tome: Vampiric Burst
+3810 Tome: Deflection and You
+3820 Tome: Deflection Perfection
 
-a691
-a000_040000
-a000_040030
-a000_040040
-a000_040240
-a000_040340
-a000_040440
-a000_040540
-a000_040840
-a000_040940
-a000_044700
-a000_044730
-a000_044740
-a000_044800
-a000_044830
-a000_044840
-
+6150 Shinobi's Whetstone

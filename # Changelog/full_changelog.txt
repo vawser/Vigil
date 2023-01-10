@@ -75,13 +75,42 @@
 - Added the ability to deflect when blocking.
 
 - Standard Deflect:
-    - 5 frames during block start animation
+    - 90% of the guard raise up animation.
     - Grants 25% guard absorption whilst active
     
 - Perfect Deflect:
-    - 3 frames during block start animation
+    - 6 frames during guard start animation
+    - 9 frames during guard start animation with the Shinobi's Whetstone
     - Grants 100% guard absorption and stability whilst active
-    - If hit by an enemy with this active, you will automatically emit a Storm Burst, staggering the enemy if they are susceptible.
+    - If hit by an enemy with this active, you will automatically emit a deflect bullet, staggering the enemy if they are susceptible.
+        
+- Added the Mysterious Shinobi to Roundtable Hold.
+- You can change the bullet used by your Perfect Deflect at the Mysterious Shinobi.
+
+- Each Perfect Deflect type is unlocked via the following:
+    - Storm Burst: default.
+    - Holy Burst: turn in the Tome of Holy Burst at the Mysterious Shinobi. Found in Leyndell, Royal Capital.
+    - Moonlit Burst: turn in the Tome of Moonlit Burst at the Mysterious Shinobi. Found in the Academy of Raya Lucaria.
+    - Searing Burst: turn in the Tome of Searing Burst at the Mysterious Shinobi. Found in Volcano Manor.
+    - Vampiric Burst: turn in the Tome of Vampiric Burst at the Mysterious Shinobi. Found in the War-Dead Catacombs.
+        
+- Each Perfect Deflect type does the following:
+    - Storm Burst: 50/100/150 Physical Damage
+    - Holy Burst: 50/100/150 Holy Damage
+    - Moonlit Burst: 50/100/150 Magic Damage
+    - Searing Burst: 50/100/150 Fire Damage
+    - Vampiric Burst: 80/120/150 Hemorrhage + restores 20% HP
+    
+- All Perfect Deflects do the following:
+    - Apply 100/150/200 Stamina damage
+    - Apply 10/20/30 Poise damage
+        
+- By default Perfect Deflects are applied at Tier 1 (Standard).
+- You are able to improve the potency of your deflects by turning in the following items to the Mysterious Shinobi:
+    - Deflection and You: moves the potency to Tier 2 (Improved). Found in Siofra River.
+    - Perfection of Deflection: moves the potency to Tier 3 (Perfected). Found in the Lake of Rot.
+        
+- You can toggle "Shinobi Sight" with the Mysterious Shinobi, allowing you to visually see the Perfect Deflect window by the appearance of flames above the player.
         
 # Movement
 - The player moves 20% faster.
@@ -150,6 +179,7 @@
 
 # m60_42_36_00 - Church of Elleh
 - Added patrolling platoon: 1 Kaiden Sellsword and 4 Commoners.
+
 
 #-------------------------------------------------
 # Items

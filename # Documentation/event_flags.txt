@@ -57,7 +57,6 @@
 1047610371 Music: Loretta, Knight of the Haligtree  # 920200
 1047610372 Music: Radagon of the Golden Order       # 219000
  
-
 1047610390 Difficulty: Standard
 1047610391 Difficulty: Hard
 1047610392 Difficulty: Nightmare
@@ -87,6 +86,25 @@
 1047610523 Force Weather: Rainy, Heavy Fog
 1047610524 Force Weather: Snowy, Heavy Fog
 1047610525 Force Weather: Scattered Rain
+
+# Deflection
+1047610600 Selected Deflect Type: Storm
+1047610601 Selected Deflect Type: Holy
+1047610602 Selected Deflect Type: Moon
+1047610603 Selected Deflect Type: Fire
+1047610604 Selected Deflect Type: Thorn
+
+1047610610 Unlocked Deflect Level: Standard
+1047610611 Unlocked Deflect Level: Improved
+1047610612 Unlocked Deflect Level: Perfected
+
+1047610620 Unlocked Deflect Type: Storm
+1047610621 Unlocked Deflect Type: Holy
+1047610622 Unlocked Deflect Type: Moon
+1047610623 Unlocked Deflect Type: Fire
+1047610624 Unlocked Deflect Type: Thor
+
+1047610630 Display Perfect Deflect visual
 
 #------------------------------------
 104762_0000 Random
