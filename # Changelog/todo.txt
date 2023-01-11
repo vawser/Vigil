@@ -1,38 +1,14 @@
 ﻿#-------------------------------------------------
 # TODO
 #-------------------------------------------------
-Check Rennala's stake of marika:
-    use new character
-    
-#-----
+# Misc
+Add more spirit summons based on bosses/NPC characters
+Increase enemy density in open world
+Adjust enemies in dungeons to add more variety
+
+# World
 Add basic dummy setup in Roundtable Hold
     Change door to be openable
     Add single dummy, with original system tweaks
     
-#-----
-Add more spirit summons based on bosses/NPC characters
 
-#-----
-Increase enemy density in open world
-    
-#-----
-Adjust enemies in dungeons to add more variety
-
-#-----
-Gladiator's Gauntlet:
-    Misbegotten Crusade
-    
-Misbegotten [Arena] 
-34500011 / 34500001
-       
-Misbegotten - Shortbow [Arena] 
-34501011 / 34501001
-
-Scaly Misbegotten [Arena]
-34510014 / 34510001
-
-Winged Misbegotten [Arena]
-34600011 / 34600001
-
-Misbegotten Crusader [Arena]
-34601910 / 34601001

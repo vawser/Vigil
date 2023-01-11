@@ -624,6 +624,11 @@ def t000001600_x101():
         # Revenge of the Gladiators (selected)
         AddTalkListDataIf(GetEventFlag(1047610312) == 1, 12, 80105121, -1)
         
+        # Misbegotten Crucible
+        AddTalkListDataIf(GetEventFlag(1047610313) == 0, 4, 80105130, -1)
+        # Misbegotten Crucible (selected)
+        AddTalkListDataIf(GetEventFlag(1047610313) == 1, 13, 80105131, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -707,6 +712,34 @@ def t000001600_x101():
             # Yes
             if GetTalkListEntryResult() == 1:
                 assert t000001600_x111(1047610312)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        elif GetTalkListEntryResult() == 4:
+            assert t000001600_x110(80105132)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                assert t000001600_x111(1047610313)
                 return 0
             # Cancel
             elif GetTalkListEntryResult() == 2:
@@ -912,8 +945,9 @@ def t000001600_x110(action1=_):
 # Set Type
 def t000001600_x111(flag=_):
     SetEventFlag(1047610310, 0)
-    SetEventFlag(1047610310, 0)
-    SetEventFlag(1047610310, 0)
+    SetEventFlag(1047610311, 0)
+    SetEventFlag(1047610312, 0)
+    SetEventFlag(1047610313, 0)
     
     SetEventFlag(flag, 1)
     return 0
