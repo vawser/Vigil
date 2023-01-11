@@ -23,6 +23,7 @@
 # Custom Class
 1047610200 Given Tokens
 1047610210 Itemlot flag
+1047610220 Free Souls flag
 
 # Arena Challenge
 1047610300 Warp to Arena

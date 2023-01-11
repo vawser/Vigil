@@ -559,7 +559,13 @@ def t000001400_x38():
         
         # Ammunition
         AddTalkListData(5, 99999004, -1)
-       
+        
+        # Runes
+        AddTalkListDataIf(GetEventFlag(1047610220) == 0, 6, 99999005, -1)
+        
+        # Level Up
+        AddTalkListData(7, 15000540, -1)
+        
         # Quit
         AddTalkListData(99, 80100015, -1)
 
@@ -592,7 +598,24 @@ def t000001400_x38():
             """State 8"""
             OpenDragonCommunionShop(9140000, 9149999)
             assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Runes
+        elif GetTalkListEntryResult() == 6:
+            SetEventFlag(1047610220, 1)
+            GiveSpEffectToPlayer(7000040)
+            PlayerEquipmentQuantityChange(3, 10060, -1)
+            assert t000001400_x110(99999010)
+        # Levelup
+        elif GetTalkListEntryResult() == 7:
+            OpenSoul()
+            assert not (CheckSpecificPersonMenuIsOpen(10, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
 
+# Description Prompt
+def t000001400_x110(action1=_):
+    """State 0,1"""
+    OpenGenericDialog(8, action1, 1, 0, 1)
+    assert not CheckSpecificPersonGenericDialogIsOpen(0)
+    """State 2"""
+    return 0
