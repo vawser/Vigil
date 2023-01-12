@@ -12,3 +12,6 @@ Add basic dummy setup in Roundtable Hold
     Add single dummy, with original system tweaks
     
 
+# HKS
+Known bugs:
+    Bow attack requests trigger the weapon swap animation
