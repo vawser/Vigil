@@ -545,7 +545,7 @@ def t000004000_x100():
         c1_110()
         
         # Purchase Items
-        # AddTalkListData(1, 80106001, -1)
+        AddTalkListData(1, 80106001, -1)
         
         # Attune Deflection
         AddTalkListData(2, 80106000, -1)

@@ -15,3 +15,5 @@ Add basic dummy setup in Roundtable Hold
 # HKS
 Known bugs:
     Bow attack requests trigger the weapon swap animation
+    
+    act(AddSpEffect, 150971)

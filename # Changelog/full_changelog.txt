@@ -114,6 +114,10 @@
         
 - You can toggle "Shinobi Sight" with the Mysterious Shinobi, allowing you to visually see the Perfect Deflect window by the appearance of flames above the player.
         
+# Multi-Jump
+- Added the ability to jump in midair up to five times.
+- Available whilst the Techniques of the Windwalker talisman is equipped.
+        
 # Movement
 - The player moves 20% faster.
 - The player rolls 25% further.
@@ -411,6 +415,16 @@
     - +0 Effect: Reduces weapon stamina consumption by 25%.
     - Purchased from Duelist Atticus for 30 Gladiatorial Engravings.
         
+- Shinobi's Whetstone
+    - Weight: 3.0
+    - +0 Effect: Extends the perfect deflect window to 9 frames
+    - Purchased from the Mysterious Shinobi.
+        
+- Techniques of the Windwalker
+    - Weight: 1.0
+    - +0 Effect: Grants the ability to jump in midair up to five times.
+    - Purchased from the Mysterious Shinobi.
+    
 # Talisman Effects
 - Crimson Amber Medallion
     - +0 Effect: Boosts maximum HP by 10%.
