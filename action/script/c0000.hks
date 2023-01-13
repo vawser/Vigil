@@ -9,8 +9,220 @@ g_JumpMovementMultiplier = 1.25
 ------------------------------------------
 -- Vigil: Functions
 ------------------------------------------
-function TestFunc()
+function TrackMultiJump()
+    ---------------------------
+    -- Vigil: Multi-Jump
+    ---------------------------
+    -- Wearing "Techniques of the Windwalker"
+    if env(GetSpecialEffectID, 150999) == TRUE then
     
+        -- Jump action has not occured within the last 0.5 seconds
+        -- And stamina is above 0
+        if env(GetSpecialEffectID, 150982) == FALSE and env(GetStamina) > 0 then
+        
+            -- Hold Jump
+            if env(ActionDuration, ACTION_ARM_JUMP) > 20 then
+                act(AddSpEffect, 150982) -- Jump action cooldown
+                
+                local mayJump = 0
+                local jumpWindow = 0
+                    
+                -- Initial Jump Window: allow jump only in midair portion of anim for initial jump
+                if env(GetSpecialEffectID, 150980) == TRUE then
+                    jumpWindow = 1
+                end
+                
+                -- Multi-Jump Window: allow jump during start period of anim once midair
+                if env(GetSpecialEffectID, 150985) == TRUE then
+                    if env(GetSpecialEffectID, 150990) == TRUE or env(GetSpecialEffectID, 150991) == TRUE or env(GetSpecialEffectID, 150992) == TRUE then
+                        jumpWindow = 1
+                    end
+                end
+                
+                -- Can Jump
+                if jumpWindow == 1 then
+                    -- FP drain
+                    if env(GetSpecialEffectID, 150990) == FALSE then
+                        act(AddSpEffect, 150990) -- Timer
+                        act(AddSpEffect, 150995) -- FP Drain
+                        
+                        if env(GetMP) > 10 then
+                            mayJump = 1
+                        end
+                    elseif env(GetSpecialEffectID, 150991) == FALSE then
+                        act(AddSpEffect, 150991) -- Timer
+                        act(AddSpEffect, 150996) -- FP Drain
+                        
+                        if env(GetMP) > 20 then
+                            mayJump = 1
+                        end
+                    elseif env(GetSpecialEffectID, 150992) == FALSE then
+                        act(AddSpEffect, 150992) -- Timer
+                        act(AddSpEffect, 150997) -- FP Drain
+                        
+                        if env(GetMP) > 30 then
+                            mayJump = 1
+                        end
+                    else
+                        act(AddSpEffect, 150998) -- FP Drain
+                        
+                        if env(GetMP) > 40 then
+                            mayJump = 1
+                        end
+                    end
+                    
+                    if mayJump == 1 then
+                        act(AddSpEffect, 150981) -- Visual
+
+                        ExecMultiJump()
+                    end
+                end
+            end
+        end
+    end
+end
+
+function ExecMultiJump()
+    AdjustStamina(STAMINA_REDUCE_JUMP)
+    SetWeightIndex()
+    
+    -- Jump: Overweight
+    if GetVariable("EvasionWeightIndex") == EVASION_WEIGHT_INDEX_OVERWEIGHT and env(Unknown700) == FALSE then
+        local jumpangle = env(GetJumpAngle) * 0.009999999776482582
+        
+        if jumpangle > -45 and jumpangle < 45 then
+            SetVariable("JumpOverweightIndex", 0)
+        elseif jumpangle >= 0 and jumpangle <= 100 then
+            SetVariable("JumpOverweightIndex", 3)
+        elseif jumpangle >= -100 and jumpangle <= 0 then
+            SetVariable("JumpOverweightIndex", 2)
+        else
+            SetVariable("JumpOverweightIndex", 1)
+        end
+        
+        act(Unknown2025,env(Unknown404))
+        SetAIActionState()
+        ExecEventAllBody("W_Jump_Overweight")
+        
+        return TRUE
+    end
+    
+    local style = c_Style
+    
+    if style == HAND_RIGHT then
+        SetVariable("JumpAttack_HandCondition", 0)
+    elseif style == HAND_RIGHT_BOTH then
+        SetVariable("JumpAttack_HandCondition", 1)
+    elseif style == HAND_LEFT_BOTH then
+        if TRUE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_CROSSBOW) then
+            SetVariable("JumpAttack_HandCondition", 4)
+        else
+            SetVariable("JumpAttack_HandCondition", 1)
+        end
+    end
+    
+    SetVariable("JumpAttackForm", 0)
+    SetVariable("JumpUseMotion_Bool", false)
+    SetVariable("JumpMotion_Override", 0.009999999776482582)
+    SetVariable("JumpAttack_Land", 0)
+    SetVariable("SwingPose", 0)
+    
+    if GetVariable("IsEnableToggleDashTest") == 2 then
+        SetVariable("ToggleDash", 0)
+    end
+    
+    local JumpMoveLevel = 0
+    
+    if GetVariable("LocomotionState") == 1 and GetVariable("MoveSpeedIndex") == 2 then
+        JumpMoveLevel = 2
+    elseif GetVariable("MoveSpeedLevel") >= 0.6000000238418579 then
+        JumpMoveLevel = 1
+    end
+    
+    -- Ironjar Aromatic
+    if env(GetSpecialEffectID, 503520) == TRUE then
+        JumpMoveLevel = 0
+    -- Unknown
+    elseif env(GetSpecialEffectID, 5520) == TRUE then
+        JumpMoveLevel = 0
+    -- Slug: Slow
+    elseif env(GetSpecialEffectID, 425) == TRUE then
+        JumpMoveLevel = 0
+    -- Sanguine Noble: Slow
+    elseif env(GetSpecialEffectID, 4101) == TRUE then
+        JumpMoveLevel = 0
+    -- Sanguine Noble: Slow
+    elseif env(GetSpecialEffectID, 4100) == TRUE then
+        JumpMoveLevel = 0
+    end
+    
+    if JumpMoveLevel == 2 then
+        if env(Unknown700) == TRUE then
+            act(Unknown4001)
+        end
+        
+        act(Unknown2025,env(Unknown404))
+        SetAIActionState()
+        ExecEvent("W_Jump_D")
+        
+        return TRUE
+    elseif JumpMoveLevel == 1 then
+        if GetVariable("IsLockon") == FALSE and env(IsPrecisionShoot) == FALSE and env(IsCOMPlayer) == FALSE then
+            SetVariable("JumpDirection", 0)
+            SetVariable("JumpAngle", 0)
+        else
+            local jumpangle = env(GetJumpAngle) * 0.009999999776482582
+            local adjusted_jump_angle = nil
+            
+            if jumpangle > -45 and jumpangle < 45 then
+                adjusted_jump_angle = jumpangle
+                SetVariable("JumpDirection", 0)
+                SetVariable("JumpAngle", 0)
+            elseif jumpangle >= 0 and jumpangle <= 100 then
+                adjusted_jump_angle = jumpangle - 90
+                SetVariable("JumpDirection", 3)
+                SetVariable("JumpAngle", 90)
+            elseif jumpangle >= -100 and jumpangle <= 0 then
+                adjusted_jump_angle = jumpangle + 90
+                SetVariable("JumpDirection", 2)
+                SetVariable("JumpAngle", -90)
+            else
+                adjusted_jump_angle = jumpangle - 180
+                SetVariable("JumpDirection", 1)
+                SetVariable("JumpAngle", 180)
+            end
+            
+            if GetVariable("IsLockon") == true then
+                act(TurnToLockonTargetImmediately, adjusted_jump_angle)
+            else
+                act(Unknown2029, adjusted_jump_angle)
+            end
+        end
+        
+        SetVariable("IsEnableDirectionJumpTAE", true)
+        
+        if env(Unknown700) == TRUE then
+            act(Unknown4001)
+        end
+        
+        act(Unknown2025,env(Unknown404))
+        SetAIActionState()
+        ExecEvent("W_Jump_F")
+        
+        return TRUE
+    end
+    
+    SetVariable("JumpReachSelector", 0)
+    
+    if env(Unknown700) == TRUE then
+        act(Unknown4001)
+    end
+    
+    act(Unknown2025,env(Unknown404))
+    SetAIActionState()
+    ExecEvent("W_Jump_N")
+    
+    return TRUE
 end
 
 -- Each Guard Start animation in the TAE has a Standard and Perfect Deflect window applied (via SpEffect).
@@ -476,7 +688,6 @@ function IsEnableGuard()
 end
 
 function ExecGuard(event, blend_type)
-
     if env(ActionDuration, ACTION_ARM_ACTION) > 0 then
         return FALSE
     elseif c_IsStealth == TRUE then
@@ -3402,10 +3613,10 @@ function GetHandChangeType(hand)
     end
 end
 
-function ExecJump() 
-    if env(ActionRequest, ACTION_ARM_CHANGE_STYLE) == FALSE and env(Unknown4000) == FALSE then
+function ExecJump()
+    if env(ActionRequest, ACTION_ARM_JUMP) == FALSE then
         return FALSE
-    elseif env(GetStamina) <= 0 and env(Unknown4000) == FALSE then
+    elseif env(GetStamina) <= 0 and env(Unknown700) == FALSE then
         ResetRequest()
         return FALSE
     end
@@ -3413,7 +3624,8 @@ function ExecJump()
     AdjustStamina(STAMINA_REDUCE_JUMP)
     SetWeightIndex()
     
-    if GetVariable("EvasionWeightIndex") == EVASION_WEIGHT_INDEX_OVERWEIGHT and env(Unknown4000) == FALSE then
+    -- Jump: Overweight
+    if GetVariable("EvasionWeightIndex") == EVASION_WEIGHT_INDEX_OVERWEIGHT and env(Unknown700) == FALSE then
         local jumpangle = env(GetJumpAngle) * 0.009999999776482582
         
         if jumpangle > -45 and jumpangle < 45 then
@@ -3483,7 +3695,7 @@ function ExecJump()
     end
     
     if JumpMoveLevel == 2 then
-        if env(Unknown4000) == TRUE then
+        if env(Unknown700) == TRUE then
             act(Unknown4001)
         end
         
@@ -3527,7 +3739,7 @@ function ExecJump()
         
         SetVariable("IsEnableDirectionJumpTAE", true)
         
-        if env(Unknown4000) == TRUE then
+        if env(Unknown700) == TRUE then
             act(Unknown4001)
         end
         
@@ -3540,7 +3752,7 @@ function ExecJump()
     
     SetVariable("JumpReachSelector", 0)
     
-    if env(Unknown4000) == TRUE then
+    if env(Unknown700) == TRUE then
         act(Unknown4001)
     end
     
@@ -4685,6 +4897,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
     local height = env(GetFallHeight) / 100
     local damage_type = env(GetReceivedDamageType)
     local style = c_Style
+    
     if damage_type == DAMAGE_TYPE_DEATH_FALLING then
         if fall_style == FALL_FACEUP then
             ExecEventAllBody("W_FallDeathFaceUp")
@@ -4707,9 +4920,12 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
             return TRUE
         end
     end
+    
     act(SetIsEquipmentChangeableFromMenu)
+    
     if env(IsLanding) == TRUE then
         IS_ATTACKED_JUMPMAGIC = FALSE
+        
         if env(GetStateChangeType, 266) == TRUE then
             Replanning()
             SetVariable("LandIndex", LAND_MIDDLE)
@@ -4722,13 +4938,17 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                 else
                     SetVariable("IndexDeath", DEATH_TYPE_LAND_LOW)
                 end
+                
                 ExecEventAllBody("W_DeathStart")
+                
                 return TRUE
             elseif height > 1.2999999523162842 then
                 local landIndex = GetLandIndex(height, is_jump)
+                
                 SetVariable("LandIndex", landIndex)
                 Replanning()
                 local JumpMoveLevel = 0
+                
                 if landIndex ~= LAND_HEAVY then
                     if GetVariable("MoveSpeedLevel") > 1.100000023841858 then
                         JumpMoveLevel = 2
@@ -4736,6 +4956,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                         JumpMoveLevel = 1
                     end
                 end
+                
                 if env(GetSpecialEffectID, 503520) == TRUE then
                     JumpMoveLevel = 0
                 elseif env(GetSpecialEffectID, 5520) == TRUE then
@@ -4747,6 +4968,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                 elseif env(GetSpecialEffectID, 4100) == TRUE then
                     JumpMoveLevel = 0
                 end
+                
                 if JumpMoveLevel == 2 then
                     ExecEventNoReset("W_Jump_Land_To_Dash")
                     return TRUE
@@ -4755,6 +4977,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                     ExecEventNoReset("W_Jump_Land_To_Run")
                     return TRUE
                 end
+                
                 ExecEventAllBody("W_Land")
             else
                 act(9999)
@@ -4773,6 +4996,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                 Replanning()
                 ExecEventAllBody("W_LandFaceUp")
             end
+            
             return TRUE
         elseif fall_style == FALL_FACEDOWN then
             if IsLandDead(height) == TRUE then
@@ -4782,6 +5006,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                 Replanning()
                 ExecEventAllBody("W_LandFaceDown")
             end
+            
             return TRUE
         elseif fall_style == FALL_LADDER then
             if IsLandDead(height) == TRUE then
@@ -4791,14 +5016,19 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                 Replanning()
                 ExecEventAllBody("W_LadderFallLanding")
             end
+            
             return TRUE
         end
     end
+    
     local arrowHand = HAND_RIGHT
+    
     if style == HAND_LEFT_BOTH then
         arrowHand = HAND_LEFT
     end
+    
     local is_arrow = GetEquipType(arrowHand, WEAPON_CATEGORY_SMALL_ARROW, WEAPON_CATEGORY_ARROW, WEAPON_CATEGORY_LARGE_ARROW, WEAPON_CATEGORY_CROSSBOW, WEAPON_CATEGORY_BALLISTA)
+    
     if is_arrow == TRUE then
         if env(ActionRequest, 0) == TRUE then
             act(ChooseBowAndArrowSlot, 0)
@@ -4808,6 +5038,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
             g_ArrowSlot = 1
         end
     end
+    
     if fall_style == FALL_DEFAULT and height >= 0.20000000298023224 then
         if TRUE == ExecFallMagic() then
             return TRUE
@@ -4815,6 +5046,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
             return TRUE
         end
     end
+    
     return FALSE
 end
 
@@ -4822,15 +5054,19 @@ function ExecFallAttack()
     if env(ActionRequest, ACTION_ARM_R1) == TRUE or env(ActionRequest, ACTION_ARM_R2) == TRUE or env(ActionRequest, ACTION_ARM_L1) == TRUE and IsEnableDualWielding() == HAND_RIGHT then
         local style = c_Style
         local hand = HAND_RIGHT
+        
         if style == HAND_LEFT_BOTH then
             hand = HAND_LEFT
         end
+        
         local is_arrow = GetEquipType(hand, WEAPON_CATEGORY_SMALL_ARROW, WEAPON_CATEGORY_ARROW, WEAPON_CATEGORY_LARGE_ARROW, WEAPON_CATEGORY_CROSSBOW, WEAPON_CATEGORY_BALLISTA)
         local is_staff = GetEquipType(hand, WEAPON_CATEGORY_STAFF)
+        
         if env(ActionRequest, ACTION_ARM_R1) == TRUE or is_arrow == TRUE then
             if is_staff == TRUE then
                 return FALSE
             end
+            
             SetVariable("JumpAttackForm", 1)
             SetVariable("JumpAttackFormRequest", 0)
         elseif env(ActionRequest, ACTION_ARM_R2) == TRUE then
@@ -4840,9 +5076,11 @@ function ExecFallAttack()
             if IsEnableDualWielding() ~= HAND_RIGHT then
                 return FALSE
             end
+            
             SetVariable("JumpAttackForm", 3)
             SetVariable("JumpAttackFormRequest", 2)
         end
+        
         if is_arrow == TRUE and (style == HAND_LEFT_BOTH or style == HAND_RIGHT_BOTH) and env(IsOutOfAmmo, hand) == TRUE then
             return FALSE
         elseif GetEquipType(hand, WEAPON_CATEGORY_CROSSBOW) == TRUE and env(GetBoltLoadingState, hand) == FALSE then
@@ -4858,8 +5096,10 @@ function ExecFallAttack()
                 SetVariable("JumpAttack_HandCondition", 1)
             end
         end
+        
         SetVariable("JumpAttack_Land", 0)
         ExecEventAllBody("W_JumpAttack_Start_Falling")
+        
         return TRUE
     else
         return FALSE
@@ -4870,7 +5110,9 @@ function ExecGuardOnCancelTiming(guardcondition, blend_type)
     if env(IsGuardFromAtkCancel) == FALSE then
         return FALSE
     end
+    
     act(DebugLogOutput, "ExecGuardOnCancelTiming " .. guardcondition)
+    
     if guardcondition == TO_GUARDON then
         if ExecGuard(Event_GuardOn, blend_type) == TRUE then
             return TRUE
@@ -4878,6 +5120,7 @@ function ExecGuardOnCancelTiming(guardcondition, blend_type)
     elseif ExecGuard(Event_GuardStart, blend_type) == TRUE then
         return TRUE
     end
+    
     return FALSE
 end
 
@@ -14094,7 +14337,7 @@ function Update()
     GetConstVariable()
     SetStyleSpecialEffect()
     TrackDeflection()
-    TestFunc()
+    TrackMultiJump()
     
     act(SwitchMotion, FALSE)
     if env(ActionDuration, ACTION_ARM_ACTION) > 0 then
@@ -17952,6 +18195,12 @@ function JumpAttackBoth_Activate()
     SetGuardHand(hand)
 end
 
+-- Called from:
+-- JumpAttack_Start_Falling_onUpdate
+-- JumpAttack_Start_Falling_F_onUpdate
+-- JumpAttack_Start_Falling_D_onUpdate
+-- JumpCommonFunction
+-- Jump_Loop_onUpdate
 function Act_Jump() 
     SetEnableAimMode()
     
@@ -18203,56 +18452,10 @@ function JumpCommonFunction(jump_type)
         equip_arm_no = 0
     end
     
-    ---------------------------
-    -- Vigil: Multi-Jump
-    ---------------------------
-    -- Wearing "Techniques of the Windwalker"
-    if env(GetSpecialEffectID, 150999) == TRUE then
-        -- Jump action has not occured within the last 0.5 seconds
-        -- And stamina is above 0
-        if env(GetSpecialEffectID, 150982) == FALSE and env(GetStamina) > 0 then
-            -- Override L1 during jump (may need to adjust other functions to make this tidy)
-            if env(ActionRequest, ACTION_ARM_L1) == TRUE then
-                local mayJump = 0
-                act(AddSpEffect, 150982) -- Jump action cooldown
-                
-                -- Multi-Jump window within the jump anims
-                if env(GetSpecialEffectID, 150980) == TRUE then
-                    if env(GetSpecialEffectID, 150990) == FALSE then
-                        act(AddSpEffect, 150990)
-                        mayJump = 1
-                    elseif env(GetSpecialEffectID, 150991) == FALSE then
-                        act(AddSpEffect, 150991)
-                        mayJump = 1
-                    elseif env(GetSpecialEffectID, 150992) == FALSE then
-                        act(AddSpEffect, 150992)
-                        mayJump = 1
-                    elseif env(GetSpecialEffectID, 150993) == FALSE then
-                        act(AddSpEffect, 150993)
-                        mayJump = 1
-                    elseif env(GetSpecialEffectID, 150994) == FALSE then
-                        act(AddSpEffect, 150994)
-                        mayJump = 1
-                    else
-                        mayJump = 0
-                    end
-                    
-                    if mayJump == 1 then
-                        -- Jump visual bullet
-                        act(AddSpEffect, 150981) 
-
-                        -- Vigil: Jump Forward
-                        act(Unknown2025,env(Unknown404))
-                        SetAIActionState()
-                        ExecEvent("W_Jump_F")
-                    end
-                end
-            end
-        end
-    end
-    
+    -- Jump
     if Act_Jump() == TRUE then
         return TRUE
+    -- Jump Fall
     elseif env(GetSpecialEffectID, 145) == FALSE and GetVariable("JumpAttack_Land") == 0 then
         hkbFireEvent("W_Jump_Loop")
         return TRUE
@@ -18265,6 +18468,7 @@ function JumpCommonFunction(jump_type)
     end
     
     local is_arrow = GetEquipType(arrowHand, WEAPON_CATEGORY_SMALL_ARROW, WEAPON_CATEGORY_ARROW, WEAPON_CATEGORY_LARGE_ARROW, WEAPON_CATEGORY_CROSSBOW, WEAPON_CATEGORY_BALLISTA)
+    
     if is_arrow == TRUE then
         if env(ActionRequest, 0) == TRUE then
             act(ChooseBowAndArrowSlot, 0)
@@ -18277,12 +18481,17 @@ function JumpCommonFunction(jump_type)
     
     local is_staff = GetEquipType(equip_arm_no, WEAPON_CATEGORY_STAFF)
     
+    -- Magic
     if ExecJumpMagic(jump_type) == TRUE then
+    -- Catalyst: R1
     elseif is_staff == TRUE and env(ActionRequest, 0) == TRUE then
+    -- Bow
     elseif is_arrow == TRUE and (c_Style == HAND_RIGHT_BOTH or c_Style == HAND_LEFT_BOTH) and env(IsOutOfAmmo, arrowHand) == TRUE then
+    -- Crossbow
     elseif GetEquipType(arrowHand, WEAPON_CATEGORY_CROSSBOW) == TRUE and env(GetBoltLoadingState, arrowHand) == FALSE then
-    -- 140 "[HKS] Jump Attack Window"
+    -- Jump Attack Window
     elseif TRUE == env(GetSpecialEffectID, 140) and GetVariable("JumpAttackForm") == 0 then
+        -- R1 or Bow R2
         if TRUE == env(ActionRequest, ACTION_ARM_R1) or is_arrow == TRUE and TRUE == env(ActionRequest, ACTION_ARM_R2) then
             ExecEventSync("Event_JumpNormalAttack_Add")
             
@@ -18294,6 +18503,7 @@ function JumpCommonFunction(jump_type)
             SetAIActionState()
             
             return TRUE
+        -- R2
         elseif TRUE == env(ActionRequest, ACTION_ARM_R2) then
             ExecEventSync("Event_JumpNormalAttack_Add")
             
@@ -18305,6 +18515,7 @@ function JumpCommonFunction(jump_type)
             SetAIActionState()
             
             return TRUE
+        -- L1
         elseif TRUE == env(ActionRequest, ACTION_ARM_L1) and HAND_RIGHT == IsEnableDualWielding() then
             ExecEventSync("Event_JumpNormalAttack_Add")
             
@@ -18316,6 +18527,7 @@ function JumpCommonFunction(jump_type)
             SetAIActionState()
             
             return TRUE
+        -- Is Landing from Jump, Not in Jump Attack Window
         elseif TRUE == env(GetSpecialEffectID, 98) and TRUE == env(IsTruelyLanding) and env(GetSpecialEffectID, 140) == FALSE then
             if jump_type == 0 then
                 SetVariable("JumpAttack_Land", 1)
@@ -18329,6 +18541,7 @@ function JumpCommonFunction(jump_type)
             
             return TRUE
         end
+    -- Not in Jump Attack Window
     elseif env(GetSpecialEffectID, 140) == FALSE and GetVariable("JumpAttack_Land") == 0 and GetVariable("JumpAttackForm") == 0 then
         SetVariable("JumpAttack_Land", 0)
         if TRUE == env(ActionRequest, ACTION_ARM_R1) or is_arrow == TRUE and TRUE == env(ActionRequest, ACTION_ARM_R2) then
@@ -18376,6 +18589,7 @@ function JumpCommonFunction(jump_type)
         end
     end
     
+    -- Landing
     if env(GetSpecialEffectID, 98) == TRUE and env(IsTruelyLanding) == TRUE and env(GetSpecialEffectID, 140) == FALSE and env(Unknown701) == FALSE then
         local landIndex = GetLandIndex(height, FALSE)
         SetVariable("LandIndex", landIndex)
@@ -18430,6 +18644,7 @@ function JumpCommonFunction(jump_type)
         elseif jump_type >= 1 then
             ExecEventAllBody("W_Jump_Attack_Land_F")
         end
+        
         return TRUE
     -- 146 "[HKS] Swing Window"
     elseif TRUE == env(GetSpecialEffectID, 146) and GetVariable("JumpAttackForm") ~= 0 then
@@ -19635,6 +19850,9 @@ g_EnableMimicry = 0
 IS_ATTACKED_JUMPMAGIC = FALSE
 lastUsedMagicAnim = -1
 
+-- Added
+ACTION_ARM_JUMP = ACTION_ARM_CHANGE_STYLE
+
 ------------------------
 -- Conditions 
 -- env( <condition>, <args> )
@@ -19865,7 +20083,7 @@ GetMountSpecialEffectID = 549
 Unknown552 = 552
 Unknown555 = 555
 
-Unknown4000 = 700
+Unknown700 = 700
 Unknown701 = 701
 
 GetHP = 1000

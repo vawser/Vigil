@@ -72,5 +72,3 @@ Add basic dummy setup in Roundtable Hold
     Change door to be openable
     Add single dummy, with original system tweaks
     
-# Reinforcement Material Breakdown
-- Add crafting recipes to break down reinforcement material
