@@ -6519,9 +6519,6 @@ $Event(11000, Default, function() {
     // Passive: Rally
     SetSpEffect(10000, 7000000);
     
-    // Passive: FP Regeneration
-    InitializeEvent(0, 11010, 0);
-    
     // Toggle: Hidden Helm
     InitializeEvent(0, 11011, 1047610100, 7000030);
     
@@ -6566,17 +6563,6 @@ $Event(11000, Default, function() {
     
     // Perfect Deflect Visual
     InitializeEvent(8, 11020, 1047610630, 150970); // Perfected
-});
-
-//-------------------
-// FP
-//-------------------
-$Event(11010, Default, function() {
-    SetSpEffect(10000, 7000001);
-    
-    WaitFixedTimeSeconds(0.9);
-    
-    RestartEvent();
 });
 
 //-------------------

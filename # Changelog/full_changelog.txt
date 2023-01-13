@@ -5,10 +5,16 @@
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
-- Made the Multi-Jump easier to execute by expanding the window in which you can press L1 to jump whilst in midair.
-- Multi-Jump can now works simply by holding the jump button, instead of requiring L1.
+- Made the Multi-Jump easier to execute by expanding the window in which you can jump whilst in midair.
+- Multi-Jump now works simply by holding the jump button, instead of requiring L1.
 - Multi-Jump no longer has a jump limit, but drains FP with each jump instead. Lacking FP will cause you to fall.
 - Multi-Jump now works with all weapons.
+
+- FP now regenerates in a stepped fashion:
+    - Below 100 FP: 3 per second
+    - Between 100 and 250: 2 per second
+    - Above 250: 1 per second.
+- Removed the +1% FP aspect of the regen.
 
 #-------------------------------------------------
 # Bosses
@@ -25,7 +31,7 @@
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
-- Added the ability to break down Pure, Refined and Rough Erdstone/Somberstone into the 3 of the lower tier material.
+- Added the ability to break down Pure, Refined and Rough Erdstone/Somberstone into 3 of the lower tier material.
 
 #-------------------------------------------------
 # Armor
@@ -50,7 +56,6 @@
 #-------------------------------------------------
 # Talismans
 #-------------------------------------------------
-
 
 #-------------------------------------------------
 # Misc

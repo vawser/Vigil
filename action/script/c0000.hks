@@ -10,9 +10,6 @@ g_JumpMovementMultiplier = 1.25
 -- Vigil: Functions
 ------------------------------------------
 function TrackMultiJump()
-    ---------------------------
-    -- Vigil: Multi-Jump
-    ---------------------------
     -- Wearing "Techniques of the Windwalker"
     if env(GetSpecialEffectID, 150999) == TRUE then
     
@@ -279,6 +276,20 @@ function FireBulletForDeflect(deflect_type, bullet_effect)
         -- Standard
         elseif env(GetSpecialEffectID, 150950) == TRUE then
             act(AddSpEffect, bullet_effect) 
+        end
+    end
+end
+
+function RegenerateFP()
+    if env(GetSpecialEffectID, 151000) == FALSE then    
+        act(AddSpEffect, 151000) 
+        
+        if env(GetMP) < 100 then
+            act(AddSpEffect, 151003) 
+        elseif env(GetMP) >= 100 and env(GetMP) < 250 then
+            act(AddSpEffect, 151002) 
+        elseif env(GetMP) >= 250 then
+            act(AddSpEffect, 151001) 
         end
     end
 end
@@ -1745,7 +1756,7 @@ function ExecAttack(r1, r2, l1, l2, b1, b2, is_guard, blend_type, artsr1, artsr2
     g_ComboReset = FALSE
     
     if c_Style == HAND_LEFT_BOTH then
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
     
     act(SetDamageMotionBlendRatio, 0)
@@ -2980,7 +2991,7 @@ function ExecMagic(quick_type, blend_type, is_ride)
     end
     
     if magic_index == MAGIC_REQUEST_WHIP or magic_index == MAGIC_REQUEST_SLASH or magic_index == MAGIC_REQUEST_QUICKSLASH or magic_index == MAGIC_REQUEST_FLAME_GRAB or magic_index == MAGIC_REQUEST_CRUSH or magic_index == MAGIC_REQUEST_CHOP or magic_index == MAGIC_REQUEST_SCYTHE then
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
     
     if ExecComboMagic(magic_hand, blend_type) == TRUE then
@@ -4476,8 +4487,11 @@ function ExecDeath()
         if env(GetSpecialEffectID, 560) == TRUE then
             return FALSE
         end
+        
         local damage_angle = env(GetReceivedDamageDirection)
+        
         SetVariable("DamageDirection", damage_angle)
+        
         if env(GetKnockbackDistance) < 0 then
             if damage_angle == DAMAGE_DIR_LEFT then
                 damage_angle = DAMAGE_DIR_RIGHT
@@ -4489,8 +4503,10 @@ function ExecDeath()
                 damage_angle = DAMAGE_DIR_FRONT
             end
         end
+        
         local damage_level = env(GetDamageLevel)
-        if env(Unknown409, 3) == TRUE then
+        
+        if env(GetDamageSpecialAttribute, 3) == TRUE then
             SetVariable("IndexDeath", DEATH_TYPE_STONE)
         elseif env(GetSpecialAttribute) == 25 then
             act(DebugLogOutput, "DEATY_TYPE_MAD")
@@ -4511,29 +4527,36 @@ function ExecDeath()
             local damageState = 0
             local physicalType = env(GetPhysicalAttribute)
             local elementType = env(GetSpecialAttribute)
-            local f112_local0 = math.random(0, 100)
+            local random_roll = math.random(0, 100)
+            
             if elementType == DAMAGE_ELEMENT_FIRE then
                 damageState = 4
-            elseif physicalType == DAMAGE_PHYSICAL_SLASH and f112_local0 < 70 then
+            elseif physicalType == DAMAGE_PHYSICAL_SLASH and random_roll < 70 then
                 damageState = 1
-            elseif physicalType == DAMAGE_PHYSICAL_THRUST and f112_local0 < 70 then
+            elseif physicalType == DAMAGE_PHYSICAL_THRUST and random_roll < 70 then
                 damageState = 2
-            elseif physicalType == DAMAGE_PHYSICAL_BLUNT and f112_local0 < 70 then
+            elseif physicalType == DAMAGE_PHYSICAL_BLUNT and random_roll < 70 then
                 damageState = 3
             end
+            
             SetVariable("DamageState", damageState)
-            act(DebugLogOutput, "DeathStart DamageState=" .. damageState .. " rand=" .. f112_local0)
-            local isMad = env(Unknown409, 6)
+            
+            act(DebugLogOutput, "DeathStart DamageState=" .. damageState .. " rand=" .. random_roll)
+           
+           local isMad = env(GetDamageSpecialAttribute, 6)
+            
             act(DebugLogOutput, "elementType=" .. elementType .. " IsMad=" .. isMad)
+            
             if damage_angle == DAMAGE_DIR_BACK then
                 SetVariable("IndexDeath", DEATH_TYPE_COMMON_BACK)
             else
                 SetVariable("IndexDeath", DEATH_TYPE_COMMON)
             end
         end
+        
         ExecEventAllBody("W_DeathStart")
         return TRUE
-    elseif env(IsInvincibleDebugMode) == FALSE and (env(GetStateChangeType, CONDITION_TYPE_STONE) == TRUE or env(GetStateChangeType, CONDITION_TYPE_CRYSTAL) == TRUE or env(Unknown409, 3) == TRUE) then
+    elseif env(IsInvincibleDebugMode) == FALSE and (env(GetStateChangeType, CONDITION_TYPE_STONE) == TRUE or env(GetStateChangeType, CONDITION_TYPE_CRYSTAL) == TRUE or env(GetDamageSpecialAttribute, 3) == TRUE) then
         SetVariable("IndexDeath", DEATH_TYPE_STONE)
         ExecEventAllBody("W_DeathStart")
         return TRUE
@@ -4543,11 +4566,13 @@ end
 
 function CalcDamageCount()
     act(DebugLogOutput, "Calc DamageCount")
+    
     if env(GetBehaviorID, 9) == TRUE then
         SetVariable("UseChainRecover", 1)
         return
     else
         local damagecount = GetVariable("DamageCount")
+        
         SetVariable("DamageCount", damagecount + 1)
         SetVariable("UseChainRecover", 1)
     end
@@ -4573,21 +4598,26 @@ function ExecDamage(is_parry, is_attackwhileguard)
         ResetRequest()
         ExecEventAllBody("W_DamageBind")
         Replanning()
+        
         return TRUE
-    elseif env(Unknown409, 5) == TRUE then
+    elseif env(GetDamageSpecialAttribute, 5) == TRUE then
         ExecEventAllBody("W_DamageSleepResist")
+        
         return TRUE
-    elseif env(Unknown409, 6) == TRUE then
+    elseif env(GetDamageSpecialAttribute, 6) == TRUE then
         ExecEventAllBody("W_DamageMad")
+        
         return TRUE
-    elseif env(Unknown409, 2) == TRUE or env(Unknown409, 4) == TRUE then
+    elseif env(GetDamageSpecialAttribute, 2) == TRUE or env(GetDamageSpecialAttribute, 4) == TRUE then
         if damage_level == DAMAGE_LEVEL_NONE then
             if TRUE == IsNodeActive("SwordArtsOneShot Selector") and c_SwordArtsID == 136 then
             else
                 damage_level = DAMAGE_LEVEL_SMALL
             end
         elseif damage_level ~= DAMAGE_LEVEL_SMALL and damage_level ~= DAMAGE_LEVEL_MIDDLE and damage_level == DAMAGE_LEVEL_MINIMUM then
+            -- Missing code from decompile?
         else
+            -- Missing code from decompile?
         end
     end
     
@@ -4595,22 +4625,27 @@ function ExecDamage(is_parry, is_attackwhileguard)
         return FALSE
     elseif env(GetBehaviorID, 1) == TRUE then
         return FALSE
+    -- Raptors of the Mist Dodge
     elseif env(GetSpecialEffectID, 100500) == TRUE then
         ExecEventAllBody("W_SwordArtsStandDodge")
         act(AddSpEffect, 5635)
         ResetDamageCount()
+        
         return TRUE
     end
     
     local attack_dir = env(GetAtkDirection)
     local damage_angle = env(GetReceivedDamageDirection)
     local style = c_Style
+    
     if damage_type == DAMAGE_TYPE_PARRY then
         ExecEventAllBody("W_DamageParry")
+        
         return TRUE
     elseif damage_type >= DAMAGE_TYPE_GUARDED and damage_type <= DAMAGE_TYPE_WALL_LEFT then
         DebugPrint(1, damage_type)
         Replanning()
+        
         if damage_type == DAMAGE_TYPE_GUARDED or damage_type == DAMAGE_TYPE_GUARDED_LEFT then
             if damage_type == DAMAGE_TYPE_GUARDED_LEFT then
                 SetVariable("GuardDamageIndex", 2)
@@ -4621,6 +4656,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
             else
                 SetVariable("GuardDamageIndex", 0)
             end
+            
             if damage_level == DAMAGE_LEVEL_NONE or damage_level == DAMAGE_LEVEL_MINIMUM then
                 act(SetDamageAnimType, DAMAGE_FLAG_SMALL)
                 ExecEventAllBody("W_Repelled_Small")
@@ -4634,6 +4670,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
                 act(SetDamageAnimType, DAMAGE_FLAG_SMALL)
                 ExecEventAllBody("W_Repelled_Small")
             end
+            
             return TRUE
         elseif damage_type == DAMAGE_TYPE_GUARDBREAK then
             if is_parry == TRUE then
@@ -4641,9 +4678,12 @@ function ExecDamage(is_parry, is_attackwhileguard)
             elseif env(GetSpecialEffectID, 175) == TRUE then
                 return FALSE
             end
+            
             local guardindex = GUARD_STYLE_DEFAULT
+            
             if style == HAND_RIGHT then
                 guardindex = env(GetGuardMotionCategory, HAND_LEFT)
+                
                 if TRUE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_TORCH) then
                     SetVariable("IsTorchGuard", TRUE)
                 else
@@ -4651,22 +4691,27 @@ function ExecDamage(is_parry, is_attackwhileguard)
                 end
             elseif style == HAND_LEFT_BOTH then
                 SetVariable("IsTorchGuard", FALSE)
+                
                 if env(GetStayAnimCategory) == 15 then
                     guardindex = env(GetGuardMotionCategory, HAND_LEFT)
                 end
             elseif style == HAND_RIGHT_BOTH then
                 SetVariable("IsTorchGuard", FALSE)
+                
                 if env(GetStayAnimCategory) == 15 then
                     guardindex = env(GetGuardMotionCategory, HAND_RIGHT)
                 end
             end
+            
             SetVariable("IndexGuard", guardindex)
             act(SetDamageAnimType, DAMAGE_FLAG_GUARD_BREAK)
+            
             if 202 == c_SwordArtsID and style == HAND_RIGHT and HAND_RIGHT == c_SwordArtsHand then
                 ExecEventAllBody("W_GuardBreakRight")
             else
                 ExecEventAllBody("W_GuardBreak")
             end
+            
             return TRUE
         elseif damage_type == DAMAGE_TYPE_WALL_RIGHT then
             if style == HAND_RIGHT_BOTH or style == HAND_LEFT_BOTH then
@@ -4674,8 +4719,10 @@ function ExecDamage(is_parry, is_attackwhileguard)
             else
                 SetVariable("GuardDamageIndex", 0)
             end
+            
             act(SetDamageAnimType, DAMAGE_FLAG_GUARD_BREAK)
             ExecEventAllBody("W_Repelled_Wall")
+            
             return TRUE
         elseif damage_type == DAMAGE_TYPE_WALL_LEFT then
             if style == HAND_LEFT_BOTH then
@@ -4683,16 +4730,20 @@ function ExecDamage(is_parry, is_attackwhileguard)
             else
                 SetVariable("GuardDamageIndex", 2)
             end
+            
             act(SetDamageAnimType, DAMAGE_FLAG_GUARD_BREAK)
             ExecEventAllBody("W_Repelled_Wall")
+            
             return TRUE
         elseif damage_type == DAMAGE_TYPE_GUARDBREAK_BLAST then
             act(SetDamageAnimType, DAMAGE_FLAG_SMALL_BLOW)
             ExecEventAllBody("W_DamageLv7_SmallBlow")
+            
             return TRUE
         elseif damage_type == DAMAGE_TYPE_GUARDBREAK_FLING then
             act(SetDamageAnimType, DAMAGE_FLAG_FLING)
             ExecEventAllBody("W_DamageLv6_Fling")
+            
             return TRUE
         end
     elseif damage_type == DAMAGE_TYPE_GUARD then
@@ -4724,11 +4775,15 @@ function ExecDamage(is_parry, is_attackwhileguard)
                 guardindex = env(GetGuardMotionCategory, HAND_RIGHT)
             end
         end
+        
         SetVariable("IndexGuard", guardindex)
+        
         local guard_damage_level = env(GetGuardLevelAction)
+        
         if env(GetSpecialEffectID, 171) == TRUE and guard_damage_level < 3 then
             guard_damage_level = 3
         end
+        
         if guard_damage_level > 0 then
             if guard_damage_level == 1 then
                 act(SetDamageAnimType, DAMAGE_FLAG_GUARD_SMALL)
@@ -4743,12 +4798,15 @@ function ExecDamage(is_parry, is_attackwhileguard)
                 act(SetDamageAnimType, DAMAGE_FLAG_GUARD_LARGE)
                 ExecEventAllBody("W_GuardDamageMiddle")
             end
+            
             return TRUE
         else
             ExecAddDamage(damage_angle, attack_dir, damage_level, TRUE, is_damaged)
+            
             return FALSE
         end
     end
+    
     if env(GetKnockbackDistance) < 0 then
         if damage_angle == DAMAGE_DIR_LEFT then
             damage_angle = DAMAGE_DIR_RIGHT
@@ -4760,6 +4818,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
             damage_angle = DAMAGE_DIR_FRONT
         end
     end
+    
     if env(GetSpecialEffectID, 89) == TRUE or env(GetSpecialEffectID, 100640) == TRUE then
         if damage_level == DAMAGE_LEVEL_EXLARGE then
             act(Unknown4000)
@@ -4776,18 +4835,22 @@ function ExecDamage(is_parry, is_attackwhileguard)
                 ResetRequest()
                 return TRUE
             end
+            
             damage_level = DAMAGE_LEVEL_NONE
         end
     end
+    
     if env(GetIsWeakPoint) == TRUE then
         CalcDamageCount()
         SetVariable("DamageDirection", damage_angle)
         act(SetDamageAnimType, DAMAGE_FLAG_WEAK)
         ExecEventAllBody("W_DamageWeak")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_NONE then
         ExecAddDamage(damage_angle, attack_dir, damage_level, FALSE, is_damaged)
+        
         return FALSE
     elseif damage_level == DAMAGE_LEVEL_SMALL then
         CalcDamageCount()
@@ -4796,6 +4859,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_SMALL)
         ExecEventAllBody("W_DamageLv1_Small")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_MIDDLE then
         CalcDamageCount()
@@ -4804,6 +4868,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_MEDIUM)
         ExecEventAllBody("W_DamageLv2_Middle")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_LARGE then
         CalcDamageCount()
@@ -4811,6 +4876,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         SetVariable("IndexDamageLv3_Large_AttackDirection", attack_dir)
         act(SetDamageAnimType, DAMAGE_FLAG_LARGE)
         Replanning()
+        
         if env(GetBehaviorID, 3) == TRUE then
             ExecEventAllBody("W_DamageLarge2")
             return TRUE
@@ -4824,6 +4890,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_LARGE_BLOW)
         ExecEventAllBody("W_DamageLv4_ExLarge")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_EX_BLAST then
         ResetDamageCount()
@@ -4831,6 +4898,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_LARGE_BLOW)
         ExecEventAllBody("W_DamageLV10_ExBlast")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_PUSH then
         CalcDamageCount()
@@ -4838,6 +4906,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_PUSH)
         ExecEventAllBody("W_DamageLv5_Push")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_SMALL_BLOW then
         ResetDamageCount()
@@ -4845,6 +4914,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_SMALL_BLOW)
         ExecEventAllBody("W_DamageLv7_SmallBlow")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_UPPER then
         ResetDamageCount()
@@ -4852,15 +4922,19 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_LARGE_BLOW)
         ExecEventAllBody("W_DamageLv9_Upper")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_MINIMUM then
         CalcDamageCount()
+        
         local pre_index = GetVariable("IndexDamageLv8_Minimum_Random")
         local index = (pre_index + math.random(1, 2)) % 3
+        
         SetVariable("IndexDamageLv8_Minimum_Random", index)
         act(SetDamageAnimType, DAMAGE_FLAG_MINIMUM)
         ExecEventAllBody("W_DamageLv8_Minimum")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_FLING then
         ResetDamageCount()
@@ -4868,6 +4942,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_FLING)
         ExecEventAllBody("W_DamageLv6_Fling")
         Replanning()
+        
         return TRUE
     elseif damage_level == DAMAGE_LEVEL_BREATH then
         ResetDamageCount()
@@ -4875,6 +4950,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         act(SetDamageAnimType, DAMAGE_FLAG_BREATH)
         ExecEventAllBody("W_DamageLv11_Breath")
         Replanning()
+        
         return TRUE
     else
         return FALSE
@@ -4981,6 +5057,7 @@ function FallCommonFunction(is_enable_falling_death, is_jump, fall_style)
                 ExecEventAllBody("W_Land")
             else
                 act(9999)
+                
                 if height > 0.30000001192092896 then
                     ExecEventAllBody("W_LandLow")
                 else
@@ -5126,6 +5203,7 @@ end
 
 function LadderIdleCommonFunction(hand)
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         return TRUE
     elseif ExecLadderDamageIdle(hand) == TRUE then
@@ -5143,11 +5221,15 @@ end
 
 function LadderMoveCommonFunction(hand, is_no_damage)
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         return TRUE
     elseif is_no_damage == FALSE and TRUE == ExecLadderDamageMove() then
+        -- Missing code from decompile?
     else
+        -- Missing code from decompile?
     end
+    
     if TRUE == env(IsAnimEnd, 1) then
         if CheckLadderDamage(hand) == TRUE then
             return TRUE
@@ -5162,6 +5244,7 @@ function LadderMoveCommonFunction(hand, is_no_damage)
         else
             ExecEvent("W_LadderIdleRight")
         end
+        
         return TRUE
     else
         return FALSE
@@ -5170,6 +5253,7 @@ end
 
 function LadderAttackCommonFunction(hand)
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         return TRUE
     elseif ExecLadderDamageIdle(hand) == TRUE then
@@ -5186,6 +5270,7 @@ function LadderAttackCommonFunction(hand)
         else
             ExecEvent("W_LadderIdleRight")
         end
+        
         return TRUE
     else
         return FALSE
@@ -5194,6 +5279,7 @@ end
 
 function LadderDamageCommonFunction(hand)
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         return TRUE
     elseif ExecLadderDamageIdle(hand) == TRUE then
@@ -5210,6 +5296,7 @@ function LadderDamageCommonFunction(hand)
         else
             ExecEvent("W_LadderIdleLeft")
         end
+        
         return TRUE
     else
         return FALSE
@@ -5218,41 +5305,54 @@ end
 
 function LadderEndCommonFunction()
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecFallStart(FALL_TYPE_DEFAULT) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecJump() then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecHandChange(HAND_RIGHT, FALSE, ALLBODY) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecGuardOnCancelTiming(FALSE, ALLBODY) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecWeaponChange(ALLBODY) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecEvasion(FALSE, ESTEP_NONE, FALSE) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecItem(QUICKTYPE_NORMAL, ALLBODY) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecMagic(QUICKTYPE_NORMAL, ALLBODY, FALSE) then
         LadderSetActionState(LADDER_ACTION_INVALID)
     end
+    
     if TRUE == ExecArtsStanceOnCancelTiming(ALLBODY) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == ExecAttack("W_AttackRightLight1", "W_AttackRightHeavy1Start", "W_AttackLeftLight1", "W_AttackLeftHeavy1", "W_AttackBothLight1", "W_AttackBothHeavy1Start", FALSE, ALLBODY, FALSE, FALSE, FALSE) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     elseif TRUE == MoveStartonCancelTiming(Event_Move, FALSE) then
         LadderSetActionState(LADDER_ACTION_INVALID)
+        
         return TRUE
     else
         return FALSE
@@ -5262,6 +5362,7 @@ end
 function LadderItemCommonFunction(hand, tonext)
     act(SetIsItemAnimationPlaying)
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         return TRUE
     elseif ExecLadderDamageIdle(hand) == TRUE then
@@ -5290,8 +5391,10 @@ end
 
 function CheckLadderDamage(hand)
     local damage_flag = Flag_LadderDamage
+    
     if damage_flag == LADDER_DAMAGE_SMALL then
         act(AddStamina, -30)
+        
         if ExecLadderFall() == TRUE then
             return TRUE
         elseif hand == HAND_STATE_LEFT then
@@ -5301,6 +5404,7 @@ function CheckLadderDamage(hand)
         end
     elseif damage_flag == LADDER_DAMAGE_LARGE then
         act(AddStamina, -40)
+        
         if ExecLadderFall() == TRUE then
             return TRUE
         elseif hand == HAND_STATE_LEFT then
@@ -5312,13 +5416,16 @@ function CheckLadderDamage(hand)
         Flag_LadderDamage = LADDER_DAMAGE_NONE
         return FALSE
     end
+    
     Flag_LadderDamage = LADDER_DAMAGE_NONE
+    
     return TRUE
 end
 
 function ExecLadderDeath()
     local hp = env(GetHP)
-    if hp <= 0 or env(GetStateChangeType, CONDITION_TYPE_STONE) == TRUE or env(GetStateChangeType, CONDITION_TYPE_CRYSTAL) == TRUE or env(Unknown409, 3) == TRUE then
+    
+    if hp <= 0 or env(GetStateChangeType, CONDITION_TYPE_STONE) == TRUE or env(GetStateChangeType, CONDITION_TYPE_CRYSTAL) == TRUE or env(GetDamageSpecialAttribute, 3) == TRUE then
         ExecEvent("W_LadderDeathStart")
         return TRUE
     else
@@ -5331,6 +5438,7 @@ function ExecLadderDamageIdle(hand)
         return FALSE
     elseif env(GetStamina) <= 80 then
         act(AddStamina, -40)
+        
         if ExecLadderFall() == TRUE then
             return TRUE
         elseif hand == HAND_STATE_LEFT then
@@ -5363,7 +5471,7 @@ function ExecLadderDamageMove()
 end
 
 function ExecLadderFall()
-    if env(GetStamina) > 0 and env(Unknown409, 5) == FALSE then
+    if env(GetStamina) > 0 and env(GetDamageSpecialAttribute, 5) == FALSE then
         return FALSE
     else
         ExecEvent("W_LadderFallStart")
@@ -5375,8 +5483,10 @@ function GetLadderEventCommand(is_start)
     if env(IsCOMPlayer) == FALSE then
         return env(GetCommandIDFromEvent, 0)
     end
+    
     local req_up = env(ActionRequest, ACTION_ARM_LADDERUP)
     local req_down = env(ActionRequest, ACTION_ARM_LADDERDOWN)
+    
     if is_start == TRUE then
         if req_up == TRUE then
             return LADDER_ACTION_START_BOTTOM
@@ -5396,11 +5506,13 @@ function GetLadderEventCommand(is_start)
             return LADDER_EVENT_COMMAND_DOWN
         end
     end
+    
     return INVALID
 end
 
 function ExecLadderMove(hand)
     local sp_action = env(ActionDuration, ACTION_ARM_SP_MOVE)
+    
     if sp_action == 0 then
         if Flag_LadderJump == LADDER_JUMP_WHEN_RELEASE and env(ActionRequest, ACTION_ARM_BACKSTEP) == TRUE and env(IsOnLastRungOfLadder) == FALSE then
             LadderSendCommand(LADDER_EVENT_COMMAND_EXIT)
@@ -5408,6 +5520,7 @@ function ExecLadderMove(hand)
             ExecEvent("W_LadderDrop")
             return TRUE
         end
+        
         Flag_LadderJump = LADDER_JUMP_SP_RELEASED
     elseif sp_action < 150 then
         if Flag_LadderJump == LADDER_JUMP_SP_RELEASED then
@@ -5416,7 +5529,9 @@ function ExecLadderMove(hand)
     else
         Flag_LadderJump = LADDER_JUMP_INVALID
     end
+    
     local event_command = GetLadderEventCommand(FALSE)
+    
     if event_command <= 0 then
         return FALSE
     elseif event_command == LADDER_EVENT_COMMAND_UP then
@@ -5434,11 +5549,13 @@ function ExecLadderMove(hand)
         else
             SetVariable("IsFastUp", FALSE)
         end
+        
         if hand == HAND_STATE_LEFT then
             ExecEvent("W_LadderUpLeft")
         else
             ExecEvent("W_LadderUpRight")
         end
+        
         return TRUE
     elseif event_command == LADDER_EVENT_COMMAND_DOWN then
         if env(IsCOMPlayer) == TRUE and env(DoesLadderHaveCharacters, LADDER_DOWN_CHECK_DIST, 0, 1) == TRUE then
@@ -5458,6 +5575,7 @@ function ExecLadderMove(hand)
         else
             ExecEvent("W_LadderDownRight")
         end
+        
         return TRUE
     elseif event_command == LADDER_EVENT_COMMAND_END_TOP then
         if hand == HAND_STATE_LEFT then
@@ -5465,6 +5583,7 @@ function ExecLadderMove(hand)
         else
             ExecEvent("W_LadderEndTopRight")
         end
+        
         return TRUE
     elseif event_command == LADDER_EVENT_COMMAND_END_BOTTOM then
         if hand == HAND_STATE_LEFT then
@@ -5472,6 +5591,7 @@ function ExecLadderMove(hand)
         else
             ExecEvent("W_LadderEndBottomRight")
         end
+        
         return TRUE
     else
         return FALSE
@@ -5480,6 +5600,7 @@ end
 
 function LadderStart()
     local event_command = GetLadderEventCommand(TRUE)
+    
     if event_command == LADDER_ACTION_START_BOTTOM then
         ExecEvent("W_LadderAttachBottom")
         return TRUE
@@ -5508,6 +5629,7 @@ function ExecLadderAttack(hand)
         else
             ExecEvent("W_LadderAttackUpLeft")
         end
+        
         return TRUE
     elseif env(ActionRequest, ACTION_ARM_R2) == TRUE then
         if hand == HAND_STATE_RIGHT then
@@ -5515,6 +5637,7 @@ function ExecLadderAttack(hand)
         else
             ExecEvent("W_LadderAttackDownLeft")
         end
+        
         return TRUE
     else
         return FALSE
@@ -5523,17 +5646,23 @@ end
 
 function LadderCoastCommonFunction(hand, is_start)
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecLadderDeath() == TRUE then
         return TRUE
     elseif TRUE == ExecLadderDamageMove() then
+        -- Missing code from decompile?
     else
+        -- Missing code from decompile?
     end
+    
     if is_start == FALSE then
         if TRUE == env(IsOnLastRungOfLadder) then
             ExecEvent("W_LadderCoastLanding")
             return TRUE
         end
+        
         local event_command = GetLadderEventCommand(FALSE)
+        
         if not (env(ActionDuration, ACTION_ARM_SP_MOVE) > 0 and env(MovementRequestDuration) > 0 and (event_command <= 0 or event_command == LADDER_EVENT_COMMAND_DOWN)) or TRUE == env(IsSomeoneUnderLadder, LADDER_DOWN_CHECK_DIST, 0) then
             act(LadderSlideDownCancel)
             if env(GetNumberOfRungsBelowOnLadder) % 2 == 0 then
@@ -5551,6 +5680,7 @@ function LadderCoastCommonFunction(hand, is_start)
             return TRUE
         end
     end
+    
     return FALSE
 end
 
@@ -5560,9 +5690,11 @@ function IdleCommonFunction()
     else
         act(LockonSystemUnableToTurnAngle, 45, 45)
     end
+    
     act(Wait)
     act(Unknown2040)
     SetEnableAimMode()
+    
     if TRUE == ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) then
         return TRUE
     elseif TRUE == LadderStart() then
@@ -5588,12 +5720,15 @@ function IdleCommonFunction()
     elseif TRUE == ExecRide() then
         return TRUE
     end
+    
     local r1 = "W_AttackRightLight1"
     local b1 = "W_AttackBothLight1"
+    
     if c_IsStealth == TRUE then
         r1 = "W_AttackRightLightStealth"
         b1 = "W_AttackBothLightStealth"
     end
+    
     if ExecAttack(r1, "W_AttackRightHeavy1Start", "W_AttackLeftLight1", "W_AttackLeftHeavy1", b1, "W_AttackBothHeavy1Start", FALSE, ALLBODY, FALSE, FALSE, FALSE) == TRUE then
         return TRUE
     elseif c_IsStealth == TRUE then
@@ -5603,6 +5738,7 @@ function IdleCommonFunction()
     elseif TRUE == MoveStart(ALLBODY, Event_Move, FALSE) then
         return TRUE
     end
+    
     if TRUE == ExecGesture() then
         return TRUE
     else
@@ -5632,14 +5768,19 @@ function AttackCommonFunction(r1, r2, l1, l2, b1, b2, guardcondition, use_atk_qu
     if gen_hand == nil then
         gen_hand = FALSE
     end
+    
     SetVariable("ToggleDash", 0)
+    
     act(Unknown2027)
     SetThrowAtkInvalid()
     SetAIActionState()
+    
     local bool = FALSE
+    
     if guardcondition == TO_GUARDON then
         bool = TRUE
     end
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, bool) == TRUE then
         return TRUE
     elseif TRUE == ExecWeaponChange(ALLBODY) then
@@ -5650,6 +5791,7 @@ function AttackCommonFunction(r1, r2, l1, l2, b1, b2, guardcondition, use_atk_qu
         if use_atk_queue == TRUE then
             SetAttackQueue(r1, r2, l1, l2, b1, b2)
         end
+        
         return TRUE
     elseif ExecMagic(QUICKTYPE_ATTACK, ALLBODY, FALSE) == TRUE then
         return TRUE
@@ -5657,6 +5799,7 @@ function AttackCommonFunction(r1, r2, l1, l2, b1, b2, guardcondition, use_atk_qu
         if use_atk_queue == TRUE then
             SetAttackQueue(r1, r2, l1, l2, b1, b2)
         end
+        
         return TRUE
     elseif TRUE == ExecQuickTurnOnCancelTiming() then
         return TRUE
@@ -5679,6 +5822,7 @@ end
 
 function BackStabCommonFunction()
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecWeaponChange(ALLBODY) then
@@ -5720,6 +5864,7 @@ function ThrowCommonFunction(estep)
             return TRUE
         end
     end
+    
     if TRUE == ExecFallStart(FALL_TYPE_DEFAULT) then
         return TRUE
     elseif TRUE == ExecQuickTurnOnCancelTiming() then
@@ -5787,15 +5932,20 @@ function GestureLoopCommonFunction(blend_type, lower_state, is_start)
     elseif ExecEvasion(FALSE, ESTEP_NONE, FALSE) == TRUE then
         return TRUE
     end
+    
     local canmove = TRUE
+    
     if 0 == GetVariable("IndexGestureLoop") then
         canmove = FALSE
     end
+    
     if TRUE == env(GetEventEzStateFlag, 0) and TRUE == env(HasActionRequest) then
         ExecEventHalfBlend(Event_GestureEnd, lower_state)
+        
         return TRUE
     elseif canmove == FALSE and 0 < GetVariable("MoveSpeedLevel") then
         ExecEventHalfBlend(Event_GestureEnd, lower_state)
+        
         return TRUE
     else
         return FALSE
@@ -5806,14 +5956,18 @@ function MagicCommonFunction(blend_type, quick_type, is_throw)
     if GetVariable("IsEnableToggleDashTest") == 2 then
         SetVariable("ToggleDash", 0)
     end
+    
     if GetVariable("MoveSpeedLevel") <= 0 then
         act(Unknown2027)
     end
+    
     if is_throw ~= TRUE then
         SetThrowAtkInvalid()
     end
+    
     SetAIActionState()
     act(SetIsMagicInUse, TRUE)
+    
     if TRUE == ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -5841,6 +5995,7 @@ end
 
 function ArrowCommonFunction(blend_type, is_allbody_turn, turn_type, is_stance_end)
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif FALSE == c_IsStealth then
@@ -5852,6 +6007,7 @@ function ArrowCommonFunction(blend_type, is_allbody_turn, turn_type, is_stance_e
             return FALSE
         end
     end
+    
     if TRUE == ExecJump() then
         return TRUE
     elseif ExecHandChange(HAND_RIGHT, FALSE, blend_type) == TRUE then
@@ -5871,6 +6027,7 @@ end
 
 function CrossbowCommonFunction(blend_type, is_nonturn)
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif is_nonturn == FALSE and blend_type ~= UPPER and TRUE == ExecQuickTurn(LOWER, TURN_TYPE_DEFAULT) then
@@ -5895,6 +6052,7 @@ function CrossbowCommonFunction(blend_type, is_nonturn)
         return TRUE
     else
         local blend_type, lower_state = GetHalfBlendInfo()
+        
         if lower_state == LOWER_MOVE and TRUE == env(IsMoveCancelPossible) then
             ExecEventHalfBlendNoReset(Event_Move, UPPER)
             return
@@ -5918,6 +6076,7 @@ end
 function EvasionCommonFunction(fall_type, r1, r2, l1, l2, b1, b2, quick_type)
     SetAIActionState()
     SetEnableAimMode()
+    
     if ExecPassiveAction(FALSE, fall_type, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -5934,6 +6093,7 @@ function EvasionCommonFunction(fall_type, r1, r2, l1, l2, b1, b2, quick_type)
     elseif ExecGuardOnCancelTiming(FALSE, ALLBODY) == TRUE then
         return TRUE
     end
+    
     if TRUE == ExecWeaponChange(ALLBODY) then
         return TRUE
     elseif ExecEvasion(FALSE, ESTEP_NONE, FALSE) == TRUE then
@@ -5957,8 +6117,10 @@ function DamageCommonFunction(guardcondition, estep, fall_type)
     if ExecPassiveAction(FALSE, fall_type, FALSE) == TRUE then
         return TRUE
     end
+    
     SetVariable("ToggleDash", 0)
     SetEnableAimMode()
+    
     if TRUE == ExecJump() then
         return TRUE
     elseif ExecHandChange(HAND_RIGHT, FALSE, ALLBODY) == TRUE then
@@ -5968,7 +6130,9 @@ function DamageCommonFunction(guardcondition, estep, fall_type)
         ResetDamageCount()
         return TRUE
     end
+    
     local is_usechainrecover = GetVariable("UseChainRecover")
+    
     if ExecEvasion(TRUE, estep, is_usechainrecover) == TRUE then
         return TRUE
     elseif TRUE == ExecItem(QUICKTYPE_NORMAL, ALLBODY) then
@@ -6001,6 +6165,7 @@ end
 
 function QuickTurnCommonFunction()
     act(Unknown2040)
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -6030,6 +6195,7 @@ end
 
 function LandCommonFunction()
     act(SetIsEquipmentChangeableFromMenu)
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecQuickTurnOnCancelTiming() then
@@ -6061,13 +6227,17 @@ function ItemCommonFunction(blend_type)
     if env(GetStateChangeType, 15) == FALSE then
         act(SetIsItemAnimationPlaying)
     end
+    
     if GetVariable("IsEnableToggleDashTest") == 2 then
         SetVariable("ToggleDash", 0)
     end
+    
     if GetVariable("MoveSpeedLevel") <= 0 then
         act(Unknown2027)
     end
+    
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif blend_type ~= UPPER and TRUE == ExecQuickTurn(LOWER, TURN_TYPE_DEFAULT) then
@@ -6099,13 +6269,17 @@ end
 
 function StealthItemCommonFunction(blend_type)
     act(SetIsItemAnimationPlaying)
+    
     if GetVariable("IsEnableToggleDashTest") == 2 then
         SetVariable("ToggleDash", 0)
     end
+    
     if GetVariable("MoveSpeedLevel") <= 0 then
         act(Unknown2027)
     end
+    
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif blend_type ~= UPPER and TRUE == ExecQuickTurn(LOWER, TURN_TYPE_DEFAULT) then
@@ -6138,41 +6312,54 @@ end
 
 function QuickItemCommonFunction(g_r1, g_r2, g_l1, g_l2, g_b1, g_b2, blend_type, quick_type)
     act(SetIsItemAnimationPlaying)
+    
     if GetVariable("MoveSpeedLevel") <= 0 then
         act(Unknown2027)
     end
+    
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif TRUE == ExecJump() then
         return TRUE
     elseif ExecHandChange(HAND_RIGHT, FALSE, blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecGuardOnCancelTiming(FALSE, blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecWeaponChange(blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecEvasion(FALSE, ESTEP_NONE, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecArtsStanceOnCancelTiming(blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecAttack(g_r1, g_r2, g_l1, g_l2, g_b1, g_b2, FALSE, blend_type, FALSE, FALSE, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecItem(quick_type, blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecMagic(QUICKTYPE_ATTACK, ALLBODY, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif MoveStartonCancelTiming(Event_Move, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     else
         return FALSE
@@ -6181,6 +6368,7 @@ end
 
 function StopCommonFunction(is_dash_stop)
     act(Wait)
+    
     if is_dash_stop == TRUE then
         if c_IsStealth == TRUE then
             act(LockonSystemUnableToTurnAngle, 0, 0)
@@ -6192,7 +6380,9 @@ function StopCommonFunction(is_dash_stop)
     else
         act(LockonSystemUnableToTurnAngle, 45, 45)
     end
+    
     SetEnableAimMode()
+    
     if TRUE == ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) then
         return TRUE
     elseif TRUE == LadderStart() then
@@ -6218,12 +6408,15 @@ function StopCommonFunction(is_dash_stop)
     elseif TRUE == ExecRide() then
         return TRUE
     end
+    
     local r1 = "W_AttackRightLight1"
     local b1 = "W_AttackBothLight1"
+    
     if c_IsStealth == TRUE then
         r1 = "W_AttackRightLightStealth"
         b1 = "W_AttackBothLightStealth"
     end
+    
     if ExecAttack(r1, "W_AttackRightHeavy1Start", "W_AttackLeftLight1", "W_AttackLeftHeavy1", b1, "W_AttackBothHeavy1Start", FALSE, ALLBODY, FALSE, FALSE, FALSE) == TRUE then
         return TRUE
     elseif TRUE == env(GetSpecialEffectID, 100170) then
@@ -6232,6 +6425,7 @@ function StopCommonFunction(is_dash_stop)
             return TRUE
         end
     end
+    
     if c_IsStealth == TRUE then
         if TRUE == MoveStart(ALLBODY, Event_Stealth_Move, FALSE) then
             return TRUE
@@ -6239,6 +6433,7 @@ function StopCommonFunction(is_dash_stop)
     elseif TRUE == MoveStart(ALLBODY, Event_Move, FALSE) then
         return TRUE
     end
+    
     if TRUE == ExecGesture() then
         return TRUE
     else
@@ -6250,6 +6445,7 @@ function MoveCommonFunction(blend_type)
     act(Wait)
     act(Unknown2040)
     SetEnableAimMode()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == LadderStart() then
@@ -6265,7 +6461,9 @@ function MoveCommonFunction(blend_type)
     elseif ExecGuard(Event_GuardStart, blend_type) == TRUE then
         return TRUE
     end
+    
     local speed = GetVariable("MoveSpeedIndex")
+    
     if speed == 2 then
         if ExecItem(QUICKTYPE_DASH, blend_type) == TRUE then
             return TRUE
@@ -6277,6 +6475,7 @@ function MoveCommonFunction(blend_type)
     elseif ExecItem(QUICKTYPE_NORMAL, blend_type) == TRUE then
         return TRUE
     end
+    
     if speed == 2 then
         if ExecMagic(QUICKTYPE_DASH, blend_type, FALSE) == TRUE then
             return TRUE
@@ -6284,15 +6483,18 @@ function MoveCommonFunction(blend_type)
     elseif ExecMagic(QUICKTYPE_NORMAL, blend_type, FALSE) == TRUE then
         return TRUE
     end
+    
     if ExecArtsStance(blend_type) == TRUE then
         return TRUE
     elseif TRUE == ExecRide() then
         return TRUE
     end
+    
     local r1 = "W_AttackRightLight1"
     local r2 = "W_AttackRightHeavy1Start"
     local b1 = "W_AttackBothLight1"
     local b2 = "W_AttackBothHeavy1Start"
+    
     if speed == 2 then
         r1 = "W_AttackRightLightDash"
         r2 = "W_AttackRightHeavyDash"
@@ -6302,6 +6504,7 @@ function MoveCommonFunction(blend_type)
         r1 = "W_AttackRightLightStealth"
         b1 = "W_AttackBothLightStealth"
     end
+    
     if ExecAttack(r1, r2, "W_AttackLeftLight1", "W_AttackLeftHeavy1", b1, b2, FALSE, UPPER, FALSE, FALSE, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecGesture() then
@@ -6315,6 +6518,7 @@ end
 
 function GuardCommonFunction(is_guard_end, blend_type)
     act(Wait)
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == env(GetSpecialEffectID, 170) then
@@ -6338,6 +6542,7 @@ function GuardCommonFunction(is_guard_end, blend_type)
     elseif TRUE == env(ActionRequest, ACTION_ARM_L2) and ExecArtsStance(blend_type) == TRUE then
         return TRUE
     end
+    
     if GetVariable("MoveSpeedIndex") == 2 then
         if ExecItem(QUICKTYPE_DASH, blend_type) == TRUE then
             return TRUE
@@ -6360,27 +6565,33 @@ function GuardCommonFunction(is_guard_end, blend_type)
     elseif ExecMagic(QUICKTYPE_NORMAL, blend_type, FALSE) == TRUE then
         return TRUE
     end
+    
     if GetVariable("MoveSpeedLevelReal") > 1.100000023841858 then
         if ExecAttack("W_AttackRightLightDash", "W_AttackRightHeavyDash", nil, "W_AttackLeftHeavy1", "W_AttackBothDash", "W_AttackBothHeavyDash", FALSE, UPPER, FALSE, FALSE, FALSE) == TRUE then
             return TRUE
         end
     else
         local guard_attack = TRUE
+        
         if is_guard_end == TRUE then
             guard_attack = FALSE
         end
+        
         if ExecAttack("W_AttackRightLight1", "W_AttackRightHeavy1Start", nil, "W_AttackLeftHeavy1", "W_AttackBothLight1", "W_AttackBothHeavy1Start", guard_attack, blend_type, FALSE, FALSE, FALSE) == TRUE then
             return TRUE
         end
     end
+    
     if is_guard_end == FALSE then
         if TRUE == env(ActionCancelRequest, ACTION_ARM_L1) or env(ActionDuration, ACTION_ARM_L1) <= 0 then
             ExecEventHalfBlendNoReset(Event_GuardEnd, blend_type)
+            
             return TRUE
         end
     elseif (TRUE == env(ActionRequest, ACTION_ARM_L1) or env(ActionDuration, ACTION_ARM_L1) > 0) and ExecGuard(Event_GuardStart, blend_type) == TRUE then
         return TRUE
     end
+    
     return FALSE
 end
 
@@ -6388,50 +6599,68 @@ function ArtsCommonFunction(r1, r2, l1, l2, b1, b2, guardcondition, artsr1, arts
     if can_throw == FALSE then
         SetThrowAtkInvalid()
     end
+    
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecWeaponChange(blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecEvasion(FALSE, ESTEP_NONE, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecItem(QUICKTYPE_ATTACK, blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecMagic(QUICKTYPE_ATTACK, blend_type, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecArtsStanceOnCancelTiming(blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecAttack(r1, r2, l1, l2, b1, b2, guardcondition, blend_type, artsr1, artsr2, FALSE) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif TRUE == ExecQuickTurnOnCancelTiming() then
         ClearAttackQueue()
+        
         return TRUE
     elseif TRUE == ExecJump() then
         ClearAttackQueue()
+        
         return TRUE
     elseif ExecHandChange(HAND_RIGHT, FALSE, blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     end
+    
     local guardcondition = FALSE
+    
     if TRUE == env(GetSpecialEffectID, 100410) then
         guardcondition = TO_GUARDON
     end
+    
     if ExecGuardOnCancelTiming(guardcondition, blend_type) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif MoveStartonCancelTiming(Event_Move, gen_trans) == TRUE then
         ClearAttackQueue()
+        
         return TRUE
     elseif TRUE == ExecGesture() then
         ClearAttackQueue()
+        
         return TRUE
     else
         return FALSE
@@ -6440,6 +6669,7 @@ end
 
 function ArtsParryCommonFunction()
     SetAIActionState()
+    
     if ExecPassiveAction(TRUE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecWeaponChange(ALLBODY) then
@@ -6475,6 +6705,7 @@ function ArtsStanceCommonFunction(r1, r2, l1, l2, b1, b2, blend_type, turn_type,
     if is_stance_end == FALSE then
         SetThrowAtkInvalid()
     end
+    
     SetAIActionState()
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
@@ -6502,7 +6733,9 @@ function ArtsStanceCommonFunction(r1, r2, l1, l2, b1, b2, blend_type, turn_type,
         if is_stance_end == TRUE then
             SetArtsGeneratorTransitionIndex()
         end
+        
         ClearAttackQueue()
+        
         return TRUE
     else
         return FALSE
@@ -6511,9 +6744,11 @@ end
 
 function ArtsChargeShotCommonFunction()
     SetAIActionState()
+    
     if env(GetEventEzStateFlag, 1) == FALSE then
         act(SetTurnSpeed, 0)
     end
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -6537,6 +6772,7 @@ end
 
 function WeaponChangeCommonFunction(blend_type)
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -6566,6 +6802,7 @@ end
 
 function HandChangeCommonFunction(blend_type)
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -6597,6 +6834,7 @@ end
 
 function ChainRecoverCommonFunction()
     SetAIActionState()
+    
     if ExecPassiveAction(FALSE, FALL_TYPE_DEFAULT, FALSE) == TRUE then
         return TRUE
     elseif TRUE == ExecJump() then
@@ -6633,6 +6871,7 @@ function Event_Update()
     if GetVariable("IsEventActivate") == false then
         UpdateRightArmAdd()
     end
+    
     SetVariable("IsEventActivate", false)
 end
 
@@ -6640,7 +6879,9 @@ function EventCommonFunction()
     if env(GetEventEzStateFlag, 0) == FALSE then
         act(SetIsEventAnim)
     end
+    
     act(SetIsEquipmentChangeableFromMenu)
+    
     if env(HasThrowRequest) == TRUE then
         return TRUE
     elseif TRUE == ExecTalkDeath() then
@@ -6676,10 +6917,13 @@ function EventCommonFunction()
     elseif ExecAttack("W_AttackRightLight1", "W_AttackRightHeavy1Start", "W_AttackLeftLight1", "W_AttackLeftHeavy1", "W_AttackBothLight1", "W_AttackBothHeavy1Start", FALSE, ALLBODY, FALSE, FALSE, FALSE) == TRUE then
         return TRUE
     end
+    
     local moveEvent = Event_MoveQuick
+    
     if c_IsStealth == TRUE then
         moveEvent = Event_Stealth_Move
     end
+    
     if MoveStartonCancelTiming(moveEvent, FALSE) == TRUE then
         return TRUE
     else
@@ -6691,19 +6935,24 @@ function HalfBlendLowerCommonFunction(event, lower_state, to_idle_on_cancel, dis
     if disable_stealth_move == nil then
         disable_stealth_move = FALSE
     end
+    
     if lower_state == LOWER_MOVE then
         if ExecStopHalfBlend(event, to_idle_on_cancel) == TRUE then
             return TRUE
         end
     else
         local blend_type = LOWER
+        
         if TRUE == env(IsMoveCancelPossible) then
             blend_type = ALLBODY
         end
+        
         local move_event = Event_Move
+        
         if c_IsStealth == TRUE and disable_stealth_move == FALSE then
             move_event = Event_Stealth_Move
         end
+        
         if MoveStart(blend_type, move_event, FALSE) == TRUE then
             return TRUE
         elseif lower_state == LOWER_END_TURN then
@@ -6711,6 +6960,7 @@ function HalfBlendLowerCommonFunction(event, lower_state, to_idle_on_cancel, dis
             return TRUE
         end
     end
+    
     return FALSE
 end
 
@@ -6721,38 +6971,48 @@ function HalfBlendLowerCommonFunctionNoSync(event, lower_state, to_idle_on_cance
         end
     else
         local blend_type = LOWER
+        
         if TRUE == env(IsMoveCancelPossible) then
             blend_type = ALLBODY
         end
+        
         if MoveStart(blend_type, Event_MoveNoSync, FALSE) == TRUE then
             if is_fire_upper_on_move == TRUE and blend_type == LOWER then
                 ExecEventHalfBlend(event, UPPER)
             end
+            
             return TRUE
         elseif lower_state == LOWER_END_TURN then
             ExecEventHalfBlendNoReset(event, LOWER)
+            
             return TRUE
         end
     end
+    
     return FALSE
 end
 
 function HalfBlendUpperCommonFunction(lower_state)
     local exit_flag = FALSE
+    
     if env(IsAnimEnd, 1) == TRUE then
         exit_flag = TRUE
     end
+    
     if lower_state ~= LOWER_IDLE and env(GetEventEzStateFlag, 0) == TRUE then
         exit_flag = TRUE
     end
+    
     if exit_flag == FALSE then
         return FALSE
     elseif lower_state == LOWER_TURN then
         local turn_state = GetVariable("UpperDefaultState01")
         local event = Event_QuickTurnRight180Mirror
+        
         if turn_state == QUICKTURN_LEFT180_DEF1 then
             event = Event_QuickTurnLeft180Mirror
         end
+        
         ExecEventHalfBlendNoReset(event)
     elseif lower_state == LOWER_MOVE then
         if c_IsStealth == TRUE then
@@ -6765,6 +7025,7 @@ function HalfBlendUpperCommonFunction(lower_state)
     else
         ExecEventNoReset("W_Idle")
     end
+    
     return TRUE
 end
 
@@ -6777,14 +7038,18 @@ function ArrowLowerCommonFunction(event, lower_state, to_idle_on_cancel)
         if lower_state ~= LOWER_TURN then
             local style = c_Style
             local hand = HAND_RIGHT
+            
             if style == HAND_LEFT_BOTH then
                 hand = HAND_LEFT
             end
+            
             if env(GetEquipWeaponCategory, hand) ~= WEAPON_CATEGORY_LARGE_ARROW then
                 local move_event = Event_Move
+                
                 if c_IsStealth == TRUE then
                     move_event = Event_Stealth_Move
                 end
+                
                 if MoveStart(LOWER, move_event, FALSE) == TRUE then
                     return
                 end
@@ -6792,6 +7057,7 @@ function ArrowLowerCommonFunction(event, lower_state, to_idle_on_cancel)
                 return
             end
         end
+        
         if lower_state == LOWER_END_TURN then
             ExecEventHalfBlendNoReset(event, LOWER)
         end
@@ -6808,6 +7074,7 @@ end
 
 function Idle_onUpdate()
     SetEnableMimicry()
+    
     if IdleCommonFunction() == TRUE then
         SetVariable("ArtsTransition", 0)
     end
@@ -6832,6 +7099,7 @@ end
 
 function RunStopFront_onUpdate()
     SetEnableMimicry()
+    
     if StopCommonFunction(FALSE) == TRUE then
     end
 end
@@ -6862,6 +7130,7 @@ end
 
 function RunStopRight_onUpdate()
     SetEnableMimicry()
+    
     if StopCommonFunction(FALSE) == TRUE then
     end
 end
@@ -6872,6 +7141,7 @@ end
 
 function WalkStopFront_onUpdate()
     SetEnableMimicry()
+    
     if StopCommonFunction(FALSE) == TRUE then
     end
 end
@@ -6882,6 +7152,7 @@ end
 
 function WalkStopBack_onUpdate()
     SetEnableMimicry()
+    
     if StopCommonFunction(FALSE) == TRUE then
     end
 end
@@ -6892,6 +7163,7 @@ end
 
 function WalkStopLeft_onUpdate()
     SetEnableMimicry()
+    
     if StopCommonFunction(FALSE) == TRUE then
     end
 end
@@ -6902,6 +7174,7 @@ end
 
 function WalkStopRight_onUpdate()
     SetEnableMimicry()
+    
     if StopCommonFunction(FALSE) == TRUE then
     end
 end
@@ -6912,6 +7185,7 @@ end
 
 function Dash180_onUpdate()
     act(SetIsTurnAnimInProgress)
+    
     if QuickTurnCommonFunction() == TRUE then
     end
 end
@@ -6919,9 +7193,11 @@ end
 function Rolling_onUpdate()
     act(DisallowAdditiveTurning, TRUE)
     SetThrowAtkInvalid()
+    
     if TRUE == env(GetSpecialEffectID, 100390) then
         ResetDamageCount()
     end
+    
     SetEnableAimMode()
     
     act(SetMovementScaleMult, g_RollMovementMultiplier)
@@ -6943,9 +7219,11 @@ end
 function Rolling_Selftrans_onUpdate()
     act(DisallowAdditiveTurning, TRUE)
     SetThrowAtkInvalid()
+    
     if TRUE == env(GetSpecialEffectID, 100390) then
         ResetDamageCount()
     end
+    
     SetEnableAimMode()
     
     act(SetMovementScaleMult, g_RollMovementMultiplier)
@@ -6999,10 +7277,12 @@ end
 function EStepDown_onUpdate()
     SetThrowAtkInvalid()
     SetEnableAimMode()
+    
     if EvasionCommonFunction(FALL_TYPE_DEFAULT, "W_AttackRightLightStep", "W_AttackRightHeavy1Start", "W_AttackLeftLight1", "W_AttackLeftHeavy1", "W_AttackBothLightStep", "W_AttackBothHeavy1Start", QUICKTYPE_ROLLING) == TRUE then
         return
     elseif TRUE == env(IsAnimEnd, 1) then
         ExecEventAllBody("W_Idle")
+        
         return
     else
         SetRollingTurnCondition(FALSE)
@@ -7011,12 +7291,14 @@ end
 
 function ChainRecover_Upper_onUpdate()
     local blend_type, lower_state = GetHalfBlendInfo()
+    
     if ChainRecoverCommonFunction() == TRUE then
         return
     elseif lower_state == LOWER_MOVE and TRUE == env(IsAnimEnd, 1) then
         ExecEventHalfBlendNoReset(Event_Move, UPPER)
         return
     elseif HalfBlendLowerCommonFunction(Event_ChainRecoverMirror, lower_state, FALSE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7034,10 +7316,13 @@ end
 
 function Move_onUpdate()
     act(SwitchMotion, TRUE)
+    
     local move_speed = GetVariable("MoveSpeedIndex")
+    
     if move_speed == 2 then
         SetThrowAtkInvalid()
     end
+    
     if g_TimeActEditor_08 >= 1 then
         act(Set4DirectionMovementThreshold, GetVariable("MagicRightWalkAngle_FrontLeft"), GetVariable("MagicRightWalkAngle_FrontRight"), GetVariable("MagicRightWalkAngle_BackLeft"), GetVariable("MagicRightWalkAngle_BackRight"))
     elseif 1 <= g_TimeActEditor_09 then
@@ -7049,9 +7334,12 @@ function Move_onUpdate()
     else
         act(Set4DirectionMovementThreshold, 40, 70, 60, 20)
     end
+    
     SpeedUpdate()
+    
     if TRUE == env(IsCOMPlayer) then
         local npc_turn_speed = 240
+        
         if move_speed == 2 then
             npc_turn_speed = 180
         else
@@ -7060,6 +7348,7 @@ function Move_onUpdate()
                 npc_turn_speed = 90
             end
         end
+        
         SetTurnSpeed(npc_turn_speed)
     end
     
@@ -7089,6 +7378,7 @@ end
 
 function Move_Upper_onUpdate()
     SetEnableMimicry()
+    
     if MoveCommonFunction(UPPER) == TRUE then
         SetVariable("ArtsTransition", 0)
     end
@@ -7096,9 +7386,11 @@ end
 
 function Guard_Activate()
     local hand = HAND_LEFT
+    
     if c_Style == HAND_RIGHT_BOTH then
         hand = HAND_RIGHT
     end
+    
     act(DebugLogOutput, "Guard_Activate ( ) ")
     SetGuardHand(hand)
 end
@@ -7109,18 +7401,21 @@ end
 
 function GuardStart_Upper_onUpdate()
     local blend_type, lower_state = GetHalfBlendInfo()
+    
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
         act(DisallowAdditiveTurning, TRUE)
     else
         act(DisallowAdditiveTurning, FALSE)
     end
+    
     if GuardCommonFunction(FALSE, blend_type) == TRUE then
         return
     elseif TRUE == env(IsAnimEnd, 1) or TRUE == env(GetEventEzStateFlag, 0) then
         ExecEventHalfBlend(Event_GuardOn, blend_type)
         return
     elseif HalfBlendLowerCommonFunction(Event_GuardStart, lower_state, FALSE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7134,15 +7429,18 @@ end
 
 function GuardOn_Upper_onUpdate()
     local blend_type, lower_state = GetHalfBlendInfo()
+    
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
         act(DisallowAdditiveTurning, TRUE)
     else
         act(DisallowAdditiveTurning, FALSE)
     end
+    
     if GuardCommonFunction(FALSE, blend_type) == TRUE then
         return
     elseif HalfBlendLowerCommonFunction(Event_GuardOn, lower_state, FALSE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7154,16 +7452,16 @@ function GuardEnd_Upper_onActivate()
     act(Wait)
 end
 
-Event_MoveQuick = {"W_MoveQuick", MOVE_DEF0}
-
 function GuardEnd_Upper_onUpdate()
     local blend_type, lower_state = GetHalfBlendInfo()
+    
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
         act(DisallowAdditiveTurning, TRUE)
     else
         act(DisallowAdditiveTurning, FALSE)
     end
+    
     if GuardCommonFunction(TRUE, blend_type) == TRUE then
         return
     elseif lower_state == LOWER_MOVE and (TRUE == env(IsAnimEnd, 1) or TRUE == env(GetEventEzStateFlag, 0)) then
@@ -7172,16 +7470,19 @@ function GuardEnd_Upper_onUpdate()
     elseif HalfBlendUpperCommonFunction(lower_state) == TRUE then
         return
     elseif HalfBlendLowerCommonFunction(Event_GuardEnd, lower_state, FALSE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function FallStart_onUpdate()
     if FallCommonFunction(TRUE, FALSE, FALL_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function FallJumpStart_onUpdate() 
     if FallCommonFunction(TRUE, TRUE, FALL_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7190,11 +7491,13 @@ function FallLoop_onUpdate()
         ExecEvent("W_FallDeath")
         return
     elseif FallCommonFunction(TRUE, FALSE, FALL_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function Land_onUpdate()
     if LandCommonFunction() == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7212,11 +7515,13 @@ end
 
 function FallStartFaceUp_onUpdate()
     if FallCommonFunction(TRUE, FALSE, FALL_FACEUP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function FallStartFaceDown_onUpdate()
     if FallCommonFunction(TRUE, FALSE, FALL_FACEDOWN) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7225,6 +7530,7 @@ function FallLoopFaceUp_onUpdate()
         ExecEvent("W_FallDeathFaceUp")
         return
     elseif FallCommonFunction(TRUE, FALSE, FALL_FACEUP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7233,16 +7539,19 @@ function FallLoopFaceDown_onUpdate()
         ExecEvent("W_FallDeathFaceDown")
         return
     elseif FallCommonFunction(TRUE, FALSE, FALL_FACEDOWN) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function LandFaceUp_onUpdate()
     if LandCommonFunction() == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function LandFaceDown_onUpdate()
     if LandCommonFunction() == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7262,16 +7571,19 @@ end
 
 function DamageSABreak_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageSleepResist_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageMad_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7284,6 +7596,7 @@ function DamageBind_onUpdate()
     act(SetIsMagicInUse, 0)
     act(SetAllowedThrowDefenseType, 0)
     act(SetAllowedThrowAttackType, 0)
+    
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
         return
     elseif FALSE == env(Unknown362, 32) then
@@ -7293,125 +7606,157 @@ end
 
 function DamageLv1_Small_onUpdate()
     act(SetMovementScaleMult, 0)
+    
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv2_Middle_onUpdate()
     act(SetMovementScaleMult, 0)
-    if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+    
+    if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then    
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv3_Large_onUpdate()
     act(SetMovementScaleMult, 0)
+    
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLarge2_onUpdate()
     act(SetMovementScaleMult, 0)
+    
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageWeak_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv8_Minimum_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv6_Fling_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_FACEDOWN_LOOP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv4_ExLarge_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_FORCE_LOOP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv5_Push_onUpdate()
     act(SetMovementScaleMult, 0)
+    
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv7_SmallBlow_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_FORCE_LOOP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv9_Upper_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_FACEDOWN_LOOP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLV10_ExBlast_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_FORCE_LOOP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageLv11_Breath_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_FORCE_LOOP) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function DamageParry_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function GuardDamageSmall_onUpdate()
     act(SetStaminaRecoveryDisabled)
+    
     if DamageCommonFunction(TO_GUARDON, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function GuardDamageMiddle_onUpdate()
     act(SetStaminaRecoveryDisabled)
+    
     if DamageCommonFunction(TO_GUARDON, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function GuardDamageLarge_onUpdate()
     act(SetStaminaRecoveryDisabled)
+    
     if DamageCommonFunction(TO_GUARDON, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function GuardBreak_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function GuardBreakRight_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function Repelled_Wall_onUpdate()
     act(Unknown2027)
+    
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function Repelled_Small_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function Repelled_Large_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
 function GuardDamageExLarge_onUpdate()
     if DamageCommonFunction(FALSE, ESTEP_DOWN, FALL_TYPE_DEFAULT) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -7445,8 +7790,6 @@ function QuickTurnRight180_Upper_onUpdate()
     end
 end
 
-g_ComboReset = FALSE
-
 function AttackRight_Activate()
     SetAttackHand(HAND_RIGHT)
     SetGuardHand(HAND_RIGHT)
@@ -7459,10 +7802,13 @@ end
 
 function AttackRightLight1_onUpdate()
     local r1 = "W_AttackRightLight2"
+    
     if g_ComboReset == TRUE then
         r1 = "W_AttackRightLight1"
     end
+    
     if AttackCommonFunction(r1, "W_AttackRightHeavy1SubStart", "W_AttackLeftLight1", "W_AttackLeftHeavy1", "W_AttackBothLight2", "W_AttackBothHeavy1Start", FALSE, TRUE, 1) == TRUE then
+        -- Missing code from decompile?
     end
 end
 
@@ -14338,6 +14684,7 @@ function Update()
     SetStyleSpecialEffect()
     TrackDeflection()
     TrackMultiJump()
+    RegenerateFP()
     
     act(SwitchMotion, FALSE)
     if env(ActionDuration, ACTION_ARM_ACTION) > 0 then
@@ -14582,12 +14929,12 @@ function RideReActionFunction()
 end
 
 function ExecRideDeath()
-    if env(Unknown409, 3) == TRUE then
+    if env(GetDamageSpecialAttribute, 3) == TRUE then
         SetVariable("IndexRideDeath", RIDE_DEATH_TYPE_STONE)
         FireRideEvent("W_RideDeath", "W_RideDeath", FALSE)
         return TRUE
     elseif env(GetHP) <= 0 then
-        if env(Unknown409, 6) == TRUE or env(GetSpecialAttribute) == 25 then
+        if env(GetDamageSpecialAttribute, 6) == TRUE or env(GetSpecialAttribute) == 25 then
             SetVariable("IndexRideDeath", RIDE_DEATH_TYPE_MAD)
         else
             SetVariable("IndexRideDeath", RIDE_DEATH_TYPE_COMMON)
@@ -14662,10 +15009,10 @@ function ExecRideDamage()
     elseif env(Unknown400) <= 0 and (damage_level > DAMAGE_LEVEL_NONE or damage_level_under > DAMAGE_LEVEL_NONE) and (is_damaged == TRUE or is_damaged_under == TRUE) then
         FireRideEvent("W_RideDamage_Fall", "W_RideRun_End", FALSE)
         return TRUE
-    elseif env(Unknown409, 5) == TRUE then
+    elseif env(GetDamageSpecialAttribute, 5) == TRUE then
         FireRideEvent("W_RideDamage_Fall", "W_RideRun_End", FALSE)
         return TRUE
-    elseif env(Unknown409, 6) == TRUE then
+    elseif env(GetDamageSpecialAttribute, 6) == TRUE then
         FireRideEvent("W_RideDamageMad", "W_RideRun_End", FALSE)
         Replanning()
         return TRUE
@@ -14687,7 +15034,7 @@ function ExecRideDamage()
         Replanning()
         FireRideEvent("W_RideDamageMiddle", "W_Ride_DamageMiddle", FALSE)
         return TRUE
-    elseif env(Unknown409, 2) == TRUE or env(Unknown409, 4) == TRUE then
+    elseif env(GetDamageSpecialAttribute, 2) == TRUE or env(GetDamageSpecialAttribute, 4) == TRUE then
         if damage_level == DAMAGE_LEVEL_NONE then
             damage_level = DAMAGE_LEVEL_SMALL
         elseif damage_level ~= DAMAGE_LEVEL_SMALL and damage_level ~= DAMAGE_LEVEL_MIDDLE and damage_level == DAMAGE_LEVEL_MINIMUM then
@@ -18233,7 +18580,7 @@ function Act_Jump()
         elseif ExecDamage(FALSE, FALSE) == TRUE then
             return TRUE
         else
-            -- Missing code from decompile
+            -- Missing code from decompile?
         end
     end
 end
@@ -18379,9 +18726,9 @@ function JumpAttack_Start_Falling_F_onUpdate()
     end
     
     if GetVariable("JumpAttackForm") >= 0 then
-        -- Missing code from decompile
+        -- Missing code from decompile?
     else
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
     
     if TRUE == env(GetSpecialEffectID, 98) and TRUE == env(IsTruelyLanding) and env(GetSpecialEffectID, 140) == FALSE then
@@ -18418,9 +18765,9 @@ function JumpAttack_Start_Falling_D_onUpdate()
     end
     
     if GetVariable("JumpAttackForm") >= 0 then
-        -- Missing code from decompile
+        -- Missing code from decompile?
     else
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
     
     if TRUE == env(GetSpecialEffectID, 98) and TRUE == env(IsTruelyLanding) and env(GetSpecialEffectID, 140) == FALSE then
@@ -18733,7 +19080,7 @@ function ExecJumpMagic(jump_type)
     end
     
     if magic_index == MAGIC_REQUEST_WHIP or magic_index == MAGIC_REQUEST_SLASH or magic_index == MAGIC_REQUEST_QUICKSLASH or magic_index == MAGIC_REQUEST_FLAME_GRAB or magic_index == MAGIC_REQUEST_CRUSH or magic_index == MAGIC_REQUEST_CHOP or magic_index == MAGIC_REQUEST_SCYTHE then
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
     
     if TRUE == IsJumpMagic() then
@@ -18790,7 +19137,7 @@ function ExecJumpMagic(jump_type)
         
         return TRUE
     else
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
 end
 
@@ -18861,7 +19208,7 @@ function ExecFallMagic()
     end
     
     if magic_index == MAGIC_REQUEST_WHIP or magic_index == MAGIC_REQUEST_SLASH or magic_index == MAGIC_REQUEST_QUICKSLASH or magic_index == MAGIC_REQUEST_FLAME_GRAB or magic_index == MAGIC_REQUEST_CRUSH or magic_index == MAGIC_REQUEST_CHOP or magic_index == MAGIC_REQUEST_SCYTHE then
-        -- Missing code from decompile
+        -- Missing code from decompile?
     end
     
     if TRUE == IsJumpMagic() then
@@ -19822,6 +20169,7 @@ HandChangeTest_ToL2 = FALSE
 HandChangeTest_L = FALSE
 HandChangeTest_R = FALSE
 HandChangeTest_Time = 233
+
 JUMP_STATE_1 = 0
 JUMP_STATE_2 = 0
 JUMP_STATE_3 = 0
@@ -19845,10 +20193,15 @@ DAMAGE_PHYSICAL_SLASH = 0
 DAMAGE_PHYSICAL_BLUNT = 1
 DAMAGE_PHYSICAL_THRUST = 2
 DAMAGE_PHYSICAL_NORMAL = 3
+
+IS_ATTACKED_JUMPMAGIC = FALSE
+
 g_IsMimicry = 0
 g_EnableMimicry = 0
-IS_ATTACKED_JUMPMAGIC = FALSE
+g_ComboReset = FALSE
 lastUsedMagicAnim = -1
+
+Event_MoveQuick = { "W_MoveQuick", MOVE_DEF0 }
 
 -- Added
 ACTION_ARM_JUMP = ACTION_ARM_CHANGE_STYLE
@@ -20060,7 +20413,7 @@ Unknown405 = 405
 GetRollAngle = 406
 GetJumpAngle = 407
 GetSwordArtsRollAngle = 408
-Unknown409 = 409 -- args: <unknown>
+GetDamageSpecialAttribute = 409 -- args: <index>
 
 IsOnMount = 500
 IsSummoningRide = 504
