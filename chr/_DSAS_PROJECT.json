@@ -179,7 +179,7 @@
       "AngleSnap": 0.7853982,
       "AngleSnapEnable": false,
       "PivotPrimIsEnabled": false,
-      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.0021263734, 1.2516427, -0.15407407",
+      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.02541931, 1.2453061, -0.08062789",
       "OrbitCamCenter_DummyPolyFollowRefPoint_Init": "0, 0, 0",
       "OverallMouseSpeedMult": 1.0,
       "CameraTurnSpeedMouse": 1.0,
@@ -225,7 +225,7 @@
       "OrbitCamDistance": 5.0,
       "ProjectionIsOrthographic": false,
       "ProjectionVerticalFovRatio": 1.0,
-      "PivotPrimVisRatio": 0.94636333
+      "PivotPrimVisRatio": 0.0
     }
   ]
 }

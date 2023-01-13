@@ -73,9 +73,3 @@
     - Standard
     - Mythic
     
-# Dummy System
-Add basic dummy setup in Roundtable Hold
-    Change door to be openable
-    Add single dummy, with original system tweaks
-    
-4010 Master of Combat

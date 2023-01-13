@@ -108,6 +108,90 @@
 
 1047610630 Display Perfect Deflect visual
 
+# Training System
+1047610700 Location Update
+1047610701 Location: Single
+1047610702 Location: Triangle Triple
+1047610703 Location: Square Quad
+1047610704 Location: Parallel Duo
+1047610705 Location: Clustered Mass
+
+1047610710 Type Update
+1047610711 Type: Black Knife Assassin 
+1047610712 Type: Runebear
+1047610713 Type: Imp
+
+1047610800 Dummy Setup
+1047610801 Enable HP Regeneration
+1047610802 Enable Stagger
+1047610803 Enable Hostility
+1047610804 Enable Aux Inflict
+1047610805 Enable Backstab
+1047610806 Enable Damage
+
+1047610810 HP: 2000
+1047610811 HP: 5000
+1047610812 HP: 10000
+1047610813 HP: 20000
+1047610814 HP: 50000
+1047610815 HP: 100000
+
+1047610820 Standard Absorption: Standard
+1047610821 Standard Absorption: +20%
+1047610822 Standard Absorption: +40%
+1047610823 Standard Absorption: +60%
+1047610824 Standard Absorption: +80%
+1047610825 Standard Absorption: +100%
+
+1047610830 Magic Absorption: Standard
+1047610831 Magic Absorption: +20%
+1047610832 Magic Absorption: +40%
+1047610833 Magic Absorption: +60%
+1047610834 Magic Absorption: +80%
+1047610835 Magic Absorption: +100%
+
+1047610840 Fire Absorption: Standard
+1047610841 Fire Absorption: +20%
+1047610842 Fire Absorption: +40%
+1047610843 Fire Absorption: +60%
+1047610844 Fire Absorption: +80%
+1047610845 Fire Absorption: +100%
+
+1047610850 Lightning Absorption: Standard
+1047610851 Lightning Absorption: +20%
+1047610852 Lightning Absorption: +40%
+1047610853 Lightning Absorption: +60%
+1047610854 Lightning Absorption: +80%
+1047610855 Lightning Absorption: +100%
+
+1047610860 Holy Absorption: Standard
+1047610861 Holy Absorption: +20%
+1047610862 Holy Absorption: +40%
+1047610863 Holy Absorption: +60%
+1047610864 Holy Absorption: +80%
+1047610865 Holy Absorption: +100%
+
+1047610870 Slash Absorption: Standard
+1047610871 Slash Absorption: +20%
+1047610872 Slash Absorption: +40%
+1047610873 Slash Absorption: +60%
+1047610874 Slash Absorption: +80%
+1047610875 Slash Absorption: +100%
+
+1047610880 Strike Absorption: Standard
+1047610881 Strike Absorption: +20%
+1047610882 Strike Absorption: +40%
+1047610883 Strike Absorption: +60%
+1047610884 Strike Absorption: +80%
+1047610885 Strike Absorption: +100%
+
+1047610890 Thrust Absorption: Standard
+1047610891 Thrust Absorption: +20%
+1047610892 Thrust Absorption: +40%
+1047610893 Thrust Absorption: +60%
+1047610894 Thrust Absorption: +80%
+1047610895 Thrust Absorption: +100%
+
 #------------------------------------
 104762_0000 Random
 #------------------------------------

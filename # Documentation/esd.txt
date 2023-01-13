@@ -5,8 +5,8 @@ t000001500 Altar of Advancement
 t000001600 Duelist Atticus - Caelid
 t000001700 Duelist Atticus - Limgrave
 t000001800 Bard Sangeet
-t000004000 
-t000004010
+t000004000 Mysterious Shinobi
+t000004010 Master Jarwright
 t000004020
 t000004030
 t000004040

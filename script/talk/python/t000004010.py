@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #-----------------------------------------------------
-# UNTITLED
+# Jar of Discipline
 #-----------------------------------------------------
 def t000004010_1():
     """State 0,1"""
@@ -537,18 +537,27 @@ def t000004010_x36():
     return 0
 
 #----------------------------------------------------
-# Gauntlet Music
+# Training Options
 #----------------------------------------------------
 def t000004010_x100():
     while True:
         ClearTalkListData()
         c1_110()
         
-        # Purchase Items
-        AddTalkListData(1, 80105450, -1)
+        # Core Configuration
+        AddTalkListData(1, 80103000, -1)
         
-        # Gauntlet Msuic
-        AddTalkListData(2, 80105451, -1)
+        # HP Configuration
+        AddTalkListData(2, 80103002, -1)
+        
+        # Absorption Configuration
+        AddTalkListData(3, 80103001, -1)
+        
+        # Formation Configuration
+        AddTalkListData(4, 80103003, -1)
+        
+        # Type Configuration
+        AddTalkListData(5, 80103400, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -558,255 +567,417 @@ def t000004010_x100():
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
         if GetTalkListEntryResult() == 1:
-            OpenRegularShop(8000000, 8000999)
-            assert not (CheckSpecificPersonMenuIsOpen(5, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        elif GetTalkListEntryResult() == 2:
             assert t000004010_x101()
+            continue
+        elif GetTalkListEntryResult() == 2:
+            assert t000004010_x110()
+            continue
+        elif GetTalkListEntryResult() == 3:
+            assert t000004010_x120()
+            continue
+        elif GetTalkListEntryResult() == 4:
+            assert t000004010_x130()
+            continue
+        elif GetTalkListEntryResult() == 5:
+            assert t000004010_x140()
             continue
         else:
             """State 6,8"""
             return 0
             
-# Music
+#----------------------------------------------------
+# Core Configuration
+#----------------------------------------------------
 def t000004010_x101():
     while True:
         ClearTalkListData()
         c1_110()
         
-        # None
-        AddTalkListDataIf(GetEventFlag(1047610350) == 0, 1, 80105500, -1)
-        # None (selected)
-        AddTalkListDataIf(GetEventFlag(1047610350) == 1, 50, 80105600, -1)
+        # Toggle Regeneration
+        AddTalkListData(1, 80103010, -1)
         
-        # Godfrey, First Elden Lord
-        AddTalkListDataIf(GetEventFlag(1047610351) == 0, 2, 80105501, -1)
-        # Godfrey, First Elden Lord (selected)
-        AddTalkListDataIf(GetEventFlag(1047610351) == 1, 51, 80105601, -1)
+        # Toggle Aux Inflict
+        AddTalkListData(3, 80103012, -1)
         
-        # Grafted Scion
-        AddTalkListDataIf(GetEventFlag(1047610352) == 0, 3, 80105502, -1)
-        # Grafted Scion (selected)
-        AddTalkListDataIf(GetEventFlag(1047610352) == 1, 52, 80105602, -1)
+        # Toggle Stagger
+        AddTalkListData(2, 80103011, -1)
         
-        # Margit, the Fell Omen
-        AddTalkListDataIf(GetEventFlag(1047610353) == 0, 4, 80105503, -1)
-        # Margit, the Fell Omen (selected)
-        AddTalkListDataIf(GetEventFlag(1047610353) == 1, 53, 80105603, -1)
+        # Toggle Backstabs
+        AddTalkListData(5, 80103014, -1)
         
-        # Rennala, Queen of the Full Moon
-        AddTalkListDataIf(GetEventFlag(1047610354) == 0, 5, 80105504, -1)
-        # Rennala, Queen of the Full Moon (selected)
-        AddTalkListDataIf(GetEventFlag(1047610354) == 1, 54, 80105604, -1)
+        # Toggle Damage
+        AddTalkListData(6, 80103015, -1)
         
-        # Red Wolf of Radagon
-        AddTalkListDataIf(GetEventFlag(1047610355) == 0, 6, 80105505, -1)
-        # Red Wolf of Radagon (selected)
-        AddTalkListDataIf(GetEventFlag(1047610355) == 1, 55, 80105605, -1)
-        
-        # Rykard, Lord of Blasphemy
-        AddTalkListDataIf(GetEventFlag(1047610356) == 0, 7, 80105506, -1)
-        # Rykard, Lord of Blasphemy (selected)
-        AddTalkListDataIf(GetEventFlag(1047610356) == 1, 56, 80105606, -1)
-        
-        # Godskin Noble
-        AddTalkListDataIf(GetEventFlag(1047610357) == 0, 8, 80105507, -1)
-        # Godskin Noble (selected)
-        AddTalkListDataIf(GetEventFlag(1047610357) == 1, 57, 80105607, -1)
-        
-        # Abductor Virgins
-        AddTalkListDataIf(GetEventFlag(1047610358) == 0, 9, 80105508, -1)
-        # Abductor Virgins (selected)
-        AddTalkListDataIf(GetEventFlag(1047610358) == 1, 58, 80105608, -1)
-        
-        # Starscourge Radahn
-        AddTalkListDataIf(GetEventFlag(1047610359) == 0, 10, 80105509, -1)
-        # Starscourge Radahn (selected)
-        AddTalkListDataIf(GetEventFlag(1047610359) == 1, 59, 80105609, -1)
-        
-        # Morgott, the Omen King
-        AddTalkListDataIf(GetEventFlag(1047610360) == 0, 11, 80105510, -1)
-        # Morgott, the Omen King (selected)
-        AddTalkListDataIf(GetEventFlag(1047610360) == 1, 60, 80105610, -1)
-        
-        # Ancestor Spirit
-        AddTalkListDataIf(GetEventFlag(1047610361) == 0, 12, 80105511, -1)
-        # Ancestor Spirit (selected)
-        AddTalkListDataIf(GetEventFlag(1047610361) == 1, 61, 80105611, -1)
-        
-        # Dragonkin Soldier of Nokstella
-        AddTalkListDataIf(GetEventFlag(1047610362) == 0, 13, 80105512, -1)
-        # Dragonkin Soldier of Nokstella (selected)
-        AddTalkListDataIf(GetEventFlag(1047610362) == 1, 62, 80105612, -1)
-        
-        # Astel, Naturalborn of the Void
-        AddTalkListDataIf(GetEventFlag(1047610363) == 0, 14, 80105513, -1)
-        # Astel, Naturalborn of the Void (selected)
-        AddTalkListDataIf(GetEventFlag(1047610363) == 1, 63, 80105613, -1)
-        
-        # Mohg, Lord of Blood
-        AddTalkListDataIf(GetEventFlag(1047610364) == 0, 15, 80105514, -1)
-        # Mohg, Lord of Blood (selected)
-        AddTalkListDataIf(GetEventFlag(1047610364) == 1, 64, 80105614, -1)
-        
-        # Fire Giant
-        AddTalkListDataIf(GetEventFlag(1047610365) == 0, 16, 80105515, -1)
-        # Fire Giant (selected)
-        AddTalkListDataIf(GetEventFlag(1047610365) == 1, 65, 80105615, -1)
-        
-        # Hoarah Loux
-        AddTalkListDataIf(GetEventFlag(1047610366) == 0, 17, 80105516, -1)
-        # Hoarah Loux (selected)
-        AddTalkListDataIf(GetEventFlag(1047610366) == 1, 66, 80105616, -1)
-        
-        # Sir Gideon Ofnir
-        AddTalkListDataIf(GetEventFlag(1047610367) == 0, 18, 80105517, -1)
-        # Sir Gideon Ofnir (selected)
-        AddTalkListDataIf(GetEventFlag(1047610367) == 1, 67, 80105617, -1)
-        
-        # Maliketh, The Black Blade
-        AddTalkListDataIf(GetEventFlag(1047610368) == 0, 19, 80105518, -1)
-        #Maliketh, The Black Blade (selected)
-        AddTalkListDataIf(GetEventFlag(1047610368) == 1, 68, 80105618, -1)
-        
-        # Dragonlord Placidusax
-        AddTalkListDataIf(GetEventFlag(1047610369) == 0, 20, 80105519, -1)
-        # Dragonlord Placidusax (selected)
-        AddTalkListDataIf(GetEventFlag(1047610369) == 1, 69, 80105619, -1)
-        
-        # Malenia, Blade of Miquella
-        AddTalkListDataIf(GetEventFlag(1047610370) == 0, 21, 80105520, -1)
-        # Malenia, Blade of Miquella (selected)
-        AddTalkListDataIf(GetEventFlag(1047610370) == 1, 70, 80105620, -1)
-        
-        # Loretta, Knight of the Haligtree
-        AddTalkListDataIf(GetEventFlag(1047610371) == 0, 22, 80105521, -1)
-        # Loretta, Knight of the Haligtree (selected)
-        AddTalkListDataIf(GetEventFlag(1047610371) == 1, 71, 80105621, -1)
-        
-        # Radagon of the Golden Order
-        AddTalkListDataIf(GetEventFlag(1047610372) == 0, 23, 80105522, -1)
-        # Radagon of the Golden Order (selected)
-        AddTalkListDataIf(GetEventFlag(1047610372) == 1, 72, 80105622, -1)
+        # Toggle Hostility
+        AddTalkListData(4, 80103013, -1)
         
         # Leave
-        AddTalkListData(99, 20000009, -1)
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # HP Regen
+        if GetTalkListEntryResult() == 1:
+            assert t000004010_x102(1047610801, 80103020, 80103021)
+            return 0
+        # Stagger
+        elif GetTalkListEntryResult() == 2:
+            assert t000004010_x102(1047610802, 80103030, 80103031)
+            return 0
+        # Aux Inflict
+        elif GetTalkListEntryResult() == 3:
+            assert t000004010_x102(1047610804, 80103040, 80103041)
+            return 0
+        # Hostility
+        elif GetTalkListEntryResult() == 4:
+            assert t000004010_x102(1047610803, 80103050, 80103051)
+            return 0
+        # Backstabs
+        elif GetTalkListEntryResult() == 5:
+            assert t000004010_x102(1047610805, 80103060, 80103061)
+            return 0
+        # Damage
+        elif GetTalkListEntryResult() == 6:
+            assert t000004010_x102(1047610806, 80103070, 80103071)
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+          
+def t000004010_x102(flag=_, enable_text=_, disable_text=_):
+    if(GetEventFlag(flag) == 1):
+        SetEventFlag(flag, 0)
+        assert t000004010_x150(disable_text)
+    else:
+        SetEventFlag(flag, 1)
+        assert t000004010_x150(enable_text)
+          
+    return 0
+    
+#----------------------------------------------------
+# HP Configuration
+#----------------------------------------------------
+def t000004010_x110():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Set Max HP to 2,000
+        AddTalkListData(1, 80103100, -1)
+        
+        # Set Max HP to 5,000
+        AddTalkListData(2, 80103101, -1)
+        
+        # Set Max HP to 10,000
+        AddTalkListData(3, 80103102, -1)
+        
+        # Set Max HP to 20,000
+        AddTalkListData(4, 80103103, -1)
+        
+        # Set Max HP to 50,000
+        AddTalkListData(5, 80103104, -1)
+        
+        # Set Max HP to 10,000
+        AddTalkListData(6, 80103105, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
         
         ShowShopMessage(1)
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
         if GetTalkListEntryResult() == 1:
-            assert t000004010_x111(1047610350)
+            assert t000004010_x111(1047610810)
             return 0
         elif GetTalkListEntryResult() == 2:
-            assert t000004010_x111(1047610351)
+            assert t000004010_x111(1047610811)
             return 0
         elif GetTalkListEntryResult() == 3:
-            assert t000004010_x111(1047610352)
+            assert t000004010_x111(1047610812)
             return 0
         elif GetTalkListEntryResult() == 4:
-            assert t000004010_x111(1047610353)
+            assert t000004010_x111(1047610813)
             return 0
         elif GetTalkListEntryResult() == 5:
-            assert t000004010_x111(1047610354)
+            assert t000004010_x111(1047610814)
             return 0
         elif GetTalkListEntryResult() == 6:
-            assert t000004010_x111(1047610355)
-            return 0
-        elif GetTalkListEntryResult() == 7:
-            assert t000004010_x111(1047610356)
-            return 0
-        elif GetTalkListEntryResult() == 8:
-            assert t000004010_x111(1047610357)
-            return 0
-        elif GetTalkListEntryResult() == 9:
-            assert t000004010_x111(1047610358)
-            return 0
-        elif GetTalkListEntryResult() == 10:
-            assert t000004010_x111(1047610359)
-            return 0
-        elif GetTalkListEntryResult() == 11:
-            assert t000004010_x111(1047610360)
-            return 0
-        elif GetTalkListEntryResult() == 12:
-            assert t000004010_x111(1047610361)
-            return 0
-        elif GetTalkListEntryResult() == 13:
-            assert t000004010_x111(1047610362)
-            return 0
-        elif GetTalkListEntryResult() == 14:
-            assert t000004010_x111(1047610363)
-            return 0
-        elif GetTalkListEntryResult() == 15:
-            assert t000004010_x111(1047610364)
-            return 0
-        elif GetTalkListEntryResult() == 16:
-            assert t000004010_x111(1047610365)
-            return 0
-        elif GetTalkListEntryResult() == 17:
-            assert t000004010_x111(1047610366)
-            return 0
-        elif GetTalkListEntryResult() == 18:
-            assert t000004010_x111(1047610367)
-            return 0
-        elif GetTalkListEntryResult() == 19:
-            assert t000004010_x111(1047610368)
-            return 0
-        elif GetTalkListEntryResult() == 20:
-            assert t000004010_x111(1047610369)
-            return 0
-        elif GetTalkListEntryResult() == 21:
-            assert t000004010_x111(1047610370)
-            return 0
-        elif GetTalkListEntryResult() == 22:
-            assert t000004010_x111(1047610371)
-            return 0
-        elif GetTalkListEntryResult() == 23:
-            assert t000004010_x111(1047610372)
-            return 0
-        elif GetTalkListEntryResult() >= 50:
+            assert t000004010_x111(1047610815)
             return 0
         else:
             """State 6,8"""
             return 0
+            
+def t000004010_x111(flag=_):
+    SetEventFlag(1047610810, 0)
+    SetEventFlag(1047610811, 0)
+    SetEventFlag(1047610812, 0)
+    SetEventFlag(1047610813, 0)
+    SetEventFlag(1047610814, 0)
+    SetEventFlag(1047610815, 0)
+    
+    SetEventFlag(flag, 1)
+    assert t000004010_x150(80103110)
+          
+    return 0
+    
+#----------------------------------------------------
+# Absorption Configuration
+#----------------------------------------------------
+def t000004010_x120():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Standard Absorption
+        AddTalkListData(1, 80103200, -1)
+        
+        # Slash Absorption
+        AddTalkListData(2, 80103201, -1)
+        
+        # Strike Absorption
+        AddTalkListData(3, 80103202, -1)
+        
+        # Thrust Absorption
+        AddTalkListData(4, 80103203, -1)
+        
+        # Magic Absorption
+        AddTalkListData(5, 80103204, -1)
+        
+        # Fire Absorption
+        AddTalkListData(6, 80103205, -1)
+        
+        # Lightning Absorption
+        AddTalkListData(7, 80103206, -1)
+        
+        # Holy Absorption
+        AddTalkListData(8, 80103207, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000004010_x121(1047610820)
+            continue
+        elif GetTalkListEntryResult() == 2:
+            assert t000004010_x121(1047610870)
+            continue
+        elif GetTalkListEntryResult() == 3:
+            assert t000004010_x121(1047610880)
+            continue
+        elif GetTalkListEntryResult() == 4:
+            assert t000004010_x121(1047610890)
+            continue
+        elif GetTalkListEntryResult() == 5:
+            assert t000004010_x121(1047610830)
+            continue
+        elif GetTalkListEntryResult() == 6:
+            assert t000004010_x121(1047610840)
+            continue
+        elif GetTalkListEntryResult() == 7:
+            assert t000004010_x121(1047610850)
+            continue
+        elif GetTalkListEntryResult() == 8:
+            assert t000004010_x121(1047610860)
+            continue
+        else:
+            """State 6,8"""
+            return 0
+            
+# Absorption Menu
+def t000004010_x121(base_flag=_):
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # None
+        AddTalkListData(1, 80103210, -1)
+        
+        # +20%
+        AddTalkListData(2, 80103211, -1)
+        
+        # +40%
+        AddTalkListData(3, 80103212, -1)
+        
+        # +60%
+        AddTalkListData(4, 80103213, -1)
+        
+        # +80%
+        AddTalkListData(5, 80103214, -1)
+        
+        # +100%
+        AddTalkListData(6, 80103215, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000004010_x122(base_flag, base_flag)
+            return 0
+        elif GetTalkListEntryResult() == 2:
+            assert t000004010_x122(base_flag, base_flag + 1)
+            return 0
+        elif GetTalkListEntryResult() == 3:
+            assert t000004010_x122(base_flag, base_flag + 2)
+            return 0
+        elif GetTalkListEntryResult() == 4:
+            assert t000004010_x122(base_flag, base_flag + 3)
+            return 0
+        elif GetTalkListEntryResult() == 5:
+            assert t000004010_x122(base_flag, base_flag + 4)
+            return 0
+        elif GetTalkListEntryResult() == 6:
+            assert t000004010_x122(base_flag, base_flag + 5)
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+            
+def t000004010_x122(base_flag=_, flag=_):
+    SetEventFlag(base_flag, 0)
+    SetEventFlag(base_flag + 1, 0)
+    SetEventFlag(base_flag + 2, 0)
+    SetEventFlag(base_flag + 3, 0)
+    SetEventFlag(base_flag + 4, 0)
+    SetEventFlag(base_flag + 5, 0)
+    
+    SetEventFlag(flag, 1)
+    assert t000004010_x150(80103220)
+          
+    return 0
+    
+#----------------------------------------------------
+# Formation Configuration
+#----------------------------------------------------
+def t000004010_x130():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Single
+        AddTalkListData(1, 80103300, -1)
 
+        # Triangle Triple
+        AddTalkListData(2, 80103301, -1)
+
+        # Square Quad
+        AddTalkListData(3, 80103302, -1)
+
+        # Parallel Duo
+        AddTalkListData(4, 80103303, -1)
+
+        # Clustered Mass
+        AddTalkListData(5, 80103304, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000004010_x131(1047610701)
+            return 0
+        elif GetTalkListEntryResult() == 2:
+            assert t000004010_x131(1047610702)
+            return 0
+        elif GetTalkListEntryResult() == 3:
+            assert t000004010_x131(1047610703)
+            return 0
+        elif GetTalkListEntryResult() == 4:
+            assert t000004010_x131(1047610704)
+            return 0
+        elif GetTalkListEntryResult() == 5:
+            assert t000004010_x131(1047610705)
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+            
+def t000004010_x131(flag=_):
+    SetEventFlag(1047610701, 0)
+    SetEventFlag(1047610702, 0)
+    SetEventFlag(1047610703, 0)
+    SetEventFlag(1047610704, 0)
+    SetEventFlag(1047610705, 0)
+    
+    SetEventFlag(flag, 1)
+    SetEventFlag(1047610700, 1)
+    
+    assert t000004010_x150(80103310)
+    
+    return 0
+    
+#----------------------------------------------------
+# Type Configuration
+#----------------------------------------------------
+def t000004010_x140():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Black Knife Assassin
+        AddTalkListData(1, 80103401, -1)
+
+        # Runebear
+        AddTalkListData(2, 80103402, -1)
+
+        # Imp
+        AddTalkListData(3, 80103403, -1)
+
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        if GetTalkListEntryResult() == 1:
+            assert t000004010_x141(1047610711)
+            return 0
+        elif GetTalkListEntryResult() == 2:
+            assert t000004010_x141(1047610712)
+            return 0
+        elif GetTalkListEntryResult() == 3:
+            assert t000004010_x141(1047610713)
+            return 0
+        else:
+            """State 6,8"""
+            return 0
+            
+def t000004010_x141(flag=_):
+    SetEventFlag(1047610711, 0)
+    SetEventFlag(1047610712, 0)
+    SetEventFlag(1047610713, 0)
+    
+    SetEventFlag(flag, 1)
+    SetEventFlag(1047610710, 1)
+    SetEventFlag(1047610700, 1) # Location Update so they are placed too
+    
+    assert t000004010_x150(80103490)
+    
+    return 0
+    
+#----------------------------------------------------
+# Utility
+#----------------------------------------------------         
 # Description Prompt
-def t000004010_x110(action1=_):
+def t000004010_x150(action1=_):
     """State 0,1"""
     OpenGenericDialog(8, action1, 1, 0, 1)
     assert not CheckSpecificPersonGenericDialogIsOpen(0)
     """State 2"""
-    return 0
-    
-# Set Theme
-def t000004010_x111(flag=_):
-    assert t000004010_x110(80105700)
-            
-    SetEventFlag(1047610350, 0)
-    SetEventFlag(1047610351, 0)
-    SetEventFlag(1047610352, 0)
-    SetEventFlag(1047610353, 0)
-    SetEventFlag(1047610354, 0)
-    SetEventFlag(1047610355, 0)
-    SetEventFlag(1047610356, 0)
-    SetEventFlag(1047610357, 0)
-    SetEventFlag(1047610358, 0)
-    SetEventFlag(1047610359, 0)
-    SetEventFlag(1047610360, 0)
-    SetEventFlag(1047610361, 0)
-    SetEventFlag(1047610362, 0)
-    SetEventFlag(1047610363, 0)
-    SetEventFlag(1047610364, 0)
-    SetEventFlag(1047610365, 0)
-    SetEventFlag(1047610366, 0)
-    SetEventFlag(1047610367, 0)
-    SetEventFlag(1047610368, 0)
-    SetEventFlag(1047610369, 0)
-    SetEventFlag(1047610370, 0)
-    SetEventFlag(1047610371, 0)
-    SetEventFlag(1047610372, 0)
-    
-    SetEventFlag(flag, 1)
-    
     return 0
     

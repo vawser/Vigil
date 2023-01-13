@@ -6522,6 +6522,26 @@ $Event(11000, Default, function() {
     // Toggle: Hidden Helm
     InitializeEvent(0, 11011, 1047610100, 7000030);
     
+    // Whetblades
+    InitializeEvent(0, 11017, 0);
+    
+    // Selected Deflection Type
+    InitializeEvent(0, 11020, 1047610600, 150900); // Storm
+    InitializeEvent(1, 11020, 1047610601, 150901); // Holy
+    InitializeEvent(2, 11020, 1047610602, 150902); // Moon
+    InitializeEvent(3, 11020, 1047610603, 150903); // Fire
+    InitializeEvent(4, 11020, 1047610604, 150904); // Thorn
+    
+    // Unlocked Deflection Level
+    InitializeEvent(5, 11020, 1047610610, 150950); // Standard
+    InitializeEvent(6, 11020, 1047610611, 150951); // Improved
+    InitializeEvent(7, 11020, 1047610612, 150952); // Perfected
+    
+    // Perfect Deflect Visual
+    InitializeEvent(8, 11020, 1047610630, 150970); // Perfected
+    
+    EndIf(!PlayerIsInOwnWorld());
+    
     // Time Shift
     InitializeEvent(0, 11012, 0); // Randomise Time on Spawn
     InitializeEvent(0, 11013, 0); // Force Day on Spawn
@@ -6545,24 +6565,6 @@ $Event(11000, Default, function() {
     InitializeEvent(13, 11016, 1047610523, Weather.RainyHeavyFog);
     InitializeEvent(14, 11016, 1047610524, Weather.SnowyHeavyFog);
     InitializeEvent(15, 11016, 1047610525, Weather.ScatteredRain);
-    
-    // Whetblades
-    InitializeEvent(0, 11017, 0);
-    
-    // Selected Deflection Type
-    InitializeEvent(0, 11020, 1047610600, 150900); // Storm
-    InitializeEvent(1, 11020, 1047610601, 150901); // Holy
-    InitializeEvent(2, 11020, 1047610602, 150902); // Moon
-    InitializeEvent(3, 11020, 1047610603, 150903); // Fire
-    InitializeEvent(4, 11020, 1047610604, 150904); // Thorn
-    
-    // Unlocked Deflection Level
-    InitializeEvent(5, 11020, 1047610610, 150950); // Standard
-    InitializeEvent(6, 11020, 1047610611, 150951); // Improved
-    InitializeEvent(7, 11020, 1047610612, 150952); // Perfected
-    
-    // Perfect Deflect Visual
-    InitializeEvent(8, 11020, 1047610630, 150970); // Perfected
 });
 
 //-------------------
