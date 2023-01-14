@@ -42,6 +42,7 @@
  
 # Gladiator's Gauntlet
 - Increased the rune gain from the enemies significantly.
+- Bloodstain runes are moved to Bard Sangeet if you die during the gauntlet.
  
 #-------------------------------------------------
 # Player
