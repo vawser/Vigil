@@ -5249,6 +5249,18 @@ $Event(90005775, Restart, function(X0_4, X4_4, X8_4) {
     OpenWorldMapPoint(X0_4, X8_4);
 });
 
+$Event(90005776, Default, function(X0_4, X4_4) {
+    EndIf(!PlayerIsInOwnWorld());
+    
+    WaitFor(ElapsedSeconds(2) && EventFlag(X0_4));
+    
+    if (PlayerIsInOwnWorld()) {
+        AwardItemsIncludingClients(X4_4);
+    }
+    
+    EndEvent();
+});
+
 $Event(90005780, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_1, X32_4) {
     if (PlayerIsInOwnWorld()) {
         SetNetworkUpdateAuthority(X12_4, AuthorityLevel.Forced);

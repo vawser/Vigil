@@ -546,9 +546,6 @@ def t000001200_x38():
         # Select Difficulty
         # AddTalkListData(1, 80102010, -1)
         
-        # Select Modifiers
-        # AddTalkListData(2, 80102011, -1)
-        
         # Travel to Roundtable Hold - No Finger
         AddTalkListDataIf(GetEventFlag(1047610011) == 0 and GetEventFlag(60210) == 0, 1, 80102000, -1)
         

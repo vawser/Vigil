@@ -4,7 +4,8 @@
 # Training System
 - Added a training dummy system to Roundtable Hold, in the lower hall.
  - Appears after Mad Tongue Alberich is dead.
- - Training Paramters are configured at the Jar of Discipline, who appears by the lower hall entrance door.
+ - Training Paramters are configured at Master Jarwright, who appears by the lower hall entrance.
+ 
 - You can configure the dummies int he following ways:
  - Toggle instant HP regen
  - Toggle whether the dummy can be staggered
@@ -18,6 +19,7 @@
   - 20000
   - 50000
   - 100000
+  
  - Set the absorption for each type:
   - None (no modifier either way)
   - +20%
@@ -38,6 +40,9 @@
  - Runebear
  - Imp
  
+# Gladiator's Gauntlet
+- Increased the rune gain from the enemies significantly.
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -47,9 +52,9 @@
 - Multi-Jump now works with all weapons.
 
 - FP now regenerates in a stepped fashion:
-    - Below 100 FP: 3 per second
-    - Between 100 and 250: 2 per second
-    - Above 250: 1 per second.
+    - Current FP below 100: 3 per second
+    - Current FP between 100 and 250: 2 per second
+    - Current FP above 250: 1 per second.
 - Removed the +1% FP aspect of the regen.
 
 #-------------------------------------------------
@@ -59,12 +64,18 @@
 #-------------------------------------------------
 # Enemies
 #-------------------------------------------------
+- Adjusted rune drops to make killing enemies more worthwhile (instead of running past).
+- Reduced the HP of Imps to make them less annoying.
 
 #-------------------------------------------------
 # World
 #-------------------------------------------------
 # m11_10_00_00 - Roundtable Hold
-- Made it possible to open the door in the lower hall, allowing access between the combat hall and the normal hold.
+- Removed the door that blocks access to the lower combat hall from the normal hold.
+ - It is bow blocked by a fogwall, which clears one Mad Tongue Alberich is killed.
+
+# m12_02_00_00 - Siofra River
+- The lone Crucible Knight accessed via the teleporter now drops a Pure Erdstone.
 
 #-------------------------------------------------
 # Items

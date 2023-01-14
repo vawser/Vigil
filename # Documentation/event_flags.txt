@@ -9,6 +9,8 @@
 #------------------------------------
 104760_0000 
 #------------------------------------
+Treasure flag
+1047607000 
 
 #------------------------------------
 104761_0000 Systems
@@ -19,6 +21,10 @@
 1047610013 Tarnished's Wizened Finger - Removal Script triggered
 
 1047610100 Hidden Helm enabled
+
+1047610150 Difficulty: Standard
+1047610151 Difficulty: Explorer
+1047610152 Difficulty: Mythic
 
 # Custom Class
 1047610200 Given Tokens
