@@ -2,7 +2,7 @@
 # Bugs
 #-------------------------------------------------
 - Chapel of Anticaption blocked by fogwall on return after leaving tutorial area
-- 
+- Fix the HKS input bugs
 
 #-------------------------------------------------
 # TODO
@@ -49,13 +49,6 @@
 # Spell Ascension
 - Add spell ascension system, allowing for more spell variants without massive overhead, plus magic progression.
 
-# Transmogrification
-- Add in the Cinders transformation system.
-    - Armor first, then potentially the visual effects (will need to discover the FFX for these).
- 
-Write a python script to generate the SpEffects, loc strings and ESD file.
-Need list of ID and Armor Name first
-    
 # Concordats
 - Implement covenants for each of the factions of Elden Ring
     - Operate like traditional covenants: 3 rewards at 10/20/30 turnins
@@ -73,11 +66,19 @@ Need list of ID and Armor Name first
 - Add 2 more swarm waves
 - Implement boss version at Limgrave or Leyndell colosseum.
 
-# Rune Adjustment
-Continue adjust enemy runes from 43000006
-
 # Talisman Ascension
 - Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
     - +1 and +2 are available in NG0
     - +3 and +4 in NG+1
     - +5 in NG+2
+
+# Transmogrification
+- Add in the Cinders transformation system.
+    - Armor first, then potentially the visual effects (will need to discover the FFX for these).
+ 
+Write a python script to generate the SpEffects, loc strings and ESD file.
+Need list of ID and Armor Name first
+    
+# Rune Adjustment
+Continue adjust enemy runes from 43000006
+
