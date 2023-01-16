@@ -1,0 +1,563 @@
+﻿#-----------------------------------
+# Heavy
+#-----------------------------------
+Bull-Goat Set
+- Weight: 63
+
+Fire Prelate Set
+- Weight: 58.8
+
+Omen Set
+- Weight: 55
+- [Head]  Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Chest] Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Arms]  Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Legs]  Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+
+Lionel's Set
+- Weight: 50.5
+
+Tree Sentinel Set
+- Weight: 45
+
+Veteran's Set
+- Weight: 45
+
+Beast Champion Set
+- Weight: 41.6
+
+Banished Knight Set
+- Weight: 41.6
+
+General Radahn Set
+- Weight: 41.6
+
+Malformed Dragon Set
+- Weight: 38
+
+Scaled Set
+- Weight: 38
+
+Crucible Axe Set
+- Weight: 36.9
+- [Head]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Chest] Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Arms]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Legs]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+
+Crucible Tree Set
+- Weight: 36.9
+- [Head]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Chest] Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Arms]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Legs]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+
+Royal Knight Set
+- Weight: 36.9
+
+Cleanrot Set
+- Weight: 35.7
+
+Blaidd's Set
+- Weight: 32.7
+
+Night's Cavalry Set
+- Weight: 30.5
+
+Maliketh's Set
+- Weight: 30.5
+
+Twinned Set
+- Weight: 30
+
+Hoslow's Set
+- Weight: 28.5
+
+Cuckoo Knight Set
+- Weight: 28.1
+
+Briar Set
+- Weight: 28.1
+- [Head]  Effect: Deals 18 Physical damage when rolling.
+- [Chest] Effect: Deals 25 Physical damage when rolling.
+- [Arms]  Effect: Deals 18 Physical damage when rolling.
+- [Legs]  Effect: Deals 18 Physical damage when rolling.
+
+Godrick Knight Set
+- Weight: 28.1
+
+Redmane Knight Set
+- Weight: 28.1
+
+Gelmir Knight Set
+- Weight: 28.1
+
+Leyndell Knight Set
+- Weight: 28.1
+
+Haligtree Knight Set
+- Weight: 28.1
+- [Head]  Effect: 
+
+Blackflame Monk Set
+- Weight: 27
+
+Fire Monk Set
+- Weight: 27
+
+#-----------------------------------
+# Medium
+#-----------------------------------
+All-Knowing Set
+- Weight: 25.4
+
+Royal Remains Set
+- Weight: 25.3
+- [Head]  Effect: Grants 2 HP per second whilst below 18% HP.
+- [Chest] Effect: Grants 2 HP per second whilst below 18% HP.
+- [Arms]  Effect: Grants 2 HP per second whilst below 18% HP.
+- [Legs]  Effect: Grants 2 HP per second whilst below 18% HP.
+
+Bloodhound Knight Set
+- Weight: 25.3
+
+Knight Set
+- Weight: 25.3
+
+Fingerprint Set
+- Weight: 25.3
+
+Carian Knight Set
+- Weight: 25.1
+
+Godrick Soldier Set
+- Weight: 24.7
+
+Raya Lucarian Soldier Set
+- Weight: 24.7
+
+Radahn Soldier Set
+- Weight: 24.7
+
+Leyndell Soldier Set
+- Weight: 24.7
+
+Haligtree Soldier Set
+- Weight: 24.7
+- [Head]  Effect: 
+
+Raging Wolf Set
+- Weight: 24.2
+
+Vagabond Knight Set
+- Weight: 23.8
+
+Mausoleum Knight Set
+- Weight: 23
+
+Eccentric Set
+- Weight: 22.6
+
+Drake Knight Set
+- Weight: 22
+
+Black Knife Set
+- Weight: 21.8
+- [Chest] Effect: Muffles the sound of footsteps.
+
+Exile Set
+- Weight: 21.8
+
+Elden Lord Set
+- Weight: 21.4
+
+Ronin's Set
+- Weight: 21.1
+
+Chain Set
+- Weight: 21
+
+Iron Set
+- Weight: 21
+
+Kaiden Set
+- Weight: 20.8
+
+Mausoleum Soldier Set
+- Weight: 20.7
+
+Blue Silver Set
+- Weight: 20.6
+
+Zamor Set
+- Weight: 20.5
+
+Malenia's Set
+- Weight: 20.5
+
+Guardian Set
+- Weight: 19.9
+- [Chest] Effect: 
+
+Duelist Set
+- Weight: 19.8
+- [Head]  Effect: Increases enemy target priority of the player by 0.03.
+- [Chest] Effect: Increases enemy target priority of the player by 0.03.
+- [Legs]  Effect: Increases enemy target priority of the player by 0.03.
+
+Land of Reeds Set
+- Weight: 19.8
+
+White Reed Set
+- Weight: 19.8
+- [Head]  Effect: Boosts DEX by 3 but lowers Focus by 50.
+
+Godrick Foot Soldier Set
+- Weight: 19.6
+
+Raya Lucarian Foot Soldier Set
+- Weight: 19.6
+
+Radahn Foot Soldier Set
+- Weight: 19.6
+
+Leyndell Foot Soldier Set
+- Weight: 19.6
+
+Haligtree Foot Soldier Set
+- Weight: 19.6
+
+Nox Swordstress Set
+- Weight: 19.3
+
+Night Maiden Set
+- Weight: 19.3
+
+Confessor Set
+- Weight: 19.2
+
+Nox Monk Set
+- Weight: 18.8
+
+Vulgar Militia Set
+- Weight: 18.5
+
+Omenkiller Set
+- Weight: 16.9
+- [Head]  Effect: Boosts STR by 2.
+
+Leather Set
+- Weight: 16.9
+
+Bandit Set
+- Weight: 16.8
+
+War Surgeon Set
+- Weight: 16.8
+- [Head]  Effect: 
+
+Raptor's Set
+- Weight: 16.8
+- [Chest] Effect: Boosts the damage of Jump attacks by 10%.
+
+Mausoleum Foot Soldier Set
+- Weight: 16
+
+Preceptor's Set
+- Weight: 15.9
+- [Head]  Effect: Increases MND by 3, bu reduces maximum Stamina by 9%. 
+
+Rotten Duelist Set
+- Weight: 15.7
+- [Head]  Effect: Increases enemy target priority of the player by 0.03.
+- [Chest] Effect: Increases enemy target priority of the player by 0.03.
+- [Legs]  Effect: Increases enemy target priority of the player by 0.03.
+
+#-----------------------------------
+# Light
+#-----------------------------------
+Nomadic Merchant's Set
+- Weight: 14.6
+
+Azur's Glintstone Set
+- Weight: 14.3
+- [Head]  Effect: Boosts the damage of Glintstone Cometshard, Comet and Eternal Darkness by 10%. Boosts the damage of Comet Azur by 15%.
+
+Lusat's Set
+- Weight: 14.3
+- [Head]  Effect: Boosts the damage of Glintstone Stars and Star Shower by 10%. Boosts the damage of Stars of Ruin by 15%.
+
+Noble's Set
+- Weight: 14
+- [Head]  Effect: Boosts VIG by 1.
+
+Prisoner Set
+- Weight: 13.8
+
+Champion Set
+- Weight: 13.8
+
+Highwayman Set
+- Weight: 13.6
+
+Depraved Perfumer Set
+- Weight: 13.4
+
+Astrologer Set
+- Weight: 13.3
+
+Raya Lucarian Sorcerer Set
+- Weight: 13.1
+
+Albinauric Set
+- Weight: 12.6
+- [Head]  Effect: 
+
+Marionette Soldier Set
+- Weight: 12.6
+
+Lazuli Sorcerer Set
+- Weight: 12.3
+
+Godskin Noble Set
+- Weight: 12.2
+- [Chest] Effect: 
+
+Mushroom Set
+- Weight: 12.1
+
+Fur Set
+- Weight: 11.5
+
+Shaman Set
+- Weight: 11.5
+- [Head]  Effect: 
+
+Errant Sorcerer Set
+- Weight: 11.3
+- [Head]  Effect: 
+
+Traveling Maiden Set
+- Weight: 11
+
+Queen of the Full Moon Set
+- Weight: 11
+- [Head]  Effect: 
+
+Finger Maiden Set
+- Weight: 10.9
+
+Godskin Apostle Set
+- Weight: 10.9
+
+Snow Witch Set
+- Weight: 10.8
+- [Head]  Effect: 
+
+Perfumer Set
+- Weight: 10.7
+
+Prophet Set
+- Weight: 10.4
+
+Battlemage Set
+- Weight: 10.4
+- [Head]  Effect: 
+
+Consort's Set
+- Weight: 10.2
+- [Head]  Effect: 
+
+Sage Set
+- Weight: 9.8
+
+Goldmask's Set
+- Weight: 9.8
+- [Head]  Effect: 
+
+Alberich's Set
+- Weight: 9.7
+- [Head]  Effect: 
+- [Chest] Effect: 
+- [Arms]  Effect: 
+- [Legs]  Effect: 
+
+Old Aristocrat Set
+- Weight: 9.3
+
+Page Set
+- Weight: 9
+
+Aristocrat Set
+- Weight: 9
+
+Sanguine Noble Set
+- Weight: 9
+
+Traveler's Set
+- Weight: 8.9
+
+Spellblade Set
+- Weight: 8.6
+- [Head]  Effect: 
+- [Chest] Effect: 
+- [Arms]  Effect: 
+- [Legs]  Effect: 
+
+Commoner's Set
+- Weight: 8.5
+- [Chest] Effect: 
+
+Ruler's Set
+- Weight: 7.3
+- [Head]  Effect: 
+
+Fia's Set
+- Weight: 6.8
+- [Chest] Effect: 
+- [Legs]  Effect: 
+
+High Page Set
+- Weight: 6.7
+
+Guilty Set
+- Weight: 6.6
+
+House Marais Set
+- Weight: 6.3
+- [Head]  Effect: 
+
+Festive Set
+- Weight: 5.8
+
+Blue Festive Set
+- Weight: 5.8
+
+Juvenile Scholar Set
+- Weight: 5.5
+
+Bloodsoaked Set
+- Weight: 3.6
+- [Head]  Effect: 
+
+#-----------------------------------
+# Unique Pieces
+#-----------------------------------
+# --- Head ---
+Black Dumpling
+- Weight: 2.7
+- [Head]  Effect: 
+
+Mushroom Crown
+- Weight: 9.1
+- [Head]  Effect: 
+
+Cerulean Tear Scarab
+- Weight: 5.1
+- [Head]  Effect: 
+
+Crimson Tear Scarab
+- Weight: 5.1
+- [Head]  Effect: 
+
+Glintstone Scarab
+- Weight: 5.1
+- [Head]  Effect: 
+
+Incantation Scarab
+- Weight: 5.1
+- [Head]  Effect: 
+
+Ash-of-War Scarab
+- Weight: 5.1
+- [Head]  Effect: 
+
+Nox Mirrorhelm
+- Weight: 7.5
+
+Iji's Mirrorhelm
+- Weight: 7.5
+
+Greathood
+- Weight: 5.1
+- [Head]  Effect: 
+
+Jar
+- Weight: 6.8
+- [Head]  Effect: 
+
+Octopus Head
+- Weight: 3.6
+
+Imp Head (Cat)
+- Weight: 8.1
+- [Head]  Effect: 
+
+Imp Head (Fanged)
+- Weight: 8.1
+- [Head]  Effect: 
+
+Imp Head (Long-Tongued)
+- Weight: 8.1
+- [Head]  Effect: 
+
+Imp Head (Corpse)
+- Weight: 8.1
+- [Head]  Effect: 
+
+Imp Head (Wolf)
+- Weight: 8.1
+- [Head]  Effect: 
+
+Imp Head (Elder)
+- Weight: 8.1
+- [Head]  Effect: 
+
+Mask of Confidence
+- Weight: 3.3
+- [Head]  Effect: 
+
+Blackguard's Iron Mask
+- Weight: 6.2
+
+Olivinus Glintstone Crown
+- Weight: 5.1
+- [Head]  Effect: 
+
+Lazuli Glintstone Crown
+- Weight: 5.1
+- [Head]  Effect: 
+
+Karolos Glintstone Crown
+- Weight: 5.1
+- [Head]  Effect: 
+
+Witch's Glintstone Crown
+- Weight: 5.1
+- [Head]  Effect: 
+
+Envoy Crown
+- Weight: 3.8
+- [Head]  Effect: 
+
+Navy Hood
+- Weight: 1.7
+- [Head]  Effect: 
+
+Pumpkin Helm
+- Weight: 12.3
+- [Head]  Effect: 
+
+Silver Tear Mask
+- Weight: 4.6
+- [Head]  Effect: 
+
+# --- Chest ---
+Lazuli Robe
+- Weight: 4.1
+
+Fell Omen Cloak
+- Weight: 5.1
+
+Lord of Blood
+- Weight: 8.1

@@ -72,9 +72,6 @@
     - +3 and +4 in NG+1
     - +5 in NG+2
 
-
-626 Rune of Ascension
-
 # Transmogrification
 - Add in the Cinders transformation system.
     - Armor first, then potentially the visual effects (will need to discover the FFX for these).
@@ -82,3 +79,4 @@
 Write a python script to generate the SpEffects, loc strings and ESD file.
 Need list of ID and Armor Name first
     
+
