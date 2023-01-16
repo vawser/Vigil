@@ -9,10 +9,10 @@ Fire Prelate Set
 
 Omen Set
 - Weight: 55
-- [Head]  Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
-- [Chest] Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
-- [Arms]  Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
-- [Legs]  Effect: Boosts the damage of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Head]  Effect: Strengthens the potency of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Chest] Effect: Strengthens the potency of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Arms]  Effect: Strengthens the potency of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
+- [Legs]  Effect: Strengthens the potency of Sword of Milos, Omen Bairn and Regal Omen Bairn by 5%.
 
 Lionel's Set
 - Weight: 50.5
@@ -40,17 +40,17 @@ Scaled Set
 
 Crucible Axe Set
 - Weight: 36.9
-- [Head]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
-- [Chest] Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
-- [Arms]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
-- [Legs]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Head]  Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
+- [Chest] Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
+- [Arms]  Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
+- [Legs]  Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
 
 Crucible Tree Set
 - Weight: 36.9
-- [Head]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
-- [Chest] Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
-- [Arms]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
-- [Legs]  Effect: Boosts the damage of Aspects of the Crucible spells by 4%.
+- [Head]  Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
+- [Chest] Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
+- [Arms]  Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
+- [Legs]  Effect: Strengthens the potency of Aspects of the Crucible incantations by 4%.
 
 Royal Knight Set
 - Weight: 36.9
@@ -78,10 +78,10 @@ Cuckoo Knight Set
 
 Briar Set
 - Weight: 28.1
-- [Head]  Effect: Deals 18 Physical damage when rolling.
-- [Chest] Effect: Deals 25 Physical damage when rolling.
-- [Arms]  Effect: Deals 18 Physical damage when rolling.
-- [Legs]  Effect: Deals 18 Physical damage when rolling.
+- [Head]  Effect: The iron briars cause this armor to deal 18 Physical damage when performing dodge rolls.
+- [Chest] Effect: The iron briars cause this armor to deal 25 Physical damage when performing dodge rolls.
+- [Arms]  Effect: The iron briars cause this armor to deal 18 Physical damage when performing dodge rolls.
+- [Legs]  Effect: The iron briars cause this armor to deal 18 Physical damage when performing dodge rolls.
 
 Godrick Knight Set
 - Weight: 28.1
@@ -113,10 +113,10 @@ All-Knowing Set
 
 Royal Remains Set
 - Weight: 25.3
-- [Head]  Effect: Grants 2 HP per second whilst below 18% HP.
-- [Chest] Effect: Grants 2 HP per second whilst below 18% HP.
-- [Arms]  Effect: Grants 2 HP per second whilst below 18% HP.
-- [Legs]  Effect: Grants 2 HP per second whilst below 18% HP.
+- [Head]  Effect: Slowly replenishes HP when HP is reduced, restoring 2 HP whilst HP is below 18%.
+- [Chest] Effect: Slowly replenishes HP when HP is reduced, restoring 2 HP whilst HP is below 18%.
+- [Arms]  Effect: Slowly replenishes HP when HP is reduced, restoring 2 HP whilst HP is below 18%.
+- [Legs]  Effect: Slowly replenishes HP when HP is reduced, restoring 2 HP whilst HP is below 18%.
 
 Bloodhound Knight Set
 - Weight: 25.3
@@ -163,7 +163,7 @@ Drake Knight Set
 
 Black Knife Set
 - Weight: 21.8
-- [Chest] Effect: Muffles the sound of footsteps.
+- [Chest] Effect: Traces of power yet remain in its concealing veil, which muffles the sound of footsteps.
 
 Exile Set
 - Weight: 21.8
@@ -201,16 +201,16 @@ Guardian Set
 
 Duelist Set
 - Weight: 19.8
-- [Head]  Effect: Increases enemy target priority of the player by 0.03.
-- [Chest] Effect: Increases enemy target priority of the player by 0.03.
-- [Legs]  Effect: Increases enemy target priority of the player by 0.03.
+- [Head]  Effect: The wearer becomes a slightly easier target for foes.
+- [Chest] Effect: The wearer becomes a slightly easier target for foes.
+- [Legs]  Effect: The wearer becomes a slightly easier target for foes.
 
 Land of Reeds Set
 - Weight: 19.8
 
 White Reed Set
 - Weight: 19.8
-- [Head]  Effect: Boosts DEX by 3 but lowers Focus by 50.
+- [Head]  Effect: Raises dexterity by 3 as it lowers focus by 50.
 
 Godrick Foot Soldier Set
 - Weight: 19.6
@@ -244,7 +244,7 @@ Vulgar Militia Set
 
 Omenkiller Set
 - Weight: 16.9
-- [Head]  Effect: Boosts STR by 2.
+- [Head]  Effect: Increases strength by 2.
 
 Leather Set
 - Weight: 16.9
@@ -258,20 +258,20 @@ War Surgeon Set
 
 Raptor's Set
 - Weight: 16.8
-- [Chest] Effect: Boosts the damage of Jump attacks by 10%.
+- [Chest] Effect: Strengthens jump attacks by 10%.
 
 Mausoleum Foot Soldier Set
 - Weight: 16
 
 Preceptor's Set
 - Weight: 15.9
-- [Head]  Effect: Increases MND by 3, bu reduces maximum Stamina by 9%. 
+- [Head]  Effect: Raises mind by 3, to the detriment of maximum stamina by 9%.
 
 Rotten Duelist Set
 - Weight: 15.7
-- [Head]  Effect: Increases enemy target priority of the player by 0.03.
-- [Chest] Effect: Increases enemy target priority of the player by 0.03.
-- [Legs]  Effect: Increases enemy target priority of the player by 0.03.
+- [Head]  Effect: The wearer becomes a slightly easier target for foes.
+- [Chest] Effect: The wearer becomes a slightly easier target for foes.
+- [Legs]  Effect: The wearer becomes a slightly easier target for foes.
 
 #-----------------------------------
 # Light
@@ -281,15 +281,21 @@ Nomadic Merchant's Set
 
 Azur's Glintstone Set
 - Weight: 14.3
-- [Head]  Effect: Boosts the damage of Glintstone Cometshard, Comet and Eternal Darkness by 10%. Boosts the damage of Comet Azur by 15%.
+- [Head]  Effect: 
+Strengthens the potency of Glintstone Cometshard, Comet and Eternal Darkness by 10%. 
+Strengthens the potency of Comet Azur by 15%.
+Increases the FP consumption of sorceries by 15%.
 
 Lusat's Set
 - Weight: 14.3
-- [Head]  Effect: Boosts the damage of Glintstone Stars and Star Shower by 10%. Boosts the damage of Stars of Ruin by 15%.
+- [Head]  Effect:
+Strengthens the potency of lintstone Stars and Star Shower by 10%. 
+Strengthens the potency of Stars of Ruin by 15%.
+Increases the FP consumption of sorceries by 15%.
 
 Noble's Set
 - Weight: 14
-- [Head]  Effect: Boosts VIG by 1.
+- [Head]  Effect: Increases vigor by 1.
 
 Prisoner Set
 - Weight: 13.8
@@ -311,7 +317,7 @@ Raya Lucarian Sorcerer Set
 
 Albinauric Set
 - Weight: 12.6
-- [Head]  Effect: 
+- [Head]  Effect: Increases arcane by 4, but reduces the HP recovery effects of the Flask of Crimson Tears by 10%.
 
 Marionette Soldier Set
 - Weight: 12.6
@@ -321,7 +327,7 @@ Lazuli Sorcerer Set
 
 Godskin Noble Set
 - Weight: 12.2
-- [Chest] Effect: 
+- [Chest] Effect: Strengthens the potency of the Noble Presence incantation by 20%.
 
 Mushroom Set
 - Weight: 12.1
@@ -331,18 +337,18 @@ Fur Set
 
 Shaman Set
 - Weight: 11.5
-- [Head]  Effect: 
+- [Head]  Effect: Strengthens the potency of Ancestral Infant's Head by 20%.
 
 Errant Sorcerer Set
 - Weight: 11.3
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence and endurance by 2 to the detriment of maximum FP by 9%.
 
 Traveling Maiden Set
 - Weight: 11
 
 Queen of the Full Moon Set
 - Weight: 11
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence by 3.
 
 Finger Maiden Set
 - Weight: 10.9
@@ -352,7 +358,7 @@ Godskin Apostle Set
 
 Snow Witch Set
 - Weight: 10.8
-- [Head]  Effect: 
+- [Head]  Effect: Strengthens he potency of Cold sorceries by 10%.
 
 Perfumer Set
 - Weight: 10.7
@@ -362,25 +368,24 @@ Prophet Set
 
 Battlemage Set
 - Weight: 10.4
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence and strength by 2 to the detriment of maximum FP by 9%.
 
 Consort's Set
 - Weight: 10.2
-- [Head]  Effect: 
+- [Head]  Effect: Increases dexterity by 1.
 
 Sage Set
 - Weight: 9.8
 
 Goldmask's Set
 - Weight: 9.8
-- [Head]  Effect: 
+- [Head]  Effect: Strengthens the potency of Golden Order incantations by 10%.
 
 Alberich's Set
 - Weight: 9.7
-- [Head]  Effect: 
-- [Chest] Effect: 
-- [Arms]  Effect: 
-- [Legs]  Effect: 
+- [Head]  Effect: Strengthens the potency of Thorn sorceries by 6%.
+- [Chest] Effect: Strengthens the potency of Thorn sorceries by 6%.
+- [Arms]  Effect: Strengthens the potency of Thorn sorceries by 6%.
 
 Old Aristocrat Set
 - Weight: 9.3
@@ -399,23 +404,25 @@ Traveler's Set
 
 Spellblade Set
 - Weight: 8.6
-- [Head]  Effect: 
-- [Chest] Effect: 
-- [Arms]  Effect: 
-- [Legs]  Effect: 
+- [Head]  Effect: Boosts potency of Glintstone Sorcery by 2%.
+- [Chest] Effect: Boosts potency of Glintstone Sorcery by 2%.
+- [Arms]  Effect: Boosts potency of Glintstone Sorcery by 2%.
+- [Legs]  Effect: Boosts potency of Glintstone Sorcery by 2%.
 
 Commoner's Set
 - Weight: 8.5
-- [Chest] Effect: 
+- [Chest] Effect: Increases faith by 1.
 
 Ruler's Set
 - Weight: 7.3
-- [Head]  Effect: 
+- [Head]  Effect: Increases faith by 1.
 
 Fia's Set
 - Weight: 6.8
-- [Chest] Effect: 
-- [Legs]  Effect: 
+
+Deathbed Set
+- Weight: 6.8
+- [Chest] Effect: Slowly replenishes the HP of nearby allies, restoring 2 HP per second, but not that of the wearer.
 
 High Page Set
 - Weight: 6.7
@@ -425,7 +432,7 @@ Guilty Set
 
 House Marais Set
 - Weight: 6.3
-- [Head]  Effect: 
+- [Head]  Effect: Increases arcane by 1.
 
 Festive Set
 - Weight: 5.8
@@ -438,7 +445,6 @@ Juvenile Scholar Set
 
 Bloodsoaked Set
 - Weight: 3.6
-- [Head]  Effect: 
 
 #-----------------------------------
 # Unique Pieces
@@ -446,31 +452,31 @@ Bloodsoaked Set
 # --- Head ---
 Black Dumpling
 - Weight: 2.7
-- [Head]  Effect: 
+- [Head]  Effect: Raises attack power by 10% for 60 seconds when the wearer suffers from madness.
 
 Mushroom Crown
 - Weight: 9.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises attack power by 10% for 20 seconds when something nearby suffers from poison or rot.
 
 Cerulean Tear Scarab
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases the recovery effects of the Flask of Cerulean Tears by 10%, but increases damage taken by 10% too.
 
 Crimson Tear Scarab
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases the recovery effects of the Flask of Crimson Tears by 10%, but increases damage taken by 10% too.
 
 Glintstone Scarab
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Reduces the FP consumption of sorceries by 15%, but increases damage taken by 10% too.
 
 Incantation Scarab
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Reduces the FP consumption of incantations by 15%, but increases damage taken by 10%.
 
 Ash-of-War Scarab
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Reduces the FP consumption of skills by 15%, but increases damage taken by 10%.
 
 Nox Mirrorhelm
 - Weight: 7.5
@@ -480,77 +486,77 @@ Iji's Mirrorhelm
 
 Greathood
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence and faith by 2, to the detriment of maximum HP by 9%.
 
 Jar
 - Weight: 6.8
-- [Head]  Effect: 
+- [Head]  Effect: Strengthens the potency of throwing pot items by 15%.
 
 Octopus Head
 - Weight: 3.6
 
 Imp Head (Cat)
 - Weight: 8.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises intelligence by 2.
 
 Imp Head (Fanged)
 - Weight: 8.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises strength by 2.
 
 Imp Head (Long-Tongued)
 - Weight: 8.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises dexterity by 2.
 
 Imp Head (Corpse)
 - Weight: 8.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises faith by 2.
 
 Imp Head (Wolf)
 - Weight: 8.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises endurance by 2.
 
 Imp Head (Elder)
 - Weight: 8.1
-- [Head]  Effect: 
+- [Head]  Effect: Raises arcane by 2.
 
 Mask of Confidence
 - Weight: 3.3
-- [Head]  Effect: 
+- [Head]  Effect: Increases arcane by 3.
 
 Blackguard's Iron Mask
 - Weight: 6.2
 
 Olivinus Glintstone Crown
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence by 3, to the detriment of maximum HP by 9%.
 
 Lazuli Glintstone Crown
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence and dexterity by 3, to the detriment of maximum HP of 18%.
 
 Karolos Glintstone Crown
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence by 3, to the detriment of maximum Stamina by 9%.
 
 Witch's Glintstone Crown
 - Weight: 5.1
-- [Head]  Effect: 
+- [Head]  Effect: Increases intelligence and arcane by 3, to the detriment of maximum Stamina by 18%.
 
 Envoy Crown
 - Weight: 3.8
-- [Head]  Effect: 
+- [Head]  Effect: Raises the potency of bubble-based skills and incantations by 15%.
 
 Navy Hood
 - Weight: 1.7
-- [Head]  Effect: 
+- [Head]  Effect: Increases mind by 1.
 
 Pumpkin Helm
 - Weight: 12.3
-- [Head]  Effect: 
+- [Head]  Effect: Reduces damage from headshots and impacts.
 
 Silver Tear Mask
 - Weight: 4.6
-- [Head]  Effect: 
+- [Head]  Effect: Increases arcane by 8, to the detriment of physical attack power by 5%.
 
 # --- Chest ---
 Lazuli Robe
@@ -559,5 +565,5 @@ Lazuli Robe
 Fell Omen Cloak
 - Weight: 5.1
 
-Lord of Blood
+Lord of Blood Robe
 - Weight: 8.1
