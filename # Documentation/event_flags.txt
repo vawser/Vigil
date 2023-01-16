@@ -19,6 +19,7 @@ Treasure flag
 1047610011 Quickstart taken
 1047610012 Quickstart items given
 1047610013 Tarnished's Wizened Finger - Removal Script triggered
+1047610014 Screenshot Tool toggle
 
 1047610100 Hidden Helm enabled
 

@@ -6565,6 +6565,9 @@ $Event(11000, Default, function() {
     InitializeEvent(13, 11016, 1047610523, Weather.RainyHeavyFog);
     InitializeEvent(14, 11016, 1047610524, Weather.SnowyHeavyFog);
     InitializeEvent(15, 11016, 1047610525, Weather.ScatteredRain);
+    
+    // Screenshot Tool
+    InitializeEvent(0, 11021, 0);
 });
 
 //-------------------
@@ -6810,3 +6813,61 @@ $Event(11020, Default, function(X0_4, X4_4) {
     
     RestartEvent();
 });
+
+//-------------------
+// Screenshot Tool: Toggle
+//-------------------
+$Event(11021, Default, function() {
+    if(EventFlag(1047610014))
+    {
+        ChangeCamera(2031, 2031);
+        DisableAsset(34141982);
+        SetSpEffect(10000, 7000051);
+    }
+    else
+    {
+        ChangeCamera(-1, -1);
+        EnableAsset(34141982);
+    }
+    
+    WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
+    
+    if(EventFlag(1047610014))
+    {
+        SetEventFlagID(1047610014, OFF);
+    }
+    else
+    {
+        SetEventFlagID(1047610014, ON);
+        WarpPlayer(34, 14, 0, 0, 34140982, -1);
+    }
+    
+    RestartEvent();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
