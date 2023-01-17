@@ -7418,6 +7418,11 @@ function Move_onUpdate()
     local base_speed = g_MoveMovementMultiplier
     local base_speed_percent = base_speed / 100
     
+    -- Movement Speed Boost
+    if env(GetSpEffectID, 151100) == TRUE then
+        base_speed_percent = base_speed_percent * 1.2
+    end
+    
     if hkbGetVariable("MoveDirection") == 3 or 2 == hkbGetVariable("MoveDirection") then
         act(SetMovementScaleMult, (base_speed_percent * 95))
     elseif 1 == hkbGetVariable("MoveDirection") then

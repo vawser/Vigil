@@ -34,14 +34,24 @@
 104 Attack: Final Chain
 105 Attack: Arrow/Bolt
 106 Attack: Roar
-107 Attack: Breath
+107 Attack: Dragon Breath
 108 Attack: Pot Throwable
 109 Attack: Perfume Throwable
-110 Attack: Charged
+110 Attack: Charged Spell
 111 Attack: Charged Ash of War
 112 Attack: Ash of War
-113 Attack: Ranged Ash of War
+113 Attack: Ranged Ash of War (Radahn's Spear only by default)
 114 Attack: Ancestral Infant's Head
 116 Attack: 
 117 Attack: Omen Bairn
-118 Attack: Arrow/Bolt On Hit
+118 Attack: Golden Arrow
+
+# Damage Multipliers:
+A = Void
+B = Undead
+C = Albinauric
+D = Draconic
+E = Deific
+F = Bestial
+
+9302390
