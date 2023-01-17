@@ -86,6 +86,13 @@
 - Added the following new armor pieces:
  - Crab Carcass: a new head piece that looks like a Giant Crab.
  
+- Restored the cut content armor:
+ - Millicent's Set
+ - Rotten Set (Millicent's alternate set)
+ - Brave's Set
+ - Grass Hair Ornament
+ - Brave's Leather Helm
+ 
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------

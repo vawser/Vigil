@@ -983,6 +983,10 @@ Grass Hair Ornament
 - Weight: 1.4
 - [Head] Effect: Reduces visual detection radius by 90%.
 
+Crab Carcass
+- Weight: 3
+- [Head] Effect: The wearer becomes a slightly easier target for foes.
+
 # --- Chest ---
 Fell Omen Cloak
 - Weight: 5.1

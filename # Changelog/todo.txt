@@ -82,7 +82,4 @@ Need list of ID and Armor Name first
 # Place these
 700000 Brave Set
 701000 Brave's Leather Helm
-920000 Grass Hair Ornament
-1950100 Rotten Set
-1970100 Millicent's Set
-3000000 Crab Carcass
+
