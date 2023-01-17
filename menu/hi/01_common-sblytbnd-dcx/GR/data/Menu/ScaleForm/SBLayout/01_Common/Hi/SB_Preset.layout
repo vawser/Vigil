@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="SB_Preset.png">
+	<SubTexture name="MENU_Ch_01.png" x="1070" y="1372" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_02.png" x="2140" y="1372" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_03.png" x="2140" y="0" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_04.png" x="0" y="0" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_05.png" x="1070" y="0" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_06.png" x="0" y="1372" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_FL_ViewWaku_3.png" x="0" y="2744" width="796" height="796" half="0"/>
+</TextureAtlas>
+

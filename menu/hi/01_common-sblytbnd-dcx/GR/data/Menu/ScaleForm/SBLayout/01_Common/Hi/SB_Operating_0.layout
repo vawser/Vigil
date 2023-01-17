@@ -1,0 +1,32 @@
+<TextureAtlas imagePath="SB_Operating_0.png">
+	<SubTexture name="MENU_Analog.png" x="290" y="0" width="107" height="106" half="1"/>
+	<SubTexture name="MENU_Analog_Batt.png" x="316" y="200" width="82" height="82" half="1"/>
+	<SubTexture name="MENU_Analog_PS5.png" x="290" y="110" width="86" height="86" half="0"/>
+	<SubTexture name="MENU_Cross.png" x="392" y="405" width="52" height="41" half="1"/>
+	<SubTexture name="MENU_Cross_Batt.png" x="226" y="368" width="35" height="23" half="1"/>
+	<SubTexture name="MENU_Cross_PS4.png" x="389" y="452" width="62" height="49" half="1"/>
+	<SubTexture name="MENU_Cross_PS4_Batt.png" x="316" y="333" width="44" height="31" half="1"/>
+	<SubTexture name="MENU_Cross_PS5.png" x="401" y="0" width="60" height="48" half="0"/>
+	<SubTexture name="MENU_KC_Start.png" x="448" y="405" width="44" height="43" half="1"/>
+	<SubTexture name="MENU_Line.png" x="0" y="238" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_Line_02.png" x="164" y="238" width="148" height="126" half="0"/>
+	<SubTexture name="MENU_PS4_LR.png" x="169" y="166" width="86" height="49" half="1"/>
+	<SubTexture name="MENU_PS4_LR_Batt.png" x="224" y="460" width="74" height="35" half="1"/>
+	<SubTexture name="MENU_PS4_Shadow.png" x="0" y="0" width="286" height="162" half="0"/>
+	<SubTexture name="MENU_PS4_Trigger.png" x="316" y="286" width="76" height="43" half="1"/>
+	<SubTexture name="MENU_PS4_Trigger_Batt.png" x="164" y="368" width="58" height="25" half="1"/>
+	<SubTexture name="MENU_PS5_LR.png" x="134" y="462" width="86" height="44" half="0"/>
+	<SubTexture name="MENU_PS5_LR_Batt.png" x="380" y="110" width="72" height="32" half="0"/>
+	<SubTexture name="MENU_PS5_Options.png" x="396" y="286" width="32" height="40" half="0"/>
+	<SubTexture name="MENU_PS5_Options_Batt.png" x="265" y="368" width="20" height="30" half="0"/>
+	<SubTexture name="MENU_PS5_Trigger.png" x="303" y="452" width="82" height="50" half="0"/>
+	<SubTexture name="MENU_PS5_Trigger_Batt.png" x="380" y="146" width="68" height="36" half="0"/>
+	<SubTexture name="MENU_Pad_Button.png" x="401" y="52" width="54" height="54" half="1"/>
+	<SubTexture name="MENU_Scarlette_LR.png" x="159" y="402" width="140" height="54" half="0"/>
+	<SubTexture name="MENU_Scarlette_LR_Batt.png" x="0" y="462" width="130" height="42" half="0"/>
+	<SubTexture name="MENU_X1_LR.png" x="0" y="166" width="165" height="68" half="1"/>
+	<SubTexture name="MENU_X1_LR_Batt.png" x="0" y="402" width="155" height="56" half="1"/>
+	<SubTexture name="MENU_X1_Trigger.png" x="303" y="368" width="85" height="80" half="1"/>
+	<SubTexture name="MENU_X1_Trigger_Batt.png" x="392" y="333" width="70" height="68" half="1"/>
+</TextureAtlas>
+

@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="SB_Preset_2.png">
+	<SubTexture name="MENU_Ch_07.png" x="0" y="1372" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_08.png" x="1070" y="0" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_09.png" x="1070" y="1372" width="1066" height="1368" half="0"/>
+	<SubTexture name="MENU_Ch_10.png" x="0" y="0" width="1066" height="1368" half="0"/>
+</TextureAtlas>
+

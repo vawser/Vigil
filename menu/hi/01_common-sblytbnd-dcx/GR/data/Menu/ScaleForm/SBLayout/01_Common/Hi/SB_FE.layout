@@ -1,0 +1,19 @@
+<TextureAtlas imagePath="SB_FE.png">
+	<SubTexture name="MENU_AutoSave_Dummy.png" x="630" y="188" width="46" height="50" half="0"/>
+	<SubTexture name="MENU_AutoSave_Dummy_2.png" x="1052" y="0" width="96" height="84" half="0"/>
+	<SubTexture name="MENU_FE_NameBase.png" x="332" y="188" width="294" height="36" half="0"/>
+	<SubTexture name="MENU_FE_Warning.png" x="0" y="0" width="1048" height="132" half="0"/>
+	<SubTexture name="MENU_FL_Arts_waku4.png" x="844" y="136" width="754" height="80" half="0"/>
+	<SubTexture name="MENU_FL_BuddyWaku.png" x="0" y="188" width="328" height="36" half="0"/>
+	<SubTexture name="MENU_FL_ConditionWaku.png" x="0" y="136" width="840" height="48" half="0"/>
+	<SubTexture name="MENU_FL_ConditionWaku_L.png" x="788" y="188" width="12" height="48" half="0"/>
+	<SubTexture name="MENU_FL_ShortcutPanel.png" x="1602" y="0" width="212" height="238" half="0"/>
+	<SubTexture name="MENU_HP_Bar.png" x="0" y="228" width="306" height="24" half="0"/>
+	<SubTexture name="MENU_Lockon_01.png" x="788" y="240" width="12" height="12" half="0"/>
+	<SubTexture name="MENU_Lockon_01a.png" x="310" y="228" width="20" height="20" half="0"/>
+	<SubTexture name="MENU_Lockon_01b.png" x="334" y="228" width="20" height="20" half="0"/>
+	<SubTexture name="MENU_Lockon_02.png" x="680" y="220" width="32" height="32" half="0"/>
+	<SubTexture name="MENU_Lockon_02a.png" x="716" y="220" width="32" height="32" half="0"/>
+	<SubTexture name="MENU_Lockon_02b.png" x="752" y="220" width="32" height="32" half="0"/>
+</TextureAtlas>
+

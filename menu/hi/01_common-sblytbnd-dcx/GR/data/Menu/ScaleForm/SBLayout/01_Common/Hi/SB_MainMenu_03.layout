@@ -1,0 +1,4 @@
+<TextureAtlas imagePath="SB_MainMenu_03.png">
+	<SubTexture name="MENU_BaseMain_04.png" x="0" y="0" width="1020" height="1020" half="0"/>
+</TextureAtlas>
+

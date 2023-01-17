@@ -1,0 +1,7 @@
+<TextureAtlas imagePath="SB_FE_02.png">
+	<SubTexture name="MENU_FL_HelpCursor.png" x="0" y="414" width="524" height="86" half="0"/>
+	<SubTexture name="MENU_FL_Rar_d0.png" x="0" y="276" width="1002" height="134" half="0"/>
+	<SubTexture name="MENU_FL_Rar_d1.png" x="0" y="138" width="1002" height="134" half="0"/>
+	<SubTexture name="MENU_FL_Rar_d2.png" x="0" y="0" width="1006" height="134" half="0"/>
+</TextureAtlas>
+

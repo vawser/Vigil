@@ -1,0 +1,59 @@
+﻿# Overview
+Vigil aims to provide an enhanced experience through Elden Ring for experienced players. Here is an overview of the changes:
+- Gladiator's Gauntlet: a PVE survival-based mini-game with configurable options, allowing it to adapted to fit every stage of progression.
+- Boss Rebirth: the ability to resurrect previously defeated bosses.
+- Time Shift: the ability to set the current in-game time to a specific period.
+- Weather Shift: the ability to set the current in-game weather to a specific type.
+- Quickstart: the ability to immediately go to Roundtable Hold from the starting chapel.
+- Statue of Draconic Communion: the ability to build a custom loadout instead of being restricted to a set class.
+
+- Several tweaks to mechanics to better fit a replayable vision of Elden Ring:
+ - Reinforcement materials have been simplified down to 4 tiers (like in DS1).
+ - All affinities are available as soon as you pick up the Whetstone Knife.
+ - Ashes of War are more flexible and can be used more widely.
+ - You move faster, roll further and rally back HP innately.
+ - The opportunity to gain the ability to jump in midair.
+ 
+- Many new items to discover, such as:
+  - Fractured Blade
+  - Aberrant Eye
+  - Gladiatorial Mark
+  
+- New enemy placements throughout the world of Elden Ring, mainly in the open world.
+- Many other small tweaks and changes, such as adding the ability to hide your helm at the Clouded Mirror Stand.
+
+Feedback and suggestions are welcome in the discord.
+
+# Credits
+- The DSMS Team for DS Map Studio.
+- TKGP for Yabber and UXM.
+- Meowmaritus for DS Anim Studio.
+- Katalash for Mod Engine 2 and DS Lua Decompiler. 
+- thefifthmatt for ESDLang.
+
+# Links
+You can find the Vigil wiki [here](http://elden-ring-vigil.wikidot.com/)
+You can find the Vigil Discord [here](https://discord.gg/fFZgwvp).
+
+If you wish to support me directly, please use this link: [paypal.me/xylozi](paypal.me/xylozi)
+
+# Installation
+To use this mod you will need to:
+
+1.
+ - Download Mod Engine 2: go to https://github.com/soulsmods/ModEngine2/releases
+ - Click Assets, then download the the top one, NOT the source code.
+ - Extract Mod Engine 2 somewhere onto your PC.
+
+2.
+ - Extract the contents of this zip file into the "mod" folder in the same directory as the "modengine2_launcher.exe".
+ 
+3.
+ - Launch Steam once so Steam Services are running.
+ - Click launchmod_eldenring.bat to launch the game.
+
+# Removal
+To remove this mod you will need to:
+
+1.
+ - Delete the contents of the "mod" folder in the Mod Engine 2 directory.

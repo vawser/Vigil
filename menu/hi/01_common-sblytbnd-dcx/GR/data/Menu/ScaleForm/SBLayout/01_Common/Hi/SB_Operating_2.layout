@@ -1,0 +1,13 @@
+<TextureAtlas imagePath="SB_Operating_2.png">
+	<SubTexture name="MENU_FL_Arts_waku3.png" x="0" y="1548" width="752" height="100" half="0"/>
+	<SubTexture name="MENU_FL_Cursor_Half.png" x="0" y="1904" width="322" height="52" half="0"/>
+	<SubTexture name="MENU_FL_Itemlog_1.png" x="0" y="1652" width="614" height="80" half="0"/>
+	<SubTexture name="MENU_FL_Itemlog_2.png" x="0" y="1820" width="610" height="80" half="0"/>
+	<SubTexture name="MENU_FL_Itemlog_3.png" x="0" y="1736" width="614" height="80" half="0"/>
+	<SubTexture name="MENU_FL_MenuBase.png" x="618" y="1652" width="578" height="260" half="0"/>
+	<SubTexture name="MENU_Line_PS4.png" x="0" y="804" width="756" height="740" half="0"/>
+	<SubTexture name="MENU_Line_PS5.png" x="0" y="0" width="800" height="800" half="0"/>
+	<SubTexture name="MENU_Line_Scarlette.png" x="760" y="804" width="740" height="736" half="0"/>
+	<SubTexture name="MENU_Line_XboxOne.png" x="804" y="0" width="740" height="738" half="0"/>
+</TextureAtlas>
+

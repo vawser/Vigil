@@ -1,0 +1,14 @@
+<TextureAtlas imagePath="SB_Chara.png">
+	<SubTexture name="MENU_Ch_Futa.png" x="0" y="962" width="134" height="24" half="0"/>
+	<SubTexture name="MENU_FL_Camera.png" x="138" y="962" width="66" height="58" half="0"/>
+	<SubTexture name="MENU_FL_Hub.png" x="0" y="558" width="400" height="400" half="0"/>
+	<SubTexture name="MENU_FL_Palette_Waku.png" x="208" y="962" width="36" height="36" half="0"/>
+	<SubTexture name="MENU_FL_Picker_Waku.png" x="568" y="920" width="62" height="62" half="0"/>
+	<SubTexture name="MENU_FL_RGB_Waku.png" x="0" y="990" width="26" height="24" half="0"/>
+	<SubTexture name="MENU_FL_SliderFuta.png" x="0" y="0" width="914" height="116" half="0"/>
+	<SubTexture name="MENU_FL_ViewWaku.png" x="432" y="120" width="398" height="796" half="0"/>
+	<SubTexture name="MENU_FL_ViewWaku_2.png" x="0" y="120" width="428" height="434" half="0"/>
+	<SubTexture name="MENU_FL_ZoomIn.png" x="486" y="920" width="78" height="78" half="0"/>
+	<SubTexture name="MENU_FL_ZoomOut.png" x="404" y="920" width="78" height="78" half="0"/>
+</TextureAtlas>
+

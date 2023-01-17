@@ -1,0 +1,24 @@
+<TextureAtlas imagePath="SB_In_GameTop.png">
+	<SubTexture name="MENU_FL_BonFire.png" x="744" y="450" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_BuySell.png" x="744" y="750" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Craft.png" x="744" y="600" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Elixir.png" x="782" y="1686" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Equipment.png" x="782" y="1536" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Inventory.png" x="782" y="1386" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Magic.png" x="744" y="1050" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Map.png" x="744" y="900" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Message.png" x="636" y="1536" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Multi.png" x="782" y="1836" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Network.png" x="636" y="1386" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Repository.png" x="744" y="300" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Status.png" x="744" y="150" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Sysytem.png" x="744" y="0" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_Talk.png" x="636" y="1836" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_FL_WeaponEnhance.png" x="636" y="1686" width="142" height="146" half="0"/>
+	<SubTexture name="MENU_TopBase_00.png" x="0" y="0" width="740" height="1208" half="1"/>
+	<SubTexture name="MENU_TopBase_01.png" x="0" y="1212" width="632" height="726" half="0"/>
+	<SubTexture name="MENU_TopCursor_01.png" x="928" y="622" width="42" height="1092" half="0"/>
+	<SubTexture name="MENU_TopCursr.png" x="890" y="0" width="70" height="618" half="0"/>
+	<SubTexture name="MENU_TopSlot.png" x="636" y="1212" width="156" height="170" half="0"/>
+</TextureAtlas>
+

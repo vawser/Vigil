@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="SB_ItemBox.png">
+	<SubTexture name="MENU_FL_Box.png" x="502" y="0" width="492" height="464" half="0"/>
+	<SubTexture name="MENU_FL_Item.png" x="0" y="0" width="498" height="484" half="0"/>
+</TextureAtlas>
+

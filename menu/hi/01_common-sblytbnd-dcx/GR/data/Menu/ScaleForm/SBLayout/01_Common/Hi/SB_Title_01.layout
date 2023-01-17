@@ -1,0 +1,38 @@
+<TextureAtlas imagePath="SB_Title_01.png">
+	<SubTexture name="MENU_1_Merina.png" x="2464" y="1596" width="258" height="256" half="0"/>
+	<SubTexture name="MENU_2_Wolf.png" x="2202" y="1596" width="258" height="258" half="0"/>
+	<SubTexture name="MENU_3_Vase.png" x="2536" y="1226" width="256" height="256" half="0"/>
+	<SubTexture name="MENU_40350_Tool.png" x="2964" y="1376" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40351_Buddy.png" x="2946" y="1226" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40352_Material.png" x="2846" y="1776" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40353_Reinforce.png" x="2796" y="1226" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40354_Valuables.png" x="2696" y="1856" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40355_Faith.png" x="2546" y="1856" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40356_Pyroxene.png" x="2396" y="1858" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40357_MagicStone.png" x="2246" y="1858" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40358_Weapon.png" x="2096" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40359_Projectile.png" x="2964" y="1526" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40360_Arrow.png" x="1796" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40361_Shield.png" x="1646" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40362_Helmet.png" x="1946" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40363_Armor.png" x="1346" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40364_Hand.png" x="2996" y="1826" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40365_Leg.png" x="2996" y="1676" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40366_Talisman.png" x="1496" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40367_Information.png" x="1046" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_40368_Gesture.png" x="1196" y="1874" width="146" height="146" half="0"/>
+	<SubTexture name="MENU_Bar_Loss.png" x="0" y="30" width="2892" height="26" half="0"/>
+	<SubTexture name="MENU_Bar_Regain.png" x="0" y="0" width="2892" height="26" half="0"/>
+	<SubTexture name="MENU_FL_BigRuneEffect.png" x="434" y="1874" width="350" height="80" half="0"/>
+	<SubTexture name="MENU_FL_BigRune_BG.png" x="3144" y="588" width="564" height="834" half="0"/>
+	<SubTexture name="MENU_FL_Elixir_BG.png" x="2536" y="588" width="604" height="634" half="0"/>
+	<SubTexture name="MENU_FL_RuneDeco2.png" x="0" y="1874" width="430" height="142" half="0"/>
+	<SubTexture name="MENU_FL_ToolShortcut.png" x="2536" y="60" width="650" height="524" half="0"/>
+	<SubTexture name="MENU_FL_ToolShortcut_LR.png" x="2726" y="1486" width="234" height="286" half="0"/>
+	<SubTexture name="MENU_FL_ToolShortcut_UD.png" x="788" y="1874" width="254" height="164" half="0"/>
+	<SubTexture name="MENU_FL_d0.png" x="734" y="1596" width="730" height="274" half="0"/>
+	<SubTexture name="MENU_FL_d1.png" x="0" y="1596" width="730" height="274" half="0"/>
+	<SubTexture name="MENU_FL_d2.png" x="1468" y="1596" width="730" height="274" half="0"/>
+	<SubTexture name="MENU_Title_EldenRing_01.png" x="0" y="60" width="2532" height="1532" half="0"/>
+</TextureAtlas>
+

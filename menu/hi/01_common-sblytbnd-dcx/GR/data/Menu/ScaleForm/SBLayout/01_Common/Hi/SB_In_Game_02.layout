@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="SB_In_Game_02.png">
+	<SubTexture name="MENU_Cursor_05.png" x="808" y="8" width="100" height="100" half="0"/>
+	<SubTexture name="MENU_FL_RuneLine.png" x="0" y="68" width="542" height="30" half="0"/>
+	<SubTexture name="MENU_Gauge.png" x="0" y="8" width="804" height="56" half="0"/>
+	<SubTexture name="MENU_Gauge_Edge.png" x="546" y="68" width="74" height="56" half="0"/>
+	<SubTexture name="MENU_Line_01.png" x="0" y="0" width="1012" height="4" half="0"/>
+	<SubTexture name="MENU_Line_01_s.png" x="0" y="102" width="70" height="4" half="0"/>
+	<SubTexture name="MENU_Tab_edge_00.png" x="912" y="8" width="50" height="64" half="0"/>
+</TextureAtlas>
+

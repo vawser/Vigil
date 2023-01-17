@@ -1,0 +1,57 @@
+﻿# State Info
+290 Crucible Feather Talisman
+
+# Conditional Groups
+1   Magic: Full Moon 
+2   Magic: Carian Sword
+3   Magic: Glintblade
+4   Magic: Stonedigger
+5   Magic: Crystalian
+6   Magic: Karolos
+7   Magic: Olivinus
+8   Magic: Lava
+9   Magic: Thorn
+10  Magic: Death
+11  Magic: Gravity
+12  Magic: Night
+13  Magic: Ranni
+14  Magic: Azur
+15  Magic: Lusat
+20  Magic: Black Flame
+21  Magic: Flame
+22  Magic: Dragon Cult
+23  Magic: Bestial
+24  Magic: Golden Order
+25  Magic: Dragon Communion
+26  Magic: Frenzied Flame
+27  Magic: Godslayer
+28  Magic: Primordial Crucible
+
+100 Attack: Charge 
+101 Attack: Horseback
+102 Attack: Jump
+103 Attack: Guard Counter
+104 Attack: Final Chain
+105 Attack: Arrow/Bolt
+106 Attack: Roar
+107 Attack: Dragon Breath
+108 Attack: Pot Throwable
+109 Attack: Perfume Throwable
+110 Attack: Charged Spell
+111 Attack: Charged Ash of War
+112 Attack: Ash of War
+113 Attack: Ranged Ash of War (Radahn's Spear only by default)
+114 Attack: Ancestral Infant's Head
+116 Attack: 
+117 Attack: Omen Bairn
+118 Attack: Golden Arrow
+
+# Damage Multipliers:
+A = Void
+B = Undead
+C = Albinauric
+D = Draconic
+E = Deific
+F = Bestial
+
+9302390

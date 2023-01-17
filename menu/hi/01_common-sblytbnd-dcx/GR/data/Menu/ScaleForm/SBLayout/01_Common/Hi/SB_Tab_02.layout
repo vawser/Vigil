@@ -1,0 +1,20 @@
+<TextureAtlas imagePath="SB_Tab_02.png">
+	<SubTexture name="MENU_Tab_40370_Green.png" x="0" y="100" width="136" height="126" half="0"/>
+	<SubTexture name="MENU_Tab_40371_Lake.png" x="398" y="286" width="120" height="120" half="0"/>
+	<SubTexture name="MENU_Tab_40372_Mountain.png" x="140" y="184" width="126" height="110" half="0"/>
+	<SubTexture name="MENU_Tab_40373_Plains.png" x="0" y="230" width="136" height="76" half="0"/>
+	<SubTexture name="MENU_Tab_40375_Ejinbara.png" x="0" y="0" width="142" height="96" half="0"/>
+	<SubTexture name="MENU_Tab_40376_Capital.png" x="0" y="404" width="132" height="87" half="0"/>
+	<SubTexture name="MENU_Tab_40377_UngroSwamp.png" x="136" y="432" width="124" height="66" half="0"/>
+	<SubTexture name="MENU_Tab_40378_UngroPlains.png" x="270" y="184" width="126" height="98" half="0"/>
+	<SubTexture name="MENU_Tab_40379_UngroCapital.png" x="146" y="0" width="123" height="96" half="0"/>
+	<SubTexture name="MENU_Tab_40380_DownhillRuins.png" x="136" y="310" width="130" height="118" half="0"/>
+	<SubTexture name="MENU_Tab_40381_MontSaint.png" x="273" y="0" width="122" height="110" half="0"/>
+	<SubTexture name="MENU_Tab_40382_RottenTree.png" x="400" y="114" width="112" height="108" half="0"/>
+	<SubTexture name="MENU_Tab_40383_Prison.png" x="399" y="0" width="120" height="110" half="0"/>
+	<SubTexture name="MENU_Tab_40384_Hub.png" x="516" y="114" width="102" height="114" half="0"/>
+	<SubTexture name="MENU_Tab_40385_Volcano.png" x="270" y="286" width="124" height="120" half="0"/>
+	<SubTexture name="MENU_Tab_40386_SnowUP.png" x="140" y="100" width="128" height="80" half="0"/>
+	<SubTexture name="MENU_Tab_40387_SnowDown.png" x="0" y="310" width="132" height="90" half="0"/>
+</TextureAtlas>
+

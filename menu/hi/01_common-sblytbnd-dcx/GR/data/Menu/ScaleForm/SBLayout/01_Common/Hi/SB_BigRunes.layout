@@ -1,0 +1,15 @@
+<TextureAtlas imagePath="SB_BigRunes.png">
+	<SubTexture name="MENU_BR_40051_A_Margit.png" x="188" y="0" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40051_B_Margit.png" x="376" y="0" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40052_A_Graft.png" x="188" y="752" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40052_B_Graft.png" x="188" y="564" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40053_A_Gool.png" x="188" y="376" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40053_B_Gool.png" x="188" y="188" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40054_A_Radarn.png" x="376" y="188" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40054_B_Radarn.png" x="0" y="752" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40055_A_Daemon.png" x="0" y="564" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40055_B_Daemon.png" x="0" y="376" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40056_A_Malenia.png" x="0" y="188" width="184" height="184" half="0"/>
+	<SubTexture name="MENU_BR_40056_B_Malenia.png" x="0" y="0" width="184" height="184" half="0"/>
+</TextureAtlas>
+

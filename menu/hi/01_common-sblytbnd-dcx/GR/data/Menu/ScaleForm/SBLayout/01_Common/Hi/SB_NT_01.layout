@@ -1,0 +1,18 @@
+<TextureAtlas imagePath="SB_NT_01.png">
+	<SubTexture name="MENU_FL_CharaSellectBase_3.png" x="0" y="818" width="606" height="606" half="0"/>
+	<SubTexture name="MENU_FL_CharaSellectCorsol.png" x="0" y="1428" width="568" height="588" half="0"/>
+	<SubTexture name="MENU_FL_Chara_A.png" x="610" y="1066" width="234" height="244" half="0"/>
+	<SubTexture name="MENU_FL_Chara_B.png" x="610" y="818" width="234" height="244" half="0"/>
+	<SubTexture name="MENU_FL_Enterbutton.png" x="572" y="1756" width="354" height="94" half="0"/>
+	<SubTexture name="MENU_FL_Evaluation_1.png" x="692" y="540" width="54" height="54" half="0"/>
+	<SubTexture name="MENU_FL_Evaluation_2.png" x="682" y="1854" width="62" height="65" half="0"/>
+	<SubTexture name="MENU_FL_Evaluation_3.png" x="678" y="1928" width="78" height="62" half="0"/>
+	<SubTexture name="MENU_FL_Evaluation_4.png" x="572" y="1928" width="102" height="68" half="0"/>
+	<SubTexture name="MENU_FL_Evaluation_5.png" x="572" y="1854" width="106" height="70" half="0"/>
+	<SubTexture name="MENU_FL_OneRune.png" x="0" y="0" width="688" height="814" half="0"/>
+	<SubTexture name="MENU_FL_RuneDeco.png" x="692" y="246" width="224" height="290" half="0"/>
+	<SubTexture name="MENU_FL_RunesEffect.png" x="572" y="1428" width="370" height="324" half="0"/>
+	<SubTexture name="MENU_FL_SlotBase_02.png" x="692" y="0" width="230" height="242" half="0"/>
+	<SubTexture name="MENU_FL_SlotBase_Shop.png" x="610" y="1314" width="88" height="92" half="0"/>
+</TextureAtlas>
+

@@ -1,0 +1,5 @@
+<TextureAtlas imagePath="SB_Reticle.png">
+	<SubTexture name="MENU_Fl_Reticle_00.png" x="226" y="0" width="222" height="224" half="0"/>
+	<SubTexture name="MENU_Fl_Reticle_01.png" x="0" y="0" width="222" height="223" half="0"/>
+</TextureAtlas>
+

@@ -79,22 +79,10 @@
 Write a python script to generate the SpEffects, loc strings and ESD file.
 Need list of ID and Armor Name first
     
-# Armor Effects
-- Add armor effects to more armor sets.
-
-# Armor Reinforcement
-- Use Alter Garments menu to allow reinforcement of armor for runes.
-- Reinforcement will boost armor stats. Passive effects remain the same.
-
 # Place these
 700000 Brave Set
 701000 Brave's Leather Helm
 920000 Grass Hair Ornament
 1950100 Rotten Set
 1970100 Millicent's Set
-
-Continue loc from Brave Set
-
-9805    Mask of the Mother
-9806    Mask of the Child
-9807    Mask of the Father
+3000000 Crab Carcass

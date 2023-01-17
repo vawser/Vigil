@@ -1,0 +1,23 @@
+<TextureAtlas imagePath="SB_Log.png">
+	<SubTexture name="MENU_ItemIcon_00000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_01000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_02000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_03000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_04000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_05000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_06000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_07000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_08000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_09000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_10000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_11000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_12000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_13000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_14000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_17000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_18000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_20000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_ItemIcon_21000d.png" x="164" y="0" width="160" height="160" half="0"/>
+	<SubTexture name="MENU_Stabilizer.png" x="0" y="0" width="160" height="160" half="0"/>
+</TextureAtlas>
+

@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="SB_Condition.png">
+	<SubTexture name="MENU_RE_Cold.png" x="260" y="112" width="126" height="108" half="0"/>
+	<SubTexture name="MENU_RE_Death.png" x="390" y="0" width="108" height="106" half="0"/>
+	<SubTexture name="MENU_RE_Mad.png" x="260" y="0" width="126" height="108" half="0"/>
+	<SubTexture name="MENU_RE_Plague.png" x="130" y="0" width="126" height="108" half="0"/>
+	<SubTexture name="MENU_RE_Poison.png" x="0" y="112" width="126" height="108" half="0"/>
+	<SubTexture name="MENU_RE_Sleep.png" x="0" y="0" width="126" height="108" half="0"/>
+	<SubTexture name="MENU_RE_bleed.png" x="130" y="112" width="126" height="108" half="0"/>
+</TextureAtlas>
+

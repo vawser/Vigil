@@ -1,0 +1,13 @@
+<TextureAtlas imagePath="SB_Title.png">
+	<SubTexture name="MENU_Loading_02.png" x="1028" y="1262" width="270" height="228" half="0"/>
+	<SubTexture name="MENU_Loading_ROGO.png" x="0" y="1926" width="128" height="32" half="0"/>
+	<SubTexture name="MENU_Logo_Oodle.png" x="0" y="1620" width="700" height="272" half="0"/>
+	<SubTexture name="MENU_Logo_SpeedTree.png" x="0" y="1262" width="700" height="120" half="0"/>
+	<SubTexture name="MENU_Logo_Wwise.png" x="704" y="1592" width="320" height="330" half="0"/>
+	<SubTexture name="MENU_Logo_bink.png" x="704" y="1262" width="320" height="326" half="0"/>
+	<SubTexture name="MENU_Logo_havok.png" x="0" y="1386" width="700" height="230" half="0"/>
+	<SubTexture name="MENU_NTCopyright.png" x="0" y="0" width="1920" height="1080" half="0"/>
+	<SubTexture name="MENU_Title_Cursor.png" x="0" y="1084" width="1288" height="174" half="0"/>
+	<SubTexture name="MENU_Title_Warn.png" x="1302" y="1084" width="260" height="876" half="0"/>
+</TextureAtlas>
+
