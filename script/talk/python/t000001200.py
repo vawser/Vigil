@@ -543,14 +543,20 @@ def t000001200_x38():
         """State 1"""
         ClearTalkListData()
         
-        # Select Difficulty
-        # AddTalkListData(1, 80102010, -1)
+        # Select Journey Type
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0, 10, 80200000, -1)
         
-        # Travel to Roundtable Hold - No Finger
-        AddTalkListDataIf(GetEventFlag(1047610011) == 0 and GetEventFlag(60210) == 0, 1, 80102000, -1)
+        # Select Journey Modifiers
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0, 11, 80202000, -1)
         
-        # Travel to Roundtable Hold - Has Finger
-        AddTalkListDataIf(GetEventFlag(1047610011) == 0 and GetEventFlag(60210) == 1, 2, 80102000, -1)
+        # Select Starting Location
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0, 12, 80201000, -1)
+        
+        # Build Custom Loadout
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0 and GetEventFlag(1047610200) == 1, 13, 80203000, -1)
+        
+        # Finalize
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0 and GetEventFlag(1047610151) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610152) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610153) == 1, 20, 80200002, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -560,13 +566,25 @@ def t000001200_x38():
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         """State 2"""
         
-        # Quickstart - No Finger
-        if GetTalkListEntryResult() == 1:
-            assert t000001200_x101(80102103)
-            return 0
-        # Quickstart - Has Finger
-        elif GetTalkListEntryResult() == 2:
-            assert t000001200_x101(80102100)
+        # Select Journey Type
+        if GetTalkListEntryResult() == 10:
+            assert t000001200_x39()
+            continue
+        # Select Journey Modifiers
+        elif GetTalkListEntryResult() == 11:
+            assert t000001200_x41()
+            continue
+        # Select Starting Location
+        elif GetTalkListEntryResult() == 12:
+            assert t000001200_x40()
+            continue
+        # Build Custom Loadout
+        elif GetTalkListEntryResult() == 13:
+            assert t000001200_x50()
+            continue
+        # Finalize
+        elif GetTalkListEntryResult() == 20:
+            assert t000001200_x101(80200001)
             
             c1_110()
     
@@ -584,26 +602,339 @@ def t000001200_x38():
 
             # Yes
             if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610011, 1)
+                SetEventFlag(1047610150, 1)
                 
-                # Torrent
-                SetEventFlag(4680, 1)
-                SetEventFlag(4681, 1)
-                SetEventFlag(1042379201, 1)
-                AwardItemLot(100000)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0  
+        else:
+            """State 31"""
+            return 0
+        """State 10"""
+        assert CheckSpecificPersonTalkHasEnded(0) == 1
+
+# Journey Type
+def t000001200_x39():
+    """State 0,8"""
+    c1_110()
+    while True:
+        """State 1"""
+        ClearTalkListData()
+        
+        # Tarnished
+        AddTalkListDataIf(GetEventFlag(1047610151) == 0, 1, 80200100, -1)
+        # Tarnished (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610151) == 1, 10, 80200110, -1)
+        
+        # Explorer
+        AddTalkListDataIf(GetEventFlag(1047610152) == 0, 2, 80200101, -1)
+        # Explorer (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610152) == 1, 11, 80200111, -1)
+        
+        # Tarnished
+        AddTalkListDataIf(GetEventFlag(1047610153) == 0, 3, 80200102, -1)
+        # Tarnished (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610153) == 1, 12, 80200112, -1)
+        
+        # Leave
+        AddTalkListData(99, 20000009, -1)
+        
+        """State 6"""
+        ShowShopMessage(1)
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        """State 2"""
+        
+        # Tarnished
+        if GetTalkListEntryResult() == 1:
+            assert t000001200_x101(80200200)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610151, 1)
+                SetEventFlag(1047610152, 0)
+                SetEventFlag(1047610153, 0)
                 
-                # Roundtable Hold
-                SetEventFlag(10000851, 1)
-                SetEventFlag(10009655, 1)
-                SetEventFlag(11109786, 1)
-                SetEventFlag(104, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            continue
+        # Explorer
+        elif GetTalkListEntryResult() == 2:
+            assert t000001200_x101(80200201)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610151, 0)
+                SetEventFlag(1047610152, 1)
+                SetEventFlag(1047610153, 0)
                 
-                # Graces
-                SetEventFlag(71801, 1) 
-                SetEventFlag(76101, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        # Conqueror
+        elif GetTalkListEntryResult() == 3:
+            assert t000001200_x101(80200202)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610151, 0)
+                SetEventFlag(1047610152, 0)
+                SetEventFlag(1047610153, 1)
                 
-                # Map
-                SetEventFlag(62010, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        # Tarnished (selected)
+        elif GetTalkListEntryResult() == 10:
+            assert t000001200_x101(80200200)
+            return 0
+        # Explorer (selected)
+        elif GetTalkListEntryResult() == 11:
+            assert t000001200_x101(80200201)
+            return 0
+        # Conqueror (selected)
+        elif GetTalkListEntryResult() == 12:
+            assert t000001200_x101(80200202)
+            return 0
+        else:
+            """State 31"""
+            return 0
+        """State 10"""
+        assert CheckSpecificPersonTalkHasEnded(0) == 1
+
+# Starting Location
+def t000001200_x40():
+    """State 0,8"""
+    c1_110()
+    while True:
+        """State 1"""
+        ClearTalkListData()
+        
+        # Here
+        AddTalkListDataIf(GetEventFlag(1047610170) == 0, 1, 80201100, -1)
+        # Here (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610170) == 1, 10, 80201150, -1)
+        
+        # Roundtable Hold
+        AddTalkListDataIf(GetEventFlag(1047610171) == 0, 2, 80201101, -1)
+        # Roundtable Hold (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610171) == 1, 11, 80201151, -1)
+        
+        # Leave
+        AddTalkListData(99, 20000009, -1)
+        
+        """State 6"""
+        ShowShopMessage(1)
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        """State 2"""
+        
+        # Here
+        if GetTalkListEntryResult() == 1:
+            assert t000001200_x101(80201200)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                assert t000001200_x102(1047610170)
+                
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        # Roundtable Hold
+        elif GetTalkListEntryResult() == 2:
+            assert t000001200_x101(80201201)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                assert t000001200_x102(1047610171)
+                
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        # Here (selected)
+        elif GetTalkListEntryResult() == 10:
+            assert t000001200_x101(80201200)
+            return 0
+        # Roundtable Hold (selected)
+        elif GetTalkListEntryResult() == 11:
+            assert t000001200_x101(80201201)
+            return 0
+        else:
+            """State 31"""
+            return 0
+        """State 10"""
+        assert CheckSpecificPersonTalkHasEnded(0) == 1
+        
+# Journey Modifiers
+def t000001200_x41():
+    """State 0,8"""
+    c1_110()
+    while True:
+        """State 1"""
+        ClearTalkListData()
+        
+        # Immediate Torrent
+        AddTalkListDataIf(GetEventFlag(1047610160) == 0, 1, 80202100, -1)
+        # Immediate Torrent (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610160) == 1, 10, 80202150, -1)
+        
+        # Leave
+        AddTalkListData(99, 20000009, -1)
+        
+        """State 6"""
+        ShowShopMessage(1)
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        """State 2"""
+        
+        # Immediate Torrent
+        if GetTalkListEntryResult() == 1:
+            assert t000001200_x101(80202200)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610160, 1)
+                
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        # Immediate Torrent (selected)
+        elif GetTalkListEntryResult() == 10:
+            assert t000001200_x101(80202201)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610160, 0)
                 
                 return 0
             # Cancel
@@ -619,11 +950,94 @@ def t000001200_x38():
         """State 10"""
         assert CheckSpecificPersonTalkHasEnded(0) == 1
 
+# Custom Loadout
+def t000001200_x50():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # Weapons
+        AddTalkListData(1, 99999000, -1)
+        
+        # Spells
+        AddTalkListData(2, 99999002, -1)
+        
+        # Armor
+        AddTalkListData(3, 99999001, -1)
+        
+        # Talismans
+        AddTalkListData(4, 99999003, -1)
+        
+        # Ammunition
+        AddTalkListData(5, 99999004, -1)
+        
+        # Runes
+        AddTalkListDataIf(GetEventFlag(1047610220) == 0, 6, 99999005, -1)
+        
+        # Level Up
+        AddTalkListData(7, 15000540, -1)
+        
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Weapons
+        if GetTalkListEntryResult() == 1:
+            """State 3"""
+            OpenDragonCommunionShop(9100000, 9109999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Spells
+        elif GetTalkListEntryResult() == 2:
+            """State 6"""
+            OpenDragonCommunionShop(9120000, 9129999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Armor
+        elif GetTalkListEntryResult() == 3:
+            """State 5"""
+            OpenDragonCommunionShop(9110000, 9119999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Talismans
+        elif GetTalkListEntryResult() == 4:
+            """State 7"""
+            OpenDragonCommunionShop(9130000, 9139999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Ammunition
+        elif GetTalkListEntryResult() == 5:
+            """State 8"""
+            OpenDragonCommunionShop(9140000, 9149999)
+            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Runes
+        elif GetTalkListEntryResult() == 6:
+            SetEventFlag(1047610220, 1)
+            GiveSpEffectToPlayer(7000040)
+            PlayerEquipmentQuantityChange(3, 10060, -1)
+            assert t000001200_x101(99999010)
+        # Levelup
+        elif GetTalkListEntryResult() == 7:
+            OpenSoul()
+            assert not (CheckSpecificPersonMenuIsOpen(10, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
+
 # Description Prompt
 def t000001200_x101(action1=_):
     """State 0,1"""
     OpenGenericDialog(8, action1, 1, 0, 1)
     assert not CheckSpecificPersonGenericDialogIsOpen(0)
     """State 2"""
+    return 0
+    
+# Starting Location
+def t000001200_x102(flag=_):
+    SetEventFlag(1047610170, 0)
+    SetEventFlag(1047610171, 0)
+    
+    SetEventFlag(flag, 1)
+    
     return 0
     

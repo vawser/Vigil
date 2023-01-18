@@ -1,6 +1,24 @@
 ﻿#-------------------------------------------------
 # Features
 #-------------------------------------------------
+# Journey Configuration
+- Added in the ability to select journey configuration at game start.
+- You select your Journey Type, Modifiers and Starting Location, and then Finalize it to start it. Once finalized, it cannot be changed until the next NG cycle.
+
+- There are 3 journey types:
+    - Tarnished: standard, no modifiers are applied.
+    - Explorer: +50% absorption for the player, and AI sight and listen is reduced by 90%.
+    - Conqueror: -25% absorption for the player, and AI sight and listen is boosted by 500%. More is planned for this in the future.
+
+- There are 2 starting locations:
+    - Here: you will remain at the chapel and proceed through the tutorial.
+    - Roundtable Hold: you will be teleported to Roundtable Hold 
+
+- There is 1 journey modifier:
+    - Immediate Torrent: you will receive Torrent immediately.
+    
+- Custom Loadout menu (enabled via Draconic Tome) has been moved to the Jar of Promise.
+
 # Training System
 - Added a training dummy system to Roundtable Hold, in the lower hall.
  - Appears after Mad Tongue Alberich is dead.

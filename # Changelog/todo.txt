@@ -79,7 +79,11 @@
 Write a python script to generate the SpEffects, loc strings and ESD file.
 Need list of ID and Armor Name first
     
-# Place these
-700000 Brave Set
-701000 Brave's Leather Helm
+# Difficulty
 
+Journey Type:
+Explorer 
+Tarnished
+Conqueror
+
+3715

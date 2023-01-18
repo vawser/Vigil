@@ -17,20 +17,28 @@ Treasure flag
 #------------------------------------
 1047610010 Default Setup flag
 1047610011 Quickstart taken
-1047610012 Quickstart items given
+1047610012 Flasks given
 1047610013 Tarnished's Wizened Finger - Removal Script triggered
 1047610014 Screenshot Tool toggle
 
+1047610020 Starting Location completed
+1047610021 Journey Modifiers completed
+
 1047610100 Hidden Helm enabled
 
-1047610150 Difficulty: Standard
-1047610151 Difficulty: Explorer
-1047610152 Difficulty: Mythic
+1047610150 Journey Configuration finalized
+1047610151 Journey Type: Tarnished
+1047610152 Journey Type: Explorer
+1047610153 Journey Type: Conqueror
 
-# Custom Class
-1047610200 Given Tokens
-1047610210 Itemlot flag
-1047610220 Free Souls flag
+1047610160 Journey Modifier: Immediate Torrent
+
+1047610170 Starting Location: Here
+1047610171 Starting Location: Roundtable Hold
+
+1047610200 Custom Loadout: selected
+1047610210 Custom Loadout: Itemlot flag
+1047610220 Custom Loadout: Free Souls flag
 
 # Arena Challenge
 1047610300 Warp to Arena

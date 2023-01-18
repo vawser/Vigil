@@ -6507,6 +6507,10 @@ $Event(11000, Default, function() {
         SetEventFlagID(60120, ON); // Crafting Kit
         SetEventFlagID(1047610010, ON); // Default setup complete
         
+        // Configuration Defaults
+        SetEventFlagID(1047610151, ON); 
+        SetEventFlagID(1047610170, ON); 
+        
         // Arena Defaults
         SetEventFlagID(1047610390, ON); // Difficulty: Standard
         SetEventFlagID(1047610310, ON); // Type: Demi-Human
@@ -6570,6 +6574,11 @@ $Event(11000, Default, function() {
     
     // Screenshot Tool
     InitializeEvent(0, 11021, 0);
+    
+    // Journey Configuration
+    InitializeEvent(0, 11030, 0);
+    InitializeEvent(0, 11031, 0);
+    InitializeEvent(0, 11032, 0);
 });
 
 //-------------------
@@ -6845,4 +6854,84 @@ $Event(11021, Default, function() {
     }
     
     RestartEvent();
+});
+
+//-------------------
+// Journey Type
+//-------------------
+$Event(11030, Restart, function() {
+    WaitFor(EventFlag(1047610150)); // Finalize
+    
+    // Tidy up Custom Loadout material
+    RemoveItemFromPlayer(ItemType.Goods, 10060, 99);
+    
+    // Tarnished
+    if(EventFlag(1047610151))
+    {
+        SetSpEffect(10000, 7201100);
+    }
+    
+    // Explorer
+    if(EventFlag(1047610152))
+    {
+        SetSpEffect(10000, 7201200);
+        SetSpEffect(10000, 7201201);
+        SetSpEffect(10000, 7201202);
+    }
+    
+    // Conqueror
+    if(EventFlag(1047610153))
+    {
+        SetSpEffect(10000, 7201300);
+        SetSpEffect(10000, 7201301);
+        SetSpEffect(10000, 7201302);
+        SetSpEffect(10000, 7201303);
+    }
+});
+
+//-------------------
+// Starting Location
+//-------------------
+$Event(11031, Default, function() {
+    EndIf(EventFlag(1047610020));
+    
+    WaitFor(EventFlag(1047610150)); // Finalize
+    
+    SetEventFlagID(1047610020, ON);
+
+    // Roundtable Hold
+    if(EventFlag(1047610171))
+    {
+        SetEventFlagID(10000851, ON)
+        SetEventFlagID(10009655, ON)
+        SetEventFlagID(11109786, ON)
+        SetEventFlagID(104, ON)
+        
+        // Early Graces
+        SetEventFlagID(71801, ON) 
+        SetEventFlagID(76101, ON)
+        
+        // Limgrave Map
+        SetEventFlagID(62010, ON)
+    }
+});
+
+//-------------------
+// Journey Modifiers
+//-------------------
+$Event(11032, Default, function() {
+    EndIf(EventFlag(1047610021));
+    
+    WaitFor(EventFlag(1047610150)); // Finalize
+    
+    SetEventFlagID(1047610021, ON);
+    
+    // Immediate Torrent
+    if(EventFlag(1047610160))
+    {
+        SetEventFlagID(4680, ON)
+        SetEventFlagID(4681, ON)
+        SetEventFlagID(1042379201, ON)
+        AwardItemLot(100000)
+    }
 });
