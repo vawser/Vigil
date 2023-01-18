@@ -104,6 +104,8 @@
 #-------------------------------------------------
 - Added the ability to break down Pure, Refined and Rough Erdstone/Somberstone into 3 of the lower tier material.
 
+- Added passive effects to most of the armor pieces that lacked them.
+
 - Added the following new armor pieces:
  - Crab Carcass: a new head piece that looks like a Giant Crab.
  

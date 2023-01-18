@@ -36,6 +36,7 @@ Treasure flag
 1047610170 Starting Location: Here
 1047610171 Starting Location: Roundtable Hold
 
+
 1047610200 Custom Loadout: selected
 1047610210 Custom Loadout: Itemlot flag
 1047610220 Custom Loadout: Free Souls flag

@@ -6902,6 +6902,7 @@ $Event(11031, Default, function() {
     // Roundtable Hold
     if(EventFlag(1047610171))
     {
+        // Roundtable Hold
         SetEventFlagID(10000851, ON)
         SetEventFlagID(10009655, ON)
         SetEventFlagID(11109786, ON)
@@ -6914,6 +6915,8 @@ $Event(11031, Default, function() {
         // Limgrave Map
         SetEventFlagID(62010, ON)
     }
+    
+    // 
 });
 
 //-------------------
