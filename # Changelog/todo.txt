@@ -5,7 +5,7 @@
 - Fix the HKS input bugs
 
 #-------------------------------------------------
-# TODO
+# Ideas
 #-------------------------------------------------
 # Enemy Density
 - Mix up/add enemy encounters in the open world:
@@ -66,16 +66,37 @@
 - Add 2 more swarm waves
 - Implement boss version at Limgrave or Leyndell colosseum.
 
+# Armor Ascension
+- Add reinforcement-like system to armor via Tailoring menu
+
 # Talisman Ascension
 - Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
     - +1 and +2 are available in NG0
     - +3 and +4 in NG+1
     - +5 in NG+2
 
+# Affinity Effects
+- Add elemental buffs during certain attacks when infused with Fire/Magic/etc.
+    For example: Fire Longsword would have a fire buff appear with the charged heavy attac
+    Implementation:
+        Notify HKS via notify SpEffect placed in TAE (0 duration)
+        HKS will apply the affinty buff (i.e. Fire buff is applied if notify SpEffect is detected)
+        
+- Can also extend to bullets (i.e. fireball)
+
+#-------------------------------------------------
+# WIP
+#-------------------------------------------------
 # Transmogrification
 - Add in the Cinders transformation system.
-    - Armor first, then potentially the visual effects (will need to discover the FFX for these).
+- Armor 
+- Visual effects
+- Camera tweaks (FOV, distance)
  
-Write a python script to generate the SpEffects, loc strings and ESD file.
-Need list of ID and Armor Name first
-    
+
+Millicent       1002301
+Rotten          1002311
+Deathbed        1002321
+Fell Omen Cloak 1002331
+
+1047610101

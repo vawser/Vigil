@@ -18336,8 +18336,6 @@ function RideJumpCommonFunction(jump_type, lower_only, isSecond, isHighJump)
         else
             act(ChangeStamina, STAMINA_REDUCE_RIDE_JUMP)
             
-            act(AddSpEffect, 150971)
-            
             if GetVariable("MoveSpeedLevel") >= 1.5 then
                 FireRideEvent("W_RideJump2_D", "W_RideJump2_D", FALSE)
             elseif GetVariable("MoveSpeedLevel") >= 0.6000000238418579 then

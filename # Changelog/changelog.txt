@@ -1,7 +1,12 @@
 ﻿#-------------------------------------------------
 # Features
 #-------------------------------------------------
-# Journey Configuration
+# Transmogrification
+- Added the ability to apply a transmogrification to your armor.
+- Transmog will visually override your worn armor, but the stats will remain that of your worn armor.
+- You can transmog the head and the body (the body includes arms and legs).
+- All armor is available to transmog.
+- Available at the Clouded Mirror Stand in the Roundtable Hold.
 
 #-------------------------------------------------
 # Player
@@ -18,6 +23,8 @@
 #-------------------------------------------------
 # World
 #-------------------------------------------------
+# m60_41_35_00 
+- Adjusted enemy patrol and Banished Knight position so the player is not attacked when sitting at the grace.
 
 #-------------------------------------------------
 # Items
