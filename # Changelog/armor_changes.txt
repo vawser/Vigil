@@ -8,6 +8,13 @@ Bull-Goat Set
 - [Arms]  Effect: Increases maximum HP by 2.5%.
 - [Legs]  Effect: Increases maximum HP by 2.5%.
 
+Giant Set 
+- Weight: 60.4
+- [Head]  Effect: Strengthens the potency of guard counters by 5%. 
+- [Chest] Effect: Strengthens the potency of guard counters by 5%. 
+- [Arms]  Effect: Strengthens the potency of guard counters by 5%. 
+- [Legs]  Effect: Strengthens the potency of guard counters by 5%. 
+
 Fire Prelate Set
 - Weight: 58.8
 - [Head]  Effect: Strengthens the potency of Flame incantations by 5%. 
@@ -986,6 +993,18 @@ Grass Hair Ornament
 Crab Carcass
 - Weight: 3
 - [Head] Effect: The wearer becomes a slightly easier target for foes.
+
+Mask of the Mother
+- Weight: 2.5
+- [Head]  Effect: Strengthens the potency of final combo attacks by 5%. 
+
+Mask of the Child
+- Weight: 2.5
+- [Head]  Effect: Strengthens the potency of jump attacks by 5%. 
+
+Mask of the Father
+- Weight: 2.5
+- [Head]  Effect: Strengthens the potency of charged attacks by 5%. 
 
 # --- Chest ---
 Fell Omen Cloak

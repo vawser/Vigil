@@ -637,6 +637,11 @@ Treasure flag
 1047600424 Rotten Set [Body]
 1047600425 Deathbed Set [Body]
 1047600426 Fell Omen Cloak [Body]
+1047600427 Mask of the Mother [Head]
+1047600428 Mask of the Child [Head]
+1047600429 Mask of the Father [Head]
+1047600430 Giant Set [Head]
+1047600431 Giant Set [Body]
 
 1047600998 None [Head]
 1047600999 None [Body]

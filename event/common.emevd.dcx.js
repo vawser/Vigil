@@ -6499,8 +6499,6 @@ $Event(9950, Default, function(X0_4, X4_4) {
 $Event(11000, Default, function() {
     EndIf(ThisEventSlot());
     
-    SetEventFlagID(1047600200, OFF);
-    
     //AwardItemLot(1000);
     
     // Default Setup - Applied only once
@@ -6581,6 +6579,8 @@ $Event(11000, Default, function() {
     
     // Transmog
     InitializeEvent(0, 11100, 0);
+    InitializeEvent(0, 11200, 0);
+    InitializeEvent(0, 11300, 0);
 });
 
 //-------------------
@@ -7382,6 +7382,13 @@ $Event(11100, Default, function() {
     InitializeEvent(425, 11101, 9402425, 1047600425) // Deathbed Set [Body]
     InitializeEvent(426, 11101, 9402426, 1047600426) // Fell Omen Cloak [Body]
     
+    // Added
+    InitializeEvent(427, 11101, 9402429, 1047600427) // Mask of the Mother [Head]
+    InitializeEvent(428, 11101, 9402430, 1047600428) // Mask of the Child [Head]
+    InitializeEvent(429, 11101, 9402431, 1047600429) // Mask of the Father [Head]
+    InitializeEvent(430, 11101, 9402432, 1047600430) // Giant Set [Head]
+    InitializeEvent(431, 11101, 9402433, 1047600431) // Giant Set [Body]
+    
     // Special
     InitializeEvent(998, 11101, 9402427, 1047600998) // None [Head]
     InitializeEvent(999, 11101, 9402428, 1047600999) // None [Body] 
@@ -7408,4 +7415,14 @@ $Event(11101, Default, function(X0_4, X4_4) {
     SetEventFlagID(1047610101, OFF);
     
     RestartEvent();
+});
+
+// Visual Overrides
+$Event(11200, Default, function() {
+    
+});
+
+// Camera Overrides
+$Event(11300, Default, function() {
+    
 });

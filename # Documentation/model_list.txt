@@ -2,4 +2,7 @@
 # Added Model IDs
 #------------------------
 3000 Crab Carcass
-
+3001 Mask of the Mother
+3002 Mask of the Child
+3003 Mask of the Father
+3004 Giant's Set

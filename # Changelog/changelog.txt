@@ -33,6 +33,14 @@
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------
+- Added the following new pieces of armor:
+    - Mask of the Mother: 
+    - Mask of the Child: 
+    - Mask of the Father: 
+    - Giant Helm: 
+    - Giant Armor: 
+    - Giant Gauntlets: 
+    - Giant Leggings: 
 
 #-------------------------------------------------
 # Weapons

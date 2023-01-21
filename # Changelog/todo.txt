@@ -84,19 +84,45 @@
         
 - Can also extend to bullets (i.e. fireball)
 
+# Bosses
+- Split Radagon and Elden Beast into 2 fights
+- Split Beast Clergyman and Maliketh into 2 fights
+
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-# Transmogrification
-- Add in the Cinders transformation system.
-- Armor 
-- Visual effects
-- Camera tweaks (FOV, distance)
- 
+# Place
+3010000 Mask of the Mother      
+3020000 Mask of the Child       
+3030000 Mask of the Father      
+3040000 Giant Helm              
+3040100 Giant Armor             
+3040200 Giant Gauntlets         
+3040300 Giant Leggings          
 
-Millicent       1002301
-Rotten          1002311
-Deathbed        1002321
-Fell Omen Cloak 1002331
+# The Family
+550010000 The Father # 31000
+    4040400 Fire Zweihander
+    31140000 Great Turtle Shell
+    3030000 Mask of the Father
+    3040100 Giant Armor
+    3040200 Giant Gauntlets
+    3040300 Giant Leggings
+    
+    1400 Fire Grease
+    
+550010100 The Mother # 32000
+    15120900 Cold Butchering Knife
+    3010000 Mask of the Mother
+    680100
+    680200
+    680300
+    
+550010200 The Child  # 33000
+    21011000 Poison Spiked Caestus
+    3020000 Mask of the Child
+    660100
+    660200
+    660300
 
-1047610101
+Itemlot: 30700

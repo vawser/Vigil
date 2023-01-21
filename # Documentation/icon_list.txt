@@ -1,7 +1,14 @@
 ﻿#------------------------
 # Added Icon IDs
 #------------------------
-45000 Crab Carcass
-45001
+45001 Crab Carcass
+45002 Mask of the Mother
+45003 Mask of the Child
+45004 Mask of the Father
+45005 Giant Helm
+45006 Giant Armor
+45007 Giant Gauntlets
+45008 Giant Leggings
 
+...
 45273

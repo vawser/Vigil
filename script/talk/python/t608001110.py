@@ -798,7 +798,22 @@ def t608001110_x60():
         AddTalkListDataIf(GetEventFlag(1047600182) == 0, 135, 89001734, -1)
         # Diallos's Mask (OFF)
         AddTalkListDataIf(GetEventFlag(1047600182) == 1, 535, 89001734, -1)
+        
+        # Mask of the Mother (ON)
+        AddTalkListDataIf(GetEventFlag(1047600427) == 0, 136, 89001735, -1)
+        # Mask of the Mother (OFF)
+        AddTalkListDataIf(GetEventFlag(1047600427) == 1, 536, 89001735, -1)
 
+        # Mask of the Child (ON)
+        AddTalkListDataIf(GetEventFlag(1047600428) == 0, 137, 89001736, -1)
+        # Mask of the Child (OFF)
+        AddTalkListDataIf(GetEventFlag(1047600428) == 1, 537, 89001736, -1)
+        
+        # Mask of the Father (ON)
+        AddTalkListDataIf(GetEventFlag(1047600429) == 0, 138, 89001737, -1)
+        # Mask of the Father (OFF)
+        AddTalkListDataIf(GetEventFlag(1047600429) == 1, 538, 89001737, -1)
+        
         # Leave
         AddTalkListData(999, 26080001, -1)
         
@@ -1094,6 +1109,30 @@ def t608001110_x60():
         elif GetTalkListEntryResult() == 535:
             assert t608001110_x210(89000021, 1047600182, 0)
             return 0
+        # Mask of the Mother (ON)
+        elif GetTalkListEntryResult() == 136:
+            assert t608001110_x210(89000020, 1047600427, 1)
+            return 0
+        # Mask of the Mother (OFF)
+        elif GetTalkListEntryResult() == 536:
+            assert t608001110_x210(89000021, 1047600427, 0)
+            return 0
+        # Mask of the Child (ON)
+        elif GetTalkListEntryResult() == 137:
+            assert t608001110_x210(89000020, 1047600428, 1)
+            return 0
+        # Mask of the Child (OFF)
+        elif GetTalkListEntryResult() == 537:
+            assert t608001110_x210(89000021, 1047600428, 0)
+            return 0
+        # Mask of the Father (ON)
+        elif GetTalkListEntryResult() == 138:
+            assert t608001110_x210(89000020, 1047600429, 1)
+            return 0
+        # Mask of the Father (OFF)
+        elif GetTalkListEntryResult() == 538:
+            assert t608001110_x210(89000021, 1047600429, 0)
+            return 0
         else:
             """State 7"""
             break
@@ -1366,6 +1405,11 @@ def t608001110_x61():
         # Fire Monk (OFF)
         AddTalkListDataIf(GetEventFlag(1047600108) == 1, 552, 89001151, -1)
 
+        # Giant (ON)
+        AddTalkListDataIf(GetEventFlag(1047600430) == 0, 153, 89001152, -1)
+        # Giant (OFF)
+        AddTalkListDataIf(GetEventFlag(1047600430) == 1, 553, 89001152, -1)
+        
         # Leave
         AddTalkListData(999, 26080001, -1)
         
@@ -1788,6 +1832,14 @@ def t608001110_x61():
         # Fire Monk (OFF)
         elif GetTalkListEntryResult() == 552:
             assert t608001110_x210(89000021, 1047600108, 0)
+            return 0
+        # Giant (ON)
+        elif GetTalkListEntryResult() == 153:
+            assert t608001110_x210(89000020, 1047600430, 1)
+            return 0
+        # Giant (OFF)
+        elif GetTalkListEntryResult() == 553:
+            assert t608001110_x210(89000021, 1047600430, 0)
             return 0
         else:
             """State 7"""
@@ -4092,6 +4144,11 @@ def t608001110_x71():
         # Fire Monk (OFF)
         AddTalkListDataIf(GetEventFlag(1047600109) == 1, 552, 89001151, -1)
 
+        # Giant (ON)
+        AddTalkListDataIf(GetEventFlag(1047600431) == 0, 153, 89001152, -1)
+        # Giant (OFF)
+        AddTalkListDataIf(GetEventFlag(1047600431) == 1, 553, 89001152, -1)
+        
         # Leave
         AddTalkListData(999, 26080001, -1)
         
@@ -4514,6 +4571,14 @@ def t608001110_x71():
         # Fire Monk (OFF)
         elif GetTalkListEntryResult() == 552:
             assert t608001110_x211(89000021, 1047600109, 0)
+            return 0
+        # Giant (ON)
+        elif GetTalkListEntryResult() == 153:
+            assert t608001110_x211(89000020, 1047600431, 1)
+            return 0
+        # Giant (OFF)
+        elif GetTalkListEntryResult() == 553:
+            assert t608001110_x211(89000021, 1047600431, 0)
             return 0
         else:
             """State 7"""
@@ -6634,6 +6699,10 @@ def t608001110_x220():
     SetEventFlag(1047600230, 0) 
     SetEventFlag(1047600232, 0) 
     SetEventFlag(1047600316, 0)
+    SetEventFlag(1047600427, 0)
+    SetEventFlag(1047600428, 0)
+    SetEventFlag(1047600429, 0)
+    SetEventFlag(1047600430, 0)
     
     return 0
     
@@ -6839,6 +6908,7 @@ def t608001110_x221():
     SetEventFlag(1047600231, 0) 
     SetEventFlag(1047600233, 0) 
     SetEventFlag(1047600317, 0)
+    SetEventFlag(1047600431, 0)
     
     return 0
     
