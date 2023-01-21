@@ -67,15 +67,6 @@
 - Add 2 more swarm waves
 - Implement boss version at Limgrave or Leyndell colosseum.
 
-# Armor Ascension
-- Add reinforcement-like system to armor via Tailoring menu
-
-# Talisman Ascension
-- Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
-    - +1 and +2 are available in NG0
-    - +3 and +4 in NG+1
-    - +5 in NG+2
-
 # Affinity Effects
 - Add elemental buffs during certain attacks when infused with Fire/Magic/etc.
     For example: Fire Longsword would have a fire buff appear with the charged heavy attac
@@ -89,45 +80,27 @@
 - Split Radagon and Elden Beast into 2 fights
 - Split Beast Clergyman and Maliketh into 2 fights
 
+# Armor Ascension
+- Add reinforcement-like system to armor via Tailoring menu
+
+# Talisman Ascension
+- Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
+    - +1 and +2 are available in NG0
+    - +3 and +4 in NG+1
+    - +5 in NG+2
+
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
 # Place
 3010000 Mask of the Mother      
 3020000 Mask of the Child       
-3030000 Mask of the Father      
-3040000 Giant Helm              
-3040100 Giant Armor             
-3040200 Giant Gauntlets         
-3040300 Giant Leggings          
+3030000 Mask of the Father             
 
-# The Family
+# Boss: The Family
 550010000 The Father # 31000
-    4040400 Fire Zweihander
-    31140000 Great Turtle Shell
-    3030000 Mask of the Father
-    3040100 Giant Armor
-    3040200 Giant Gauntlets
-    3040300 Giant Leggings
-    
-    1400 Fire Grease
-    
 550010100 The Mother # 32000
-    15120900 Cold Butchering Knife
-    3010000 Mask of the Mother
-    680100
-    680200
-    680300
-    
 550010200 The Child  # 33000
-    21011000 Poison Spiked Caestus
-    3020000 Mask of the Child
-    660100
-    660200
-    660300
 
 Itemlot: 30700
 
-# Dummies
-227 Carian Knight Sword
-1310 Glintstone Staff

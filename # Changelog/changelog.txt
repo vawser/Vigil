@@ -38,10 +38,7 @@
     - Mask of the Mother: 
     - Mask of the Child: 
     - Mask of the Father: 
-    - Giant Helm: 
-    - Giant Armor: 
-    - Giant Gauntlets: 
-    - Giant Leggings: 
+    - Giant Set: found in the Mountaintops of the Giants
 
 #-------------------------------------------------
 # Weapons

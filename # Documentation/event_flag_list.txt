@@ -31,9 +31,11 @@
 1047610170 Starting Location: Here
 1047610171 Starting Location: Roundtable Hold
 
-1047610200 Custom Loadout: selected
-1047610210 Custom Loadout: Itemlot flag
-1047610220 Custom Loadout: Free Souls flag
+1047610200 Custom Loadout: Selected
+1047610210 Custom Loadout: Itemlot Option
+1047610220 Custom Loadout: Free Souls Option
+1047610230 Custom Loadout: Material Removal Done
+1047610231 Custom Loadout: Material Remove
 
 # Arena Challenge
 1047610300 Warp to Arena

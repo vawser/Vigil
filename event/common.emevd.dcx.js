@@ -6576,6 +6576,7 @@ $Event(11000, Default, function() {
     InitializeEvent(0, 11030, 0);
     InitializeEvent(0, 11031, 0);
     InitializeEvent(0, 11032, 0);
+    InitializeEvent(0, 11035, 0);
     
     // Transmog
     InitializeEvent(0, 11100, 0);
@@ -6864,9 +6865,6 @@ $Event(11021, Default, function() {
 $Event(11030, Restart, function() {
     WaitFor(EventFlag(1047610150)); // Finalize
     
-    // Tidy up Custom Loadout material
-    RemoveItemFromPlayer(ItemType.Goods, 10060, 99);
-    
     // Tarnished
     if(EventFlag(1047610151))
     {
@@ -6938,6 +6936,22 @@ $Event(11032, Default, function() {
         SetEventFlagID(4681, ON)
         SetEventFlagID(1042379201, ON)
         AwardItemLot(100000)
+    }
+});
+
+//-------------------
+// Custom Loadout
+//-------------------
+$Event(11035, Restart, function() {
+    EndIf(EventFlag(1047610230)); // Run flag
+    
+    WaitFor(EventFlag(1047610150)); // Finalize flag
+    
+    // Removal area OR Finalize option
+    if(EventFlag(1047610231)) 
+    {
+        SetEventFlagID(1047610230, ON);
+        RemoveItemFromPlayer(ItemType.Goods, 10060, 99);
     }
 });
 

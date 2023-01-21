@@ -603,7 +603,7 @@ def t000001200_x38():
             # Yes
             if GetTalkListEntryResult() == 1:
                 SetEventFlag(1047610150, 1)
-                
+                SetEventFlag(1047610231, 1)
                 return 0
             # Cancel
             elif GetTalkListEntryResult() == 2:
