@@ -3,6 +3,7 @@
 #-------------------------------------------------
 - Chapel of Anticaption blocked by fogwall on return after leaving tutorial area
 - Fix the HKS input bugs
+- Add Grass Hair Ornament icon
 
 #-------------------------------------------------
 # Ideas

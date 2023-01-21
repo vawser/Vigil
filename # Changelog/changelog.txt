@@ -11,6 +11,7 @@
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
+- Torrent Dash should now act like vanilla, i.e. it will step down into a gallop after 6 seconds instead of incorrectly into a trot.
 
 #-------------------------------------------------
 # Bosses

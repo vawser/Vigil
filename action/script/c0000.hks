@@ -14607,6 +14607,7 @@ function SpeedUpdate()
             runLevel = 0.4000000059604645
         end
         
+        -- Sprint (stick + O)
         if stick_level > 1.100000023841858 then
             if env(GetSpEffectID, 100020) == TRUE then
                 ChangeMoveSpeedIndex(1)
@@ -14615,11 +14616,13 @@ function SpeedUpdate()
                 act(LockonFixedAngleCancel)
                 ChangeMoveSpeedIndex(2)
             end
+        -- Normal Walk (stick)
         elseif runLevel < stick_level then
             ChangeMoveSpeedIndex(1)
             if env(GetSpEffectID, 100002) == FALSE and (GetVariable("IsEnableToggleDashTest") >= 2 or env(GetSpEffectID, 100301) == FALSE) then
                 SetVariable("ToggleDash", 0)
             end
+        -- Stop
         else
             ChangeMoveSpeedIndex(0)
             if env(GetSpEffectID, 100002) == FALSE and (GetVariable("IsEnableToggleDashTest") >= 2 or env(GetSpEffectID, 100301) == FALSE) then
@@ -15338,17 +15341,22 @@ function RideRequestFunction(ride_move_type, enable_turn, lower_only)
     local move_angle = GetVariable("MoveAngle")
     local next_ride_move_type = RIDE_MOVE_TYPE_IDLE
     
+    -- Out of Stamina: limit move speed
     if env(GetSpEffectID, 100020) == TRUE and move_speed_level > 1 then
         move_speed_level = 1
     end
     
     if math.abs(move_angle) <= 45 then
+        -- Gallop
         if move_speed_level > 1.5 or GetVariable("IsEnableToggleDashTest") >= 1 and GetVariable("ToggleDash") == 1 and GetVariable("MoveSpeedLevel") >= 0.8999999761581421 then
             next_ride_move_type = RIDE_MOVE_TYPE_GALLOP
+        -- Dash
         elseif move_speed_level > 0.6000000238418579 then
             next_ride_move_type = RIDE_MOVE_TYPE_DASH
+        -- Walk
         elseif move_speed_level > 0 then
             next_ride_move_type = RIDE_MOVE_TYPE_WALK
+        -- Idle
         else
             next_ride_move_type = RIDE_MOVE_TYPE_IDLE
         end
@@ -16968,6 +16976,7 @@ function RideDash_onUpdate()
     end
 end
 
+-- Initial Movement after "O" Press (approx 6 seconds)
 function RideDashAccelerate_onUpdate()
     act(Wait)
     SetEnableAimMode()
@@ -16981,9 +16990,11 @@ function RideDashAccelerate_onUpdate()
     elseif TRUE == ExecRideStop(RIDE_MOVE_TYPE_OTHER, FALSE) then
         return
     elseif (env(IsMoveCancelPossible) == TRUE or env(IsAnimEnd, 0) == TRUE) and RideRequestFunction(RIDE_MOVE_TYPE_OTHER, TRUE, FALSE) == TRUE then
+        
     end
 end
 
+-- Initial Movement after secondary "O" Press during Dash (approx 6 seconds)
 function RideDashAccelerateContinue_onUpdate()
     act(Wait)
     SetEnableAimMode()
@@ -16997,6 +17008,7 @@ function RideDashAccelerateContinue_onUpdate()
     elseif TRUE == ExecRideStop(RIDE_MOVE_TYPE_OTHER, FALSE) then
         return
     elseif (env(IsMoveCancelPossible) == TRUE or env(IsAnimEnd, 0) == TRUE) and RideRequestFunction(RIDE_MOVE_TYPE_OTHER, TRUE, FALSE) == TRUE then
+        
     end
 end
 
@@ -17034,6 +17046,7 @@ function RideDash_End_onUpdate()
     end
 end
 
+-- Sustained Movement after "O" Press
 function RideGallop_onUpdate()
     act(Wait)
     SetEnableAimMode()
@@ -17333,97 +17346,127 @@ function ExecRideDashAccelerate()
         return FALSE
     end
     
-    local testControl = 3
+    SetVariable("IsEnableToggleDashTest", 4)
+            
+    local evasionRequest = env(ActionRequest, ACTION_ARM_SP_MOVE)
     
-    if testControl == 2 or testControl == 12 then
-        SetVariable("IsEnableToggleDashTest", 0)
-        
-        if env(ActionRequest, ACTION_ARM_ROLLING) == TRUE and env(GetStamina) <= 0 then
-            ResetRequest()
-        end
-        
-        local evasionRequest = GetEvasionRequest()
-        
-        if evasionRequest == ATTACK_REQUEST_ROLLING then
-            act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
-            
-            if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
-                FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
-            else
-                FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
-            end
-            
-            return TRUE
-        end
-    else
-        if testControl == 3 or testControl == 13 then
-            SetVariable("IsEnableToggleDashTest", 4)
-            
-            local evasionRequest = env(ActionRequest, ACTION_ARM_SP_MOVE)
-            
-            if evasionRequest == TRUE and env(GetStamina) <= 0 then
-                ResetRequest()
-            end
-            
-            -- Gallop started already
-            if env(GetSpEffectID, 100903) == TRUE then
-                return FALSE
-            elseif evasionRequest == TRUE then
-                act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
-                
-                SetVariable("ToggleDash", 1)
-                
-                if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
-                    FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
-                else
-                    FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
-                end
-                
-                return TRUE
-            end
-        end
-        
-        SetVariable("IsEnableToggleDashTest", 0)
-        
-        if 0 == RideDashAccelerateTest and env(ActionDuration, ACTION_ARM_SP_MOVE) > 0 then
-            act(DebugLogOutput, "RideDashAccel")
-        end
-        
-        local evasionRequest = env(ActionDuration, ACTION_ARM_SP_MOVE)
-        
-        if (env(IsStayState) == TRUE or env(IsGeneralAnimCancelPossible) == TRUE) and evasionRequest > 0 and 0 > RideDashAccelerateTest and env(GetStamina) > 0 then
-            act(AdjustStamina, STAMINA_REDUCE_RIDE_DASH)
-            
-            if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
-                FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
-            else
-                FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
-            end
-            
-            return TRUE
-        end
-        
-        RideDashAccelerateTest = env(ActionDuration, ACTION_ARM_SP_MOVE)
-        
-        if FALSE == IsNodeActive("RideDashAccelerate CMSG") and FALSE == IsNodeActive("RideDashAccelerateContinue CMSG") then
-            if env(ActionRequest, ACTION_ARM_ROLLING) == TRUE and env(GetStamina) <= 0 then
-                ResetRequest()
-            end
-            
-            local evasionRequest = GetEvasionRequest()
-            
-            if evasionRequest == ATTACK_REQUEST_ROLLING and env(GetStamina) > 0 then
-                act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
-                if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
-                    FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
-                else
-                    FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
-                end
-                
-                return TRUE
-            end
-        end
+    if evasionRequest == TRUE and env(GetStamina) <= 0 then
+        ResetRequest()
     end
+    
+    -- Gallop started already
+    if env(GetSpEffectID, 100903) == TRUE then
+        return FALSE
+    -- "O" Pressed
+    elseif evasionRequest == TRUE then
+        act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
+        
+        SetVariable("ToggleDash", 1)
+        
+        if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
+            FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
+        else
+            FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
+        end
+        
+        return TRUE
+    end
+    
+    -- Original decompiled code, appears to be pointless as the above replicates the normal vanilla dash behavior properly.
+    -- local testControl = 3
+    
+    -- if testControl == 2 or testControl == 12 then
+        -- SetVariable("IsEnableToggleDashTest", 0)
+        
+        -- if env(ActionRequest, ACTION_ARM_ROLLING) == TRUE and env(GetStamina) <= 0 then
+            -- ResetRequest()
+        -- end
+        
+        -- local evasionRequest = GetEvasionRequest()
+        
+        -- if evasionRequest == ATTACK_REQUEST_ROLLING then
+            -- act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
+            
+            -- if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
+                -- FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
+            -- else
+                -- FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
+            -- end
+            
+            -- return TRUE
+        -- end
+    -- else
+        -- if testControl == 3 or testControl == 13 then
+            -- SetVariable("IsEnableToggleDashTest", 4)
+            
+            -- local evasionRequest = env(ActionRequest, ACTION_ARM_SP_MOVE)
+            
+            -- if evasionRequest == TRUE and env(GetStamina) <= 0 then
+                -- ResetRequest()
+            -- end
+            
+            -- -- Gallop started already
+            -- if env(GetSpEffectID, 100903) == TRUE then
+                -- return FALSE
+            -- elseif evasionRequest == TRUE then
+                -- act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
+                
+                -- SetVariable("ToggleDash", 1)
+                
+                -- if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
+                    -- FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
+                -- else
+                    -- FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
+                -- end
+                
+                -- return TRUE
+            -- end
+        -- end
+        
+        -- SetVariable("IsEnableToggleDashTest", 0)
+        
+        -- if 0 == RideDashAccelerateTest and env(ActionDuration, ACTION_ARM_SP_MOVE) > 0 then
+            -- act(DebugLogOutput, "RideDashAccel")
+        -- end
+        
+        -- local evasionRequest = env(ActionDuration, ACTION_ARM_SP_MOVE)
+        
+        -- if (env(IsStayState) == TRUE or env(IsGeneralAnimCancelPossible) == TRUE) and evasionRequest > 0 and 0 > RideDashAccelerateTest and env(GetStamina) > 0 then
+            -- act(AdjustStamina, STAMINA_REDUCE_RIDE_DASH)
+            
+            -- if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
+                -- FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
+            -- else
+                -- FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
+            -- end
+            
+            -- return TRUE
+        -- end
+        
+        -- RideDashAccelerateTest = env(ActionDuration, ACTION_ARM_SP_MOVE)
+        
+        -- if FALSE == IsNodeActive("RideDashAccelerate CMSG") and FALSE == IsNodeActive("RideDashAccelerateContinue CMSG") then
+            -- if env(ActionRequest, ACTION_ARM_ROLLING) == TRUE and env(GetStamina) <= 0 then
+                -- ResetRequest()
+            -- end
+            
+            -- local evasionRequest = GetEvasionRequest()
+            
+            -- if evasionRequest == ATTACK_REQUEST_ROLLING and env(GetStamina) > 0 then
+                -- act(ChangeStamina, STAMINA_REDUCE_RIDE_DASH)
+                
+                -- act(AddSpEffect, 151902)
+                
+                -- if TRUE == IsNodeActive("RideDashAccelerate CMSG") or TRUE == IsNodeActive("RideDashAccelerateContinue CMSG") then
+                    -- FireRideEvent("W_RideDashAccelerateContinue", "W_RideDashAccelerateContinue", FALSE)
+                -- else
+                    -- FireRideEvent("W_RideDashAccelerate", "W_RideDashAccelerate", FALSE)
+                -- end
+                
+                -- return TRUE
+            -- end
+        -- end
+    -- end
     
     return FALSE
 end
