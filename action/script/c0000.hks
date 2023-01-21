@@ -298,6 +298,14 @@ function RegenerateFP()
     end
 end
 
+function IsWeaponCatalyst()
+    if c_SwordArtsID == 66 then
+        return TRUE
+    end
+    
+    return FALSE
+end
+
 ------------------------------------------
 -- Core: Functions
 ------------------------------------------
@@ -684,6 +692,10 @@ function IsEnableGuard()
     env(GetEquipWeaponSpecialCategoryNumber, hand)
     
     if style == HAND_RIGHT and GetEquipType(hand, WEAPON_CATEGORY_STAFF) == TRUE then
+        return FALSE
+    elseif IsWeaponCatalyst() == TRUE then
+        return FALSE
+    elseif style == HAND_RIGHT then
         return FALSE
     elseif FALSE == IsWeaponCanGuard() then
         return FALSE
@@ -2897,60 +2909,81 @@ function ExecMagic(quick_type, blend_type, is_ride)
     local style = c_Style
     local magic_hand = HAND_RIGHT
     
-    local f83_local0 = nil
-    local f83_local1 = nil
+    local action_arm = nil
+    local action_arm_menu = nil
     
-    if env(ActionRequest, ACTION_ARM_MAGIC_R) == TRUE or env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and is_ride == TRUE then
-        f83_local0 = ACTION_ARM_MAGIC_R
-        
-        if style == HAND_LEFT_BOTH then
-            if FALSE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) then
+    -- Normal Catalysts
+    if IsWeaponCatalyst() == FALSE then
+        -- R1/L1 (while riding)
+        if env(ActionRequest, ACTION_ARM_MAGIC_R) == TRUE or env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and is_ride == TRUE then
+            action_arm = ACTION_ARM_MAGIC_R
+
+            if style == HAND_LEFT_BOTH then
+                if GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) == FALSE then
+                    return FALSE
+                end
+                
+                action_arm_menu = HAND_LEFT
+            else
+                if GetEquipType(HAND_RIGHT, WEAPON_CATEGORY_STAFF) == FALSE then
+                    return FALSE
+                end
+                
+                action_arm_menu = HAND_RIGHT
+            end
+        -- L1
+        elseif env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE then
+            action_arm = ACTION_ARM_MAGIC_L
+            
+            if style == HAND_RIGHT_BOTH or style == HAND_LEFT_BOTH then
+                return FALSE
+            elseif FALSE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) then
                 return FALSE
             end
             
-            f83_local1 = HAND_LEFT
+            action_arm_menu = HAND_LEFT
+            magic_hand = HAND_LEFT
+            
+            act(DebugLogOutput, "MagicLeft")
         else
-            if FALSE == GetEquipType(HAND_RIGHT, WEAPON_CATEGORY_STAFF) then
-                return FALSE
-            end
+            return FALSE
+        end
+    -- Weapon Catalyst
+    elseif IsWeaponCatalyst() == TRUE then
+        -- Fire with L2 (Sword Arts)
+        if env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE then
+            action_arm = ACTION_ARM_MAGIC_R
             
-            f83_local1 = HAND_RIGHT
-        end
-    elseif env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE then
-        f83_local0 = ACTION_ARM_MAGIC_L
-        
-        if style == HAND_RIGHT_BOTH or style == HAND_LEFT_BOTH then
-            return FALSE
-        elseif FALSE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) then
+            if style == HAND_LEFT_BOTH then
+                action_arm_menu = HAND_LEFT
+            else
+                action_arm_menu = HAND_RIGHT
+            end
+        else
             return FALSE
         end
-        
-        f83_local1 = HAND_LEFT
-        magic_hand = HAND_LEFT
-        
-        act(DebugLogOutput, "MagicLeft")
     else
         return FALSE
     end
-    
+        
     if env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and FALSE == env(ActionRequest, ACTION_ARM_MAGIC_R) and is_ride == TRUE then
         ResetRequest()
         return FALSE
     end
     
-    if env(IsMagicUseMenuOpening, f83_local1) == TRUE then
+    if env(IsMagicUseMenuOpening, action_arm_menu) == TRUE then
         ResetRequest()
-        act(OpenMenuWhenUsingMagic, f83_local0)
+        act(OpenMenuWhenUsingMagic, action_arm)
         return TRUE
     end
 
     act(Unknown2026)
     act(MarkOfGreedyPersonSlipDamageDisable)
-
+    
     local magic_index = env(GetMagicAnimType)
     
     g_MagicIndex = magic_index
-    g_Magichand = f83_local1
+    g_Magichand = action_arm_menu
     
     local lastMagicMem = lastUsedMagicAnim
     lastUsedMagicAnim = magic_index
@@ -2966,7 +2999,10 @@ function ExecMagic(quick_type, blend_type, is_ride)
             blend_type = UPPER
         end
     end
-    if env(IsMagicUseable, f83_local1, 0) == FALSE then
+    
+    if env(IsMagicUseable, action_arm_menu, 0) == FALSE then
+        act(AddSpEffect, 151900)
+        
         act(DebugLogOutput, "Event_MagicInvalid_Cannot_Use_Magic")
         SetVariable("IndexMagicHand", magic_hand)
         

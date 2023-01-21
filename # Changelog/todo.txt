@@ -127,3 +127,7 @@
     660300
 
 Itemlot: 30700
+
+# Dummies
+227 Carian Knight Sword
+1310 Glintstone Staff
