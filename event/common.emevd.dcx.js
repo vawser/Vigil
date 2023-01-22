@@ -6955,7 +6955,7 @@ $Event(11035, Restart, function() {
     if(EventFlag(1047610231)) 
     {
         SetEventFlagID(1047610230, ON);
-        RemoveItemFromPlayer(ItemType.Goods, 10060, 99);
+        RemoveItemFromPlayer(ItemType.Goods, 22000, 99);
     }
 });
 

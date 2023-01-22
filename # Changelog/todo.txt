@@ -70,12 +70,6 @@
 # Armor Ascension
 - Add reinforcement-like system to armor via Tailoring menu
 
-# Talisman Ascension
-- Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
-    - +1 and +2 are available in NG0
-    - +3 and +4 in NG+1
-    - +5 in NG+2
-
 # Affinity Effects
 - Add elemental buffs during certain attacks when infused with Fire/Magic/etc.
     For example: Fire Longsword would have a fire buff appear with the charged heavy attac
@@ -92,3 +86,10 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
+# Talisman Ascension
+- Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
+    - +1 and +2 are available in NG0
+    - +3 and +4 in NG+1
+    - +5 in NG+2
+
+22000 Bloodsoaked Rune

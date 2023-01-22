@@ -988,33 +988,33 @@ def t000001200_x50():
         # Weapons
         if GetTalkListEntryResult() == 1:
             """State 3"""
-            OpenDragonCommunionShop(9100000, 9109999)
-            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+            OpenChampionsEquipmentShop(9100000, 9109999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Spells
         elif GetTalkListEntryResult() == 2:
             """State 6"""
-            OpenDragonCommunionShop(9120000, 9129999)
-            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+            OpenChampionsEquipmentShop(9120000, 9129999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Armor
         elif GetTalkListEntryResult() == 3:
             """State 5"""
-            OpenDragonCommunionShop(9110000, 9119999)
-            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+            OpenChampionsEquipmentShop(9110000, 9119999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Talismans
         elif GetTalkListEntryResult() == 4:
             """State 7"""
-            OpenDragonCommunionShop(9130000, 9139999)
-            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+            OpenChampionsEquipmentShop(9130000, 9139999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Ammunition
         elif GetTalkListEntryResult() == 5:
             """State 8"""
-            OpenDragonCommunionShop(9140000, 9149999)
-            assert not (CheckSpecificPersonMenuIsOpen(22, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+            OpenChampionsEquipmentShop(9140000, 9149999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Runes
         elif GetTalkListEntryResult() == 6:
             SetEventFlag(1047610220, 1)
             GiveSpEffectToPlayer(7000040)
-            PlayerEquipmentQuantityChange(3, 10060, -1)
+            PlayerEquipmentQuantityChange(3, 22000, -1)
             assert t000001200_x101(99999010)
         # Levelup
         elif GetTalkListEntryResult() == 7:

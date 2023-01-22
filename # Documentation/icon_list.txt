@@ -9,6 +9,8 @@
 45006 Giant Armor
 45007 Giant Gauntlets
 45008 Giant Leggings
+45009 Bloodsoaked Rune
+45010 Bloodsoaked Tome
 
 ...
 45273
