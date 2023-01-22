@@ -544,7 +544,7 @@ def t000001700_x100():
         ClearTalkListData()
         c1_110()
         
-        # Travel to the Great Colliseum
+        # Travel to the Great Colosseum
         AddTalkListData(1, 80105400, -1)
         
         # Leave

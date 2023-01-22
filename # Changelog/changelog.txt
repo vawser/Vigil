@@ -8,6 +8,20 @@
 - All armor is available to transmog.
 - Available at the Clouded Mirror Stand in the Roundtable Hold.
 
+# Gladiator Trials
+- Similar to the Gladiator's Gauntlet, the Limgrave Colosseum hosts NPC-based boss fights.
+- Each fight is replayable, and rewards runes, material, and certain fights will reward unique items upon first victory.
+
+- Trial Type:
+    - The Family: face the Valiant Father, the Kindly Mother and the Naive Child.
+    - Azur's Vengeance: face the Spirit of Azur, and two of his disciples.
+    - Magmatic Cabal: face the Lord of Magma and his two Magmatic Knights.
+    
+- Trial Difficulties:
+    - Standard: 100% Rune Amount, 100% HP, 100% Damage
+    - Hard: 200% Rune Amount, 200% HP, 200% Damage
+    - Nightmare: 500% Rune Amount, 500% HP, 300% Damage
+    
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

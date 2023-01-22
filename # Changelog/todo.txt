@@ -67,6 +67,15 @@
 - Add 2 more swarm waves
 - Implement boss version at Limgrave or Leyndell colosseum.
 
+# Armor Ascension
+- Add reinforcement-like system to armor via Tailoring menu
+
+# Talisman Ascension
+- Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
+    - +1 and +2 are available in NG0
+    - +3 and +4 in NG+1
+    - +5 in NG+2
+
 # Affinity Effects
 - Add elemental buffs during certain attacks when infused with Fire/Magic/etc.
     For example: Fire Longsword would have a fire buff appear with the charged heavy attac
@@ -80,27 +89,6 @@
 - Split Radagon and Elden Beast into 2 fights
 - Split Beast Clergyman and Maliketh into 2 fights
 
-# Armor Ascension
-- Add reinforcement-like system to armor via Tailoring menu
-
-# Talisman Ascension
-- Add affix-like system for accessories. Material would drop from the bosses and very rarely after any enemy kill.
-    - +1 and +2 are available in NG0
-    - +3 and +4 in NG+1
-    - +5 in NG+2
-
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-# Place
-3010000 Mask of the Mother      
-3020000 Mask of the Child       
-3030000 Mask of the Father             
-
-# Boss: The Family
-550010000 The Father # 31000
-550010100 The Mother # 32000
-550010200 The Child  # 33000
-
-Itemlot: 30700
-

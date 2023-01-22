@@ -545,7 +545,7 @@ def t000001600_x100():
         c1_110()
         
         # Face the Gauntlet
-        AddTalkListData(1, 80105000, -1)
+        # AddTalkListData(1, 80105000, -1)
         
         # Gauntlet Type
         AddTalkListData(2, 80105001, -1)

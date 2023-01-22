@@ -40,12 +40,25 @@
 # Arena Challenge
 1047610300 Warp to Arena
 1047610301 Gladiatorial Mark reward
-1047610302 Warp to Great Colliseum
+1047610302 Warp to Great Colosseum
+1047610303 Warp to Royal Colosseum
 
-1047610310 Type: Demi-Human Deluge
-1047610311 Type: Godrick's Own
-1047610312 Type: Revenge of the Gladiators
-1047610313 Type: Misbegotten Crucible
+1047610320 Trial Type: The Family
+1047610321 Trial Type: Azur's Vengeance
+1047610322 Trial Type: Magmatic Cabal
+
+1047610380 Trial Difficulty: Standard
+1047610381 Trial Difficulty: Hard
+1047610382 Trial Difficulty: Nightmare
+
+1047610310 Gauntlet Type: Demi-Human Deluge
+1047610311 Gauntlet Type: Godrick's Own
+1047610312 Gauntlet Type: Revenge of the Gladiators
+1047610313 Gauntlet Type: Misbegotten Crucible
+
+1047610390 Gauntlet Difficulty: Standard
+1047610391 Gauntlet Difficulty: Hard
+1047610392 Gauntlet Difficulty: Nightmare
 
 1047610350 Music: None
 1047610351 Music: Godfrey, First Elden Lord         # 472001
@@ -70,10 +83,7 @@
 1047610370 Music: Malenia, Blade of Miquella        # 212000
 1047610371 Music: Loretta, Knight of the Haligtree  # 920200
 1047610372 Music: Radagon of the Golden Order       # 219000
- 
-1047610390 Difficulty: Standard
-1047610391 Difficulty: Hard
-1047610392 Difficulty: Nightmare
+
 
 # Time
 1047610400

@@ -6511,10 +6511,14 @@ $Event(11000, Default, function() {
         SetEventFlagID(1047610151, ON); 
         SetEventFlagID(1047610170, ON); 
         
-        // Arena Defaults
+        // Gauntlet Defaults
         SetEventFlagID(1047610390, ON); // Difficulty: Standard
         SetEventFlagID(1047610310, ON); // Type: Demi-Human
         SetEventFlagID(1047610351, ON); // Music: Godfrey, First Elden Lord
+        
+        // Trial Defaults
+        SetEventFlagID(1047610380, ON); // Difficulty: Standard
+        SetEventFlagID(1047610320, ON); // Type: The Family
         
         // Deflection Defaults
         SetEventFlagID(1047610600, ON);  // Selected Deflect Type: Storm
