@@ -1,439 +1,507 @@
-﻿SpEffect    Flag    Name
+﻿# Home
+m11_10_00_00 Roundtable Hold
+m18_00_00_00 Stranded Graveyard
+m10_01_00_00 Chapel of Anticipation
 
-1047610101 Change
+# Limgrave
+m10_00_00_00 Stormveil Castle
+m30_00_00_00 Tombsward Catacombs
+m30_02_00_00 Stormfoot Catacombs
+m30_04_00_00 Murkwater Catacombs
+m30_06_00_00 Cliffbottom Catacombs
+m30_11_00_00 Deathtouched Catacombs
+m31_00_00_00 Murkwater Cave
+m31_03_00_00 Groveside Cave
+m31_15_00_00 Coastal Cave
+m31_17_00_00 Highroad Cave
+m32_01_00_00 Limgrave Tunnels
+m34_10_00_00 Divine Tower of Limgrave
 
-# Heavy
-9402028   1047600028   Bull-Goat Set [Head]
-9402029   1047600029   Bull-Goat Set [Body]
-9402112   1047600112   Fire Prelate Set [Head]
-9402113   1047600113   Fire Prelate Set [Body]
-9402114   1047600114   Fire Prelate Set (Altered) [Head]
-9402115   1047600115   Fire Prelate Set (Altered) [Body]
-9402300   1047600300   Omen Set [Head]
-9402301   1047600301   Omen Set [Body]
-9402176   1047600176   Lionel's Set [Head]
-9402177   1047600177   Lionel's Set [Body]
-9402178   1047600178   Lionel's Set (Altered) [Head]
-9402179   1047600179   Lionel's Set (Altered) [Body]
-9402072   1047600072   Tree Sentinel Set [Head]
-9402073   1047600073   Tree Sentinel Set [Body]
-9402074   1047600074   Tree Sentinel Set (Altered) [Head]
-9402075   1047600075   Tree Sentinel Set (Altered) [Body]
-9402220   1047600220   Veteran's Set [Head]
-9402221   1047600221   Veteran's Set [Body]
-9402222   1047600222   Veteran's Set (Altered) [Head]
-9402223   1047600223   Veteran's Set (Altered) [Body]
-9402203   1047600203   Beast Champion Set [Head]
-9402204   1047600204   Beast Champion Set [Body]
-9402205   1047600205   Beast Champion Set (Altered) [Head]
-9402206   1047600206   Beast Champion Set (Altered) [Body]
-9402046   1047600046   Banished Knight Set [Head]
-9402047   1047600047   Banished Knight Set [Body]
-9402048   1047600048   Banished Knight Set (Altered) [Head]
-9402049   1047600049   Banished Knight Set (Altered) [Body]
-9402131   1047600131   General Radahn's Set [Head]
-9402132   1047600132   General Radahn's Set [Body]
-9402133   1047600133   General Radahn's Set (Altered) [Head]
-9402134   1047600134   General Radahn's Set (Altered) [Body]
-9402070   1047600070   Malformed Dragon Set [Head]
-9402071   1047600071   Malformed Dragon Set [Body]
-9402008   1047600008   Scaled Set [Head]
-9402009   1047600009   Scaled Set [Body]
-9402010   1047600010   Scaled Set (Altered) [Head]
-9402011   1047600011   Scaled Set (Altered) [Body]
-9402145   1047600145   Crucible Axe Set [Head]
-9402146   1047600146   Crucible Axe Set [Body]
-9402147   1047600147   Crucible Axe Set (Altered) [Head]
-9402148   1047600148   Crucible Axe Set (Altered) [Body]
-9402149   1047600149   Crucible Tree Set [Head]
-9402150   1047600150   Crucible Tree Set [Body]
-9402076   1047600076   Royal Knight Set [Head]
-9402077   1047600077   Royal Knight Set [Body]
-9402078   1047600078   Royal Knight Set (Altered) [Head]
-9402079   1047600079   Royal Knight Set (Altered) [Body]
-9402104   1047600104   Cleanrot Set [Head]
-9402105   1047600105   Cleanrot Set [Body]
-9402106   1047600106   Cleanrot Set (Altered) [Head]
-9402107   1047600107   Cleanrot Set (Altered) [Body]
-9402036   1047600036   Blaidd's Set [Head]
-9402037   1047600037   Blaidd's Set [Body]
-9402038   1047600038   Blaidd's Set (Altered) [Head]
-9402039   1047600039   Blaidd's Set (Altered) [Body]
-9402058   1047600058   Night's Cavalry Set [Head]
-9402059   1047600059   Night's Cavalry Set [Body]
-9402060   1047600060   Night's Cavalry Set (Altered) [Head]
-9402061   1047600061   Night's Cavalry Set (Altered) [Body]
-9402212   1047600212   Maliketh's Set [Head]
-9402213   1047600213   Maliketh's Set [Body]
-9402214   1047600214   Maliketh's Set (Altered) [Head]
-9402215   1047600215   Maliketh's Set (Altered) [Body]
-9402159   1047600159   Twinned Set [Head]
-9402160   1047600160   Twinned Set [Body]
-9402161   1047600161   Twinned Set (Altered) [Head]
-9402162   1047600162   Twinned Set (Altered) [Body]
-9402180   1047600180   Hoslow's Set [Head]
-9402181   1047600181   Hoslow's Set [Body]
-9402182   1047600182   Hoslow's Set (Diallos) [Head]
-9402183   1047600183   Hoslow's Set (Diallos) [Body]
-9402184   1047600184   Hoslow's Set (Alt) [Head]
-9402185   1047600185   Hoslow's Set (Alt) [Body]
-9402368   1047600368   Cuckoo Knight Set [Head]
-9402369   1047600369   Cuckoo Knight Set [Body]
-9402370   1047600370   Cuckoo Knight Set (Altered) [Head]
-9402371   1047600371   Cuckoo Knight Set (Altered) [Body]
-9402050   1047600050   Briar Set [Head]
-9402051   1047600051   Briar Set [Body]
-9402052   1047600052   Briar Set (Altered) [Head]
-9402053   1047600053   Briar Set (Altered) [Body]
-9402364   1047600364   Godrick Knight Set [Head]
-9402365   1047600365   Godrick Knight Set [Body]
-9402366   1047600366   Godrick Knight Set (Altered) [Head]
-9402367   1047600367   Godrick Knight Set (Altered) [Body]
-9402376   1047600376   Redmane Knight Set [Head]
-9402377   1047600377   Redmane Knight Set [Body]
-9402378   1047600378   Redmane Knight Set (Altered) [Head]
-9402379   1047600379   Redmane Knight Set (Altered) [Body]
-9402360   1047600360   Gelmir Knight Set [Head]
-9402361   1047600361   Gelmir Knight Set [Body]
-9402362   1047600362   Gelmir Knight Set (Altered) [Head]
-9402363   1047600363   Gelmir Knight Set (Altered) [Body]
-9402372   1047600372   Leyndell Knight Set [Head]
-9402373   1047600373   Leyndell Knight Set [Body]
-9402374   1047600374   Leyndell Knight Set (Altered) [Head]
-9402375   1047600375   Leyndell Knight Set (Altered) [Body]
-9402384   1047600384   Haligtree Knight Set [Head]
-9402385   1047600385   Haligtree Knight Set [Body]
-9402386   1047600386   Haligtree Knight Set (Altered) [Head]
-9402387   1047600387   Haligtree Knight Set (Altered) [Body]
-9402110   1047600110   Blackflame Monk Set [Head]
-9402111   1047600111   Blackflame Monk Set [Body]
-9402108   1047600108   Fire Monk Set [Head]
-9402109   1047600109   Fire Monk Set [Body]
+# Weeping Penisula
+m30_01_00_00 Impaler's Catacombs
+m32_00_00_00 Morne Tunnel
+m31_01_00_00 Earthbore Cave
+m31_02_00_00 Tombsward Cave
 
-# Medium
-9402155   1047600155   All-Knowing Set [Head]
-9402156   1047600156   All-Knowing Set [Body]
-9402157   1047600157   All-Knowing Set (Altered) [Head]
-9402158   1047600158   All-Knowing Set (Altered) [Body]
-9402196   1047600196   Royal Remains Set [Head]
-9402197   1047600197   Royal Remains Set [Body]
-9402224   1047600224   Bloodhound Knight Set [Head]
-9402225   1047600225   Bloodhound Knight Set [Body]
-9402226   1047600226   Bloodhound Knight Set (Altered) [Head]
-9402227   1047600227   Bloodhound Knight Set (Altered) [Body]
-9402345   1047600345   Knight Set [Head]
-9402346   1047600346   Knight Set [Body]
-9402286   1047600286   Fingerprint Set [Head]
-9402287   1047600287   Fingerprint Set [Body]
-9402288   1047600288   Fingerprint Set (Altered) [Head]
-9402289   1047600289   Fingerprint Set (Altered) [Body]
-9402302   1047600302   Carian Knight Set [Head]
-9402303   1047600303   Carian Knight Set [Body]
-9402304   1047600304   Carian Knight Set [Altered) [Head]
-9402305   1047600305   Carian Knight Set [Altered) [Body]
-9402348   1047600348   Godrick Soldier Set [Head]
-9402349   1047600349   Godrick Soldier Set [Body]
-9402350   1047600350   Raya Lucarian Soldier Set [Head]
-9402351   1047600351   Raya Lucarian Soldier Set [Body]
-9402352   1047600352   Leyndell Soldier Set [Head]
-9402353   1047600353   Leyndell Soldier Set [Body]
-9402354   1047600354   Radahn Soldier Set [Head]
-9402355   1047600355   Radahn Soldier Set [Body]
-9402358   1047600358   Haligtree Soldier Set [Head]
-9402359   1047600359   Haligtree Soldier Set [Body]
-9402250   1047600250   Raging Wolf Set [Head]
-9402251   1047600251   Raging Wolf Set [Body]
-9402252   1047600252   Raging Wolf Set (Altered) [Head]
-9402253   1047600253   Raging Wolf Set (Altered) [Body]
-9402186   1047600186   Vagabond Knight Set [Head]
-9402187   1047600187   Vagabond Knight Set [Body]
-9402188   1047600188   Vagabond Knight Set (Altered) [Head]
-9402189   1047600189   Vagabond Knight Set (Altered) [Body]
-9402380   1047600380   Mausoleum Knight Set [Head]
-9402381   1047600381   Mausoleum Knight Set [Body]
-9402382   1047600382   Mausoleum Knight Set (Altered) [Head]
-9402383   1047600383   Mausoleum Knight Set (Altered) [Body]
-9402282   1047600282   Eccentric's Set [Head]
-9402283   1047600283   Eccentric's Set [Body]
-9402284   1047600284   Eccentric's Set (Altered) [Head]
-9402285   1047600285   Eccentric's Set (Altered) [Body]
-9402004   1047600004   Drake Knight Set [Head]
-9402005   1047600005   Drake Knight Set [Body]
-9402006   1047600006   Drake Knight Set (Altered) [Head]
-9402007   1047600007   Drake Knight Set (Altered) [Body]
-9402040   1047600040   Black Knife Set [Head]
-9402041   1047600041   Black Knife Set [Body]
-9402042   1047600042   Black Knife Set (Altered) [Head]
-9402043   1047600043   Black Knife Set (Altered) [Body]
-9402044   1047600044   Exile Set [Head]
-9402045   1047600045   Exile Set [Body]
-9402127   1047600127   Elden Lord Set [Head]
-9402128   1047600128   Elden Lord Set [Body]
-9402129   1047600129   Elden Lord Set (Altered) [Head]
-9402130   1047600130   Elden Lord Set (Altered) [Body]
-9402030   1047600030   Ronin's Set [Head]
-9402031   1047600031   Ronin's Set [Body]
-9402032   1047600032   Ronin's Set (Altered) [Head]
-9402033   1047600033   Ronin's Set (Altered) [Body]
-9402331   1047600331   Chain Set [Head]
-9402332   1047600332   Chain Set [Body]
-9402000   1047600000   Iron Set [Head]
-9402001   1047600001   Iron Set [Body]
-9402002   1047600002   Kaiden Set [Head]
-9402003   1047600003   Kaiden Set [Body]
-9402356   1047600356   Mausoleum Soldier Set [Head]
-9402357   1047600357   Mausoleum Soldier Set [Body]
-9402062   1047600062   Blue Silver Set [Head]
-9402063   1047600063   Blue Silver Set [Body]
-9402064   1047600064   Blue Silver Set (Altered) [Head]
-9402065   1047600065   Blue Silver Set (Altered) [Body]
-9402322   1047600322   Zamor Set [Head]
-9402323   1047600323   Zamor Set [Body]
-9402216   1047600216   Malenia's Set [Head]
-9402217   1047600217   Malenia's Set [Body]
-9402218   1047600218   Malenia's Set (Altered) [Head]
-9402219   1047600219   Malenia's Set (Altered) [Body]
-9402100   1047600100   Guardian Set [Head]
-9402101   1047600101   Guardian Set (Full Bloom) [Body]
-9402102   1047600102   Guardian Set (Altered) [Head]
-9402103   1047600103   Guardian Set (Altered) [Body]
-9402094   1047600094   Duelist Set [Head]
-9402095   1047600095   Duelist Set [Body]
-9402096   1047600096   Duelist Set (Altered) [Head]
-9402097   1047600097   Duelist Set (Altered) [Body]
-9402254   1047600254   Land of Reeds Set [Head]
-9402255   1047600255   Land of Reeds Set [Body]
-9402256   1047600256   Land of Reeds Set (Altered) [Head]
-9402257   1047600257   Land of Reeds Set (Altered) [Body]
-9402258   1047600258   White Reed Set [Head]
-9402259   1047600259   White Reed Set [Body]
-9402388   1047600388   Godrick Foot Soldier Set [Head]
-9402389   1047600389   Godrick Foot Soldier Set [Body]
-9402390   1047600390   Raya Lucarian Foot Soldier Set [Head]
-9402391   1047600391   Raya Lucarian Foot Soldier Set [Body]
-9402392   1047600392   Leyndell Foot Soldier Set [Head]
-9402393   1047600393   Leyndell Foot Soldier Set [Body]
-9402394   1047600394   Radahn Foot Soldier Set [Head]
-9402395   1047600395   Radahn Foot Soldier Set [Body]
-9402396   1047600396   Haligtree Foot Soldier Set [Head]
-9402397   1047600397   Haligtree Foot Soldier Set [Body]
-9402084   1047600084   Nox Swordstress Set [Head]
-9402085   1047600085   Nox Swordstress Set [Body]
-9402086   1047600086   Nox Swordstress Set (Altered) [Head]
-9402087   1047600087   Nox Swordstress Set (Altered) [Body]
-9402088   1047600088   Night Maiden Set [Head]
-9402089   1047600089   Night Maiden Set [Body]
-9402260   1047600260   Confessor Set [Head]
-9402261   1047600261   Confessor Set [Body]
-9402262   1047600262   Confessor Set (Altered) [Head]
-9402263   1047600263   Confessor Set (Altered) [Body]
-9402080   1047600080   Nox Monk Set [Head]
-9402081   1047600081   Nox Monk Set [Body]
-9402082   1047600082   Nox Monk Set (Altered) [Head]
-9402083   1047600083   Nox Monk Set (Altered) [Body]
-9402122   1047600122   Vulgar Militia Set [Head]
-9402123   1047600123   Vulgar Militia Set [Body]
-9402163   1047600163   Ragged Set [Head]
-9402164   1047600164   Ragged Set [Body]
-9402165   1047600165   Ragged Set (Altered) [Head]
-9402166   1047600166   Ragged Set (Altered) [Body]
-9402190   1047600190   Blue Cloth Set [Head]
-9402191   1047600191   Blue Cloth Set [Body]
-9402398   1047600398   Omenkiller Set [Head]
-9402399   1047600399   Omenkiller Set [Body]
-9402342   1047600342   Leather Set [Head]
-9402343   1047600343   Leather Set [Body]
-9402192   1047600192   War Surgeon Set [Head]
-9402193   1047600193   War Surgeon Set [Body]
-9402194   1047600194   War Surgeon Set (Altered) [Head]
-9402195   1047600195   War Surgeon Set (Altered) [Body]
-9402280   1047600280   Raptor's Set [Head]
-9402281   1047600281   Raptor's Set [Body]
-9402275   1047600275   Preceptor's Set [Head]
-9402276   1047600276   Preceptor's Set [Body]
-9402277   1047600277   Preceptor's Set (Altered) [Head]
-9402278   1047600278   Preceptor's Set (Altered) [Body]
-9402415   1047600415   Rotten Duelist Set [Head]
-9402416   1047600416   Rotten Duelist Set [Body]
-9402417   1047600417   Rotten Duelist Set (Altered) [Head]
-9402418   1047600418   Rotten Duelist Set (Altered) [Body]
+# Liurnia
+m14_00_00_00 Academy of Raya Lucaria
+m30_05_00_00 Black Knife Catacombs
+m30_08_00_00 Sainted Hero's Grave
+m31_05_00_00 Lakeside Crystal Cave
+m31_06_00_00 Academy Crystal Cave
+m30_03_00_00 Road's End Catacombs
+m31_04_00_00 Stillwater Cave
+m32_02_00_00 Raya Lucaria Crystal Tunnel
+m34_11_00_00 Divine Tower of Liurnia
+m60_33_42_00 Liurnia of the Lakes - Southwest of Converted Tower; Moonlight Altar - Ringleader's Evergaol
+m60_33_43_00 Liurnia of the Lakes - Minor Erdtree, Road's End Catacombs Entrance
+m60_34_42_00 Liurnia of the Lakes - Village of the Albinaurics; Moonlight Altar - Moonfolk Ruins
+m60_34_43_00 Liurnia of the Lakes - Converted Tower
+m60_35_42_00 Liurnia of the Lakes - West Albinauric Village; Moonlight Altar - Cathedral of Manus Celes
+m60_35_43_00 Liurnia of the Lakes - Folly on the Lake, South Rose Church
+m60_08_11_02 West Liurnia
+m60_16_22_01 South of Four Belfries
+m60_33_44_00 Liurnia of the Lakes - Revenger's Shack
+m60_33_45_00 Liurnia of the Lakes - Cuckoo's Evergaol, West of Meeting Place
+m60_16_23_01 Four Belries
+m60_33_46_00 Liurnia of the Lakes - Foot of the Four Belfries
+m60_33_47_00 Liurnia of the Lakes - The Four Belfries, Giant's Caravan Below
+m60_17_22_01 South Raya Lucaria Outskirts
+m60_34_44_00 Liurnia of the Lakes - Temple Quarter
+m60_34_45_00 Liurnia of the Lakes - Meeting Place, Academy Crystal Cave Entrance
+m60_35_44_00 Liurnia of the Lakes - Far West Gate Town, North Rose Church
+m60_35_45_00 Liurnia of the Lakes - South Raya Lucaria Gate
+m60_17_23_01 North Raya Lucaria Outskirts
+m60_34_46_00 Liurnia of the Lakes - Crystalline Woods, Path to the Four Belfries
+m60_34_47_00 Liurnia of the Lakes - Sorcerer's Isle West, East Belfry
+m60_35_46_00 Liurnia of the Lakes - Main Academy Gate, Academy of Raya Lucaria Entrance
+m60_35_47_00 Liurnia of the Lakes - Testu's Rise, East Gate Bridge Trestle
+m60_08_12_02 Northwest Liurnia
+m60_17_24_01 South of Caria Manor
+m60_34_48_00 Liurnia of the Lakes - Northern Liurnia Lake Shore, Kingsrealm Ruins
+m60_34_49_00 Liurnia of the Lakes - Road to the Manor
+m60_35_48_00 Liurnia of the Lakes - North of Sorcerer's Isle
+m60_35_49_00 Liurnia of the Lakes - South of Caria Manor, West of Ravine Entrance
+m60_17_25_01 Caria Manor; Three Sisters
+m60_34_50_00 Liurnia of the Lakes - Ranni's Rise, Seluvis's Rise
+m60_34_51_00 Liurnia of the Lakes - Renna's Rise
+m60_35_50_00 Liurnia of the Lakes - Caria Manor
+m60_35_51_00 Liurnia of the Lakes - North of Caria Manor
 
-# Light
-9402066   1047600066   Nomadic Merchant Set [Head]
-9402067   1047600067   Nomadic Merchant Set [Body]
-9402068   1047600068   Nomadic Merchant Set (Altered) [Head]
-9402069   1047600069   Nomadic Merchant Set (Altered) [Body]
-9402153   1047600153   Azur's Set [Head]
-9402154   1047600154   Azur's Set [Body]
-9402151   1047600151   Lusat's Set [Head]
-9402152   1047600152   Lusat's Set [Body]
-9402209   1047600209   Noble's Set (Crimson) [Head]
-9402210   1047600210   Noble's Set (Crimson) [Body]
-9402264   1047600264   Prisoner Set [Head]
-9402265   1047600265   Prisoner Set [Body]
-9402207   1047600207   Champion Set [Head]
-9402208   1047600208   Champion Set [Body]
-9402409   1047600409   Highwayman Set [Head]
-9402410   1047600410   Highwayman Set [Body]
-9402141   1047600141   Depraved Perfumer Set [Head]
-9402142   1047600142   Depraved Perfumer Set [Body]
-9402143   1047600143   Depraved Perfumer Set (Altered) [Head]
-9402144   1047600144   Depraved Perfumer Set (Altered) [Body]
-9402172   1047600172   Astrologer Set [Head]
-9402173   1047600173   Astrologer Set [Body]
-9402174   1047600174   Astrologer Set (Altered) [Head]
-9402175   1047600175   Astrologer Set (Altered) [Body]
-9402320   1047600320   Albinauric Set [Head]
-9402321   1047600321   Albinauric Set [Body]
-9402247   1047600247   Marionette Soldier Set [Head]
-9402248   1047600248   Marionette Soldier Set [Body]
-9402139   1047600139   Godskin Noble Set [Head]
-9402140   1047600140   Godskin Noble Set [Body]
-9402338   1047600338   Mushroom Set [Head]
-9402339   1047600339   Mushroom Set [Body]
-9402090   1047600090   Ancestral Fur Set [Head]
-9402091   1047600091   Ancestral Fur Set [Body]
-9402092   1047600092   Ancestral Shaman Set [Head]
-9402093   1047600093   Ancestral Shaman Set [Body]
-9402306   1047600306   Errant Sorcerer Set [Head]
-9402307   1047600307   Errant Sorcerer Set [Body]
-9402308   1047600308   Errant Sorcerer Set (Altered) [Head]
-9402309   1047600309   Errant Sorcerer Set (Altered) [Body]
-9402267   1047600267   Traveling Maiden Set [Head]
-9402268   1047600268   Traveling Maiden Set [Body]
-9402269   1047600269   Traveling Maiden Set (Altered) [Head]
-9402270   1047600270   Traveling Maiden Set (Altered) [Body]
-9402135   1047600135   Queen's Set [Head]
-9402136   1047600136   Queen's Set [Body]
-9402271   1047600271   Finger Maiden Set [Head]
-9402272   1047600272   Finger Maiden Set [Body]
-9402273   1047600273   Finger Maiden Set (Altered) [Head]
-9402274   1047600274   Finger Maiden Set (Altered) [Body]
-9402137   1047600137   Godskin Apostle Set [Head]
-9402138   1047600138   Godskin Apostle Set [Body]
-9402312   1047600312   Snow Witch Set [Head]
-9402313   1047600313   Snow Witch Set [Body]
-9402314   1047600314   Snow Witch Set (Altered) [Head]
-9402315   1047600315   Snow Witch Set (Altered) [Body]
-9402012   1047600012   Perfumer Set [Head]
-9402013   1047600013   Perfumer Set [Body]
-9402014   1047600014   Perfumer Set (Altered) [Head]
-9402015   1047600015   Perfumer Set (Altered) [Body]
-9402167   1047600167   Prophet Set [Head]
-9402168   1047600168   Prophet Set [Body]
-9402169   1047600169   Prophet Set (Altered) [Head]
-9402170   1047600170   Prophet Set (Altered) [Body]
-9402171   1047600171   Prophet Set (Alt) [Body]
-9402310   1047600310   Battlemage Set [Head]
-9402311   1047600311   Battlemage Set [Body]
-9402290   1047600290   Consort's Set [Head]
-9402291   1047600291   Consort's Set [Body]
-9402124   1047600124   Sage Set [Head]
-9402125   1047600125   Sage Set [Body]
-9402318   1047600318   Goldmask's Set [Head]
-9402319   1047600319   Goldmask's Set [Body]
-9402020   1047600020   Alberich's Set [Head]
-9402021   1047600021   Alberich's Set [Body]
-9402022   1047600022   Alberich's Set (Altered) [Head]
-9402023   1047600023   Alberich's Set (Altered) [Body]
-9402116   1047600116   Aristocrat Set [Head]
-9402117   1047600117   Aristocrat Set [Body]
-9402118   1047600118   Wandering Aristocrat Set [Head]
-9402119   1047600119   Wandering Aristocrat Set [Body]
-9402120   1047600120   Old Aristocrat Set [Head]
-9402121   1047600121   Old Aristocrat Set [Body]
-9402054   1047600054   Page Set [Head]
-9402055   1047600055   Page Set [Body]
-9402056   1047600056   Page Set (Altered) [Head]
-9402057   1047600057   Page Set (Altered) [Body]
-9402098   1047600098   Sanguine Noble Set [Head]
-9402099   1047600099   Sanguine Noble Set [Body]
-9402198   1047600198   Brave's Set [Head]
-9402199   1047600199   Brave's Set [Body]
-9402200   1047600200   Brave's Set (Altered) [Head]
-9402201   1047600201   Brave's Set (Altered) [Body]
-9402016   1047600016   Travelling Perfumer Set [Head]
-9402017   1047600017   Travelling Perfumer Set [Body]
-9402018   1047600018   Travelling Perfumer Set (Altered) [Head]
-9402019   1047600019   Travelling Perfumer Set (Altered) [Body]
-9402024   1047600024   Spellblade Set [Head]
-9402025   1047600025   Spellblade Set [Body]
-9402026   1047600026   Spellblade Set (Altered) [Head]
-9402027   1047600027   Spellblade Set (Altered) [Body]
-9402234   1047600234   Commoner's Set [Head]
-9402235   1047600235   Commoner's Set [Body]
-9402236   1047600236   Commoner's Set (Altered) [Head]
-9402237   1047600237   Commoner's Set (Altered) [Body]
-9402238   1047600238   Simple Commoner's Set [Head]
-9402239   1047600239   Simple Commoner's Set [Body]
-9402292   1047600292   Ruler's Set [Head]
-9402293   1047600293   Ruler's Set [Body]
-9402294   1047600294   Upper-Class Set [Head]
-9402295   1047600295   Upper-Class Set [Body]
-9402405   1047600405   Fia's Set [Head]
-9402406   1047600406   Fia's Set [Body]
-9402407   1047600407   Fia's Set (Altered) [Head]
-9402408   1047600408   Fia's Set (Altered) [Body]
-9402411   1047600411   High Page Set [Head]
-9402412   1047600412   High Page Set [Body]
-9402413   1047600413   High Page Set (Altered) [Head]
-9402414   1047600414   High Page Set (Altered) [Body]
-9402034   1047600034   Guilty Set [Head]
-9402035   1047600035   Guilty Set [Body]
-9402296   1047600296   Marais Set [Head]
-9402297   1047600297   Marais Set [Body]
-9402298   1047600298   Bloodsoaked Set [Head]
-9402299   1047600299   Bloodsoaked Set [Body]
-9402228   1047600228   Festive Set [Head]
-9402229   1047600229   Festive Set [Body]
-9402230   1047600230   Festive Set (Altered) [Head]
-9402231   1047600231   Festive Set (Altered) [Body]
-9402232   1047600232   Blue Festive Set [Head]
-9402233   1047600233   Blue Festive Set [Body]
-9402316   1047600316   Juvenile Scholar Set [Head]
-9402317   1047600317   Juvenile Scholar Set [Body]
+# Mt. Gelmir
+m16_00_00_00 Volcano Manor
+m30_09_00_00 Gelmir Hero's Grave
+m31_07_00_00 Seethewater Cave
+m31_09_00_00 Volcano Cave
+m39_20_00_00 Ruin-Strewn Precipice
 
-# Unique Head
-9402344   1047600344   Bandit Mask [Head]
-9402126   1047600126   Pumpkin Helm [Head]
-9402202   1047600202   Brave's Leather Helm [Head]
-9402211   1047600211   Navy Hood [Head]
-9402240   1047600240   Envoy Crown [Head]
-9402241   1047600241   Twinsage Glintstone Crown [Head]
-9402242   1047600242   Raya Lucaria Scholar Set [Body]
-9402243   1047600243   Olivinus Glintstone Crown [Head]
-9402244   1047600244   Lazuli Glintstone Crown [Head]
-9402245   1047600245   Karolos Glintstone Crown [Head]
-9402246   1047600246   Witch's Glintstone Crown [Head]
-9402249   1047600249   Marionette Soldier Birdhelm [Head]
-9402266   1047600266   Blackguard's Iron Mask [Head]
-9402279   1047600279   Grass Hair Ornament [Head]
-9402324   1047600324   Imp Head (Cat) [Head]
-9402325   1047600325   Imp Head (Fanged) [Head]
-9402326   1047600326   Imp Head (Long-Tongued) [Head]
-9402327   1047600327   Imp Head (Corpse) [Head]
-9402328   1047600328   Imp Head (Wolf) [Head]
-9402329   1047600329   Imp Head (Elder) [Head]
-9402330   1047600330   Silver Tear Mask [Head]
-9402333   1047600333   Greathelm [Head]
-9402336   1047600336   Octopus Head [Head]
-9402337   1047600337   Jar [Head]
-9402340   1047600340   Nox Mirrorhelm [Head]
-9402341   1047600341   Iji's Mirrorhelm [Head]
-9402347   1047600347   Greathood [Head]
-9402400   1047600400   Ash-of-War Scarab [Head]
-9402401   1047600401   Incantation Scarab [Head]
-9402402   1047600402   Glintstone Scarab [Head]
-9402403   1047600403   Crimson Tear Scarab [Head]
-9402404   1047600404   Cerulean Tear Scarab [Head]
-9402419   1047600419   Mushroom Crown [Head]
-9402420   1047600420   Black Dumpling [Head]
-9402422   1047600422   Crab Carcass [Head]
+# Ainsel
+m12_01_00_00 Ainsel River
+m12_04_00_00 Ainsel River - Boss
 
-# Unique Body
-9402421   1047600421   Lazuli Robe [Body]
-9402334   1047600334   Eye Surcoat [Body]
-9402335   1047600335   Tree Surcoat [Body]
-9402423 Millicent's Set [Body]
-9402424 Rotten Set [Body]
-9402425 Deathbed Set [Body]
+# Siofra
+m12_02_00_00 Siofra River
+m12_07_00_00 Siofra River Start
+m12_08_00_00 Siofra River - Boss
+m12_03_00_00 Deeproot Depths
+
+# Altus Plateau
+m30_12_00_00 Unsightly Catacombs
+m30_10_00_00 Auriza Hero's Grave
+m30_13_00_00 Auriza Side Tomb
+m31_18_00_00 Perfumer's Grotto
+m31_19_00_00 Sage's Cave
+m30_07_00_00 Wyndham Catacombs
+m32_04_00_00 Old Altus Tunnel
+m32_05_00_00 Altus Tunnel
+m34_12_00_00 Divine Tower of West Altus
+
+# Leyndell
+m11_00_00_00 Leyndell, Royal Capital
+m34_14_00_00 Divine Tower of East Altus
+m34_15_00_00 Isolated Divine Tower
+m35_00_00_00 Subterranean Shunning-Grounds
+
+# Moonlight Altar
+m60_16_20_01 Southwest Moonlight Altar
+m60_33_40_00 Moonlight Altar - Altar South, Chelona's Rise
+m60_33_41_00 Moonlight Altar - West of Deep Ainsel Well
+m60_16_21_01 Northwest Moonlight Altar; Liurnia Minor Erdtree
+m60_17_20_01 Southeast Moonlight Altar
+m60_34_41_00 Moonlight Altar - Deep Ainsel Well
+m60_35_41_00 Moonlight Altar - Lunar Estate Ruins
+m60_17_21_01 Northeast Moonlight Altar; Liurnia Southwest Lake Shore
+
+# Caelid
+m30_14_00_00 Minor Erdtree Catacombs
+m30_15_00_00 Caelid Catacombs
+m30_16_00_00 War-Dead Catacombs
+m31_10_00_00 Dragonbarrow Cave
+m31_11_00_00 Sellia Hideaway
+m31_20_00_00 Abandoned Cave
+m31_21_00_00 Gaol Cave
+m32_07_00_00 Gael Tunnel
+m32_08_00_00 Sellia Crystal Tunnel
+m34_13_00_00 Divine Tower of Caelid
+
+# Mohgwyn Palace
+m12_05_00_00 Mohgwyn Palace
+m12_09_00_00 Nokron, Eternal City - Boss
+
+# Ashen Leyndell
+m11_05_00_00 Leyndell, Ashen Capital
+m11_71_00_00 Ending Cutscenes
+m19_00_00_00 Stone Platform
+
+# Consecrated Snowfield
+m30_19_00_00 Consecrated Snowfield Catacombs
+m30_20_00_00 Hidden Path to the Haligtree
+m31_12_00_00 Cave of the Forlorn
+m32_11_00_00 Yelough Anix Tunnel
+
+# Mountaintops of the Giants
+m30_17_00_00 Giant-Conquering Hero's Grave
+m30_18_00_00 Giants' Mountaintop Catacombs
+m31_22_00_00 Spiritcaller Cave
+
+# Farum Azula
+m13_00_00_00 Crumbling Farum Azula
+
+# Haligtree
+m15_00_00_00 Miquella's Haligtree
+
+m60_08_10_02 Southwest Liurnia
+
+
+m60_08_13_02 Far West Altus Plateau
+m60_17_26_01 South of Fort Laiedd
+m60_35_52_00 Mt. Gelmir - Before Hermit Shack
+m60_35_53_00 Mt. Gelmir - Seethewater Terminus
+m60_17_27_01 Fort Laiedd
+m60_35_54_00 Mt. Gelmir - Fort Laiedd
+m60_09_09_02 Far West Limgrave
+m60_19_19_01 South of Liurnia Lake-Facing Cliffs
+m60_38_39_00 Liurnia of the Lakes - West of Church of Irith
+m60_39_39_00 Liurnia of the Lakes - Church of Irith
+m60_09_10_02 Southeast Liurnia
+m60_18_20_01 Liurnia Far South Cliffside
+m60_36_41_00 Liurnia of the Lakes - Slumbering Wolf's Shack, Lakeside Crystal Cave Entrance
+m60_37_41_00 Liurnia of the Lakes - South of Scenic Isle, East of Slumbering Wolf's Shack
+m60_18_21_01 South of Gate Town
+m60_36_42_00 Liurnia of the Lakes - West of Scenic Isle
+m60_36_43_00 Liurnia of the Lakes - Boilprawn Shack, Fallen Ruins of the Lake
+m60_37_42_00 Liurnia of the Lakes - Scenic Isle, Laskyar Ruins
+m60_37_43_00 Liurnia of the Lakes - North of Scenic Isle
+m60_19_20_01 Liurnia Highway South; Southeast Lake Shore
+m60_38_40_00 Liurnia of the Lakes - Liurnia Lake Shore
+m60_38_41_00 Liurnia of the Lakes - Laskyar Ruins, Malefactor's Evergaol
+m60_39_40_00 Liurnia of the Lakes - Lake-Facing Cliffs, Stormveil Castle Exit, Stillwater Cave Entrance
+m60_39_41_00 Liurnia of the Lakes - Liurnia Highway South, Purified Ruins, Cliffbottom Catacombs Entrance
+m60_19_21_01 Liurnia Highway North
+m60_38_42_00 Liurnia of the Lakes - Highway Lookout Tower
+m60_38_43_00 Liurnia of the Lakes - Gate Town Bridge
+m60_39_42_00 Liurnia of the Lakes - Liurnia Highway North
+m60_39_43_00 Liurnia of the Lakes - Liurnia Highway Far North
+m60_09_11_02 East Liurnia
+m60_18_22_01 Liurnia of the Lakes - Gate Town
+m60_36_44_00 Liurnia of the Lakes - Gate Town Southwest
+m60_36_45_00 Liurnia of the Lakes - Gate Town Northwest
+m60_37_44_00 Liurnia of the Lakes - Gate Town Southeast
+m60_37_45_00 Liurnia of the Lakes - Gate Town Northeast
+m60_18_23_01 Liurnia Lake Mausoleum; Church of Vows
+m60_36_46_00 Liurnia of the Lakes - West of Church of Vows
+m60_36_47_00 Liurnia of the Lakes - West of Raya Lucaria Crystal Tunnel; Bellum Highway - South of East Raya Lucaria Gate
+m60_37_46_00 Liurnia of the Lakes - Church of Vows
+m60_37_47_00 Liurnia of the Lakes - South of Mausoleum Compound, Raya Lucaria Crystal Tunnel Entrance
+m60_19_22_01 Liurnia Eastern Lake Shore
+m60_38_44_00 Liurnia of the Lakes - North of Gate Town Bridge
+m60_38_45_00 Liurnia of the Lakes - Artist's Shack, Eastern Liurnia Lake Shore
+m60_39_44_00 Liurnia of the Lakes - Jarburg, Divine Tower of Liurnia Entrance
+m60_39_45_00 Liurnia of the Lakes - Eastern Tableland Southeast Cliffside
+m60_19_23_01 Liurnia Eastern Tableland
+m60_38_46_00 Liurnia of the Lakes - Eastern Tableland, Ainsel River Well
+m60_38_47_00 Liurnia of the Lakes - Ruined Labyrinth, Uld Palace Ruins
+m60_39_46_00 Liurnia of the Lakes - Eastern Tableland Northeast Cliffside
+m60_09_12_02 Liurnia to Altus Plateau
+m60_18_24_01 Main Bellum Highway
+m60_36_48_00 Bellum Highway - East Raya Lucaria Gate
+m60_36_49_00 Liurnia of the Lakes - Southeast Ravine, Lake at Caria Manor Entrance; Bellum Highway - Bellum Church
+m60_37_48_00 Liurnia of the Lakes - Mausoleum Compound
+m60_37_49_00 Bellum Highway - Church of Inhibition, Southwest of Grand Lift of Dectus
+m60_18_25_01 Behind Caria Manor; Ruin-Strewn Precipice to Altus Plateau
+m60_36_50_00 Liurnia of the Lakes - Behind Caria Manor, Royal Grave Evergaol, Part of Ravine
+m60_36_51_00 Altus Plateau - Perfumer's Ruins, Unsightly Catacombs Entrance
+m60_37_50_00 Liurnia of the Lake - Northeast Ravine; Bellum Highway - West of Grand Lift of Dectus
+m60_37_51_00 Altus Plateau - Abandoned Coffin, Ruin-Strewn Precipice Exit
+m60_19_24_01 Frenzied Flame Village; Bellum Minor Erdtree
+m60_38_48_00 Bellum Highway - Frenzied Flame Village, Minor Erdtree
+m60_38_49_00 Bellum Highway - Frenzy-Flaming Tower
+m60_39_48_00 Bellum Highway - Converted Fringe Tower; Liurnia of the Lakes - Black Knife Catacombs Entrance
+m60_39_49_00 Bellum Highway - Converted Fringe Tower North Cliffside
+m60_19_25_01 Grand Lift of Dectus
+m60_38_50_00 Liurnia of the Lakes - Ravine-Veiled Village; Bellum Highway - Grand Lift of Dectus; Altus Plateau - Altus Plateau; Ruin-Strewn Precipice Entrance
+m60_38_51_00 Altus Plateau - Erdtree-Gazing Hill, Lux Ruins
+m60_39_50_00 Altus Plateau - Golden Lineage Evergaol
+m60_39_51_00 Altus Plateau - Altus Highway Junction
+m60_09_13_02 West Altus Plateau
+m60_18_26_01 Volano Manor Outskirts
+m60_36_52_00 Mt. Gelmir - Craftsman's Shack, Hermit's Shack
+m60_36_53_00 Mt. Gelmir - Outside Volcano Manor
+m60_37_52_00 Mt. Gelmir - Seethewater River, Hermit Village, Wyndham Catacombs Entrance, Sage's Cave Entrance, Abductor Virgins Exit
+m60_37_53_00 Mt. Gelmir - Primeval Sorcerer Azur, Gelmir Hero's Grave Entrance
+m60_18_27_01 North Mt. Gelmir
+m60_36_54_00 Mt. Gelmir - Ninth Mt. Gelmir Campsite, Road of Iniquity, Volcano Manor Entrance
+m60_37_54_00 Mt. Gelmir - Minor Erdtree, Seethewater Cave Entrance
+m60_37_55_00 Mt. Gelmir - Volcano Cave Entrance
+m60_19_26_01 Altus Plateau to Mt. Gelmir
+m60_38_52_00 Altus Plateau - Wyndham Ruins, Wyndham Catacombs Entrance
+m60_38_53_00 Altus Plateau - Old Altus Tunnel Entrance
+m60_39_52_00 Altus Plateau - Second Church of Marika
+m60_39_53_00 Altus Plateau - Mirage Rise; Mt. Gelmir - Bridge of Iniquity
+m60_19_27_01 Shaded Castle; Northeast Mt. Gelmir
+m60_38_54_00 Mt. Gelmir - First Mt. Gelmir Campsite, Corpse-Stench Shack; Altus Plateau - West of Shaded Castle
+m60_39_54_00 Altus Plateau - Shaded Castle
+m60_10_07_02 South Weeping Peninsula
+m60_21_15_01 Castle Morne
+m60_43_30_00 Weeping Peninsula - Morne Moangrave
+m60_43_31_00 Weeping Peninsula - Castle Morne
+m60_10_08_02 West Weeping Peninsula
+m60_20_16_01 Weeping Peninsula West Shore
+m60_40_33_00 Weeping Peninsula - Far West Shore
+m60_41_32_00 Weeping Peninsula - Isolated Merchant's Shack
+m60_41_33_00 Weeping Peninsula - Fourth Church of Marika, Witchbane Ruins
+m60_20_17_01 Limgrave Dragon Church
+m60_41_34_00 Weeping Peninsula - North of Fourth Church of Marika
+m60_41_35_00 Limgrave - Church of Dragon Communion, Coastal Cave Exit
+m60_21_16_01 Central Weeping Peninsula
+m60_42_32_00 Weeping Peninsula - Tower of Return
+m60_42_33_00 Weeping Peninsula - Tombsward; Weeping Evergaol; Tombsward Cave Entrance
+m60_43_32_00 Weeping Peninsula - Castle Morne Approach Northwest Cliffside
+m60_43_33_00 Weeping Peninsula - Minor Erdtree, Tombsward Catacombs Entrance, Morne Tunnel Entrance
+m60_21_17_01 Weeping Peninsula Central North Shore
+m60_42_34_00 Weeping Peninsula - Tombsward Ruins
+m60_42_35_00 Limgrave - South of Stranded Graveyard Exit
+m60_43_34_00 Weeping Peninsula - Church of Pilgrimage, Demi-Human Forest Ruins
+m60_43_35_00 Limgrave - Seaside Ruins
+m60_10_09_02 West Limgrave
+m60_20_18_01 Limgrave West Coast
+m60_41_36_00 Limgrave - Coastal Cave Entrance
+m60_41_37_00 Limgrave - Stormfoot Catacombs Entrance
+m60_20_19_01 Stormveil Outskirts in Stormhill
+m60_40_38_00 Stormhill - Forested West Cliffside
+m60_40_39_00 Stormhill - Path to Liurnia
+m60_41_38_00 Stormhill - Stormhill Shack, Stormveil Castle Entrance
+m60_41_39_00 Stormhill - North of Stormhill Shack
+m60_21_18_01 Limgrave Start; Lake Agheel
+m60_42_36_00 Limgrave - Church of Elleh, Stranded Graveyard Exit
+m60_42_37_00 Limgrave - Gatefront, Stormhill Evergaol, Groveside Cave Entrance, Limgrave Tunnels Entrance
+m60_43_36_00 Limgrave - Agheel Lake, Dragon-Burnt Ruins
+m60_43_37_00 Limgrave - Agheel Lake North, Murkwater Cave Entrance
+m60_21_19_01 East Stormhill
+m60_42_38_00 Stormhill - Warmaster's Shack, Stormgate
+m60_42_39_00 Stormhill - North of Warmaster's Shack
+m60_43_38_00 Limgrave - Murkwater Coast, Murkwater Catacombs Entrance
+m60_43_39_00 Stormhill - Saintsbridge, Deathtouched Catacombs Entrance, Highroad Cave Entrance
+m60_10_10_02 Northwest Limgrave Coast
+m60_20_20_01 Far South Liurnia Highway
+m60_40_40_00 Liurnia - Liurnia Highway South Endpoint, Path to Stormhill
+m60_21_20_01 Stormhill North Cliffside
+m60_42_40_00 Stormhill - Northwest Cliffside
+m60_43_40_00 Stormhill - Northeast Cliffside
+m60_10_12_02 South Altus Plateau
+m60_20_25_01 Altus Plateau to Capital Outskirts
+m60_40_50_00 Altus Plateau - Southwest of Tree Sentinel Duo
+m60_40_51_00 Altus Plateau - West of Tree Sentinel Duo, Stormcaller Church
+m60_41_50_00 Altus Plateau - South of Tree Sentinel Duo
+m60_41_51_00 Altus Plateau - Tree Sentinel Duo, Perfumer's Grotto Entrance
+m60_21_25_01 South Capital Outskirts
+m60_42_50_00 Capital Outskirts - South of Outer Wall Phantom Tree
+m60_42_51_00 Capital Outskirts - Outer Wall Phantom Tree
+m60_43_50_00 Capital Outskirts - Minor Erdtree Church, Sealed Tunnel Entrance
+m60_43_51_00 Capital Outskirts - East of Outer Wall Phantom Tree
+m60_10_13_02 North Altus Plateau
+m60_20_26_01 Altus Plateau South Forest
+m60_40_52_00 Altus Plateau - Forest-Spanning Greatbridge, St. Trina's Hideaway, Sainted Hero's Grave Entrance
+m60_40_53_00 Altus Plateau - Bower of Bounty, Writheblood Ruins
+m60_41_52_00 Altus Plateau - Rampartside Path, Altus Tunnel Entrance
+m60_41_53_00 Altus Plateau - Woodfolk Ruins, Minor Erdtree
+m60_20_27_01 Altus Plateau North Forest; West Windmill Village
+m60_40_54_00 Altus Plateau - Road of Iniquity Side Path
+m60_40_55_00 Altus Plateau - West Windmill Pasture
+m60_41_54_00 Altus Plateau - West Windmill Village
+m60_41_55_00 Altus Plateau - Village Windmill Pasture, East Windmill Pasture
+m60_21_26_01 Capital Outskirts Outer Wall Battleground
+m60_42_52_00 Capital Outskirts - Southwest Outer Wall Battleground
+m60_42_53_00 Capital Outskirts - Northwest Outer Wall Battleground
+m60_43_52_00 Capital Outskirts - Southeast Outer Wall Battleground
+m60_43_53_00 Capital Outskirts - Northeast Outer Wall Battleground, Hermit Merchant's Shack
+m60_21_27_01 Altus Plateau East Windmill Village
+m60_42_54_00 Altus Plateau - East Windmill Village, Highway Lookout Tower
+m60_42_55_00 Altus Plateau - Windmill Heights
+m60_43_54_00 Altus Plateau - Cliffside Northeast of Outer Wall Battlefield
+m60_11_07_02 Southeast Weeping Peninsula Coast
+m60_22_15_01 Weeping Peninsula Southern West Coast
+m60_44_31_00 Weeping Peninsula - Castle Morne Approach South
+m60_11_08_02 East Weeping Peninsula
+m60_22_16_01 Weeping Peninsula Road to Castle Morne
+m60_44_32_00 Weeping Peninsula - Castle Morne Approach North
+m60_44_33_00 Weeping Peninsula - Castle Morne Rampart, Ailing Village Outskirts
+m60_45_32_00 Weeping Peninsula - Castle Morne Approach Northeast Cliffside
+m60_45_33_00 Weeping Peninsula - Beside the Crater-Pocked Glade, Oridys's Rise
+m60_22_17_01 Limgrave to Weeping Peninsula
+m60_44_34_00 Weeping Peninsula - Bridge of Sacrifice, Forest Lookout Tower, Earthbore Cave Entrance
+m60_44_35_00 Limgrave - Agheel Lake South, Forlorn Hound Evergaol
+m60_45_34_00 Weeping Peninsula - Impaler's Catacombs Entrance
+m60_45_35_00 Limgrave - Southwest of Fort Haight
+m60_11_09_02 East Limgrave
+m60_11_09_12 East Limgrave (Meteored)
+m60_22_18_01 Limgrave Waypoint Fork; Mistwood
+m60_22_18_11 Limgrave Waypoint Fork; Mistwood (Meteored)
+m60_44_36_00 Limgrave - Waypoint Ruins
+m60_44_37_00 Limgrave - Mistwood Outskirts
+m60_45_36_00 Limgrave - Fort Haight West
+m60_45_36_10 Limgrave - Fort Haight West (Meteored)
+m60_45_37_00 Limgrave - Siofra River Well, Mistwood Ruins, Minor Erdtree, Nokron Entrance
+m60_22_19_01 Summonwater Village
+m60_44_38_00 Limgrave - Artist's Shack
+m60_44_39_00 Limgrave - Summonwater Village Outskirts
+m60_45_38_00 Limgrave - South of Summonwater Village
+m60_45_39_00 Limgrave - Summonwater Village
+m60_23_18_01 Fort Haight; Caelid Southwest Cliffside
+m60_46_36_00 Limgrave - Fort Haight
+m60_46_37_00 Limgrave - East of Siofra River Well
+m60_47_37_00 Caelid - West of Caelid Highway South
+m60_23_19_01 East Limgrave to Central West Caelid
+m60_46_38_00 Limgrave - Third Church of Marika, Gaol Cave Exit
+m60_46_39_00 Limgrave - Rear Gael Tunnel Entrance; Caelid - Gael Tunnel Entrance
+m60_47_38_00 Caelid - Fort Gael, Caelid Waypoint Ruins, Gaol Cave Entrance
+m60_47_39_00 Caelid - Fort Gael North
+m60_11_10_02 Northwest Caelid
+m60_22_20_01 North of Summonwater Village
+m60_45_40_00 Limgrave - North of Summonwater Village
+m60_23_20_01 Far Northwest Caelid
+m60_46_40_00 Caelid - Smoldering Church, Rotview Balcony
+m60_47_40_00 Caelid - Caelem Ruins, Forsaken Ruins, Minor Erdtree, Minor Erdtree Catacombs Entrance
+m60_47_41_00 Caelid - South Great-Jar Area
+m60_23_21_01 North of Great-Jar
+m60_47_42_00 Caelid - North Great-Jar Area
+m60_11_12_02 Southeast Altus Plateau
+m60_22_25_01 Capital Outskirts Southeast Cliffside
+m60_45_51_00 Capital Outskirts - Auriza Hero's Grave Entrance
+m60_23_25_01 Forbidden Lands Start
+m60_47_51_00 Leyndell - Divine Tower of East Altus Entrance; Mountaintops of the Giants - Forbidden Lands Start
+m60_11_13_02 Northeast Altus Plateau
+m60_11_13_12 Northeast Altus Plateau (Ashen)
+m60_22_26_01 Northeast Capital Outskirts
+m60_22_26_11 Northeast Capital Outskirts (Ashen)
+m60_44_52_00 Capital Outskirts - South of Minor Erdtree
+m60_44_53_00 Capital Outskirts - Minor Erdtree
+m60_45_52_00 Capital Outskirts - Capital Rampart, Auriza Side Tomb Entrance
+m60_45_52_10 Capital Outskirts - Capital Rampart, Auriza Side Tomb Entrance (Ashen)
+m60_45_53_00 Capital Outskirts - Capital Rampart North Cliffside
+m60_23_27_01 Consecrated Snowfield Southwest Cliffside
+m60_46_55_00 Consecrated Snowfield - Yelough Anix Ruins West Cliffside
+m60_47_55_00 Consecrated Snowfield - Yelough Anix Ruins, Yelough Anix Tunnel Entrance
+m60_11_14_02 West Consecrated Snowfield
+m60_23_28_01 Consecrated Snowfield West Cliffside
+m60_46_57_00 Consecrated Snowfield - Far West Cliffside
+m60_47_56_00 Consecrated Snowfield - North of Yelough Anix Ruins
+m60_47_57_00 Consecrated Snowfield - West of Ordina
+m60_23_29_01 Consecrated Snowfield Northwest Cliffside
+m60_47_58_00 Consecrated Snowfield - Apostate Derelict
+m60_12_08_02 Far South Caelid
+m60_25_17_01 Redmane Castle South Cliffside
+m60_51_35_00 Caelid - Redmane Castle South Cliffside
+m60_12_09_02 South Caelid
+m60_24_18_01 South of Aeonia Swamp
+m60_48_36_00 Caelid - Cathedral of Dragon Communion, Caelid Catacombs Entrance
+m60_48_37_00 Caelid - Caelid Highway South
+m60_49_36_00 Caelid - Southwest of Caelid Highway South
+m60_49_37_00 Caelid - Southern Aeonia Swamp Bank
+m60_24_19_01 Aeonia Swamp; West Sellia
+m60_48_38_00 Caelid - West Aeonia Swamp
+m60_48_39_00 Caelid - Smoldering Wall, Abandoned Cave Entrance
+m60_49_38_00 Caelid - East Aeonia Swamp
+m60_49_39_00 Caelid - West Sellia, Sellia Crystal Tunnel Entrance
+m60_25_18_01 Redmane Castle; Southwest Radahn Arena
+m60_50_36_00 Caelid - Impassable Greatbridge
+m60_50_37_00 Caelid - Far Southwest Radahn Arena, Aeonia Swamp Bank Southeast Cliffside
+m60_51_36_00 Caelid - Redmane Castle
+m60_51_37_00 Caelid - Southwest Radahn Arena
+m60_25_19_01 East Sellia; West Radahn Arena
+m60_50_38_00 Caelid - Gowry's Shack
+m60_50_39_00 Caelid - East Sellia, Church of the Plague
+m60_51_38_00 Caelid - West Radahn Arena
+m60_51_39_00 Greyoll's Dragonbarrow - Fort Faroth
+m60_12_10_02 North Caelid
+m60_24_20_01 West Dragonbarrow
+m60_48_40_00 Caelid - Deep Siofra Well; Greyoll's Dragonbarrow - Dragonbarrow West
+m60_48_41_00 Greyoll's Dragonbarrow - Isolated Merchant's Shack
+m60_49_40_00 Greyoll's Dragonbarrow - South of Divine Tower of Caelid, Deep Siofra Well
+m60_49_41_00 Greyoll's Dragonbarrow - Divine Tower of Caelid Entrance
+m60_25_20_01 Central Dragonbarrow
+m60_50_40_00 Greyoll's Dragonbarrow - Dragonbarrow Fork
+m60_50_41_00 Greyoll's Dragonbarrow - North of Dragonbarrow Fork
+m60_51_40_00 Greyoll's Dragonbarrow - Minor Erdtree, Dragonbarrow Cave Entrance
+m60_51_41_00 Greyoll's Dragonbarrow - Southwest Farum Greatbridge
+m60_25_21_01 Bestial Sanctum
+m60_51_42_00 Greyoll's Dragonbarrow - Northwest Farum Greatbridge
+m60_51_43_00 Greyoll's Dragonbarrow - Bestial Sanctum
+m60_12_12_02 Forbidden Lands
+m60_24_25_01 Forbidden Lands Midway
+m60_48_51_00 Mountaintops of the Giants - Forbidden Lands Midway
+m60_12_13_02 Southwest Mountaintops
+m60_24_26_01 Grand Lift of Rold; West Zamor Ruins
+m60_49_52_00 Mountaintops of the Giants - Before Grand Lift of Rold
+m60_49_53_00 Mountaintops of the Giants - West Zamor Ruins, Grand Lift of Rold
+m60_24_27_01 Consecrated Snowfield Foggy Area
+m60_48_54_00 Consecrated Snowfield - Southwest Foggy Area
+m60_48_55_00 Consecrated Snowfield - Northwest Foggy Area, East of Yelough Anix Ruins
+m60_49_54_00 Consecrated Snowfield - Hidden Path to the Haligtree, Southeast Foggy Area
+m60_49_55_00 Consecrated Snowfield - Northeast Foggy Area, Inner Consecrated Snowfield
+m60_25_26_01 Southwest Flame Peak; East Zamor Ruins
+m60_50_53_00 Mountaintops of the Giants - East Zamor Ruins; Flame Peak - Giant-Conquering Hero's Grave Entrance
+m60_51_52_00 Flame Peak - Giants' Gravepost South Cliffside
+m60_51_53_00 Flame Peak - Southwest Giants' Gravepost
+m60_25_27_01 Bridge to Snow Valley Ruins; Northwest Flame Peak
+m60_50_54_00 Mountaintops of the Giants - North of Zamor Ruins; Flame Peak - Hero's Grave North Cliffside
+m60_50_55_00 Consecrated Snowfield - Consecrated Snowfield Catacombs Entrance
+m60_51_54_00 Flame Peak - Northwest Giants' Gravepost
+m60_51_55_00 Mountaintops of the Giants - Before Ancient Snow Valley Ruins
+m60_12_14_02 Northwest Mountaintops
+m60_24_28_01 Ordina; Ordina Outskirts
+m60_48_56_00 Consecrated Snowfield - South of Ordina
+m60_48_57_00 Consecrated Snowfield - Ordina, Liturgical Town
+m60_49_56_00 Consecrated Snowfield - Southeast of Ordina
+m60_49_57_00 Consecrated Snowfield - East of Ordina
+m60_24_29_01 Apostate Derelict East Cliffside
+m60_48_58_00 Consecrated Snowfield - East of Apostate Derelict
+m60_25_28_01 Northwest Mountaintops; Eastern Consecrated Snowfield
+m60_50_56_00 Mountaintops of the Giants - Shack of the Lofty; Consecrated Snowfield - Minor Erdtree, Albinauric Rise, Cave of the Forlorn Entrance
+m60_50_57_00 Mountaintops of the Giants - West of Castle Sol; Consecrated Snowfield - North of Minor Erdtree
+m60_51_56_00 Mountaintops of the Giants - Ancient Snow Valley Ruins, Stargazers' Ruins
+m60_51_57_00 Mountaintops of the Giants - South Castle Sol, Snow Valley Ruins Overlook
+m60_25_29_01 North Castle Sol
+m60_51_58_00 Mountaintops of the Giants - North Castle Sol
+m60_13_09_02 Southeast Caelid
+m60_26_18_01 Southeast Radahn Arena
+m60_52_37_00 Caelid - South Radahn Arena
+m60_26_19_01 East Radahn Arena
+m60_52_38_00 Caelid - Central Radahn Arena
+m60_52_39_00 Caelid - North Radahn Arena
+m60_53_38_00 Caelid - East Radahn Arena
+m60_53_39_00 Caelid - Northeast Radahn Arena
+m60_13_10_02 Northeast Caelid
+m60_26_20_01 North Radahn Arena; Southeast Dragonbarrow
+m60_52_40_00 Caelid - Far North Radahn Arena
+m60_52_41_00 Greyoll's Dragonbarrow - Southeast Farum Greatbridge, Lenne's Rise
+m60_26_21_01 Northeast Dragonbarrow
+m60_52_42_00 Greyoll's Dragonbarrow - Northeast Farum Greatbridge
+m60_52_43_00 Greyoll's Dragonbarrow - Northeast Cliffside
+m60_13_13_02 Southeast Mountaintops
+m60_26_26_01 Southeast Flame Peak
+m60_52_52_00 Flame Peak - Southwest Fire Giant Arena
+m60_52_53_00 Flame Peak - Northwest Fire Giant Arena, Foot of the Forge
+m60_53_52_00 Flame Peak - Southeast Fire Giant Arena
+m60_53_53_00 Flame Peak - Northeast Fire Giant Arena
+m60_26_27_01 Northeast Flame Peak
+m60_52_54_00 Flame Peak - Northeast Giants' Gravepost
+m60_52_55_00 Mountaintops of the Giants - Guardians' Garrison
+m60_53_54_00 Flame Peak - Giants' Gravepost Northeast Cliffside
+m60_53_55_00 Mountaintops of the Giants - West of First Church of Marika
+m60_27_26_01 Forge of the Giants
+m60_54_53_00 Flame Peak - Forge of the Giants
+m60_27_27_01 South of Freezing Lake
+m60_54_55_00 Mountaintops of the Giants - First Church of Marika
+m60_13_14_02 Northeast Mountaintops
+m60_26_28_01 Freezing Lake; Mountaintops Minor Erdtree
+m60_52_56_00 Mountaintops of the Giants - Whiteridge Road, Minor Erdtree
+m60_52_57_00 Mountaintops of the Giants - Before Freezing Lake, Heretical Rise
+m60_53_56_00 Mountaintops of the Giants - Southwest Freezing Lake, Lord Contender's Evergaol, Spiritcaller Cave Entrance
+m60_53_57_00 Mountaintops of the Giants - Northwest Freezing Lake
+m60_26_29_01 North of Freezing Lake
+m60_52_58_00 Mountaintops of the Giants - Northwest of Freezing Lake, East of Castle Sol
+m60_53_58_00 Mountaintops of the Giants - Freezing Lake North Cliffside
+m60_27_28_01 East Freezing Lake
+m60_54_56_00 Mountaintops of the Giants - Southeast Freezing Lake
+m60_54_57_00 Mountaintops of the Giants - Northeast Freezing Lake

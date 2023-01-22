@@ -92,4 +92,28 @@
     - +3 and +4 in NG+1
     - +5 in NG+2
 
+- Done via Champion shop:
+    Flag set if Talisman X is owned, to display Talisman Y
+    e.g. Own base talisman, +1 will appear, own +2 talisman, +3 will appear.
+    Purchase with Bloodsoaked Runes
+    Frame it as ""
+
 22000 Bloodsoaked Rune
+
+ID,Name
+7000100,Area: Home
+7000101,Area: Limgrave
+7000102,Area: Weeping Penisula
+7000103,Area: Liurnia
+7000104,Area: Mt. Gelmir
+7000105,Area: Ainsel
+7000106,Area: Siofra
+7000107,Area: Altus Plateau
+7000108,Area: Leyndell
+7000109,Area: Moonlight Altar
+7000110,Area: Caelid
+7000111,Area: Mohgwyn Palace
+7000112,Area: Ashen Leyndell
+7000113,Area: Mountaintops of the Giants
+7000114,Area: Farum Azula
+7000115,Area: Haligtree

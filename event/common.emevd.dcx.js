@@ -6529,8 +6529,32 @@ $Event(11000, Default, function() {
     // Passive: Rally
     SetSpEffect(10000, 7000000);
     
+    // Passive: Kill Tracker
+    SetSpEffect(10000, 7000001);
+    
     // Whetblades
     InitializeEvent(0, 11017, 0);
+    
+    // Kill Tracker: Bloodsoaked Rune
+    InitializeEvent(0, 11018, 0);
+    
+    // Area Tracker
+    InitializeEvent(0, 12000, 0); // Home
+    InitializeEvent(0, 12010, 0); // Limgrave
+    InitializeEvent(0, 12020, 0); // Weeping Penisula
+    InitializeEvent(0, 12030, 0); // Liurnia
+    InitializeEvent(0, 12040, 0); // Mt. Gelmir
+    InitializeEvent(0, 12050, 0); // Ainsel
+    InitializeEvent(0, 12060, 0); // Siofra
+    InitializeEvent(0, 12070, 0); // Altus Plateau
+    InitializeEvent(0, 12080, 0); // Leyndell
+    InitializeEvent(0, 12090, 0); // Moonlight Altar
+    InitializeEvent(0, 12100, 0); // Caelid
+    InitializeEvent(0, 12110, 0); // Mohgwyn Palace
+    InitializeEvent(0, 12120, 0); // Ashen Leyndell
+    InitializeEvent(0, 12130, 0); // Mountaintop of the Giants
+    InitializeEvent(0, 12140, 0); // Farum Azula
+    InitializeEvent(0, 12150, 0); // Haligtree
     
     // Selected Deflection Type
     InitializeEvent(0, 11020, 1047610600, 150900); // Storm
@@ -6742,7 +6766,7 @@ $Event(11014, Default, function() {
     // End if Force Noon on Spawn is not ON
     EndIf(!EventFlag(1047610412));
     
-    SetCurrentTime(12, 0, 0, false, false, false, 0, 0, 0);
+    SetCurrentTime(14, 0, 0, false, false, false, 0, 0, 0);
     
     EndEvent();
 });
@@ -6756,7 +6780,7 @@ $Event(11015, Default, function() {
     // End if Force Night on Spawn is not ON
     EndIf(!EventFlag(1047610413));
     
-    SetCurrentTime(20, 0, 0, false, false, false, 0, 0, 0);
+    SetCurrentTime(23, 0, 0, false, false, false, 0, 0, 0);
     
     EndEvent();
 });
@@ -6814,6 +6838,51 @@ $Event(11017, Default, function() {
 });
 
 //-------------------
+// Bloodsoaked Rune Kill Reward
+//-------------------
+$Event(11018, Default, function() {
+    WaitFor(CharacterHasSpEffect(10000, 7000002, Equal, 1))
+    
+    // Earlygame Locations - 0.1%
+    if(CharacterHasSpEffect(10000, 7000100, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000101, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000102, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000103, Equal, 1)
+    )
+    {
+        AwardItemLot(4000);
+    }
+    
+    // Midgame Locations - 0.5%
+    if(CharacterHasSpEffect(10000, 7000104, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000105, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000106, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000107, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000108, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000109, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000110, Equal, 1)
+    )
+    {
+        AwardItemLot(4010);
+    }
+    
+    // Lategame Locations - 2%
+    if(CharacterHasSpEffect(10000, 7000111, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000112, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000113, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000114, Equal, 1) || 
+        CharacterHasSpEffect(10000, 7000115, Equal, 1) 
+    )
+    {
+        AwardItemLot(4020);
+    }
+    
+    WaitFixedTimeSeconds(5.0); // Internal cooldown
+    
+    RestartEvent();
+});
+
+//-------------------
 // Deflection Variable Tracker
 //-------------------
 $Event(11020, Default, function(X0_4, X4_4) {
@@ -6833,7 +6902,7 @@ $Event(11020, Default, function(X0_4, X4_4) {
 });
 
 //-------------------
-// Screenshot Tool: Toggle
+// Developer Tool: Toggle
 //-------------------
 $Event(11021, Default, function() {
     if(EventFlag(1047610014))
@@ -7444,3 +7513,664 @@ $Event(11200, Default, function() {
 $Event(11300, Default, function() {
     
 });
+
+//--------------------------------------
+// Area Trackers
+//--------------------------------------
+// These add a SpEffect to the player based on current area, allowing for other systems to change things based on location.
+  
+// Home
+$Event(12000, Default, function() {
+    if(PlayerInMap(11, 10, 0, 0) || 
+        PlayerInMap(18, 0, 0, 0) || 
+        PlayerInMap(10, 1, 0, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000100);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Limgrave
+$Event(12010, Default, function() {
+    if(PlayerInMap(10, 0, 0, 0) || 
+        PlayerInMap(30, 0, 0, 0) || 
+        PlayerInMap(30, 2, 0, 0) || 
+        PlayerInMap(30, 4, 0, 0) || 
+        PlayerInMap(30, 6, 0, 0) || 
+        PlayerInMap(30, 11, 0, 0) || 
+        PlayerInMap(31, 0, 0, 0) || 
+        PlayerInMap(31, 3, 0, 0) || 
+        PlayerInMap(31, 15, 0, 0) || 
+        PlayerInMap(31, 17, 0, 0) || 
+        PlayerInMap(32, 1, 0, 0) || 
+        PlayerInMap(34, 10, 0, 0) || 
+        PlayerInMap(60, 9, 9, 2) || 
+        PlayerInMap(60, 20, 17, 1) || 
+        PlayerInMap(60, 41, 35, 0) || 
+        PlayerInMap(60, 42, 35, 0) || 
+        PlayerInMap(60, 43, 35, 0) || 
+        PlayerInMap(60, 10, 9, 2) || 
+        PlayerInMap(60, 20, 18, 1) || 
+        PlayerInMap(60, 41, 36, 0) || 
+        PlayerInMap(60, 41, 37, 0) || 
+        PlayerInMap(60, 20, 19, 1) || 
+        PlayerInMap(60, 40, 38, 0) || 
+        PlayerInMap(60, 40, 39, 0) || 
+        PlayerInMap(60, 41, 38, 0) || 
+        PlayerInMap(60, 41, 39, 0) || 
+        PlayerInMap(60, 21, 18, 1) || 
+        PlayerInMap(60, 42, 36, 0) || 
+        PlayerInMap(60, 42, 37, 0) || 
+        PlayerInMap(60, 43, 36, 0) || 
+        PlayerInMap(60, 43, 37, 0) || 
+        PlayerInMap(60, 21, 19, 1) || 
+        PlayerInMap(60, 42, 38, 0) || 
+        PlayerInMap(60, 42, 39, 0) || 
+        PlayerInMap(60, 43, 38, 0) || 
+        PlayerInMap(60, 43, 39, 0) || 
+        PlayerInMap(60, 10, 10, 2) || 
+        PlayerInMap(60, 20, 20, 1) || 
+        PlayerInMap(60, 40, 40, 0) || 
+        PlayerInMap(60, 21, 20, 1) || 
+        PlayerInMap(60, 42, 40, 0) || 
+        PlayerInMap(60, 43, 40, 0) || 
+        PlayerInMap(60, 22, 17, 1) || 
+        PlayerInMap(60, 44, 35, 0) || 
+        PlayerInMap(60, 45, 35, 0) || 
+        PlayerInMap(60, 11, 9, 2) || 
+        PlayerInMap(60, 11, 9, 12) || 
+        PlayerInMap(60, 22, 18, 1) || 
+        PlayerInMap(60, 22, 18, 11) || 
+        PlayerInMap(60, 44, 36, 0) || 
+        PlayerInMap(60, 44, 37, 0) || 
+        PlayerInMap(60, 45, 36, 0) || 
+        PlayerInMap(60, 45, 36, 1) || 
+        PlayerInMap(60, 45, 37, 0) || 
+        PlayerInMap(60, 22, 19, 1) || 
+        PlayerInMap(60, 44, 38, 0) || 
+        PlayerInMap(60, 44, 39, 0) || 
+        PlayerInMap(60, 45, 38, 0) || 
+        PlayerInMap(60, 45, 39, 0) || 
+        PlayerInMap(60, 23, 18, 1) || 
+        PlayerInMap(60, 46, 36, 0) || 
+        PlayerInMap(60, 46, 37, 0) || 
+        PlayerInMap(60, 23, 19, 1) || 
+        PlayerInMap(60, 46, 38, 0) || 
+        PlayerInMap(60, 46, 39, 0) || 
+        PlayerInMap(60, 22, 20, 1) || 
+        PlayerInMap(60, 45, 40, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000101);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Weeping Penisula
+$Event(12020, Default, function() {
+    if(PlayerInMap(30, 1, 0, 0) || 
+        PlayerInMap(32, 0, 0, 0) || 
+        PlayerInMap(31, 1, 0, 0) || 
+        PlayerInMap(31, 2, 0, 0)  || 
+        PlayerInMap(60, 10, 7, 2) || 
+        PlayerInMap(60, 21, 15, 1) || 
+        PlayerInMap(60, 43, 30, 0) || 
+        PlayerInMap(60, 43, 31, 0) || 
+        PlayerInMap(60, 10, 8, 2) || 
+        PlayerInMap(60, 20, 16, 1) || 
+        PlayerInMap(60, 40, 33, 0) || 
+        PlayerInMap(60, 41, 32, 0) || 
+        PlayerInMap(60, 41, 33, 0) || 
+        PlayerInMap(60, 41, 34, 0) || 
+        PlayerInMap(60, 21, 16, 1) || 
+        PlayerInMap(60, 42, 32, 0) || 
+        PlayerInMap(60, 42, 33, 0) || 
+        PlayerInMap(60, 43, 32, 0) || 
+        PlayerInMap(60, 43, 33, 0) || 
+        PlayerInMap(60, 21, 17, 1) || 
+        PlayerInMap(60, 42, 34, 0) || 
+        PlayerInMap(60, 43, 34, 0) || 
+        PlayerInMap(60, 11, 7, 2) || 
+        PlayerInMap(60, 22, 15, 1) || 
+        PlayerInMap(60, 44, 31, 0) || 
+        PlayerInMap(60, 11, 8, 2) || 
+        PlayerInMap(60, 22, 16, 1) || 
+        PlayerInMap(60, 44, 32, 0) || 
+        PlayerInMap(60, 44, 33, 0) || 
+        PlayerInMap(60, 45, 32, 0) || 
+        PlayerInMap(60, 45, 33, 0) || 
+        PlayerInMap(60, 44, 34, 0) || 
+        PlayerInMap(60, 45, 34, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000102);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Liurnia
+$Event(12030, Default, function() {
+    if( PlayerInMap(14, 0, 0, 0) ||
+        PlayerInMap(30, 5, 0, 0) ||
+        PlayerInMap(30, 8, 0, 0) ||
+        PlayerInMap(31, 5, 0, 0) ||
+        PlayerInMap(31, 6, 0, 0) ||
+        PlayerInMap(30, 3, 0, 0) ||
+        PlayerInMap(31, 4, 0, 0) ||
+        PlayerInMap(32, 2, 0, 0) ||
+        PlayerInMap(34, 11, 0, 0) ||
+        PlayerInMap(60, 33, 42, 0) ||
+        PlayerInMap(60, 33, 43, 0) ||
+        PlayerInMap(60, 34, 42, 0) ||
+        PlayerInMap(60, 34, 43, 0) ||
+        PlayerInMap(60, 35, 42, 0) ||
+        PlayerInMap(60, 35, 43, 0) ||
+        PlayerInMap(60, 8, 11, 2) ||
+        PlayerInMap(60, 16, 22, 1) ||
+        PlayerInMap(60, 33, 44, 0) ||
+        PlayerInMap(60, 33, 45, 0) ||
+        PlayerInMap(60, 16, 23, 1) ||
+        PlayerInMap(60, 33, 46, 0) ||
+        PlayerInMap(60, 33, 47, 0) ||
+        PlayerInMap(60, 17, 22, 1) ||
+        PlayerInMap(60, 34, 44, 0) ||
+        PlayerInMap(60, 34, 45, 0) ||
+        PlayerInMap(60, 35, 44, 0) ||
+        PlayerInMap(60, 35, 45, 0) ||
+        PlayerInMap(60, 17, 23, 1) ||
+        PlayerInMap(60, 34, 46, 0) ||
+        PlayerInMap(60, 34, 47, 0) ||
+        PlayerInMap(60, 35, 46, 0) ||
+        PlayerInMap(60, 35, 47, 0) ||
+        PlayerInMap(60, 8, 12, 2) ||
+        PlayerInMap(60, 17, 24, 1) ||
+        PlayerInMap(60, 34, 48, 0) ||
+        PlayerInMap(60, 34, 49, 0) ||
+        PlayerInMap(60, 35, 48, 0) ||
+        PlayerInMap(60, 35, 49, 0) ||
+        PlayerInMap(60, 17, 25, 1) ||
+        PlayerInMap(60, 34, 50, 0) ||
+        PlayerInMap(60, 34, 51, 0) ||
+        PlayerInMap(60, 35, 50, 0) ||
+        PlayerInMap(60, 35, 51, 0) ||
+        PlayerInMap(60, 19, 19, 1) ||
+        PlayerInMap(60, 38, 39, 0) ||
+        PlayerInMap(60, 39, 39, 0) ||
+        PlayerInMap(60, 9, 10, 2) ||
+        PlayerInMap(60, 18, 20, 1) ||
+        PlayerInMap(60, 36, 41, 0) ||
+        PlayerInMap(60, 37, 41, 0) ||
+        PlayerInMap(60, 18, 21, 1) ||
+        PlayerInMap(60, 36, 42, 0) ||
+        PlayerInMap(60, 36, 43, 0) ||
+        PlayerInMap(60, 37, 42, 0) ||
+        PlayerInMap(60, 37, 43, 0) ||
+        PlayerInMap(60, 19, 20, 1) ||
+        PlayerInMap(60, 38, 40, 0) ||
+        PlayerInMap(60, 38, 41, 0) ||
+        PlayerInMap(60, 39, 40, 0) ||
+        PlayerInMap(60, 39, 41, 0) ||
+        PlayerInMap(60, 19, 21, 1) ||
+        PlayerInMap(60, 38, 42, 0) ||
+        PlayerInMap(60, 38, 43, 0) ||
+        PlayerInMap(60, 39, 42, 0) ||
+        PlayerInMap(60, 39, 43, 0) ||
+        PlayerInMap(60, 9, 11, 2) ||
+        PlayerInMap(60, 18, 22, 1) ||
+        PlayerInMap(60, 36, 44, 0) ||
+        PlayerInMap(60, 36, 45, 0) ||
+        PlayerInMap(60, 37, 44, 0) ||
+        PlayerInMap(60, 37, 45, 0) ||
+        PlayerInMap(60, 18, 23, 1) ||
+        PlayerInMap(60, 36, 46, 0) ||
+        PlayerInMap(60, 36, 47, 0) ||
+        PlayerInMap(60, 37, 46, 0) ||
+        PlayerInMap(60, 37, 47, 0) ||
+        PlayerInMap(60, 19, 22, 1) ||
+        PlayerInMap(60, 38, 44, 0) ||
+        PlayerInMap(60, 38, 45, 0) ||
+        PlayerInMap(60, 39, 44, 0) ||
+        PlayerInMap(60, 39, 45, 0) ||
+        PlayerInMap(60, 19, 23, 1) ||
+        PlayerInMap(60, 38, 46, 0) ||
+        PlayerInMap(60, 38, 47, 0) ||
+        PlayerInMap(60, 39, 46, 0) ||
+        PlayerInMap(60, 9, 12, 2) ||
+        PlayerInMap(60, 18, 24, 1) ||
+        PlayerInMap(60, 36, 48, 0) ||
+        PlayerInMap(60, 36, 49, 0) ||
+        PlayerInMap(60, 37, 48, 0) ||
+        PlayerInMap(60, 37, 49, 0) ||
+        PlayerInMap(60, 18, 25, 1) ||
+        PlayerInMap(60, 36, 50, 0) ||
+        PlayerInMap(60, 37, 50, 0) ||
+        PlayerInMap(60, 19, 24, 1) ||
+        PlayerInMap(60, 38, 48, 0) ||
+        PlayerInMap(60, 38, 49, 0) ||
+        PlayerInMap(60, 39, 48, 0) ||
+        PlayerInMap(60, 39, 49, 0) ||
+        PlayerInMap(60, 19, 25, 1) ||
+        PlayerInMap(60, 38, 50, 0) ||
+        PlayerInMap(60, 8, 10, 2)
+    )
+    {
+        SetSpEffect(10000, 7000103);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Mt. Gelmir
+$Event(12040, Default, function() {
+    if( PlayerInMap(16, 0, 0, 0) ||
+        PlayerInMap(30, 9, 0, 0) ||
+        PlayerInMap(31, 7, 0, 0) ||
+        PlayerInMap(31, 9, 0, 0) ||
+        PlayerInMap(39, 20, 0, 0) ||
+        PlayerInMap(60, 8, 13, 2) ||
+        PlayerInMap(60, 17, 26, 1) ||
+        PlayerInMap(60, 35, 52, 0) ||
+        PlayerInMap(60, 35, 53, 0) ||
+        PlayerInMap(60, 17, 27, 1) ||
+        PlayerInMap(60, 35, 54, 0) ||
+        PlayerInMap(60, 18, 26, 1) ||
+        PlayerInMap(60, 36, 52, 0) ||
+        PlayerInMap(60, 36, 53, 0) ||
+        PlayerInMap(60, 37, 52, 0) ||
+        PlayerInMap(60, 37, 53, 0) ||
+        PlayerInMap(60, 18, 27, 1) ||
+        PlayerInMap(60, 36, 54, 0) ||
+        PlayerInMap(60, 37, 54, 0) ||
+        PlayerInMap(60, 37, 55, 0) ||
+        PlayerInMap(60, 38, 54, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000104);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Ainsel
+$Event(12050, Default, function() {
+    if(PlayerInMap(12, 1, 0, 0) || PlayerInMap(12, 4, 0, 0) )
+    {
+        SetSpEffect(10000, 7000105);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Siofra
+$Event(12060, Default, function() {
+    if(PlayerInMap(12, 2, 0, 0) || PlayerInMap(12, 7, 0, 0) || PlayerInMap(12, 8, 0, 0) || PlayerInMap(12, 3, 0, 0) )
+    {
+        SetSpEffect(10000, 7000106);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Altus Plateau
+$Event(12070, Default, function() {
+    if( PlayerInMap(30, 12, 0, 0) ||
+        PlayerInMap(30, 10, 0, 0) ||
+        PlayerInMap(30, 13, 0, 0) ||
+        PlayerInMap(31, 18, 0, 0) ||
+        PlayerInMap(31, 19, 0, 0) ||
+        PlayerInMap(30, 7, 0, 0) ||
+        PlayerInMap(32, 4, 0, 0) ||
+        PlayerInMap(32, 5, 0, 0) ||
+        PlayerInMap(34, 12, 0, 0) ||
+        PlayerInMap(60, 36, 51, 0) ||
+        PlayerInMap(60, 37, 51, 0) ||
+        PlayerInMap(60, 38, 51, 0) ||
+        PlayerInMap(60, 39, 50, 0) ||
+        PlayerInMap(60, 39, 51, 0) ||
+        PlayerInMap(60, 9, 13, 2) ||
+        PlayerInMap(60, 19, 26, 1) ||
+        PlayerInMap(60, 38, 52, 0) ||
+        PlayerInMap(60, 38, 53, 0) ||
+        PlayerInMap(60, 39, 52, 0) ||
+        PlayerInMap(60, 39, 53, 0) ||
+        PlayerInMap(60, 19, 27, 1) ||
+        PlayerInMap(60, 39, 54, 0) ||
+        PlayerInMap(60, 10, 12, 2) ||
+        PlayerInMap(60, 20, 25, 1) ||
+        PlayerInMap(60, 40, 50, 0) ||
+        PlayerInMap(60, 40, 51, 0) ||
+        PlayerInMap(60, 41, 50, 0) ||
+        PlayerInMap(60, 41, 51, 0) ||
+        PlayerInMap(60, 21, 25, 1) ||
+        PlayerInMap(60, 42, 50, 0) ||
+        PlayerInMap(60, 42, 51, 0) ||
+        PlayerInMap(60, 43, 50, 0) ||
+        PlayerInMap(60, 43, 51, 0) ||
+        PlayerInMap(60, 10, 13, 2) ||
+        PlayerInMap(60, 20, 26, 1) ||
+        PlayerInMap(60, 40, 52, 0) ||
+        PlayerInMap(60, 40, 53, 0) ||
+        PlayerInMap(60, 41, 52, 0) ||
+        PlayerInMap(60, 41, 53, 0) ||
+        PlayerInMap(60, 20, 27, 1) ||
+        PlayerInMap(60, 40, 54, 0) ||
+        PlayerInMap(60, 40, 55, 0) ||
+        PlayerInMap(60, 41, 54, 0) ||
+        PlayerInMap(60, 41, 55, 0) ||
+        PlayerInMap(60, 21, 26, 1) ||
+        PlayerInMap(60, 42, 52, 0) ||
+        PlayerInMap(60, 42, 53, 0) ||
+        PlayerInMap(60, 43, 52, 0) ||
+        PlayerInMap(60, 43, 53, 0) ||
+        PlayerInMap(60, 21, 27, 1) ||
+        PlayerInMap(60, 42, 54, 0) ||
+        PlayerInMap(60, 42, 55, 0) ||
+        PlayerInMap(60, 43, 54, 0) ||
+        PlayerInMap(60, 11, 12, 2) ||
+        PlayerInMap(60, 22, 25, 1) ||
+        PlayerInMap(60, 45, 51, 0) ||
+        PlayerInMap(60, 47, 51, 0) ||
+        PlayerInMap(60, 11, 13, 2) ||
+        PlayerInMap(60, 11, 13, 12) ||
+        PlayerInMap(60, 22, 26, 1) ||
+        PlayerInMap(60, 22, 26, 11) ||
+        PlayerInMap(60, 44, 52, 0) ||
+        PlayerInMap(60, 44, 53, 0) ||
+        PlayerInMap(60, 45, 52, 0) ||
+        PlayerInMap(60, 45, 52, 10) ||
+        PlayerInMap(60, 45, 53, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000107);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Leyndell
+$Event(12080, Default, function() {
+    if(PlayerInMap(11, 0, 0, 0) || 
+        PlayerInMap(34, 14, 0, 0) || 
+        PlayerInMap(34, 15, 0, 0) || 
+        PlayerInMap(35, 0, 0, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000108);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Moonlight Altar
+$Event(12090, Default, function() {
+    if(PlayerInMap(60, 16, 20, 1) || 
+        PlayerInMap(60, 33, 40, 0) || 
+        PlayerInMap(60, 33, 41, 0) || 
+        PlayerInMap(60, 16, 21, 1) || 
+        PlayerInMap(60, 17, 20, 1) || 
+        PlayerInMap(60, 34, 41, 0) || 
+        PlayerInMap(60, 35, 41, 0) || 
+        PlayerInMap(60, 17, 21, 1) 
+    )
+    {
+        SetSpEffect(10000, 7000109);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Caelid
+$Event(12100, Default, function() {
+    if(PlayerInMap(30, 14, 0, 0) ||
+        PlayerInMap(30, 15, 0, 0) ||
+        PlayerInMap(30, 16, 0, 0) ||
+        PlayerInMap(31, 10, 0, 0) ||
+        PlayerInMap(31, 11, 0, 0) ||
+        PlayerInMap(31, 20, 0, 0) ||
+        PlayerInMap(31, 21, 0, 0) ||
+        PlayerInMap(32, 7, 0, 0) ||
+        PlayerInMap(32, 8, 0, 0) ||
+        PlayerInMap(34, 13, 0, 0) ||
+        PlayerInMap(60, 47, 37, 0) ||
+        PlayerInMap(60, 47, 38, 0) ||
+        PlayerInMap(60, 47, 39, 0) ||
+        PlayerInMap(60, 11, 10, 2) ||
+        PlayerInMap(60, 23, 20, 1) ||
+        PlayerInMap(60, 46, 40, 0) ||
+        PlayerInMap(60, 47, 40, 0) ||
+        PlayerInMap(60, 47, 41, 0) ||
+        PlayerInMap(60, 23, 21, 1) ||
+        PlayerInMap(60, 47, 42, 0) ||
+        PlayerInMap(60, 12, 8, 2) ||
+        PlayerInMap(60, 25, 17, 1) ||
+        PlayerInMap(60, 51, 35, 0) ||
+        PlayerInMap(60, 12, 9, 2) ||
+        PlayerInMap(60, 24, 18, 1) ||
+        PlayerInMap(60, 48, 36, 0) ||
+        PlayerInMap(60, 48, 37, 0) ||
+        PlayerInMap(60, 49, 36, 0) ||
+        PlayerInMap(60, 49, 37, 0) ||
+        PlayerInMap(60, 24, 19, 1) ||
+        PlayerInMap(60, 48, 38, 0) ||
+        PlayerInMap(60, 48, 39, 0) ||
+        PlayerInMap(60, 49, 38, 0) ||
+        PlayerInMap(60, 49, 39, 0) ||
+        PlayerInMap(60, 25, 18, 1) ||
+        PlayerInMap(60, 50, 36, 0) ||
+        PlayerInMap(60, 50, 37, 0) ||
+        PlayerInMap(60, 51, 36, 0) ||
+        PlayerInMap(60, 51, 37, 0) ||
+        PlayerInMap(60, 25, 19, 1) ||
+        PlayerInMap(60, 50, 38, 0) ||
+        PlayerInMap(60, 50, 39, 0) ||
+        PlayerInMap(60, 51, 38, 0) ||
+        PlayerInMap(60, 51, 39, 0) ||
+        PlayerInMap(60, 12, 10, 2) ||
+        PlayerInMap(60, 24, 20, 1) ||
+        PlayerInMap(60, 48, 40, 0) ||
+        PlayerInMap(60, 48, 41, 0) ||
+        PlayerInMap(60, 49, 40, 0) ||
+        PlayerInMap(60, 49, 41, 0) ||
+        PlayerInMap(60, 25, 20, 1) ||
+        PlayerInMap(60, 50, 40, 0) ||
+        PlayerInMap(60, 50, 41, 0) ||
+        PlayerInMap(60, 51, 40, 0) ||
+        PlayerInMap(60, 51, 41, 0) ||
+        PlayerInMap(60, 25, 21, 1) ||
+        PlayerInMap(60, 51, 42, 0) ||
+        PlayerInMap(60, 51, 43, 0) ||
+        PlayerInMap(60, 13, 9, 2) ||
+        PlayerInMap(60, 26, 18, 1) ||
+        PlayerInMap(60, 52, 37, 0) ||
+        PlayerInMap(60, 26, 19, 1) ||
+        PlayerInMap(60, 52, 38, 0) ||
+        PlayerInMap(60, 52, 39, 0) ||
+        PlayerInMap(60, 53, 38, 0) ||
+        PlayerInMap(60, 53, 39, 0) ||
+        PlayerInMap(60, 13, 10, 2) ||
+        PlayerInMap(60, 26, 20, 1) ||
+        PlayerInMap(60, 52, 40, 0) ||
+        PlayerInMap(60, 52, 41, 0) ||
+        PlayerInMap(60, 26, 21, 1) ||
+        PlayerInMap(60, 52, 42, 0) ||
+        PlayerInMap(60, 52, 43, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000110);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Mohgwyn Palace
+$Event(12110, Default, function() {
+    if(PlayerInMap(12, 5, 0, 0) || 
+        PlayerInMap(12, 9, 0, 0) 
+    )
+    {
+        SetSpEffect(10000, 7000111);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Ashen Leyndell
+$Event(12120, Default, function() {
+    if(PlayerInMap(11, 5, 0, 0) || 
+        PlayerInMap(11, 71, 0, 0) || 
+        PlayerInMap(19, 0, 0, 0) 
+    )          
+    {
+        SetSpEffect(10000, 7000112);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Mountaintops of the Giants
+$Event(12130, Default, function() {
+    if( PlayerInMap(30, 19, 0, 0) ||
+    PlayerInMap(30, 20, 0, 0) ||
+    PlayerInMap(31, 12, 0, 0) ||
+    PlayerInMap(32, 11, 0, 0) ||
+    PlayerInMap(60, 23, 25, 1) ||
+    PlayerInMap(60, 23, 27, 1) ||
+    PlayerInMap(60, 46, 55, 0) ||
+    PlayerInMap(60, 47, 55, 0) ||
+    PlayerInMap(60, 11, 14, 2) ||
+    PlayerInMap(60, 23, 28, 1) ||
+    PlayerInMap(60, 46, 57, 0) ||
+    PlayerInMap(60, 47, 56, 0) ||
+    PlayerInMap(60, 47, 57, 0) ||
+    PlayerInMap(60, 23, 29, 1) ||
+    PlayerInMap(60, 47, 58, 0) ||
+    PlayerInMap(60, 12, 12, 2) ||
+    PlayerInMap(60, 24, 25, 1) ||
+    PlayerInMap(60, 24, 26, 1) ||
+    PlayerInMap(60, 24, 27, 1) ||
+    PlayerInMap(60, 48, 54, 0) ||
+    PlayerInMap(60, 48, 55, 0) ||
+    PlayerInMap(60, 49, 54, 0) ||
+    PlayerInMap(60, 49, 55, 0) ||
+    PlayerInMap(30, 17, 0, 0) ||
+    PlayerInMap(30, 18, 0, 0) ||
+    PlayerInMap(31, 22, 0, 0) ||
+    PlayerInMap(60, 48, 51, 0) ||
+    PlayerInMap(60, 12, 13, 2) ||
+    PlayerInMap(60, 49, 52, 0) ||
+    PlayerInMap(60, 49, 53, 0) ||
+    PlayerInMap(60, 25, 26, 1) ||
+    PlayerInMap(60, 50, 53, 0) ||
+    PlayerInMap(60, 51, 52, 0) ||
+    PlayerInMap(60, 51, 53, 0) ||
+    PlayerInMap(60, 25, 27, 1) ||
+    PlayerInMap(60, 50, 54, 0) ||
+    PlayerInMap(60, 50, 55, 0) ||
+    PlayerInMap(60, 51, 54, 0) ||
+    PlayerInMap(60, 51, 55, 0) ||
+    PlayerInMap(60, 12, 14, 2) ||
+    PlayerInMap(60, 24, 28, 1) ||
+    PlayerInMap(60, 48, 56, 0) ||
+    PlayerInMap(60, 48, 57, 0) ||
+    PlayerInMap(60, 49, 56, 0) ||
+    PlayerInMap(60, 49, 57, 0) ||
+    PlayerInMap(60, 24, 29, 1) ||
+    PlayerInMap(60, 48, 58, 0) ||
+    PlayerInMap(60, 25, 28, 1) ||
+    PlayerInMap(60, 50, 56, 0) ||
+    PlayerInMap(60, 50, 57, 0) ||
+    PlayerInMap(60, 51, 56, 0) ||
+    PlayerInMap(60, 51, 57, 0) ||
+    PlayerInMap(60, 25, 29, 1) ||
+    PlayerInMap(60, 51, 58, 0) ||
+    PlayerInMap(60, 13, 13, 2) ||
+    PlayerInMap(60, 26, 26, 1) ||
+    PlayerInMap(60, 52, 52, 0) ||
+    PlayerInMap(60, 52, 53, 0) ||
+    PlayerInMap(60, 53, 52, 0) ||
+    PlayerInMap(60, 53, 53, 0) ||
+    PlayerInMap(60, 26, 27, 1) ||
+    PlayerInMap(60, 52, 54, 0) ||
+    PlayerInMap(60, 52, 55, 0) ||
+    PlayerInMap(60, 53, 54, 0) ||
+    PlayerInMap(60, 53, 55, 0) ||
+    PlayerInMap(60, 27, 26, 1) ||
+    PlayerInMap(60, 54, 53, 0) ||
+    PlayerInMap(60, 27, 27, 1) ||
+    PlayerInMap(60, 54, 55, 0) ||
+    PlayerInMap(60, 13, 14, 2) ||
+    PlayerInMap(60, 26, 28, 1) ||
+    PlayerInMap(60, 52, 56, 0) ||
+    PlayerInMap(60, 52, 57, 0) ||
+    PlayerInMap(60, 53, 56, 0) ||
+    PlayerInMap(60, 53, 57, 0) ||
+    PlayerInMap(60, 26, 29, 1) ||
+    PlayerInMap(60, 52, 58, 0) ||
+    PlayerInMap(60, 53, 58, 0) ||
+    PlayerInMap(60, 27, 28, 1) ||
+    PlayerInMap(60, 54, 56, 0) ||
+    PlayerInMap(60, 54, 57, 0)
+    )
+    {
+        SetSpEffect(10000, 7000113);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Farum Azula
+$Event(12140, Default, function() {
+    if(PlayerInMap(13, 0, 0, 0) )
+    {
+        SetSpEffect(10000, 7000114);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+
+// Haligtree
+$Event(12150, Default, function() {
+    if(PlayerInMap(15, 0, 0, 0) )
+    {
+        SetSpEffect(10000, 7000115);
+    }
+    
+    WaitFixedTimeSeconds(60);
+    
+    RestartEvent();
+});
+

@@ -26,10 +26,24 @@
 - Renamed the Draconic Tome to the Bloodsoaked Tome and gave it a new icon.
 - Changed the Dragon Hearts current to Bloodsoaked Runes.
 
+# Bloodforge
+- Smithing Master Hewg now offers the ability to bloodforge talismans, allowing you to make improved talismans. 
+- When it is possible to bloodforge a talisman, they will appear in the Bloodforge shop.
+ - You must first own the preceeding talisman. (e.g. +1 requires you to own the base talisman, +2 requires +2, etc).
+ - You must ave the requisite number of Bloodsoaked Runes to be able to purchase it.
+ - Most talismans support bloodforging, although exceptions have been made for some.
+ 
+- Bloodsoaked Runes are dropped as a guarantee drop from certain bosses, and very rarely from random enemies. 
+- From random enemies, the chances are:
+ - 0.1% in Limgrave, Liurnia, Weeping Penisula
+ - 0.5% in Mt. Gelmir, Altus Plateau, Ainsel, Siofra, Leyndell, Moonlight Altar, Caelid
+ - 2% in Mohgwyn Palace, Ashen Leyndell, Mountaintops of the Giants, Farum Azula, Haligtree
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
 - Torrent Dash should now act like vanilla, i.e. it will step down into a gallop after 6 seconds instead of incorrectly into a trot.
+- Added 8 frames of invulerability at the start of backsteps.
 
 #-------------------------------------------------
 # Bosses

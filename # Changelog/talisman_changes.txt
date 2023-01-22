@@ -1,0 +1,373 @@
+﻿#----------------------------------------
+# Overview
+#----------------------------------------
+- Crimson Amber Medallion
+    - +0 Effect: Boosts maximum HP by 10%.
+    - +1 Effect: Boosts maximum HP by 15%.
+    - +2 Effect: Boosts maximum HP by 20%.
+    - +3 Effect: Boosts maximum HP by 25%.
+
+- Cerulean Amber Medallion
+    - +0 Effect: Boosts maximum FP by 10%.
+    - +1 Effect: Boosts maximum FP by 15%.
+    - +2 Effect: Boosts maximum FP by 20%.
+    - +3 Effect: Boosts maximum FP by 25%.
+
+- Viridian Amber Medallion
+    - +0 Effect: Boosts maximum stamina by 10%.
+    - +1 Effect: Boosts maximum stamina by 15%.
+    - +2 Effect: Boosts maximum stamina by 20%.
+    - +3 Effect: Boosts maximum stamina by 25%.
+
+- Arsenal Charm
+    - +0 Effect: Boosts maximum equipment load by 15%.
+    - +1 Effect: Boosts maximum equipment load by 20%.
+    - Great-Jar's Arsenal
+    - +2 Effect: Boosts maximum equipment load by 25%.
+    - +3 Effect: Boosts maximum equipment load by 30%.
+    
+- Erdtree's Favor
+    - +0 Effect: Raises maximum HP, stamina, and equip load by 5%.
+    - +1 Effect: Raises maximum HP, stamina, and equip load by 7.5%.
+    - +2 Effect: Raises maximum HP, stamina, and equip load by 10%.
+    - +3 Effect: Raises maximum HP, stamina, and equip load by 12.5%.
+
+- Radagon's Scarseal
+    - +0 Effect: Raises vigor, endurance, strength, and dexterity by 3, but also increases damage taken by 10%.
+    - Radagon's Soreseal
+    - +1 Effect: Greatly raises vigor, endurance, strength, and dexterity by 5, but also increases damage taken by 15%.
+    
+- Starscourge Heirloom
+    - +0 Effect: Raises strength by 5.
+    - +1 Effect: Raises strength by 8.
+    - +2 Effect: Raises strength by 12.
+    - +3 Effect: Raises strength by 15.
+    
+- Prosthesis-Wearer Heirloom
+    - +0 Effect: Raises dexterity by 5.
+    - +1 Effect: Raises dexterity by 8.
+    - +2 Effect: Raises dexterity by 12.
+    - +3 Effect: Raises dexterity by 15.
+    
+- Stargazer Heirloom
+    - +0 Effect: Raises intelligence by 5.
+    - +1 Effect: Raises intelligence by 8.
+    - +2 Effect: Raises intelligence by 12.
+    - +3 Effect: Raises intelligence by 15.
+    
+- Two Fingers Heirloom
+    - +0 Effect: Raises faith by 5.
+    - +1 Effect: Raises faith by 8.
+    - +2 Effect: Raises faith by 12.
+    - +3 Effect: Raises faith by 15.
+    
+- Silver Scarab
+    - +0 Effect: This silver scarab enhances item discovery by 75.
+    
+- Gold Scarab
+    - +0 Effect: This golden scarab increases the amount of runes obtained from defeating enemies by 20%.
+    
+- Moon of Nokstella
+    - +0 Effect: Increases memory slots by 2.
+    
+- Green Turtle Talisman
+    - +0 Effect: Raises stamina recovery speed by 10.
+    - +1 Effect: Raises stamina recovery speed by 14.
+    - +2 Effect: Raises stamina recovery speed by 18.
+    - +3 Effect: Raises stamina recovery speed by 22.
+
+- Stalwart Horn Charm
+    - +0 Effect: Raises robustness by 200.
+    - +1 Effect: Raises robustness by 400.
+    - +2 Effect: Raises robustness by 600.
+    - +3 Effect: Raises robustness by 800.
+
+- Immunizing Horn Charm
+    - +0 Effect: Raises immunity by 200.
+    - +1 Effect: Raises immunity by 400.
+    - +2 Effect: Raises immunity by 600.
+    - +3 Effect: Raises immunity by 800.
+
+- Clarifying Horn Charm
+    - +0 Effect: Raises focus by 200.
+    - +1 Effect: Raises focus by 400.
+    - +2 Effect: Raises focus by 600.
+    - +3 Effect: Raises focus by 800.
+
+- Prince of Death's Pustule
+    - +0 Effect: Raises vitality by 200.
+    - Prince of Death's Cyst
+    - +1 Effect: Raises vitality by 400.
+    - +2 Effect: Raises vitality by 600.
+    - +3 Effect: Raises vitality by 800.
+
+- Mottled Necklace
+    - +0 Effect: Raises immunity, robustness, and focus by 100.
+    - +1 Effect: Raises immunity, robustness, and focus by 200.
+    - +2 Effect: Raises immunity, robustness, and focus by 300.
+    - +3 Effect: Raises immunity, robustness, and focus by 400.
+
+- Bull-Goat's Talisman
+    - +0 Effect: Raises poise by 25%.
+
+- Marika's Scarseal
+    - +0 Effect: Raises mind, intelligence, faith, and arcane by 3, but also increases damage taken by 10%.
+    - Marika's Soreseal
+    - +1 Effect: Greatly raises mind, intelligence, faith, and arcane by 5, but also increases damage taken by 15%.
+
+- Warrior Jar Shard
+    - +0 Effect: Boosts the attack power of skills by 10%.
+    - Shard of Alexander
+    - +1 Effect: Greatly boosts the attack power of skills by 15%.
+    
+- Millicent's Prosthesis
+    - +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
+    - +1 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 20% additional damage.
+    - +2 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 25% additional damage.
+    - +3 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 30% additional damage.
+
+- Magic Scorpion Charm
+    - +0 Effect: Raises magic attack power by 15%, but lowers physical damage negation by 15%.
+    - +1 Effect: Raises magic attack power by 20%, but lowers physical damage negation by 15%.
+    - +2 Effect: Raises magic attack power by 25%, but lowers physical damage negation by 15%.
+    - +3 Effect: Raises magic attack power by 30%, but lowers physical damage negation by 15%.
+
+- Lightning Scorpion Charm
+    - +0 Effect: Raises lightning attack power by 15%, but lowers physical damage negation by 15%.
+    - +1 Effect: Raises lightning attack power by 20%, but lowers physical damage negation by 15%.
+    - +2 Effect: Raises lightning attack power by 25%, but lowers physical damage negation by 15%.
+    - +3 Effect: Raises lightning attack power by 30%, but lowers physical damage negation by 15%.
+
+- Fire Scorpion Charm
+    - +0 Effect: Raises fire attack power by 15%, but lowers physical damage negation by 15%.
+    - +1 Effect: Raises fire attack power by 20%, but lowers physical damage negation by 15%.
+    - +2 Effect: Raises fire attack power by 25%, but lowers physical damage negation by 15%.
+    - +3 Effect: Raises fire attack power by 30%, but lowers physical damage negation by 15%.
+
+- Sacred Scorpion Charm
+    - +0 Effect: Raises holy attack power by 15%, but lowers physical damage negation by 15%.
+    - +1 Effect: Raises holy attack power by 20%, but lowers physical damage negation by 15%.
+    - +2 Effect: Raises holy attack power by 25%, but lowers physical damage negation by 15%.
+    - +3 Effect: Raises holy attack power by 30%, but lowers physical damage negation by 15%.
+
+- Red-Feathered Branchsword
+    - +0 Effect: Raises attack power by 20% when HP is below 20%.
+    
+- Ritual Sword Talisman
+    - +0 Effect: Raises attack power by 10% when HP is at maximum.
+    
+- Spear Talisman
+    - +0 Effect: Enhances the counterattacks that are unique to thrusting weapons by 15%.
+    
+- Hammer Talisman
+    - +0 Effect: Enhances stamina-reducing attacks against a blocking opponent by 15%.
+    
+- Winged Sword Insignia
+    - +0 Effect: Raises attack power with successive attacks by up to 10%.
+    - Rotten Winged Sword Insignia
+    - +1 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+
+- Dagger Talisman
+    - +0 Effect: Enhances critical hits by 20%.
+    
+- Arrow's Reach Talisman
+    - +0 Effect: Increases the effective range of bows by 65 meters.
+    
+- Blue Dancer Charm
+    - +0 Effect: Raises attack power by 15% with lower equipment load.
+
+- Twinblade Talisman
+    - +0 Effect: Enhances the final hit ending a chain of attacks by 20%.
+    
+- Axe Talisman
+    - +0 Effect: Enhances charge attacks by 10%.
+    
+- Lance Talisman
+    - +0 Effect: Enhances attacks while on horseback by 15%.
+    
+- Arrow's Sting Talisman
+    - +0 Effect: Raises attack power of arrows and bolts by 10%.
+    
+- Lord of Blood's Exultation
+    - +0 Effect: Raises attack power by 20% when blood loss occurs in the vicinity.
+    
+- Kindred of Rot's Exultation
+    - +0 Effect: Raises attack power by 20% when poisoning or rot occurs in the vicinity.
+    
+- Claw Talisman
+    - +0 Effect: Enhances jump attacks by 15%.
+    
+- Roar Medallion
+    - +0 Effect: Enhances roars and breath attacks by 25%.
+
+- Curved Sword Talisman
+    - +0 Effect: Enhances guard counters by 20%.
+    
+- Companion Jar
+    - +0 Effect: Raises potency of thrown jars by 20%.
+    
+- Perfumer's Talisman
+    - +0 Effect: Raises potency of perfume items by 20%.
+    
+- Graven-School Talisman
+    - +0 Effect: Raises potency of sorceries by 5%.
+    - Graven-Mass Talisman
+    - +1 Effect: Raises potency of sorceries by 10%.
+
+- Faithful's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 5%.
+    - Flock's Canvas Talisman
+    - +1 Effect: Raises potency of incantations by 10%.
+
+- Old Lord's Talisman
+    - +0 Effect: Extends the duration of sorceries and incantations by 30%.
+    
+- Radagon Icon
+    - +0 Effect: Shortens the casting time of sorceries and incantations, granting 30 cast speed.
+    
+- Primal Glintstone Blade
+    - +0 Effect: Reduces FP consumption of sorceries and incantations by 25% but reduces max HP by 15%.
+    
+- Godfrey Icon
+    - +0 Effect: Raises charge attack power of sorceries, incantations, and skills by 15%.
+
+- Dragoncrest Shield Talisman
+    - +0 Effect: Boosts physical damage negation by 5%.
+    - +1 Effect: Boosts physical damage negation by 10%.
+    - +2 Effect: Boosts physical damage negation by 15%.
+    - Dragoncrest Greatshield Talisman
+    - +3 Effect: Boosts physical damage negation by 20%.
+
+- Spelldrake Talisman
+    - +0 Effect: Boosts magic damage negation by 10%.
+    - +1 Effect: Boosts magic damage negation by 15%.
+    - +2 Effect: Boosts magic damage negation by 20%.
+
+- Flamedrake Talisman
+    - +0 Effect: Boosts fire damage negation by 10%.
+    - +1 Effect: Boosts fire damage negation by 15%.
+    - +2 Effect: Boosts fire damage negation by 20%.
+
+- Boltdrake Talisman
+    - +0 Effect: Boosts lightning damage negation by 10%.
+    - +1 Effect: Boosts lightning damage negation by 15%.
+    - +2 Effect: Boosts lightning damage negation by 20%.
+
+- Haligdrake Talisman
+    - +0 Effect: Boosts holy damage negation by 10%.
+    - +1 Effect: Boosts holy damage negation by 15%.
+    - +2 Effect: Boosts holy damage negation by 20%. 
+
+- Pearldrake Talisman
+    - +0 Effect: Boosts non-physical damage negation by 5%.
+    - +1 Effect: Boosts non-physical damage negation by 7.5%.
+    - +2 Effect: Boosts non-physical damage negation by 10%.
+
+- Crucible Scale Talisman
+    - +0 Effect: Reduces damage taken from critical hits by 30%.
+    
+- Crucible Feather Talisman
+    - +0 Effect: Improves the effectiveness of dodge rolls, but increases damage taken by 30%.
+    
+- Blue-Feathered Branchsword
+    - +0 Effect: Raises defense by 50% when HP is low.
+    
+- Ritual Shield Talisman
+    - +0 Effect: Raises defense by 30% when HP is at maximum.
+    
+- Greatshield Talisman
+    - +0 Effect: Boosts guarding ability by 20%.
+    
+- Crucible Knot Talisman
+    - +0 Effect: Reduces damage and impact of headshots taken.
+    
+- Crimson Seed Talisman
+    - +0 Effect: Boosts HP restoration from the Flask of Crimson Tears by 20%.
+    
+- Cerulean Seed Talisman
+    - +0 Effect: Boosts FP restoration from the Flask of Cerulean Tears by 20%.
+    
+- Blessed Dew Talisman
+    - +0 Effect: Gradually restores HP, restoring 2 HP per second.
+    
+- Taker's Cameo
+    - +0 Effect: Restores HP upon defeating enemies, restoring 3% HP and 30 HP with each kill.
+    
+- Godskin Swaddling Cloth
+    - +0 Effect: Successive attacks restore HP, restoring 3% HP and 30 HP with each attack.
+    
+- Assassin's Crimson Dagger
+    - +0 Effect: Critical hits restore HP, restoring 10% HP and 85 HP.
+    
+- Assassin's Cerulean Dagger
+    - +0 Effect: Critical hits restore FP, restoring 30 FP.
+    
+- Crepus's Vial
+    - +0 Effect: Eliminates all sound made by the wearer during movement.
+    
+- Concealing Veil
+    - +0 Effect: Completely conceals the wearer's presence while crouching at a distance from foes.
+    
+- Carian Filigreed Crest
+    - +0 Effect: Lowers FP consumed by skills by 25%.
+    
+- Longtail Cat Talisman
+    - +0 Effect: Grants immunity to fall damage, but does not prevent death from a high fall.
+    
+- Shabriri's Woe
+    - +0 Effect: Constantly attracts enemies' aggression.
+
+- Daedicar's Woe
+    - +0 Effect: Increases damage taken by 100%, but provides immunity to all status effects.
+    
+- Sacrificial Twig
+    - +0 Effect: Prevents rune loss upon death, but will be lost itself in exchange.
+    
+- Furled Finger's Trick-Mirror
+    - +0 Effect: Makes the bearer take on the appearance of a Host of Fingers.
+    
+- Host's Trick-Mirror
+    - +0 Effect: Makes the bearer take on the appearance of a summoned cooperator.
+    
+- Ancestral Spirit's Horn
+    - +0 Effect: Restore 3 FP upon defeating enemies.
+    
+#----------------------------------------
+# Added
+#----------------------------------------
+- Fractured Blade
+    - Found in Deeproot Depths.
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Deific enemies by 25%.
+
+- Aberrant Eye
+    - Found in the Frenzied Flame Village in Liurnia.
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Bestial enemies by 25%.
+
+- Gladiatorial Mark
+    - Purchased from Duelist Atticus for 30 Gladiatorial Engravings.
+    - Weight: 1.0
+    - +0 Effect: Reduces weapon stamina consumption by 25%.
+
+- Shinobi's Whetstone
+    - Purchased from the Mysterious Shinobi.
+    - Weight: 3.0
+    - +0 Effect: Extends the perfect deflect window to 9 frames
+
+- Techniques of the Windwalker
+    - Purchased from the Mysterious Shinobi.
+    - Weight: 1.0
+    - +0 Effect: Grants the ability to jump in midair up to five times.
+
+#----------------------------------------
+# Notes
+#----------------------------------------
+Deific enemies are:
+- Elden Beast
+- Radagon
+- Gurranq/Beast Clergyman
+- Maliketh
+- Black Blade Kindred
+
+Beastial enemies are animals or humanoids with some aspect of animal about them.
