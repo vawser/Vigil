@@ -49,3 +49,4 @@
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
+- Added color coding to the values in the talisman/armor descriptions.
