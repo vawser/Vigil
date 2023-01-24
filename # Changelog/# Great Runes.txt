@@ -1,22 +1,20 @@
 ﻿#----------------------------------------
 # Overview
 #----------------------------------------
-- Godrick's Great Rune
+# Godrick's Great Rune
+- Effect: Raises all attributes by 5.
 
-- Radahn's Great Rune
+# Radahn's Great Rune
+- Effect: Raises maximum HP, FP and Stamina by 15%.
 
-- Morgott's Great Rune
- - Now restores 2% HP every second instead of raising max HP.
+# Morgott's Great Rune
+- Effect: Restores 2% HP every second.
 
-- Rykard's Great Rune
- - Has a new effect: an enemy kill grant 1 stack of Alacrity:
- - Boosts stamina recovery by 5 and stacks. 
- - Each stack lasts for 30 seconds.
+# Rykard's Great Rune
+- Effect: Grants alacrity, with enemy kills boost stamina recovery by 5, stacking with each kill. Each stack lasts 30 seconds.
 
-- Mohg's Great Rune
- - Now grants immunity to Hemorrhage.
+# Mohg's Great Rune
+- Effect: Immunity to Hemorrhage.
 
-- Malenia's Great Rune:
- - Has a new effect: an enemy kill grant 1 stack of Scarlet Fury:
- - Boosts overall damage by 1% and stacks. 
- - Each stack lasts for 120 seconds.
+# Malenia's Great Rune:
+- Effect: Enemy kills grant Scarlet Fury, which boosts overall damage by 1% and stacks. Each stack lasts for 120 seconds.

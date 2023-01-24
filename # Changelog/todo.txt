@@ -54,12 +54,6 @@
     - Include TalkToPlayer stuff for this
     - Tokens can also deepen bond (like Cinders), providing covenant buff. This is removed if pledge is changed to another covenant.
 
-# Torrent Customisation
-- Add the ability to improve Torrents attributes:
-    - HP
-    - Poise
-    - Jump
-
 # Gladiator's Gauntlet
 - Add 2 more swarm waves
 - Implement boss version at Limgrave or Leyndell colosseum.
@@ -87,3 +81,9 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
+# Torrent Customisation
+- Add the ability to improve Torrents attributes:
+    - HP
+    - Poise
+    - Jump
+
