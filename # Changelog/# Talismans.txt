@@ -63,9 +63,15 @@
     
 - Silver Scarab
     - +0 Effect: This silver scarab enhances item discovery by 75.
+    - +1 Effect: This silver scarab enhances item discovery by 100.
+    - +2 Effect: This silver scarab enhances item discovery by 150.
+    - +3 Effect: This silver scarab enhances item discovery by 200.
     
 - Gold Scarab
     - +0 Effect: This golden scarab increases the amount of runes obtained from defeating enemies by 20%.
+    - +1 Effect: This golden scarab increases the amount of runes obtained from defeating enemies by 30%.
+    - +2 Effect: This golden scarab increases the amount of runes obtained from defeating enemies by 40%.
+    - +3 Effect: This golden scarab increases the amount of runes obtained from defeating enemies by 50%.
     
 - Moon of Nokstella
     - +0 Effect: Increases memory slots by 2.
@@ -109,6 +115,9 @@
 
 - Bull-Goat's Talisman
     - +0 Effect: Raises poise by 25%.
+    - +1 Effect: Raises poise by 30%.
+    - +2 Effect: Raises poise by 35%.
+    - +3 Effect: Raises poise by 40%.
 
 - Marika's Scarseal
     - +0 Effect: Raises mind, intelligence, faith, and arcane by 3, but also increases damage taken by 10%.
@@ -119,6 +128,8 @@
     - +0 Effect: Boosts the attack power of skills by 10%.
     - Shard of Alexander
     - +1 Effect: Greatly boosts the attack power of skills by 15%.
+    - +2 Effect: Greatly boosts the attack power of skills by 20%.
+    - +3 Effect: Greatly boosts the attack power of skills by 25%.
     
 - Millicent's Prosthesis
     - +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
@@ -151,85 +162,157 @@
     - +3 Effect: Raises holy attack power by 30%, but lowers physical damage negation by 15%.
 
 - Red-Feathered Branchsword
-    - +0 Effect: Raises attack power by 20% when HP is below 20%.
+    - +0 Effect: Raises attack power by 15% when HP is below 20%.
+    - +1 Effect: Raises attack power by 20% when HP is below 20%.
+    - +2 Effect: Raises attack power by 25% when HP is below 20%.
+    - +3 Effect: Raises attack power by 30% when HP is below 20%.
     
 - Ritual Sword Talisman
     - +0 Effect: Raises attack power by 10% when HP is at maximum.
+    - +1 Effect: Raises attack power by 15% when HP is at maximum.
+    - +2 Effect: Raises attack power by 20% when HP is at maximum.
+    - +3 Effect: Raises attack power by 25% when HP is at maximum.
     
 - Spear Talisman
     - +0 Effect: Enhances the counterattacks that are unique to thrusting weapons by 15%.
+    - +1 Effect: Enhances the counterattacks that are unique to thrusting weapons by 20%.
+    - +2 Effect: Enhances the counterattacks that are unique to thrusting weapons by 25%.
+    - +3 Effect: Enhances the counterattacks that are unique to thrusting weapons by 30%.
     
 - Hammer Talisman
-    - +0 Effect: Enhances stamina-reducing attacks against a blocking opponent by 15%.
+    - +0 Effect: Enhances stamina-reducing attacks against a blocking opponent by 30%.
+    - +1 Effect: Enhances stamina-reducing attacks against a blocking opponent by 40%.
+    - +2 Effect: Enhances stamina-reducing attacks against a blocking opponent by 50%.
+    - +3 Effect: Enhances stamina-reducing attacks against a blocking opponent by 60%.
     
 - Winged Sword Insignia
     - +0 Effect: Raises attack power with successive attacks by up to 10%.
     - Rotten Winged Sword Insignia
     - +1 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+    - +2 Effect: Raises attack power with successive attacks, up to 20% additional attack power.
+    - +3 Effect: Raises attack power with successive attacks, up to 25% additional attack power.
 
 - Dagger Talisman
     - +0 Effect: Enhances critical hits by 20%.
+    - +1 Effect: Enhances critical hits by 30%.
+    - +2 Effect: Enhances critical hits by 40%.
+    - +3 Effect: Enhances critical hits by 50%.
     
 - Arrow's Reach Talisman
-    - +0 Effect: Increases the effective range of bows by 65 meters.
+    - +0 Effect: Increases the effective range of bows by 50 meters.
+    - +1 Effect: Increases the effective range of bows by 75 meters.
+    - +2 Effect: Increases the effective range of bows by 100 meters.
+    - +3 Effect: Increases the effective range of bows by 125 meters.
     
 - Blue Dancer Charm
     - +0 Effect: Raises attack power by 15% with lower equipment load.
+    - +1 Effect: Raises attack power by 20% with lower equipment load.
+    - +2 Effect: Raises attack power by 25% with lower equipment load.
+    - +3 Effect: Raises attack power by 30% with lower equipment load.
 
 - Twinblade Talisman
-    - +0 Effect: Enhances the final hit ending a chain of attacks by 20%.
+    - +0 Effect: Enhances the final hit ending a chain of attacks by 15%.
+    - +1 Effect: Enhances the final hit ending a chain of attacks by 20%.
+    - +2 Effect: Enhances the final hit ending a chain of attacks by 25%.
+    - +3 Effect: Enhances the final hit ending a chain of attacks by 30%.
     
 - Axe Talisman
-    - +0 Effect: Enhances charge attacks by 10%.
+    - +0 Effect: Enhances charge attacks by 15%.
+    - +1 Effect: Enhances charge attacks by 20%.
+    - +2 Effect: Enhances charge attacks by 25%.
+    - +3 Effect: Enhances charge attacks by 30%.
     
 - Lance Talisman
     - +0 Effect: Enhances attacks while on horseback by 15%.
+    - +1 Effect: Enhances attacks while on horseback by 20%.
+    - +2 Effect: Enhances attacks while on horseback by 25%.
+    - +3 Effect: Enhances attacks while on horseback by 30%.
     
 - Arrow's Sting Talisman
-    - +0 Effect: Raises attack power of arrows and bolts by 10%.
+    - +0 Effect: Raises attack power of arrows and bolts by 15%.
+    - +1 Effect: Raises attack power of arrows and bolts by 20%.
+    - +2 Effect: Raises attack power of arrows and bolts by 25%.
+    - +3 Effect: Raises attack power of arrows and bolts by 30%.
     
 - Lord of Blood's Exultation
-    - +0 Effect: Raises attack power by 20% when blood loss occurs in the vicinity.
+    - +0 Effect: Raises attack power by 15% when blood loss occurs in the vicinity.
+    - +1 Effect: Raises attack power by 20% when blood loss occurs in the vicinity.
+    - +2 Effect: Raises attack power by 25% when blood loss occurs in the vicinity.
+    - +3 Effect: Raises attack power by 30% when blood loss occurs in the vicinity.
     
 - Kindred of Rot's Exultation
-    - +0 Effect: Raises attack power by 20% when poisoning or rot occurs in the vicinity.
+    - +0 Effect: Raises attack power by 15% when poisoning or rot occurs in the vicinity.
+    - +1 Effect: Raises attack power by 20% when poisoning or rot occurs in the vicinity.
+    - +2 Effect: Raises attack power by 25% when poisoning or rot occurs in the vicinity.
+    - +3 Effect: Raises attack power by 30% when poisoning or rot occurs in the vicinity.
     
 - Claw Talisman
     - +0 Effect: Enhances jump attacks by 15%.
+    - +1 Effect: Enhances jump attacks by 20%.
+    - +2 Effect: Enhances jump attacks by 25%.
+    - +3 Effect: Enhances jump attacks by 30%.
     
 - Roar Medallion
-    - +0 Effect: Enhances roars and breath attacks by 25%.
+    - +0 Effect: Enhances roars and breath attacks by 15%.
+    - +1 Effect: Enhances roars and breath attacks by 20%.
+    - +2 Effect: Enhances roars and breath attacks by 25%.
+    - +3 Effect: Enhances roars and breath attacks by 30%.
 
 - Curved Sword Talisman
-    - +0 Effect: Enhances guard counters by 20%.
+    - +0 Effect: Enhances guard counters by 15%.
+    - +1 Effect: Enhances guard counters by 20%.
+    - +2 Effect: Enhances guard counters by 25%.
+    - +3 Effect: Enhances guard counters by 30%.
     
 - Companion Jar
     - +0 Effect: Raises potency of thrown jars by 20%.
+    - +1 Effect: Raises potency of thrown jars by 30%.
+    - +2 Effect: Raises potency of thrown jars by 40%.
+    - +3 Effect: Raises potency of thrown jars by 50%.
     
 - Perfumer's Talisman
     - +0 Effect: Raises potency of perfume items by 20%.
+    - +1 Effect: Raises potency of perfume items by 30%.
+    - +2 Effect: Raises potency of perfume items by 40%.
+    - +3 Effect: Raises potency of perfume items by 50%.
     
 - Graven-School Talisman
     - +0 Effect: Raises potency of sorceries by 5%.
     - Graven-Mass Talisman
     - +1 Effect: Raises potency of sorceries by 10%.
+    - +2 Effect: Raises potency of sorceries by 15%.
+    - +3 Effect: Raises potency of sorceries by 20%.
 
 - Faithful's Canvas Talisman
     - +0 Effect: Raises potency of incantations by 5%.
     - Flock's Canvas Talisman
     - +1 Effect: Raises potency of incantations by 10%.
+    - +2 Effect: Raises potency of incantations by 15%.
+    - +3 Effect: Raises potency of incantations by 20%.
 
 - Old Lord's Talisman
-    - +0 Effect: Extends the duration of sorceries and incantations by 30%.
+    - +0 Effect: Extends the duration of sorceries and incantations by 25%.
+    - +1 Effect: Extends the duration of sorceries and incantations by 50%.
+    - +2 Effect: Extends the duration of sorceries and incantations by 75%.
+    - +3 Effect: Extends the duration of sorceries and incantations by 100%.
     
 - Radagon Icon
-    - +0 Effect: Shortens the casting time of sorceries and incantations, granting 30 cast speed.
+    - +0 Effect: Shortens the casting time of sorceries and incantations, granting 25 cast speed.
+    - +1 Effect: Shortens the casting time of sorceries and incantations, granting 50 cast speed.
+    - +2 Effect: Shortens the casting time of sorceries and incantations, granting 75 cast speed.
+    - +3 Effect: Shortens the casting time of sorceries and incantations, granting 100 cast speed.
     
 - Primal Glintstone Blade
     - +0 Effect: Reduces FP consumption of sorceries and incantations by 25% but reduces max HP by 15%.
+    - +1 Effect: Reduces FP consumption of sorceries and incantations by 30% but reduces max HP by 15%.
+    - +2 Effect: Reduces FP consumption of sorceries and incantations by 35% but reduces max HP by 15%.
+    - +3 Effect: Reduces FP consumption of sorceries and incantations by 40% but reduces max HP by 15%.
     
 - Godfrey Icon
     - +0 Effect: Raises charge attack power of sorceries, incantations, and skills by 15%.
+    - +1 Effect: Raises charge attack power of sorceries, incantations, and skills by 20%.
+    - +2 Effect: Raises charge attack power of sorceries, incantations, and skills by 25%.
+    - +3 Effect: Raises charge attack power of sorceries, incantations, and skills by 30%.
 
 - Dragoncrest Shield Talisman
     - +0 Effect: Boosts physical damage negation by 5%.
@@ -242,65 +325,106 @@
     - +0 Effect: Boosts magic damage negation by 10%.
     - +1 Effect: Boosts magic damage negation by 15%.
     - +2 Effect: Boosts magic damage negation by 20%.
+    - +3 Effect: Boosts magic damage negation by 25%.
 
 - Flamedrake Talisman
     - +0 Effect: Boosts fire damage negation by 10%.
     - +1 Effect: Boosts fire damage negation by 15%.
     - +2 Effect: Boosts fire damage negation by 20%.
+    - +3 Effect: Boosts fire damage negation by 25%.
 
 - Boltdrake Talisman
     - +0 Effect: Boosts lightning damage negation by 10%.
     - +1 Effect: Boosts lightning damage negation by 15%.
     - +2 Effect: Boosts lightning damage negation by 20%.
+    - +3 Effect: Boosts lightning damage negation by 25%.
 
 - Haligdrake Talisman
     - +0 Effect: Boosts holy damage negation by 10%.
     - +1 Effect: Boosts holy damage negation by 15%.
     - +2 Effect: Boosts holy damage negation by 20%. 
+    - +3 Effect: Boosts holy damage negation by 25%. 
 
 - Pearldrake Talisman
     - +0 Effect: Boosts non-physical damage negation by 5%.
     - +1 Effect: Boosts non-physical damage negation by 7.5%.
     - +2 Effect: Boosts non-physical damage negation by 10%.
+    - +3 Effect: Boosts non-physical damage negation by 12.5%.
 
 - Crucible Scale Talisman
-    - +0 Effect: Reduces damage taken from critical hits by 30%.
+    - +0 Effect: Reduces damage taken from critical hits by 25%.
+    - +1 Effect: Reduces damage taken from critical hits by 50%.
+    - +2 Effect: Reduces damage taken from critical hits by 75%.
+    - +3 Effect: Reduces damage taken from critical hits by 100%.
     
 - Crucible Feather Talisman
     - +0 Effect: Improves the effectiveness of dodge rolls, but increases damage taken by 30%.
+    - +1 Effect: Improves the effectiveness of dodge rolls, but increases damage taken by 20%.
+    - +2 Effect: Improves the effectiveness of dodge rolls, but increases damage taken by 10%.
+    - +3 Effect: Improves the effectiveness of dodge rolls.
     
 - Blue-Feathered Branchsword
-    - +0 Effect: Raises defense by 50% when HP is low.
+    - +0 Effect: Raises defense by 50% when HP is below 20%.
+    - +1 Effect: Raises defense by 50% when HP is below 30%.
+    - +2 Effect: Raises defense by 50% when HP is below 40%.
+    - +3 Effect: Raises defense by 50% when HP is below 50%.
     
 - Ritual Shield Talisman
     - +0 Effect: Raises defense by 30% when HP is at maximum.
+    - +1 Effect: Raises defense by 40% when HP is at maximum.
+    - +2 Effect: Raises defense by 50% when HP is at maximum.
+    - +3 Effect: Raises defense by 60% when HP is at maximum.
     
 - Greatshield Talisman
     - +0 Effect: Boosts guarding ability by 20%.
+    - +1 Effect: Boosts guarding ability by 30%.
+    - +2 Effect: Boosts guarding ability by 40%.
+    - +3 Effect: Boosts guarding ability by 50%.
     
 - Crucible Knot Talisman
     - +0 Effect: Reduces damage and impact of headshots taken.
     
 - Crimson Seed Talisman
     - +0 Effect: Boosts HP restoration from the Flask of Crimson Tears by 20%.
+    - +1 Effect: Boosts HP restoration from the Flask of Crimson Tears by 30%.
+    - +2 Effect: Boosts HP restoration from the Flask of Crimson Tears by 40%.
+    - +3 Effect: Boosts HP restoration from the Flask of Crimson Tears by 50%.
     
 - Cerulean Seed Talisman
     - +0 Effect: Boosts FP restoration from the Flask of Cerulean Tears by 20%.
+    - +1 Effect: Boosts FP restoration from the Flask of Cerulean Tears by 30%.
+    - +2 Effect: Boosts FP restoration from the Flask of Cerulean Tears by 40%.
+    - +3 Effect: Boosts FP restoration from the Flask of Cerulean Tears by 50%.
     
 - Blessed Dew Talisman
     - +0 Effect: Gradually restores HP, restoring 2 HP per second.
+    - +1 Effect: Gradually restores HP, restoring 3 HP per second.
+    - +2 Effect: Gradually restores HP, restoring 4 HP per second.
+    - +3 Effect: Gradually restores HP, restoring 5 HP per second.
     
 - Taker's Cameo
     - +0 Effect: Restores HP upon defeating enemies, restoring 3% HP and 30 HP with each kill.
+    - +1 Effect: Restores HP upon defeating enemies, restoring 4% HP and 40 HP with each kill.
+    - +2 Effect: Restores HP upon defeating enemies, restoring 5% HP and 50 HP with each kill.
+    - +3 Effect: Restores HP upon defeating enemies, restoring 6% HP and 60 HP with each kill.
     
 - Godskin Swaddling Cloth
     - +0 Effect: Successive attacks restore HP, restoring 3% HP and 30 HP with each attack.
+    - +1 Effect: Successive attacks restore HP, restoring 4% HP and 40 HP with each attack.
+    - +2 Effect: Successive attacks restore HP, restoring 5% HP and 50 HP with each attack.
+    - +3 Effect: Successive attacks restore HP, restoring 6% HP and 60 HP with each attack.
     
 - Assassin's Crimson Dagger
-    - +0 Effect: Critical hits restore HP, restoring 10% HP and 85 HP.
+    - +0 Effect: Critical hits restore HP, restoring 10% HP and 75 HP.
+    - +1 Effect: Critical hits restore HP, restoring 15% HP and 150 HP.
+    - +2 Effect: Critical hits restore HP, restoring 20% HP and 225 HP.
+    - +3 Effect: Critical hits restore HP, restoring 25% HP and 300 HP.
     
 - Assassin's Cerulean Dagger
-    - +0 Effect: Critical hits restore FP, restoring 30 FP.
+    - +0 Effect: Critical hits restore FP, restoring 25 FP.
+    - +1 Effect: Critical hits restore FP, restoring 50 FP.
+    - +2 Effect: Critical hits restore FP, restoring 75 FP.
+    - +3 Effect: Critical hits restore FP, restoring 100 FP.
     
 - Crepus's Vial
     - +0 Effect: Eliminates all sound made by the wearer during movement.
@@ -310,6 +434,9 @@
     
 - Carian Filigreed Crest
     - +0 Effect: Lowers FP consumed by skills by 25%.
+    - +1 Effect: Lowers FP consumed by skills by 30%.
+    - +2 Effect: Lowers FP consumed by skills by 35%.
+    - +3 Effect: Lowers FP consumed by skills by 40%.
     
 - Longtail Cat Talisman
     - +0 Effect: Grants immunity to fall damage, but does not prevent death from a high fall.
@@ -330,7 +457,10 @@
     - +0 Effect: Makes the bearer take on the appearance of a summoned cooperator.
     
 - Ancestral Spirit's Horn
-    - +0 Effect: Restore 3 FP upon defeating enemies.
+    - +0 Effect: Restore 10 FP upon defeating enemies.
+    - +1 Effect: Restore 20 FP upon defeating enemies.
+    - +2 Effect: Restore 30 FP upon defeating enemies.
+    - +3 Effect: Restore 40 FP upon defeating enemies.
     
 #----------------------------------------
 # Added
@@ -339,16 +469,25 @@
     - Found in Deeproot Depths.
     - Weight: 2.0
     - +0 Effect: Raises attack power against Deific enemies by 25%.
+    - +1 Effect: Raises attack power against Deific enemies by 30%.
+    - +2 Effect: Raises attack power against Deific enemies by 35%.
+    - +3 Effect: Raises attack power against Deific enemies by 40%.
 
 - Aberrant Eye
     - Found in the Frenzied Flame Village in Liurnia.
     - Weight: 2.0
     - +0 Effect: Raises attack power against Bestial enemies by 25%.
+    - +1 Effect: Raises attack power against Bestial enemies by 30%.
+    - +2 Effect: Raises attack power against Bestial enemies by 35%.
+    - +3 Effect: Raises attack power against Bestial enemies by 40%.
 
 - Gladiatorial Mark
     - Purchased from Duelist Atticus for 30 Gladiatorial Engravings.
     - Weight: 1.0
     - +0 Effect: Reduces weapon stamina consumption by 25%.
+    - +1 Effect: Reduces weapon stamina consumption by 30%.
+    - +2 Effect: Reduces weapon stamina consumption by 35%.
+    - +3 Effect: Reduces weapon stamina consumption by 40%.
 
 - Shinobi's Whetstone
     - Purchased from the Mysterious Shinobi.
@@ -370,4 +509,5 @@ Deific enemies are:
 - Maliketh
 - Black Blade Kindred
 
-Beastial enemies are animals or humanoids with some aspect of animal about them.
+Beastial enemies are:
+- animals or humanoids with some aspect of animal about them.

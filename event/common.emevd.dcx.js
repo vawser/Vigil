@@ -369,6 +369,7 @@ $Event(0, Default, function() {
     
     // Vigil
     InitializeEvent(0, 11000, 0);
+    InitializeEvent(0, 11001, 0); // Own World only
 });
 
 $Event(50, Default, function() {
@@ -6526,6 +6527,9 @@ $Event(11000, Default, function() {
         SetEventFlagID(1047610620, ON); // Unlocked Deflect Type: Storm
     }
     
+    //----------------------
+    // General
+    //----------------------
     // Passive: Rally
     SetSpEffect(10000, 7000000);
     
@@ -6538,7 +6542,27 @@ $Event(11000, Default, function() {
     // Kill Tracker: Bloodsoaked Rune
     InitializeEvent(0, 11018, 0);
     
+    // Screenshot Tool
+    InitializeEvent(0, 11021, 0);
+    
+    //----------------------
+    // Journey Configuration
+    //----------------------
+    InitializeEvent(0, 11030, 0);
+    InitializeEvent(0, 11031, 0);
+    InitializeEvent(0, 11032, 0);
+    InitializeEvent(0, 11035, 0);
+    
+    //----------------------
+    // Transmog
+    //----------------------
+    InitializeEvent(0, 11100, 0);
+    InitializeEvent(0, 11200, 0);
+    InitializeEvent(0, 11300, 0);
+    
+    //----------------------
     // Area Tracker
+    //----------------------
     InitializeEvent(0, 12000, 0); // Home
     InitializeEvent(0, 12010, 0); // Limgrave
     InitializeEvent(0, 12020, 0); // Weeping Penisula
@@ -6556,6 +6580,9 @@ $Event(11000, Default, function() {
     InitializeEvent(0, 12140, 0); // Farum Azula
     InitializeEvent(0, 12150, 0); // Haligtree
     
+    //----------------------
+    // Deflection
+    //----------------------
     // Selected Deflection Type
     InitializeEvent(0, 11020, 1047610600, 150900); // Storm
     InitializeEvent(1, 11020, 1047610601, 150901); // Holy
@@ -6570,16 +6597,112 @@ $Event(11000, Default, function() {
     
     // Perfect Deflect Visual
     InitializeEvent(8, 11020, 1047610630, 150970); // Perfected
+
+    //----------------------
+    // Bloodforge
+    //----------------------
+    // Adds flags based on player's possession of talismans, used to manage the Bloodforge visibility.
+    InitializeEvent(0, 13000, 1000, 1001, 1002, 1047590100, 1047590101, 1047590102); // Crimson Amber Medallion
+    InitializeEvent(1, 13000, 1010, 1011, 1012, 1047590110, 1047590111, 1047590112); // Cerulean Amber Medallion
+    InitializeEvent(2, 13000, 1020, 1021, 1022, 1047590120, 1047590121, 1047590122); // Viridian Amber Medallion
+    InitializeEvent(3, 13000, 1030, 1031, 1032, 1047590130, 1047590131, 1047590132); // Arsenal Charm
+    InitializeEvent(4, 13000, 1040, 1041, 1042, 1047590140, 1047590141, 1047590142); // Erdtree's Favor
     
+    InitializeEvent(6, 13000, 1060, 1061, 1062, 1047590160, 1047590161, 1047590162); // Starscourge Heirloom
+    InitializeEvent(7, 13000, 1070, 1071, 1072, 1047590170, 1047590171, 1047590172); // Prosthesis-Wearer Heirloom
+    InitializeEvent(8, 13000, 1080, 1081, 1082, 1047590180, 1047590181, 1047590182); // Stargazer Heirloom
+    InitializeEvent(9, 13000, 1090, 1091, 1092, 1047590190, 1047590191, 1047590192); // Two Fingers Heirloom
+    InitializeEvent(10, 13000, 1100, 1101, 1102, 1047590200, 1047590201, 1047590202); // Silver Scarab
+    InitializeEvent(11, 13000, 1110, 1111, 1112, 1047590210, 1047590211, 1047590212); // Gold Scarab
+    
+    InitializeEvent(13, 13000, 1150, 1151, 1152, 1047590230, 1047590231, 1047590232); // Green Turtle Talisman
+    InitializeEvent(14, 13000, 1160, 1161, 1162, 1047590240, 1047590241, 1047590242); // Stalwart Horn Charm
+    InitializeEvent(15, 13000, 1170, 1171, 1172, 1047590250, 1047590251, 1047590252); // Immunizing Horn Charm
+    InitializeEvent(16, 13000, 1180, 1181, 1182, 1047590260, 1047590261, 1047590262); // Clarifying Horn Charm
+    InitializeEvent(17, 13000, 1190, 1191, 1192, 1047590270, 1047590271, 1047590272); // Prince of Death's Pustule
+    InitializeEvent(18, 13000, 1200, 1201, 1202, 1047590280, 1047590281, 1047590282); // Mottled Necklace
+    InitializeEvent(19, 13000, 1210, 1211, 1212, 1047590290, 1047590291, 1047590292); // Bull-Goat's Talisman
+    
+    InitializeEvent(21, 13000, 1230, 1231, 1232, 1047590310, 1047590311, 1047590312); // Warrior Jar Shard
+    InitializeEvent(22, 13000, 1250, 1251, 1252, 1047590320, 1047590321, 1047590322); // Millicent's Prosthesis
+    
+    InitializeEvent(23, 13000, 2000, 2001, 2002, 1047590330, 1047590331, 1047590332); // Magic Scorpion Charm
+    InitializeEvent(24, 13000, 2010, 2011, 2012, 1047590340, 1047590341, 1047590342); // Lightning Scorpion Charm
+    InitializeEvent(25, 13000, 2020, 2021, 2022, 1047590350, 1047590351, 1047590352); // Fire Scorpion Charm
+    InitializeEvent(26, 13000, 2030, 2031, 2032, 1047590360, 1047590361, 1047590362); // Sacred Scorpion Charm
+    InitializeEvent(27, 13000, 2040, 2041, 2042, 1047590370, 1047590371, 1047590372); // Red-Feathered Branchsword
+    InitializeEvent(28, 13000, 2050, 2051, 2052, 1047590380, 1047590381, 1047590382); // Ritual Sword Talisman
+    InitializeEvent(29, 13000, 2060, 2061, 2062, 1047590390, 1047590391, 1047590392); // Spear Talisman
+    InitializeEvent(30, 13000, 2070, 2071, 2072, 1047590400, 1047590401, 1047590402); // Hammer Talisman
+    InitializeEvent(31, 13000, 2080, 2081, 2082, 1047590410, 1047590411, 1047590412); // Winged Sword Insignia
+    InitializeEvent(32, 13000, 2090, 2091, 2092, 1047590420, 1047590421, 1047590422); // Dagger Talisman
+    
+    InitializeEvent(33, 13000, 2100, 2101, 2102, 1047590430, 1047590431, 1047590432); // Arrow's Reach Talisman
+    InitializeEvent(34, 13000, 2110, 2111, 2112, 1047590440, 1047590441, 1047590442); // Blue Dancer Charm
+    InitializeEvent(35, 13000, 2120, 2121, 2122, 1047590450, 1047590451, 1047590452); // Twinblade Talisman
+    InitializeEvent(36, 13000, 2130, 2131, 2132, 1047590460, 1047590461, 1047590462); // Axe Talisman
+    InitializeEvent(37, 13000, 2140, 2141, 2142, 1047590470, 1047590471, 1047590472); // Lance Talisman
+    InitializeEvent(38, 13000, 2150, 2151, 2152, 1047590480, 1047590481, 1047590482); // Arrow's Sting Talisman
+    InitializeEvent(39, 13000, 2160, 2161, 2162, 1047590490, 1047590491, 1047590492); // Lord of Blood's Exultation
+    InitializeEvent(40, 13000, 2170, 2171, 2172, 1047590500, 1047590501, 1047590502); // Kindred of Rot's Exultation
+    InitializeEvent(41, 13000, 2180, 2181, 2182, 1047590510, 1047590511, 1047590512); // Claw Talisman
+    InitializeEvent(42, 13000, 2190, 2191, 2192, 1047590520, 1047590521, 1047590522); // Roar Medallion
+    
+    InitializeEvent(43, 13000, 2200, 2201, 2202, 1047590530, 1047590531, 1047590532); // Curved Sword Talisman
+    InitializeEvent(44, 13000, 2210, 2211, 2212, 1047590540, 1047590541, 1047590542); // Companion Jar
+    InitializeEvent(45, 13000, 2220, 2221, 2222, 1047590550, 1047590551, 1047590552); // Perfumer's Talisman
+    
+    InitializeEvent(46, 13000, 3000, 3001, 3002, 1047590560, 1047590561, 1047590562); // Graven-School Talisman
+    InitializeEvent(47, 13000, 3040, 3050, 3051, 1047590570, 1047590571, 1047590572); // Flock's Canvas Talisman
+    InitializeEvent(48, 13000, 3060, 3061, 3062, 1047590580, 1047590581, 1047590582); // Old Lord's Talisman
+    InitializeEvent(49, 13000, 3070, 3071, 3072, 1047590590, 1047590591, 1047590592); // Radagon Icon
+    InitializeEvent(50, 13000, 3080, 3081, 3082, 1047590600, 1047590601, 1047590602); // Primal Glintstone Blade
+    InitializeEvent(51, 13000, 3090, 3091, 3092, 1047590610, 1047590611, 1047590612); // Godfrey Icon
+    
+    InitializeEvent(52, 13000, 4000, 4001, 4002, 1047590620, 1047590621, 1047590622); // Dragoncrest Shield Talisman
+    InitializeEvent(53, 13000, 4010, 4011, 4012, 1047590630, 1047590631, 1047590632); // Spelldrake Talisman
+    InitializeEvent(54, 13000, 4020, 4021, 4022, 1047590640, 1047590641, 1047590642); // Flamedrake Talisman
+    InitializeEvent(55, 13000, 4030, 4031, 4032, 1047590650, 1047590651, 1047590652); // Boltdrake Talisman
+    InitializeEvent(56, 13000, 4040, 4041, 4042, 1047590660, 1047590661, 1047590662); // Haligdrake Talisman
+    InitializeEvent(57, 13000, 4050, 4051, 4052, 1047590670, 1047590671, 1047590672); // Pearldrake Talisman
+    InitializeEvent(58, 13000, 4060, 4061, 4062, 1047590680, 1047590681, 1047590682); // Crucible Scale Talisman
+    InitializeEvent(59, 13000, 4070, 4071, 4072, 1047590690, 1047590691, 1047590692); // Crucible Feather Talisman
+    InitializeEvent(60, 13000, 4080, 4081, 4082, 1047590700, 1047590701, 1047590702); // Blue-Feathered Branchsword
+    InitializeEvent(61, 13000, 4090, 4091, 4092, 1047590710, 1047590711, 1047590712); // Ritual Shield Talisman
+    InitializeEvent(62, 13000, 4100, 4101, 4102, 1047590720, 1047590721, 1047590722); // Greatshield Talisman
+    
+    InitializeEvent(64, 13000, 5000, 5001, 5002, 1047590740, 1047590741, 1047590742); // Crimson Seed Talisman
+    InitializeEvent(65, 13000, 5010, 5011, 5012, 1047590750, 1047590751, 1047590752); // Cerulean Seed Talisman
+    InitializeEvent(66, 13000, 5020, 5021, 5022, 1047590760, 1047590761, 1047590762); // Blessed Dew Talisman
+    InitializeEvent(67, 13000, 5030, 5031, 5032, 1047590770, 1047590771, 1047590772); // Taker's Cameo
+    InitializeEvent(68, 13000, 5040, 5041, 5042, 1047590780, 1047590781, 1047590782); // Godskin Swaddling Cloth
+    InitializeEvent(69, 13000, 5050, 5051, 5052, 1047590790, 1047590791, 1047590792); // Assassin's Crimson Dagger
+    InitializeEvent(70, 13000, 5060, 5061, 5062, 1047590800, 1047590801, 1047590802); // Assassin's Cerulean Dagger
+    InitializeEvent(71, 13000, 6020, 6021, 6022, 1047590810, 1047590811, 1047590812); // Carian Filigreed Crest
+    InitializeEvent(72, 13000, 6110, 6111, 6112, 1047590820, 1047590821, 1047590822); // Ancestral Spirit's Horn
+    InitializeEvent(73, 13000, 6120, 6121, 6122, 1047590830, 1047590831, 1047590832); // Fractured Blade
+    InitializeEvent(74, 13000, 6130, 6131, 6132, 1047590840, 1047590841, 1047590842); // Aberrant Eye
+    InitializeEvent(75, 13000, 6140, 6141, 6142, 1047590850, 1047590851, 1047590852); // Gladiatorial Mark
+});
+
+//----------------------------
+// Vigil - Own World Only
+//----------------------------
+$Event(11001, Default, function() {
+    EndIf(ThisEventSlot());
     EndIf(!PlayerIsInOwnWorld());
     
+    //----------------------
     // Time Shift
+    //----------------------
     InitializeEvent(0, 11012, 0); // Randomise Time on Spawn
     InitializeEvent(0, 11013, 0); // Force Day on Spawn
     InitializeEvent(0, 11014, 0); // Force Noon on Spawn
     InitializeEvent(0, 11015, 0); // Force Night on Spawn
     
+    //----------------------
     // Weather Shift
+    //----------------------
     InitializeEvent(0, 11016, 1047610510, Weather.Default);
     InitializeEvent(1, 11016, 1047610511, Weather.Rain);
     InitializeEvent(2, 11016, 1047610512, Weather.Snow);
@@ -6596,20 +6719,6 @@ $Event(11000, Default, function() {
     InitializeEvent(13, 11016, 1047610523, Weather.RainyHeavyFog);
     InitializeEvent(14, 11016, 1047610524, Weather.SnowyHeavyFog);
     InitializeEvent(15, 11016, 1047610525, Weather.ScatteredRain);
-    
-    // Screenshot Tool
-    InitializeEvent(0, 11021, 0);
-    
-    // Journey Configuration
-    InitializeEvent(0, 11030, 0);
-    InitializeEvent(0, 11031, 0);
-    InitializeEvent(0, 11032, 0);
-    InitializeEvent(0, 11035, 0);
-    
-    // Transmog
-    InitializeEvent(0, 11100, 0);
-    InitializeEvent(0, 11200, 0);
-    InitializeEvent(0, 11300, 0);
 });
 
 //-------------------
@@ -8174,3 +8283,25 @@ $Event(12150, Default, function() {
     RestartEvent();
 });
 
+//--------------------------------------
+// Bloodforge
+//--------------------------------------
+// Track which talismans the player has. This is to toggle the visibility of entries in the Bloodforge shop.
+$Event(13000, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
+    // Crimson Amber Medallion
+    if(PlayerHasItem(ItemType.Ring, X0_4)) {
+        SetEventFlagID(X12_4, ON);
+    }
+    
+    if(PlayerHasItem(ItemType.Ring, X4_4)) {
+        SetEventFlagID(X16_4, ON);
+    }
+    
+    if(PlayerHasItem(ItemType.Ring, X8_4)) {
+        SetEventFlagID(X20_4, ON);
+    }
+    
+    WaitFixedTimeSeconds(2);
+    
+    RestartEvent();
+});

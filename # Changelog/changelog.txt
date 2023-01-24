@@ -27,13 +27,9 @@
 - Changed the Dragon Hearts current to Bloodsoaked Runes.
 
 # Bloodforge
-- Smithing Master Hewg now offers the ability to bloodforge talismans, allowing you to make improved talismans. 
-- When it is possible to bloodforge a talisman, they will appear in the Bloodforge shop.
- - You must first own the preceeding talisman. (e.g. +1 requires you to own the base talisman, +2 requires +2, etc).
- - You must ave the requisite number of Bloodsoaked Runes to be able to purchase it.
- - Most talismans support bloodforging, although exceptions have been made for some.
- 
-- Bloodsoaked Runes are dropped as a guarantee drop from certain bosses, and very rarely from random enemies. 
+- The Emissary of Mohgwyn has arrived in the Roundtable Hold. He allows you to improve your talismans, in exchange for Bloodsoaked Runes.
+- The Bloodforge menu will display all possible talismans that can be made at the current time. In general, you will need the previous tier of talisman for the next to appear, e.g. +1 requires you to have the base talisman, +2 requires +1 and so on.
+- Bloodsoaked Runes are dropped as a guaranteed (but one-time) drop from bosses, and very rarely from random enemies. 
 - From random enemies, the chances are:
  - 0.1% in Limgrave, Liurnia, Weeping Penisula
  - 0.5% in Mt. Gelmir, Altus Plateau, Ainsel, Siofra, Leyndell, Moonlight Altar, Caelid

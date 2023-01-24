@@ -8,96 +8,316 @@
 1047590000
 
 # Talismans
-1047591100 Crimson Amber Medallion
-1047591110 Cerulean Amber Medallion
-1047591120 Viridian Amber Medallion
-1047591130 Arsenal Charm
-1047591140 Erdtree's Favor
-1047591150 Radagon's Scarseal
-1047591160 Starscourge Heirloom
-1047591170 Prosthesis-Wearer Heirloom
-1047591180 Stargazer Heirloom
-1047591190 Two Fingers Heirloom
-1047591200 Silver Scarab
-1047591210 Gold Scarab
-1047591220 Moon of Nokstella
-1047591230 Green Turtle Talisman
-1047591240 Stalwart Horn Charm
-1047591250 Immunizing Horn Charm
-1047591260 Clarifying Horn Charm
-1047591270 Prince of Death's Pustule
-1047591280 Mottled Necklace
-1047591290 Bull-Goat's Talisman
-1047591300 Marika's Scarseal
-1047591310 Warrior Jar Shard
-1047591320 Millicent's Prosthesis
-1047591330 Magic Scorpion Charm
-1047591340 Lightning Scorpion Charm
-1047591350 Fire Scorpion Charm
-1047591360 Sacred Scorpion Charm
-1047591370 Red-Feathered Branchsword
-1047591380 Ritual Sword Talisman
-1047591390 Spear Talisman
-1047591400 Hammer Talisman
-1047591410 Winged Sword Insignia
-1047591420 Dagger Talisman
-1047591430 Arrow's Reach Talisman
-1047591440 Blue Dancer Charm
-1047591450 Twinblade Talisman
-1047591460 Axe Talisman
-1047591470 Lance Talisman
-1047591480 Arrow's Sting Talisman
-1047591490 Lord of Blood's Exultation
-1047591500 Kindred of Rot's Exultation
-1047591510 Claw Talisman
-1047591520 Roar Medallion
-1047591530 Curved Sword Talisman
-1047591540 Companion Jar
-1047591550 Perfumer's Talisman
-1047591560 Graven-School Talisman
-1047591570 Faithful's Canvas Talisman
-1047591580 Old Lord's Talisman
-1047591590 Radagon Icon
-1047591600 Primal Glintstone Blade
-1047591610 Godfrey Icon
-1047591620 Dragoncrest Shield Talisman
-1047591630 Spelldrake Talisman
-1047591640 Flamedrake Talisman
-1047591650 Boltdrake Talisman
-1047591660 Haligdrake Talisman
-1047591670 Pearldrake Talisman
-1047591680 Crucible Scale Talisman
-1047591690 Crucible Feather Talisman
-1047591700 Blue-Feathered Branchsword
-1047591710 Ritual Shield Talisman
-1047591720 Greatshield Talisman
-1047591730 Crucible Knot Talisman
-1047591740 Crimson Seed Talisman
-1047591750 Cerulean Seed Talisman
-1047591760 Blessed Dew Talisman
-1047591770 Taker's Cameo
-1047591780 Godskin Swaddling Cloth
-1047591790 Assassin's Crimson Dagger
-1047591800 Assassin's Cerulean Dagger
-1047591810 Carian Filigreed Crest
-1047591820 Shabriri's Woe
-1047591830 Daedicar's Woe
-1047591840 Ancestral Spirit's Horn
-1047591850 Fractured Blade
-1047591860 Aberrant Eye
-1047591870 Gladiatorial Mark
-1047591880 
-1047591890 
-1047591900 
-1047591910 
-1047591920 
-1047591930 
-1047591940 
-1047591950
-1047591960
-1047591970
-1047591980
-1047591990
+1047590100 Crimson Amber Medallion
+1047590101 Crimson Amber Medallion +1
+1047590102 Crimson Amber Medallion +2
+
+1047590110 Cerulean Amber Medallion
+1047590111 Cerulean Amber Medallion +1
+1047590112 Cerulean Amber Medallion +2
+
+1047590120 Viridian Amber Medallion
+1047590121 Viridian Amber Medallion +1
+1047590122 Viridian Amber Medallion +2
+
+1047590130 Arsenal Charm
+1047590131 Arsenal Charm +1
+1047590132 Great-Jar's Arsenal
+
+1047590140 Erdtree's Favor
+1047590141 Erdtree's Favor +1
+1047590142 Erdtree's Favor +2
+
+1047590150 Radagon's Soreseal # NOT USED
+
+1047590160 Starscourge Heirloom
+1047590161 Starscourge Heirloom +1
+1047590162 Starscourge Heirloom +2
+
+1047590170 Prosthesis-Wearer Heirloom
+1047590171 Prosthesis-Wearer Heirloom +1
+1047590172 Prosthesis-Wearer Heirloom +2
+
+1047590180 Stargazer Heirloom
+1047590181 Stargazer Heirloom +1
+1047590182 Stargazer Heirloom +2
+
+1047590190 Two Fingers Heirloom
+1047590191 Two Fingers Heirloom +1
+1047590192 Two Fingers Heirloom +2
+
+1047590200 Silver Scarab
+1047590201 Silver Scarab +1
+1047590202 Silver Scarab +2
+
+1047590210 Gold Scarab
+1047590211 Gold Scarab +1
+1047590212 Gold Scarab +2
+
+1047590220 Moon of Nokstella # NOT USED
+
+1047590230 Green Turtle Talisman 
+1047590231 Green Turtle Talisman +1
+1047590232 Green Turtle Talisman +2
+
+1047590240 Stalwart Horn Charm
+1047590241 Stalwart Horn Charm +1
+1047590242 Stalwart Horn Charm +2
+
+1047590250 Immunizing Horn Charm
+1047590251 Immunizing Horn Charm +1
+1047590252 Immunizing Horn Charm +2
+
+1047590260 Clarifying Horn Charm
+1047590261 Clarifying Horn Charm +1
+1047590262 Clarifying Horn Charm +2
+
+1047590270 Prince of Death's Pustule
+1047590271 Prince of Death's Cyst 
+1047590272 Prince of Death's Cyst +1
+
+1047590280 Mottled Necklace
+1047590281 Mottled Necklace +1
+1047590282 Mottled Necklace +2
+
+1047590290 Bull-Goat's Talisman
+1047590291 Bull-Goat's Talisman +1
+1047590292 Bull-Goat's Talisman +2
+
+1047590300 Marika's Scarseal # NOT USED
+
+1047590310 Warrior Jar Shard
+1047590311 Shard of Alexander
+1047590312 Shard of Alexander +1
+
+1047590320 Millicent's Prosthesis
+1047590321 Millicent's Prosthesis +1
+1047590322 Millicent's Prosthesis +2
+
+1047590330 Magic Scorpion Charm
+1047590331 Magic Scorpion Charm +1
+1047590332 Magic Scorpion Charm +2
+
+1047590340 Lightning Scorpion Charm
+1047590341 Lightning Scorpion Charm +1
+1047590342 Lightning Scorpion Charm +2
+
+1047590350 Fire Scorpion Charm
+1047590351 Fire Scorpion Charm +1
+1047590352 Fire Scorpion Charm +2
+
+1047590360 Sacred Scorpion Charm
+1047590361 Sacred Scorpion Charm +1
+1047590362 Sacred Scorpion Charm +2
+
+1047590370 Red-Feathered Branchsword
+1047590371 Red-Feathered Branchsword +1
+1047590372 Red-Feathered Branchsword +2
+
+1047590380 Ritual Sword Talisman
+1047590381 Ritual Sword Talisman +1
+1047590382 Ritual Sword Talisman +2
+
+1047590390 Spear Talisman
+1047590391 Spear Talisman +1
+1047590392 Spear Talisman +2
+
+1047590400 Hammer Talisman
+1047590401 Hammer Talisman +1
+1047590402 Hammer Talisman +2
+
+1047590410 Winged Sword Insignia
+1047590411 Rotten Winged Sword Insignia
+1047590412 Rotten Winged Sword Insignia +1
+
+1047590420 Dagger Talisman
+1047590421 Dagger Talisman +1
+1047590422 Dagger Talisman +2
+
+1047590430 Arrow's Reach Talisman
+1047590431 Arrow's Reach Talisman +1
+1047590432 Arrow's Reach Talisman +2
+
+1047590440 Blue Dancer Charm
+1047590441 Blue Dancer Charm +1
+1047590442 Blue Dancer Charm +2
+
+1047590450 Twinblade Talisman
+1047590451 Twinblade Talisman +1
+1047590452 Twinblade Talisman +2
+
+1047590460 Axe Talisman
+1047590461 Axe Talisman +1
+1047590462 Axe Talisman +2
+
+1047590470 Lance Talisman
+1047590471 Lance Talisman +1
+1047590472 Lance Talisman +2
+
+1047590480 Arrow's Sting Talisman
+1047590481 Arrow's Sting Talisman +1
+1047590482 Arrow's Sting Talisman +2
+
+1047590490 Lord of Blood's Exultation
+1047590491 Lord of Blood's Exultation +1
+1047590492 Lord of Blood's Exultation +2
+
+1047590500 Kindred of Rot's Exultation
+1047590501 Kindred of Rot's Exultation +1
+1047590502 Kindred of Rot's Exultation +2
+
+1047590510 Claw Talisman
+1047590511 Claw Talisman +1
+1047590512 Claw Talisman +2
+
+1047590520 Roar Medallion
+1047590521 Roar Medallion +1
+1047590522 Roar Medallion +2
+
+1047590530 Curved Sword Talisman
+1047590531 Curved Sword Talisman +1
+1047590532 Curved Sword Talisman +2
+
+1047590540 Companion Jar
+1047590541 Companion Jar +1
+1047590542 Companion Jar +2
+
+1047590550 Perfumer's Talisman
+1047590551 Perfumer's Talisman +1
+1047590552 Perfumer's Talisman +2
+
+1047590560 Graven-School Talisman
+1047590561 Graven-Mass Talisman 
+1047590562 Graven-Mass Talisman +1
+
+1047590570 Faithful's Canvas Talisman
+1047590571 Flock's Canvas Talisman
+1047590572 Flock's Canvas Talisman +1
+
+1047590580 Old Lord's Talisman
+1047590581 Old Lord's Talisman +1
+1047590582 Old Lord's Talisman +2
+
+1047590590 Radagon Icon
+1047590591 Radagon Icon +1
+1047590592 Radagon Icon +2
+
+1047590600 Primal Glintstone Blade
+1047590601 Primal Glintstone Blade +1
+1047590602 Primal Glintstone Blade +2
+
+1047590610 Godfrey Icon
+1047590611 Godfrey Icon +1
+1047590612 Godfrey Icon +2
+
+1047590620 Dragoncrest Shield Talisman
+1047590621 Dragoncrest Shield Talisman +1
+1047590622 Dragoncrest Shield Talisman +2
+
+1047590630 Spelldrake Talisman
+1047590631 Spelldrake Talisman +1
+1047590632 Spelldrake Talisman +2
+
+1047590640 Flamedrake Talisman
+1047590641 Flamedrake Talisman +1
+1047590642 Flamedrake Talisman +2
+
+1047590650 Boltdrake Talisman
+1047590651 Boltdrake Talisman +1
+1047590652 Boltdrake Talisman +2
+
+1047590660 Haligdrake Talisman
+1047590661 Haligdrake Talisman +1
+1047590662 Haligdrake Talisman +2
+
+1047590670 Pearldrake Talisman
+1047590671 Pearldrake Talisman +1
+1047590672 Pearldrake Talisman +2
+
+1047590680 Crucible Scale Talisman
+1047590681 Crucible Scale Talisman +1
+1047590682 Crucible Scale Talisman +2
+
+1047590690 Crucible Feather Talisman
+1047590691 Crucible Feather Talisman +1
+1047590692 Crucible Feather Talisman +2
+
+1047590700 Blue-Feathered Branchsword
+1047590701 Blue-Feathered Branchsword +1
+1047590702 Blue-Feathered Branchsword +2
+
+1047590710 Ritual Shield Talisman
+1047590711 Ritual Shield Talisman +1
+1047590712 Ritual Shield Talisman +2
+
+1047590720 Greatshield Talisman
+1047590721 Greatshield Talisman +1
+1047590722 Greatshield Talisman +2
+
+1047590730 Crucible Knot Talisman # NOT USED
+
+1047590740 Crimson Seed Talisman
+1047590741 Crimson Seed Talisman +1
+1047590742 Crimson Seed Talisman +2
+
+1047590750 Cerulean Seed Talisman
+1047590751 Cerulean Seed Talisman +1
+1047590752 Cerulean Seed Talisman +2
+
+1047590760 Blessed Dew Talisman
+1047590761 Blessed Dew Talisman +1
+1047590762 Blessed Dew Talisman +2
+
+1047590770 Taker's Cameo
+1047590771 Taker's Cameo +1
+1047590772 Taker's Cameo +2
+
+1047590780 Godskin Swaddling Cloth
+1047590781 Godskin Swaddling Cloth +1
+1047590782 Godskin Swaddling Cloth +2
+
+1047590790 Assassin's Crimson Dagger
+1047590791 Assassin's Crimson Dagger +1
+1047590792 Assassin's Crimson Dagger +2
+
+1047590800 Assassin's Cerulean Dagger
+1047590801 Assassin's Cerulean Dagger +1
+1047590802 Assassin's Cerulean Dagger +2
+
+1047590810 Carian Filigreed Crest
+1047590811 Carian Filigreed Crest +1
+1047590812 Carian Filigreed Crest +2
+
+1047590820 Ancestral Spirit's Horn
+1047590821 Ancestral Spirit's Horn +1
+1047590822 Ancestral Spirit's Horn +2
+
+1047590830 Fractured Blade
+1047590831 Fractured Blade +1
+1047590832 Fractured Blade +2
+
+1047590840 Aberrant Eye
+1047590841 Aberrant Eye +1
+1047590842 Aberrant Eye +2
+
+1047590850 Gladiatorial Mark
+1047590851 Gladiatorial Mark +1
+1047590852 Gladiatorial Mark +2
+
+1047590860 
+1047590870 
+1047590880 
+1047590890 
+1047590900 
+1047590910 
+1047590920 
+1047590930 
+1047590940 
+1047590950
+1047590960
+1047590970
+1047590980
+1047590990
 
 #------------------------------------
 104761_0000 Systems

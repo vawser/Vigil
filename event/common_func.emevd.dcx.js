@@ -6872,5 +6872,7 @@ $Event(9005997, Default, function(X0_4, X4_4) {
     RestartEvent();
 });
 
-
-
+// Vigil - NPC Idle Anim
+$Event(9005998, Default, function(X0_4, X4_4) {
+    ForceAnimationPlayback(X0_4, X4_4, false, false, false);
+});

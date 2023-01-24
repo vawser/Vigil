@@ -106,29 +106,20 @@ def t000001000_x5(actionbutton5=6100, flag1=6001, flag2=6000):
     return 0
 
 def t000001000_x6(goods3=1000, goods4=10020):
-    """State 0,14"""
     if GetEventFlag(720080) == 1:
-        """State 15"""
         pass
     else:
-        """State 16,17"""
         SetEventFlag(720080, 1)
-    """State 1"""
     if GetTotalBonfireLevel() <= 13:
-        """State 2,13,26"""
         # goods:1000:Flask of Crimson Tears, goods:1001:Flask of Crimson Tears, goods:1002:Flask of Crimson Tears +1, goods:1003:Flask of Crimson Tears +1, goods:1004:Flask of Crimson Tears +2, goods:1005:Flask of Crimson Tears +2, goods:1006:Flask of Crimson Tears +3, goods:1007:Flask of Crimson Tears +3, goods:1008:Flask of Crimson Tears +4, goods:1009:Flask of Crimson Tears +4, goods:1010:Flask of Crimson Tears +5, goods:1011:Flask of Crimson Tears +5, goods:1012:Flask of Crimson Tears +6, goods:1013:Flask of Crimson Tears +6, goods:1014:Flask of Crimson Tears +7, goods:1015:Flask of Crimson Tears +7, goods:1016:Flask of Crimson Tears +8, goods:1017:Flask of Crimson Tears +8, goods:1018:Flask of Crimson Tears +9, goods:1019:Flask of Crimson Tears +9, goods:1020:Flask of Crimson Tears +10, goods:1021:Flask of Crimson Tears +10, goods:1022:Flask of Crimson Tears +11, goods:1023:Flask of Crimson Tears +11, goods:1024:Flask of Crimson Tears +12, goods:1025:Flask of Crimson Tears +12
         call = t000001000_x17(goods3=goods3, goods6=0, z31=1)
         if call.Get() == 0:
-            """State 12,25"""
             # action:13040150:"No Flask of Crimson Tears in inventory"
             assert t000001000_x4(action1=13040150)
         elif call.Done():
-            """State 11,19"""
             SetWorkValue(1, 1)
-            """State 20"""
             call = t000001000_x0(action2=20011000 + GetWorkValue(1))
             if call.Get() == 0:
-                """State 6,10"""
                 # goods:10020:Sacred Tear
                 if ComparePlayerInventoryNumber(3, goods4, 4, GetWorkValue(1), 0) == 1:
                     """State 4,8"""
@@ -674,10 +665,10 @@ def t000001000_x22():
         pass
     while True:
         """State 4"""
-        if IsMultiplayerInProgress() == 1:
+        if IsMultiplayerInProgress() == 1 and not GetEventFlag(2051) and not GetEventFlag(2052):
             """State 6"""
             call = t000001000_x25()
-            assert not IsMultiplayerInProgress()
+            assert not IsMultiplayerInProgress() or GetEventFlag(2051) == 1 or GetEventFlag(2052) == 1
         elif GetEventFlag(1042369415) == 1:
             """State 7"""
             call = t000001000_x63()
@@ -784,7 +775,8 @@ def t000001000_x23():
                 Goto('L2')
             elif HasPlayerBeenAttacked() == 1 and GetCurrentStateElapsedFrames() > 1:
                 Goto('L2')
-            elif IsMultiplayerInProgress() == 1 and GetCurrentStateElapsedFrames() > 1:
+            elif (IsMultiplayerInProgress() == 1 and not GetEventFlag(2051) and not GetEventFlag(2052)
+                  and GetCurrentStateElapsedFrames() > 1):
                 Goto('L2')
             elif GetEventFlag(1042369415) == 1 and GetCurrentStateElapsedFrames() > 1:
                 Goto('L2')
@@ -824,8 +816,8 @@ def t000001000_x23():
             Goto('L0')
         else:
             pass
-    elif (IsMultiplayerInProgress() == 1 or GetEventFlag(1042369415) == 1 or (CompareBonfireLevel(0,
-          0) == 1 and not GetEventFlag(11102790))):
+    elif (GetEventFlag(1042369415) == 1 or (CompareBonfireLevel(0, 0) == 1 and not GetEventFlag(11102790))
+          or (IsMultiplayerInProgress() == 1 and not GetEventFlag(2051) and not GetEventFlag(2052))):
         pass
     """State 38"""
     return 0
@@ -948,30 +940,23 @@ def t000001000_x30():
     return 0
 
 def t000001000_x31():
-    """State 0,10"""
     assert GetCurrentStateElapsedTime() > 0.1 or not GetEventFlag(4651)
-    """State 11"""
     assert not GetEventFlag(9001)
-    """State 18"""
-    # goods:1001:Flask of Crimson Tears, goods:1000:Flask of Crimson Tears, goods:1003:Flask of Crimson Tears +1, goods:1002:Flask of Crimson Tears +1, goods:1005:Flask of Crimson Tears +2, goods:1004:Flask of Crimson Tears +2, goods:1007:Flask of Crimson Tears +3, goods:1006:Flask of Crimson Tears +3, goods:1009:Flask of Crimson Tears +4, goods:1008:Flask of Crimson Tears +4, goods:1011:Flask of Crimson Tears +5, goods:1010:Flask of Crimson Tears +5, goods:1013:Flask of Crimson Tears +6, goods:1012:Flask of Crimson Tears +6, goods:1015:Flask of Crimson Tears +7, goods:1014:Flask of Crimson Tears +7, goods:1017:Flask of Crimson Tears +8, goods:1016:Flask of Crimson Tears +8, goods:1019:Flask of Crimson Tears +9, goods:1018:Flask of Crimson Tears +9, goods:1021:Flask of Crimson Tears +10, goods:1020:Flask of Crimson Tears +10, goods:1023:Flask of Crimson Tears +11, goods:1022:Flask of Crimson Tears +11, goods:1025:Flask of Crimson Tears +12, goods:1024:Flask of Crimson Tears +12, goods:1050:Flask of Cerulean Tears, goods:1051:Flask of Cerulean Tears, goods:1052:Flask of Cerulean Tears +1, goods:1053:Flask of Cerulean Tears +1, goods:1054:Flask of Cerulean Tears +2, goods:1055:Flask of Cerulean Tears +2, goods:1056:Flask of Cerulean Tears +3, goods:1057:Flask of Cerulean Tears +3, goods:1058:Flask of Cerulean Tears +4, goods:1059:Flask of Cerulean Tears +4, goods:1060:Flask of Cerulean Tears +5, goods:1061:Flask of Cerulean Tears +5, goods:1062:Flask of Cerulean Tears +6, goods:1063:Flask of Cerulean Tears +6, goods:1064:Flask of Cerulean Tears +7, goods:1065:Flask of Cerulean Tears +7, goods:1067:Flask of Cerulean Tears +8, goods:1066:Flask of Cerulean Tears +8, goods:1069:Flask of Cerulean Tears +9, goods:1068:Flask of Cerulean Tears +9
+    
     assert t000001000_x8(goods7=1000)
-    """State 5"""
+    
     c1_110()
     while True:
-        """State 1"""
         Label('L0')
         ClearTalkListData()
-        """State 2"""
-        
+
         # Pass time
         AddTalkListDataIf(not GetEventFlag(9411) or GetEventFlag(9412) == 1, 1, 15000420, -1)
         
         # Level Up
         AddTalkListDataIf(GetEventFlag(4680) == 1 or GetEventFlag(4699) == 1, 2, 15000540, -1)
         
-        """State 29"""
         assert t000001000_x71(z1=3, z2=15000371)
-        """State 17"""
         
         # Memorize spell
         AddTalkListData(4, 15000390, -1)
@@ -992,73 +977,62 @@ def t000001000_x31():
         # Weather Shift
         AddTalkListData(81, 80101100, -1)
         
-        """State 26"""
         assert t000001000_x52()
-        """State 15"""
+        
         # action:20000009:"Leave"
         AddTalkListData(99, 20000009, -1)
-        """State 6"""
         SetEventFlag(4652, 0)
         SetEventFlag(4656, 0)
         SetEventFlag(4654, 0)
         SetEventFlag(4655, 0)
-        """State 3"""
+  
         c1_140(1)
         ShowShopMessage(1)
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        """State 8"""
         if GetTalkListEntryResult() == 1:
-            """State 19"""
             c1_140(0)
             c1_110()
             def ExitPause():
                 c1_110()
             assert t000001000_x33()
         elif GetTalkListEntryResult() == 2:
-            """State 20"""
-            assert t000001000_x34()
+            if not GetEventFlag(2051) and not GetEventFlag(2052):
+                assert t000001000_x34()
+            else:
+                # action:20011032:"Cannot select during combat"
+                assert t000001000_x4(action1=20011032)
         elif GetTalkListEntryResult() == 3:
-            """State 25"""
+            """State 31"""
             c1_140(0)
             c1_110()
             def ExitPause():
                 c1_110()
             assert t000001000_x47()
         elif GetTalkListEntryResult() == 4:
-            """State 7"""
             OpenMagicEquip(-1, -1)
             assert not (CheckSpecificPersonMenuIsOpen(11, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         elif GetTalkListEntryResult() == 5:
-            """State 12"""
             OpenPhysickMenu()
             assert not (CheckSpecificPersonMenuIsOpen(21, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         elif GetTalkListEntryResult() == 6:
-            """State 9"""
             OpenRepository()
             assert not (CheckSpecificPersonMenuIsOpen(3, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         elif GetTalkListEntryResult() == 7:
-            """State 13"""
             c1_137()
             assert not (CheckSpecificPersonMenuIsOpen(24, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         elif GetTalkListEntryResult() == 8:
-            """State 14"""
             OpenEquipmentChangeOfPurposeShop()
             assert not (CheckSpecificPersonMenuIsOpen(7, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         elif GetTalkListEntryResult() == 9:
-            """State 16"""
             OpenTailoringShop(111000, 111399)
             assert not (CheckSpecificPersonMenuIsOpen(26, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         elif GetTalkListEntryResult() == 11:
-            """State 21"""
             assert t000001000_x36(z12=4655)
         elif GetTalkListEntryResult() == 12:
-            """State 28"""
             assert t000001000_x36(z12=4657)
         elif GetTalkListEntryResult() == 15:
-            """State 27"""
             assert t000001000_x54()
         elif GetTalkListEntryResult() == 32:
-            """State 23"""
             assert t000001000_x38()
         # Time
         elif GetTalkListEntryResult() == 80:
@@ -1067,13 +1041,13 @@ def t000001000_x31():
         elif GetTalkListEntryResult() == 81:
             assert t000001000_x81()
         elif GetTalkListEntryResult() == 41 and GetEventFlag(120) == 1 and GetEventFlag(11102790) == 1:
-            """State 24"""
-            assert t000001000_x42()
+            if not GetEventFlag(2051) and not GetEventFlag(2052):
+                assert t000001000_x42()
+            else:
+                # action:20011031:"Cannot select during combat"
+                assert t000001000_x4(action1=20011031)
         else:
-            """State 4,30"""
             return 0
-    """Unused"""
-    """State 22"""
     assert t000001000_x37()
     Goto('L0')
 
@@ -1409,16 +1383,16 @@ def t000001000_x46(z9=_):
     return 0
 
 def t000001000_x47():
-    """State 0,10"""
+    """State 0,13"""
     assert t000001000_x48()
     """State 5"""
     CloseShopMessage()
     while True:
         """State 1"""
         ClearTalkListData()
-        """State 11"""
+        """State 14"""
         assert t000001000_x69(z5=1, z6=15000370)
-        """State 12"""
+        """State 15"""
         assert t000001000_x70(z3=2, z4=15000380)
         """State 2"""
         # action:15000385:"Allocate flask charges"
@@ -1430,19 +1404,25 @@ def t000001000_x47():
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         """State 6"""
         if GetTalkListEntryResult() == 1:
-            """State 7"""
+            """State 10"""
             # goods:1000:Flask of Crimson Tears, goods:1001:Flask of Crimson Tears, goods:1002:Flask of Crimson Tears +1, goods:1003:Flask of Crimson Tears +1, goods:1004:Flask of Crimson Tears +2, goods:1005:Flask of Crimson Tears +2, goods:1006:Flask of Crimson Tears +3, goods:1007:Flask of Crimson Tears +3, goods:1008:Flask of Crimson Tears +4, goods:1009:Flask of Crimson Tears +4, goods:1010:Flask of Crimson Tears +5, goods:1011:Flask of Crimson Tears +5, goods:1012:Flask of Crimson Tears +6, goods:1013:Flask of Crimson Tears +6, goods:1014:Flask of Crimson Tears +7, goods:1015:Flask of Crimson Tears +7, goods:1016:Flask of Crimson Tears +8, goods:1017:Flask of Crimson Tears +8, goods:1018:Flask of Crimson Tears +9, goods:1019:Flask of Crimson Tears +9, goods:1020:Flask of Crimson Tears +10, goods:1021:Flask of Crimson Tears +10, goods:1022:Flask of Crimson Tears +11, goods:1023:Flask of Crimson Tears +11, goods:1024:Flask of Crimson Tears +12, goods:1025:Flask of Crimson Tears +12, goods:10010:Golden Seed
             assert t000001000_x7(goods1=1000, goods2=10010)
         elif GetTalkListEntryResult() == 2:
-            """State 8"""
-            # goods:1000:Flask of Crimson Tears, goods:1001:Flask of Crimson Tears, goods:1002:Flask of Crimson Tears +1, goods:1003:Flask of Crimson Tears +1, goods:1004:Flask of Crimson Tears +2, goods:1005:Flask of Crimson Tears +2, goods:1006:Flask of Crimson Tears +3, goods:1007:Flask of Crimson Tears +3, goods:1008:Flask of Crimson Tears +4, goods:1009:Flask of Crimson Tears +4, goods:1010:Flask of Crimson Tears +5, goods:1011:Flask of Crimson Tears +5, goods:1012:Flask of Crimson Tears +6, goods:1013:Flask of Crimson Tears +6, goods:1014:Flask of Crimson Tears +7, goods:1015:Flask of Crimson Tears +7, goods:1016:Flask of Crimson Tears +8, goods:1017:Flask of Crimson Tears +8, goods:1018:Flask of Crimson Tears +9, goods:1019:Flask of Crimson Tears +9, goods:1020:Flask of Crimson Tears +10, goods:1021:Flask of Crimson Tears +10, goods:1022:Flask of Crimson Tears +11, goods:1023:Flask of Crimson Tears +11, goods:1024:Flask of Crimson Tears +12, goods:1025:Flask of Crimson Tears +12, goods:10020:Sacred Tear
-            assert t000001000_x6(goods3=1000, goods4=10020)
+            """State 7"""
+            if not GetEventFlag(2051) and not GetEventFlag(2052):
+                """State 8,11"""
+                # goods:1000:Flask of Crimson Tears, goods:1001:Flask of Crimson Tears, goods:1002:Flask of Crimson Tears +1, goods:1003:Flask of Crimson Tears +1, goods:1004:Flask of Crimson Tears +2, goods:1005:Flask of Crimson Tears +2, goods:1006:Flask of Crimson Tears +3, goods:1007:Flask of Crimson Tears +3, goods:1008:Flask of Crimson Tears +4, goods:1009:Flask of Crimson Tears +4, goods:1010:Flask of Crimson Tears +5, goods:1011:Flask of Crimson Tears +5, goods:1012:Flask of Crimson Tears +6, goods:1013:Flask of Crimson Tears +6, goods:1014:Flask of Crimson Tears +7, goods:1015:Flask of Crimson Tears +7, goods:1016:Flask of Crimson Tears +8, goods:1017:Flask of Crimson Tears +8, goods:1018:Flask of Crimson Tears +9, goods:1019:Flask of Crimson Tears +9, goods:1020:Flask of Crimson Tears +10, goods:1021:Flask of Crimson Tears +10, goods:1022:Flask of Crimson Tears +11, goods:1023:Flask of Crimson Tears +11, goods:1024:Flask of Crimson Tears +12, goods:1025:Flask of Crimson Tears +12, goods:10020:Sacred Tear
+                assert t000001000_x6(goods3=1000, goods4=10020)
+            else:
+                """State 9,16"""
+                # action:20011030:"Cannot select during combat"
+                assert t000001000_x4(action1=20011030)
         elif GetTalkListEntryResult() == 3:
-            """State 9"""
+            """State 12"""
             # goods:1000:Flask of Crimson Tears, goods:1050:Flask of Cerulean Tears, goods:1001:Flask of Crimson Tears, goods:1051:Flask of Cerulean Tears, goods:1002:Flask of Crimson Tears +1, goods:1052:Flask of Cerulean Tears +1, goods:1003:Flask of Crimson Tears +1, goods:1053:Flask of Cerulean Tears +1, goods:1004:Flask of Crimson Tears +2, goods:1054:Flask of Cerulean Tears +2, goods:1005:Flask of Crimson Tears +2, goods:1055:Flask of Cerulean Tears +2, goods:1006:Flask of Crimson Tears +3, goods:1056:Flask of Cerulean Tears +3, goods:1007:Flask of Crimson Tears +3, goods:1057:Flask of Cerulean Tears +3, goods:1008:Flask of Crimson Tears +4, goods:1058:Flask of Cerulean Tears +4, goods:1009:Flask of Crimson Tears +4, goods:1059:Flask of Cerulean Tears +4, goods:1010:Flask of Crimson Tears +5, goods:1060:Flask of Cerulean Tears +5, goods:1011:Flask of Crimson Tears +5, goods:1061:Flask of Cerulean Tears +5, goods:1012:Flask of Crimson Tears +6, goods:1062:Flask of Cerulean Tears +6, goods:1013:Flask of Crimson Tears +6, goods:1063:Flask of Cerulean Tears +6, goods:1014:Flask of Crimson Tears +7, goods:1064:Flask of Cerulean Tears +7, goods:1015:Flask of Crimson Tears +7, goods:1065:Flask of Cerulean Tears +7, goods:1016:Flask of Crimson Tears +8, goods:1066:Flask of Cerulean Tears +8, goods:1017:Flask of Crimson Tears +8, goods:1067:Flask of Cerulean Tears +8, goods:1018:Flask of Crimson Tears +9, goods:1068:Flask of Cerulean Tears +9, goods:1019:Flask of Crimson Tears +9, goods:1069:Flask of Cerulean Tears +9, goods:1020:Flask of Crimson Tears +10, goods:1070:Flask of Cerulean Tears +10, goods:1021:Flask of Crimson Tears +10, goods:1071:Flask of Cerulean Tears +10, goods:1022:Flask of Crimson Tears +11, goods:1072:Flask of Cerulean Tears +11, goods:1023:Flask of Crimson Tears +11, goods:1073:Flask of Cerulean Tears +11, goods:1024:Flask of Crimson Tears +12, goods:1074:Flask of Cerulean Tears +12, goods:1025:Flask of Crimson Tears +12, goods:1075:Flask of Cerulean Tears +12
             assert t000001000_x15(goods5=1000)
         else:
-            """State 4,13"""
+            """State 4,17"""
             return 0
 
 def t000001000_x48():
