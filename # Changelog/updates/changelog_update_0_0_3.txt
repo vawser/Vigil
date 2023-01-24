@@ -1,0 +1,100 @@
+﻿#-------------------------------------------------
+# Changelog 0.0.3
+#-------------------------------------------------
+#-------------------------------------------------
+# Features
+#-------------------------------------------------
+# Transmogrification
+- Added the ability to apply a transmogrification to your armor.
+- Transmog will visually override your worn armor, but the stats will remain that of your worn armor.
+- You can transmog the head and the body (the body includes arms and legs).
+- All armor is available to transmog.
+- Available at the Clouded Mirror Stand in the Roundtable Hold.
+
+# Gladiator Trials
+- Similar to the Gladiator's Gauntlet, the Limgrave Colosseum hosts NPC-based boss fights.
+- Each fight is replayable, and rewards runes, material, and certain fights will reward unique items upon first victory.
+
+- Trial Type:
+    - The Family: face the Valiant Father, the Kindly Mother and the Naive Child.
+    - Azur's Vengeance: face the Spirit of Azur, and two of his disciples.
+    - Magmatic Cabal: face the Lord of Magma and his two Magmatic Knights.
+    
+- Trial Difficulties:
+    - Standard: 100% Rune Amount, 100% HP, 100% Damage
+    - Hard: 200% Rune Amount, 200% HP, 200% Damage
+    - Nightmare: 500% Rune Amount, 500% HP, 300% Damage
+    
+# Custom Loadout
+- Renamed the Draconic Tome to the Bloodsoaked Tome and gave it a new icon.
+- Changed the Dragon Hearts current to Bloodsoaked Runes.
+
+# Bloodforge
+- The Emissary of Mohgwyn has arrived in the Roundtable Hold. He allows you to improve your talismans, in exchange for Bloodsoaked Runes.
+- The Bloodforge menu will display all possible talismans that can be made at the current time. In general, you will need the previous tier of talisman for the next to appear, e.g. +1 requires you to have the base talisman, +2 requires +1 and so on.
+- Bloodsoaked Runes are dropped as a guaranteed (but one-time) drop from bosses, and very rarely from random enemies. 
+- From random enemies, the chances are:
+ - 0.1% in Limgrave, Liurnia, Weeping Penisula
+ - 0.5% in Mt. Gelmir, Altus Plateau, Ainsel, Siofra, Leyndell, Moonlight Altar, Caelid
+ - 2% in Mohgwyn Palace, Ashen Leyndell, Mountaintops of the Giants, Farum Azula, Haligtree
+ 
+#-------------------------------------------------
+# Player
+#-------------------------------------------------
+- Torrent Dash should now act like vanilla, i.e. it will step down into a gallop after 6 seconds instead of incorrectly into a trot.
+- Added 8 frames of invulerability at the start of backsteps.
+
+#-------------------------------------------------
+# Bosses
+#-------------------------------------------------
+# Morgott, the Omen King
+- HP: 2521 -> 3500
+
+#-------------------------------------------------
+# Enemies
+#-------------------------------------------------
+
+#-------------------------------------------------
+# World
+#-------------------------------------------------
+# m60_41_35_00 
+- Adjusted enemy patrol and Banished Knight position so the player is not attacked when sitting at the grace.
+
+#-------------------------------------------------
+# Items
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Armor
+#-------------------------------------------------
+- Added the following new pieces of armor:
+    - Mask of the Mother: reward from defeating the Family.
+    - Mask of the Child: reward from defeating the Family.
+    - Mask of the Father: reward from defeating the Family.
+    - Giant Set: found in the Mountaintops of the Giants
+
+#-------------------------------------------------
+# Weapons
+#-------------------------------------------------
+- Carian Knight's Sword:
+    - Now allows you to cast sorceries when two-handed.
+
+#-------------------------------------------------
+# Catalysts
+#-------------------------------------------------
+    
+#-------------------------------------------------
+# Spells
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Great Runes
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Talismans
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Misc
+#-------------------------------------------------
