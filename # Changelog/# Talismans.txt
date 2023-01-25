@@ -217,10 +217,10 @@
     - +3 Effect: Enhances the final hit ending a chain of attacks by 30%.
     
 - Axe Talisman
-    - +0 Effect: Enhances charge attacks by 15%.
-    - +1 Effect: Enhances charge attacks by 20%.
-    - +2 Effect: Enhances charge attacks by 25%.
-    - +3 Effect: Enhances charge attacks by 30%.
+    - +0 Effect: Enhances charged attacks by 15%.
+    - +1 Effect: Enhances charged attacks by 20%.
+    - +2 Effect: Enhances charged attacks by 25%.
+    - +3 Effect: Enhances charged attacks by 30%.
     
 - Lance Talisman
     - +0 Effect: Enhances attacks while on horseback by 15%.

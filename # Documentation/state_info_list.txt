@@ -1,6 +1,11 @@
 ﻿# State Info
 290 Crucible Feather Talisman
 
+2000 Presence of Frost
+2001 Presence of Sleep
+2002 Presence of Madness
+2003 Presence of Blight
+
 # Conditional Groups
 1   Magic: Full Moon 
 2   Magic: Carian Sword
@@ -26,6 +31,11 @@
 26  Magic: Frenzied Flame
 27  Magic: Godslayer
 28  Magic: Primordial Crucible
+30  Magic: Blood
+31  Magic: Erdtree Worship
+32  Magic: Servants of Rot
+33  Magic: Destined Death
+115 Magic: Bubble
 
 100 Attack: Charge 
 101 Attack: Horseback

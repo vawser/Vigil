@@ -695,8 +695,6 @@ function IsEnableGuard()
         return FALSE
     elseif IsWeaponCatalyst() == TRUE then
         return FALSE
-    elseif style == HAND_RIGHT then
-        return FALSE
     elseif FALSE == IsWeaponCanGuard() then
         return FALSE
     elseif IsEnableDualWielding() ~= -1 then

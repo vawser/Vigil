@@ -87,4 +87,51 @@
     - Poise
     - Jump
 
+# State
+2000 Presence of Frost
+2001 Presence of Sleep
+2002 Presence of Madness
+2003 Presence of Blight
+
 # Rings
+- Pale Moon Exultation
+    - +0 Effect: Raises attack power by 15% when frostbite occurs in the vicinity.
+    - +1 Effect: Raises attack power by 20% when frostbite occurs in the vicinity.
+    - +2 Effect: Raises attack power by 25% when frostbite occurs in the vicinity.
+    - +3 Effect: Raises attack power by 30% when frostbite occurs in the vicinity.
+
+- Dreamer's Exultation
+    - +0 Effect: Raises attack power by 15% when sleep occurs in the vicinity.
+    - +1 Effect: Raises attack power by 20% when sleep occurs in the vicinity.
+    - +2 Effect: Raises attack power by 25% when sleep occurs in the vicinity.
+    - +3 Effect: Raises attack power by 30% when sleep occurs in the vicinity.
+
+- Exultation of the Frenzied Flame
+    - +0 Effect: Raises attack power by 15% when madness occurs in the vicinity.
+    - +1 Effect: Raises attack power by 20% when madness occurs in the vicinity.
+    - +2 Effect: Raises attack power by 25% when madness occurs in the vicinity.
+    - +3 Effect: Raises attack power by 30% when madness occurs in the vicinity.
+
+- Exultation of Death
+    - +0 Effect: Raises attack power by 15% when death blight occurs in the vicinity.
+    - +1 Effect: Raises attack power by 20% when death blight occurs in the vicinity.
+    - +2 Effect: Raises attack power by 25% when death blight occurs in the vicinity.
+    - +3 Effect: Raises attack power by 30% when death blight occurs in the vicinityblight
+
+- Berserker Insignia
+    - +0 Effect: Reduces weapon stamina consumption by 20% for 6 seconds upon taking damage.
+    - +1 Effect: Reduces weapon stamina consumption by 40% for 6 seconds upon taking damage.
+    - +2 Effect: Reduces weapon stamina consumption by 60% for 6 seconds upon taking damage.
+    - +3 Effect: Reduces weapon stamina consumption by 80% for 6 seconds upon taking damage.
+    
+- Golem Talisman
+    - +0 Effect: Enhances charged attacks by 25% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 30% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 35% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 40% but reduces effectiveness of evasion significantly.
+    
+- Mohgwyn Insignia
+    - +0 Effect: Enhances blood incantations by 15% but reduces maximum HP by 15%.
+    - +1 Effect: Enhances blood incantations by 20% but reduces maximum HP by 15%.
+    - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
+    - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
