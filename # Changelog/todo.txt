@@ -93,7 +93,7 @@
 2002 Presence of Madness
 2003 Presence of Blight
 
-# Rings
+# New Rings
 - Pale Moon Exultation
     - +0 Effect: Raises attack power by 15% when frostbite occurs in the vicinity.
     - +1 Effect: Raises attack power by 20% when frostbite occurs in the vicinity.
@@ -135,3 +135,18 @@
     - +1 Effect: Enhances blood incantations by 20% but reduces maximum HP by 15%.
     - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
     - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
+    
+# Bows
+- Allow for movement beyond walk whilst holding (via talisman?)
+- Add 'charge' mechanic where holding will boost damage upto a point (encourages 'sniper' like play)
+
+# Greatbows
+- Allow for movement beyond standing whilst holding (via talisman?)
+- Add 'charge' mechanic where holding will boost damage upto a point (encourages 'sniper' like play)
+
+# Crossbow
+- Quicker reload?
+
+# Ballista
+- Quicker reload?
+- Shorter recovery period

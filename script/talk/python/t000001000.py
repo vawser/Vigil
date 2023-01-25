@@ -977,6 +977,10 @@ def t000001000_x31():
         # Weather Shift
         AddTalkListData(81, 80101100, -1)
         
+        # TESTING ONLY
+        # Build Custom Loadout
+        # AddTalkListData(82, 80203000, -1)
+        
         assert t000001000_x52()
         
         # action:20000009:"Leave"
@@ -1040,6 +1044,10 @@ def t000001000_x31():
         # Weather
         elif GetTalkListEntryResult() == 81:
             assert t000001000_x81()
+        # Build Custom Loadout
+        elif GetTalkListEntryResult() == 82:
+            assert t000001000_x200()
+            continue
         elif GetTalkListEntryResult() == 41 and GetEventFlag(120) == 1 and GetEventFlag(11102790) == 1:
             if not GetEventFlag(2051) and not GetEventFlag(2052):
                 assert t000001000_x42()
@@ -2388,3 +2396,64 @@ def t000001000_x151(flag=_):
     SetEventFlag(flag, 1)
     
     return 0
+    
+
+# Debug
+# Custom Loadout
+def t000001000_x200():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # Weapons
+        AddTalkListData(1, 99999000, -1)
+        
+        # Spells
+        AddTalkListData(2, 99999002, -1)
+        
+        # Armor
+        AddTalkListData(3, 99999001, -1)
+        
+        # Talismans
+        AddTalkListData(4, 99999003, -1)
+        
+        # Ammunition
+        AddTalkListData(5, 99999004, -1)
+        
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Weapons
+        if GetTalkListEntryResult() == 1:
+            """State 3"""
+            OpenChampionsEquipmentShop(9100000, 9109999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Spells
+        elif GetTalkListEntryResult() == 2:
+            """State 6"""
+            OpenChampionsEquipmentShop(9120000, 9129999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Armor
+        elif GetTalkListEntryResult() == 3:
+            """State 5"""
+            OpenChampionsEquipmentShop(9110000, 9119999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Talismans
+        elif GetTalkListEntryResult() == 4:
+            """State 7"""
+            OpenChampionsEquipmentShop(9130000, 9139999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Ammunition
+        elif GetTalkListEntryResult() == 5:
+            """State 8"""
+            OpenChampionsEquipmentShop(9140000, 9149999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
+
