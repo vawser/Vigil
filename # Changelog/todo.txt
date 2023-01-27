@@ -120,6 +120,8 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-# Affinities
-Add new weapon localization for the affinities
+6170 Thumb Ring of Pharris
+6180 Vambrace of Trefin
+6190 Bracing Ring of Ergoth
 
+4110 Crucible Knot Talisman

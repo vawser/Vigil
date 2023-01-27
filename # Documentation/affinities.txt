@@ -33,7 +33,7 @@ Replace:
 
 # Description
 Find:
-<text id="([0-9]+1200)">(.*?)>
+<text id="([0-9]+)1200">(.*?)>
 
 Replace:
-<text id="
+<text id="\11200">\2>\n<text id="\11300">\2>\n<text id="\11400">\2>\n<text id="\11500">\2>

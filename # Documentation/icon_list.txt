@@ -11,6 +11,9 @@
 45008 Giant Leggings
 45009 Bloodsoaked Rune
 45010 Bloodsoaked Tome
+45011 Thumb Ring of Pharris
+45012 Vambrace of Trefin
+45013 Bracing Ring of Ergoth
 
 ...
 45273

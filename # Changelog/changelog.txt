@@ -15,6 +15,11 @@
 #-------------------------------------------------
 # Bosses
 #-------------------------------------------------
+# Earthbore Cave - Runebear
+- Now drops Bracing Ring of Ergoth instead of Spelldrake Talisman.
+
+# Village of the Albinaurics - Omenkiller
+- Now drops Vambrace of Trefin instead of Crucible Knot Talisman.
 
 #-------------------------------------------------
 # Enemies
@@ -27,6 +32,14 @@
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
+# Earthbore Cave
+- Added the Spelldrake Talisman to the treasure the Runebear guards (replaces a Trina's Lily).
+
+# Village of the Albinaurics
+- Added Crucible Knot Talisman to a treasure (replaces a Rune Arc).
+
+# Gelmir Hero's Grave
+- Added Thumb Ring of Pharris to a treasure (replaces 5 Root Resin).
 
 #-------------------------------------------------
 # Armor
@@ -60,6 +73,27 @@
 # Talismans
 #-------------------------------------------------
 - Fixed a bug that caused the Assassin's Crimson/Cerulean Dagger +1, +2 and +3 effects not to occur properly.
+
+- Thumb Ring of Pharris
+    - Weight: 1.0
+    - +0 Effect: Increases arrow shot count by 1, but reduces maximum HP by 20%.
+    - +1 Effect: Increases arrow shot count by 2, but reduces maximum HP by 20%.
+    - +2 Effect: Increases arrow shot count by 3, but reduces maximum HP by 20%.
+    - +3 Effect: Increases arrow shot count by 4, but reduces maximum HP by 20%.
+
+- Vambrace of Trefin
+    - Weight: 3.0
+    - +0 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 20%.
+    - +1 Effect: Increases great-arrow shot count by 2, but reduces maximum HP by 20%.
+    - +2 Effect: Increases great-arrow shot count by 3, but reduces maximum HP by 20%.
+    - +3 Effect: Increases great-arrow shot count by 4, but reduces maximum HP by 20%.
+    
+- Bracing Ring of Ergoth
+    - Weight: 1.0
+    - +0 Effect: Increases bolt shot count by 1, but reduces maximum HP by 20%.
+    - +1 Effect: Increases bolt shot count by 2, but reduces maximum HP by 20%.
+    - +2 Effect: Increases bolt shot count by 3, but reduces maximum HP by 20%.
+    - +3 Effect: Increases bolt shot count by 4, but reduces maximum HP by 20%.
 
 #-------------------------------------------------
 # Misc

@@ -58,3 +58,17 @@ F = Bestial
 
 # State Info
 290 Crucible Feather Talisman
+
+3000 Bow Bullet Repeat - 1
+3001 Bow Bullet Repeat - 2
+3002 Bow Bullet Repeat - 3
+3003
+3004
+3005
+3006 Greatbow Bullet Repeat - 1
+3007 Greatbow Bullet Repeat - 2
+3008 Greatbow Bullet Repeat - 3
+3009 Crossbow/Ballista Bullet Repeat - 1
+3010 Crossbow/Ballista Bullet Repeat - 2
+3011 Crossbow/Ballista Bullet Repeat - 3
+
