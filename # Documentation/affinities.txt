@@ -1,4 +1,7 @@
-﻿Soporific
+﻿#--------------
+# Changes
+#--------------
+Soporific
     Reinforce Type ID:                      1300
     Behavior SpEffect 1:                    105500
     SpEffectMessage ID [0]:                 6651
@@ -18,4 +21,19 @@ Blighted
     Special Attribute:                      10
     Special Attribute - Variation Value:    1
     
-    
+#--------------
+# Regex
+#--------------
+# Names
+Find:
+(.*)1200">(.*)Occult (.*)
+
+Replace:
+\11200">\2Occult \3\n\11300">\2Soporific \3\n\11400">\2Frenzied \3\n\11500">\2Blighted \3
+
+# Description
+Find:
+<text id="([0-9]+1200)">(.*?)>
+
+Replace:
+<text id="
