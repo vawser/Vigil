@@ -13,6 +13,40 @@ function DebugFunction()
     
 end
 
+function ApplyThrowEffects()
+    -- Applied on backstabs and ripostes.
+    
+    -- Assassin's Crimson Dagger +1
+    if env(GetSpEffectID, 350510) == TRUE then
+        act(AddSpEffect, 350512)
+    end
+    
+    -- Assassin's Crimson Dagger +2
+    if env(GetSpEffectID, 350520) == TRUE then
+        act(AddSpEffect, 350522)
+    end
+    
+    -- Assassin's Crimson Dagger +3
+    if env(GetSpEffectID, 350530) == TRUE then
+        act(AddSpEffect, 350532)
+    end
+    
+    -- Assassin's Cerulean Dagger +1
+    if env(GetSpEffectID, 350610) == TRUE then
+        act(AddSpEffect, 350612)
+    end
+    
+    -- Assassin's Cerulean Dagger +2
+    if env(GetSpEffectID, 350620) == TRUE then
+        act(AddSpEffect, 350622)
+    end
+    
+    -- Assassin's Cerulean Dagger +3
+    if env(GetSpEffectID, 350630) == TRUE then
+        act(AddSpEffect, 350632)
+    end
+end
+
 function TrackMultiJump()
     -- Wearing "Techniques of the Windwalker"
     if env(GetSpEffectID, 150999) == TRUE then
@@ -12818,6 +12852,9 @@ function Throw_Activate()
     SetVariable("ThrowHoldBlendWeight", 0)
     SetVariable("ThrowHolding", false)
     SetVariable("ThrowNoRegistTime", 0)
+
+    -- Vigil: Throw Additions
+    ApplyThrowEffects()
 end
 
 function Throw_Update()

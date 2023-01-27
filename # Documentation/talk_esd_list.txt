@@ -9,7 +9,7 @@ t000004000 Mysterious Shinobi
 t000004010 Master Jarwright
 t000004020 Duelist Lysander
 t000004030 Emissary of Mohgwyn
-t000004040
+t000004040 Apprentice Frasca
 t000004050
 t000004060
 t000004070

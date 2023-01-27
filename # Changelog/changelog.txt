@@ -1,7 +1,13 @@
 ﻿#-------------------------------------------------
 # Features
 #-------------------------------------------------
- 
+- Training System:
+    - Added Apprentice Frasca next to Master Jarwright.
+    - He lets the player:
+        - Switch Ashes of War and Spells (like sitting at a grace).
+        - Apply Damage to themslves 
+        - Apply Status Effects to themslves 
+    
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -29,7 +35,15 @@
 #-------------------------------------------------
 # Weapons
 #-------------------------------------------------
+- Added the following affinities:
+    - Soporific: adds Sleep aux
+    - Frenzied: adds Madness aux
+    - Blighted: adds Blight aux
 
+- Removed the affinity icons. 
+ - This is due to the limitations of graphical modding which mean new affinities can't have icons. 
+ - Removing them makes the menu look consistent and allows for more flexibility with a minor visual sacrifice.
+ 
 #-------------------------------------------------
 # Catalysts
 #-------------------------------------------------
@@ -45,6 +59,7 @@
 #-------------------------------------------------
 # Talismans
 #-------------------------------------------------
+- Fixed a bug that caused the Assassin's Crimson/Cerulean Dagger +1, +2 and +3 effects not to occur properly.
 
 #-------------------------------------------------
 # Misc

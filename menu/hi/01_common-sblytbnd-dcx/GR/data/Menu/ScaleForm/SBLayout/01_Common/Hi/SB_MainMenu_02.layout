@@ -12,6 +12,9 @@
 	<SubTexture name="MENU_FL_40148.png" x="1748" y="750" width="74" height="74" half="0"/>
 	<SubTexture name="MENU_FL_40150.png" x="1794" y="228" width="74" height="74" half="0"/>
 	<SubTexture name="MENU_FL_40151.png" x="1794" y="150" width="74" height="74" half="0"/>
+	<SubTexture name="MENU_FL_40152.png" x="1817" y="1325" width="74" height="74" half="0"/>
+	<SubTexture name="MENU_FL_40153.png" x="1816" y="1401" width="74" height="74" half="0"/>
+	<SubTexture name="MENU_FL_40154.png" x="1816" y="1475" width="74" height="74" half="0"/>
 	<SubTexture name="MENU_FL_40152_BigRunes.png" x="1392" y="0" width="142" height="146" half="0"/>
 	<SubTexture name="MENU_FL_40153_SoulForging.png" x="796" y="1448" width="142" height="146" half="0"/>
 	<SubTexture name="MENU_FL_40154_MagicStoneCopy.png" x="1596" y="1026" width="142" height="146" half="0"/>

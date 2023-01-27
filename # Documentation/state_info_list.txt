@@ -1,12 +1,4 @@
-﻿# State Info
-290 Crucible Feather Talisman
-
-2000 Presence of Frost
-2001 Presence of Sleep
-2002 Presence of Madness
-2003 Presence of Blight
-
-# Conditional Groups
+﻿# Conditional Groups
 1   Magic: Full Moon 
 2   Magic: Carian Sword
 3   Magic: Glintblade
@@ -64,4 +56,5 @@ D = Draconic
 E = Deific
 F = Bestial
 
-9302390
+# State Info
+290 Crucible Feather Talisman

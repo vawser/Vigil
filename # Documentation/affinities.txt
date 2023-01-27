@@ -1,0 +1,21 @@
+﻿Soporific
+    Reinforce Type ID:                      1300
+    Behavior SpEffect 1:                    105500
+    SpEffectMessage ID [0]:                 6651
+    Special Attribute:                      10
+    
+Frenzied
+    Reinforce Type ID:                      1400
+    Behavior SpEffect 1:                    109000
+    SpEffectMessage ID [0]:                 6701
+    Special Attribute:                      11
+    Special Attribute - Variation Value:    6
+    
+Blighted
+    Reinforce Type ID:                      1500
+    Behavior SpEffect 1:                    108000
+    SpEffectMessage ID [0]:                 6551
+    Special Attribute:                      10
+    Special Attribute - Variation Value:    1
+    
+    
