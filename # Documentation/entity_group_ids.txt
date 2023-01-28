@@ -1,0 +1,3 @@
+﻿400005000 Enemy
+400005010 Boss (included in Enemy too)
+

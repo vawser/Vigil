@@ -6687,6 +6687,10 @@ $Event(11000, Default, function() {
     InitializeEvent(77, 13000, 6180, 6181, 6182, 1047590870, 1047590881, 1047590872); // Vambrace of Trefin
     InitializeEvent(78, 13000, 6190, 6191, 6192, 1047590880, 1047590891, 1047590882); // Bracing Ring of Ergoth
     
+    //----------------------------
+    // Enemy Effects
+    //----------------------------
+    InitializeEvent(0, 14000, 0);
 });
 
 //----------------------------
@@ -8306,6 +8310,23 @@ $Event(13000, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     }
     
     WaitFixedTimeSeconds(2);
+    
+    RestartEvent();
+});
+
+
+//--------------------------------------
+// Enemy Effects
+//--------------------------------------
+// Apply global effects onto enemies if needed
+$Event(14000, Restart, function() {
+    // Enemies
+    //SetSpEffect(400005000, 7000060);
+    
+    // Bosses
+    //SetSpEffect(400005010, 7000060);
+    
+    WaitFixedTimeSeconds(60);
     
     RestartEvent();
 });

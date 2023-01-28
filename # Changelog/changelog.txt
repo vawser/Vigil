@@ -32,6 +32,8 @@
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
+- Reduced the price of Somberstones.
+
 # Earthbore Cave
 - Added the Spelldrake Talisman to the treasure the Runebear guards (replaces a Trina's Lily).
 

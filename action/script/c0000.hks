@@ -3033,8 +3033,6 @@ function ExecMagic(quick_type, blend_type, is_ride)
     end
     
     if env(IsMagicUseable, action_arm_menu, 0) == FALSE then
-        act(AddSpEffect, 151900)
-        
         act(DebugLogOutput, "Event_MagicInvalid_Cannot_Use_Magic")
         SetVariable("IndexMagicHand", magic_hand)
         
@@ -3719,6 +3717,7 @@ function GetHandChangeType(hand)
 end
 
 function ExecJump()
+    -- Vigil: removed env(Unknown700) == FALSE check in this if statement 
     if env(ActionRequest, ACTION_ARM_JUMP) == FALSE then
         return FALSE
     elseif env(GetStamina) <= 0 and env(Unknown700) == FALSE then
@@ -7483,10 +7482,11 @@ function Move_onUpdate()
         SetTurnSpeed(npc_turn_speed)
     end
     
+    -- Vigil: made the base multiplier easier to alter
     local base_speed = g_MoveMovementMultiplier
     local base_speed_percent = base_speed / 100
     
-    -- Movement Speed Boost
+    -- Vigil: Movement Speed Boost
     if env(GetSpEffectID, 151100) == TRUE then
         base_speed_percent = base_speed_percent * 1.2
     end
@@ -21042,7 +21042,7 @@ lastUsedMagicAnim = -1
 
 Event_MoveQuick = { "W_MoveQuick", MOVE_DEF0 }
 
--- Added
+-- Vigil: added
 ACTION_ARM_JUMP = ACTION_ARM_CHANGE_STYLE
 
 ------------------------

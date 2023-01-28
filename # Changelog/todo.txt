@@ -39,11 +39,6 @@
         - If Godrick is defeated and the dragon lives, then all the NPCs will be killed and the dragon will have moved to the village.
             - Add note that details how the player failed the NPCs from one of the NPCs to deepen the tragedy.
 
-# Castigations
-- Implement curse-like system, without rune gain modifiers.
-- Include magical restraints too.
-- Mainly for self-challenges, although allows for easier integration of side challenges.
-
 # Spell Ascension
 - Add spell ascension system, allowing for more spell variants without massive overhead, plus magic progression.
 
@@ -102,26 +97,13 @@
     - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
     - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
     
-# Bows
-- Allow for movement beyond walk whilst holding (via talisman?)
-- Add 'charge' mechanic where holding will boost damage upto a point (encourages 'sniper' like play)
-
-# Greatbows
-- Allow for movement beyond standing whilst holding (via talisman?)
-- Add 'charge' mechanic where holding will boost damage upto a point (encourages 'sniper' like play)
-
-# Crossbow
-- Quicker reload?
-
-# Ballista
-- Quicker reload?
-- Shorter recovery period
-
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-6170 Thumb Ring of Pharris
-6180 Vambrace of Trefin
-6190 Bracing Ring of Ergoth
-
-4110 Crucible Knot Talisman
+# Castigations
+- Implement curse-like system, without rune gain modifiers.
+- Include magical restraints too.
+- Mainly for self-challenges, although allows for easier integration of side challenges.
+- Tie to Emissary of Mohgwyn:
+    - Each Castigation gives +1 roll for a Bloodsoaked Rune
+    
