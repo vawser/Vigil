@@ -7059,6 +7059,12 @@ $Event(11018, Default, function() {
         AwardItemLot(4190);
     }
     
+    // Spectral Shift
+    if(EventFlag(1047610910))
+    {
+        AwardItemLot(4200);
+    }
+    
     WaitFixedTimeSeconds(5.0); // Internal cooldown
     
     RestartEvent();
@@ -8490,6 +8496,15 @@ $Event(14001, Restart, function() {
         ClearSpEffect(400005000, 9492090);
     }
     
+    // Spectral Shift
+    if(EventFlag(1047610910))
+    {
+        SetSpEffect(400005000, 9492100);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492100);
+    }
     
     WaitFixedTimeSeconds(2);
     

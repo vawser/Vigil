@@ -646,6 +646,12 @@ def t000004030_x102():
         # Thick Hides (selected)
         AddTalkListDataIf(GetEventFlag(1047610901) == 1, 203, 89100151, -1)
         
+        # Spectral Shift
+        AddTalkListDataIf(GetEventFlag(1047610910) == 0, 104, 89100110, -1)
+        
+        # Spectral Shift (selected)
+        AddTalkListDataIf(GetEventFlag(1047610910) == 1, 204, 89100160, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -684,6 +690,13 @@ def t000004030_x102():
         # Thick Hides (enabled)
         elif GetTalkListEntryResult() == 203:
             assert t000004030_x110(1047610901, 0, 89100301)
+        # Spectral Shift
+        elif GetTalkListEntryResult() == 104:
+            assert t000004030_x110(1047610910, 1, 89100210)
+            continue
+        # Spectral Shift (enabled)
+        elif GetTalkListEntryResult() == 204:
+            assert t000004030_x110(1047610910, 0, 89100310)
         else:
             return 0
             

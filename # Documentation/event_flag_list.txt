@@ -547,6 +547,9 @@
 1047610907 Bloodthirsty Maw
 1047610908 Slumbering Blow
 1047610909 Frenzying Swat
+1047610910 Spectral Shift
+
+
 
 #------------------------------------
 104762_0000 Misc

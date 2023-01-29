@@ -34,6 +34,10 @@
     - Enemies will regenerate 1% HP plus 25 HP every 2 seconds.
     - You gain an additional 1% Bloodsoaked Rune chance from enemy kills.
     
+  - Spectral Shift
+    - Enemies now become invisible for 8 seconds every 16 seconds.
+    - You gain an additional 1% Bloodsoaked Rune chance from enemy kills.
+    
  - Combat Castigations (only one can be active at any one time within this group)
   - Crippling Strikes
    - Enemy attacks that connect will cripple the evasive abilites of the player for 15 seconds.
