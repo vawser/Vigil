@@ -2,22 +2,11 @@
 # Bugs
 #-------------------------------------------------
 - Chapel of Anticaption blocked by fogwall on return after leaving tutorial area
-- Fix the HKS input bugs
 - Add Grass Hair Ornament icon
 
 #-------------------------------------------------
 # Ideas
 #-------------------------------------------------
-# Enemy Density
-- Mix up/add enemy encounters in the open world:
-    - Limgrave
-    - Liurnia
-    - Caelid
-    - Altus Plateau
-    - Mt. Gelmir
-    - Consecrated Snowfields
-    - Mountaintops of the Giants
-
 # Shinobi's Challenge
 - A platforming challenge that makes use of the multi-jump mechanics:
 
@@ -100,4 +89,5 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-
+# Castigations
+- Hostile Spirit Summons appear to attack player
