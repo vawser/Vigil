@@ -2,12 +2,59 @@
 # Features
 #-------------------------------------------------
 - Training System:
-    - Added Apprentice Frasca next to Master Jarwright.
-    - He lets the player:
-        - Switch Ashes of War and Spells (like sitting at a grace).
-        - Apply Damage to themslves 
-        - Apply Status Effects to themslves 
+ - Added Apprentice Frasca next to Master Jarwright.
+ - He lets the player:
+  - Switch Ashes of War and Spells (like sitting at a grace).
+  - Apply Damage to themslves 
+  - Apply Status Effects to themslves 
     
+- Castigations:
+ - The Emissary of Mohgwyn now allows the player to castigations in exchange for bonus chances to get Bloodsoaked Runes from enemy kills.
+ - Note that the bonus chances are separate rolls, i.e. if you have 4 Castigations active, you get 4 rolls at 0.5%, not 1 roll at 2%.
+ 
+ - Player Castigations
+  - Bloodthirsty Maw
+    - Rune absorption is reduced by 50%.
+    - You gain an additional 1% Bloodsoaked Rune chance from enemy kills.
+ 
+ - Enemy Castigations
+  - Wounded Fury: 
+   - Enemies deal 50% more damage while below 50% HP.
+   - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+   
+  - Thick Hides: 
+   - Enemies take 50% less damage while above 50% HP.
+   - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+   
+  - Stalwart Adversaries
+   - Enemies have 100% more HP.
+   - You gain an additional 1% Bloodsoaked Rune chance from enemy kills.
+   
+  - Regenerative Foes
+    - Enemies will regenerate 1% HP plus 25 HP every 2 seconds.
+    - You gain an additional 1% Bloodsoaked Rune chance from enemy kills.
+    
+ - Combat Castigations (only one can be active at any one time within this group)
+  - Crippling Strikes
+   - Enemy attacks that connect will cripple the evasive abilites of the player for 15 seconds.
+   - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+
+  - Fetid Gash
+    - Enemy attacks that connect will inflict Scarlet Rot.
+    - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+  
+  - Slumbering Blow
+    - Enemy attacks that connect will inflict Sleep.
+    - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+  
+  - Frenzying Swat
+    - Enemy attacks that connect will inflict Madness.
+    - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+    
+  - Blighted Touch
+    - Enemy attacks that connect will inflict Death Blight.
+    - You gain an additional 0.5% Bloodsoaked Rune chance from enemy kills.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

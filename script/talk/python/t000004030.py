@@ -537,15 +537,24 @@ def t000004030_x36():
     return 0
 
 #----------------------------------------------------
-# Bloodforge
+# Menu
 #----------------------------------------------------
 def t000004030_x100():
     while True:
         ClearTalkListData()
         c1_110()
         
-        # Bloodforge
+        # Forge with Blood
         AddTalkListData(1, 89100000, -1)
+        
+        # Player Castigations
+        AddTalkListData(2, 89100020, -1)
+        
+        # Enemy Castigations
+        AddTalkListData(3, 89100021, -1)
+        
+        # Combat Castigations
+        AddTalkListData(4, 89100022, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -554,10 +563,290 @@ def t000004030_x100():
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
+        # Bloodforge
         if GetTalkListEntryResult() == 1:
             OpenChampionsEquipmentShop(9010000, 9010999)
             assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Player Castigations
+        elif GetTalkListEntryResult() == 2:
+            assert t000004030_x101()
+            continue
+        # Enemy Castigations
+        elif GetTalkListEntryResult() == 3:
+            assert t000004030_x102()
+            continue
+        # Combat Castigations
+        elif GetTalkListEntryResult() == 4:
+            assert t000004030_x103()
+            continue
         else:
-            """State 6,8"""
+            return 0
+           
+#----------------------------------------------------
+# Castigations (Player)
+#----------------------------------------------------
+def t000004030_x101():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Bloodthirsty Maw
+        AddTalkListDataIf(GetEventFlag(1047610907) == 0, 100, 89100107, -1)
+        
+        # Bloodthirsty Maw (selected)
+        AddTalkListDataIf(GetEventFlag(1047610907) == 1, 200, 89100157, -1)
+
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+        # Bloodthirsty Maw
+        if GetTalkListEntryResult() == 100:
+            assert t000004030_x110(1047610907, 1, 89100207)
+            continue
+        # Bloodthirsty Maw (enabled)
+        elif GetTalkListEntryResult() == 200:
+            assert t000004030_x110(1047610907, 0, 89100307)
+            continue
+        else:
+            return 0
+     
+#----------------------------------------------------
+# Castigations (Enemy)
+#----------------------------------------------------
+def t000004030_x102():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Stalwart Adversaries
+        AddTalkListDataIf(GetEventFlag(1047610902) == 0, 100, 89100102, -1)
+        
+        # Stalwart Adversaries (selected)
+        AddTalkListDataIf(GetEventFlag(1047610902) == 1, 200, 89100152, -1)
+        
+        # Regenerative Foes
+        AddTalkListDataIf(GetEventFlag(1047610904) == 0, 101, 89100104, -1)
+        
+        # Regenerative Foes (selected)
+        AddTalkListDataIf(GetEventFlag(1047610904) == 1, 201, 89100154, -1)
+        
+        # Wounded Fury
+        AddTalkListDataIf(GetEventFlag(1047610900) == 0, 102, 89100100, -1)
+        
+        # Wounded Fury (selected)
+        AddTalkListDataIf(GetEventFlag(1047610900) == 1, 202, 89100150, -1)
+        
+        # Thick Hides
+        AddTalkListDataIf(GetEventFlag(1047610901) == 0, 103, 89100101, -1)
+        
+        # Thick Hides (selected)
+        AddTalkListDataIf(GetEventFlag(1047610901) == 1, 203, 89100151, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Stalwart Adversaries
+        if GetTalkListEntryResult() == 100:
+            assert t000004030_x110(1047610902, 1, 89100202)
+            continue
+        # Stalwart Adversaries (enabled)
+        elif GetTalkListEntryResult() == 200:
+            assert t000004030_x110(1047610902, 0, 89100302)
+            continue
+        # Regenerative Foes
+        elif GetTalkListEntryResult() == 101:
+            assert t000004030_x110(1047610904, 1, 89100204)
+            continue
+        # Regenerative Foes (enabled)
+        elif GetTalkListEntryResult() == 201:
+            assert t000004030_x110(1047610904, 0, 89100304)
+            continue
+        # Wounded Fury
+        elif GetTalkListEntryResult() == 102:
+            assert t000004030_x110(1047610900, 1, 89100200)
+            continue
+        # Wounded Fury (enabled)
+        elif GetTalkListEntryResult() == 202:
+            assert t000004030_x110(1047610900, 0, 89100300)
+            continue
+        # Thick Hides
+        elif GetTalkListEntryResult() == 103:
+            assert t000004030_x110(1047610901, 1, 89100201)
+            continue
+        # Thick Hides (enabled)
+        elif GetTalkListEntryResult() == 203:
+            assert t000004030_x110(1047610901, 0, 89100301)
+        else:
             return 0
             
+#----------------------------------------------------
+# Castigations (Combat)
+#----------------------------------------------------
+def t000004030_x103():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Crippling Strikes
+        AddTalkListDataIf(GetEventFlag(1047610903) == 0, 100, 89100103, -1)
+        
+        # Crippling Strikes (selected)
+        AddTalkListDataIf(GetEventFlag(1047610903) == 1, 200, 89100153, -1)
+        
+        # Fetid Gash
+        AddTalkListDataIf(GetEventFlag(1047610905) == 0, 101, 89100105, -1)
+        
+        # Fetid Gash (selected)
+        AddTalkListDataIf(GetEventFlag(1047610905) == 1, 201, 89100155, -1)
+        
+        # Slumbering Blow
+        AddTalkListDataIf(GetEventFlag(1047610908) == 0, 102, 89100108, -1)
+        
+        # Slumbering Blow (selected)
+        AddTalkListDataIf(GetEventFlag(1047610908) == 1, 202, 89100158, -1)
+        
+        # Frenzying Swat
+        AddTalkListDataIf(GetEventFlag(1047610909) == 0, 103, 89100109, -1)
+        
+        # Frenzying Swat (selected)
+        AddTalkListDataIf(GetEventFlag(1047610909) == 1, 203, 89100159, -1)
+        
+        # Blighted Touch
+        AddTalkListDataIf(GetEventFlag(1047610906) == 0, 104, 89100106, -1)
+        
+        # Blighted Touch (selected)
+        AddTalkListDataIf(GetEventFlag(1047610906) == 1, 204, 89100156, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Crippling Strikes
+        if GetTalkListEntryResult() == 100:
+            assert t000004030_x111(1047610903, 1, 89100203)
+            continue
+        # Crippling Strikes (enabled)
+        elif GetTalkListEntryResult() == 200:
+            assert t000004030_x111(1047610903, 0, 89100303)
+            continue
+        # Fetid Gash
+        elif GetTalkListEntryResult() == 101:
+            assert t000004030_x111(1047610905, 1, 89100205)
+            continue
+        # Fetid Gash (enabled)
+        elif GetTalkListEntryResult() == 201:
+            assert t000004030_x111(1047610905, 0, 89100305)
+            continue
+        # Slumbering Blow
+        elif GetTalkListEntryResult() == 102:
+            assert t000004030_x111(1047610908, 1, 89100208)
+            continue
+        # Slumbering Blow (enabled)
+        elif GetTalkListEntryResult() == 202:
+            assert t000004030_x111(1047610908, 0, 89100308)
+            continue
+        # Frenzying Swat
+        elif GetTalkListEntryResult() == 103:
+            assert t000004030_x111(1047610909, 1, 89100209)
+            continue
+        # Frenzying Swat (enabled)
+        elif GetTalkListEntryResult() == 203:
+            assert t000004030_x111(1047610909, 0, 89100309)
+            continue
+        # Blighted Touch
+        elif GetTalkListEntryResult() == 104:
+            assert t000004030_x111(1047610906, 1, 89100206)
+            continue
+        # Blighted Touch (enabled)
+        elif GetTalkListEntryResult() == 204:
+            assert t000004030_x111(1047610906, 0, 89100306)
+            continue
+        else:
+            return 0
+            
+#----------------------------------------------------
+# Utility
+#----------------------------------------------------
+# Castigation prompt
+def t000004030_x110(flag=_, value=_, text=_):
+    assert t000004030_x150(text)
+            
+    c1_110()
+
+    ClearTalkListData()
+    
+    # Yes
+    AddTalkListData(1, 80102101, -1)
+    
+    # No
+    AddTalkListData(2, 80102102, -1)
+    
+    OpenConversationChoicesMenu(0)
+    
+    assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+    # Yes
+    if GetTalkListEntryResult() == 1:
+        SetEventFlag(flag, value)
+        
+        return 0
+    # Cancel
+    elif GetTalkListEntryResult() == 2:
+        return 1
+    else:
+        return 2
+        
+# Castigation prompt (combat)
+def t000004030_x111(flag=_, value=_, text=_):
+    assert t000004030_x150(text)
+            
+    c1_110()
+
+    ClearTalkListData()
+    
+    # Yes
+    AddTalkListData(1, 80102101, -1)
+    
+    # No
+    AddTalkListData(2, 80102102, -1)
+    
+    OpenConversationChoicesMenu(0)
+    
+    assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+    # Yes
+    if GetTalkListEntryResult() == 1:
+        SetEventFlag(1047610903, 0)
+        SetEventFlag(1047610905, 0)
+        SetEventFlag(1047610906, 0)
+        SetEventFlag(1047610908, 0)
+        SetEventFlag(1047610909, 0)
+        
+        SetEventFlag(flag, value)
+        
+        return 0
+    # Cancel
+    elif GetTalkListEntryResult() == 2:
+        return 1
+    else:
+        return 2
+        
+# Description Prompt
+def t000004030_x150(action1=_):
+    """State 0,1"""
+    OpenGenericDialog(8, action1, 1, 0, 1)
+    assert not CheckSpecificPersonGenericDialogIsOpen(0)
+    """State 2"""
+    return 0
+    

@@ -536,6 +536,18 @@
 1047610894 Thrust Absorption: +80%
 1047610895 Thrust Absorption: +100%
 
+# Castigations
+1047610900 Wounded Fury
+1047610901 Thick Hides
+1047610902 Stalwart Adversaries
+1047610903 Crippling Strikes
+1047610904 Regenerative Foes
+1047610905 Fetid Gash
+1047610906 Blighted Touch
+1047610907 Bloodthirsty Maw
+1047610908 Slumbering Blow
+1047610909 Frenzying Swat
+
 #------------------------------------
 104762_0000 Misc
 #------------------------------------

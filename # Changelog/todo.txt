@@ -100,10 +100,3 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-# Castigations
-- Implement curse-like system, without rune gain modifiers.
-- Include magical restraints too.
-- Mainly for self-challenges, although allows for easier integration of side challenges.
-- Tie to Emissary of Mohgwyn:
-    - Each Castigation gives +1 roll for a Bloodsoaked Rune
-    

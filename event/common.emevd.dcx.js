@@ -6688,9 +6688,10 @@ $Event(11000, Default, function() {
     InitializeEvent(78, 13000, 6190, 6191, 6192, 1047590880, 1047590891, 1047590882); // Bracing Ring of Ergoth
     
     //----------------------------
-    // Enemy Effects
+    // Castigations
     //----------------------------
-    InitializeEvent(0, 14000, 0);
+    InitializeEvent(0, 14000, 0); // Player Effects
+    InitializeEvent(0, 14001, 0); // Enemy Effects
 });
 
 //----------------------------
@@ -6992,6 +6993,70 @@ $Event(11018, Default, function() {
     )
     {
         AwardItemLot(4020);
+    }
+    
+    //-----
+    // Castigations
+    //-----
+    
+    // Wounded Fury
+    if(EventFlag(1047610900))
+    {
+        AwardItemLot(4100);
+    }
+    
+    // Thick Hides
+    if(EventFlag(1047610901))
+    {
+        AwardItemLot(4110);
+    }
+    
+    // Stalwart Adversaries
+    if(EventFlag(1047610902))
+    {
+        AwardItemLot(4120);
+    }
+    
+    // Crippling Strikes
+    if(EventFlag(1047610903))
+    {
+        AwardItemLot(4130);
+    }
+    
+    // Regenerative Foes
+    if(EventFlag(1047610904))
+    {
+        AwardItemLot(4140);
+    }
+    
+    // Fetid Gash
+    if(EventFlag(1047610905))
+    {
+        AwardItemLot(4150);
+    }
+    
+    // Blighted Touch
+    if(EventFlag(1047610906))
+    {
+        AwardItemLot(4160);
+    }
+    
+    // Bloodthirsty Maw
+    if(EventFlag(1047610907))
+    {
+        AwardItemLot(4170);
+    }
+    
+    // Slumbering Blow
+    if(EventFlag(1047610908))
+    {
+        AwardItemLot(4180);
+    }
+    
+    // Frenzying Swat
+    if(EventFlag(1047610909))
+    {
+        AwardItemLot(4190);
     }
     
     WaitFixedTimeSeconds(5.0); // Internal cooldown
@@ -8316,17 +8381,117 @@ $Event(13000, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
 
 
 //--------------------------------------
-// Enemy Effects
+// Castigations
 //--------------------------------------
-// Apply global effects onto enemies if needed
+// Player
 $Event(14000, Restart, function() {
-    // Enemies
-    //SetSpEffect(400005000, 7000060);
+    // Bloodthirsty Maw
+    if(EventFlag(1047610907))
+    {
+        SetSpEffect(10000, 9492070);
+    }
+    else
+    {
+        ClearSpEffect(10000, 9492070);
+    }
+});
+
+// Enemies
+// Enemy: 400005000
+// Boss: 400005010
+$Event(14001, Restart, function() {
+    // Wounded Fury
+    if(EventFlag(1047610900))
+    {
+        SetSpEffect(400005000, 9492000);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492000);
+    }
     
-    // Bosses
-    //SetSpEffect(400005010, 7000060);
+    // Thick Hides
+    if(EventFlag(1047610901))
+    {
+        SetSpEffect(400005000, 9492010);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492010);
+    }
     
-    WaitFixedTimeSeconds(60);
+    // Stalwart Adversaries
+    if(EventFlag(1047610902))
+    {
+        SetSpEffect(400005000, 9492020);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492020);
+    }
+    
+    // Crippling Strikes
+    if(EventFlag(1047610903))
+    {
+        SetSpEffect(400005000, 9492030);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492030);
+    }
+    
+    // Regenerative Foes
+    if(EventFlag(1047610904))
+    {
+        SetSpEffect(400005000, 9492040);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492040);
+    }
+    
+    // Fetid Gash
+    if(EventFlag(1047610905))
+    {
+        SetSpEffect(400005000, 9492050);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492050);
+    }
+    
+    // Blighted Touch
+    if(EventFlag(1047610906))
+    {
+        SetSpEffect(400005000, 9492060);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492060);
+    }
+    
+    // Slumbering Blow
+    if(EventFlag(1047610908))
+    {
+        SetSpEffect(400005000, 9492080);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492080);
+    }
+    
+    // Frenzying Swat
+    if(EventFlag(1047610909))
+    {
+        SetSpEffect(400005000, 9492090);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9492090);
+    }
+    
+    
+    WaitFixedTimeSeconds(2);
     
     RestartEvent();
 });

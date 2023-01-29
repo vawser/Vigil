@@ -502,6 +502,12 @@ function SetWeightIndex()
     elseif env(GetSpEffectID, 4100) == TRUE and weight ~= WEIGHT_OVERWEIGHT then
         SetVariable("MoveWeightIndex", MOVE_WEIGHT_HEAVY)
     end
+
+    -- Vigil: Crippling Strikes
+    if env(GetSpEffectID, 9492031) == TRUE then
+        SetVariable("MoveWeightIndex", MOVE_WEIGHT_HEAVY)
+        SetVariable("EvasionWeightIndex", EVASION_WEIGHT_INDEX_OVERWEIGHT)
+    end
     
     return 
 end
