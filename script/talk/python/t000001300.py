@@ -2139,8 +2139,11 @@ def t000001300_x114():
         """State 1"""
         ClearTalkListData()
         
-        # Radagon and the Elden Beast
-        AddTalkListData(1, 80012400, -1)
+        # Radagon of the Golden Order
+        AddTalkListData(2, 80012400, -1)
+        
+        # Elden Beast
+        AddTalkListData(1, 80012401, -1)
         
         # Return
         AddTalkListData(99, 80000001, -1)
@@ -2150,9 +2153,12 @@ def t000001300_x114():
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
-        # Radagon and the Elden Beast
+        # Elden Beast
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x130(19000800, 80022400)
+            assert t000001300_x130(19000800, 71901, 80022400)
+        # Radagon of the Golden Order
+        elif GetTalkListEntryResult() == 2:
+            assert t000001300_x130(19000850, 71900, 80022400)
         else:
             return 0
 
@@ -2468,8 +2474,8 @@ def t000001300_x125(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, flag6=_, message
         else:
             return 0
             
-# Boss Menu - Elden Beast/Radagon
-def t000001300_x130(flag=_, message_id=_):
+# Boss Menu - Radagon/Elden Beast
+def t000001300_x130(flag=_, bonfire_flag=_, message_id=_):
     """State 0,10"""
     assert GetCurrentStateElapsedTime() > 0.1
 
@@ -2509,18 +2515,8 @@ def t000001300_x130(flag=_, message_id=_):
                     PlayerEquipmentQuantityChange(3, 1760, -1)
                         
                     SetEventFlag(flag, 0)
-                    SetEventFlag(19000804, 0)
-                    SetEventFlag(19001100, 0)
-                    SetEventFlag(19000100, 0)
-                    SetEventFlag(19002100, 0)
-                    SetEventFlag(119, 0)
-                    SetEventFlag(120, 0)
-                    SetEventFlag(121, 0)
-                    SetEventFlag(71900, 0)
-                    SetEventFlag(6010, 0)
+                    SetEventFlag(bonfire_flag, 0)
                     SetEventFlag(9123, 0)
-                    SetEventFlag(9021, 0)
-                    SetEventFlag(61123, 0)
                     
                 elif call.Done():
                     continue

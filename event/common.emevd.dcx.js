@@ -6542,7 +6542,7 @@ $Event(11000, Default, function() {
     // Kill Tracker: Bloodsoaked Rune
     InitializeEvent(0, 11018, 0);
     
-    // Screenshot Tool
+    // Dev Tool
     InitializeEvent(0, 11021, 0);
     
     //----------------------
@@ -7090,32 +7090,22 @@ $Event(11020, Default, function(X0_4, X4_4) {
 });
 
 //-------------------
-// Developer Tool: Toggle
+// Dev Tool: Toggle
 //-------------------
 $Event(11021, Default, function() {
-    if(EventFlag(1047610014))
-    {
-        ChangeCamera(2031, 2031);
-        DisableAsset(34141982);
-        SetSpEffect(10000, 7000051);
-    }
-    else
-    {
-        ChangeCamera(-1, -1);
-        EnableAsset(34141982);
-    }
-    
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
-    if(EventFlag(1047610014))
-    {
-        SetEventFlagID(1047610014, OFF);
-    }
-    else
-    {
-        SetEventFlagID(1047610014, ON);
-        WarpPlayer(34, 14, 0, 0, 34140982, -1);
-    }
+    // Screenshot Zone
+    //SetEventFlagID(1047610014, ON);
+    //WarpPlayer(34, 14, 0, 0, 34140982, -1);
+        
+    // Radagon
+    //SetEventFlagID(19000850, OFF);
+    //SetEventFlagID(71900, OFF);
+    
+    // Elden Beast
+    SetEventFlagID(19000800, OFF);
+    SetEventFlagID(71901, OFF);
     
     RestartEvent();
 });

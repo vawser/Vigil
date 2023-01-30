@@ -46,10 +46,6 @@
     - Poise
     - Jump
 
-# Bosses
-- Split Radagon and Elden Beast into 2 fights
-- Split Beast Clergyman and Maliketh into 2 fights
-
 # Friendly Settlements
 - Add in friendly settlements with NPCs and simple quests to give the player something to anchor their travel around:
     - Limgrave 
@@ -67,10 +63,7 @@
         - Player can kill the dragon (spawn it in m60_41_33), if so then the other NPCs will appear in the village after Godrick is defeated
         - If Godrick is defeated and the dragon lives, then all the NPCs will be killed and the dragon will have moved to the village.
             - Add note that details how the player failed the NPCs from one of the NPCs to deepen the tragedy.
-
-#-------------------------------------------------
-# WIP
-#-------------------------------------------------
+            
 # Talismans
 - Berserker Insignia
     - +0 Effect: Reduces weapon stamina consumption by 20% for 6 seconds upon taking damage.
@@ -90,5 +83,9 @@
     - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
     - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
     
-# Castigations
-- Hostile Spirit Summons appear to attack player
+#-------------------------------------------------
+# WIP
+#-------------------------------------------------
+# Bosses
+- Split Beast Clergyman and Maliketh into 2 fights
+

@@ -5521,6 +5521,9 @@ $Event(90005797, Restart, function(X0_4, X4_4, X8_1, X12_4, X16_4) {
     IssueEndOfPseudoMultiplayerNotification(true);
 });
 
+//--------------------------------------------------
+// Boss Setup
+//--------------------------------------------------
 $Event(9005800, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4) {
     if (!EventFlag(X0_4)) {
         WaitFixedTimeFrames(1);
@@ -5580,6 +5583,9 @@ L10:
     RestartEvent();
 });
 
+//--------------------------------------------------
+// Fog-gate Passthrough Setup
+//--------------------------------------------------
 $Event(9005801, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     DisableNetworkSync();
     EndIf(EventFlag(X0_4));
@@ -5597,6 +5603,9 @@ $Event(9005801, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     RestartEvent();
 });
 
+//--------------------------------------------------
+// Grace Unlock after Boss Defeat
+//--------------------------------------------------
 $Event(9005810, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4) {
     if (!EventFlag(X0_4)) {
         DisableCharacter(X8_4);
@@ -5612,6 +5621,9 @@ L0:
     RegisterBonfire(X4_4, X12_4, 5, 180, 0, X16_4);
 });
 
+//--------------------------------------------------
+// Fog-gate Setup
+//--------------------------------------------------
 $Event(9005811, Restart, function(X0_4, X4_4, X8_4, X12_4) {
     DisableNetworkSync();
     DisableAsset(X4_4);
@@ -5768,6 +5780,9 @@ L0:
     RestartEvent();
 });
 
+//--------------------------------------------------
+// Boss BGM
+//--------------------------------------------------
 $Event(9005822, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4) {
     DisableNetworkSync();
     if (EventFlag(X0_4)) {

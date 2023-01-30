@@ -336,6 +336,7 @@
 1047610012 Flasks given
 1047610013 Tarnished's Wizened Finger - Removal Script triggered
 1047610014 Screenshot Tool toggle
+1047610015 Elden Beast Warp
 
 1047610020 Starting Location completed
 1047610021 Journey Modifiers completed
@@ -1008,6 +1009,9 @@ Vanilla
 #------------------------------------
 [UV] means unverified
 
+21 Ending: Age of Stars
+22 Ending: Lord of the Frenzied Flame
+
 # Great Rune
 171 Godrick's Great Rune
 172 Radahn's Great Rune
@@ -1034,7 +1038,7 @@ Vanilla
 117
 118
 119
-120
+120 Finished Game
 121
 122
 123
@@ -1063,6 +1067,8 @@ Vanilla
 4680 
 4681 Melina Interaction: Introduction Spiel
 4698
+
+6010 
 
 10000851 Trigger Roundtable Hold interaction with Melina
 
@@ -1681,3 +1687,192 @@ Vanilla
 30903 Bloodboil Aromatic - Perfumer's Cookbook [2]
 30904 Poison Spraymist - Perfumer's Cookbook [2]
 30905 Acid Spraymist - Perfumer's Cookbook [4]
+
+#------------------------------------
+# Ending Flags
+#------------------------------------
+9400 Ending A-1 (Age of Fracture)
+9401 Ending A-2 (Blessing of Despair)
+9402 Ending A-3 (Age of Duskborn)
+9403 Ending A-4 (Age of Order)
+
+9404 Ending B-1 (Age of Stars)
+9405 Ending B-2 (Age of Stars)
+
+9406 Ending C-1 (Lord of the Frenzied Flame)
+9407 Ending C-2 (Lord of the Frenzied Flame)
+
+#------------------------------------
+# Boss Defeat Flags
+#------------------------------------
+10000800 Godrick the Grafted
+10000850 Margit the Fell Omen
+10010800 Grafted Scion
+11000800 Morgott- the Omen King
+11000850 Godfrey- First Elden Lord
+11050800 Hoarah Loux
+11050850 Sir Gideon Ofnir
+12010800 Dragonkin Soldier of Nokstella
+12010850 Dragonkin Soldier (Lake of Rot)
+12020800 Valiant Gargoyles
+12020830 Dragonkin Soldier of Nokron
+12020850 Mimic Tear
+12030390 Crucible Knight
+12030800 Fia's Champion
+12030850 Lichdragon Fortissax
+12040800 Astel Naturalborn of the Void
+12050800 Mohg Lord of Blood
+12080800 Ancestor Spirit
+12090800 Regal Ancestor Spirit
+13000800 Maliketh- the Black Blade
+13000830 Dragonlord Placidusax
+13000850 Godskin Duo
+14000800 Rennala Queen of the Full Moon
+14000850 Red Wolf of Radagon
+15000800 Malenia Blade of Miquella
+15000850 Loretta Knight of the Haligtree
+16000800 Rykard Lord of Blasphemy
+16000850 Godskin Noble
+16000860 Abductor Virgins
+18000800 Ulcerated Tree Spirit
+18000850 Soldier of Godrick
+19000800 Elden Beast
+19000850 Radagon of the Golden Order
+35000800 Mohg The Omen
+35000850 Esgar Priest of Blood
+39200800 Magma Wyrm Makar
+30000800 Cemetery Shade
+30010800 Erdtree Burial Watchdog
+30020800 Erdtree Burial Watchdog
+30110800 Black Knife Assassin
+30040800 Grave Warden Duelist
+30050800 Cemetery Shade
+30050850 Black Knife Assassin
+30030800 Spirit-Caller Snail
+30060800 Erdtree Burial Watchdog
+30080800 Ancient Hero of Zamor
+30090800 Red Wolf of the Champion
+30100800 Crucible Knight Ordovis
+30100801 Crucible Knight
+30120800 Perfumer Tricia
+30120801 Misbegotten Warrior
+30070800 Erdtree Burial Watchdog
+30130800 Grave Warden Duelist
+30140800 Erdtree Burial Watchdog
+30150800 Cemetery Shade
+30160800 Putrid Tree Spirit
+30170800 Ancient Hero of Zamor
+30180800 Ulcerated Tree Sprit
+30190800 Putrid Grave Warden Duelist
+30200800 Stray Mimic Tear
+31000800 Patches
+31010800 Runebear
+31020800 Miranda the Blighted Bloom
+31030800 Beastman of Farum Azula
+31150800 Demi-Human Chief
+31170800 Guardian Golem
+31040800 Cleanrot Knight
+31050800 Bloodhound Knight
+31060800 Crystalians
+31070800 Kindred of Rot
+31090800 Demi-Human Queen Margot
+31180800 Omenkiller
+31190800 Black Knife Assassin
+31190850 Necromancer Garris
+31210800 Frenzied Duelist
+31100800 Beastman of Farum Azula
+31200800 Cleanrot Knight
+31110800 Crystalians
+31120800 Misbegotten Crusader
+31220800 Spirit-Caller Snail
+32000800 Scaly Misbegotten
+32010800 Stonedigger Troll
+32020800 Crystalian (Ringblade)
+32040800 Stonedigger Troll
+34120800 Onyx Lord
+32050800 Crystalian (Ringblade)
+32050801 Crystalian (Spear)
+32070800 Magma Wyrm
+32080800 Fallingstar Beast
+32110800 Astel- Stars of Darkness
+34130800 Godskin Apostle
+34140850 Fell Twins
+1044360800 Mad Pumpkin Head
+1043370340 Night's Cavalry
+1042380800 Death Rite Bird
+1042380850 Ball-Bearing Hunter
+1042330800 Ancient Hero of Zamor
+1044350800 Bloodhound Knight Darriwil
+1042370800 Crucible Knight
+1043330800 Erdtree Avatar
+1044320342 Night's Cavalry
+1044320340 Death Rite Bird
+1043300800 Leonine Misbegotten
+1042360800 Tree Sentinel
+1043360800 Flying Dragon Agheel
+1045390800 Tibia Mariner
+1034480800 Royal Revenant
+1038410800 Adan- Thief of Fire
+1033450800 Bols- Carian Knight
+1036500800 Onyx Lord
+1033420800 Alecto- Black Knife Ringleader
+1033430800 Erdtree Avatar
+1038480800 Erdtree Avatar
+1035500800 Royal Knight Loretta
+1037460800 Ball-Bearing Hunter
+1039430340 Night's Cavalry
+1036480340 Night's Cavalry
+1037420340 Death Rite Bird
+1036450340 Death Rite Bird
+1034450800 Glintstone Dragon Smarag
+1034500800 Glintstone Dragon Adula
+1034420800 Glintstone Dragon Adula - Moonfolk Ruins 
+1035420800 Omenkiller
+1039440800 Tibia Mariner
+1037510800 Ancient Dragon Lansseax - Spot 1
+1041520800 Ancient Dragon Lansseax - Spot 2
+1038510800 Demi-Human Queen
+1041500800 Fallingstar Beast
+1040530800 Sanguine Noble 
+1041510800 Tree Sentinel
+1042550800 Godskin Apostle
+1040520800 Black Knife Assassin
+1045520800 Draconic Tree Sentinel  
+1039500800 Godefroy the Grafted
+1041530800 Wormface
+1039510800 Night's Cavalry
+1044530800 Death Rite Bird
+1043530800 Ball-Bearing Hunter
+1037530800 Demi-Human Queen
+1035530800 Magma Wyrm
+1036540800 Full-Grown Fallingstar Beast
+1039540800 Elemer of the Briar
+1037540810 Ulcerated Tree Spirit
+1038520340 Tibia Mariner
+1047400800 Putrid Avatar
+1048370800 Decaying Ekzykes
+1048400800 Mad Pumpkin Head
+1049370800 Night's Cavalry
+1049370850 Death Rite Bird
+1049380800 Commander O'Neil
+1051360800 Crucible Knight
+1052380800 Starscourge Radahn
+1049390800 Nox Priest and Swordstress
+1048410800 Ball-Bearing Hunter
+1049390850 Battlemage Hugues
+1051400800 Putrid Avatar
+1052410800 Flying Dragon Greyll
+1052410850 Night's Cavalry
+1051430800 Black Blade Kindred
+1048510800 Night's Cavalry
+1049520800 Black Blade Kindred
+1054560800 Borealis the Freezing Fog
+1053560800 Roundtable Knight Vyke  
+1052520800 Fire Giant
+1052560800 Erdtree Avatar
+1050570800 Death Rite Bird  
+1050570850 Putrid Avatar
+1051570800 Commander Niall
+1050560800 Great Wyrm Theodorix
+1248550800 Night's Cavalry
+1048570800 Death Rite Bird   

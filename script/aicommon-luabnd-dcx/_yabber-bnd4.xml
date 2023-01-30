@@ -826,6 +826,42 @@
       <root>N:\</root>
       <path>GR\data\INTERROOT_win64\script\ai\out\bin\000101_platoon.lua</path>
     </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2914</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005000_platoon.lua</path>
+    </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2915</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005001_platoon.lua</path>
+    </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2916</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005002_platoon.lua</path>
+    </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2917</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005003_platoon.lua</path>
+    </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2918</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005004_platoon.lua</path>
+    </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2919</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005005_platoon.lua</path>
+    </file>
     
     <file>
       <flags>0x40</flags>
