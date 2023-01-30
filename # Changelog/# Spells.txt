@@ -1,0 +1,8 @@
+﻿#----------------------------------------
+# Overview
+#----------------------------------------
+- Blood Shard:
+ - School: Blood
+ - FTH Requirement: 14
+ - ARC Requirement: 17
+ - Found in the Weeping Penisula.

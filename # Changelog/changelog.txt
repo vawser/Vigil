@@ -47,7 +47,10 @@
 #-------------------------------------------------
 # Spells
 #-------------------------------------------------
-
+- Added Blood Shard:
+ - Acts similar to Ambush Shard, but it is Blood aligned and deals Fire damage.
+ - Found in the Weeping Penisula.
+ 
 #-------------------------------------------------
 # Great Runes
 #-------------------------------------------------

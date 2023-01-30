@@ -18,6 +18,19 @@
 45015 Signet of Fury
 45016 Forgotten Pendant
 45017 Prisoner's Chain
+45018 Blood Shard
+45019
+45020
+45021
+45022
+45023
+45024
+45025
+45026
+45027
+45028
+45029
+45030
 
 ...
 45273
