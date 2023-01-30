@@ -509,6 +509,12 @@ function SetWeightIndex()
         SetVariable("EvasionWeightIndex", EVASION_WEIGHT_INDEX_OVERWEIGHT)
     end
     
+    -- Vigil: Forgotten Pendant
+    if env(GetSpEffectID, 362100) == TRUE or env(GetSpEffectID, 362101) == TRUE or env(GetSpEffectID, 362102) == TRUE or env(GetSpEffectID, 362103) == TRUE then
+        SetVariable("MoveWeightIndex", MOVE_WEIGHT_HEAVY)
+        SetVariable("EvasionWeightIndex", EVASION_WEIGHT_INDEX_HEAVY)
+    end
+    
     return 
 end
 
@@ -4693,8 +4699,19 @@ function ExecDamage(is_parry, is_attackwhileguard)
     -- Vigil: Is Hit
     if is_damaged == TRUE then
         act(AddSpEffect, 150001) 
+        
+        -- Vigil: Signet of Fury
+        if env(GetSpEffectID, 362000) == TRUE then
+           act(AddSpEffect, 362010)
+        elseif env(GetSpEffectID, 362001) == TRUE then
+           act(AddSpEffect, 362011)
+        elseif env(GetSpEffectID, 362002) == TRUE then
+           act(AddSpEffect, 362012)
+        elseif env(GetSpEffectID, 362003) == TRUE then
+           act(AddSpEffect, 362013)
+        end
     end
-            
+    
     if env(Unknown362, 32) == TRUE then
         act(SetDamageAnimType, DAMAGE_FLAG_SMALL)
         ResetRequest()
@@ -7495,6 +7512,17 @@ function Move_onUpdate()
     -- Vigil: Movement Speed Boost
     if env(GetSpEffectID, 151100) == TRUE then
         base_speed_percent = base_speed_percent * 1.2
+    end
+    
+    -- Vigil: Prisoner's Chain
+    if env(GetSpEffectID, 362300) == TRUE then
+       base_speed_percent = base_speed_percent * 1.1
+    elseif env(GetSpEffectID, 362301) == TRUE then
+       base_speed_percent = base_speed_percent * 1.15
+    elseif env(GetSpEffectID, 362302) == TRUE then
+       base_speed_percent = base_speed_percent * 1.2
+    elseif env(GetSpEffectID, 362303) == TRUE then
+       base_speed_percent = base_speed_percent * 1.25
     end
     
     if hkbGetVariable("MoveDirection") == 3 or 2 == hkbGetVariable("MoveDirection") then

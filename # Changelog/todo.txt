@@ -40,12 +40,6 @@
 - Add more types.
 - Add method to allow multiple.
 
-# Torrent Customisation
-- Add the ability to improve Torrents attributes:
-    - HP
-    - Poise
-    - Jump
-
 # Friendly Settlements
 - Add in friendly settlements with NPCs and simple quests to give the player something to anchor their travel around:
     - Limgrave 
@@ -64,28 +58,26 @@
         - If Godrick is defeated and the dragon lives, then all the NPCs will be killed and the dragon will have moved to the village.
             - Add note that details how the player failed the NPCs from one of the NPCs to deepen the tragedy.
             
-# Talismans
-- Berserker Insignia
-    - +0 Effect: Reduces weapon stamina consumption by 20% for 6 seconds upon taking damage.
-    - +1 Effect: Reduces weapon stamina consumption by 40% for 6 seconds upon taking damage.
-    - +2 Effect: Reduces weapon stamina consumption by 60% for 6 seconds upon taking damage.
-    - +3 Effect: Reduces weapon stamina consumption by 80% for 6 seconds upon taking damage.
-    
-- Golem Talisman
-    - +0 Effect: Enhances charged attacks by 25% but reduces effectiveness of evasion significantly.
-    - +0 Effect: Enhances charged attacks by 30% but reduces effectiveness of evasion significantly.
-    - +0 Effect: Enhances charged attacks by 35% but reduces effectiveness of evasion significantly.
-    - +0 Effect: Enhances charged attacks by 40% but reduces effectiveness of evasion significantly.
-    
-- Mohgwyn Insignia
-    - +0 Effect: Enhances blood incantations by 15% but reduces maximum HP by 15%.
-    - +1 Effect: Enhances blood incantations by 20% but reduces maximum HP by 15%.
-    - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
-    - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
-    
+# Bell Items
+- Clean-up the Smithing Stone bell items, removing the pointless ones.
+            
+# Speedy Boi
+- Add a random speedy hollow enemy like the one in DS2. Should drop movement speed ring.
+
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
+# Torrent Customisation
+- Add the ability to improve Torrents attributes:
+    - HP
+    - Poise
+    - Multi-Jump
+    
+    - Damaging Blast after Spiritspring jump (Stomp the Elden Beast)
+    - Damaging Ram after Dashing
+    - Emit Pools behind (Scarlet Rot, etc)
+
+
 # Bosses
 - Split Beast Clergyman and Maliketh into 2 fights
 

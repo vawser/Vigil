@@ -6891,3 +6891,21 @@ $Event(9005997, Default, function(X0_4, X4_4) {
 $Event(9005998, Default, function(X0_4, X4_4) {
     ForceAnimationPlayback(X0_4, X4_4, false, false, false);
 });
+
+// Vigil - Itemlot on Kill
+$Event(90006000, Default, function(X0_4, X4_4) {
+    EndIf(!PlayerIsInOwnWorld());
+    
+    EndIf(EventFlag(X0_4));
+    WaitFor(CharacterDead(X0_4));
+    SetEventFlagID(X0_4, ON);
+    
+    WaitFixedTimeSeconds(2.0);
+    
+    if (PlayerIsInOwnWorld()) {
+        AwardItemsIncludingClients(X4_4);
+    }
+    
+    EndEvent();
+});
+

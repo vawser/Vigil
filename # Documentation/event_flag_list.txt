@@ -4,8 +4,7 @@
 #------------------------------------
 104759_0000 Systems
 #------------------------------------
-# Quests
-1047590000
+1047590000 
 
 # Talismans
 1047590100 Crimson Amber Medallion
@@ -316,10 +315,22 @@
 1047590881 Bracing Ring of Ergoth +1
 1047590882 Bracing Ring of Ergoth +2
 
-1047590890 
-1047590900 
-1047590910 
-1047590920 
+1047590890 Prisoner's Chain
+1047590891 Prisoner's Chain +1
+1047590892 Prisoner's Chain +2
+
+1047590900 Signet of Fury
+1047590901 Signet of Fury +1
+1047590902 Signet of Fury +2
+
+1047590910 Forgotten Pendant
+1047590911 Forgotten Pendant +1
+1047590912 Forgotten Pendant +2
+
+1047590920 Blood Conduit
+1047590921 Blood Conduit +1
+1047590922 Blood Conduit +2
+
 1047590930 
 1047590940 
 1047590950

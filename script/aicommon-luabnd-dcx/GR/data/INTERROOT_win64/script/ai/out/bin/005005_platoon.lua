@@ -1,6 +1,6 @@
 function Platoon005005_Initialize(arg0)
     arg0:SetEnablePlatoonMove(true)
-    arg0:SetBaseMoveRate(0, 1)
+    arg0:SetBaseMoveRate(0, 5)
     return 
 end
 

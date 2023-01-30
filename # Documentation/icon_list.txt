@@ -14,6 +14,10 @@
 45011 Thumb Ring of Pharris
 45012 Vambrace of Trefin
 45013 Bracing Ring of Ergoth
+45014 Blood Conduit
+45015 Signet of Fury
+45016 Forgotten Pendant
+45017 Prisoner's Chain
 
 ...
 45273

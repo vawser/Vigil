@@ -862,6 +862,12 @@
       <root>N:\</root>
       <path>GR\data\INTERROOT_win64\script\ai\out\bin\005005_platoon.lua</path>
     </file>
+    <file>
+      <flags>0x40</flags>
+      <id>2920</id>
+      <root>N:\</root>
+      <path>GR\data\INTERROOT_win64\script\ai\out\bin\005006_platoon.lua</path>
+    </file>
     
     <file>
       <flags>0x40</flags>

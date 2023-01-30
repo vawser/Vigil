@@ -6683,9 +6683,14 @@ $Event(11000, Default, function() {
     InitializeEvent(73, 13000, 6120, 6121, 6122, 1047590830, 1047590831, 1047590832); // Fractured Blade
     InitializeEvent(74, 13000, 6130, 6131, 6132, 1047590840, 1047590841, 1047590842); // Aberrant Eye
     InitializeEvent(75, 13000, 6140, 6141, 6142, 1047590850, 1047590851, 1047590852); // Gladiatorial Mark
-    InitializeEvent(76, 13000, 6170, 6171, 6172, 1047590860, 1047590871, 1047590862); // Thumb Ring of Pharris
-    InitializeEvent(77, 13000, 6180, 6181, 6182, 1047590870, 1047590881, 1047590872); // Vambrace of Trefin
-    InitializeEvent(78, 13000, 6190, 6191, 6192, 1047590880, 1047590891, 1047590882); // Bracing Ring of Ergoth
+    InitializeEvent(76, 13000, 6170, 6171, 6172, 1047590860, 1047590861, 1047590862); // Thumb Ring of Pharris
+    InitializeEvent(77, 13000, 6180, 6181, 6182, 1047590870, 1047590871, 1047590872); // Vambrace of Trefin
+    InitializeEvent(78, 13000, 6190, 6191, 6192, 1047590880, 1047590881, 1047590882); // Bracing Ring of Ergoth
+    
+    InitializeEvent(79, 13000, 6200, 6201, 6202, 1047590890, 1047590891, 1047590892); // Prisoner's Chain
+    InitializeEvent(80, 13000, 6210, 6211, 6212, 1047590900, 1047590901, 1047590902); // Signet of Fury
+    InitializeEvent(81, 13000, 6220, 6221, 6222, 1047590910, 1047590911, 1047590912); // Forgotten Pendant
+    InitializeEvent(82, 13000, 6230, 6231, 6232, 1047590920, 1047590921, 1047590922); // Blood Conduit
     
     //----------------------------
     // Castigations

@@ -6,6 +6,7 @@
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
+- Poison now reduces the Physical damage of the afflicted by 25%.
 
 #-------------------------------------------------
 # Bosses
@@ -53,7 +54,34 @@
 #-------------------------------------------------
 # Talismans
 #-------------------------------------------------
-
+- Signet of Fury 
+    - Found in Volcano Manor.
+    - +0 Effect: Reduces weapon stamina consumption by 25% for 5 seconds upon being hit.
+    - +1 Effect: Reduces weapon stamina consumption by 50% for 5 seconds upon being hit.
+    - +2 Effect: Reduces weapon stamina consumption by 75% for 5 seconds upon being hit.
+    - +3 Effect: Reduces weapon stamina consumption by 100% for 5 seconds upon being hit.
+    
+- Forgotten Pendant 
+    - Dropped by the Golem found down the side of the Minor Erdtree cliff in Caelid.
+    - +0 Effect: Enhances charged attacks by 25% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 30% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 35% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 40% but reduces effectiveness of evasion significantly.
+    
+- Blood Conduit 
+    - Found in Mohgwyn Palace.
+    - +0 Effect: Enhances blood incantations by 15% but reduces maximum HP by 15%.
+    - +1 Effect: Enhances blood incantations by 20% but reduces maximum HP by 15%.
+    - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
+    - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
+    
+- Prisoner's Chain 
+    - Dropped by a fast-walking commoner in Stormhill.
+    - +0 Effect: Increases movement speed by 10%.
+    - +1 Effect: Increases movement speed by 15%.
+    - +2 Effect: Increases movement speed by 20%.
+    - +3 Effect: Increases movement speed by 25%.
+    
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
