@@ -84,18 +84,18 @@ def t607001900_x5():
     c1_110()
     """State 2"""
     
-    # Touch
+    # Challenge the Greater Will
     AddTalkListDataIf(GetEventFlag(19000800) == 0, 5, 26071004, -1)
     
     # action:26071000:"Mend the Elden Ring"
-    AddTalkListDataIf(GetEventFlag(19000800) == 1, 1, 26071000, -1)
+    AddTalkListData(1, 26071000, -1)
     
     # eventflag:9500:lot:4900:Mending Rune of Perfect Order, action:26071001:"Use Mending Rune of Perfect Order"
-    AddTalkListDataIf(GetEventFlag(19000800) == 1 and GetEventFlag(9500) == 1, 2, 26071001, -1)
+    AddTalkListDataIf(GetEventFlag(9500) == 1, 2, 26071001, -1)
     # eventflag:9502:lot:4910:Mending Rune of the Death-Prince, action:26071002:"Use Mending Rune of the Death-Prince"
-    AddTalkListDataIf(GetEventFlag(19000800) == 1 and GetEventFlag(9502) == 1, 3, 26071002, -1)
+    AddTalkListDataIf(GetEventFlag(9502) == 1, 3, 26071002, -1)
     # eventflag:9504:lot:4920:Mending Rune of the Fell Curse, action:26071003:"Use Mending Rune of the Fell Curse"
-    AddTalkListDataIf(GetEventFlag(19000800) == 1 and GetEventFlag(9504) == 1, 4, 26071003, -1)
+    AddTalkListDataIf(GetEventFlag(9504) == 1, 4, 26071003, -1)
     """State 3"""
     OpenConversationChoicesMenu(0)
     assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))

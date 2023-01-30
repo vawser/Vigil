@@ -7100,8 +7100,8 @@ $Event(11021, Default, function() {
     //WarpPlayer(34, 14, 0, 0, 34140982, -1);
         
     // Radagon
-    //SetEventFlagID(19000850, OFF);
-    //SetEventFlagID(71900, OFF);
+    SetEventFlagID(19000850, ON);
+    SetEventFlagID(71900, ON);
     
     // Elden Beast
     SetEventFlagID(19000800, OFF);

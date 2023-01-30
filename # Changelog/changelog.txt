@@ -1,6 +1,7 @@
 ﻿#-------------------------------------------------
 # Features
 #-------------------------------------------------
+- Reduced the stamina and poise damage done by deflections slightly.
 
 #-------------------------------------------------
 # Player
@@ -10,9 +11,7 @@
 # Bosses
 #-------------------------------------------------
 - Radagon and the Elden Beast have been split into 2 distinct bosses.
- - Radagon is considered final boss for Age of Stars and Lord of Frenzied Flame endings.
- - Elden Beast is the final boss for the other endings.
-
+- Elden Beast is now an optional boss you can choose to fight via an option at the Fractured Marika.
 - Increased Radagon's HP to 3800, as he is now fought without requiring the Elden Beast after.
 - Increased Elden Beast's HP to 4710, as it is now fought without requiring Radagon first.
 
