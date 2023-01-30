@@ -21,15 +21,20 @@ Blighted
     Special Attribute:                      10
     Special Attribute - Variation Value:    1
     
+Rotten
+    Reinforce Type ID:                      1600
+    Behavior SpEffect 1:                    107000
+    SpEffectMessage ID [0]:                 6451
+    
 #--------------
 # Regex
 #--------------
 # Names
 Find:
-(.*)1200">(.*)Occult (.*)
+(.*)1500">(.*)Blighted (.*)
 
 Replace:
-\11200">\2Occult \3\n\11300">\2Soporific \3\n\11400">\2Frenzied \3\n\11500">\2Blighted \3
+\11500">\2Blighted \3\n\11600">\2Rotten \3
 
 # Description
 Find:

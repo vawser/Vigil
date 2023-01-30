@@ -6536,7 +6536,7 @@ $Event(11000, Default, function() {
     // Passive: Kill Tracker
     SetSpEffect(10000, 7000001);
     
-    // Whetblades
+    // Affinities
     InitializeEvent(0, 11017, 0);
     
     // Kill Tracker: Bloodsoaked Rune
@@ -6928,7 +6928,7 @@ $Event(11016, Default, function(X0_4, X4_4) {
 });
 
 //-------------------
-// Whetblades
+// Affinities
 //-------------------
 $Event(11017, Default, function() {
     // Whetstone Knife
@@ -6957,6 +6957,7 @@ $Event(11017, Default, function() {
         SetEventFlagID(65810, ON);
         SetEventFlagID(65820, ON);
         SetEventFlagID(65830, ON);
+        SetEventFlagID(65840, ON);
     }
 });
 

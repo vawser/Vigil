@@ -60,9 +60,6 @@
             
 # Bell Items
 - Clean-up the Smithing Stone bell items, removing the pointless ones.
-            
-# Speedy Boi
-- Add a random speedy hollow enemy like the one in DS2. Should drop movement speed ring.
 
 #-------------------------------------------------
 # WIP
