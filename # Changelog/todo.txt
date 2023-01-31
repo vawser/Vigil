@@ -75,8 +75,20 @@
 # Bosses
 - Split Beast Clergyman and Maliketh into 2 fights
 
+# Spells
+- Expand Blood school
+- Expand Death school
 
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-# Spells
+# Treasures
+- Add fixed treasures for drop-only armor sets in open world locations (camps, towers, etc). 
+
+Sets:
+Fire Prelate 360000
+Banished Knight 200000
+Banished Knight (Altered) 201000
+Cleanrot 340000
+Fire Monk 350000
+Blackflame Monk 351000

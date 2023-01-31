@@ -1127,7 +1127,7 @@ Vanilla
 9120 Malenia
 9121 Godskin Noble
 9122 Rykard, Lord of Blasphemy
-9123 Elden Beast
+9123 Radagon
 9124
 9125 Mohg (Subterranean Shunning-Grounds)
 9126 Magma Wyrm Makar
@@ -1147,6 +1147,7 @@ Vanilla
 9182 Elemer of the Briar
 9183 Mosbegotten Warrior/Crucible Knight
 9184 Commander Niall
+9190 Elden Beast
 
 # Mending Rune
 9500 Mending Rune of Perfect Order

@@ -195,7 +195,7 @@ $Event(0, Default, function() {
     InitializeEvent(20, 1100, 9120, 10200, 0, 510200);
     InitializeEvent(21, 1100, 9121, 10210, 0, 510210);
     InitializeEvent(22, 1100, 9122, 10220, 0, 510220);
-    InitializeEvent(23, 1100, 9123, 10230, 0, 510230);
+    InitializeEvent(23, 1100, 9190, 10230, 0, 510230); // Elden Remembrance
     InitializeEvent(24, 1100, 9124, 10240, 0, 510240);
     InitializeEvent(25, 1100, 9125, 10250, 0, 510250);
     InitializeEvent(26, 1100, 9126, 10260, 0, 510260);
@@ -7102,12 +7102,13 @@ $Event(11021, Default, function() {
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
     // Screenshot Zone
-    SetEventFlagID(1047610014, ON);
-    WarpPlayer(34, 14, 0, 0, 34140982, -1);
+    //SetEventFlagID(1047610014, ON);
+    //WarpPlayer(34, 14, 0, 0, 34140982, -1);
         
     // Radagon
     //SetEventFlagID(19000850, ON);
     //SetEventFlagID(71900, ON);
+    //WarpPlayer(19, 0, 0, 0, 19000982, -1);
     
     // Elden Beast
     //SetEventFlagID(19000800, OFF);
