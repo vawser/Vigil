@@ -15,6 +15,7 @@
 - Elden Beast is now an optional boss you can choose to fight via an option at the Fractured Marika.
 - Increased Radagon's HP to 3800, as he is now fought without requiring the Elden Beast after.
 - Increased Elden Beast's HP to 4710, as it is now fought without requiring Radagon first.
+- Restored original hitbox sizes for General Radahn's melee attacks and his AOE bullets.
 
 #-------------------------------------------------
 # Enemies
