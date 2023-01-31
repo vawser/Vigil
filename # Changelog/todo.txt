@@ -80,24 +80,3 @@
 # WIP
 #-------------------------------------------------
 # Spells
-- VFX
-526204 Bloody Slash
-440222 Blood Blade
-440224 Blood Blade - Impact
-450232 Reduvia Blood Blade
-450234 Reduvia Blood Blade - Impact
-524132 Bloodboon
-524133 Bloodboon - Impact
-524134 Bloodboon
-524121 Bloodflame Talons
-
-648009 Blood Puddle (Mohg)
-648046 Blood Puddle (Mohg)
-
-# New 12000000
-
-Blood Shard (Ambush Shard reskin)
-
-45018 Blood Shard
-
-7910 Blood Shard

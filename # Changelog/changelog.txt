@@ -39,6 +39,7 @@
 # Weapons
 #-------------------------------------------------
 - Added Rotten affinity: adds Scarlet Rot status effect.
+- Reverted the Carian Knight Sword change that enables sorceries due to bugs.
 
 #-------------------------------------------------
 # Catalysts

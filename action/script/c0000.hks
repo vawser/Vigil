@@ -332,14 +332,6 @@ function RegenerateFP()
     end
 end
 
-function IsWeaponCatalyst()
-    if c_SwordArtsID == 66 then
-        return TRUE
-    end
-    
-    return FALSE
-end
-
 ------------------------------------------
 -- Core: Functions
 ------------------------------------------
@@ -738,8 +730,6 @@ function IsEnableGuard()
     env(GetEquipWeaponSpecialCategoryNumber, hand)
     
     if style == HAND_RIGHT and GetEquipType(hand, WEAPON_CATEGORY_STAFF) == TRUE then
-        return FALSE
-    elseif IsWeaponCatalyst() == TRUE then
         return FALSE
     elseif FALSE == IsWeaponCanGuard() then
         return FALSE
@@ -2956,60 +2946,41 @@ function ExecMagic(quick_type, blend_type, is_ride)
     local action_arm = nil
     local action_arm_menu = nil
     
-    -- Normal Catalysts
-    if IsWeaponCatalyst() == FALSE then
-        -- R1/L1 (while riding)
-        if env(ActionRequest, ACTION_ARM_MAGIC_R) == TRUE or env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and is_ride == TRUE then
-            action_arm = ACTION_ARM_MAGIC_R
+    -- R1/L1 (while riding)
+    if env(ActionRequest, ACTION_ARM_MAGIC_R) == TRUE or env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and is_ride == TRUE then
+        action_arm = ACTION_ARM_MAGIC_R
 
-            if style == HAND_LEFT_BOTH then
-                if GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) == FALSE then
-                    return FALSE
-                end
-                
-                action_arm_menu = HAND_LEFT
-            else
-                if GetEquipType(HAND_RIGHT, WEAPON_CATEGORY_STAFF) == FALSE then
-                    return FALSE
-                end
-                
-                action_arm_menu = HAND_RIGHT
-            end
-        -- L1
-        elseif env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE then
-            action_arm = ACTION_ARM_MAGIC_L
-            
-            if style == HAND_RIGHT_BOTH or style == HAND_LEFT_BOTH then
-                return FALSE
-            elseif FALSE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) then
+        if style == HAND_LEFT_BOTH then
+            if GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) == FALSE then
                 return FALSE
             end
             
             action_arm_menu = HAND_LEFT
-            magic_hand = HAND_LEFT
-            
-            act(DebugLogOutput, "MagicLeft")
         else
-            return FALSE
-        end
-    -- Weapon Catalyst
-    elseif IsWeaponCatalyst() == TRUE then
-        -- Fire with L2 (Sword Arts)
-        if env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE then
-            action_arm = ACTION_ARM_MAGIC_R
-            
-            if style == HAND_LEFT_BOTH then
-                action_arm_menu = HAND_LEFT
-            else
-                action_arm_menu = HAND_RIGHT
+            if GetEquipType(HAND_RIGHT, WEAPON_CATEGORY_STAFF) == FALSE then
+                return FALSE
             end
-        else
+            
+            action_arm_menu = HAND_RIGHT
+        end
+    -- L1
+    elseif env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE then
+        action_arm = ACTION_ARM_MAGIC_L
+        
+        if style == HAND_RIGHT_BOTH or style == HAND_LEFT_BOTH then
+            return FALSE
+        elseif FALSE == GetEquipType(HAND_LEFT, WEAPON_CATEGORY_STAFF) then
             return FALSE
         end
+        
+        action_arm_menu = HAND_LEFT
+        magic_hand = HAND_LEFT
+        
+        act(DebugLogOutput, "MagicLeft")
     else
         return FALSE
     end
-        
+
     if env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and FALSE == env(ActionRequest, ACTION_ARM_MAGIC_R) and is_ride == TRUE then
         ResetRequest()
         return FALSE

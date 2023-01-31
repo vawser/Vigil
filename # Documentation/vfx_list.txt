@@ -1,0 +1,7123 @@
+﻿#------------------------
+# VFX List
+#------------------------
+1	debug square FFX	several ''nothing'' below might actually be sound only, so be aware of that
+2		
+3		
+4		
+5		
+7		
+8		
+9		
+10		
+11		
+12		
+15		
+16		
+17		
+18		
+19		
+30	Message	enscribed rocks with glowing aura
+31	Message	enscribed rocks
+32	?	enscribed stone slab
+33	?	enscribed stone slab with item pickup
+34	Message with Group Password	white ringed enscribed rocks
+35	Message Rating	gold glitter
+36	?	
+37	Group Password Rune gain boost	gold sparkly upward aura
+38	?	smaller enscribed rocks
+40	Bloodstain rune pickup point	gold branches
+42	Bloodstain	blood pool
+43	Bloodstain rune pickup	gold light flows converge on dummy
+44	Group Password bloodstain	red ringed blood pool
+45	Developer Message	enscribed rocks with spotlight
+50	Rune gain	descending gold orb
+51	Rune gain	descending gold orb
+71	?	small gold orb with sparkly trail
+72	?	dim white glow
+120	NPC protection barrier	yellow ghostly cylinder
+170	?	red energy absorption
+171	?	small red energy vortex
+190	?	white spark
+191	?	white spark
+200	enemy death (mini)	blowing ash and white sparkles
+201	enemy death (small)	blowing ash and white sparkles
+202	enemy death (medium)	blowing ash and white sparkles
+203	enemy death (large)	blowing ash and white sparkles
+204	enemy death (huge)	blowing ash and white sparkles
+211	enemy death (small)	white foggy sparkly burst
+212	enemy death (medium)	white foggy sparkly burst
+213	enemy death (large)	white foggy sparkly burst
+214	enemy death (huge)	white foggy sparkly burst
+220	enemy death (mini)	blowing ash and white sparkles
+221	enemy death (small)	blowing ash and white sparkles
+222	enemy death (medium)	blowing ash and white sparkles
+223	enemy death (large)	blowing ash and white sparkles
+224	enemy death (huge)	blowing ash and white sparkles
+233		
+234		
+241		
+242		
+243		
+251		
+261		
+262		
+264		
+300	player light?	dim light
+310	?	nothing
+320	?	nothing
+430	wind	nothing, but creates wind force
+431	wind	nothing, but creates wind force
+432	wind	nothing, but creates wind force
+433	wind	nothing, but creates wind force
+434	wind	nothing, but creates wind force
+440	wind	nothing, but creates wind force
+441	wind	nothing, but creates wind force
+442	wind	nothing, but creates wind force
+500	?	gold v-shaped sigil
+501	player-dropped item pickup (armor)	gold helm and gauntlets
+502	player-dropped item pickup (weapons)	gold sword and shield
+503	player-dropped item pickup (materials)	gold shell and rowa
+504	player-dropped item pickup (consumables)	gold pot, daggers and boluses
+505	?	bright gold item pickup
+506	player-dropped item pickup (talismans)	gold talismans
+600	?	pale gold wispy glittering flames and bright gold spotlight
+601	?	pale gold wispy glittering flames
+602	?	pale gold wispy glittering flames and big bright gold spotlight
+625		
+630		
+631		
+640		
+651		
+652	Spirit Ash spawn (ghostly lavender smoke)	
+653		
+654		
+661		
+662		
+663		
+664		
+671		
+672		
+673		
+674		
+681		
+682		
+683		
+684		
+691		
+692		
+693		
+694		
+711	? (small)	sparkling pale blue sparkly flames
+712	? (medium)	sparkling pale blue sparkly flames
+713	? (large)	sparkling pale blue sparkly flames
+721	? (small)	sparkling pale blue sparkly flames with more glitter
+722	? (medium)	sparkling pale blue sparkly flames with more glitter
+723	? (large)	sparkling pale blue sparkly flames with more glitter
+800	Torrent dismount barrier	line of pale blue wispy flames
+801	? (mini)	blowing ash and white sparkles
+802	? (small)	blowing ash and white sparkles
+803	? (medium)	blowing ash and white sparkles
+804	? (large)	blowing ash and white sparkles
+812	? (mini)	white foggy sparkly burst
+813	? (small)	white foggy sparkly burst
+814	? (medium)	white foggy sparkly burst
+900	?	gold spark
+1000	Site of Grace activation	gold sparkly burst
+1001	Site of Grace activation	gold floating flow of energy
+1010	Site of Grace	gold floating Grace and ripples
+1011	Site of Grace	gold floating Grace and ripples
+1021	?	nothing
+1060	?	nothing
+1110	Site of Grace	gold floating Grace and ripples
+1150	Site of Grace (unusable)	dimmed gold floating Grace and ripples
+1151	Site of Grace (unusable)	dimmed gold floating Grace and ripples
+1210	Site of Grace	gold floating Grace and ripples
+1300	Dungeon end teleport	Pale blue energy puddle with upward flow
+1500	Carian seal door	Blue energy barrier with Carian sigil
+1501	Carian seal door	Blue energy barrier with Carian sigil
+1502	Carian seal door	Blue energy barrier with Carian sigil
+1503	Carian seal door	Blue energy barrier with Carian sigil
+1505	Carian seal door	Blue energy barrier with Carian sigil
+1506	Carian seal door	Blue energy barrier with Carian sigil
+1507	Carian seal door	Blue energy barrier with Carian sigil
+1520	?	White fog barrier with no sigil
+1540	Two Fingers seal door	Blue energy barrier with Two Fingers sigil
+1541	Two Fingers seal door	Blue energy barrier with Two Fingers sigil
+1625	?	Line of black flames
+1651	? (mini)	sparkly black flames
+1652	? (small)	sparkly black flames
+1653	? (medium)	sparkly black flames
+1654	? (large)	sparkly black flames
+1661	? (mini)	sparkly black flames with white glow
+1662	? (small)	sparkly black flames with white glow
+1663	? (medium)	sparkly black flames with white glow
+1664	? (large)	sparkly black flames with white glow
+2117	?	nothing
+2200	?	nothing
+2201	?	nothing
+2202	?	nothing
+3000	?	nothing
+3010	enemy Fire hit (small)	small flame puff
+3015	enemy Fire hit (small)	small flame puff
+3020	enemy Fire hit (small)	small flame puff
+3030	enemy Lightning hit (small)	small lightning spark
+3035	enemy Lightning hit (small)	small lightning spark
+3040	enemy Lightning hit (small)	small lightning spark
+3050	enemy Magic hit (small)	small purple-blue magic flame
+3060	enemy Magic hit (small)	small purple-blue magic flame
+3070	enemy Ghostflame hit (small)	small ghostflame puff
+3080	enemy Ghostflame hit (small)	small ghostflame puff
+4000	? (small)	short flame burst
+4001	? (medium)	short flame burst
+4002	? (large)	short flame burst
+4010	? (small)	short flame burst
+4011	? (medium)	short flame burst
+4012	? (large)	short flame burst
+4020	Frostbite effect (small)	cold snowy smoke
+4021	Frostbite effect (medium)	cold snowy smoke
+4022	Frostbite effect (large)	cold snowy smoke
+4050	?	beige larva splash
+4070	Sleep proc and effect (small)	lavender smoke and feathers
+4071	Sleep proc and effect (medium)	lavender smoke and feathers
+4072	Sleep proc and effect (large)	lavender smoke and feathers
+4080	Bleed proc (small)	red blood splash
+4081	Bleed proc (medium)	red blood splash
+4082	Bleed proc (large)	red blood splash
+4085	Bleed proc (small)	red blood spray
+4086	Bleed proc (medium)	red blood spray
+4087	Bleed proc (large)	red blood spray
+4090	Bewitching Branch effect (small)	pink smoke
+4091	Bewitching Branch effect (medium)	pink smoke
+4092	Bewitching Branch effect (large)	pink smoke
+4100	Crystal Dart effect (small)	blue lightning and bubbles
+4101	Crystal Dart effect (medium)	blue lightning and bubbles
+4102	Crystal Dart effect (large)	blue lightning and bubbles
+4110	Acid Spraymist debuff effect (small)	brown downward aura
+4111	Acid Spraymist debuff effect (medium)	brown downward aura
+4112	Acid Spraymist debuff effect (large)	brown downward aura
+4120	cut Dream Mist sleep state? (small)	lavender smoke
+4121	cut Dream Mist sleep state? (medium)	lavender smoke
+4122	cut Dream Mist sleep state? (large)	lavender smoke
+4130	Oil Pot effect (small)	dripping oil
+4131	Oil Pot effect (medium)	dripping oil
+4132	Oil Pot effect (large)	dripping oil
+4140	Poison effect (small)	green smoke
+4141	Poison effect (medium)	green smoke
+4142	Poison effect (large)	green smoke
+4150	Darkness effect (small)	pitch-black smoke
+4151	Darkness effect (medium)	pitch-black smoke
+4152	Darkness effect (large)	pitch-black smoke
+4160	Greyoll's Roar debuff effect (small)	pale red downward aura
+4161	Greyoll's Roar debuff effect (medium)	pale red downward aura
+4162	Greyoll's Roar debuff effect (large)	pale red downward aura
+4170	Soul Stifler debuff effect (small)	black and cyan smoke downward aura
+4171	Soul Stifler debuff effect (medium)	black and cyan smoke downward aura
+4172	Soul Stifler debuff effect (large)	black and cyan smoke downward aura
+4180	Black Flame DoT effect (small)	black and white flames
+4181	Black Flame DoT effect (medium)	black and white flames
+4182	Black Flame DoT effect (large)	black and white flames
+4190	Swarm Pot poison effect (small)	buzzing flies
+4191	Swarm Pot poison effect (medium)	buzzing flies
+4192	Swarm Pot poison effect (large)	buzzing flies
+4200	Rot effect (small)	dark red smoke
+4201	Rot effect (medium)	dark red smoke
+4202	Rot effect (large)	dark red smoke
+4210	Madness proc burst	yellow-black burst
+4220	Madness buildup eye burn	yellow-purple flame
+4225	Madness proc eye burn	yellow-purple flames
+4230	Death proc	thorns branches burst out & buzzing flies
+4231	Death proc	big thorn branch stabs up
+4240	Crystal Dart proc (small)	blue lightning
+4241	Crystal Dart proc (medium)	blue lightning
+4242	Crystal Dart proc (large)	blue lightning
+4250	Flask of Tears block effect (small)	wispy gray smoke
+4251	Flask of Tears block effect (medium)	wispy gray smoke
+4252	Flask of Tears block effect (large)	wispy gray smoke
+4260	Knowledge Above All effect (small)	red trembling eye
+4261	Knowledge Above All effect (medium)	red trembling eye
+4262	Knowledge Above All effect (large)	red trembling eye
+4270	Frostbite proc (small)	sparkly frost burst
+4271	Frostbite proc (medium)	sparkly frost burst
+4272	Frostbite proc (large)	sparkly frost burst
+4275	Shriek of Milos debuff effect (small)	pale gold flames
+4276	Shriek of Milos debuff effect (medium)	pale gold flames
+4277	Shriek of Milos debuff effect (large)	pale gold flames
+4280	Death Flame DoT effect (small)	black and pink flames
+4281	Death Flame DoT effect (medium)	black and pink flames
+4282	Death Flame DoT effect (large)	black and pink flames
+4290	Destined Death Flame DoT effect (small)	black and red flames
+4291	Destined Death Flame DoT effect (medium)	black and red flames
+4292	Destined Death Flame DoT effect (large)	black and red flames
+4300	?	short flames burning
+4301	?	short flames burning
+4302	?	short flames burning
+4310	?	short flames burning
+4311	?	short flames burning
+4312	?	short flames burning
+4400	Rennala's Full Moon debuff effect (small)	blue crystal downward aura
+4401	Rennala's Full Moon debuff effect (medium)	blue crystal downward aura
+4402	Rennala's Full Moon debuff effect (large)	blue crystal downward aura
+4410	Death Flame health debuff effect (small)	red-orange downward aura
+4411	Death Flame health debuff effect (medium)	red-orange downward aura
+4412	Death Flame health debuff effect (large)	red-orange downward aura
+4500	attack buff effect (small)	red sparkly upward aura
+4501	attack buff effect (medium)	red sparkly upward aura
+4502	attack buff effect (large)	red sparkly upward aura
+4510	Terra Magica magic attack buff effect (small)	cyan sparkly upward aura
+4511	Terra Magica magic attack buff effect (medium)	cyan sparkly upward aura
+4512	Terra Magica magic attack buff effect (large)	cyan sparkly upward aura
+4520	Golden Vow buff effect (small)	gold sparkly upward aura
+4521	Golden Vow buff effect (medium)	gold sparkly upward aura
+4522	Golden Vow buff effect (large)	gold sparkly upward aura
+4530	Bloodboil Aromatic buff effect (small)	dark red sparkly upward aura
+4531	Bloodboil Aromatic buff effect (medium)	dark red sparkly upward aura
+4532	Bloodboil Aromatic buff effect (large)	dark red sparkly upward aura
+4600	Heal effect (small)	gold sparkly burst
+4601	Heal effect (medium)	gold sparkly burst
+4602	Heal effect (large)	gold sparkly burst
+4610	overtime heal effect (small)	gold sparkly upward aura
+4611	overtime heal effect (medium)	gold sparkly upward aura
+4612	overtime heal effect (large)	gold sparkly upward aura
+4620	Heal effect (small)	gold sparkly burst
+4621	Heal effect (medium)	gold sparkly burst
+4622	Heal effect (large)	gold sparkly burst
+4630	?	gold sparkly burst
+4631	?	gold sparkly burst
+4632	?	gold sparkly burst
+4710	Magic Fortification buff effect (small)	cyan outward aura
+4711	Magic Fortification buff effect (medium)	blue outward aura
+4712	Magic Fortification buff effect (large)	blue outward aura
+4720	Flame Fortification buff effect (small)	orange outward aura
+4721	Flame Fortification buff effect (medium)	orange outward aura
+4722	Flame Fortification buff effect (large)	orange outward aura
+4730	Lightning Fortification buff effect (small)	gold lightning outward aura
+4731	Lightning Fortification buff effect (medium)	gold lightning outward aura
+4732	Lightning Fortification buff effect (large)	gold lightning outward aura
+4740	Divine Fortification buff effect (small)	pale gold outward aura
+4741	Divine Fortification buff effect (medium)	pale gold outward aura
+4742	Divine Fortification buff effect (large)	pale gold outward aura
+4750	Uplifting Aromatic shield effect (small)	gold shield bubble
+4751	Uplifting Aromatic shield effect (medium)	gold shield bubble
+4752	Uplifting Aromatic shield effect (large)	gold shield bubble
+4790	physical defense buff effect (small)	white outward aura
+4791	physical defense buff effect (medium)	white outward aura
+4792	physical defense buff effect (large)	white outward aura
+4800	Black Flame Protection buff effect (small)	black-white outward aura
+4810	Barrier of Gold buff effect (small)	cyan strong outward aura
+4811	Barrier of Gold buff effect (medium)	blue strong outward aura
+4812	Barrier of Gold buff effect (large)	blue strong outward aura
+4820	Flame, Protect Me buff effect (small)	red-orange strong outward aura
+4821	Flame, Protect Me buff effect (medium)	red-orange strong outward aura
+4822	Flame, Protect Me buff effect (large)	red-orange strong outward aura
+4830	Golden Lightning Fortification buff effect (small)	gold lightning strong outward aura
+4831	Golden Lightning Fortification buff effect (medium)	gold lightning strong outward aura
+4832	Golden Lightning Fortification buff effect (large)	gold lightning strong outward aura
+4840	Lord's Divine Fortification buff effect (small)	pale gold strong outward aura
+4841	Lord's Divine Fortification buff effect (medium)	pale gold strong outward aura
+4842	Lord's Divine Fortification buff effect (large)	pale gold strong outward aura
+4850	Protection of the Erdtree buff effect (small)	gold strong outward aura
+4851	Protection of the Erdtree buff effect (medium)	gold strong outward aura
+4852	Protection of the Erdtree buff effect (large)	gold strong outward aura
+4860	Cursed-Blood Pot buff effect (small)	red flame aura
+4861	Cursed-Blood Pot buff effect (medium)	red flame aura
+4862	Cursed-Blood Pot buff effect (large)	red flame aura
+4865	Cursed-Blood Pot red eye	small red glowing orb with trail
+4890	unused physical defense buff effect (small)	white strong outward aura
+4891	unused physical defense buff effect (medium)	white strong outward aura
+4892	unused physical defense buff effect (large)	white strong outward aura
+4900	Phantom Great Rune buff effect (small)	red sparkles and flame aura
+4901	Phantom Great Rune buff effect (medium)	red sparkles and flame aura
+4902	Phantom Great Rune buff effect (large)	red sparkles and flame aura
+4910	Phantom Great Rune attack buff effect (small)	red sparkles and upward aura
+4911	Phantom Great Rune attack buff effect (medium)	red sparkles and upward aura
+4912	Phantom Great Rune attack buff effect (large)	red sparkles and upward aura
+5001	?	purple aura and floating rocks
+5002	?	bright gold aura and floating rocks
+5003	?	pale blue lightning strike
+6100	Item pickup (small)	small glowing pale orb with rising white energy
+6101	Item pickup (common)	glowing pale orb with rising white energy
+6102	Item pickup (rare)	glowing pale orb with rising purple energy
+6103	Item pickup (legendary)	glowing pale orb with rising gold energy
+6109	Item pickup (?)	glowing orange orb with rising orange energy
+6110	Item pickup (?)	large glowing pale orb with rising white energy
+6150	Painting pickup?	pale blue rays of light shining left, right and down
+6200	Item pickup (small)	small glowing pale orb with rising white energy
+6201	Item pickup (common)	glowing pale orb with rising white energy
+6202	Item pickup (rare)	glowing pale orb with rising purple energy
+6203	Item pickup (legendary)	glowing pale orb with rising gold energy
+6210	Item drop confirmation	dispersing flows of pale energy
+6300	Item pickup (small)	small glowing pale orb with rising white energy
+6301	Item pickup (common)	glowing pale orb with rising white energy
+6302	Item pickup (rare)	glowing pale orb with rising purple energy
+6303	Item pickup (legendary)	glowing pale orb with rising gold energy
+6400	?	nothing
+6401	?	soft sparkles and crystal crackling sounds
+6410	?	soft glow and crystal crackling sounds
+6411	?	soft glow
+6420	?	soft crystal crackling sounds
+6421	?	nothing
+6450	Item pickup (?)	glowing orange orb with rising orange energy
+6451	Item pickup (?)	glowing orange energy absorbed onto dummy
+6500	?	dim gold flames, glitter and upward energy flow
+7000	?	smoky burning flame
+7101	?	smoky blur
+7111	?	nothing
+13020	enemy Fire hit (medium)	flame puff
+13030	enemy Lightning hit (medium)	lightning spark
+13040	enemy Lightning hit (medium)	lightning spark
+13050	enemy Magic hit (medium)	purple-blue magic flame
+13060	enemy Magic hit (medium)	purple-blue magic flame
+13070	enemy Ghostflame hit (medium)	ghostflame puff
+13080	enemy Ghostflame hit (medium)	ghostflame puff
+13100	?	nothing
+13120	?	nothing
+13140	?	nothing
+13160	?	nothing
+13180	?	nothing
+13200	?	nothing
+13220	?	nothing
+23020	enemy Fire hit (large)	flame puff
+23030	enemy Lightning hit (large)	lightning spark
+23040	enemy Lightning hit (large)	lightning spark
+23050	enemy Magic hit (large)	purple-blue magic flame
+23060	enemy Magic hit (large)	purple-blue magic flame
+23070	enemy Ghostflame hit (large)	ghostflame puff
+23080	enemy Ghostflame hit (large)	ghostflame puff
+23100	?	nothing
+23120	?	nothing
+23140	?	nothing
+23160	?	nothing
+23180	?	nothing
+23200	?	nothing
+23220	?	nothing
+30000	Phantom summon	glowing gold summon sign
+30001	Phantom summon	gold summon sign
+30002	Phantom summon	gold summon sign
+30003	Group Password Phantom summon	gold ringed gold summon sign
+30010	Duelist summon	glowing red summon sign
+30011	Duelist summon	red summon sign
+30012	Duelist summon	red summon sign
+30013	Group Password Duelist summon	red ringed red summon sign
+30070	Ranni summon?	glowing blue summon sign
+30080	NPC Phantom summon?	glowing gold summon sign
+30090	NPC Duelist summon?	glowing red summon sign
+30200	Flask of Crimson Tears restore	red gold sparkly energy descends
+30201	Flask of Crimson Tears restore	red gold sparkly energy burst
+30300	Flask of Cerulean Tears restore	blue gold sparkly energy descends
+30301	Flask of Cerulean Tears restore	blue gold sparkly energy burst
+30320	Phantom spawn (small)	gold pool and rising energy
+30321	Phantom spawn (large)	gold pool and rising energy
+30330	Invader/Duelist spawn	red pool and rising energy
+30340	Hunter spawn	deep blue pool and rising energy
+30500	Phantom death	orange-gold sparkly flames
+30510	Invader death	pink-red sparkly flames
+30511	Phantom/Invader death	absorption sound
+30560	Hunter death	deep blue sparkly flames
+30580	Duelist death	pink-red sparkly flames
+30581	Hunter/Duelist death	absorption sound
+100001	?	nothing
+100131	? (mini)	bright orange sparking
+100132	? (small)	bright orange sparking
+100133	? (medium)	bright orange sparking
+100134	? (large)	bright orange sparking
+101001	? (mini)	gray dust puff
+101002	? (small)	gray dust puff
+101003	? (medium)	gray dirt puff
+101004	? (large)	gray dirt puff
+101005	? (huge)	gray dirt puff
+101011	? (small)	gray dust puff
+101012	? (medium)	gray dirt puff
+101013	? (large)	gray dirt puff
+101014	? (huge)	gray dirt puff
+101111	? (small)	gray dirt and rocks puff
+101112	? (medium)	gray dirt and rocks puff
+101113	? (large)	gray dirt and rocks puff
+101114	? (huge)	gray dirt and rocks puff
+101121		
+101122		
+101123		
+101124		
+101131		
+101132		
+101133		
+101134		
+101140		
+101141		
+101142		
+101143		
+101144		
+102001		
+102002		
+102003		
+102004		
+102005		
+102011		
+102012		
+102013		
+102014		
+102111		
+102112		
+102113		
+102114		
+102121		
+102122		
+102123		
+102124		
+102131		
+102132		
+102133		
+102134		
+102140		
+102141		
+102142		
+102143		
+102144		
+103001		
+103002		
+103003		
+103004		
+103005		
+103011		
+103012		
+103013		
+103014		
+103111		
+103112		
+103113		
+103114		
+103121		
+103122		
+103123		
+103124		
+103131		
+103132		
+103133		
+103134		
+103140		
+103141		
+103142		
+103143		
+103144		
+104001		
+104002		
+104003		
+104004		
+104005		
+104011		
+104012		
+104013		
+104014		
+104111		
+104112		
+104113		
+104114		
+104121		
+104122		
+104123		
+104124		
+104140		
+104141		
+104142		
+104143		
+104144		
+105001		
+105002		
+105003		
+105004		
+105005		
+105011		
+105012		
+105013		
+105014		
+105111		
+105112		
+105113		
+105114		
+105121		
+105122		
+105123		
+105124		
+105131		
+105132		
+105133		
+105134		
+105140		
+105141		
+105142		
+105143		
+105144		
+107000		
+107001		
+107002		
+107003		
+107004		
+107005		
+107011		
+107012		
+107013		
+107014		
+107111		
+107112		
+107113		
+107114		
+107121		
+107122		
+107123		
+107124		
+107140		
+107141		
+107142		
+107143		
+107144		
+114000		
+114001		
+114002		
+115000		
+115001		
+115002		
+115003		
+115004		
+115005		
+115011		
+115012		
+115013		
+115014		
+115111		
+115112		
+115113		
+115114		
+115121		
+115122		
+115123		
+115124		
+115131		
+115132		
+115133		
+115134		
+115140		
+115141		
+115142		
+115143		
+115144		
+116001		
+116011		
+116111		
+116121		
+116141		
+117001		
+117011		
+117111		
+117121		
+117141		
+118001		
+118002		
+118003		
+118004		
+118005		
+118011		
+118012		
+118013		
+118014		
+118111		
+118112		
+118113		
+118114		
+118121		
+118122		
+118123		
+118124		
+118131		
+118132		
+118133		
+118134		
+118140		
+118141		
+118142		
+118143		
+118144		
+120000		
+120001		
+120002		
+120003		
+120004		
+120005		
+120011		
+120012		
+120013		
+120014		
+120111		
+120112		
+120113		
+120114		
+120121		
+120122		
+120123		
+120124		
+120140		
+120141		
+120142		
+120143		
+120144		
+121000		
+121001		
+121002		
+121003		
+121004		
+121005		
+121011		
+121012		
+121013		
+121014		
+121111		
+121112		
+121113		
+121114		
+121121		
+121122		
+121123		
+121124		
+121140		
+121141		
+121142		
+121143		
+121144		
+123000		
+123001		
+123002		
+123003		
+123004		
+123005		
+123011		
+123012		
+123013		
+123014		
+123111		
+123112		
+123113		
+123114		
+123121		
+123122		
+123123		
+123124		
+123140		
+123141		
+123142		
+123143		
+123144		
+124000		
+124001		
+124002		
+124011		
+124111		
+124121		
+124141		
+125000		
+125001		
+125002		
+125011		
+125111		
+125121		
+125141		
+126000		
+126001		
+126002		
+126011		
+126111		
+126121		
+126141		
+127000		
+127001		
+127002		
+127011		
+127012		
+127111		
+127112		
+127121		
+127122		
+127141		
+127142		
+128001		
+128011		
+128111		
+128121		
+128141		
+130001		
+130011		
+130111		
+130121		
+130141		
+143001		
+143002		
+143003		
+143004		
+143005		
+143011		
+143012		
+143013		
+143014		
+143111		
+143112		
+143113		
+143114		
+143121		
+143122		
+143123		
+143124		
+143140		
+143141		
+143142		
+143143		
+143144		
+144001		
+144002		
+144003		
+144004		
+144005		
+144011		
+144012		
+144013		
+144014		
+144111		
+144112		
+144113		
+144114		
+144121		
+144122		
+144123		
+144124		
+144140		
+144141		
+144142		
+144143		
+144144		
+145001		
+145002		
+145003		
+145004		
+145005		
+145011		
+145012		
+145013		
+145014		
+145111		
+145112		
+145113		
+145114		
+145121		
+145122		
+145123		
+145124		
+145140		
+145141		
+145142		
+145143		
+145144		
+146000		
+146001		
+146002		
+146003		
+146004		
+146005		
+146011		
+146012		
+146013		
+146014		
+146111		
+146112		
+146113		
+146114		
+146121		
+146122		
+146123		
+146124		
+146140		
+146141		
+146142		
+146143		
+146144		
+147000		
+147001		
+147002		
+147011		
+147111		
+147121		
+147141		
+148000		
+148001		
+148002		
+148003		
+148004		
+148005		
+148011		
+148012		
+148013		
+148014		
+148111		
+148112		
+148113		
+148114		
+148121		
+148122		
+148123		
+148124		
+148140		
+148141		
+148142		
+148143		
+148144		
+149000		
+149001		
+149002		
+149003		
+149004		
+149005		
+149011		
+149012		
+149013		
+149014		
+149111		
+149112		
+149113		
+149114		
+149121		
+149122		
+149123		
+149124		
+149140		
+149141		
+149142		
+149143		
+149144		
+200000	hit effect (mini)	bright red spark
+200001	hit effect (small)	bright red spark
+200002	hit effect (medium)	bright red spark
+200003	hit effect (large)	bright red spark
+200004	hit effect (huge)	bright red spark
+201000	hit effect (mini)	bright orange spark
+201001	hit effect (small)	bright orange spark
+201002	hit effect (medium)	bright orange spark
+201003	hit effect (large)	bright orange spark
+201004	hit effect (huge)	bright orange spark
+202000	hit effect (mini)	green-brown dirt puff
+202001	hit effect (small)	green-brown dirt puff
+202002	hit effect (medium)	green-brown dirt puff
+202003	hit effect (large)	green-brown dirt puff
+202004	hit effect (huge)	green-brown dirt puff
+203000	hit effect (mini)	brown dirt puff
+203001	hit effect (small)	brown dirt puff
+203002	hit effect (medium)	brown dirt puff
+203003	hit effect (large)	brown dirt puff
+203004	hit effect (huge)	brown dirt puff
+204000	hit effect (mini)	dark brown dirt puff
+204001	hit effect (small)	dark brown dirt puff
+204002	hit effect (medium)	dark brown dirt puff
+204003	hit effect (large)	dark brown dirt puff
+204004	hit effect (huge)	dark brown dirt puff
+205000	hit effect (mini)	dark brown dirt puff
+205001	hit effect (small)	dark brown dirt puff
+205002	hit effect (medium)	dark brown dirt puff
+205003	hit effect (large)	dark brown dirt puff
+205004	hit effect (huge)	dark brown dirt puff
+206000		
+206001		
+206002		
+206003		
+206004		
+207000		
+207001		
+207002		
+207003		
+207004		
+208000		
+208001		
+208002		
+208003		
+208004		
+209000		
+209001		
+209002		
+209003		
+209004		
+210000		
+210001		
+210002		
+210100		
+210101		
+210102		
+210200		
+210201		
+210202		
+210300		
+210301		
+210302		
+210400		
+210401		
+210402		
+210501		
+210502		
+210511		
+210512		
+210521		
+210522		
+210531		
+210532		
+210533		
+210534		
+210535		
+211000		
+211001		
+211002		
+211100		
+211101		
+211102		
+211200		
+211201		
+211202		
+211300		
+211301		
+211302		
+211400		
+211401		
+211402		
+211501		
+211502		
+211511		
+211512		
+211521		
+211522		
+211531		
+211532		
+211533		
+211534		
+211535		
+212000		
+212001		
+212002		
+212003		
+212004		
+213000		
+213001		
+213002		
+213003		
+213004		
+214000		
+214001		
+214002		
+214003		
+214004		
+215000		
+215001		
+215002		
+215100		
+215101		
+215102		
+215200		
+215201		
+215202		
+215300		
+215301		
+215302		
+215400		
+215401		
+215402		
+215501		
+215502		
+215511		
+215512		
+215521		
+215522		
+215531		
+215532		
+215533		
+215534		
+215535		
+216000		
+216001		
+216002		
+216003		
+216004		
+218000		
+218001		
+218002		
+218003		
+218004		
+220000		
+220001		
+220002		
+220100		
+220101		
+220102		
+220103		
+220104		
+220200		
+220201		
+220202		
+220300		
+220301		
+220302		
+220400		
+220401		
+220402		
+220501		
+220502		
+220511		
+220512		
+220521		
+220522		
+220531		
+220532		
+220533		
+220534		
+220535		
+220701		
+220706		
+220711		
+220712		
+220716		
+220721		
+220730		
+220731		
+221101		
+221102		
+222000		
+222001		
+222002		
+222100		
+222101		
+222102		
+222200		
+222201		
+222202		
+222300		
+222301		
+222302		
+222400		
+222401		
+222402		
+224000		
+224001		
+224002		
+224100		
+224101		
+224102		
+224200		
+224201		
+224202		
+224300		
+224301		
+224302		
+224400		
+224401		
+224402		
+224500		
+224501		
+224502		
+224511		
+224512		
+224521		
+224522		
+224531		
+224532		
+224533		
+224534		
+224535		
+234000		
+234001		
+234002		
+234100		
+234101		
+234102		
+234200		
+234201		
+234202		
+234300		
+234301		
+234302		
+234400		
+234401		
+234402		
+234501		
+234502		
+234511		
+234512		
+234521		
+234522		
+234531		
+234532		
+234533		
+234534		
+234535		
+243000		
+243001		
+243002		
+243003		
+243004		
+244000		
+244001		
+244002		
+244003		
+244004		
+245000		
+245001		
+245002		
+245003		
+245004		
+246000		
+246001		
+246002		
+246003		
+246004		
+248000		
+248001		
+248002		
+248100		
+248101		
+248102		
+248200		
+248201		
+248202		
+248300		
+248301		
+248302		
+248400		
+248401		
+248402		
+249000		
+249001		
+249002		
+249100		
+249101		
+249102		
+249200		
+249201		
+249202		
+249300		
+249301		
+249302		
+249400		
+249401		
+249402		
+250000		
+250001		
+250002		
+250100		
+250101		
+250102		
+250200		
+250201		
+250202		
+250300		
+250301		
+250302		
+250400		
+250401		
+250402		
+250501		
+250502		
+250511		
+250512		
+250521		
+250522		
+250531		
+250532		
+250533		
+250534		
+250535		
+251000		
+251001		
+251002		
+251100		
+251101		
+251102		
+251200		
+251201		
+251202		
+251300		
+251301		
+251302		
+251400		
+251401		
+251402		
+252000		
+252001		
+252002		
+252100		
+252101		
+252102		
+252200		
+252201		
+252202		
+252300		
+252301		
+252302		
+252400		
+252401		
+252402		
+252501		
+252502		
+252511		
+252512		
+252521		
+252522		
+252531		
+252532		
+252533		
+252534		
+252535		
+253000		
+253001		
+253002		
+253100		
+253101		
+253102		
+253200		
+253201		
+253202		
+253300		
+253301		
+253302		
+253400		
+253401		
+253402		
+254000		
+254001		
+254002		
+254100		
+254101		
+254102		
+254200		
+254201		
+254202		
+254300		
+254301		
+254302		
+254400		
+254401		
+254402		
+254501		
+254502		
+254511		
+254512		
+254521		
+254522		
+254531		
+254532		
+254533		
+254534		
+254535		
+255000		
+255001		
+255002		
+255100		
+255101		
+255102		
+255200		
+255201		
+255202		
+255300		
+255301		
+255302		
+255400		
+255401		
+255402		
+256000		
+256001		
+256002		
+256003		
+256004		
+257000		
+257001		
+257002		
+257100		
+257101		
+257102		
+257200		
+257201		
+257202		
+257300		
+257301		
+257302		
+257400		
+257401		
+257402		
+257501		
+257502		
+257511		
+257512		
+257521		
+257522		
+257531		
+257532		
+257533		
+257534		
+257535		
+258000		
+258001		
+258002		
+258100		
+258101		
+258102		
+258200		
+258201		
+258202		
+258300		
+258301		
+258302		
+258400		
+258401		
+258402		
+258501		
+258502		
+258511		
+258512		
+258521		
+258522		
+258531		
+258532		
+258533		
+258534		
+258535		
+259000		
+259001		
+259002		
+259100		
+259101		
+259102		
+259200		
+259201		
+259202		
+259300		
+259301		
+259302		
+259400		
+259401		
+259402		
+259501		
+259502		
+259511		
+259512		
+259521		
+259522		
+259531		
+259532		
+259533		
+259534		
+259535		
+260000		
+260001		
+260002		
+260100		
+260101		
+260102		
+260200		
+260201		
+260202		
+260300		
+260301		
+260302		
+260400		
+260401		
+260402		
+261000		
+261001		
+261002		
+261100		
+261101		
+261102		
+261200		
+261201		
+261202		
+261300		
+261301		
+261302		
+261400		
+261401		
+261402		
+261501		
+261502		
+261511		
+261512		
+261521		
+261522		
+261531		
+261532		
+261533		
+261534		
+261535		
+262000		
+262001		
+262002		
+262100		
+262101		
+262102		
+262200		
+262201		
+262202		
+262300		
+262301		
+262302		
+262400		
+262401		
+262402		
+262501		
+262502		
+262511		
+262512		
+262521		
+262522		
+262531		
+262532		
+262533		
+262534		
+262535		
+263000		
+263001		
+263002		
+263100		
+263101		
+263102		
+263200		
+263201		
+263202		
+263300		
+263301		
+263302		
+263400		
+263401		
+263402		
+263501		
+263502		
+263511		
+263512		
+263521		
+263522		
+263531		
+263532		
+263533		
+263534		
+263535		
+264000		
+264001		
+264002		
+264004		
+264100		
+264101		
+264102		
+264104		
+264200		
+264201		
+264202		
+264204		
+264300		
+264301		
+264302		
+264304		
+264400		
+264401		
+264402		
+264404		
+264501		
+264502		
+264511		
+264512		
+264521		
+264522		
+264531		
+264532		
+264533		
+264534		
+264535		
+265000		
+265001		
+265002		
+265004		
+265100		
+265101		
+265102		
+265104		
+265200		
+265201		
+265202		
+265204		
+265300		
+265301		
+265302		
+265304		
+265400		
+265401		
+265402		
+265404		
+266000		
+266001		
+266002		
+266100		
+266101		
+266102		
+266200		
+266201		
+266202		
+266300		
+266301		
+266302		
+266400		
+266401		
+266402		
+267000		
+267001		
+267002		
+267100		
+267101		
+267102		
+267200		
+267201		
+267202		
+267300		
+267301		
+267302		
+267400		
+267401		
+267402		
+267501		
+267502		
+267511		
+267512		
+267521		
+267522		
+267531		
+267532		
+267533		
+267534		
+267535		
+268000		
+268001		
+268002		
+268100		
+268101		
+268102		
+268200		
+268201		
+268202		
+268300		
+268301		
+268302		
+268400		
+268401		
+268402		
+269000		
+269001		
+269002		
+269100		
+269101		
+269102		
+269200		
+269201		
+269202		
+269300		
+269301		
+269302		
+269400		
+269401		
+269402		
+270000		
+270001		
+270002		
+270100		
+270101		
+270102		
+270200		
+270201		
+270202		
+270300		
+270301		
+270302		
+270400		
+270401		
+270402		
+270501		
+270502		
+270511		
+270512		
+270521		
+270522		
+270531		
+270532		
+270533		
+270534		
+270535		
+271000		
+271001		
+271002		
+271100		
+271101		
+271102		
+271200		
+271201		
+271202		
+271300		
+271301		
+271302		
+271400		
+271401		
+271402		
+271501		
+271502		
+271511		
+271512		
+271521		
+271522		
+271531		
+271532		
+271533		
+271534		
+271535		
+300000	Throwing Knife (held)	
+300001	Throwing Knife (projectile)	
+300002	Throwing Knife (stuck)	
+300003	Throwing Knife (deflected)	
+300060	Crystal Dart (held)	
+300061	Crystal Dart (projectile)	
+300062	Crystal Dart (stuck)	
+300063	Crystal Dart (deflected)	
+300070	Bone Dart (held)	
+300071	Bone Dart (projectile)	
+300072	Bone Dart (stuck)	
+300073	Bone Dart (deflected)	
+300080	Kukri (held)	
+300081	Kukri (projectile)	
+300082	Kukri (stuck)	
+300083	Kukri (deflected)	
+300090	Fan Daggers (held)	
+300091	Fan Daggers (projectile)	
+300092	Fan Daggers (stuck)	
+300093	Fan Daggers (deflected)	
+300110	Redmane Fire Pot (held)	
+300111	Redmane Fire Pot (projectile)	
+300112	Redmane Fire Pot (burst)	
+300113	Redmane Fire Pot (lingering fire)	
+300115	Giantsflame Fire Pot (held)	
+300116	Giantsflame Fire Pot (projectile)	
+300117	Giantsflame Fire Pot (burst)	
+300118	Giantsflame Fire Pot (lingering fire)	
+300120	Fire Pot (held)	
+300121	Fire Pot (projectile)	
+300122	Fire Pot (burst)	
+300123	Fire Pot (lingering fire)	
+300130	Volcano Pot (held)	
+300131	Volcano Pot (projectile)	
+300132	Volcano Pot (burst and lingering fire)	
+300140	Oil Pot (held)	
+300141	Oil Pot (projectile)	
+300142	Oil Pot (burst)	
+300150	? Fire Pot (held)	
+300151	? Fire Pot (projectile)	
+300152	? Fire Pot (burst)	
+300153	? Fire Pot (lingering fire)	
+300160	Freezing Pot (held)	
+300161	Freezing Pot (projectile)	
+300162	Freezing Pot (burst)	
+300170	Lightning Pot (held)	
+300171	Lightning Pot (projectile)	
+300172	Lightning Pot (burst)	
+300173	Lightning Pot (lingering sparks)	
+300175	Ancient Dragonbolt Pot (held)	
+300176	Ancient Dragonbolt Pot (projectile)	
+300177	Ancient Dragonbolt Pot (burst)	
+300180	Holy Water Pot (held)	
+300181	Holy Water Pot (projectile)	
+300182	Holy Water Pot (burst)	
+300183	Holy Water Pot (lingering smoke)	
+300185	Sacred Order Pot (held)	
+300186	Sacred Order Pot (projectile)	
+300187	Sacred Order Pot (burst)	
+300190	Fetid Pot (held)	
+300191	Fetid Pot (projectile)	
+300192	Fetid Pot (burst)	
+300200	Swarm Pot (held)	
+300201	Swarm Pot (projectile)	
+300202	Swarm Pot (burst)	
+300210	Sleep Pot (held)	
+300211	Sleep Pot (projectile)	
+300212	Sleep Pot (burst)	
+300220	Rancor Pot (held)	
+300221	Rancor Pot (projectile)	
+300222	Rancor Pot (burst)	
+300223	Rancor Pot (skull projectile)	
+300224	Rancor Pot (skull burst)	
+300230	Magic Pot (held)	
+300231	Magic Pot (projectile)	
+300232	Magic Pot (burst)	
+300235	Academy Magic Pot (held)	
+300236	Academy Magic Pot (projectile)	
+300237	Academy Magic Pot (burst)	
+300240	Poison Pot (held)	
+300241	Poison Pot (projectile)	
+300242	Poison Pot (burst)	
+300250	Roped Fire Pot (held)	
+300251	Roped Fire Pot (projectile)	
+300252	Roped Fire Pot (burst)	
+300253	Roped Fire Pot (lingering fire)	
+300260	Roped Lightning Pot (held)	
+300261	Roped Lightning Pot (projectile)	
+300262	Roped Lightning Pot (burst)	
+300263	Roped Lightning Pot (lingering sparks)	
+300270	Roped Fetid Pot (held)	
+300271	Roped Fetid Pot (projectile)	
+300272	Roped Fetid Pot (burst)	
+300280	Roped Poison Pot (held)	
+300281	Roped Poison Pot (projectile)	
+300282	Roped Poison Pot (burst)	
+300290	Roped Oil Pot (held)	
+300291	Roped Oil Pot (projectile)	
+300292	Roped Oil Pot (burst)	
+300300	Roped Magic Pot (held)	
+300301	Roped Magic Pot (projectile)	
+300302	Roped Magic Pot (burst)	
+300310	Roped Swarm Pot (held)	
+300311	Roped Swarm Pot (projectile)	
+300312	Roped Swarm Pot (burst)	
+300330	Roped Volcano Pot (held)	
+300331	Roped Volcano Pot (projectile)	
+300332	Roped Volcano Pot (burst)	
+300340	Roped Holy Water Pot (held)	
+300341	Roped Holy Water Pot (projectile)	
+300342	Roped Holy Water Pot (burst)	
+300343	Roped Holy Water Pot (lingering smoke)	
+300350	Alluring Pot (held)	
+300351	Alluring Pot (projectile)	
+300352	Alluring Pot (burst)	
+300355	Beastlure Pot (held)	
+300356	Beastlure Pot (projectile)	
+300357	Beastlure Pot (burst)	
+300360	Albinauric Pot (held)	
+300361	Albinauric Pot (projectile)	
+300362	Albinauric Pot (burst)	
+300363	Albinauric Pot (Tears Flask block effect)	
+300370	Cursed-Blood Pot (held)	
+300371	Cursed-Blood Pot (projectile)	
+300372	Cursed-Blood Pot (burst)	
+300373	Cursed-Blood Pot (Mohgwyn sigil)	
+300380	? unused dark purple Pot (held)	
+300381	? unused dark purple Pot (projectile)	
+300382	? unused dark purple Pot (burst)	
+300400	Morgott's holy Erdsteel Dagger	
+300401	Morgott's holy Treespear (angled)	
+300402	Morgott's holy Erdsteel Dagger (angled)	
+300403	Morgott's holy Carian Knight's Sword (angled)	
+300404	Morgott's holy Giant-Crusher (angled)	
+300405	Morgott's holy Treespear (angled)	
+300412	Morgott's holy Erdsteel Dagger desummon (angled)	
+300413	Morgott's holy Carian Knight's Sword desummon(angled)	
+300414	Morgott's holy Giant-Crusher desummon (angled)	
+300415	Morgott's holy Treespear desummon (angled)	
+300500		sparkly fire and expanding rings of gold
+300510		big bright sparkly frost smoke
+300520	Spark Aromatic (Perfume Bottle)	
+300521	Spark Aromatic (projectile sparkle trail)	
+300522	Spark Aromatic (projectile burn)	
+300523	Spark Aromatic (projectile burst)	
+300531	Acid Spraymist (spray and cloud)	
+300540	Uplifting Aromatic (Perfume Bottle)	
+300541	Uplifting Aromatic (energy absorption)	
+300542	Uplifting Aromatic (sparkle AoE)	
+300551	Ironjar Aromatic (energy absorption)	
+300552	Ironjar Aromatic (dripping)	
+300561	Bloodboil Aromatic (energy absorption)	
+300571	Poison Spraymist (spray and cloud)	
+300600	Explosive Stone (held)	
+300601	Explosive Stone (projectile)	
+300602	Explosive Stone (burst)	
+300610	Poisoned Stone (held)	
+300611	Poisoned Stone (projectile)	
+300612	Poisoned Stone (burst)	
+300613	Poisoned Stone (deflected)	
+300620	Poisonbone Dart (held)	
+300621	Poisonbone Dart (projectile)	
+300622	Poisonbone Dart (stuck)	
+300623	Poisonbone Dart (deflected)	
+300640	Soap (held)	
+300641	Soap (bubble splash)	
+300642	Soap (body bubbles)	
+300650	Explosive Stone Clump (held)	
+300660	Poisoned Stone Clump (held)	
+300670	Ancestral Infant's Head (held)	
+300671	Ancestral Infant's Head (breath)	
+300672	Ancestral Infant's Head (projectile)	
+300673	Ancestral Infant's Head (splash pool)	
+300680	Omen Bairn (body flame)	
+300681	Omen Bairn (body flame burst)	
+300685	Omen Bairn (projectile)	
+300686	Omen Bairn (projectile burst)	
+300690	Miranda's Prayer (glitter)	
+300691	Miranda's Prayer (light burst)	
+300700	? cut Glintstone Scrap (held)	
+300701	? cut Glintstone Scrap (projectile)	
+300702	? cut Glintstone Scrap (burst)	
+300703	? cut Glintstone Scrap (secondary projectile forms)	
+300704	? cut Glintstone Scrap (secondary projectile)	
+300705	? cut Glintstone Scrap (secondary projectile burst)	
+300710	Glintstone Scrap (held)	
+300711	Glintstone Scrap (projectile)	
+300712	Glintstone Scrap (burst)	
+300713	Glintstone Scrap (secondary projectile forms)	
+300714	Glintstone Scrap (secondary projectile)	
+300715	Glintstone Scrap (secondary projectile burst)	
+300720	Gravity Stone Chunk (held)	
+300721	Gravity Stone Chunk (Gravity sigil)	
+300722	Gravity Stone Chunk (projectile)	
+300723	Gravity Stone Chunk (ground impact)	
+300724	Gravity Stone Chunk (gravity field)	
+300725	Gravity Stone Chunk (rock burst)	
+300730	Frenzyflame Stone (held)	
+300731	Frenzyflame Stone (projectile)	
+300732	Frenzyflame Stone (lingering aura)	
+300740	Regal Omen Bairn (body flame)	
+300741	Regal Omen Bairn (body flame burst)	
+300745	Regal Omen Bairn (projectile)	
+300746	Regal Omen Bairn (projectile burst)	
+300750	Large Glintstone Scrap (held)	
+300751	Large Glintstone Scrap (projectile)	
+300752	Large Glintstone Scrap (burst)	
+300753	Large Glintstone Scrap (secondary projectile forms)	
+300754	Large Glintstone Scrap (secondary projectile)	
+300755	Large Glintstone Scrap (secondary projectile burst)	
+301000	Flask of Crimson Tears (full)	
+301001	Flask of Crimson Tears (empty)	
+301002	Flask of Crimson Tears (heal)	
+301010	?	nothing
+301011	? Red Scarab Flask restore?	bright yellow sparkly release
+301031	Stanching Boluses (use)	red sparkly release
+301033	Neutralizing Boluses (use)	green sparkly release
+301035	Preserving Boluses (use)	orange sparkly release
+301037	Stimulating Boluses (use)	purple sparkly release
+301039	Thawfrost Boluses (use)	pale blue sparkly release
+301041	Rejuvenating Boluses (use)	black and pale gold sparkly release
+301043	Clarifying Boluses (use)	gold flaming sparkly release
+301050	Flask of Cerulean Tears (full)	
+301051	Flask of Cerulean Tears (empty)	
+301052	Flask of Cerulean Tears (heal)	
+301090	? Blue Scarab Flask restore?	bright blue sparkly release
+301100	?	pale gold slow downward flame
+301200	Pickled Turtle Neck (held)	
+301201	Pickled Turtle Neck (use)	
+301202	Pickled Turtle Neck (effect)	
+301210	Immunizing White Cured Meat (held)	
+301211	Immunizing White Cured Meat (use)	
+301212	Immunizing White Cured Meat (effect)	
+301220	Invigorating White Cured Meat (held)	
+301221	Invigorating White Cured Meat (use)	
+301222	Invigorating White Cured Meat (effect)	
+301230	Clarifying White Cured Meat (held)	
+301231	Clarifying White Cured Meat (use)	
+301232	Clarifying White Cured Meat (effect)	
+301240	Dappled White Cured Meat (held)	
+301241	Dappled White Cured Meat (use)	
+301242	Dappled White Cured Meat (effect)	
+301250	Silver-Pickled Fowl Foot (held)	
+301251	Silver-Pickled Fowl Foot (use)	
+301252	Silver-Pickled Fowl Foot (effect)	
+301260	Gold-Pickled Fowl Foot (held)	
+301261	Gold-Pickled Fowl Foot (use)	
+301262	Gold-Pickled Fowl Foot (effect)	
+301270	Exalted Flesh (held)	
+301271	Exalted Flesh (use)	
+301272	Exalted Flesh (effect)	
+301281	Spellproof Dried Liver (use)	
+301291	Lightningproof Dried Liver (use)	
+301311	Holyproof Dried Liver (use)	
+301340	?	red sparkly energy release
+301350	Boiled Crab (held)	
+301351	Boiled Crab (use)	
+301352	Boiled Crab (effect)	
+301360	Boiled Prawn (held)	
+301361	Boiled Prawn (use)	
+301362	Boiled Prawn (effect)	
+301371	Radiant Baldachin's Blessing (use)	
+301372	Radiant Baldachin's Blessing (effect)	
+301500	Spirit Summon (held)	
+301501	Spirit Summon (bell)	
+301502	Spirit Summon (sparkles)	
+301503	Spirit Summon (summon pulse)	
+301505	Spirit Summon (spawn pulse)	
+301512	Spirit Summon (sparkles)	
+302000	? some kind of roped poison meat block (held)	
+302001	? some kind of roped poison meat block (projectile)	
+302002	? some kind of roped poison meat block (burst)	
+302005	? some kind of roped poison meat block (small, held)	
+302006	? some kind of roped poison meat block (small, projectile)	
+302007	? some kind of roped poison meat block (small, burst)	
+302008	? some kind of roped poison meat block (effect)	
+302020	Rainbow Stone (held)	
+302021	Rainbow Stone (projectile)	
+302022	Rainbow Stone (lingering colored stone)	
+302023	Rainbow Stone (burst)	
+302030	Glowstone (held)	
+302031	Glowstone (lingering glowing stone)	
+302041	?	windy whirl of red-orange petals
+302050	Telescope	
+302060	Memory of Grace (activation)	glittering pale gold flame
+302061	Memory of Grace (body effect)	glittering pale gold release
+302120	?	small silver pot
+302121	?	rising pillar of dense azure smoke and magic sparkles
+302130	Warming Stone (held)	
+302131	Warming Stone (projectile)	
+302132	Warming Stone (lingering aura)	
+302133	Warming Stone (heal effect)	
+302140	Ruin Fragment (held)	
+302141	Ruin Fragment (projectile)	
+302142	Ruin Fragment (burst)	
+302151	Baldachin's Blessing (use)	
+302152	Baldachin's Blessing (effect)	
+302160	Lucent Baldachin's Blessing (held)	
+302161	Lucent Baldachin's Blessing (use)	
+302170	Wraith Calling Bell (bell)	
+302171	Wraith Calling Bell (projectile)	
+302172	Wraith Calling Bell (burst)	
+302181	Blasphemous Claw (use)	
+302190	Miquella's Needle (held)	
+302191	Miquella's Needle (frenzyflame absorption)	
+302192	Miquella's Needle (Miquella sigil)	
+302200	Pureblood Knight's Medal (Mohgwyn sigil)	
+302210	Soft Cotton (held)	
+302211	Soft Cotton (use)	
+302212	Soft Cotton (effect)	
+302213	Soft Cotton (effect start)	
+302220	Starlight Shard (held)	
+302221	Starlight Shard (use)	
+302222	Starlight Shard (effect)	
+302301		orange sparkly release
+302401		green-gold spiraling glitter release
+302402		pale red spiraling glitter release
+302403		cyan spiraling glitter release
+302404		purple spiraling glitter release
+302405		pale salmon red sparkly release
+302406		pale blue sparkly release
+302410		pale blue sparkly echo pulse
+302420	Lantern (model)	
+302421	Lantern (glow)	
+302440		small sparkling white gem
+302450		medium bright sparkling white gem
+302460	Gravity Stone Fan (held)	
+302461	Gravity Stone Fan (Gravity sigil)	
+302462	Gravity Stone Fan (projectile)	
+302463	Gravity Stone Fan (ground impact)	
+302464	Gravity Stone Fan (small rock burst)	
+302465	Gravity Stone Fan (medium rock burst)	
+302466	Gravity Stone Fan (large rock burst)	
+302470	Margit's Shackle (held)	
+302471	Margit's Shackle (use)	
+302472	Margit's Shackle (giant Erdtree sigil)	
+302473	Margit's Shackle (giant Erdtree sigil burst)	
+302490	Bewitching Branch (held)	
+302491	Bewitching Branch (Miquella sigil)	
+302493	Bewitching Branch (smoke spray)	
+302494	Bewitching Branch (smoke puff)	
+302500	Prattling Pate "Hello" (held)	
+302501	Prattling Pate "Hello" (voice)	
+302502	Prattling Pate "Hello" (?)	nothing
+302510	Prattling Pate "Thank You" (held)	
+302511	Prattling Pate "Thank You" (voice)	
+302520	Prattling Pate "Apologies" (held)	
+302521	Prattling Pate "Apologies" (voice)	
+302530	Prattling Pate "Wonderful" (held)	
+302531	Prattling Pate "Wonderful" (voice)	
+302540	Prattling Pate "Please Help" (held)	
+302541	Prattling Pate "Please Help" (voice)	
+302550	Prattling Pate "My Beloved" (held)	
+302551	Prattling Pate "My Beloved" (voice)	
+302560	Prattling Pate "Let's Get To It" (held)	
+302561	Prattling Pate "Let's Get To It" (voice)	
+302570	Prattling Pate "You're Beautiful" (held)	
+302571	Prattling Pate "You're Beautiful" (voice)	
+302600	Mimic's Veil (held)	
+302602	Mimic's Veil (start effect)	
+302603	Mimic's Veil (dispel effect)	
+302604	Mimic's Veil (form 1)	
+302605	Mimic's Veil (form 2)	
+302606	Mimic's Veil (form 3)	
+302700	Scriptstone (held)	white sparkly concentrated energy
+302702	Scriptstone (use)	white sparkly burst
+302710	Grace Mimic (held)	
+302711	Grace Mimic (use)	
+302712	Grace Mimic (Grace spawn and projectile)	
+302713	Grace Mimic (Grace sound)	
+302800	Twinsage Glintstone Crown (Erudition glow)	lavender and green sparkly energy orbs
+302810	Olivinus Glintstone Crown (Erudition glow)	green sparkly energy orb
+302820	Lazuli Glintstone Crown (Erudition glow)	lavender sparkly energy orb
+302830	Karolos Glintstone Crown (Erudition glow)	pale green energy orb
+302840	Witch's Glintstone Crown (Erudition glow)	acid green energy orb
+302900	Rowa Raisin (held)	
+302901	Rowa Raisin (heal)	
+302910	Sweet Raisin (held)	
+302911	Sweet Raisin (heal)	
+302920	Frozen Raisin (held)	
+302921	Frozen Raisin (heal)	
+302991		cyan-blue sparkly magic energy
+303000	Fire weapon buff (use sound)	
+303001	Fire weapon buff (size 0)	
+303002	Fire weapon buff (size 1)	
+303003	Fire weapon buff (size 2)	
+303004	Fire weapon buff (size 3)	
+303005	Fire weapon buff (size 4)	
+303006	Fire weapon buff (size 5)	
+303007	Fire weapon buff (size 6)	
+303008	Fire weapon buff (size 7)	
+303009	Fire weapon buff (size 8)	
+303010	Lightning weapon buff (use sound)	
+303011	Lightning weapon buff (size 0)	
+303012	Lightning weapon buff (size 1)	
+303013	Lightning weapon buff (size 2)	
+303014	Lightning weapon buff (size 3)	
+303015	Lightning weapon buff (size 4)	
+303016	Lightning weapon buff (size 5)	
+303017	Lightning weapon buff (size 6)	
+303018	Lightning weapon buff (size 7)	
+303019	Lightning weapon buff (size 8)	
+303020		nothing
+303030		falling bright white sparkles
+303031		sparkly white foggy release
+303040		nothing
+303050		nothing
+303060	Poison weapon buff (activation sound)	
+303061	Poison weapon buff (size 0)	
+303062	Poison weapon buff (size 1)	
+303063	Poison weapon buff (size 2)	
+303064	Poison weapon buff (size 3)	
+303065	Poison weapon buff (size 4)	
+303066	Poison weapon buff (size 5)	
+303067	Poison weapon buff (size 6)	
+303068	Poison weapon buff (size 7)	
+303069	Poison weapon buff (size 8)	
+303070	Magic weapon buff (activation sound)	
+303071	Magic weapon buff (size 0)	
+303072	Magic weapon buff (size 1)	
+303073	Magic weapon buff (size 2)	
+303074	Magic weapon buff (size 3)	
+303075	Magic weapon buff (size 4)	
+303076	Magic weapon buff (size 5)	
+303077	Magic weapon buff (size 6)	
+303078	Magic weapon buff (size 7)	
+303079	Magic weapon buff (size 8)	
+303090	Blood weapon buff (activation sound)	
+303091	Blood weapon buff (size 0)	
+303092	Blood weapon buff (size 1)	
+303093	Blood weapon buff (size 2)	
+303094	Blood weapon buff (size 3)	
+303095	Blood weapon buff (size 4)	
+303096	Blood weapon buff (size 5)	
+303097	Blood weapon buff (size 6)	
+303098	Blood weapon buff (size 7)	
+303099	Blood weapon buff (size 8)	
+303100	Soporific weapon buff (activation sound)	
+303101	Soporific weapon buff (size 0)	
+303102	Soporific weapon buff (size 1)	
+303103	Soporific weapon buff (size 2)	
+303104	Soporific weapon buff (size 3)	
+303105	Soporific weapon buff (size 4)	
+303106	Soporific weapon buff (size 5)	
+303107	Soporific weapon buff (size 6)	
+303108	Soporific weapon buff (size 7)	
+303109	Soporific weapon buff (size 8)	
+303110	Freezing weapon buff (activation sound)	
+303111	Freezing weapon buff (size 0)	
+303112	Freezing weapon buff (size 1)	
+303113	Freezing weapon buff (size 2)	
+303114	Freezing weapon buff (size 3)	
+303115	Freezing weapon buff (size 4)	
+303116	Freezing weapon buff (size 5)	
+303117	Freezing weapon buff (size 6)	
+303118	Freezing weapon buff (size 7)	
+303119	Freezing weapon buff (size 8)	
+303120	Ghostflame weapon buff (activation sound)	
+303121	Ghostflame weapon buff (size 0)	
+303122	Ghostflame weapon buff (size 1)	
+303123	Ghostflame weapon buff (size 2)	
+303124	Ghostflame weapon buff (size 3)	
+303125	Ghostflame weapon buff (size 4)	
+303126	Ghostflame weapon buff (size 5)	
+303127	Ghostflame weapon buff (size 6)	
+303128	Ghostflame weapon buff (size 7)	
+303129	Ghostflame weapon buff (size 8)	
+303130	Holy weapon buff (activation sound)	
+303131	Holy weapon buff (size 0)	
+303132	Holy weapon buff (size 1)	
+303133	Holy weapon buff (size 2)	
+303134	Holy weapon buff (size 3)	
+303135	Holy weapon buff (size 4)	
+303136	Holy weapon buff (size 5)	
+303137	Holy weapon buff (size 6)	
+303138	Holy weapon buff (size 7)	
+303139	Holy weapon buff (size 8)	
+303140	Cragblade weapon buff (activation sound)	
+303141	Cragblade weapon buff (size 0)	
+303142	Cragblade weapon buff (size 1)	
+303143	Cragblade weapon buff (size 2)	
+303144	Cragblade weapon buff (size 3)	
+303145	Cragblade weapon buff (size 4)	
+303146	Cragblade weapon buff (size 5)	
+303147	Cragblade weapon buff (size 6)	
+303148	Cragblade weapon buff (size 7)	
+303149	Cragblade weapon buff (size 8)	
+303150	Ancient Lightning weapon buff (activation sound)	
+303151	Ancient Lightning weapon buff (size 0)	
+303152	Ancient Lightning weapon buff (size 1)	
+303153	Ancient Lightning weapon buff (size 2)	
+303154	Ancient Lightning weapon buff (size 3)	
+303155	Ancient Lightning weapon buff (size 4)	
+303156	Ancient Lightning weapon buff (size 5)	
+303157	Ancient Lightning weapon buff (size 6)	
+303158	Ancient Lightning weapon buff (size 7)	
+303159	Ancient Lightning weapon buff (size 8)	
+303160	Blackflame weapon buff (activation sound)	
+303161	Blackflame weapon buff (size 0)	
+303162	Blackflame weapon buff (size 1)	
+303163	Blackflame weapon buff (size 2)	
+303164	Blackflame weapon buff (size 3)	
+303165	Blackflame weapon buff (size 4)	
+303166	Blackflame weapon buff (size 5)	
+303167	Blackflame weapon buff (size 6)	
+303168	Blackflame weapon buff (size 7)	
+303169	Blackflame weapon buff (size 8)	
+303170	Bloodflame weapon buff (activation sound)	
+303171	Bloodflame weapon buff (size 0)	
+303172	Bloodflame weapon buff (size 1)	
+303173	Bloodflame weapon buff (size 2)	
+303174	Bloodflame weapon buff (size 3)	
+303175	Bloodflame weapon buff (size 4)	
+303176	Bloodflame weapon buff (size 5)	
+303177	Bloodflame weapon buff (size 6)	
+303178	Bloodflame weapon buff (size 7)	
+303179	Bloodflame weapon buff (size 8)	
+303180	Dragonwound weapon buff (activation sound)	
+303181	Dragonwound weapon buff (size 0)	
+303182	Dragonwound weapon buff (size 1)	
+303183	Dragonwound weapon buff (size 2)	
+303184	Dragonwound weapon buff (size 3)	
+303185	Dragonwound weapon buff (size 4)	
+303186	Dragonwound weapon buff (size 5)	
+303187	Dragonwound weapon buff (size 6)	
+303188	Dragonwound weapon buff (size 7)	
+303189	Dragonwound weapon buff (size 8)	
+303190	Rot weapon buff (activation sound)	
+303191	Rot weapon buff (size 0)	
+303192	Rot weapon buff (size 1)	
+303193	Rot weapon buff (size 2)	
+303194	Rot weapon buff (size 3)	
+303195	Rot weapon buff (size 4)	
+303196	Rot weapon buff (size 5)	
+303197	Rot weapon buff (size 6)	
+303198	Rot weapon buff (size 7)	
+303199	Rot weapon buff (size 8)	
+303200	Golden Tempering weapon buff (activation sound)	
+303201	Golden Tempering weapon buff (size 0)	
+303202	Golden Tempering weapon buff (size 1)	
+303203	Golden Tempering weapon buff (size 2)	
+303204	Golden Tempering weapon buff (size 3)	
+303205	Golden Tempering weapon buff (size 4)	
+303206	Golden Tempering weapon buff (size 5)	
+303207	Golden Tempering weapon buff (size 6)	
+303208	Golden Tempering weapon buff (size 7)	
+303209	Golden Tempering weapon buff (size 8)	
+303300	Loretta's Slash weapon buff (activation sound)	
+303301	Loretta's Slash weapon buff (size 0)	
+303302	Loretta's Slash weapon buff (size 1)	
+303303	Loretta's Slash weapon buff (size 2)	
+303304	Loretta's Slash weapon buff (size 3)	
+303305	Loretta's Slash weapon buff (size 4)	
+303306	Loretta's Slash weapon buff (size 5)	
+303307	Loretta's Slash weapon buff (size 6)	
+303308	Loretta's Slash weapon buff (size 7)	
+303309	Loretta's Slash weapon buff (size 8)	
+304000	Golden Rune (held) [1]	
+304001	Golden Rune (use) [1]	
+304002	Golden Rune (Rune absorption) [1]	
+304005	Golden Rune (descending Rune orb) [1]	
+304006	Golden Rune (descending Rune orb) [1]	
+304010	Golden Rune (held) [2-5]	
+304011	Golden Rune (use) [2-5]	
+304012	Golden Rune (Rune absorption) [2-5]	
+304020	Golden Rune (held) [6-10]	
+304021	Golden Rune (use) [6-10]	
+304022	Golden Rune (Rune absorption) [6-10]	
+304030	Golden Rune (held) [11-13]	
+304031	Golden Rune (use) [11-13]	
+304032	Golden Rune (Rune absorption) [11-13]	
+304040	Numen/Hero's Rune (held) [1-3]	
+304041	Numen/Hero's Rune (use) [1-3]	
+304042	Numen/Hero's Rune (Rune absorption) [1-3]	
+304050	Lord's/Hero's Rune (held) [4-5]	
+304051	Lord's/Hero's Rune (use) [4-5]	
+304052	Lord's/Hero's Rune (Rune absorption) [4-5]	
+304070	Remembrance (held)	
+304071	Remembrance (use)	
+304072	Remembrance (Rune absorption)	
+304073	Remembrance (descending Rune orb)	
+304511	Godrick's Great Rune (Rune absorption)	
+304512	Godrick's Great Rune (descending Rune orb)	
+304521	Rykard's Great Rune (Rune absorption)	
+304522	Rykard's Great Rune (descending Rune orb)	
+304531	Malenia's Great Rune (Rune absorption)	
+304532	Malenia's Great Rune (descending Rune orb)	
+304541	Radahn's's Great Rune (Rune absorption)	
+304542	Radahn's's Great Rune (descending Rune orb)	
+304551	Morgott's Great Rune (Rune absorption)	
+304552	Morgott's Great Rune (descending Rune orb)	
+304561	Mohg's Great Rune (Rune absorption)	
+304562	Mohg's Great Rune (descending Rune orb)	
+304570	Rune Arc (use)	
+304571	Rune Arc (Rune absorption)	
+304572	Rune Arc (descending Rune orb)	
+304573	Rune Arc (held)	
+304620	Phantom Great Rune (health regen?)	red restore/regain energy
+304621	Phantom Great Rune (health regen?)	nothing
+304660	Phantom Great Rune (held)	
+304661	Phantom Great Rune (use)	
+304665	Phantom Great Rune (health regen)	
+304675	Phantom Great Rune (health regen?)	
+305000	Finger Severer (held)	
+305001	Finger Severer (cut)	
+305010	Bloody/Recusant Finger (held)	
+305011	Bloody/Recusant Finger (activation)	
+305015	? Bloody/Recusant Finger (held)	
+305016	? Bloody/Recusant Finger (deactivation)	
+305020	Taunter's Tongue (held)	
+305021	Taunter's Tongue (activation)	
+305025	Taunter's Tongue (held)	
+305026	Taunter's Tongue (deactivation)	
+305030	Furlcalling Finger Remedy (held dish)	
+305031	Furlcalling Finger Remedy (held energy)	
+305032	Furlcalling Finger Remedy (?)	nothing
+305033	Furlcalling Finger Remedy (activation)	
+305034	Furlcalling Finger Remedy (deactivation)	
+305040	Phantom Bloody/Recusant Finger (held)	
+305041	Phantom Bloody/Recusant Finger (use)	
+305100	Tarnished's Wizened Finger (held)	
+305101	Tarnished's Wizened Finger (activation)	nothing
+305110	Tarnished's Furled Finger (held)	
+305111	Tarnished's Furled Finger (activation)	nothing
+305120	Duelist's Furled Finger (held)	
+305121	Duelist's Furled Finger (activation)	
+305200	Small Golden Effigy (held)	
+305201	Small Golden Effigy (activation)	
+305205	Small Golden Effigy (held)	
+305206	Small Golden Effigy (deactivation)	
+305210	Small Red Effigy (held)	
+305211	Small Red Effigy (activation)	
+305215	Small Red Effigy (held)	
+305216	Small Red Effigy (deactivation)	
+305300	White Cipher Ring (held)	
+305301	White Cipher Ring (activation)	
+305305	White Cipher Ring (held)	
+305306	White Cipher Ring (deactivation)	
+305310	Blue Cipher Ring (held)	
+305311	Blue Cipher Ring (activation)	
+305315	Blue Cipher Ring (held)	
+305316	Blue Cipher Ring (deactivation)	
+320000	? Invader Rune gain?	red energy absorption
+320160	Conditional HP restore	
+320170	Conditional FP restore	
+330000	Crimson Crystal Tear (use)	
+330100	Cerulean Crystal/Hidden Tear (use)	
+330111	Cerulean Hidden Tear (effect)	
+330200	Speckled Hardtear (use)	
+330301	Crimson Bubbletear (effect)	
+330400	Crimsonburst Crystal Tear (use)	
+330401	Crimsonburst Crystal Tear (effect)	
+331000	Crimsonspill Crystal Tear (use)	
+331020	Greenspill/Greenburst Crystal Tear (use)	
+331100	?	gold heal with buff sound
+331200	Twiggy/Winged/Windy Crystal Tear (use)	
+331211	Twiggy/Winged/Windy Crystal Tear (effect)	
+331300	Crimson Bubbletear (use)	
+331400	Crimsonwhorl Bubbletear/Opaline Bubbletear (use)	
+331401	Crimsonwhorl Bubbletear (effect)	
+331411	Opaline Bubbletear (effect)	
+331500	Leaden Hardtear/Crystal Tear (use)	
+331501	Leaden Hardtear (effect)	
+331600	Purifying Crystal Tear (use)	
+331601	Purifying Crystal Tear (effect)	
+331610	Purifying Crystal Tear (bubble crack 1)	
+331611	Purifying Crystal Tear (bubble crack 2)	
+331612	Purifying Crystal Tear (bubble crack 3)	
+331700	Strength-Knot/Dexterity-Knot/Thorny/Spiky Cracked Tear (use)	
+331701		small ghostly white circle
+331800	Stonebarb Cracked Tear (use)	
+331801	Stonebarb Cracked Tear (effect)	
+331900	Intelligence-Knot Crystal/Magic-Shrouding Cracked Tear (use)	
+331901	Intelligence-Knot Crystal/Magic-Shrouding Cracked Tear (effect)	
+332000	Ruptured Crystal Tear (use)	
+332100	Ruptured Crystal Tear (burst)	
+332101	?	nothing
+332200	Ruptured Crystal Tear (use)	
+332201	Ruptured Crystal Tear (bigger burst)	
+332202	Ruptured Crystal Tear (effect)	
+333000	Lightning-Shrouding Cracked Tear (use)	
+333001	Lightning-Shrouding Cracked Tear (effect)	
+333100	Faith-Knot Crystal/ Holy-Shrouding Cracked Tear (use)	
+333101	Faith-Knot Crystal/ Holy-Shrouding Cracked Tear (effect)	
+333200	Flame-Shrouding Cracked Tear (use)	
+333201	Flame-Shrouding Cracked Tear (effect)	
+335000	Flask of Wondrous Physick (full)	
+335001	Flask of Wondrous Physick (empty)	
+335002	Flask of Wondrous Physick (use)	
+400001	Arrow (projectile)	
+400002	Arrow (stuck)	
+400003	Arrow (deflected)	
+400410		nothing
+401000	Weapon trail (white line)	
+401001	Weapon trail (white line)	
+401002	Weapon trail (white line)	
+401004	Weapon trail (white line)	
+401005	Weapon trail (white line)	
+401006	Weapon trail (white line)	
+401010	Weapon trail (white dot)	
+401011	Weapon trail (white dot)	
+401012	Weapon trail (white dot)	
+401020	Weapon trail (white dot)	
+401021	Weapon trail (white dot)	
+402000	Torch flame	
+402001	Torch glow	
+402010	Beast-Repellent Torch flame	
+402011	Beast-Repellent Torch glow	
+402020	St. Trina's Torch flame	
+402021	St. Trina's Torch glow	
+402030	Ghostflame Torch flame	
+402031	Ghostflame Torch glow	
+402040	Torchpole flame	
+402050	Inquisitor's Girandole flame	
+405000	Torch Guard Counter weapon trail (orange line)	
+405001	Torch Guard Counter weapon trail (orange embers)	
+405010	Shield/Small Shield Guard Counter (release)	force/power release
+405020	unused Guard Counter (release)	force/power release
+405030	Guard Counter (release)	force/power release
+411000	Magic weapon trail (cyan line)	
+411001	Magic weapon trail (cyan line)	
+411002	Magic weapon trail (cyan line)	
+412000	Fire weapon trail (orange line)	
+412001	Fire weapon trail (orange line)	
+412002	Fire weapon trail (orange line)	
+413000	Lightning weapon trail (yellow line)	
+413001	Lightning weapon trail (yellow line)	
+413002	Lightning weapon trail (yellow line)	
+415000	Poison weapon trail (green line)	
+415001	Poison weapon trail (green line)	
+415002	Poison weapon trail (green line)	
+416000	? Magic weapon trail ? (pale blue line)	
+416001	? Magic weapon trail ? (pale blue line)	
+416002	? Magic weapon trail ? (pale blue line)	
+417000	Weapon trail (white line)	
+417001	Weapon trail (white line)	
+417002	Weapon trail (white line)	
+419000	? Fire weapon trail ? (bright orange-red line)	
+419001	? Fire weapon trail ? (bright orange-red line)	
+419002	? Fire weapon trail ? (bright orange-red line)	
+420000	Holy weapon trail (pale gold line)	
+420001	Holy weapon trail (pale gold line)	
+420002	Holy weapon trail (pale gold line)	
+421000	Blood weapon trail (bright red line)	
+421001	Blood weapon trail (bright red line)	
+421002	Blood weapon trail (bright red line)	
+422000	Sleep weapon trail (lavender line)	
+422001	Sleep weapon trail (lavender line)	
+422002	Sleep weapon trail (lavender line)	
+424000	Rot weapon trail (pale brown line)	
+424001	Rot weapon trail (pale brown line)	
+424002	Rot weapon trail (pale brown line)	
+425000	Cursed fire weapon trail (black-gold line)	
+425001	Cursed fire weapon trail (black-gold line)	
+425002	Cursed fire weapon trail (black-gold line)	
+426000	Dragonwound weapon trail (pale pink line)	
+426001	Dragonwound weapon trail (pale pink line)	
+426002	Dragonwound weapon trail (pale pink line)	
+427000	Blackflame weapon trail (black-white line)	
+427001	Blackflame weapon trail (black-white line)	
+427002	Blackflame weapon trail (black-white line)	
+428000	Bloodflame weapon trail (bright fiery red line)	
+428001	Bloodflame weapon trail (bright fiery red line)	
+428002	Bloodflame weapon trail (bright fiery red line)	
+429000	Ghostflame weapon trail (black and pale blue line)	
+429001	Ghostflame weapon trail (black and pale blue line)	
+429002	Ghostflame weapon trail (black and pale blue line)	
+430000	? Magic weapon trail ? (bright blue line)	
+430001	? Magic weapon trail ? (bright blue line)	
+430002	? Magic weapon trail ? (bright blue line)	
+431000	? Ghostflame weapon trail ? (pale blue line)	
+431001	? Ghostflame weapon trail ? (pale blue line)	
+431002	? Ghostflame weapon trail ? (pale blue line)	
+434000	? Holy weapon trail ? (bright yellow line)	
+434001	? Holy weapon trail ? (bright yellow line)	
+434002	? Holy weapon trail ? (bright yellow line)	
+435000	? Carian Magic weapon trail ? (bright blue line)	
+435001	? Carian Magic weapon trail ? (bright blue line)	
+435002	? Carian Magic weapon trail ? (bright blue line)	
+440000		nothing
+440001	Barricade Shield (activation)	
+440010		nothing
+440011	Determination (activation)	
+440012	? Determination ? (activation)	has sound, unlike the above
+440020	Vow of the Indomitable (activation)	
+440021	Vow of the Indomitable (body glow)	
+440025	Charge Forth (charged thrust force)	wind drill
+440026	Charge Forth (uncharged thrust force)	smaller wind drill
+440027	Charge Forth (continuous thrust force)	wind current
+440030	Impaling Thrust (thrust force)	wind drill
+440035	Piercing Fang (thrust force)	strong wind drill
+440040	Spinning Slash (small weapon whirlwind)	
+440041	Spinning Slash (heavy/long weapon whirlwind)	
+440050	Mighty Shot (release)	
+440055	? Unused bow FFX (release)	
+440060	Quickstep forward (?)	nothing
+440061	Quickstep backward (?)	nothing
+440062	Quickstep left (?)	nothing
+440063	Quickstep right (?)	nothing
+440070	Gravitas (impact)	
+440071	Gravitas (pull)	
+440080	Storm Blade (weapon wind)	
+440081	Storm Blade (Stormveil sigil)	
+440082	Storm Blade (projectile)	
+440083	Storm Blade (burst)	
+440084	Storm Blade (trail?)	
+440090	Holy Ground (charging)	
+440091	Holy Ground (release)	
+440092	Holy Ground (giant Erdtree sigil)	
+440093	Holy Ground (heal effect)	
+440100	Earthshaker (trail?)	
+440101	Earthshaker (groundquake)	
+440110	Stamp/Endure/Oath of Vengeance (poise activation)	
+440111	Endure (poise effect)	
+440115	? unused Endure ? (poise activation)	
+440116	? unused Endure ? (poise effect)	
+440117	? unused Endure ? (poise effect)	
+440120	Kick (force)	
+440130	Lion's Claw (launch force)	
+440140	? Unused bow Storm skill FFX (continuous arrow whirlwind)	
+440141	? Unused bow Storm skill FFX (storm projectile)	
+440142	? Unused bow Storm skill FFX (storm projectile burst)	
+440143	? Unused bow Storm skill FFX (short trail)	
+440144	? Unused bow Storm skill FFX (weaker storm projectile)	
+440145	? Unused bow Storm skill FFX (weaker storm projectile burst)	
+440146	? Unused bow Storm skill FFX (storm shot launch)	
+440147	? Unused bow Storm skill FFX (uncharged storm shot launch?)	
+440148	? Unused bow Storm skill FFX (Stormveil sigil)	
+440150	Barbaric Roar/Regal Roar (force)	
+440160	Giant Hunt (thrust force)	
+440170	Flame of the Redmanes (charging)	
+440171	Flame of the Redmanes (flame wave)	
+440172	Flame of the Redmanes (flame burst)	
+440180	Storm Assault (launch whirlwind)	
+440181	Storm Assault (landing whirlwind)	
+440182	Storm Assault (storm weapon trail)	
+440190	Sacred Ring of Light (charging)	
+440191	Sacred Ring of Light (projectile, tilted left)	
+440192	Sacred Ring of Light (projectile, tilted right)	
+440193	Sacred Ring of Light (projectile burst)	
+440201	Firebreather (flame spray)	
+440202	Firebreather (lingering flames)	
+440210	Shield Bash/Shield Crash (force)	
+440220	Blood Blade (hand cut blood spray)	
+440221	Blood Blade (dripping blood)	
+440222	Blood Blade (projectile, tilted left)	
+440223	Blood Blade (projectile, tilted right)	
+440224	Blood Blade (projectile burst)	
+440300	Loretta's Slash (Loretta's War Sickle magic energy blade)	
+440301	Loretta's Slash (Loretta's War Sickle large magic energy blade)	
+440302	Loretta's Slash (Loretta's War Sickle magic weapon trail)	
+440310	Bloodhound Step (forward launch dust)	
+440311	Bloodhound Step (backward launch dust)	
+440312	Bloodhound Step (left launch dust)	
+440313	Bloodhound Step (right launch dust)	
+440315	Bloodhound Step (forward landing dust)	
+440316	Bloodhound Step (backward landing dust)	
+440317	Bloodhound Step (left landing dust)	
+440318	Bloodhound Step (right landing dust)	
+440320	Lifesteal Fist (weapon effect)	
+440321	Lifesteal Fist (riposte burst)	
+440322	Lifesteal Fist (heal)	
+440400	Phantom Slash (night's cavalry appears, starts slash 1)	
+440401	Phantom Slash (night's cavalry finishes slash 1, disappears)	
+440402	Phantom Slash (night's cavalry appears, slash 2, disappears)	
+440410	Warcry (force)	
+440420	Beast's Roar (force)	
+440421	Beast's Roar (unused continuous roar)	
+440422	Beast's Roar (projectile)	
+440423	Beast's Roar (projectile burst)	
+440424	Beast's Roar (force?)	
+440430	Troll's Roar (force)	
+440431	Troll's Roar (force, no FP)	
+440440	Braggart's Roar (force)	
+440441	Braggart's Roar (unused?)	small red radiating energy
+440450	? (white weapon trail)	
+440460	Lightning Ram (lightning aura)	
+440470	Ground Slam (impact)	
+440480	Golden Slam (body effect)	
+440481	Golden Slam (impact)	
+440490	Sacred Order (holy light)	
+440491	Sacred Order (Golden Order sigil)	
+440500	Shared Order (holy light)	
+440501	Shared Order (body effect)	
+440502	Shared Order (Golden Order sigil)	
+440512	?	Raya Lucaria sigil and azure energy burst (bullet 2785, beh 300000695)
+440520	Seppuku (stab 1 blood spray)	
+440521	Seppuku (stab 2 blood spray)	
+440522	Seppuku (pull out blood spray)	
+440530	Ice Spear (frost energy gathers)	
+440531	Ice Spear (projectile)	
+440532	Ice Spear (projectile burst)	
+440533	Ice Spear (Carian sigil)	
+440540	Bloody Slash (hand cut blood spray)	
+440541	Bloody Slash (extended blood weapon trail)	
+440542	Bloody Slash (ending blood splash)	
+440550	Golden Parry (Erdtree sigil and golden wave)	
+440560	Vacuum Slash (gathering wind force)	
+440561	Vacuum Slash (weapon wind effect)	
+440562	Vacuum Slash (weapon wind trail)	
+440563	Vacuum Slash (projectile)	
+440564	Vacuum Slash (projectile burst)	
+440565	Corpse Wax Cutter (gathering Death flame)	
+440566	Corpse Wax Cutter (weapon Death Flame effect)	
+440567	Corpse Wax Cutter (weapon Death Flame trail)	
+440568	Corpse Wax Cutter (projectile)	
+440569	Corpse Wax Cutter (projectile burst)	
+440570	Assassin's Gambit (blood dripping)	
+440571	Assassin's Gambit (?)	gold whirling energy circle
+440572	Assassin's Gambit (body effect activation)	blue sparkly mist
+440573	Assassin's Gambit (?)	gold smoky energy orb
+440580	Blood Tax (effect)	pale red glow
+440581	Blood Tax (heal)	
+440590	Prelate's Charge (weapon fire effect)	
+440591	Prelate's Charge (lingering fire)	
+440592	Prelate's Charge (uppercut explosion)	
+440600	Poison Moth Flight (dripping poison)	
+440601	Poison Moth Flight (weapon poison trail)	
+440602	Poison Moth Flight (poison burst small)	
+440603	Poison Moth Flight (poison burst medium)	
+440604	Poison Moth Flight (poison burst large)	
+440605	Poison Moth Flight (poison spray small)	
+440606	Poison Moth Flight (poison spray medium)	
+440607	Poison Moth Flight (poison spray large)	
+440610	White Shadow's Lure (hand smoke)	
+440611	White Shadow's Lure (projectile)	
+440612	White Shadow's Lure (lure shadow)	
+440620	Golden Land (?)	nothing
+440621	Golden Land (holy burst)	
+440622	Golden Land (projectile forms)	
+440623	Golden Land (projectile)	
+440624	Golden Land (projectile burst)	
+440625	Golden Land (giant Erdtree sigil)	
+440630	Waves of Darkness (weapon gravity core)	
+440631	Waves of Darkness (darkness wave 1)	
+440632	Waves of Darkness (darkness wave 2)	
+440633	Waves of Darkness (darkness wave 3)	
+440640	Sacred Blade (projectile)	gold left-tilted holy slash projectile
+440641	Sacred Blade (projectile burst)	gold holy burst
+440650	?	frost slash projectile
+440651	?	lingering frost mist
+440660	?	poison slash projectile
+440661	?	lingering poison mist
+440670	Flaming Strike (?)	nothing
+440671	Flaming Strike (flame in hand)	
+440672	Flaming Strike (flame trail)	
+440673	Flaming Strike (follow-up slash flame trail)	
+440681	Black Flame Tornado (initial continuous tornado)	
+440682	Black Flame Tornado (final burst tornado)	
+440683	Black Flame Tornado (short blackflame weapon trail)	
+440690	Lightning Slash (weapon lightning strike)	
+440692	Lightning Slash (weapon lightning trail)	
+440693	Lightning Slash (lightning burst)	
+440700	Raptor of the Mists (activation)	
+440701	Raptor of the Mists (body teleport trail)	
+440705	Raptor of the Mists (teleport end)	
+440710	Hoarah Loux's Earthshaker (quake 1)	
+440711	Hoarah Loux's Earthshaker (quake 2)	
+440720	Royal Knight's Resolve (activation)	
+440730	Through and Through (shot force)	
+440740	Barrage (shot force)	
+440750	Enchanted Shot (shot force)	
+440760	Sky Shot (shot force)	
+440770	Rain of Arrows (shot force)	
+440771	Rain of Arrows (greatbow shot force)	
+440775	Radahn's Rain (shot force)	
+440776	Radahn's Rain (gravity energy gathers)	
+440780	Spectral Lance (held)	
+440781	Spectral Lance (projectile)	
+440782	Spectral Lance (burst)	
+440783	Spectral Lance (deflected)	
+440790	Glintstone Pebble (projectile)	
+440791	Glintstone Pebble (projectile burst)	
+440792	Glintstone Pebble (energy orb)	
+440793	Glintstone Pebble/Glintblade Phalanx (magic weapon trail)	
+440794	Glintstone Pebble/Glintblade Phalanx (magic thrust force)	
+440800	Storm Wall (whirlwind)	
+440810	Cragblade (gravity field)	
+449990	Storm Stomp (whirlwind)	
+450001	?	rock upburst (gravity maybe? bullet 2055/2052)
+450005	Hoarfrost Stomp (crystal projectiles form)	
+450006	Hoarfrost Stomp (crystal projectiles burst)	
+450010	Eruption (weapon flame effect)	
+450011	Eruption (explosion)	
+450012	Eruption (lingering magma)	
+450013	Eruption (?)	dripping lava (cut splash projectile maybe?)
+450020	Carian Greatsword/Grandeur (charging)	
+450021	Carian Greatsword/Grandeur (sword lv1)	
+450022	Carian Greatsword/Grandeur (sword lv2)	
+450023	Carian Grandeur (sword lv3)	
+450024	Carian Greatsword/Grandeur (sword lv1 trail)	
+450025	Carian Greatsword/Grandeur (sword lv2 trail)	
+450026	Carian Grandeur (sword lv3 trail)	
+450027	Carian Greatsword/Grandeur (sword lv1 burst)	
+450028	Carian Greatsword/Grandeur (sword lv2 burst)	
+450029	Carian  Grandeur (sword lv3 burst)	
+450030	Carian Greatsword/Grandeur (sword lv1 energy charging)	
+450031	Carian Greatsword/Grandeur (sword lv2 energy charging)	
+450032	Carian  Grandeur (sword lv3 energy charging)	
+450041	Thunderbolt (weapon lightning strike)	
+450042	Thunderbolt (lightning strike)	
+450050	?	unused blue-purple magic blade glitter
+450051	Glintblade Phalanx (cast)	blue-purple Carian sigil
+450052	?	green-blue magic glitter weapon trail
+450053	?	green-blue magic thrust force
+450055	?	unused Glintblade floating sword
+450056	?	unused Glintblade floating sword projectile
+450057	?	unused Glintblade floating sword projectile burst
+450058	?	unused blue-purple magic burst
+450060	Moonlight Greatsword (frost blade)	
+450062	Moonlight Greatsword (frost projectile)	
+450063	Moonlight Greatsword (frost projectile burst)	
+450066	Moonlight Greatsword (frost blade activation)	
+450068	Moonlight Greatsword (frost blade charging)	no model center, only blade edges
+450070	Wing of Astel (R2 cosmic sparkly glow)	
+450071	Wing of Astel (R2 blue weapon trail)	
+450072	Wing of Astel (R2 projectile 1)	
+450073	Wing of Astel (R2 projectile 1 burst)	
+450074	Wing of Astel (R2 projectile 2)	
+450075	Wing of Astel (R2 projectile 2 burst)	
+450082	?	upburst of trembling rocks and wind cut, looks like a projectile
+450090	Golden Vow/Sacred Order (gold energy orb)	
+450100	Prayerful Strike (weapon holy orb effect)	golden orb that also produces a lot of wind
+450101	Prayerful Strike (Two Fingers rings sigil)	
+450110	Ruins Greatsword (R2 purple lightning and gravity field pillar)	
+450111	Ruins Greatsword (R2 gravity rock upburst)	
+450115	Wave of Destruction (weapon gravity charge)	
+450116	Wave of Destruction (rock burst wave projectile)	
+450120	Destined Death (black-red weapon flame)	
+450121	Destined Death (black-red weapon trail)	
+450122	Destined Death (black-red multislash orb)	
+450130	Spearcall Ritual (upward flying spears)	
+450131	Spearcall Ritual (falling spear projectile)	
+450132	Spearcall Ritual (lingering spear projectile)	
+450133	Spearcall Ritual (ghostflame weapon glow)	
+450134	Spearcall Ritual (ghostflame weapon spotlight)	
+450140	Bastard's Stars Nebula (gravity orb forms)	
+450141	Bastard's Stars Nebula (purple cosmic sparkle trail)	
+450142	Bastard's Stars Nebula (star projectile)	
+450143	Bastard's Stars Nebula (star projectile burst)	
+450150	Thundercloud Form (red lightning storm forms)	
+450151	Thundercloud Form (red lightning storm moves)	
+450152	Thundercloud Form (red lightning storm ends, glow)	
+450153	Thundercloud Form (red lightning burst)	
+450160	Tongues of Fire (flamethrower fire)	
+450161	Tongues of Fire (flamethrower spray)	
+450162	Tongues of Fire (flamethrower steam and embers)	
+450163	Tongues of Fire (flamethrower spray flickering glow)	
+450170	Bubble Shower (three bubbles form)	
+450172	Bubble Shower (bubble projectile)	
+450173	Bubble Shower (bubble projectile burst)	
+450181	Rallying Standard (buff AoE red pulse)	
+450190	Glintstone Dart (weapon magic glitter)	
+450191	?	unused blue-green magic burst
+450192	?	unused blue-green sparkly magic projectile
+450193	Glintstone Dart (weapon magic thrust force)	
+450200	Blade of Gold (gold fire weapon effect)	
+450201	Blade of Gold (projectile)	
+450202	Blade of Gold (projectile burst)	
+450203	Blade of Gold (gold weapon trail)	
+450204	Blade of Gold (gold energy blade)	
+450210	Sea of Magma (weapon dripping lava effect)	
+450211	Sea of Magma (weapon dripping lava trail)	
+450212	Sea of Magma (lava projectile)	
+450213	Sea of Magma (lingering lava)	
+450220	Viper Bite (dripping poison)	
+450221	Viper Bite (bite force)	
+450231	Reduvia Blood Blade (dripping blood)	
+450232	Reduvia Blood Blade (projectile, tilted left)	
+450233	Reduvia Blood Blade (projectile, tilted right)	
+450234	Reduvia Blood Blade (projectile burst)	
+450240	Flame Dance (giantsflame weapon trail)	
+450241	Flame Dance (giantsflame weapon effect)	
+450250	Flame Spit (cannon unfold spark)	
+450251	Flame Spit (cannon barrel glow)	
+450252	Flame Spit (projectile)	
+450253	Flame Spit (projectile burst)	
+450254	Flame Spit (cannon barrel smoke and embers)	
+450260	Great Oracular Bubble (bubble forms)	
+450261	Great Oracular Bubble (bubble projectile)	
+450262	Great Oracular Bubble (bubble projectile burst)	
+450270	Blade of Death (pale Death fire weapon effect)	
+450271	Blade of Death (projectile)	
+450272	Blade of Death (projectile burst)	
+450273	Blade of Death (pale Death fire weapon trail)	
+450274	Blade of Death (pale Death fire blade)	
+450280	Frenzyflame Thrust (frenzyflame weapon effect)	
+450281	Frenzyflame Thrust (frenzyflame weapon trail)	
+450282	Frenzyflame Thrust (explosion)	
+450283	Frenzyflame Thrust (Three Fingers sigil-shaped lingering flames)	
+450284	Frenzyflame Thrust (frenzyflame weapon effect)	
+450285	Frenzyflame Thrust (lingering frenzyflame)	
+450290	Ruinous Ghostflame (ghostflame weapon effect)	
+450291	Ruinous Ghostflame (ghostflame weapon trail)	
+450292	Ruinous Ghostflame (ghostflame weapon flare)	
+450301	Mists of Slumber (sleep feathers weapon trail)	
+450302	Mists of Slumber (sleep mist)	
+450310	Ice Lightning Sword (ice lightning weapon strike)	
+450311	Ice Lightning Sword (ice lightning weapon effect)	
+450312	Ice Lightning Sword (pale blue weapon trail)	
+450313	Ice Lightning Sword (ice lightning strike)	
+450314	Ice Lightning Sword (ice lightning zap?)	enemy hit FFX maybe? but it's only one size
+450320	Ordovis' Vortex (holy light trail and crystals form on weapon)	
+450322	Ordovis' Vortex (charged holy crystal burst)	
+450327	Ordovis' Vortex (uncharged holy burst)	
+450330	Rosus' Summons (single skeleton appears, slashes down)	unused, triple version is used one.
+450331	Rosus' Summons (three skeletons appears, slash down in turns)	
+450335	Rosus' Summons (summoning pulse)	
+450340	Taker's Flames (blasphemous flame gathers on weapon)	
+450341	Taker's Flames (blasphemous flame slash projectile)	
+450342	Taker's Flames (lava splash wave projectile)	
+450343	Taker's Flames (orange-pink weapon trail)	
+450344	Taker's Flames (heal)	
+450350	Bear Witness! (dragon mouth flame)	
+450351	Bear Witness! (?)	nothing
+450352	Bear Witness! (lingering flames)	
+450353	Bear Witness! (ground flame spray)	
+450354	Bear Witness! (flame burst)	
+450355	Bear Witness! (fireball projectile)	
+450356	Bear Witness! (fireball projectile burst)	
+450360	Fires of Slumber (purple flame spray)	
+450361	Fires of Slumber (lingering purple flames)	
+450370	I Command Thee, Kneel! (groundquake 1 and 2)	
+450371	Regal Roar (groundquake)	
+450372	I Command Thee, Kneel! (groundquake 3)	
+450380	Siluria's Woe (holy drill weapon effect)	
+450381	Siluria's Woe (projectile)	
+450382	Siluria's Woe (holy crystal weapon trail)	unused?
+450383	Siluria's Woe (projectile burst)	
+450384	Siluria's Woe (projectile burst)	unused?
+450385	Siluria's Woe (holy crystal weapon trail)	unused?
+450386	Siluria's Woe (uncharged holy whirlwind burst)	
+450387	Siluria's Woe (holy crystal weapon trail)	unused?
+450390	Oracular Bubble (bubble forms)	
+450391	Oracular Bubble (bubble projectile)	
+450392	Oracular Bubble (bubble projectile burst)	
+450400	Surge of Faith (giantsflame ignites)	
+450401	Surge of Faith (giantsflame flares)	
+450402	Surge of Faith (explosion)	
+450403	Surge of Faith (fireball projectile)	
+450404	Surge of Faith (fireball projectile burst)	
+450410	Carian Regal Scepter Spinning Weapon (magic energy orb)	
+450411	Carian Regal Scepter Spinning Weapon (magic weapon trail)	
+450412	Carian Regal Scepter Spinning Weapon (magic spinning energy)	
+450420	Miquella's Ring of Light (projectile, tilted right)	
+450421	Miquella's Ring of Light (projectile, tilted left)	
+450422	Miquella's Ring of Light (projectile burst)	
+450423	Miquella's Ring of Light (glowing holy halo)	
+450424	Miquella's Ring of Light (holy weapon trail)	
+450430	I Command Thee, Kneel! (quake 1 and 2 force )	
+450431	I Command Thee, Kneel! (quake 1 and 2 rock burst)	
+450432	I Command Thee, Kneel! (quake 3 force)	
+450433	I Command Thee, Kneel! (quake 3 rock burst)	
+450440	Golden Retaliation (Erdtree sigil)	
+450441	Golden Retaliation (retaliation trigger Erdtree sigil)	
+450442	Golden Retaliation (retaliation projectile)	
+450443	Golden Retaliation (retaliation projectile burst)	
+450450	Gravity Bolt (gravity energy weapon effect)	
+450451	Gravity Bolt (rock upburst)	
+450452	Gravity Bolt (purple lightning strike on weapon)	
+450460	Night-and-Flame Stance (flame weapon effect)	
+450461	Night-and-Flame Stance (flame weapon trail)	
+450462	Night-and-Flame Stance (flame spray)	
+450470	Night-and-Flame Stance (gathering azure magic energy)	
+450471	Night-and-Flame Stance (Comet Azur core)	
+450472	Night-and-Flame Stance (Comet Azur beam)	
+450473	Night-and-Flame Stance (Comet Azur beam burst)	
+450474	Night-and-Flame Stance (Comet Azur beam launch pulse)	
+450475	Night-and-Flame Stance (Comet Azur sideways blowing dust)	
+450480	Soul Stifler (blue-black pulsing cloud)	
+450481	Soul Stifler (blue-black floating orbs)	
+450490	Bloodboon Ritual (red glowing AoE forms)	
+450491	Bloodboon Ritual (red splashing pool portal)	
+450492	Bloodboon Ritual (Mohgwyn's Sacred Spear bloodflame head)	
+450500	Wing of Astel Nebula (blurry cosmic energy on weapon)	
+450501	Wing of Astel Nebula (cosmic sparkle weapon trail)	
+450502	Wing of Astel Nebula (star projectile)	
+450503	Wing of Astel Nebula (star projectile burst)	
+450510	Establish Order (holy sparkle weapon effect)	
+450511	Establish Order (Golden Order sigil)	
+450512	Establish Order (holy explosion)	
+450513	Establish Order (holy sparkle weapon flare)	
+450514	Establish Order (bright gold weapon trail)	
+450515	Establish Order (bright gold projectile)	
+450516	Establish Order (bright gold projectile burst)	
+450520	Wolf's Assault (frost sparkle weapon effect)	
+450521	Wolf's Assault (frost weapon trail)	
+450522	Wolf's Assault (frost explosion)	
+450523	Wolf's Assault (groundstab frost smoke)	
+450530	Contagious Fury (red glow and dripping blood spray)	
+450540	Bloodblade Dance (blood flow weapon effect)	
+450542	Bloodblade Dance (startup blood spray)	
+450543	Bloodblade Dance (end blood spray)	
+450544	Bloodblade Dance (swing blood spray)	
+450550	Starcaller Cry (gravity glow)	
+450551	Starcaller Cry (gravity pull)	
+450552	Starcaller Cry (gravity lightning weapon effect)	
+450553	Starcaller Cry (gravity burst)	
+450560	Cipher Pata Unblockable Blade (charging)	
+450561	Cipher Pata Unblockable Blade (holy sparkle weapon effect)	
+450562	Cipher Pata Unblockable Blade (holy drill thrust force)	
+450570	Gold Breaker (glowing sparkling weapon effect)	
+450571	Gold Breaker (golden ground cracks)	
+450572	Gold Breaker (golden weapon trail)	
+450573	Gold Breaker (golden light flash)	
+450580	Thunderstorm (lightning strike on weapon)	
+450581	Thunderstorm (lightning and storm whirlwind)	
+450582	Thunderstorm (?)	gold lightning crackle
+450590	Spinning Wheel (sparks flying in four directions)	
+450591	Spinning Wheel (soft spark spray)	
+450592	Spinning Wheel (?)	nothing
+450593	Spinning Wheel (?)	nothing
+450600	Angel's Wings (second swing feathers burst)	
+450601	Angel's Wings (holy white glow weapon effect)	
+450610	Familial Rancor (large skull projectile)	
+450611	Familial Rancor (medium skull projectile)	
+450612	Familial Rancor (small skull projectile)	
+450613	Familial Rancor (large skull projectile burst)	
+450614	Familial Rancor (medium skull projectile burst)	
+450615	Familial Rancor (small skull projectile burst)	
+450616	Familial Rancor (ghostflame weapon effect)	
+450620	Death Flare (blight flame weapon effect)	
+450621	Death Flare (blight flame weapon flare)	
+450622	Death Flare (explosion)	
+450630	Devourer of Worlds (fiery magic energy orb)	
+450631	Devourer of Worlds (outward pulse)	
+450632	Devourer of Worlds (Gelmir sigil)	
+450633	Devourer of Worlds (inward pulse)	
+450640	Knowledge Above All (All-Knowing sigil)	
+450641	Knowledge Above All (pale red magic energy orb)	
+450642	Knowledge Above All (effect AoE pulse)	
+450660	Waterfowl Dance (random circular slashes)	
+450661	Waterfowl Dance (finisher orb of slashes)	
+450662	Waterfowl Dance (finisher orb delayed burst)	
+450670	Last Rites (gold holy energy orb)	
+450671	Last Rites (Miquella sigil)	
+450672	Last Rites (holy sparkly flash)	
+450680	Claw Flick (force)	
+450690	?	nothing
+450700	Bloodhound's Finesse (teleport launch dust blowing)	
+450701	Bloodhound's Finesse (teleport landing dust blowing)	
+450702	Bloodhound's Finesse (?)	nothing
+450710	Sacred Phalanx (holy glow weapon effect)	
+450711	Sacred Phalanx (holy ground glow)	
+450712	Sacred Phalanx (holy spear upburst)	
+450720	Storm Kick (whirlwind weapon effect)	
+450721	Storm Kick (whirlwind burst)	
+450722	Storm Kick (frost weapon trail)	seems to be unused, hinting at a frost variant maybe?
+450723	Storm Kick (launch windblast)	
+450724	Storm Kick (weapon lightning strike)	
+450725	Storm Kick (weapon gold trail)	
+450726	Storm Kick (lightning burst)	
+450730	Sorcery of the Crozier (?)	nothing
+450731	Sorcery of the Crozier (magic flare weapon effect)	
+450732	Sorcery of the Crozier (magic projectile floating)	
+450733	Sorcery of the Crozier (magic projectile)	
+450734	Sorcery of the Crozier (magic projectile burst)	
+450735	Sorcery of the Crozier (?)	nothing
+450740	Eochaid's Dancing Blade (red hazy energy weapon effect)	
+450741	Eochaid's Dancing Blade (red weapon trail)	
+450742	Eochaid's Dancing Blade (uncharged red drill)	
+450743	Eochaid's Dancing Blade (red dark energy hand effect)	
+450744	Eochaid's Dancing Blade (brighter red dark energy hand effect)	
+450747	Eochaid's Dancing Blade (charged red drill)	
+450750	The Queen's Black Flame (blackflame weapon buff effect)	unused? sound is used though
+450751	The Queen's Black Flame (blackflame weapon flare)	
+450752	The Queen's Black Flame (blackflame weapon trail)	
+450753	The Queen's Black Flame (blackflame weapon effect)	
+450762	Mama Guillotine (landing explosion)	
+450763	Mama Guillotine (magma weapon trail)	
+450764	Mama Guillotine (follow-up explosion)	
+450765	Mama Guillotine (blazing smoke weapon effect)	
+450770	?	unused? gold flaring small projectile
+450771	?	unused? gold holy small burst
+450780	Wave of Gold (glittering gold weapon effect)	
+450781	Wave of Gold (gold weapon trail)	
+450782	Wave of Gold (wave rising gold energy)	
+450783	Wave of Gold (gold crystal burst)	
+450784	Wave of Gold (giant Radagon sigil)	
+450790	Cursed-Blood Slice (bloodflame burst)	
+450792	Cursed-Blood Slice (bloodflame weapon trail)	
+450800	Frozen Needle (R2 projectile)	
+450801	Frozen Needle (R2 projectile burst)	
+450802	Frozen Needle (R2 glow)	
+450803	Frozen Needle (R2 frost sparkle)	
+450810	Oath of Vengeance (effect activation)	
+450811	Oath of Vengeance (effect)	
+450820	Ghostflame Ignition (gathering ghostflame)	
+450821	Ghostflame Ignition (initial projectile burst)	
+450822	Ghostflame Ignition (lingering ghostflame wave)	
+450823	Ghostflame Ignition (heavy ghostflame burst)	
+450830	Ancient Lightning Spear (red lightning spear forms)	
+450831	Ancient Lightning Spear (red lightning spear grows)	
+450832	Ancient Lightning Spear (red lightning spear projectile)	
+450833	Ancient Lightning Spear (red lightning spear charged projectile)	
+450834	Ancient Lightning Spear (red lightning spear burst)	
+450835	Ancient Lightning Spear (red lightning spear charged burst)	
+450836	Ancient Lightning Spear (red lightning spear disappears)	
+450837	Ancient Lightning Spear (?)	nothing
+450838	Ancient Lightning Spear (red lightning strike)	
+450840	Golden Tempering (Erdtree sigil)	
+450841	Golden Tempering (weapon buff effect)	
+450842	Golden Tempering (gold energy orb)	
+450843	Golden Tempering (?)	nothing
+450850	Coded Sword Unblockable Blade (extended holy energy blade)	
+450851	Coded Sword Unblockable Blade (extended holy weapon trail)	
+450852	Coded Sword Unblockable Blade (extended holy energy dissolves)	
+450861	Corpse Piler (extended blood weapon trail)	
+450862	Corpse Piler (dripping blood)	
+450870	Transient Moonlight (cobalt magic energy orb)	
+450871	Transient Moonlight (cobalt magic weapon trail)	
+450872	Transient Moonlight (horizontal projectile)	
+450873	Transient Moonlight (vertical projectile)	
+450874	Transient Moonlight (projectile burst)	
+450880	Shriek of Milos (body burn effect)	
+450881	Shriek of Milos (roar force)	
+450890	Regal Beastclaw (nail projectile)	
+450891	Regal Beastclaw (smoke weapon effect)	
+450900	Magma Shower (magma projectile)	
+450901	Magma Shower (lingering magma)	
+450902	Magma Shower (dripping magma)	
+450903	Magma Shower (magma weapon trail)	
+450910	Alabaster Lord's Pull (gravity energy weapon effect)	
+450911	Alabaster Lord's Pull (gravity pull)	
+450912	Alabaster Lord's Pull (gravity pulse)	
+450920	Onyx Lord's Repulsion (gravity energy weapon effect)	
+450921	Onyx Lord's Repulsion (gravity push)	
+450922	Onyx Lord's Repulsion (gravity pulse)	
+450930	Jar Cannon (barrel flare and smoke)	
+480000	?	fire (small)
+480001	?	fire (medium)
+480010	?	fire projectile (small)
+480011	?	fire projectile (medium)
+480020	?	fire projectile burst (small)
+480021	?	fire projectile burst (medium)
+480100	?	poison (small)
+480101	?	poison (medium)
+480110	?	poison projectile (small)
+480111	?	poison projectile (medium)
+480120	?	poison projectile burst (small)
+480121	?	poison projectile burst (medium)
+480200	?	sleep (small)
+480201	?	sleep (medium)
+480210	?	sleep projectile (small)
+480211	?	sleep projectile (medium)
+480220	?	sleep projectile burst (small)
+480221	?	sleep projectile burst (medium)
+480300	?	lightning (small)
+480301	?	lightning (medium)
+480310	?	lightning projectile (small)
+480311	?	lightning projectile (medium)
+480320	?	lightning projectile burst (small)
+480321	?	lightning projectile burst (medium)
+480400	?	frost (small)
+480401	?	frost (medium)
+480410	?	frost projectile (small)
+480411	?	frost projectile (medium)
+480420	?	frost projectile burst (small)
+480421	?	frost projectile burst (medium)
+480500	?	magic (small)
+480501	?	magic (medium)
+480510	?	magic projectile (small)
+480511	?	magic projectile (medium)
+480520	?	magic projectile burst (small)
+480521	?	magic projectile burst (medium)
+480530	?	magic projectile burst (small)
+480531	?	magic projectile burst (medium)
+480600	?	sparkly holy (small)
+480601	?	sparkly holy (medium)
+480610	?	sparkly holy projectile (small)
+480611	?	sparkly holy projectile (medium)
+480620	?	sparkly holy projectile burst (small)
+480621	?	sparkly holy projectile burst (medium)
+480700	?	blood (small)
+480701	?	blood (medium)
+480710	?	blood projectile (small)
+480711	?	blood projectile (medium)
+480720	?	blood projectile burst (small)
+480721	?	blood projectile burst (medium)
+480800	?	rot (small)
+480801	?	rot (medium)
+480810	?	rot projectile (small)
+480811	?	rot projectile (medium)
+480820	?	rot projectile burst (small)
+480821	?	rot projectile burst (medium)
+480900	?	holy (small)
+480901	?	holy (medium)
+480910	?	holy projectile (small)
+480911	?	holy projectile (medium)
+480920	?	holy projectile burst (small)
+480921	?	holy projectile burst (medium)
+481000	?	storm (small)
+481001	?	storm (medium)
+481002	?	storm (large)
+481010	?	storm projectile (small)
+481011	?	storm projectile (medium)
+481012	?	storm projectile (large)
+481020	?	storm projectile burst (small)
+481021	?	storm projectile burst (medium)
+481022	?	storm projectile burst (large)
+490000	Sacred Seals (holy glow in hand)	tiny gold glow orb
+490010	?	tiny white glow orb
+490020	Dragon Communion Seal (red glow in hand)	tiny blood orb
+490030	Frenzied Flame Seal (madness glow in hand)	tiny madness orb
+500011		glintstone pebble cast sound?
+500061		glintstone pebble cast sound?
+510000		Raya Lucaria sigil (size 0)
+510010	Glintstone Arc/Crystal Barrage/Shatter Earth (Raya Lucaria sigil)	Raya Lucaria sigil (size 1)
+510011		Raya Lucaria sigil (size 1) (faces forward, not camera)
+510012		Raya Lucaria sigil (size 1)
+510020		Raya Lucaria sigil (size 2)
+510021		Raya Lucaria sigil (size 2) (faces forward, not camera)
+510022		Raya Lucaria sigil (size 2)
+510030		Raya Lucaria sigil (size 3)
+510040		Raya Lucaria sigil (size 3) (faces forward, not camera)
+510041		Raya Lucaria sigil (size 3)
+510042		Raya Lucaria sigil (size 4)
+510050		Raya Lucaria sigil (size 5)
+510052		Raya Lucaria sigil (size 5)
+510100		Carian sigil (size 0)
+510110		Carian sigil (size 1)
+510120		Carian sigil (size 2)
+510130	Loretta's Greatbow/Mastery/Crystal Release (Carian sigil)	Carian sigil (size 3)
+510140		Carian sigil (size 4)
+510150		Carian sigil (size 5)
+510160		Carian sigil (size 6)
+510200		Ice Carian sigil (size 0)
+510210		Ice Carian sigil (size 1)
+510220		Ice Carian sigil (size 2)
+510221		Ice Carian sigil (size 2) (faces forward, not camera)
+510230		Ice Carian sigil (size 3)
+510300		Sellian sigil (size 0)
+510310	Ambush Shard (Sellian sigil)	Sellian sigil (size 1)
+510311		Sellian sigil (size 1) (faces forward, not camera)
+510320		Sellian sigil (size 2)
+510321		Sellian sigil (size 2) (faces forward, not camera)
+510330		Sellian sigil (size 3)
+510410		Gravity sigil (size 1)
+510411		Gravity sigil (size 1) (faces forward, not camera)
+510420		Gravity sigil (size 2)
+510421		Gravity sigil (size 2) (faces forward, not camera)
+510430		Gravity sigil (size 3)
+510431		Gravity sigil (size 3) (faces forward, not camera)
+510511		Gelmir sigil (size 1) (faces forward, not camera)
+510520	Magma Shot/Roiling Magma (Gelmir sigil)	Gelmir sigil (size 2)
+510521		Gelmir sigil (size 2) (faces forward, not camera)
+510530		Gelmir sigil (size 3)
+510600		Death sigil (size 0)
+510610		Death sigil (size 1)
+510620		Death sigil (size 2)
+510630		Death sigil (size 3)
+515000		Giantsflame sigil (size 0)
+515001		Giantsflame sigil (size 0) (faces forward, not camera)
+515010		Giantsflame sigil (size 1)
+515011		Giantsflame sigil (size 1) (faces forward, not camera)
+515020		Giantsflame sigil (size 2)
+515030		Giantsflame sigil (size 3)
+515060		Giantsflame sigil (size 6)
+515100		Godslayer sigil (size 0)
+515110		Godslayer sigil (size 1)
+515120		Godslayer sigil (size 2)
+515130		Godslayer sigil (size 3)
+515150		Godslayer sigil (size 5)
+515210	Lightning Spear (Dragon Cult sigil)	Dragon Cult sigil (size 1) (gold)
+515220	Lightning Spear/Honed Bolt (Dragon Cult sigil)	Dragon Cult sigil (size 2) (gold)
+515230		Dragon Cult sigil (size 3) (gold)
+515310		Dragon Cult sigil (size 1) (red)
+515330	Ancient Dragon's Lightning Spear/Lansseax's Glaive (Dragon Cult sigil)	Dragon Cult sigil (size 3) (red)
+515420		Rot sigil (size 2)
+515440		Rot sigil (size 4)
+515510		Golden Order sigil (size 1)
+515520		Golden Order sigil (size 2)
+515530		Golden Order sigil (size 3)
+515610		Erdtree sigil (size 1)
+515612		Erdtree sigil (size 1)
+515710		Crucible sigil (size 1)
+515740		Crucible sigil (size 4)
+515820		Flame of Frenzy sigil (size 2)
+515830	Bestial Sling (Bestial sigil)	Bestial sigil (size 3)
+515831		Bestial sigil (size 3) (faces forward, not camera)
+515910	Bloodboon/Bloodflame Talons (Mohgwyn sigil)	Mohgwyn sigil (size 1)
+516010		Rot sigil (size 1) (poison green)
+522000	Swift Glintstone Shard (cast charge magic orb)	
+522001	Swift Glintstone Shard (?)	nothing
+522002	Swift Glintstone Shard (projectile)	
+522003	Swift Glintstone Shard (projectile burst)	
+523000	Glintstone Pebble (cast charge magic orb)	
+523001	Glintstone Pebble (cast sound)	
+523002	Glintstone Pebble (projectile)	
+523003	Glintstone Pebble (projectile burst)	
+523020	Great Glintstone Shard (cast charge magic orb)	
+523021	Great Glintstone Shard (cast sound)	
+523022	Great Glintstone Shard (projectile)	
+523023	Great Glintstone Shard (projectile burst)	
+523030	Glintstone Icecrag (cast charge magic orb)	
+523031	Glintstone Icecrag (cast sound)	
+523032	Glintstone Icecrag (projectile)	
+523033	Glintstone Icecrag (projectile burst)	
+523040	Glintblade Phalanx (cast charge magic orb)	
+523041	Glintblade Phalanx (Carian sigil)	
+523042	Glintblade Phalanx (floating projectile)	
+523043	Glintblade Phalanx (projectile)	
+523044	Glintblade Phalanx (projectile burst)	
+523045	Glintblade Phalanx (floating projectile burst)	
+523046	Glintblade Phalanx (?)	green glow, used by tied-up Witchbane Sellen to create her projectiles?
+523050	Greatblade Phalanx (cast charge magic orb)	
+523051	Greatblade Phalanx (Carian sigil)	
+523052	Greatblade Phalanx (floating projectile)	
+523053	Greatblade Phalanx (projectile)	
+523054	Greatblade Phalanx (projectile burst)	
+523055	Greatblade Phalanx (floating projectile burst)	
+523060	Glintstone Cometshard (cast charge magic orb)	
+523061	Glintstone Cometshard (Raya Lucaria sigil)	
+523062	Glintstone Cometshard (charged projectile)	
+523063	Glintstone Cometshard (charged projectile burst)	
+523064	Glintstone Cometshard (charge gathering energy)	
+523067	Glintstone Cometshard (projectile)	
+523068	Glintstone Cometshard (projectile burst)	
+523070	Comet (cast charge magic orb)	
+523071	Comet (Raya Lucaria sigil)	
+523072	Comet (charged projectile)	
+523073	Comet (charged projectile burst)	
+523077	Comet (projectile)	
+523078	Comet (projectile burst)	
+523080	Shard Spiral (cast charge magic orb)	
+523081	Shard Spiral (Raya Lucaria sigil)	
+523082	Shard Spiral (charged projectile)	
+523083	Shard Spiral (charged projectile burst)	
+523087	Shard Spiral (projectile)	
+523088	Shard Spiral (projectile burst)	
+523090	Magic Glintblade (cast charge magic orb)	
+523091	Magic Glintblade (charge gathering energy)	
+523092	Magic Glintblade (projectile forms)	
+523093	Magic Glintblade (projectile)	
+523094	Magic Glintblade (projectile burst)	
+523095	Magic Glintblade (projectile launch pulse)	
+523096	Magic Glintblade (charged projectile forms)	
+523097	Magic Glintblade (charged projectile)	
+523098	Magic Glintblade (charged projectile burst)	
+523099	Magic Glintblade (charged projectile launch pulse)	
+523100	Scholar's Armament (cast charge magic orb)	
+523101	Scholar's Armament (weapon effect application energy)	
+523130	Frozen Armament (cast charge magic orb)	
+523131	Frozen Armament (weapon effect application energy)	
+523150	Lucidity (cast charge magic orb)	
+523151	Lucidity (?)	nothing
+523152	Lucidity (body effect activation)	
+523153	Lucidity (Carian sigil on ground)	
+523190	Shattering Crystal (cast charge crystal orb and Carian sigil)	
+523191	Shattering Crystal (?)	nothing
+523192	Shattering Crystal (charged projectile)	
+523193	Shattering Crystal (charged projectile burst)	
+523194	Shattering Crystal (charge gathering energy))	
+523195	Shattering Crystal (charged projectile burst shrapnel)	
+523197	Shattering Crystal (projectile)	
+523198	Shattering Crystal (projectile burst)	
+523199	Shattering Crystal (projectile burst shrapnel)	
+523200	Night Comet (cast charge magic orb)	
+523201	Night Comet (Raya Lucaria sigil)	
+523202	Night Comet (charged projectile)	
+523203	Night Comet (charged projectile burst)	
+523204	Night Comet (charge gathering energy)	
+523207	Night Comet (projectile)	
+523208	Night Comet (projectile burst)	
+523210	Thops' Barrier (cast charge magic orb)	
+523211	Thops' Barrier (Raya Lucaria sigil)	
+523212	Thops' Barrier (barrier wave)	
+523220	Oracle Bubbles (cast charge magic orb)	
+523221	Oracle Bubbles (?)	nothing
+523222	Oracle Bubbles (projectile)	
+523223	Oracle Bubbles (projectile burst)	
+523224	Oracle Bubbles (charge gathering energy)	
+523225	Oracle Bubbles (Claymen's Sellian sigil)	
+523230	Great Oracular Bubble (cast charge magic orb)	
+523231	Great Oracular Bubble (?)	
+523232	Great Oracular Bubble (projectile)	
+523233	Great Oracular Bubble (projectile burst)	
+523234	Great Oracular Bubble (charge gathering energy)	
+523235	Great Oracular Bubble (Claymen's Sellian sigil)	
+523237	Great Oracular Bubble (charged projectile)	
+523238	Great Oracular Bubble (charged projectile burst)	
+523240	Night Shard (cast charge magic orb)	
+523241	Night Shard (?)	nothing
+523242	Night Shard (projectile)	
+523243	Night Shard (projectile burst)	
+523250	Eternal Darkness (cast charge magic orb and Sellian sigil)	
+523251	Eternal Darkness (?)	
+523252	Eternal Darkness (projectile)	
+523260	Carian Retaliation (cast charge magic orb and Carian sigil)	
+523262	Carian Retaliation (shield pulse)	
+523263	Carian Retaliation (trigger pulse)	
+523272	Carian Retaliation (floating projectile)	
+523273	Carian Retaliation (projectile)	
+523274	Carian Retaliation (projectile burst)	
+523275	Carian Retaliation (floating projectile burst)	
+523300	Scholar's Shield (cast charge magic orb)	
+523301	Scholar's Shield (shield effect application energy)	
+523350	Fia's Mist (cast charge blight orb and Death sigil)	
+523351	Fia's Mist (cast sound)	
+523352	Fia's Mist (charged mist)	
+523354	Fia's Mist (charge gathering energy)	
+523357	Fia's Mist (mist)	
+523360	Rancorcall (cast charge ghostflame orb and Death sigil)	
+523361	Rancorcall (cast sound)	
+523362	Rancorcall (charged projectile)	
+523363	Rancorcall (charged projectile burst)	
+523364	Rancorcall (charge gathering energy)	
+523367	Rancorcall (projectile)	
+523368	Rancorcall (projectile burst)	
+523370	Ancient Death Rancor (cast charge ghostflame orb and Death sigil)	
+523371	Ancient Death Rancor (cast sound)	
+523372	Ancient Death Rancor (charged projectile)	
+523373	Ancient Death Rancor (charged projectile burst)	
+523374	Ancient Death Rancor (charge gathering energy)	
+523377	Ancient Death Rancor (projectile)	
+523378	Ancient Death Rancor (projectile burst)	
+523380	Explosive Ghostflame (cast charge ghostflame flare)	
+523381	Explosive Ghostflame (Death sigil)	
+523382	Explosive Ghostflame (explosion)	
+523383	Explosive Ghostflame (lingering ghostflame)	
+523390	Tibia's Summons (cast charge ghostflame flare)	
+523391	Tibia's Summons (summon pulse)	
+523400	Unseen Blade (cast charge magic orb and Sellian sigil)	
+523401	Unseen Blade (?)	nothing
+523402	Unseen Blade (effect activation sparkles)	
+523410	Unseen Form (cast charge magic orb and Sellian sigil)	
+523411	Unseen Form (?)	
+523412	Unseen Form (effect start sparkles)	
+523413	Unseen Form (effect end sparkles)	
+523500	Starlight (cast charge magic orb and Raya Lucaria sigil)	
+523501	Starlight (cast sparkles)	
+523502	Starlight (glowing orb)	
+523520	Shadow Bait (cast charge holy orb)	
+523521	Shadow Bait (?)	nothing
+523522	Shadow Bait (smoke projectile)	
+523523	Shadow Bait (floating grace)	
+523540	Shadow Bait (cast charge holy orb)	
+523541	Shadow Bait (cast release energy whirl on ground)	
+523542	Shadow Bait (player foot smoky effect)	
+523543	Shadow Bait (Torrent hoof smoky effect)	
+523570	Darkness (cast charge holy orb)	
+523571	Darkness (?)	nothing
+523572	Darkness (pitch-black mist spray)	
+523573	Darkness (pitch-black mist cloud)	
+523580	Fia's Mist (cast charge magic orb and Sellian sigil)	
+523582	Fia's Mist (spray)	
+523583	Fia's Mist (mist)	
+523587	Fia's Mist (charged spray)	
+523588	Fia's Mist (charged mist)	
+523590	Ambush Shard (cast charge magic orb)	
+523591	Ambush Shard (?)	nothing
+523592	Ambush Shard (projectile teleports)	
+523593	Ambush Shard (projectile )	
+523594	Ambush Shard (projectile burst)	
+523720	Crystal Barrage (cast charge magic orb)	
+523721	Crystal Barrage (casting glow)	
+523722	Crystal Barrage (projectile )	
+523723	Crystal Barrage (projectile burst)	
+523730	Magic Downpour (cast charge magic orb)	
+523731	Magic Downpour (charge gathering energy)	
+523732	Magic Downpour (projectile emitter)	
+523733	Magic Downpour (projectile)	
+523734	Magic Downpour (projectile burst)	
+523735	Magic Downpour (projectile emitter burst)	
+523737	Magic Downpour (charged projectile emitter)	
+523739	Magic Downpour (Carian sigil)	
+523740	Carian Greatsword (cast charge magic orb)	
+523741	Carian Greatsword (Carian sigil)	
+523742	Carian Greatsword (magic greatsword)	
+523743	Carian Greatsword (magic greatsword trail)	
+523750	Carian Slicer (cast charge magic orb)	
+523751	Carian Slicer (Carian sigil)	
+523752	Carian Slicer (magic sword)	
+523753	Carian Slicer (magic sword trail)	
+523760	Carian Piercer (cast charge magic orb)	
+523761	Carian Piercer (Carian sigil)	
+523762	Carian Piercer (charged magic greatsword)	
+523763	Carian Piercer (charged magic thrust force)	
+523767	Carian Piercer (magic greatsword)	
+523768	Carian Piercer (magic thrust force)	
+523770	Gavel of Haima (cast charge magic orb)	
+523771	Gavel of Haima (Raya Lucaria sigil)	
+523772	Gavel of Haima (hammer forms)	
+523773	Gavel of Haima (hammer trail)	
+523774	Gavel of Haima (explosion)	
+523780	Crystal Release (crystal projectile emitter forms)	
+523781	Crystal Release (crystal projectile emitter)	
+523782	Crystal Release (crystal projectile)	
+523783	Crystal Release (crystal projectile burst)	
+523784	Crystal Release (cast charge magic orb)	
+523785	Crystal Release (crystal body sparkle)	
+523790	Cannon of Haima (cast charge magic orb and projectile forms)	
+523791	Cannon of Haima (?)	nothing
+523792	Cannon of Haima (charged projectile )	
+523793	Cannon of Haima (charged projectile burst)	
+523797	Cannon of Haima (projectile )	
+523798	Cannon of Haima (projectile burst)	
+523800	Rennala's Full Moon (cast charge magic orb and Carian sigil)	
+523801	Rennala's Full Moon (moon forms, right-hand cast)	
+523802	Rennala's Full Moon (moon launch pulse)	
+523803	Rennala's Full Moon (moon projectile)	
+523804	Rennala's Full Moon (moon projectile burst)	
+523805	Rennala's Full Moon (Carian sigil)	only used as sound event?
+523806	Rennala's Full Moon (moon forms, left-hand cast)	
+523810	Terra Magica (cast charge magic orb)	
+523811	Terra Magica (Raya Lucaria sigil)	
+523812	Terra Magica (giant Raya Lucaria sigil)	
+523813	Terra Magica (azure blue body effect)	unused
+523820	Founding Rain of Stars (cast charge magic orb)	
+523821	Founding Rain of Stars (charge gathering energy)	
+523822	Founding Rain of Stars (starry clouds)	
+523823	Founding Rain of Stars (star projectiles)	
+523824	Founding Rain of Stars (star projectile bursts)	
+523825	Founding Rain of Stars (cast completion rising stars)	
+523830	Shatter Earth (drill)	
+523831	Shatter Earth (drilling sparks)	
+523832	Shatter Earth (groundquake 1)	
+523833	Shatter Earth (groundquake 2)	
+523840	Rock Blaster (drill)	
+523841	Rock Blaster (groundquake)	
+523850	Glintstone Stars/Star Shower (cast charge magic orb)	
+523851	Glintstone Stars/Star Shower (charge gathering energy)	
+523852	Glintstone Stars/Star Shower (charged projectile)	
+523853	Glintstone Stars/Star Shower (charged projectile burst)	
+523856	Glintstone Stars/Star Shower (charged Raya Lucaria sigil)	
+523857	Glintstone Stars/Star Shower (projectile)	
+523858	Glintstone Stars/Star Shower (projectile burst)	
+523859	Glintstone Stars/Star Shower (Raya Lucaria sigil)	
+523860	Ranni's Dark Moon (cast charge magic orb and Ice Carian sigil)	
+523861	Ranni's Dark Moon (moon forms, right-hand cast)	
+523862	Ranni's Dark Moon (moon launch pulse)	
+523863	Ranni's Dark Moon (moon projectile)	
+523864	Ranni's Dark Moon (moon projectile burst)	
+523865	Ranni's Dark Moon (Ice Carian sigil)	
+523866	Ranni's Dark Moon (moon forms, left-hand cast)	
+523870	Zamor Ice Storm (cast charge frost orb)	
+523871	Zamor Ice Storm (Ice Carian sigil)	
+523872	Zamor Ice Storm (charged frost whirlwind burst)	
+523873	Zamor Ice Storm (charged frost whirlwind)	
+523874	Zamor Ice Storm (?)	nothing
+523875	Zamor Ice Storm (charge gathering energy)	
+523877	Zamor Ice Storm (frost whirlwind burst)	
+523878	Zamor Ice Storm (frost whirlwind)	
+523879	Zamor Ice Storm (?)	nothing
+523880	Freezing Mist (cast charge frost orb)	
+523881	Freezing Mist (cast sound)	
+523882	Freezing Mist (charged frost mist)	
+523887	Freezing Mist (frost mist)	
+523890	Adula's Moonblade (cast charge magic orb)	
+523891	Adula's Moonblade (Carian sigil)	
+523892	Adula's Moonblade (magic greatsword)	
+523893	Adula's Moonblade (magic greatsword trail)	
+523894	Adula's Moonblade (frost projectile)	
+523895	Adula's Moonblade (frost projectile, tilted left)	
+523896	Adula's Moonblade (frost projectile, tilted right)	
+523897	Adula's Moonblade (frost projectile, tilted far right)	
+523900	Stars of Ruin (cast charge cosmic orb)	
+523901	Stars of Ruin (charge gathering energy)	
+523902	Stars of Ruin (charged projectile)	
+523903	Stars of Ruin (charged projectile burst)	
+523907	Stars of Ruin (projectile)	
+523908	Stars of Ruin (projectile burst)	
+523910	Briars of Sin (staff thorns)	
+523911	Briars of Sin (stab blood spray)	
+523912	Briars of Sin (thorn spiral 1)	
+523913	Briars of Sin (thorn spiral 2)	
+523914	Briars of Sin (thorn spiral 3)	
+523915	Briars of Sin (blood pool at feet)	
+523916	Briars of Sin (blood thorn in right hand cast)	
+523917	Briars of Sin (blood thorn in left hand cast)	
+523920	Briars of Punishment (staff thorns)	
+523921	Briars of Punishment (stab blood spray)	
+523922	Briars of Punishment (leaping thorns projectile)	
+523923	Briars of Punishment (leaping thorns projectile burst)	
+523924	Briars of Punishment (leaping thorns projectile upburst)	
+523930	Crystal Burst (cast charge magic orb and Raya Lucaria sigil)	
+523931	Crystal Burst (?)	nothing
+523932	Crystal Burst (charged projectile)	
+523933	Crystal Burst (charged projectile burst)	
+523934	Crystal Burst (charge gathering energy)	
+523937	Crystal Burst (projectile)	
+523938	Crystal Burst (projectile burst)	
+524000	Flame Sling (Giantsflame sigil)	
+524001	Flame Sling (flame in hand)	
+524002	Flame Sling (projectile)	
+524003	Flame Sling (projectile burst)	
+524005	Flame Sling (charge flare)	
+524006	Flame Sling (charged flame in hand)	
+524007	Flame Sling (charged projectile)	
+524008	Flame Sling (charged projectile burst)	
+524009	Flame Sling (flame in hand)	used for sound right before throwing?
+524020	Giantsflame Take Thee (Giantsflame sigil)	
+524021	Giantsflame Take Thee (flame in hand)	
+524022	Giantsflame Take Thee (projectile)	
+524023	Giantsflame Take Thee (projectile burst)	
+524025	Giantsflame Take Thee (charge flare)	
+524026	Giantsflame Take Thee (charged flame in hand)	
+524027	Giantsflame Take Thee (charged projectile)	
+524028	Giantsflame Take Thee (charged projectile burst)	
+524030	Burn, O Flame! (flame in hand)	
+524031	Burn, O Flame! (Giantsflame sigil)	
+524032	Burn, O Flame! (ground flame burst)	
+524034	Burn, O Flame! (ground flame burst base)	
+524035	Burn, O Flame! (charge flare)	
+524050	Surge, O Flame! (Giantsflame sigil)	
+524051	Surge, O Flame! (bright glow)	
+524052	Surge, O Flame! (flame spray)	
+524060	Scouring Black Flame (flame forms in hand)	
+524061	Scouring Black Flame (flame in hand)	unused?
+524062	Scouring Black Flame (flame wave)	
+524063	Scouring Black Flame (flickering glow)	
+524064	Scouring Black Flame (Godslayer sigil)	
+524065	Scouring Black Flame (charge flare)	
+524066	Scouring Black Flame (charged flame in hand)	
+524067	Scouring Black Flame (charged flame wave)	
+524068	Scouring Black Flame (charged flickering glow)	
+524070	Black Flame Ritual (flame in hand and Godslayer sigil)	
+524071	Black Flame Ritual (flame in hand)	
+524072	Black Flame Ritual (flame wall)	
+524073	Black Flame Ritual (flame wall flare)	
+524075	Black Flame Ritual (charge flare)	
+524076	Black Flame Ritual (charged flame in hand)	
+524077	Black Flame Ritual (charged flame wall)	
+524078	Black Flame Ritual (charged flame wall flare)	
+524080	Flame of the Fell God (flame in hand and Giantsflame sigil)	
+524081	Flame of the Fell God (giant fireball projectile)	
+524082	Flame of the Fell God (giant fireball projectile proximity triggers)	
+524083	Flame of the Fell God (giant fireball projectile burst)	
+524084	Flame of the Fell God (lingering flames)	
+524090	Black Flame Blade (flame in hand and Godslayer sigil)	
+524091	Black Flame Blade (weapon effect application flare)	
+524100	Catch Flame (cast spark in hand)	
+524101	Catch Flame (Giantsflame sigil)	
+524102	Catch Flame (flame burst)	
+524110	Catch Flame (cast spark in hand)	
+524112	Catch Flame (charged flame burst)	
+524114	Catch Flame (charge flare)	
+524115	Catch Flame (Giantsflame sigil)	
+524117	Catch Flame (flame burst)	
+524120	Bloodflame Talons (claw trail)	
+524121	Bloodflame Talons (bloodflame burst)	
+524130	Bloodboon (blood pool portal, right hand cast)	
+524131	Bloodboon (bloodflame in hand)	
+524132	Bloodboon (bloodflame projectile)	
+524133	Bloodboon (bloodflame projectile splash)	
+524134	Bloodboon (lingering bloodflame)	
+524135	Bloodboon (blood pool portal, left hand cast)	
+524140	Bloodflame Blade (flame in hand and Mohgwyn sigil)	
+524141	Bloodflame Blade (weapon effect application flare)	
+524200	? (cast charge magic orb)	
+524201	? (cast sound)	
+524202	? (mist projectile)	dim blueish-gray smoke
+524203	? (mist projectile puff)	dim blueish-gray smoke
+524320	Flame, Cleanse Me (flame in hand and Giantsflame sigil)	
+524321	Flame, Cleanse Me (body-purging flame burst)	
+524322	Flame, Cleanse Me (embers)	
+524400	Flame, Grant Me Strength (flame in hand and Giantsflame sigil)	
+524401	Flame, Grant Me Strength (body-buffing flame burst)	
+524402	Flame, Grant Me Strength (body effect)	
+524490	Rykard's Rancor (lingering flame trail)	
+524491	Rykard's Rancor (lingering flame trail ignites)	
+524492	Rykard's Rancor (lingering flame trail burst)	
+524494	Rykard's Rancor (flaming skull projectile)	
+524495	Rykard's Rancor (cast charge flame orb and Gelmir sigil)	
+524500	Magma Shot (cast charge flame orb)	
+524501	Magma Shot (cast sound)	
+524502	Magma Shot (magma projectile)	
+524503	Magma Shot (magma projectile burst)	
+524504	Magma Shot (?)	nothing
+524505	Magma Shot (lingering magma)	
+524506	Magma Shot (charged magma projectile)	
+524507	Magma Shot (charged magma projectile splash)	
+524508	Magma Shot (?)	
+524509	Magma Shot (charged lingering magma)	
+524510	Gelmir's Fury (cast charge flame orb)	
+524511	Gelmir's Fury (Gelmir sigil)	
+524512	Gelmir's Fury (lingering magma)	
+524513	Gelmir's Fury (magma projectile)	
+524514	Gelmir's Fury (magma projectile splash)	
+524515	Gelmir's Fury (charge gathering energy)	
+524516	Gelmir's Fury (cast flash)	
+524520	Whirl, O Flame! (flame forms in hand and Giantsflame sigil)	
+524521	Whirl, O Flame! (flame in hand)	
+524522	Whirl, O Flame! (flame spray)	
+524523	Whirl, O Flame! (bright glow)	
+524525	Whirl, O Flame! (charge flare)	
+524526	Whirl, O Flame! (charged flame in hand)	
+524540	Black Flame (flame forms in hand and Godslayer sigil)	
+524541	Black Flame (flame in hand)	
+524542	Black Flame (projectile)	
+524543	Black Flame (projectile burst)	
+524545	Black Flame (charge flare)	
+524546	Black Flame (charged flame in hand)	
+524547	Black Flame (charged projectile)	
+524548	Black Flame (charged projectile burst)	
+524790	Black Flame's Protection (flame forms in hand and Godslayer sigil)	
+524791	Black Flame's Protection (body-buffing flame burst)	
+524800	Magic Fortification (cast charge holy orb)	
+524801	Magic Fortification (Two Fingers sigil and magic energy on ground)	
+524810	Fire Fortification (cast charge holy orb)	
+524811	Fire Fortification (Two Fingers sigil and fire energy on ground)	
+524820	Lightning Fortification (cast charge holy orb)	
+524821	Lightning Fortification (Two Fingers sigil and lightning energy on ground)	
+524830	Holy Fortification (cast charge holy orb)	
+524831	Holy Fortification (Two Fingers sigil and holy energy on ground)	
+524840	Barrier of Gold (cast charge holy orb)	
+524841	Barrier of Gold (inward pulse)	
+524842	Barrier of Gold (magic energy and giant Erdtree sigil)	
+524844	Barrier of Gold (cast charge sound)	
+524850	Flame, Protect Me (flame in hand and Giantsflame sigil)	
+524851	Flame, Protect Me (body-buffing flame burst)	
+524860	Golden Lightning Fortification (cast charge holy orb)	
+524861	Golden Lightning Fortification (inward pulse)	
+524862	Golden Lightning Fortification (gold energy and giant Erdtree sigil)	
+524870	Barrier of Gold (cast charge holy orb)	
+524871	Barrier of Gold (inward pulse)	
+524872	Barrier of Gold (holy energy and giant Two Fingers sigil)	
+524874	Barrier of Gold (cast charge sound)	
+524880	Protection of the Erdtree (cast charge holy orb)	
+524881	Protection of the Erdtree (inward pulse)	
+524882	Protection of the Erdtree (holy energy and giant Erdtree sigil)	
+524884	Protection of the Erdtree (cast charge sound)	
+524900	Urgent Heal (cast charge holy orb)	
+524902	Urgent Heal (holy pulse and Two Fingers sigil)	
+524903	Urgent Heal (heal)	
+525000	Heal (cast charge holy orb)	
+525001	Heal (inward pulse)	
+525002	Heal (holy pulse and Two Fingers sigil)	
+525003	Heal (heal)	
+525004	Heal (hold AoE indicator)	
+525010	Great Heal (cast charge holy orb)	
+525011	Great Heal (inward pulse)	
+525012	Great Heal (holy pulse and Two Fingers sigil)	
+525013	Great Heal (heal)	
+525020	Lord's Heal (cast charge holy orb)	
+525021	Lord's Heal (inward pulse)	
+525022	Lord's Heal (holy pulse and Two Fingers sigil)	
+525023	Lord's Heal (heal)	
+525030	Erdtree Heal (cast charge holy orb)	
+525031	Erdtree Heal (inward pulse)	
+525032	Erdtree Heal (holy pulse and Two Fingers sigil)	
+525033	Erdtree Heal (heal)	
+525034	Erdtree Heal (cast charge sound)	
+525040	Bestial Vitality (cast charge holy orb)	
+525041	Bestial Vitality (body-buffing holy burst)	
+525050	Blessing of the Erdtree (cast charge holy orb)	
+525051	Blessing of the Erdtree (inward pulse)	
+525052	Blessing of the Erdtree (holy pulse and Erdtree sigil)	
+525070	Blessing's Boon (cast charge holy orb)	
+525071	Blessing's Boon (inward pulse)	
+525072	Blessing's Boon (holy pulse and Erdtree sigil)	
+525080	Cure Poison (cast charge holy orb)	
+525082	Cure Poison (Two Fingers sigil and green energy on ground)	
+525083	Cure Poison (body purge effect)	
+525090	Lord's Aid (cast charge holy orb)	
+525091	Lord's Aid (inward pulse)	
+525092	Lord's Aid (Two Fingers sigil and green energy on ground)	
+525094	Lord's Aid (cast charge sound)	
+525300	Rejection (Two Fingers sigil)	
+525302	Rejection (burst)	
+525303	Rejection (burst aftershock)	
+525305	Rejection (charge gathering energy)	
+525306	Rejection (charged burst)	
+525307	Rejection (charged burst aftershock)	
+525310	Wrath of Gold (Erdtree sigil)	
+525312	Wrath of Gold (burst)	
+525313	Wrath of Gold (burst aftershock)	
+525315	Wrath of Gold (charge gathering energy)	cool windy gold whirlwind
+525316	Wrath of Gold (charged burst)	
+525317	Wrath of Gold (charged burst aftershock)	
+525330	Noble Presence (?)	nothing
+525332	Noble Presence (burst)	
+525333	Noble Presence (burst aftershock)	
+525335	Noble Presence (charge gathering energy)	
+525336	Noble Presence (charged burst)	
+525337	Noble Presence (charged burst aftershock)	
+525400	Elden Stars (cast charge holy flare)	
+525401	Elden Stars (Crucible sigil)	
+525402	Elden Stars (emitter projectile)	
+525403	Elden Stars (emitted projectile)	
+525404	Elden Stars (emitted projectile burst)	
+525405	Elden Stars (emitter projectile burst)	
+525410	Fire's Deadly Sin (flame in hand)	
+525412	Fire's Deadly Sin (explosion)	
+525413	Fire's Deadly Sin (body flame effect)	
+525415	Fire's Deadly Sin (charge flare)	
+525417	Fire's Deadly Sin (charged explosion)	
+525420	Black Blade (blade appears)	
+525421	Black Blade (?)	nothing
+525422	Black Blade (slash projectile, heavily tilted left)	
+525423	Black Blade (slash projectile burst)	
+525424	Black Blade (slash projectile, tilted left)	
+525425	Black Blade (slash projectile, heavily tilted right)	
+525426	Black Blade (slash projectile, tilted right)	
+525500	Lightning Spear (lightning spear forms)	
+525501	Lightning Spear (?)	nothing
+525502	Lightning Spear (projectile)	
+525503	Lightning Spear (projectile burst)	
+525504	Lightning Spear (charge gathering energy)	
+525505	Lightning Spear (charged spear)	
+525507	Lightning Spear (charged projectile)	
+525508	Lightning Spear (charged projectile burst)	
+525509	Lightning Spear (charged projectile lightning strike)	
+525510	Ancient Dragons' Lightning Spear (lightning spear for right hand)	
+525511	Ancient Dragons' Lightning Spear (spear lands in right hand)	
+525512	Ancient Dragons' Lightning Spear (spear projectile)	
+525513	Ancient Dragons' Lightning Spear (spear projectile burst)	
+525514	Ancient Dragons' Lightning Spear (lightning crackle projectile)	
+525516	Ancient Dragons' Lightning Spear (spear lands in left hand)	
+525518	Ancient Dragons' Lightning Spear (charge gathering energy)	unused?
+525519	Ancient Dragons' Lightning Spear (spear lands on dummy)	unused?
+525520	Ancient Dragons' Lightning Spear (lightning spear for left hand)	
+525521	Fortissax's Lightning Spear (spear lands in right hand)	
+525522	Fortissax's Lightning Spear (spear projectile)	
+525523	Fortissax's Lightning Spear (spear projectile burst)	
+525524	Fortissax's Lightning Spear (lightning crackle projectile)	
+525526	Fortissax's Lightning Spear (spear lands in left hand)	
+525529	Fortissax's Lightning Spear (Dragon Cult sigil)	
+525530	Ancient Dragons' Lightning Strike (cast charge orb and Dragon Cult sigil)	
+525532	Ancient Dragons' Lightning Strike (lightning strike)	
+525533	Ancient Dragons' Lightning Strike (lightning crackle)	
+525534	Ancient Dragons' Lightning Strike (charge gathering energy)	
+525536	Ancient Dragons' Lightning Strike (cast lightning strike)	
+525537	Ancient Dragons' Lightning Strike (charged lightning strike)	
+525540	Swarm of Flies (cast charge fly swarm orb and Mohgwyn sigil)	
+525542	Swarm of Flies (fly swarm projectile)	
+525543	Swarm of Flies (fly swarm cloud)	
+525560	Honed Bolt (cast charge lightning orb and Dragon Cult sigil)	
+525561	Honed Bolt (cast lightning strike)	
+525562	Honed Bolt (lightning strike)	
+525570	Lightning Strike (cast charge lightning orb and Dragon Cult sigil)	
+525571	Lightning Strike (cast lightning strike)	
+525572	Lightning Strike (lightning strike static energy)	
+525573	Lightning Strike (lightning strike)	
+525580	Lansseax's Glaive (spear lands in right hand)	
+525581	Lansseax's Glaive (lightning glaive in right hand)	
+525582	Lansseax's Glaive (intense lightning glaive with trail in right hand)	
+525583	Lansseax's Glaive (lightning crackle projectile)	
+525585	Lansseax's Glaive (spear lands in left hand)	
+525586	Lansseax's Glaive (lightning glaive in left hand)	
+525587	Lansseax's Glaive (intense lightning glaive with trail in left hand)	
+525588	Lansseax's Glaive (spear catch lightning strike)	
+525589	Lansseax's Glaive (spear lands on dummy)	unused?
+525590	Frozen Lightning Spear (lightning spear forms)	
+525591	Frozen Lightning Spear (Dragon Cult sigil)	
+525592	Frozen Lightning Spear (lightning spear projectile)	
+525593	Frozen Lightning Spear (lightning spear burst)	
+525594	Frozen Lightning Spear (lightning wave static)	
+525595	Frozen Lightning Spear (lightning wave burst)	
+525630	Golden Vow (cast charge holy orb)	
+525631	Golden Vow (holy release and Erdtree Sigil)	
+525633	Golden Vow (holy energy body effect)	unused
+525640	Vyke's Dragonbolt (cast charge lightning orb and Dragon Cult sigil)	
+525641	Vyke's Dragonbolt (cast lightning strike)	
+525642	Vyke's Dragonbolt (lightning crackle body effect)	
+525650	Dragonbolt Blessing (cast charge lightning orb and Dragon Cult sigil)	
+525651	Dragonbolt Blessing (cast lightning strike)	
+525652	Dragonbolt Blessing (lightning crackle body effect)	
+525660	Electrify Armament (cast charge lightning orb and Dragon Cult sigil)	
+525661	Electrify Armament (cast lightning strike)	
+525670	Death Lightning (cast charge lightning orb and Dragon Cult sigil)	
+525672	Death Lightning (lightning strike)	
+525673	Death Lightning (lightning crackle)	
+525674	Death Lightning (charge gathering energy)	
+525675	Death Lightning (death mist)	
+525676	Death Lightning (cast lightning strike)	
+525677	Death Lightning (charged lightning strike)	
+525678	Death Lightning (charged death mist)	
+526202	Flame, Fall Upon Them (launch flare)	
+526204	Flame, Fall Upon Them (projectile)	
+526205	Flame, Fall Upon Them (projectile burst)	
+526206	Flame, Fall Upon Them (charged launch flare)	
+526208	Flame, Fall Upon Them (charged projectile)	
+526209	Flame, Fall Upon Them (charged projectile burst)	
+526240	Crystal Torrent (cast charge crystal orb and Raya Lucaria sigil)	
+526241	Crystal Torrent (projectile emitter)	
+526242	Crystal Torrent (projectile)	
+526243	Crystal Torrent (projectile burst)	
+526250	Comet Azur (cast charge orb gathering energy)	
+526251	Comet Azur (Comet Azur core)	
+526252	Comet Azur (Comet Azur beam)	
+526253	Comet Azur (Comet Azur beam burst)	
+526254	Comet Azur (Comet Azur beam launch pulse)	
+526255	Comet Azur (Comet Azur sideways blowing dust)	
+526260	Loretta's Greatbow (right hand greatbow grows to lv2)	
+526262	Loretta's Greatbow (charged projectile)	
+526263	Loretta's Greatbow (?)	nothing? burst sound
+526264	Loretta's Greatbow (charged magic greatarrow)	
+526265	Loretta's Greatbow (right hand greatbow forms)	
+526267	Loretta's Greatbow (projectile)	
+526268	Loretta's Greatbow (?)	nothing? burst sound
+526269	Loretta's Greatbow (magic greatarrow)	
+526270	Loretta's Greatbow (right hand greatbow grows to lv3)	
+526271	Loretta's Greatbow (charge gathering energy)	
+526273	Loretta's Greatbow (charged projectile burst)	
+526275	Loretta's Greatbow (left hand greatbow forms)	
+526278	Loretta's Greatbow (projectile burst)	
+526282	Loretta's Mastery (charged projectile)	
+526284	Loretta's Mastery (charged magic greatarrow)	
+526287	Loretta's Mastery (projectile)	
+526289	Loretta's Mastery (magic greatarrow)	
+526300	Pest Threads (flowing threads and Rot sigil)	
+526301	Pest Threads (splash)	
+526302	Pest Threads (thread projectile)	
+526303	Pest Threads (thread projectile burst)	
+526310	Poison Armament (Rot sigil)	
+526311	Poison Armament (weapon effect application splash)	
+526320	Poison Mist (cast charge poison cloud and Rot sigil)	
+526322	Poison Mist (poison spray and cloud)	
+527010	Frenzy Incantations (eye burn)	
+527011	Unendurable Frenzy (eye glow)	
+527012	The Flame of Frenzy/Unendurable Frenzy (projectile variation 1)	
+527013	The Flame of Frenzy/Unendurable Frenzy (projectile burst)	
+527014	Frenzied Burst (charge flare)	
+527015	The Flame of Frenzy/Unendurable Frenzy (projectile variation 2)	
+527019	Frenzy Incantations (Frenzyflame sigil)	
+527020	Inescapable Frenzy (eye burn)	
+527021	Inescapable Frenzy (Frenzyflame sigil)	
+527022	Inescapable Frenzy (grab body burn)	
+527023	Inescapable Frenzy (grab Madness proc body burn)	
+527030	Howl of Shabriri (eye burn)	
+527032	Frenzied Burst (projectile)	
+527033	Frenzied Burst (projectile burst)	
+527035	Frenzied Burst (charged eye burn)	
+527037	Frenzied Burst (charged projectile)	
+527038	Frenzied Burst (charged projectile burst)	
+527041	Unendurable Frenzy (overload eye burn)	
+527051	Howl of Shabriri (howl force)	
+527052	Howl of Shabriri (howl effect)	
+528110	Triple Rings of Light (floating discus in right hand)	
+528111	Triple Rings of Light (Golden Order sigil)	
+528112	Triple Rings of Light (projectile)	
+528113	Triple Rings of Light (projectile burst)	
+528114	Triple Rings of Light (projectile hovering)	
+528115	Triple Rings of Light (floating discus in left hand)	
+528120	Discus of Light (floating discus in right hand)	
+528121	Discus of Light (Golden Order sigil)	
+528122	Discus of Light (projectile)	
+528123	Discus of Light (projectile burst)	
+528124	Discus of Light (projectile hovering)	
+528125	Discus of Light (floating discus in left hand)	
+528130	Discus of Light (floating discus)	
+528131	Discus of Light (ring descends)	
+528132	Discus of Light (ring burst)	
+528133	Discus of Light (projectile burst)	
+528135	Discus of Light (ring grows)	
+528136	Discus of Light (charged ring descends)	
+528137	Discus of Light (charged ring burst)	
+528138	Discus of Light (charged ring burst)	
+528139	Discus of Light (Golden Order sigil)	
+528140	Litany of Proper Death (holy light ray)	
+528141	Litany of Proper Death (Golden Order sigil)	
+528142	Litany of Proper Death (giant Radagon sigil)	
+528143	Litany of Proper Death (holy wave of rising light)	
+528144	Litany of Proper Death (wave holy burst)	unused?
+528150	Order Healing (holy light ray)	
+528151	Order Healing (Golden Order sigil on ground)	
+528152	Order Healing (body purge effect)	
+528160	Law of Regression (holy light ray)	
+528161	Law of Regression (giant Golden Order sigil)	
+528170	Law of Causality (holy light ray and Golden Order sigil)	
+528171	Law of Causality (effect activation)	
+528172	Law of Causality (body ring effect)	
+528173	Law of Causality (body ring effect cracks)	
+528175	Law of Causality (holy burst)	
+528176	Law of Causality (holy burst?)	smaller, unused?
+528177	Law of Causality (holy burst delay body flare)	
+528180	Immutable Shield (holy light ray)	
+528181	Immutable Shield (effect application holy flash)	
+528182	Immutable Shield (Golden Order sigil)	
+528190	Order's Blade (holy light ray and Golden Order sigil)	
+528191	Order's Blade (effect application holy flash)	
+529100	Roiling Magma (cast charge fire orb)	
+529101	Roiling Magma (cast sound)	
+529102	Roiling Magma (projectile)	
+529103	Roiling Magma (projectile burst)	
+529104	Roiling Magma (projectile charges and implodes)	
+529105	Roiling Magma (projectile charging up sound)	
+529106	Roiling Magma (projectile explosion)	
+529108	Roiling Magma (magma projectile)	
+529109	Roiling Magma (lingering magma)	
+529110	Roiling Magma (charge gathering energy)	
+529112	Roiling Magma (charged projectile)	
+529113	Roiling Magma (charged projectile burst)	
+529114	Roiling Magma (charged projectile charges and implodes)	
+529115	Roiling Magma (charged projectile charging up sound)	
+529116	Roiling Magma (charged projectile explosion)	
+529118	Roiling Magma (charged magma projectile)	
+529119	Roiling Magma (charged lingering magma)	
+529500	Stone of Gurranq (stone forms)	
+529502	Stone of Gurranq (projectile)	
+529503	Stone of Gurranq (projectile burst)	
+529510	Bestial Constitution (cast charge holy orb)	
+529511	Bestial Constitution (body-buffing holy burst)	
+529520	Bestial Sling (rocks and dust in hand)	
+529522	Bestial Sling (projectile)	
+529523	Bestial Sling (projectile burst)	
+529970	Collapsing Stars (cast charge gravity orb)	
+529971	Collapsing Stars (Gravity sigil)	
+529972	Collapsing Stars (projectile)	
+529973	Collapsing Stars (projectile burst)	
+529974	Collapsing Stars (charge gathering energy)	
+529980	Gravity Well (cast charge gravity orb)	
+529981	Gravity Well (Gravity sigil)	
+529982	Gravity Well (projectile)	
+529983	Gravity Well (projectile burst)	
+529984	Gravity Well (charge gathering energy)	
+529990	Meteorite of Astel (cast charge gravity orb)	
+529991	Meteorite of Astel (Gravity sigil)	
+529992	Meteorite of Astel (projectile)	
+529993	Meteorite of Astel (projectile burst)	
+529994	Meteorite of Astel (projectile portal)	
+530000	Aspects of the Crucible: Tail (Crucible sigil)	
+530001	Aspects of the Crucible: Tail (tail base sparkle)	
+530002	Aspects of the Crucible: Tail (tail trail, right cast)	
+530003	Aspects of the Crucible: Tail (tail trail, left cast)	
+530004	Aspects of the Crucible: Tail (charged tail swings, right cast)	
+530005	Aspects of the Crucible: Tail (tail swings, right cast)	
+530007	Aspects of the Crucible: Tail (charged tail swings, left cast)	
+530008	Aspects of the Crucible: Tail (tail swings, left cast)	
+530011	Aspects of the Crucible: Horns (Crucible sigil)	
+530012	Aspects of the Crucible: Horns (horns form, right cast, left shoulder)	
+530013	Aspects of the Crucible: Horns (thrust whirlwind trail, right cast)	
+530017	Aspects of the Crucible: Horns (horns form, left cast, right shoulder)	
+530018	Aspects of the Crucible: Horns (thrust whirlwind trail, left cast)	
+530020	Aspects of the Crucible: Breath (throat pouch forms and Crucible sigil)	
+530021	Aspects of the Crucible: Breath (throat pouch shrinks and flame breath)	
+530022	Aspects of the Crucible: Breath (flame breath wave projectile)	
+530100	?	unused Gravitas? cast charge gravity orb
+530101	?	unused Gravitas? Malenia sigil
+530102	?	unused Gravitas? gravity pull
+530110	?	unused Gravitas? cast charge gravity orb
+530111	?	unused Gravitas? Malenia sigil
+530112	?	unused Gravitas? gravity push
+530120	Meteorite (cast charge gravity orb)	
+530121	Meteorite (Gravity sigil)	
+530122	Meteorite (projectile)	
+530123	Meteorite (projectile burst)	
+530124	Meteorite (?)	some kind of weird little crackle sound
+530125	Meteorite (cast gravity field)	
+530130	Rock Sling (cast charge gravity orb)	
+530131	Rock Sling (Gravity sigil)	
+530132	Rock Sling (projectile)	
+530133	Rock Sling (projectile burst)	
+530142	?	unused Death Rancor skull?
+530143	?	unused Death Rancor skull burst?
+530150	Glintstone Arc (cast charge magic orb)	
+530151	Glintstone Arc (cast sound)	
+530152	Glintstone Arc (projectile)	
+530153	Glintstone Arc (projectile burst)	
+530160	Dragon Communion Incantations (Dragon Communion sigil)	
+530161	Dragon Communion Incantations (head smoke)	
+530162	Dragon Communion Incantations (?)	nothing
+530170	Beast Claw (claw forms and Bestial sigil)	
+530171	Beast Claw (claw trail)	
+530172	Beast Claw (claw projectile and rock upbursts)	
+530174	Beast Claw (charge gathering energy)	
+530177	Beast Claw (charged claw projectile and rock upbursts)	
+530181	Dragonmaw (dragon head forms, bites)	
+530182	Dragonmaw (dragon head mouth smoke)	
+530183	Dragonmaw (dragon head bite flash)	
+530190	Dragonclaw (claw forms, right hand)	
+530191	Dragonclaw (claw slam 1, right hand)	
+530192	Dragonclaw (claw trail)	
+530193	Dragonclaw (claw slam 2, right hand)	
+530195	Dragonclaw (Dragon Communion sigil)	
+530196	Dragonclaw (dragon smoke?)	unused?
+530200	Dragonclaw (claw forms, left hand)	
+530201	Dragonclaw (claw slam 1, left hand)	
+530203	Dragonclaw (claw slam 2, left hand)	
+530205	Dragonclaw (slam quake 1)	
+530206	Dragonclaw (slam quake 2)	
+530210	Gurranq's Beast Claw (claw forms and Bestial sigil)	
+530211	Gurranq's Beast Claw (claw projectile and rock upbursts)	
+530212	Gurranq's Beast Claw (claw trail)	
+530213	Gurranq's Beast Claw (rock upburst)	
+530350	Greyoll's Roar (Dragon Communion sigil)	
+530351	Greyoll's Roar (Greyoll head forms)	
+530352	Greyoll's Roar (Greyoll head roars)	
+530353	Greyoll's Roar (roar flash)	
+530355	Greyoll's Roar (body effect dragon smoke)	
+530360	Placidusax's Ruin (holy flame spray)	
+530362	Placidusax's Ruin (Placidusax head - ground cast)	
+530364	Placidusax's Ruin (Placidusax head - air cast)	
+530365	Placidusax's Ruin (red lightning burst)	
+530366	Placidusax's Ruin (beam shine)	
+530367	Placidusax's Ruin (beam)	
+530368	Placidusax's Ruin (beam burst)	
+530369	Placidusax's Ruin (beam uppercut trail and end)	
+530401	Dragonfire (dragon head and breath)	
+530405	Dragonfire (breath wave)	
+530406	Dragonfire (breath wave end)	
+530431	Agheel's Flame (Agheel head and breath 1)	
+530440	Agheel's Flame (Agheel head and breath 2)	
+530501	Magma Breath (wyrm head and breath 1)	
+530502	Magma Breath (wyrm head and breath 2)	
+530505	Magma Breath (magma projectile)	
+530506	Magma Breath (magma projectile burst)	
+530507	Magma Breath (lingering magma)	
+530511	Theodorix's Magma (Theodorix head and breath 1)	
+530512	Theodorix's Magma (Theodorix head and breath 2)	
+530515	Theodorix's Magma (magma projectile)	
+530516	Theodorix's Magma (magma projectile burst)	
+530517	Theodorix's Magma (lingering magma)	
+530551	Dragonice (dragon head and breath)	
+530555	Dragonice (breath wave)	
+530556	Dragonice (breath wave end)	
+530581	Borealis' Mist (Borealis head and breath 1)	
+530590	Borealis' Mist (Borealis head and breath 2)	
+530601	Rotten Breath (dragon head and breath)	
+530605	Rotten Breath (breath wave)	
+530606	Rotten Breath (breath wave end)	
+530631	Ekzykes' Decay (Ekzykes head and breath 1)	
+530640	Ekzykes' Decay (Ekzykes head and breath 2)	
+530651	Glintstone Breath (dragon head and breath)	
+530655	Glintstone Breath (breath wave)	
+530656	Glintstone Breath (breath wave end)	
+530681	Smarag's Glintstone Breath (Smarag head and breath 1)	
+530690	Smarag's Glintstone Breath (Smarag head and breath 2)	
+530701	Scarlet Aeonia (aeonia forms on player back, strikes down, bursts)	
+530702	Scarlet Aeonia (aeonia on back pollen and energy)	
+530703	Scarlet Aeonia (landing energy)	
+530704	Scarlet Aeonia (explosion and falling petals)	
+530705	Scarlet Aeonia (rising energy flow and petals)	
+530706	Scarlet Aeonia (Rot sigil)	
+530707	Scarlet Aeonia (pollen AoE)	
+600000		
+600001		
+600002		
+600003		
+600010		
+600011		
+600012		
+600013		
+600020		
+600021		
+600030		
+600031		
+600040		
+600041		
+600042		
+600043		
+600044		
+600200		
+600201		
+600202		
+600203		
+600400		
+600401		
+600402		
+600403		
+600410		
+600600		
+600601		
+600602		
+600610		
+600611		
+600612		
+600613		
+600620		
+600621		
+600622		
+600700		
+600701		
+600901		
+600902		
+600903		
+600904		
+600910		
+600915		
+600916		
+600920		
+600921		
+600925		
+600926		
+600930		
+600933		
+600934		
+600935		
+600940		
+601000		
+601020		
+601031		
+601041		
+601042		
+601043		
+601051		
+601052		
+601053		
+601054		
+601100		
+601101		
+601110		
+601111		
+602000		
+602010		
+603000		
+603001		
+603002		
+603050		
+603051		
+603052		
+620100		
+620120		
+620125		
+620126		
+620127		
+620130		
+620131		
+620132		
+620140		
+620141		
+620142		
+620150		
+620155		
+620190		
+620300		
+620301		
+620305		
+620306		
+620307		
+620308		
+620309		
+620310		
+620311		
+620312		
+620315		
+620316		
+620320		
+620321		
+620322		
+620323		
+620330		
+620331		
+620332		
+620333		
+620340		
+620341		
+620342		
+620343		
+620344		
+620345		
+620350		
+620351		
+620352		
+620353		
+620360		
+620361		
+620362		
+620363		
+620370		
+620371		
+620372		
+620373		
+620383		
+620384		
+620385		
+620386		
+620387		
+620388		
+620389		
+620390		
+620391		
+620392		
+621000		
+621010		
+621011		
+621012		
+621020		
+621030		
+621031		
+621100		
+621101		
+621102		
+621103		
+621105		
+621106		
+621107		
+621108		
+621111		
+621112		
+621113		
+621115		
+621116		
+621117		
+621120		
+621121		
+621125		
+621130		
+621131		
+621135		
+621140		
+621145		
+621150		
+621151		
+621152		
+621155		
+621156		
+621157		
+621160		
+621161		
+621162		
+621170		
+621171		
+621172		
+621173		
+621174		
+621180		
+621181		
+621182		
+621183		
+621184		
+621190		
+621195		
+621196		
+621400		
+621401		
+621402		
+621405		
+621406		
+621420		
+621421		
+621430		
+621431		
+621432		
+621436		
+621440		
+621441		
+621450		
+621460		
+621461		
+621462		
+621500		
+621510		
+621511		
+621512		
+621513		
+621514		
+621800		
+621801		
+621802		
+621803		
+621804		
+621810		
+621811		
+621812		
+621813		
+621820		
+621821		
+621822		
+621823		
+621825		
+621826		
+621827		
+621830		
+621831		
+621832		
+621835		
+621890		
+621900		
+621901		
+621902		
+621903		
+621910		
+621911		
+621915		
+621920		
+621922		
+621923		
+621924		
+621925		
+621930		
+621932		
+621933		
+621934		
+621940		
+621942		
+621943		
+621944		
+621945		
+621950		
+621951		
+621952		
+621955		
+621956		
+621957		
+621958		
+621960		
+621961		
+621962		
+621963		
+621964		
+621965		
+621966		
+621967		
+621969		
+621970		
+621971		
+621972		
+621973		
+621974		
+621980		
+621981		
+621982		
+621985		
+621986		
+621987		
+621990		
+621991		
+621992		
+621993		
+621994		
+621995		
+621996		
+621997		
+621999		
+622000		
+622001		
+622002		
+622003		
+622006		
+622007		
+622008		
+622010		
+622011		
+622012		
+622013		
+622014		
+622015		
+622020		
+622021		
+622022		
+622023		
+622024		
+622030		
+622031		
+622032		
+622033		
+622040		
+622041		
+622042		
+622043		
+622044		
+622045		
+622050		
+622051		
+622052		
+622053		
+622054		
+622055		
+622059		
+622060		
+622061		
+622070		
+622071		
+622072		
+622073		
+622080		
+622085		
+622086		
+622090		
+622091		
+622092		
+622093		
+622094		
+622095		
+622096		
+622097		
+622100		
+622101		
+622102		
+622103		
+622105		
+622106		
+622110		
+622111		
+622112		
+622120		
+622121		
+622130		
+622700		
+622701		
+622702		
+622710		
+622711		
+622720		
+622722		
+622723		
+622730		
+622731		
+622740		
+622742		
+622743		
+622750		
+625005		
+625011		
+625012		
+625015		
+625016		
+625017		
+625018		
+625020		
+625021		
+625025		
+625026		
+625030		
+625031		
+625032		
+625035		
+625036		
+625040		
+625041		
+625045		
+625046		
+625050		
+625051		
+625052		
+625060		
+625061		
+625062		
+625070		
+625071		
+625075		
+625080		
+625090		
+625092		
+630000		
+630001		
+630002		
+630003		
+630010		
+630011		
+630012		
+630020		
+630021		
+630022		
+630023		
+630030		
+630040		
+630042		
+630043		
+630044		
+630050		
+630100		
+630105		
+630106		
+630107		
+630401		
+630410		
+630411		
+630415		
+630416		
+630417		
+630418		
+630425		
+630426		
+630440		
+630441		
+630450		
+630451		
+630500		
+630501		
+630510		
+630511		
+630515		
+630516		
+630517		
+630518		
+630521		
+630525		
+630526		
+630527		
+630528		
+630540		
+630541		
+630545		
+630550		
+630551		
+630570		
+630571		
+630572		
+630573		
+630574		
+630575		
+630581		
+630586		
+630587		
+630590		
+630591		
+630610		
+630611		
+630612		
+630700		
+630710		
+630711		
+630712		
+630720		
+630721		
+630722		
+630730		
+630731		
+630800		
+630805		
+630820		
+630821		
+630822		
+630825		
+630826		
+630827		
+630828		
+630830		
+631000		
+631005		
+631006		
+631007		
+631008		
+631009		
+631020		
+631030		
+631035		
+631036		
+631037		
+631038		
+631040		
+631041		
+631050		
+631051		
+631060		
+631061		
+631500		
+631510		
+631600		
+631601		
+631700		
+631701		
+631702		
+631703		
+631704		
+631713		
+631714		
+631715		
+631716		
+631717		
+631718		
+631720		
+631721		
+631722		
+631731		
+631732		
+631733		
+631800		
+631801		
+631813		
+631814		
+631815		
+631816		
+631817		
+631820		
+631821		
+631850		
+631851		
+631852		
+631853		
+631860		
+631861		
+631862		
+631870		
+631871		
+631875		
+631876		
+631877		
+631878		
+632000		
+632001		
+632002		
+632003		
+632005		
+632006		
+632007		
+632010		
+632011		
+632012		
+632013		
+632021		
+632022		
+632023		
+632024		
+632026		
+632027		
+632028		
+632030		
+632031		
+632032		
+632040		
+632041		
+632500		
+632501		
+632502		
+632503		
+632505		
+632506		
+632507		
+632508		
+632511		
+632515		
+632516		
+632517		
+632518		
+632520		
+632521		
+632525		
+632529		
+632530		
+632532		
+632541		
+632542		
+632543		
+632544		
+632545		
+632556		
+632557		
+632558		
+632559		
+632560		
+632561		
+632562		
+632563		
+632564		
+632565		
+632566		
+632570		
+632571		
+632572		
+632573		
+632575		
+632576		
+632577		
+632578		
+632579		
+632580		
+632581		
+632582		
+632585		
+632586		
+632588		
+632589		
+632590		
+632591		
+632592		
+632595		
+632596		
+632597		
+632598		
+633000		
+633010		
+633020		
+633021		
+633100		
+633101		
+633300		
+633301		
+633600		
+633601		
+633605		
+633610		
+633611		
+633612		
+633613		
+633621		
+633622		
+633623		
+633624		
+633630		
+633631		
+633640		
+633641		
+633642		
+633690		
+633700		
+633701		
+633702		
+633710		
+633720		
+633790		
+634000		
+634001		
+634005		
+634010		
+634020		
+634030		
+634035		
+634036		
+634040		
+634041		
+634042		
+634043		
+634601		
+634620		
+634625		
+634640		
+634641		
+634642		
+634643		
+634651		
+634652		
+634653		
+634700		
+634701		
+634702		
+634710		
+634711		
+634712		
+634720		
+634725		
+634726		
+634727		
+634730		
+634740		
+634741		
+634742		
+634743		
+634744		
+634745		
+635000		
+635005		
+635011		
+635012		
+635013		
+635014		
+635020		
+635021		
+635022		
+635023		
+635024		
+635025		
+635026		
+635027		
+635028		
+635030		
+635031		
+635032		
+635033		
+635035		
+635036		
+635037		
+635038		
+635040		
+635041		
+635050		
+635051		
+635060		
+635070		
+635075		
+635076		
+635077		
+635078		
+635080		
+635081		
+635082		
+635083		
+635084		
+635085		
+635090		
+635100		
+635110		
+635111		
+635112		
+635113		
+635114		
+635120		
+635121		
+635122		
+635123		
+635130		
+635600		
+635601		
+635602		
+635610		
+635611		
+635612		
+635613		
+635614		
+635620		
+635621		
+635622		
+635630		
+635635		
+635640		
+635641		
+635642		
+635690		
+635691		
+635692		
+635693		
+635705		
+635710		
+635711		
+635720		
+635721		
+635730		
+635740		
+635742		
+635743		
+635750		
+635751		
+635752		
+635760		
+635770		
+635771		
+635772		
+635780		
+635781		
+635782		
+635792		
+635793		
+636000		
+636001		
+636002		
+636003		
+636004		
+636005		
+636010		
+636011		
+636012		
+636020		
+636021		
+636022		
+636030		
+636031		
+636032		
+636035		
+636036		
+636037		
+636040		
+636050		
+636051		
+636052		
+636100		
+636101		
+636102		
+636103		
+636110		
+636111		
+636112		
+636113		
+636200		
+636201		
+636202		
+636203		
+636210		
+636211		
+636212		
+636213		
+636300		
+636301		
+636302		
+636303		
+636310		
+636311		
+636312		
+636313		
+636500		
+636505		
+636507		
+636510		
+636515		
+636516		
+636517		
+636520		
+636530		
+636531		
+636590		
+636591		
+636592		
+636593		
+636595		
+636596		
+636597		
+636598		
+636600		
+636601		
+636602		
+636605		
+636606		
+636607		
+636608		
+636610		
+636611		
+636612		
+636615		
+636620		
+636625		
+636626		
+636627		
+636630		
+636631		
+636635		
+636636		
+636637		
+636640		
+636641		
+636645		
+636650		
+636651		
+636652		
+636653		
+636655		
+636656		
+636657		
+636658		
+636660		
+636661		
+636665		
+636666		
+636670		
+636671		
+636672		
+636673		
+636674		
+636675		
+636676		
+636677		
+636678		
+636679		
+636680		
+636681		
+636682		
+636683		
+636685		
+636690		
+636691		
+636692		
+636693		
+636694		
+636700		
+636705		
+636710		
+636711		
+636712		
+636713		
+636720		
+636721		
+636722		
+636723		
+636724		
+636725		
+636726		
+636730		
+636731		
+636732		
+636740		
+636750		
+636990		
+636991		
+636992		
+636993		
+636995		
+636996		
+636997		
+636998		
+637000		
+637001		
+637002		
+637005		
+637006		
+637007		
+637010		
+637011		
+637012		
+637013		
+637014		
+637015		
+637017		
+637018		
+637020		
+637021		
+637022		
+637025		
+637030		
+637031		
+637035		
+637036		
+637037		
+637040		
+637041		
+637045		
+637046		
+637047		
+637050		
+637051		
+637052		
+637053		
+637055		
+637056		
+637057		
+637058		
+637065		
+637066		
+637067		
+637068		
+637075		
+637076		
+637077		
+637078		
+637085		
+637086		
+637087		
+637088		
+637090		
+637091		
+637092		
+637093		
+637094		
+637095		
+637096		
+637097		
+637098		
+637100		
+637101		
+637102		
+637103		
+637110		
+637111		
+637112		
+637113		
+637200		
+637203		
+637210		
+637211		
+637300		
+637310		
+637311		
+637320		
+637321		
+638000		
+638001		
+638002		
+638005		
+638006		
+638010		
+638020		
+638021		
+638022		
+638030		
+638031		
+638032		
+638033		
+638040		
+638041		
+638042		
+638045		
+638046		
+638050		
+638055		
+638056		
+638060		
+638061		
+638070		
+638075		
+638100		
+638101		
+638102		
+638600		
+638601		
+638602		
+638603		
+638610		
+638611		
+638612		
+638613		
+638614		
+638620		
+638621		
+638630		
+638631		
+638640		
+638650		
+638651		
+638652		
+638653		
+638654		
+638655		
+639000		
+639001		
+639002		
+639005		
+639006		
+639007		
+639010		
+639011		
+639012		
+639015		
+639016		
+639017		
+639020		
+639021		
+639025		
+639026		
+639030		
+639031		
+639035		
+639036		
+639040		
+639041		
+639042		
+639045		
+639046		
+639047		
+639048		
+639050		
+639060		
+639061		
+639062		
+639063		
+639064		
+639065		
+639066		
+639067		
+639068		
+639100		
+639101		
+639102		
+639103		
+639110		
+639111		
+639112		
+639120		
+639121		
+639122		
+639130		
+639131		
+639132		
+639133		
+639135		
+639136		
+639140		
+639141		
+639150		
+639151		
+639152		
+639153		
+639155		
+639156		
+639160		
+639500		
+639510		
+639511		
+639512		
+639520		
+639521		
+639522		
+639530		
+639531		
+639532		
+639533		
+639535		
+639536		
+639537		
+639538		
+639540		
+639550		
+639555		
+639556		
+639557		
+640000		
+640010		
+640011		
+640012		
+640020		
+640030		
+640031		
+640040		
+640045		
+640050		
+640051		
+640052		
+640055		
+640056		
+640057		
+640200		
+640206		
+640210		
+640212		
+640215		
+640216		
+640221		
+640222		
+640225		
+640235		
+640400		
+640401		
+640410		
+640411		
+640412		
+640420		
+640421		
+640422		
+640430		
+640500		
+640510		
+640511		
+640520		
+640600		
+640800		
+640801		
+640900		
+640901		
+641000		
+641001		
+641002		
+641003		
+641010		
+641011		
+641012		
+641020		
+641030		
+641031		
+641032		
+641035		
+641036		
+641040		
+641041		
+641042		
+641045		
+641046		
+641047		
+641048		
+641100		
+641101		
+641110		
+641111		
+641120		
+641130		
+641131		
+641132		
+641135		
+641136		
+641200		
+641201		
+641203		
+641210		
+641215		
+641335		
+641400		
+641401		
+641402		
+641405		
+641406		
+641407		
+641410		
+641411		
+641412		
+641415		
+641416		
+641417		
+641420		
+641421		
+641422		
+641425		
+641426		
+641431		
+641440		
+641441		
+641445		
+641450		
+641460		
+641470		
+641471		
+641472		
+641473		
+641480		
+641481		
+641482		
+641500		
+641501		
+641510		
+641520		
+641710		
+641800		
+641801		
+641802		
+641810		
+641811		
+641812		
+641813		
+641820		
+641821		
+641901		
+641902		
+641905		
+641912		
+641913		
+641920		
+641921		
+641922		
+641923		
+641924		
+641925		
+641926		
+641927		
+641930		
+641931		
+641932		
+641935		
+641936		
+641937		
+641940		
+641941		
+641942		
+641945		
+641946		
+641947		
+641950		
+641951		
+641952		
+641955		
+641956		
+641957		
+641960		
+641961		
+641962		
+641965		
+641966		
+641967		
+641970		
+641971		
+641972		
+641975		
+641976		
+641977		
+641980		
+641981		
+641982		
+641985		
+641986		
+641987		
+641990		
+641991		
+641992		
+641993		
+641994		
+641995		
+641996		
+641997		
+641998		
+642000		
+642001		
+642002		
+642010		
+642011		
+642012		
+642020		
+642030		
+642031		
+642032		
+642050		
+642051		
+642052		
+642053		
+642060		
+642061		
+642062		
+642063		
+642064		
+642065		
+642070		
+642080		
+642081		
+642082		
+642083		
+642100		
+642101		
+642102		
+642103		
+642104		
+642105		
+642110		
+642111		
+642115		
+642116		
+642120		
+642121		
+642122		
+642130		
+642140		
+642150		
+642160		
+642161		
+642162		
+642400		
+642401		
+642402		
+642403		
+642404		
+642405		
+642406		
+642410		
+642411		
+642500		
+642600		
+642602		
+642603		
+642604		
+642605		
+642606		
+642610		
+642611		
+642612		
+642613		
+642614		
+642615		
+642620		
+642635		
+642636		
+642640		
+642641		
+642642		
+642650		
+642651		
+642652		
+642660		
+642661		
+642663		
+642670		
+642672		
+642673		
+642675		
+642676		
+642700		
+642710		
+642720		
+642721		
+642722		
+642723		
+642800		
+642801		
+642802		
+642810		
+642811		
+642812		
+642820		
+642830		
+642831		
+642840		
+642850		
+642900		
+642901		
+642905		
+642906		
+643000		
+643001		
+643002		
+643003		
+643010		
+643011		
+643012		
+643020		
+643030		
+643031		
+643040		
+643041		
+643042		
+643043		
+643050		
+643051		
+643052		
+643053		
+643060		
+643061		
+643070		
+643100		
+643101		
+643102		
+643103		
+643105		
+643110		
+643111		
+643112		
+643113		
+643120		
+643121		
+643130		
+643131		
+643132		
+643133		
+643134		
+643135		
+643136		
+643137		
+643140		
+643141		
+643142		
+643143		
+643145		
+643146		
+643147		
+643148		
+643150		
+643151		
+643155		
+643156		
+643160		
+643165		
+643171		
+643180		
+643181		
+643182		
+643183		
+643185		
+643190		
+643200		
+643201		
+643202		
+643210		
+643220		
+643221		
+643222		
+643230		
+643231		
+643235		
+643240		
+643241		
+643242		
+643560		
+643644		
+643700		
+643701		
+643710		
+643711		
+643712		
+643720		
+643721		
+643722		
+643723		
+643730		
+643731		
+643732		
+643733		
+643734		
+643735		
+643740		
+643741		
+643790		
+643791		
+643792		
+643795		
+643796		
+643797		
+643800		
+643801		
+643802		
+643803		
+643804		
+643810		
+643811		
+643812		
+643813		
+643815		
+643820		
+643821		
+643822		
+643826		
+643827		
+643830		
+643835		
+643836		
+643840		
+643845		
+643846		
+643850		
+643851		
+643852		
+643853		
+643854		
+643855		
+643856		
+643857		
+643858		
+643859		
+643860		
+643861		
+643862		
+643863		
+643864		
+643865		
+643866		
+643867		
+643868		
+643869		
+643870		
+643871		
+643872		
+643873		
+643874		
+643875		
+643880		
+643881		
+643882		
+643883		
+643884		
+643886		
+643887		
+643888		
+643890		
+643891		
+643893		
+643894		
+643898		
+643899		
+643900		
+643901		
+643910		
+643911		
+643912		
+643913		
+643920		
+643921		
+643922		
+643923		
+643924		
+643925		
+643926		
+643927		
+643930		
+643931		
+643932		
+643933		
+643934		
+643935		
+643936		
+643937		
+643938		
+643940		
+643941		
+643942		
+643945		
+643950		
+643955		
+643956		
+643957		
+643958		
+643959		
+643965		
+643966		
+643967		
+643970		
+643971		
+643972		
+643980		
+643981		
+643993		
+643995		
+643996		
+643997		
+644101		
+644200		
+644201		
+644202		
+644203		
+644205		
+644206		
+644207		
+644208		
+644210		
+644211		
+644212		
+644213		
+644215		
+644216		
+644217		
+644218		
+644300		
+644305		
+644306		
+644310		
+644320		
+644321		
+644322		
+644400		
+644401		
+644410		
+644411		
+644412		
+644421		
+644430		
+644431		
+644450		
+644451		
+644452		
+644455		
+644456		
+644457		
+644460		
+644461		
+644462		
+644465		
+644466		
+644467		
+644471		
+644480		
+644481		
+644485		
+644486		
+644501		
+644502		
+644503		
+644504		
+644505		
+644506		
+644507		
+644511		
+644512		
+644516		
+644517		
+644520		
+644530		
+644535		
+644540		
+644541		
+644542		
+644600		
+644601		
+644602		
+644603		
+644610		
+644611		
+644612		
+644613		
+644620		
+644621		
+644622		
+644630		
+644631		
+644640		
+644641		
+644642		
+644650		
+644651		
+644700		
+644701		
+644710		
+644711		
+644712		
+644713		
+644715		
+644720		
+644800		
+644801		
+644803		
+644804		
+644805		
+644806		
+644811		
+644812		
+644813		
+644814		
+644815		
+644816		
+644817		
+644818		
+644819		
+644820		
+644821		
+644825		
+644826		
+644827		
+644828		
+644829		
+644830		
+644831		
+644832		
+644835		
+644836		
+644837		
+644838		
+644840		
+644841		
+644842		
+644843		
+644845		
+644846		
+644847		
+644848		
+644850		
+644851		
+644852		
+644853		
+644855		
+644856		
+644857		
+644858		
+644860		
+644861		
+644862		
+644900		
+644901		
+644902		
+644920		
+644921		
+644922		
+644930		
+644931		
+644932		
+644940		
+644941		
+644942		
+644951		
+644952		
+644953		
+644954		
+645000		
+645001		
+645005		
+645016		
+645017		
+645018		
+645035		
+645100		
+645101		
+645102		
+645103		
+645105		
+645106		
+645110		
+645111		
+645115		
+645116		
+645117		
+645120		
+645121		
+645123		
+645126		
+645130		
+645131		
+645132		
+645140		
+645141		
+645142		
+645144		
+645145		
+645146		
+645147		
+645148		
+645150		
+645151		
+645152		
+645153		
+645155		
+645156		
+645157		
+645170		
+645171		
+645172		
+645173		
+645175		
+645176		
+645180		
+645181		
+645182		
+645190		
+645200		
+645201		
+645202		
+645203		
+645205		
+645210		
+645215		
+645220		
+645225		
+645230		
+645231		
+645232		
+645240		
+645241		
+645242		
+645243		
+645244		
+645250		
+645252		
+645254		
+645256		
+645257		
+645261		
+645262		
+645263		
+645264		
+645265		
+645266		
+645267		
+645270		
+645271		
+645272		
+645280		
+645281		
+645282		
+645283		
+645290		
+645295		
+645296		
+645510		
+645520		
+645530		
+645540		
+645541		
+645550		
+645551		
+645552		
+645600		
+645610		
+645620		
+645700		
+645701		
+645702		
+645703		
+645704		
+645705		
+645706		
+645707		
+645708		
+645709		
+645730		
+645800		
+645810		
+645811		
+645812		
+645813		
+645814		
+645820		
+645821		
+645830		
+645831		
+645832		
+645833		
+645850		
+645855		
+646005		
+646006		
+646025		
+646061		
+646062		
+646095		
+646096		
+646097		
+646200		
+646211		
+646213		
+646214		
+646215		
+646216		
+646217		
+646218		
+646221		
+646222		
+646223		
+646224		
+646225		
+646230		
+646231		
+646232		
+646235		
+646236		
+646237		
+646240		
+646241		
+646242		
+646243		
+646250		
+646252		
+646253		
+646255		
+646260		
+646261		
+646262		
+646263		
+646270		
+646271		
+646272		
+646273		
+646281		
+646282		
+646283		
+646290		
+646292		
+646293		
+646300		
+646301		
+646310		
+646320		
+646321		
+646400		
+646401		
+646402		
+646403		
+646404		
+646405		
+646406		
+646407		
+646408		
+646409		
+646410		
+646411		
+646412		
+646413		
+646415		
+646416		
+646417		
+646418		
+646419		
+646420		
+646421		
+646425		
+646426		
+646430		
+646440		
+646441		
+646501		
+646502		
+646503		
+646504		
+646505		
+646506		
+646510		
+646511		
+646512		
+646515		
+646517		
+646518		
+646520		
+646521		
+646522		
+646530		
+646531		
+646535		
+646536		
+646550		
+646551		
+646552		
+646555		
+646556		
+646557		
+646560		
+646561		
+646565		
+646566		
+646570		
+646571		
+646572		
+646580		
+646590		
+646705		
+646715		
+646800		
+646801		
+646802		
+646803		
+646804		
+646805		
+646806		
+646807		
+646810		
+646811		
+646812		
+646813		
+646814		
+646820		
+646821		
+646822		
+646823		
+646830		
+646840		
+646845		
+646846		
+646850		
+646860		
+646870		
+646871		
+646901		
+646911		
+646920		
+646921		
+646930		
+646931		
+646935		
+646940		
+646941		
+646945		
+647206		
+647315		
+647345		
+647500		
+647501		
+647502		
+647503		
+647504		
+647505		
+647506		
+647510		
+647511		
+647514		
+647515		
+647520		
+647525		
+647526		
+647527		
+647530		
+647531		
+647532		
+647540		
+647541		
+647542		
+647550		
+647551		
+647552		
+647553		
+647554		
+647555		
+647561		
+647562		
+647563		
+647564		
+647570		
+647571		
+647572		
+647573		
+647580		
+647590		
+647595		
+647600		
+647601		
+647602		
+647605		
+647606		
+647608		
+647609		
+647610		
+647612		
+647615		
+647620		
+647621		
+647622		
+647630		
+647631		
+647632		
+647633		
+647634		
+647640		
+647641		
+647642		
+647650		
+647651		
+647652		
+647660		
+647661		
+647662		
+647671		
+647672		
+647673		
+647675		
+647676		
+647680		
+647681		
+647682		
+647685		
+647690		
+647691		
+647700		
+647701		
+647702		
+647703		
+647710		
+647711		
+647712		
+647713		
+647714		
+647715		
+647720		
+647721		
+647722		
+647723		
+647724		
+647730		
+647731		
+647732		
+647733		
+647734		
+647740		
+647741		
+647742		
+647747		
+647755		
+647756		
+647757		
+647758		
+647760		
+647770		
+647771		
+647780		
+647790		
+647791		
+647792		
+647793		
+647800		
+647801		
+647802		
+647803		
+647810		
+647811		
+647812		
+647813		
+647814		
+647815		
+647820		
+647821		
+647822		
+647823		
+647824		
+647830		
+647831		
+647832		
+647833		
+648000		
+648003		
+648004		
+648005		
+648006		
+648007 [Mohg] Blood Wave
+648008 [Mohg] Blood Burst
+648009 [Mohg] Burning Blood Puddle
+648011 [Mohg] Tainted Blood Projectile
+648014 [Mohg] Blood Burst (medium)	
+648020 [Mohg] Deep Red Blood Projectile
+648025 [Mohg] Blood Portal 
+648026 [Mohg] Blood Mist (wide)
+648030 [Mohg] Glowing Blood Circle
+648031 [Mohg] Glowing Blood Circle - Echoing Burst	
+648032 [Mohg] Black Feathers (Parallel lines)	
+648035 [Mohg] Blood Portal (stronger glow)
+648036 [Mohg] Tainted Blood Projectile
+648040 [Mohg] Upwards Blood Spurt	
+648041 [Mohg] Deep Red Blood Projectile
+648042 [Mohg] Deep Red Blood Projectile (with blood spurts)	
+648045 [Mohg] Swirling Blood Spiral
+648046 [Mohg] Burning Blood Pubble Multiple
+648050 [Mohg] Spewing Fire
+648051 [Mohg] Spearfire Explosion
+648054		
+648055		
+648056 [Mohg] Hand Explosion
+648070 [Mohg] Blood Spurt - Right
+648071 [Mohg] Blood Spurt - Left
+648072 [Mohg] Blood Spurt Projectile
+648075		
+648080		
+648081		
+648082		
+648085		
+648086		
+648087		
+648090		
+648100		
+648101		
+648102		
+648104		
+648110		
+648130		
+648131		
+648132		
+648133		
+648134		
+648140		
+648141		
+648190		
+648200		
+648201		
+648202		
+648203		
+648204		
+648205		
+649100		
+649101		
+649102		
+649103		
+649105		
+649106		
+649110		
+649111		
+649115		
+649120		
+649121		
+649131		
+649150		
+649500		
+649501		
+649502		
+649503		
+649505		
+649510		
+649511		
+649512		
+649520		
+649521		
+649522		
+649523		
+649524		
+649530		
+649540		
+649550		
+649551		
+649552		
+649553		
+649554		
+649600		
+649601		
+649602		
+649603		
+649610		
+649611		
+649615		
+649620		
+649800		
+649801		
+649802		
+649803		
+649805		
+649806		
+649808		
+649809		
+649810		
+649811		
+649812		
+649815		
+649816		
+649821		
+649830		
+649831		
+649832		
+649840		
+649841		
+649842		
+649850		
+649860		
+649861		
+649862		
+649870		
+649871		
+649872		
+649873		
+649874		
+649880		
+649881		
+649890		
+660000		
+660001		
+660300		
+660402		
+660403		
+660404		
+660610		
+660700		
+660705		
+660710		
+660715		
+660900		
+670000		
+670001		
+670002		
+670020		
+670025		
+670030		
+670035		
+670040		
+670041		
+670042		
+670050		
+670051		
+670052		
+670053		
+671000		
+671001		
+671002		
+671005		
+671010		
+671011		
+671012		
+671013		
+671015		
+671016		
+671017		
+671018		
+671020		
+671021		
+671022		
+671025		
+671027		
+671030		
+671031		
+671032		
+671040		
+671045		
+671046		
+671047		
+671050		
+671051		
+680000	Torrent spawn (ghostly lavender smoke)	
+680010		
+680020		
+680025		
+680030		
+680031		
+680035		
+681100		
+681101		
+681103		
+681105		
+681200		
+681201		
+681202		
+681210		
+681211		
+690000		
+690001		
+690002		
+690003		
+690004		
+690005		
+690006		
+690007		
+690008		
+690009		
+690011		
+690012		
+690013		
+690014		
+690020		
+690021		
+690022		
+690023		
+690024		
+690025		
+691007		
+691015		
+691016		
+800000		
+800001		
+800007		
+800008		
+800009		
+800011		
+800020		
+800021		
+800022		
+800023		
+800024		
+800026		
+800027		
+800028		
+800029		
+800030		
+800031		
+800040		
+800041		
+800042		
+800045		
+800046		
+800055		
+800056		
+800057		
+800060		
+800061		
+800070		
+800071		
+800075		
+800090		
+800091		
+800092		
+800093		
+800094		
+800100		
+800130		
+800135		
+800136		
+800137		
+800140		
+800150		
+800151		
+800152		
+800160		
+800161		
+800162		
+800163		
+800170		
+800171		
+800172		
+800173		
+800174		
+800180		
+800181		
+800182		
+800183		
+800184		
+800185		
+800186		
+800187		
+800188		
+800190		
+800191		
+800192		
+800193		
+800194		
+800195		
+800196		
+800197		
+800198		
+800200		
+800201		
+800202		
+800203		
+800210		
+800211		
+800212		
+800220		
+800221		
+800222		
+800223		
+800224		
+800225		
+800226		
+800227		
+800230		
+800231		
+800232		
+800233		
+800234		
+800235		
+800236		
+800237		
+800240		
+800250		
+800260		
+800270		
+800271		
+800275		
+800276		
+800280		
+800290		
+800291		
+800330		
+800331		
+800332		
+800340		
+800350		
+800360		
+800361		
+800370		
+800371		
+800380		
+800390		
+800391		
+800392		
+800399		
+800400		
+800401		
+800402		
+800403		
+800404		
+800405		
+800406		
+800407		
+800410		
+800411		
+800412		
+800420		
+800421		
+800422		
+800423		
+800500		
+800510		
+800511		
+800520		
+800530		
+800531		
+800540		
+800550		
+800600		
+800601		
+800602		
+800610		
+800611		
+800620		
+800621		
+800630		
+800631		
+800632		
+800803		
+802020		
+803000		
+803001		
+803002		
+803020		
+803030		
+803040		
+803041		
+803060		
+803061		
+803062		
+803080		
+803081		
+803090		
+803091		
+803100		
+803101		
+803102		
+803103		
+803104		
+803110		
+803120		
+803130		
+803131		
+803140		
+803150		
+803151		
+803160		
+803161		
+803170		
+803171		
+803172		
+803180		
+803181		
+803182		
+803183		
+803184		
+803186		
+803190		
+803200		
+803210		
+803220		
+803230		
+803240		
+803241		
+803242		
+803243		
+803245		
+803246		
+803247		
+803248		
+803260		
+803261		
+803270		
+803271		
+803280		
+803281		
+803291		
+803292		
+803300		
+803310		
+803311		
+803400		
+803401		
+803410		
+803411		
+803412		
+803430		
+803440		
+803450		
+803460		
+803461		
+803462		
+803463		
+803464		
+803465		
+803466		
+803467		
+803468		
+803469		
+804000		
+804001		
+804002		
+804003		
+804004		
+804010		
+804011		
+804012		
+804013		
+804014		
+804020		
+804060		
+804061		
+804062		
+806000		
+806001		
+806002		
+806010		
+806020		
+806021		
+806030		
+806031		
+806040		
+806041		
+806042		
+806043		
+806050		
+806060		
+806061		
+806080		
+806100		
+806101		
+806102		
+806120		
+806121		
+806125		
+806126		
+806130		
+806131		
+806132		
+806133		
+806140		
+806150		
+806160		
+806161		
+806163		
+806164		
+806170		
+806180		
+806200		
+806201		
+806202		
+806203		
+806204		
+806210		
+806211		
+806212		
+806213		
+806250		
+806260		
+806270		
+806300		
+806310		
+806320		
+806321		
+806330		
+806331		
+806340		
+806400		
+806401		
+806410		
+806411		
+806420		
+806421		
+806430		
+806431		
+806440		
+806441		
+806451		
+806461		
+806471		
+806500		
+806501		
+806502		
+806510		
+806511		
+806512		
+806550		
+806551		
+806600		
+806601		
+806610		
+806611		
+806612		
+806700		
+806701		
+806702		
+806705		
+806710		
+806720		
+806721		
+806730		
+806731		
+806740	Frenzy-Flaming Tower chaos flame	giant purple-yellow flame with black center
+806751		
+806752		
+806753		
+806760		
+806761		
+806762		
+806780		
+806781		
+806782		
+806800		
+806801		
+806802		
+806810		
+806820		
+806830		
+806831		
+806840		
+806850		
+806855		
+806861		
+806870		
+806871		
+806881		
+806882		
+806883		
+806890		
+806891		
+806892		
+806900		
+806901		
+806910		
+806930		
+806932		
+806934		
+806936		
+806938		
+806940		
+806950		
+806951		
+806952		
+806955		
+806956		
+806957		
+806960		
+806961		
+806962		
+806965		
+806966		
+806967		
+806970		
+806971		
+806972		
+806975		
+806976		
+806977		
+806980		
+806981		
+806982		
+806990		
+808001		
+808002		
+808003		
+808004		
+808005		
+808006		
+808007		
+814630		
+816021		
+830031		
+831060		
+831061		
+834010		
+838001		
+870001		
+1003090		XYZ axis lines with bright center
+1003091		XYZ axis lines with bright center (big)
+1003092		XYZ axis lines with bright center (huge)
+1004010		
+2001000	Fire hit effect (small)	orange flame
+2001001	Fire hit effect (medium)	orange flame
+2001002	Fire hit effect (large)	orange flame
+2001010		
+2001011		
+2001012		
+2002000	Lightning hit effect (small)	yellow lightning
+2002001	Lightning hit effect (medium)	yellow lightning
+2002002	Lightning hit effect (large)	yellow lightning
+2003000	Magic hit effect (small)	blue glitter burst
+2003001	Magic hit effect (medium)	blue glitter burst
+2003002	Magic hit effect (large)	blue glitter burst
+2004000	Holy hit effect (small)	gold glitter burst
+2004001	Holy hit effect (medium)	gold glitter burst
+2004002	Holy hit effect (large)	gold glitter burst
+2005000	Poison hit effect (small)	green smoke puff
+2005001	Poison hit effect (medium)	green smoke puff
+2005002	Poison hit effect (large)	green smoke puff
+2006000	Rot hit effect (small)	scarlet smoke puff
+2006001	Rot hit effect (medium)	scarlet smoke puff
+2006002	Rot hit effect (large)	scarlet smoke puff
+2007000	Bloodflame hit effect (small)	crimson flame
+2007001	Bloodflame hit effect (medium)	crimson flame
+2007002	Bloodflame hit effect (large)	crimson flame
+2008000	Frostbite hit effect (small)	frost smoke puff
+2008001	Frostbite hit effect (medium)	frost smoke puff
+2008002	Frostbite hit effect (large)	frost smoke puff
+2009000	Sleep hit effect (small)	lavender smoke puff
+2009001	Sleep hit effect (medium)	lavender smoke puff
+2009002	Sleep hit effect (large)	lavender smoke puff
+2010000	Madness hit effect (small)	yellow-purple flame
+2010001	Madness hit effect (medium)	yellow-purple flame
+2010002	Madness hit effect (large)	yellow-purple flame
+2011000	Death hit effect (small)	yellow-black flame
+2011001	Death hit effect (medium)	yellow-black flame
+2011002	Death hit effect (large)	yellow-black flame
+5000000		
+5000001		
+5000002		
+5000003		
+5001000		
+5001001		
+5001002		
+5001003		
+5002000		
+5002001		
+5002002		
+5002003		
+5003000		
+5003001		
+5003002		
+5003003		
+5004000		
+5004001		
+5004002		
+5004003		
+5006000		
+5006001		
+5006002		
+5006003		
+5008000		
+5008001		
+5008002		
+5008003		
+5008005		
+5009000		
+5009001		
+5009002		
+5009003		
+5010000		
+5010001		
+5010002		
+5010003		
+5011000		
+5011001		
+5011002		
+5011003		
+5013000		
+5013001		
+5013002		
+5013003		
+5014000		
+5014001		
+5014002		
+5014003		
+5015000		
+5015001		
+5015002		
+5015003		
+5016000		
+5016001		
+5016002		
+5016003		
+5017000		
+5017001		
+5017002		
+5017003		
+5018000		
+5018001		
+5018002		
+5018003		
+5019000		
+5019001		
+5019002		
+5019003		
+5020000		
+5020001		
+5020002		
+5020003		
+5021000		
+5021001		
+5021002		
+5021003		
+5022000		
+5022001		
+5022002		
+5022003		
+5022005		
+5023000		
+5023001		
+5023002		
+5023003		
+5024000		
+5024001		
+5024002		
+5024003		
+5026000		
+5026001		
+5026002		
+5026003		
+5027000		
+5027001		
+5027002		
+5027003		
+5028000		
+5028001		
+5028002		
+5028003		
+5029000		
+5029001		
+5029002		
+5029003		
+5030000		
+5030001		
+5030002		
+5030003		
+5031000		
+5031001		
+5031002		
+5031003		
+5032000		
+5032001		
+5032002		
+5032003		
+5033000		
+5033001		
+5033002		
+5033003		
+5034000		
+5034001		
+5034002		
+5034003		
+5035000		
+5035001		
+5035002		
+5035003		
+5100000		
+5100001		
+5100002		
+5100003		
+5101000		
+5101001		
+5101002		
+5101003		
+5102000		
+5102001		
+5102002		
+5102003		
+5102005		
+5103000		
+5103001		
+5103002		
+5103003		
+5104000		
+5104001		
+5104002		
+5104003		
+5105000		
+5105001		
+5105002		
+5105003		
+5106000		
+5106001		
+5106002		
+5106003		
+5200000		
+5200001		
+5200002		
+5200003		
+5201000		
+5201001		
+5201002		
+5201003		
+5202000		
+5202001		
+5202002		
+5202003		
+5202004		
+5203000		
+5203001		
+5203002		
+5203003		
+5204000		
+5204001		
+5204002		
+5204003		
+5205000		
+5205001		
+5205002		
+5205003		
+5206000		
+5206001		
+5206002		
+5206003		
+5207000		
+5207001		
+5207002		
+5207003		
+5208000		
+5208001		
+5208002		
+5208003		
+5209000		
+5209001		
+5209002		
+5209003		
+5210000		
+5210001		
+5210002		
+5210003		
+5211000		
+5211001		
+5211002		
+5211003		
+5212000		
+5212001		
+5212002		
+5212003		
+5213000		
+5213001		
+5213002		
+5213003		
+5214000		
+5214001		
+5214002		
+5214003		
+5215000		
+5215001		
+5215002		
+5215003		
+5216000		
+5216001		
+5216002		
+5216003		
+5217000		
+5217001		
+5217002		
+5217003		
+5218000		
+5218001		
+5218002		
+5218003		
+5219000		
+5219001		
+5219002		
+5219003		
+5300000		
+5300001		
+5300002		
+5300003		
+5301000		
+5301001		
+5301002		
+5301003		
+5302000		
+5302001		
+5302002		
+5302003		
+5303000		
+5303001		
+5303002		
+5303003		
+700000000		
+700000001		
