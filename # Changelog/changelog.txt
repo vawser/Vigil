@@ -39,6 +39,7 @@
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
+- Fixed a bug that caused Somberstone Miner's Bell Bearing [3], [4] and [5] to unlock the wrong material.
 
 #-------------------------------------------------
 # Armor

@@ -50,3 +50,24 @@ AEG004_591  Bush
 
 AEG700_068  Fence
 AEG700_069  Fence
+
+# Structures
+AEG020_660  Wood Cabin (1 story)
+AEG020_664  Wood Cabin (2 stories)
+
+AEG230_821  Circular Pillar
+AEG230_846  Circular Pillar (2 segments)
+
+AEG230_338  Block Pillar Top
+AEG230_344  Circular Pillar (full)
+AEG232_436  Block Pillar
+AEG232_428  Circular Pillar (short)
+AEG232_507  Slated Platform
+AEG232_541  Slated Platform with Stairs
+
+AEG237_004  Ancestral Brazier
+
+AEG230_941  Ancestral Brick Wall (collapsed)
+AEG230_943  Small Circular Pillar with Base
+AEG230_944  Small Circular Pillar with Base (short)
+

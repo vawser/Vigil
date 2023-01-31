@@ -1,0 +1,119 @@
+﻿
+# Weapons
+Albinauric Bow 41010000
+Bandit's Curved Sword 7040000
+Banished Knight's Greatsword 3080000
+Banished Knight's Halberd 18030000
+Battle Hammer 12020000
+Beastman's Cleaver 8080000
+Beastman's Curved Sword 7010000
+Bloodstained Dagger
+Celebrant's Cleaver
+Celebrant's Rib-Rake 
+Celebrant's Sickle
+Chainlink Flail
+Clayman's Harpoon
+Cleanrot Knight's Sword
+Cleanrot Spear
+Crescent Moon Axe
+Curved Club
+Curved Great Club
+Digger's Staff
+Dismounter
+Duelist Greataxe
+Envoy's Greathorn
+Envoy's Horn
+Envoy's Long Horn
+Executioner's Greataxe
+Falchion
+Forked Greatsword
+Forked Hatchet
+Gelmir Glintstone Staff
+Glaive
+Golem's Halberd
+Golem Greatbow
+Grave Scythe
+Great Knife
+Greathorn Hammer
+Grossmesser
+Guardian's Swordspear
+Halo Scythe
+Heavy Crossbow
+Iron Cleaver
+Iron Greatsword
+Iron Spear
+Jawbone Axe
+Knight's Greatsword
+Lazuli Glintstone Sword
+Longhaft Axe
+Lordsworn's Straight Sword
+Magma Blade
+Misbegotten Shortbow
+Monk's Flameblade
+Monk's Flamemace
+Noble's Estoc
+Noble's Slender Sword
+Omen Cleaver
+Partisan
+Pest's Glaive
+Pickaxe
+Red Branch Shortbow
+Ripple Crescent Halberd
+Rotten Crystal Spear
+Rotten Crystal Staff
+Short Sword
+Soldier's Crossbow
+Spear
+Spiked Club
+Spiked Spear
+Staff of the Guilty
+Stone Club
+Thorned Whip
+Torchpole
+Troll Knight's Sword
+Vulgar Militia Saw
+Vulgar Militia Shotel
+Warhawk's Talon
+Warped Axe
+Warpick
+Watchdog's Greatsword
+Weathered Straight Sword
+
+# Armor
+Fire Prelate 360000
+Banished Knight 200000
+Banished Knight (Altered) 201000
+Cleanrot 340000
+Fire Monk 350000
+Blackflame Monk 351000
+Blue Silver Mail 240000
+
+Exile 190000 
+Godrick Soldier 1700000
+Raya Lucarian Soldier 1710000
+Leyndell Soldier 1720000
+Radahn Soldier 1730000
+Mausoleum 1740100
+Haligtree 1750000
+Godrick Knight 1770000
+Cuckoo Knight 1780000
+Leyndell Knight 1790000
+Redmane Knight 1800000
+Mausoleum Knight 1810100
+Haligtree Knight 1820000
+Nox Swordstree 292000 / 290200
+Night Maiden 293000 / 290200
+Nox Monk 290000 
+Vulgar Militia 420000
+Ancestral 300000
+Ancestral Shaman 301000
+Depraved Perfumer 540000
+Perfumer 90000
+Guardian 330000
+Page 220000
+Commoner 810000
+Aristocrat 370000
+Aristocrat (Alt) 380000
+Old Aristocrat 390000 
+
+
