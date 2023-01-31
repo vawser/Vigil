@@ -28,6 +28,14 @@
 # m19_00_00_00 Stone Platform
 - Added Elden Hollow grace to the Elden Beast arena.
 
+# m60_41_37_00
+- Added a small camp and 2 Kaiden Sellswords in this tile.
+- Added a new chest treasure containing the Kaiden Armor Set.
+
+# m60_45_39_00
+- Added graveyard and several skeletons at the bottom of the ascent in this tile.
+- Added a new corpse treasure containing the Dismounter.
+
 #-------------------------------------------------
 # Items
 #-------------------------------------------------

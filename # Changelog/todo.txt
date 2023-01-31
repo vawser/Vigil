@@ -83,7 +83,7 @@
 # WIP
 #-------------------------------------------------
 # Camps
-- Add fixed treasures for drop-only armor sets in open world locations (camps, towers, etc). 
+
 
 # Weapons
 Albinauric Bow 41010000
@@ -173,7 +173,7 @@ Cleanrot 340000
 Fire Monk 350000
 Blackflame Monk 351000
 Blue Silver Mail 240000
-Kaiden 50000
+
 Exile 190000 
 Godrick Soldier 1700000
 Raya Lucarian Soldier 1710000
@@ -201,3 +201,5 @@ Commoner 810000
 Aristocrat 370000
 Aristocrat (Alt) 380000
 Old Aristocrat 390000 
+
+

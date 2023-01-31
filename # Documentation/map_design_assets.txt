@@ -1,7 +1,25 @@
 ﻿#------------------------
 # Camp Assets
 #------------------------
+# Treasure
+AEG099_990  Dummy Asset
+AEG099_630  Chest
+AEG099_610  Corpse
+
 # Camp
+AEG003_137  Open Tent
+AEG003_138  Enclosed Tent
+
+AEG004_681  Barricade
+AEG004_739  Stake Wall (collapsed)
+AEG004_738  Stake Wall
+AEG004_739  Stake Wall (partial collapse)
+AEG004_746  Stake Wall
+AEG004_865  Stake Wall
+
+AEG003_071  Tripod Brazier
+
+# Clutter
 AEG003_069  Wooden Pallisade section
 AEG003_057  Stacked Barrels
 AEG003_056  4 Pots
@@ -9,12 +27,15 @@ AEG003_054  Stacked Bundles of Wood
 AEG003_055  Group of Sacks
 AEG003_063  Wagon
 AEG003_058  Crates covered with Tarp
+AEG003_061  Bench
 
 AEG003_011  Brazier
-
+AEG003_012  Large Brazier
+AEG007_420  Fire Monk Stage (Large)
 
 # Flora
 AEG001_290  Medium Bushes
+AEG004_749  Fallen Tree
 
 # Graveyard
 AEG004_590  Headstones
