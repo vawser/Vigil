@@ -1,0 +1,31 @@
+﻿#------------------------
+# Camp Assets
+#------------------------
+# Camp
+AEG003_069  Wooden Pallisade section
+AEG003_057  Stacked Barrels
+AEG003_056  4 Pots
+AEG003_054  Stacked Bundles of Wood
+AEG003_055  Group of Sacks
+AEG003_063  Wagon
+AEG003_058  Crates covered with Tarp
+
+AEG003_011  Brazier
+
+
+# Flora
+AEG001_290  Medium Bushes
+
+# Graveyard
+AEG004_590  Headstones
+AEG004_591  Scattered Headstones
+AEG004_592  Headstones
+AEG004_593  Headstones
+AEG004_596  Medium Headstone
+AEG004_598  Large Headstone
+
+AEG001_290  Small Bush
+AEG004_591  Bush
+
+AEG700_068  Fence
+AEG700_069  Fence
