@@ -58,7 +58,11 @@
 # Armor
 #-------------------------------------------------
 - Adjusted the stagger resistance for various armors.
-
+- Changed the Absorb HP to restore 1% HP on enemy kill.
+- Changed the Absorb Rune to grant 100 Runes on enemy kill.
+- Malenia's Set now has the following effect on each piece:
+  - Strengthens the restoration rate of rally by 25%.
+  
 #-------------------------------------------------
 # Weapons
 #-------------------------------------------------

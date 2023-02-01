@@ -397,10 +397,10 @@ Zamor Set
 
 Malenia's Set
 - Weight: 20.5
-- [Head]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Chest] Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Arms]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Legs]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
+- [Head]  Effect: Strengthens the restoration rate of rally by 25%.
+- [Chest] Effect: Strengthens the restoration rate of rally by 25%.
+- [Arms]  Effect: Strengthens the restoration rate of rally by 25%.
+- [Legs]  Effect: Strengthens the restoration rate of rally by 25%.
 
 Guardian Set
 - Weight: 19.9
@@ -515,10 +515,10 @@ Bandit Set
 
 War Surgeon Set
 - Weight: 16.8
-- [Head]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow.
-- [Chest] Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Arms]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Legs]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow.  
+- [Head]  Effect: Absorb 1% HP upon enemy kill.
+- [Chest] Effect: Absorb 1% HP upon enemy kill.
+- [Arms]  Effect: Absorb 1% HP upon enemy kill.
+- [Legs]  Effect: Absorb 1% HP upon enemy kill.
 
 Raptor's Set
 - Weight: 16.8
@@ -671,8 +671,8 @@ Errant Sorcerer Set
 
 Millicent's Set
 - Weight: 11.3
-- [Chest] Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Arms]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
+- [Chest] Effect: Absorb 1% HP upon enemy kill.
+- [Arms]  Effect: Absorb 1% HP upon enemy kill.
 
 Traveling Maiden Set
 - Weight: 11
@@ -775,10 +775,10 @@ Aristocrat Set
 
 Sanguine Noble Set
 - Weight: 9
-- [Head]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow.
-- [Chest] Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Arms]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
-- [Legs]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
+- [Head]  Effect: Absorb 1% HP upon enemy kill.
+- [Chest] Effect: Absorb 1% HP upon enemy kill.
+- [Arms]  Effect: Absorb 1% HP upon enemy kill.
+- [Legs]  Effect: Absorb 1% HP upon enemy kill.
 
 Brave Set
 - Weight: 9
@@ -846,8 +846,8 @@ House Marais Set
 
 Bloodsoaked Set
 - Weight: 6.3
-- [Head]  Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow.
-- [Chest] Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
+- [Head]  Effect: Absorb 1% HP upon enemy kill.
+- [Chest] Effect: Absorb 1% HP upon enemy kill.
 
 Rotten Set
 - Weight: 6.3
@@ -857,13 +857,13 @@ Rotten Set
 
 Festive Set
 - Weight: 5.8
-- [Head]  Effect: Absorb runes with blows against an enemy, gaining 10 runes per blow. 
-- [Chest] Effect: Absorb runes with blows against an enemy, gaining 10 runes per blow. 
+- [Head]  Effect: Absorb 100 additional runes upon enemy kill.
+- [Chest] Effect: Absorb 100 additional runes upon enemy kill.
 
 Blue Festive Set
 - Weight: 5.8
-- [Head]  Effect: Absorb runes with blows against an enemy, gaining 10 runes per blow. 
-- [Chest] Effect: Absorb runes with blows against an enemy, gaining 10 runes per blow. 
+- [Head]  Effect: Absorb 100 additional runes upon enemy kill. 
+- [Chest] Effect: Absorb 100 additional runes upon enemy kill.
 
 Juvenile Scholar Set
 - Weight: 5.5
@@ -1013,7 +1013,7 @@ Fell Omen Cloak
 
 Lord of Blood Robe
 - Weight: 8.1
-- [Chest] Effect: Absorb HP with blows against an enemy, restoring 1% HP per blow. 
+- [Chest] Effect: Absorb 1% HP upon enemy kill.
 
 Eye Surcoat
 - Weight:
