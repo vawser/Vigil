@@ -17435,7 +17435,7 @@ function RideCommonFunction(r1, r2, l1, l2)
             end
             
             -- Vigil: Spiritspring Jump from Rowa Raisan
-            if env(GetMountSpEffectID, 500810) == TRUE or env(GetMountSpEffectID, 500811) == TRUE or env(GetMountSpEffectID, 500812) == TRUE then
+            if env(GetMountSpEffectID, 500810) == TRUE then
                 act(DebugLogOutput, "RideJumpHigh Height=" .. highJumpHeight .. "cm")
                 Ride_HighJump_Height = highJumpHeight + 700
                 FireRideEvent("W_RideJumpHigh", "W_RideJumpHigh", FALSE)
