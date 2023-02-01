@@ -497,7 +497,7 @@
 - Techniques of the Windwalker
     - Purchased from the Mysterious Shinobi.
     - Weight: 1.0
-    - +0 Effect: Grants the ability to jump in midair up to five times.
+    - +0 Effect: Grants the ability to jump in midair.
 
 - Thumb Ring of Pharris
     - Found within Gelmir Hero's Grave in Mt. Gelmir.

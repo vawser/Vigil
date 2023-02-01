@@ -7,12 +7,6 @@
 #-------------------------------------------------
 # Ideas
 #-------------------------------------------------
-# Shinobi's Challenge
-- A platforming challenge that makes use of the multi-jump mechanics:
-
-# Spell Ascension
-- Add spell ascension system, allowing for more spell variants without massive overhead, plus magic progression.
-
 # Concordats
 - Implement covenants for each of the factions of Elden Ring
     - Operate like traditional covenants: 3 rewards at 10/20/30 turnins
@@ -20,9 +14,8 @@
     - Include TalkToPlayer stuff for this
     - Tokens can also deepen bond (like Cinders), providing covenant buff. This is removed if pledge is changed to another covenant.
 
-# Gladiator's Gauntlet
-- Add 2 more swarm waves
-- Implement boss version at Limgrave or Leyndell colosseum.
+# Shinobi's Challenge
+- A platforming challenge that makes use of the multi-jump mechanics:
 
 # Armor Ascension
 - Add reinforcement-like system to armor via Tailoring menu
@@ -35,6 +28,23 @@
         HKS will apply the affinty buff (i.e. Fire buff is applied if notify SpEffect is detected)
         
 - Can also extend to bullets (i.e. fireball)
+
+# Torrent Customisation
+- Add the ability to improve Torrents attributes:
+    - HP
+    - Poise
+    - Multi-Jump
+    
+    - Damaging Blast after Spiritspring jump (Stomp the Elden Beast)
+    - Damaging Ram after Dashing
+    - Emit Pools behind (Scarlet Rot, etc)
+
+# Bosses
+- Split Beast Clergyman and Maliketh into 2 fights
+
+# Spells
+- Expand Blood school
+- Expand Death school
 
 # Spirit Summons
 - Add more types.
@@ -58,24 +68,37 @@
         - If Godrick is defeated and the dragon lives, then all the NPCs will be killed and the dragon will have moved to the village.
             - Add note that details how the player failed the NPCs from one of the NPCs to deepen the tragedy.
             
-# Torrent Customisation
-- Add the ability to improve Torrents attributes:
-    - HP
-    - Poise
-    - Multi-Jump
-    
-    - Damaging Blast after Spiritspring jump (Stomp the Elden Beast)
-    - Damaging Ram after Dashing
-    - Emit Pools behind (Scarlet Rot, etc)
+# Rot
+- Have the rot spread out from Caelid as the player progresses through bosses.
+    - Fodder enemies will be hidden and new Caelid enemies will be added.
+    - Caelid assets could also be added.
 
-
-# Bosses
-- Split Beast Clergyman and Maliketh into 2 fights
-
-# Spells
-- Expand Blood school
-- Expand Death school
+# Soul
+- Acting like the Skyrim stones, the sword shrine locations will allow the player to accept the soul from an 'entity'.
+ - Acts like a 'archetype template', forcing the player into that specific niche.
+ - Will be given via item when the player interacts with the shrine.
+ - Use the cut content sleep enemy icons 
+ 
+ IF player has no blessing
+    REMOVE all blessings
+    ADD shrine blessing
+ ELSEIF player has shrine blessing
+    REMOVE shrine blessing
+ ELSEIF player has different blessing
+    REMOVE all blessings
+    ADD shrine blessing
 
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
+
+Remembrance 
+
+2965 Golden Remembrance
+
+InitializeEvent(85, 1100, 9123, 10850, 0, 510850); // Golden Remembrance
+
+11150000 Marika's Hammer
+
+6720 Elden Stars
+6710 Radagon's Rings of Light

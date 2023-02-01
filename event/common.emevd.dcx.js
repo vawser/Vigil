@@ -215,6 +215,8 @@ $Event(0, Default, function() {
     InitializeEvent(82, 1100, 9182, 10820, 0, 510820);
     InitializeEvent(83, 1100, 9183, 10830, 0, 510830);
     InitializeEvent(84, 1100, 9184, 10840, 0, 510840);
+    InitializeEvent(85, 1100, 9123, 10850, 0, 510850); // Golden Remembrance
+    
     InitializeEvent(0, 1200, 9200, 20000, 0, 520000);
     InitializeEvent(1, 1200, 9201, 20010, 0, 520010);
     InitializeEvent(2, 1200, 9202, 20020, 0, 520020);
@@ -7106,9 +7108,11 @@ $Event(11021, Default, function() {
     //WarpPlayer(34, 14, 0, 0, 34140982, -1);
         
     // Radagon
-    //SetEventFlagID(19000850, ON);
-    //SetEventFlagID(71900, ON);
-    //WarpPlayer(19, 0, 0, 0, 19000982, -1);
+    SetEventFlagID(19000850, OFF);
+    SetEventFlagID(71900, OFF);
+    SetEventFlagID(9123, OFF);
+    SetEventFlagID(510850, OFF);
+    WarpPlayer(19, 0, 0, 0, 19000982, -1);
     
     // Elden Beast
     //SetEventFlagID(19000800, OFF);

@@ -41,6 +41,15 @@
 #-------------------------------------------------
 - Fixed a bug that caused Somberstone Miner's Bell Bearing [3], [4] and [5] to unlock the wrong material.
 
+- Changed the items unlocked by the Elden Remembrance to:
+ - Elden Stars
+ - Sacred Relic Sword
+
+- Added the Golden Remembrance as a boss drop from Radagon.
+- The items unlocked the Golden Remembrance are:
+ - Marika's Hammer
+ - Radagon's Rings of Light
+ 
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------
@@ -62,6 +71,9 @@
 - Added Blood Shard:
  - Acts similar to Ambush Shard, but it is Blood aligned and deals Fire damage.
  - Found in the Weeping Penisula.
+ 
+- Increased the damage of Radagon's Rings of Light.
+- Increased the damage of Elden Stars, and the speed of the projectiles.
  
 #-------------------------------------------------
 # Great Runes
