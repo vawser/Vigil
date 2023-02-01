@@ -7,6 +7,8 @@
 # Player
 #-------------------------------------------------
 - Poison now reduces the Physical damage of the afflicted by 25%.
+- Blight now removes 10% HP + 50, and reduces Physical damage of the enemy by 50% for 10 seconds.
+- Madness now ticks once per second over 6 seconds, dealing 3% HP + 30 per tick, and 6% FP + 60 per tick.
 
 #-------------------------------------------------
 # Bosses
