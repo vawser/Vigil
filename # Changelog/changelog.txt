@@ -56,6 +56,18 @@
  - Marika's Hammer
  - Radagon's Rings of Light
  
+- Rowa Raisin: heals Torrent by 25% HP and grants the ability to spirintspring jump for 6 seconds.
+- Sweet Raisin: heals Torrent by 5% HP per second for 30 seconds.
+- Frozen Raisin: heals Torrent by 25% HP and prevents knockoff for 30 seconds.
+
+- Added new item: Rotten Raisin
+ - Causes Torrent to emit a poisonous cloud behind him for 8 seconds while moving.
+ - Craftable with Armorer's Cookbook [2], costs 1 Rowa Fruit and 2 Toxic Mushrooms.
+ 
+- Added new Item: Volcanic Raisin
+ - Causes Torrent to leave behind roiling magma behind him for 6 seconds while moving.
+ - Craftable with Nomadic Warrior's Cookbook [20], costs 1 Rowa Fruit and 2 Volcanic Stones.
+ 
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------

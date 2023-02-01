@@ -28,16 +28,6 @@
         
 - Can also extend to bullets (i.e. fireball)
 
-# Torrent Customisation
-- Add the ability to improve Torrents attributes:
-    - HP
-    - Poise
-    - Multi-Jump
-    
-    - Damaging Blast after Spiritspring jump (Stomp the Elden Beast)
-    - Damaging Ram after Dashing
-    - Emit Pools behind (Scarlet Rot, etc)
-
 # Bosses
 - Split Beast Clergyman and Maliketh into 2 fights
 
@@ -91,5 +81,12 @@
 # WIP
 #-------------------------------------------------
 # Talisman
-
 - Rally Boost
+
+# Items
+Rowa Raisin: spiritspring jump.
+Frozen Raisin: prevent Torrent knockdown for 30 seconds.
+Sweet Raisin: heals Torrent for 30 HP per second for 30 seconds.
+Rotten Raisin: Torrent emits a rotten cloud behind him for 15 seconds.
+Volcanic Raisin: Torrent leaves behind patches of lava
+

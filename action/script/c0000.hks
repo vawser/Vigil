@@ -15199,12 +15199,23 @@ function ExecRideDamage()
         FireRideEvent("W_RideFall_Start", "W_RideFall_Start", FALSE)
         
         return TRUE
+    -- Torrent Dismount from Poise Damage
     elseif env(Unknown400) <= 0 and (damage_level > DAMAGE_LEVEL_NONE or damage_level_under > DAMAGE_LEVEL_NONE) and (is_damaged == TRUE or is_damaged_under == TRUE) then
-        FireRideEvent("W_RideDamage_Fall", "W_RideRun_End", FALSE)
         
+        -- Vigil: Frozen Raisin
+        if env(GetSpEffectID, 500815) == TRUE then
+            return FALSE
+        end
+        
+        FireRideEvent("W_RideDamage_Fall", "W_RideRun_End", FALSE)
         return TRUE
     elseif env(GetDamageSpecialAttribute, 5) == TRUE then
         FireRideEvent("W_RideDamage_Fall", "W_RideRun_End", FALSE)
+        
+        -- Vigil: Frozen Raisin
+        if env(GetSpEffectID, 500815) == TRUE then
+            return FALSE
+        end
         
         return TRUE
     elseif env(GetDamageSpecialAttribute, 6) == TRUE then
@@ -17016,6 +17027,18 @@ function RideWalk_onUpdate()
     act(Wait)
     SetEnableAimMode()
     
+    -- Vigil: Rotten Raisin
+    if env(GetSpEffectID, 500902) == FALSE and env(GetSpEffectID, 500901) == TRUE then
+        act(AddSpEffect, 500900)
+        act(AddSpEffect, 500902)
+    end
+    
+    -- Vigil: Volcanic Raisin
+    if env(GetSpEffectID, 500912) == FALSE and env(GetSpEffectID, 500911) == TRUE then
+        act(AddSpEffect, 500910)
+        act(AddSpEffect, 500912)
+    end
+
     if RideCommonFunction("W_RideAttack_R_Top", "W_RideAttack_R_Hard1_Start", "W_RideAttack_L_Top", "W_RideAttack_L_Hard1_Start") == TRUE then
         return
     elseif RideRequestFunction(RIDE_MOVE_TYPE_WALK, TRUE, FALSE) == TRUE then
@@ -17043,6 +17066,18 @@ function RideDash_onUpdate()
     act(Wait)
     SetEnableAimMode()
     
+    -- Vigil: Rotten Raisin
+    if env(GetSpEffectID, 500902) == FALSE and env(GetSpEffectID, 500901) == TRUE then
+        act(AddSpEffect, 500900)
+        act(AddSpEffect, 500902)
+    end
+    
+    -- Vigil: Volcanic Raisin
+    if env(GetSpEffectID, 500912) == FALSE and env(GetSpEffectID, 500911) == TRUE then
+        act(AddSpEffect, 500910)
+        act(AddSpEffect, 500912)
+    end
+    
     if RideCommonFunction("W_RideAttack_R_Top", "W_RideAttack_R_Hard1_Start", "W_RideAttack_L_Top", "W_RideAttack_L_Hard1_Start") == TRUE then
         return
     elseif RideRequestFunction(RIDE_MOVE_TYPE_DASH, TRUE, FALSE) == TRUE then
@@ -17061,6 +17096,18 @@ function RideDashAccelerate_onUpdate()
         act(AddSpEffect, 100020)
     end
     
+    -- Vigil: Rotten Raisin
+    if env(GetSpEffectID, 500902) == FALSE and env(GetSpEffectID, 500901) == TRUE then
+        act(AddSpEffect, 500900)
+        act(AddSpEffect, 500902)
+    end
+    
+    -- Vigil: Volcanic Raisin
+    if env(GetSpEffectID, 500912) == FALSE and env(GetSpEffectID, 500911) == TRUE then
+        act(AddSpEffect, 500910)
+        act(AddSpEffect, 500912)
+    end
+    
     if RideCommonFunction("W_RideAttack_R_Top", "W_RideAttack_R_Hard1_Start", "W_RideAttack_L_Top", "W_RideAttack_L_Hard1_Start") == TRUE then
         return
     elseif TRUE == ExecRideStop(RIDE_MOVE_TYPE_OTHER, FALSE) then
@@ -17077,6 +17124,18 @@ function RideDashAccelerateContinue_onUpdate()
     
     if env(GetStamina) <= 0 then
         act(AddSpEffect, 100020)
+    end
+    
+    -- Vigil: Rotten Raisin
+    if env(GetSpEffectID, 500902) == FALSE and env(GetSpEffectID, 500901) == TRUE then
+        act(AddSpEffect, 500900)
+        act(AddSpEffect, 500902)
+    end
+    
+    -- Vigil: Volcanic Raisin
+    if env(GetSpEffectID, 500912) == FALSE and env(GetSpEffectID, 500911) == TRUE then
+        act(AddSpEffect, 500910)
+        act(AddSpEffect, 500912)
     end
     
     if RideCommonFunction("W_RideAttack_R_Top", "W_RideAttack_R_Hard1_Start", "W_RideAttack_L_Top", "W_RideAttack_L_Hard1_Start") == TRUE then

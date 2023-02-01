@@ -6502,6 +6502,7 @@ $Event(9950, Default, function(X0_4, X4_4) {
 $Event(11000, Default, function() {
     EndIf(ThisEventSlot());
     
+    // Test Lot
     //AwardItemLot(1000);
     
     // Default Setup - Applied only once

@@ -20,8 +20,8 @@
 45017 Prisoner's Chain
 45018 Blood Shard
 45019 Radagon Remembrance
-45020
-45021
+45020 Rotten Raisin
+45021 Volcanic Raisin
 45022
 45023
 45024
