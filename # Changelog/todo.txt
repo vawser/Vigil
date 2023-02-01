@@ -1,7 +1,6 @@
 ﻿#-------------------------------------------------
 # Bugs
 #-------------------------------------------------
-- Chapel of Anticaption blocked by fogwall on return after leaving tutorial area
 - Add Grass Hair Ornament icon
 
 #-------------------------------------------------
@@ -91,14 +90,4 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-
-Remembrance 
-
-2965 Golden Remembrance
-
-InitializeEvent(85, 1100, 9123, 10850, 0, 510850); // Golden Remembrance
-
-11150000 Marika's Hammer
-
-6720 Elden Stars
-6710 Radagon's Rings of Light
+10010970

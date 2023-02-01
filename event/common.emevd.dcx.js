@@ -7108,15 +7108,18 @@ $Event(11021, Default, function() {
     //WarpPlayer(34, 14, 0, 0, 34140982, -1);
         
     // Radagon
-    SetEventFlagID(19000850, OFF);
-    SetEventFlagID(71900, OFF);
-    SetEventFlagID(9123, OFF);
-    SetEventFlagID(510850, OFF);
-    WarpPlayer(19, 0, 0, 0, 19000982, -1);
+    //SetEventFlagID(19000850, OFF);
+    //SetEventFlagID(71900, OFF);
+    //SetEventFlagID(9123, OFF);
+    //SetEventFlagID(510850, OFF);
+    //WarpPlayer(19, 0, 0, 0, 19000982, -1);
     
     // Elden Beast
     //SetEventFlagID(19000800, OFF);
     //SetEventFlagID(71901, OFF);
+    
+    // Grafted Scion
+    WarpPlayer(10, 1, 0, 0, 10010970, -1);
     
     RestartEvent();
 });
@@ -7165,20 +7168,19 @@ $Event(11031, Default, function() {
     if(EventFlag(1047610171))
     {
         // Roundtable Hold
-        SetEventFlagID(10000851, ON)
-        SetEventFlagID(10009655, ON)
-        SetEventFlagID(11109786, ON)
-        SetEventFlagID(104, ON)
+        SetEventFlagID(10000851, ON);
+        SetEventFlagID(10009655, ON);
+        SetEventFlagID(11109786, ON);
+        SetEventFlagID(104, ON);
+        SetEventFlagID(101, ON); // Grafted Scion encounter
         
         // Early Graces
-        SetEventFlagID(71801, ON) 
-        SetEventFlagID(76101, ON)
+        SetEventFlagID(71801, ON);
+        SetEventFlagID(76101, ON);
         
         // Limgrave Map
-        SetEventFlagID(62010, ON)
+        SetEventFlagID(62010, ON);
     }
-    
-    // 
 });
 
 //-------------------
