@@ -1,0 +1,56 @@
+﻿# Conditional Groups
+1   Magic: Full Moon            # School: Moon
+2   Magic: Carian Sword         # School: Carian Swordmanship
+3   Magic: Glintblade           # School: Glintblade
+4   Magic: Stonedigger          # School: Stonedigger
+5   Magic: Crystalian           # School: Crystalian
+6   Magic: Karolos              # School: Karolos
+7   Magic: Olivinus             # School: Olivinus
+8   Magic: Lava                 # School: Lava
+9   Magic: Thorn                # School: Thorn
+10  Magic: Death                # School: Death
+11  Magic: Gravity              # School: Gravity
+12  Magic: Night                # School: Night
+13  Magic: Ranni                # School: Cold
+14  Magic: Azur                 # School: Azur
+15  Magic: Lusat                # School: Lusat
+20  Magic: Black Flame          # School: Black Flame
+21  Magic: Flame                # School: Flame
+22  Magic: Dragon Cult          # School: Dragon Cult
+23  Magic: Bestial              # School: Bestial
+24  Magic: Golden Order         # School: Golden Order
+25  Magic: Dragon Communion     # School: Dragon Communion
+26  Magic: Frenzied Flame       # School: Frenzied Flame
+27  Magic: Godslayer            # School: Godslayer
+28  Magic: Primordial Crucible  # School: Primordial Crucible
+30  Magic: Blood                # School: Blood
+31  Magic: Erdtree Worship      # School: Erdtree Worship
+32  Magic: Servants of Rot      # School: Rot    
+33  Magic: Destined Death       # School: Destined Death
+34  Magic: Glintstone           # School: Glintstone
+35  Magic: Haima                # School: Haima
+36  Magic: Crystal Cadre        # School: Crystal Cadre
+37  Magic: Carian               # School: Carian
+38  Magic: Thops                # School: Thops
+115 Magic: Bubble               # School: Oracle Worship
+
+100 Attack: Charge              # Classification: Charged Attack
+101 Attack: Horseback           # Classification: Horseback
+102 Attack: Jump                # Classification: Jump Attack
+103 Attack: Guard Counter       # Classification: Guard Counter
+104 Attack: Final Chain         # Classification: Final Chain Attack
+105 Attack: Arrow/Bolt          # Classification: Ammunition
+106 Attack: Roar                # Classification: Roar
+107 Attack: Dragon Breath       # Classification: Dragon Breath
+108 Attack: Pot Throwable       # Classification: Pot
+109 Attack: Perfume Throwable   # Classification: Perfume
+110 Attack: Charged Spell       # Classification: Charged Spell
+111 Attack: Charged Ash of War  # Classification: Charged Skill
+112 Attack: Ash of War          # Classification: Skill Attack
+113 Attack: Ranged Ash of War (Radahn's Spear only by default) # Classification: Radahn's Spear
+114 Attack: Ancestral Infant's Head # Classification: Ancestral
+116 Attack: 
+117 Attack: Omen Bairn          # Classification: Omen
+118 Attack: Golden Arrow        # Classification: Golden
+
+School: <font color="#c2ba23">Glintstone</font>
