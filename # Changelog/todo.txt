@@ -83,10 +83,3 @@
 # Talisman
 - Rally Boost
 
-# Items
-Rowa Raisin: spiritspring jump.
-Frozen Raisin: prevent Torrent knockdown for 30 seconds.
-Sweet Raisin: heals Torrent for 30 HP per second for 30 seconds.
-Rotten Raisin: Torrent emits a rotten cloud behind him for 15 seconds.
-Volcanic Raisin: Torrent leaves behind patches of lava
-
