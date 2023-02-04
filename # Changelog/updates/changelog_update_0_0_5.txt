@@ -1,0 +1,143 @@
+﻿#-------------------------------------------------
+# Changelog 0.0.5
+#-------------------------------------------------
+#-------------------------------------------------
+# Features
+#-------------------------------------------------
+- Reduced the stamina and poise damage done by deflections slightly.
+
+#-------------------------------------------------
+# Player
+#-------------------------------------------------
+- Poison now reduces the Physical damage of the afflicted by 25%.
+- Blight now removes 10% HP + 50, and reduces Physical damage of the enemy by 50% for 10 seconds.
+- Madness now ticks once per second over 6 seconds, dealing 3% HP + 30 per tick, and 6% FP + 60 per tick.
+
+#-------------------------------------------------
+# Bosses
+#-------------------------------------------------
+- Radagon and the Elden Beast have been split into 2 distinct bosses.
+- Elden Beast is now an optional boss you can choose to fight via an option at the Fractured Marika.
+- Increased Radagon's HP to 3800, as he is now fought without requiring the Elden Beast after.
+- Increased Elden Beast's HP to 4710, as it is now fought without requiring Radagon first.
+- Restored original hitbox sizes for General Radahn's melee attacks and his AOE bullets.
+- Fixed a bug that prevented the player from fighting the Grafted Scion upon returning to the Chapel of Anticipation.
+
+#-------------------------------------------------
+# Enemies
+#-------------------------------------------------
+- Fixed the patrolling Kaiden Commoner group being animated than normal.
+
+#-------------------------------------------------
+# World
+#-------------------------------------------------
+# m19_00_00_00 Stone Platform
+- Added Elden Hollow grace to the Elden Beast arena.
+
+# m60_41_37_00
+- Added a small camp and 2 Kaiden Sellswords in this tile.
+- Added a new chest treasure containing the Kaiden Armor Set.
+
+# m60_45_39_00
+- Added graveyard and several skeletons at the bottom of the ascent in this tile.
+- Added a new corpse treasure containing the Dismounter.
+
+# m10_01_00_00
+- Added stake of marika to the Grafted Scion fight.
+
+#-------------------------------------------------
+# Items
+#-------------------------------------------------
+- Fixed a bug that caused Somberstone Miner's Bell Bearing [3], [4] and [5] to unlock the wrong material.
+
+- Changed the items unlocked by the Elden Remembrance to:
+ - Elden Stars
+ - Sacred Relic Sword
+
+- Added the Golden Remembrance as a boss drop from Radagon.
+- The items unlocked the Golden Remembrance are:
+ - Marika's Hammer
+ - Radagon's Rings of Light
+ 
+- Rowa Raisin: heals Torrent by 25% HP and grants the ability to spirintspring jump for 6 seconds.
+- Sweet Raisin: heals Torrent by 5% HP per second for 30 seconds.
+- Frozen Raisin: heals Torrent by 25% HP and prevents knockoff for 30 seconds.
+
+- Added new item: Rotten Raisin
+ - Causes Torrent to emit a poisonous cloud behind him for 8 seconds while moving.
+ - Craftable with Armorer's Cookbook [2], costs 1 Rowa Fruit and 2 Toxic Mushrooms.
+ 
+- Added new Item: Volcanic Raisin
+ - Causes Torrent to leave behind roiling magma behind him for 6 seconds while moving.
+ - Craftable with Nomadic Warrior's Cookbook [20], costs 1 Rowa Fruit and 2 Volcanic Stones.
+ 
+#-------------------------------------------------
+# Armor
+#-------------------------------------------------
+- Adjusted the stagger resistance for various armors.
+- Changed the Absorb HP to restore 1% HP on enemy kill.
+- Changed the Absorb Rune to grant 100 Runes on enemy kill.
+- Malenia's Set now has the following effect on each piece:
+  - Strengthens the restoration rate of rally by 25%.
+  
+#-------------------------------------------------
+# Weapons
+#-------------------------------------------------
+- Reinforcement for Standard weapons now costs 2 material per reinforcement level.
+- Added Rotten affinity: adds Scarlet Rot status effect.
+- Reverted the Carian Knight Sword change that enables sorceries due to bugs.
+
+#-------------------------------------------------
+# Catalysts
+#-------------------------------------------------
+    
+#-------------------------------------------------
+# Spells
+#-------------------------------------------------
+- Added the school that each spell belongs to in its short description.
+
+- Added Blood Shard:
+ - Acts similar to Ambush Shard, but it is Blood aligned and deals Fire damage.
+ - Found in the Weeping Penisula.
+ 
+- Increased the damage of Radagon's Rings of Light.
+- Increased the damage of Elden Stars, and the speed of the projectiles.
+ 
+#-------------------------------------------------
+# Great Runes
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Talismans
+#-------------------------------------------------
+- Signet of Fury 
+    - Found in Volcano Manor.
+    - +0 Effect: Reduces weapon stamina consumption by 25% for 5 seconds upon being hit.
+    - +1 Effect: Reduces weapon stamina consumption by 50% for 5 seconds upon being hit.
+    - +2 Effect: Reduces weapon stamina consumption by 75% for 5 seconds upon being hit.
+    - +3 Effect: Reduces weapon stamina consumption by 100% for 5 seconds upon being hit.
+    
+- Forgotten Pendant 
+    - Dropped by the Golem found down the side of the Minor Erdtree cliff in Caelid.
+    - +0 Effect: Enhances charged attacks by 25% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 30% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 35% but reduces effectiveness of evasion significantly.
+    - +0 Effect: Enhances charged attacks by 40% but reduces effectiveness of evasion significantly.
+    
+- Blood Conduit 
+    - Found in Mohgwyn Palace.
+    - +0 Effect: Enhances blood incantations by 15% but reduces maximum HP by 15%.
+    - +1 Effect: Enhances blood incantations by 20% but reduces maximum HP by 15%.
+    - +2 Effect: Enhances blood incantations by 25% but reduces maximum HP by 15%.
+    - +3 Effect: Enhances blood incantations by 30% but reduces maximum HP by 15%.
+    
+- Prisoner's Chain 
+    - Dropped by a fast-walking commoner in Stormhill.
+    - +0 Effect: Increases movement speed by 10%.
+    - +1 Effect: Increases movement speed by 15%.
+    - +2 Effect: Increases movement speed by 20%.
+    - +3 Effect: Increases movement speed by 25%.
+    
+#-------------------------------------------------
+# Misc
+#-------------------------------------------------
