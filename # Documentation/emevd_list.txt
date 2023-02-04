@@ -1,0 +1,32 @@
+﻿# EMEVD
+// Warp Gate - Setup
+$Event(1048543500, Restart, function(X0_4, X4_4, X8_4, X12_4) {
+    EndIf(!PlayerIsInOwnWorld());
+    
+    if (!ThisEventSlot()) {
+        DeleteAssetfollowingSFX(X0_4, true);
+        WaitFixedTimeFrames(1);
+    }
+    
+    CreateAssetfollowingSFX(X0_4, 200, 806870);
+    
+    WaitFor(ActionButtonInArea(9140, X0_4);)
+    
+    WaitFixedTimeSeconds(0.033);
+   
+    DisplayGenericDialogAndSetEventFlags(4301, PromptType.YESNO, NumberofOptions.TwoButtons, X0_4, 3, X4_4, X8_4, X12_4);
+    
+    if (!EventFlag(X4_4)) {
+        WaitFixedTimeSeconds(1);
+        RestartEvent();
+    }
+
+    RotateCharacter(10000, X0_4, -1, true);
+    ForceAnimationPlayback(10000, 60490, false, false, false);
+    
+    WaitFixedTimeSeconds(3);
+    
+    // m60_45_52_0 - Capital Outskirts
+    WarpPlayer(60, 45, 52, 0, 1045520981, -1);
+});
+

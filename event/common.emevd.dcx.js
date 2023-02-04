@@ -7119,8 +7119,8 @@ $Event(11021, Default, function() {
     //SetEventFlagID(19000800, OFF);
     //SetEventFlagID(71901, OFF);
     
-    // Grafted Scion
-    WarpPlayer(10, 1, 0, 0, 10010970, -1);
+    // Portal Test
+    WarpPlayer(60, 49, 55, 0, 1049550980, -1);
     
     RestartEvent();
 });

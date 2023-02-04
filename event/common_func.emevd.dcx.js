@@ -3429,6 +3429,7 @@ L0:
     DisableCharacter(X12_4);
 });
 
+// Warp Gate - Setup
 $Event(90005605, Restart, function(X0_4, X4_1, X5_1, X6_1, X7_1, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4, X32_4, X36_4, X40_4) {
     EndIf(!PlayerIsInOwnWorld());
     SetEventFlagID(X20_4, OFF);
@@ -6908,4 +6909,3 @@ $Event(90006000, Default, function(X0_4, X4_4) {
     
     EndEvent();
 });
-
