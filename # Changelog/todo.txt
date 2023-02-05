@@ -80,12 +80,10 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-Combat castigations may be applying too liberally, (change the wepchangeparam field)
+Add class archetypes, via the Blessings ssytem
 
+# Random Start
 Add starting location cofiguration
-
-# Teleports
-Add warp gates from the late-game areas that go backwards, to allow for random start configuration
 
 # Asset
 AEG099_510  Portal
