@@ -774,12 +774,52 @@ def t000001200_x40():
         # Here
         AddTalkListDataIf(GetEventFlag(1047610170) == 0, 1, 80201100, -1)
         # Here (Selected)
-        AddTalkListDataIf(GetEventFlag(1047610170) == 1, 10, 80201150, -1)
+        AddTalkListDataIf(GetEventFlag(1047610170) == 1, 50, 80201150, -1)
         
-        # Roundtable Hold
+        # Random
         AddTalkListDataIf(GetEventFlag(1047610171) == 0, 2, 80201101, -1)
-        # Roundtable Hold (Selected)
-        AddTalkListDataIf(GetEventFlag(1047610171) == 1, 11, 80201151, -1)
+        # Random (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610171) == 1, 51, 80201151, -1)
+        
+        # Limgrave
+        AddTalkListDataIf(GetEventFlag(1047610172) == 0, 3, 80201102, -1)
+        # Limgrave (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610172) == 1, 52, 80201152, -1)
+        
+        # Weeping Penisula
+        AddTalkListDataIf(GetEventFlag(1047610173) == 0, 4, 80201103, -1)
+        # Weeping Penisula (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610173) == 1, 53, 80201153, -1)
+        
+        # Liurnia
+        AddTalkListDataIf(GetEventFlag(1047610174) == 0, 5, 80201104, -1)
+        # Liurnia (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610174) == 1, 54, 80201154, -1)
+        
+        # Mt. Gelmir
+        AddTalkListDataIf(GetEventFlag(1047610175) == 0, 6, 80201105, -1)
+        # Mt. Gelmir (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610175) == 1, 55, 80201155, -1)
+        
+        # Altus Plateau
+        AddTalkListDataIf(GetEventFlag(1047610176) == 0, 7, 80201106, -1)
+        # Altus Plateau (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610176) == 1, 56, 80201156, -1)
+        
+        # Moonlight Altar
+        AddTalkListDataIf(GetEventFlag(1047610177) == 0, 8, 80201107, -1)
+        # Moonlight Altar (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610177) == 1, 57, 80201157, -1)
+        
+        # Caelid
+        AddTalkListDataIf(GetEventFlag(1047610178) == 0, 9, 80201108, -1)
+        # Caelid (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610178) == 1, 58, 80201158, -1)
+        
+        # Mountaintops of the Giants
+        AddTalkListDataIf(GetEventFlag(1047610179) == 0, 10, 80201109, -1)
+        # Mountaintops of the Giants (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610179) == 1, 59, 80201159, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -791,74 +831,43 @@ def t000001200_x40():
         
         # Here
         if GetTalkListEntryResult() == 1:
-            assert t000001200_x101(80201200)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                assert t000001200_x102(1047610170)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
+            assert t000001200_x120(80201200, 1047610170, 1)
             return 0
-        # Roundtable Hold
+        # Random
         elif GetTalkListEntryResult() == 2:
-            assert t000001200_x101(80201201)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                assert t000001200_x102(1047610171)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
+            assert t000001200_x120(80201201, 1047610171, 1)
             return 0
-        # Here (selected)
+        # Limgrave
+        elif GetTalkListEntryResult() == 3:
+            assert t000001200_x120(80201202, 1047610172, 1)
+            return 0
+        # Weeping Penisula
+        elif GetTalkListEntryResult() == 4:
+            assert t000001200_x120(80201203, 1047610173, 1)
+            return 0
+        # Liurnia of the Lakes
+        elif GetTalkListEntryResult() == 5:
+            assert t000001200_x120(80201204, 1047610174, 1)
+            return 0
+        # Mt. Gelmir
+        elif GetTalkListEntryResult() == 6:
+            assert t000001200_x120(80201205, 1047610175, 1)
+            return 0
+        # Altus Plateau
+        elif GetTalkListEntryResult() == 7:
+            assert t000001200_x120(80201206, 1047610176, 1)
+            return 0
+        # Moonlight Altar
+        elif GetTalkListEntryResult() == 8:
+            assert t000001200_x120(80201207, 1047610177, 1)
+            return 0
+        # Caelid
+        elif GetTalkListEntryResult() == 9:
+            assert t000001200_x120(80201208, 1047610178, 1)
+            return 0
+        # Mountaintops of the Giants
         elif GetTalkListEntryResult() == 10:
-            assert t000001200_x101(80201200)
-            return 0
-        # Roundtable Hold (selected)
-        elif GetTalkListEntryResult() == 11:
-            assert t000001200_x101(80201201)
-            return 0
-        else:
-            """State 31"""
+            assert t000001200_x120(80201209, 1047610179, 1)
             return 0
         """State 10"""
         assert CheckSpecificPersonTalkHasEnded(0) == 1
@@ -876,6 +885,16 @@ def t000001200_x41():
         # Immediate Torrent (Selected)
         AddTalkListDataIf(GetEventFlag(1047610160) == 1, 10, 80202150, -1)
         
+        # Immediate Roundtable Hold
+        AddTalkListDataIf(GetEventFlag(1047610161) == 0, 2, 80202101, -1)
+        # Immediate Roundtable Hold (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610161) == 1, 11, 80202151, -1)
+        
+        # Reveal Maps
+        AddTalkListDataIf(GetEventFlag(1047610162) == 0, 3, 80202102, -1)
+        # Reveal Maps (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610162) == 1, 12, 80202152, -1)
+        
         # Leave
         AddTalkListData(99, 20000009, -1)
         
@@ -886,63 +905,27 @@ def t000001200_x41():
         
         # Immediate Torrent
         if GetTalkListEntryResult() == 1:
-            assert t000001200_x101(80202200)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610160, 1)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
+            assert t000001200_x110(80202200, 1047610160, 1)
             return 0
         # Immediate Torrent (selected)
         elif GetTalkListEntryResult() == 10:
-            assert t000001200_x101(80202201)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610160, 0)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
+            assert t000001200_x110(80202250, 1047610160, 0)
+            return 0
+        # Immediate Roundtable Hold
+        elif GetTalkListEntryResult() == 2:
+            assert t000001200_x110(80202201, 1047610161, 1)
+            return 0
+        # Immediate Roundtable Hold (selected)
+        elif GetTalkListEntryResult() == 11:
+            assert t000001200_x110(80202251, 1047610161, 0)
+            return 0
+        # Reveal Maps
+        elif GetTalkListEntryResult() == 3:
+            assert t000001200_x110(80202202, 1047610162, 1)
+            return 0
+        # Reveal Maps (selected)
+        elif GetTalkListEntryResult() == 12:
+            assert t000001200_x110(80202252, 1047610162, 0)
             return 0
         else:
             """State 31"""
@@ -1041,3 +1024,75 @@ def t000001200_x102(flag=_):
     
     return 0
     
+# YES/NO Choice
+def t000001200_x110(text=_, flag=_, value=_):
+    assert t000001200_x101(text)
+            
+    c1_110()
+
+    ClearTalkListData()
+    
+    # Yes
+    AddTalkListData(1, 80102101, -1)
+    
+    # No
+    AddTalkListData(2, 80102102, -1)
+    
+    OpenConversationChoicesMenu(0)
+    
+    assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+    # Yes
+    if GetTalkListEntryResult() == 1:
+        SetEventFlag(flag, value)
+        
+        return 0
+    # Cancel
+    elif GetTalkListEntryResult() == 2:
+        return 1
+    else:
+        return 2
+
+    return 0
+    
+# Location - YES/NO Choice
+def t000001200_x120(text=_, flag=_, value=_):
+    assert t000001200_x101(text)
+            
+    c1_110()
+
+    ClearTalkListData()
+    
+    # Yes
+    AddTalkListData(1, 80102101, -1)
+    
+    # No
+    AddTalkListData(2, 80102102, -1)
+    
+    OpenConversationChoicesMenu(0)
+    
+    assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+    # Yes
+    if GetTalkListEntryResult() == 1:
+        SetEventFlag(1047610170, 0)
+        SetEventFlag(1047610171, 0)
+        SetEventFlag(1047610172, 0)
+        SetEventFlag(1047610173, 0)
+        SetEventFlag(1047610174, 0)
+        SetEventFlag(1047610175, 0)
+        SetEventFlag(1047610176, 0)
+        SetEventFlag(1047610177, 0)
+        SetEventFlag(1047610178, 0)
+        SetEventFlag(1047610179, 0)#
+        
+        SetEventFlag(flag, value)
+        
+        return 0
+    # Cancel
+    elif GetTalkListEntryResult() == 2:
+        return 1
+    else:
+        return 2
+
+    return 0

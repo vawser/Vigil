@@ -361,9 +361,19 @@
 1047610153 Journey Type: Conqueror
 
 1047610160 Journey Modifier: Immediate Torrent
+1047610161 Journey Modifier: Immediate Roundtable Hold
+1047610162 Journey Modifier: Reveal Map
 
 1047610170 Starting Location: Here
-1047610171 Starting Location: Roundtable Hold
+1047610171 Starting Location: Random
+1047610172 Starting Location: Limgrave
+1047610173 Starting Location: Weeping Penisula
+1047610174 Starting Location: Liurnia
+1047610175 Starting Location: Mt. Gelmir
+1047610176 Starting Location: Altus Plateau
+1047610177 Starting Location: Moonlight Altar
+1047610178 Starting Location: Caelid
+1047610179 Starting Location: Mountaintops of the Giants
 
 1047610200 Custom Loadout: Selected
 1047610210 Custom Loadout: Itemlot Option

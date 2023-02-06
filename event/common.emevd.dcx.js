@@ -1297,6 +1297,7 @@ $Event(936, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_1, X25_
     RestartEvent();
 });
 
+// Roundtable Hold - Warp
 $Event(945, Default, function() {
     DisableNetworkSync();
     EndIf(!PlayerIsInOwnWorld());
@@ -7165,22 +7166,398 @@ $Event(11031, Default, function() {
     
     SetEventFlagID(1047610020, ON);
 
-    // Roundtable Hold
+    // Random
     if(EventFlag(1047610171))
     {
-        // Roundtable Hold
-        SetEventFlagID(10000851, ON);
-        SetEventFlagID(10009655, ON);
-        SetEventFlagID(11109786, ON);
-        SetEventFlagID(104, ON);
-        SetEventFlagID(101, ON); // Grafted Scion encounter
+        BatchSetEventFlags(1047620000, 1047620022, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620022, ON);
         
-        // Early Graces
-        SetEventFlagID(71801, ON);
-        SetEventFlagID(76101, ON);
+        // Limgrave: Stormhill Shack
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76102, ON);
+            WarpPlayer(60, 41, 38, 0, 1041380980, -1);
+            SetPlayerRespawnPoint(1041382020);
+        }
+        // Limgrave: Third Church of Marika
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76104, ON);
+            WarpPlayer(60, 46, 38, 0, 1046380980, -1);
+            SetPlayerRespawnPoint(1046382020);
+        }
+        // Limgrave: Agheel Lake South
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76106, ON);
+            WarpPlayer(60, 44, 35, 0, 1044350980, -1);
+            SetPlayerRespawnPoint(1044352020);
+        }
         
-        // Limgrave Map
-        SetEventFlagID(62010, ON);
+        // Weeping Penisula: Church of Pilgrimage
+        if(EventFlag(1047620003))
+        {
+            SetEventFlagID(76150, ON);
+            WarpPlayer(60, 43, 34, 0, 1043340980, -1);
+            SetPlayerRespawnPoint(1043342020);
+        }
+        // Weeping Penisula: Isolated Merchant's Shack
+        if(EventFlag(1047620004))
+        {
+            SetEventFlagID(76156, ON);
+            WarpPlayer(60, 41, 32, 0, 1041320980, -1);
+            SetPlayerRespawnPoint(1041322020);
+        }
+        // Weeping Penisula: Castle Morne Lift
+        if(EventFlag(1047620005))
+        {
+            SetEventFlagID(76158, ON);
+            WarpPlayer(60, 43, 31, 0, 1043310980, -1);
+            SetPlayerRespawnPoint(1043312020);
+        }
+        
+        // Liurnia: Liurnia Highway North
+        if(EventFlag(1047620006))
+        {
+            SetEventFlagID(76221, ON);
+            WarpPlayer(60, 39, 42, 0, 1039420980, -1);
+            SetPlayerRespawnPoint(1039422020);
+        }
+        // Liurnia: Village of the Albinaurics
+        if(EventFlag(1047620007))
+        {
+            SetEventFlagID(76220, ON);
+            WarpPlayer(60, 34, 42, 0, 1034420980, -1);
+            SetPlayerRespawnPoint(1034422020);
+        }
+        // Liurnia: The Four Belfries
+        if(EventFlag(1047620008))
+        {
+            SetEventFlagID(76227, ON);
+            WarpPlayer(60, 33, 47, 0, 1033470980, -1);
+            SetPlayerRespawnPoint(1033472020);
+        }
+        // Liurnia: Ruin-Strewn Precipice Overlook
+        if(EventFlag(1047620009))
+        {
+            SetEventFlagID(73902, ON);
+            WarpPlayer(39, 20, 0, 0, 39200980, -1);
+            SetPlayerRespawnPoint(39202020);
+        }
+        // Liurnia: Frenzied Flame Village Outskirts
+        if(EventFlag(1047620010))
+        {
+            SetEventFlagID(76239, ON);
+            WarpPlayer(60, 38, 48, 0, 1038480980, -1);
+            SetPlayerRespawnPoint(1038482020);
+        }
+        
+        // Mt. Gelmir: Bridge of Iniquity
+        if(EventFlag(1047620011))
+        {
+            SetEventFlagID(76350, ON);
+            WarpPlayer(60, 39, 53, 0, 1039530980, -1);
+            SetPlayerRespawnPoint(1039532020);
+        }
+        // Mt. Gelmir: Ninth Mt. Gelmir Campsite
+        if(EventFlag(1047620012))
+        {
+            SetEventFlagID(76352, ON);
+            WarpPlayer(60, 36, 54, 0, 1036540980, -1);
+            SetPlayerRespawnPoint(1036542020);
+        }
+        
+        // Altus Plateau: Altus Highway Junction
+        if(EventFlag(1047620013))
+        {
+            SetEventFlagID(76303, ON);
+            WarpPlayer(60, 39, 51, 0, 1039510980, -1);
+            SetPlayerRespawnPoint(1039512020);
+        }
+        // Altus Plateau: Windmill Heights
+        if(EventFlag(1047620014))
+        {
+            SetEventFlagID(76313, ON);
+            WarpPlayer(60, 42, 55, 0, 1042550970, -1);
+            SetPlayerRespawnPoint(1042552020);
+        }
+        // Altus Plateau: Outer Wall Battleground
+        if(EventFlag(1047620015))
+        {
+            SetEventFlagID(76312, ON);
+            WarpPlayer(60, 43, 53, 0, 1043530980, -1);
+            SetPlayerRespawnPoint(1043532020);
+        }
+        
+        // Moonlight Altar: Altar South
+        if(EventFlag(1047620016))
+        {
+            SetEventFlagID(76252, ON);
+            WarpPlayer(60, 33, 40, 0, 1033400980, -1);
+            SetPlayerRespawnPoint(1033402020);
+        }
+        
+        // Caelid: Caelid Highway South
+        if(EventFlag(1047620017))
+        {
+            SetEventFlagID(76405, ON);
+            WarpPlayer(60, 48, 37, 0, 1048370980, -1);
+            SetPlayerRespawnPoint(1048372020);
+        }
+        // Caelid: Church of the Plague
+        if(EventFlag(1047620018))
+        {
+            SetEventFlagID(76418, ON);
+            WarpPlayer(60, 50, 38, 0, 1050380980, -1);
+            SetPlayerRespawnPoint(1050382020);
+        }
+        // Caelid: Farum Greatbridge
+        if(EventFlag(1047620019))
+        {
+            SetEventFlagID(76456, ON);
+            WarpPlayer(60, 52, 42, 0, 1052420980, -1);
+            SetPlayerRespawnPoint(1052422020);
+        }
+        
+        // Mountaintops of the Giants: Consecrated Snowfields
+        if(EventFlag(1047620020))
+        {
+            SetEventFlagID(76550, ON);
+            WarpPlayer(60, 49, 54, 0, 1049540980, -1);
+            SetPlayerRespawnPoint(1049542020);
+        }
+        // Mountaintops of the Giants: Snow Valley Ruins Overlook
+        if(EventFlag(1047620021))
+        {
+            SetEventFlagID(76521, ON);
+            WarpPlayer(60, 51, 57, 0, 1051570980, -1);
+            SetPlayerRespawnPoint(1051572020);
+        }
+        // Mountaintops of the Giants: First Church of Marika
+        if(EventFlag(1047620022))
+        {
+            SetEventFlagID(76505, ON);
+            WarpPlayer(60, 54, 55, 0, 1054550980, -1);
+            SetPlayerRespawnPoint(1054552020);
+        }
+    }
+    
+    // Limgrave
+    if(EventFlag(1047610172))
+    {
+        BatchSetEventFlags(1047620000, 1047620002, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620002, ON);
+        
+        // Limgrave: Stormhill Shack
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76102, ON);
+            WarpPlayer(60, 41, 38, 0, 1041380980, -1);
+            SetPlayerRespawnPoint(1041382020);
+        }
+        // Limgrave: Third Church of Marika
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76104, ON);
+            WarpPlayer(60, 46, 38, 0, 1046380980, -1);
+            SetPlayerRespawnPoint(1046382020);
+        }
+        // Limgrave: Agheel Lake South
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76106, ON);
+            WarpPlayer(60, 44, 35, 0, 1044350980, -1);
+            SetPlayerRespawnPoint(1044352020);
+        }
+    }
+    
+    // Weeping Penisula
+    if(EventFlag(1047610173))
+    {
+        BatchSetEventFlags(1047620000, 1047620002, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620002, ON);
+        
+        // Weeping Penisula: Church of Pilgrimage
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76150, ON);
+            WarpPlayer(60, 43, 34, 0, 1043340980, -1);
+            SetPlayerRespawnPoint(1043342020);
+        }
+        // Weeping Penisula: Isolated Merchant's Shack
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76156, ON);
+            WarpPlayer(60, 41, 32, 0, 1041320980, -1);
+            SetPlayerRespawnPoint(1041322020);
+        }
+        // Weeping Penisula: Castle Morne Lift
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76158, ON);
+            WarpPlayer(60, 43, 31, 0, 1043310980, -1);
+            SetPlayerRespawnPoint(1043312020);
+        }
+    }
+    
+    // Liurnia
+    if(EventFlag(1047610174))
+    {
+        BatchSetEventFlags(1047620000, 1047620004, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620004, ON);
+        
+        // Liurnia: Liurnia Highway North
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76221, ON);
+            WarpPlayer(60, 39, 42, 0, 1039420980, -1);
+            SetPlayerRespawnPoint(1039422020);
+        }
+        // Liurnia: Village of the Albinaurics
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76220, ON);
+            WarpPlayer(60, 34, 42, 0, 1034420980, -1);
+            SetPlayerRespawnPoint(1034422020);
+        }
+        // Liurnia: The Four Belfries
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76227, ON);
+            WarpPlayer(60, 33, 47, 0, 1033470980, -1);
+            SetPlayerRespawnPoint(1033472020);
+        }
+        // Liurnia: Ruin-Strewn Precipice Overlook
+        if(EventFlag(1047620003))
+        {
+            SetEventFlagID(73902, ON);
+            WarpPlayer(39, 20, 0, 0, 39200980, -1);
+            SetPlayerRespawnPoint(39202020);
+        }
+        // Liurnia: Frenzied Flame Village Outskirts
+        if(EventFlag(1047620004))
+        {
+            SetEventFlagID(76239, ON);
+            WarpPlayer(60, 38, 48, 0, 1038480980, -1);
+            SetPlayerRespawnPoint(1038482020);
+        }
+    }
+    
+    // Mt. Gelmir
+    if(EventFlag(1047610175))
+    {
+        BatchSetEventFlags(1047620000, 1047620001, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620001, ON);
+        
+        // Mt. Gelmir: Bridge of Iniquity
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76350, ON);
+            WarpPlayer(60, 39, 53, 0, 1039530980, -1);
+            SetPlayerRespawnPoint(1039532020);
+        }
+        // Mt. Gelmir: Ninth Mt. Gelmir Campsite
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76352, ON);
+            WarpPlayer(60, 36, 54, 0, 1036540980, -1);
+            SetPlayerRespawnPoint(1036542020);
+        }
+    }
+    
+    // Altus Plateau
+    if(EventFlag(1047610176))
+    {
+        BatchSetEventFlags(1047620000, 1047620002, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620002, ON);
+        
+        // Altus Plateau: Altus Highway Junction
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76303, ON);
+            WarpPlayer(60, 39, 51, 0, 1039510980, -1);
+            SetPlayerRespawnPoint(1039512020);
+        }
+        // Altus Plateau: Windmill Heights
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76313, ON);
+            WarpPlayer(60, 42, 55, 0, 1042550970, -1);
+            SetPlayerRespawnPoint(1042552020);
+        }
+        // Altus Plateau: Outer Wall Battleground
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76312, ON);
+            WarpPlayer(60, 43, 53, 0, 1043530980, -1);
+            SetPlayerRespawnPoint(1043532020);
+        }
+    }
+    
+    // Moonlight Altar
+    if(EventFlag(1047610177))
+    {
+        SetEventFlagID(76252, ON);
+        WarpPlayer(60, 33, 40, 0, 1033400980, -1);
+        SetPlayerRespawnPoint(1033402020);
+    }
+    
+    // Caelid
+    if(EventFlag(1047610178))
+    {
+        BatchSetEventFlags(1047620000, 1047620002, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620002, ON);
+        
+        // Caelid: Caelid Highway South
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76405, ON);
+            WarpPlayer(60, 48, 37, 0, 1048370980, -1);
+            SetPlayerRespawnPoint(1048372020);
+        }
+        // Caelid: Church of the Plague
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76418, ON);
+            WarpPlayer(60, 50, 38, 0, 1050380980, -1);
+            SetPlayerRespawnPoint(1050382020);
+        }
+        // Caelid: Farum Greatbridge
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76456, ON);
+            WarpPlayer(60, 52, 42, 0, 1052420980, -1);
+            SetPlayerRespawnPoint(1052422020);
+        }
+    }
+    
+    // Mountaintops of the Giants
+    if(EventFlag(1047610179))
+    {
+        BatchSetEventFlags(1047620000, 1047620002, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620002, ON);
+        
+        // Mountaintops of the Giants: Consecrated Snowfields
+        if(EventFlag(1047620000))
+        {
+            SetEventFlagID(76550, ON);
+            WarpPlayer(60, 49, 54, 0, 1049540980, -1);
+            SetPlayerRespawnPoint(1049542020);
+        }
+        // Mountaintops of the Giants: Snow Valley Ruins Overlook
+        if(EventFlag(1047620001))
+        {
+            SetEventFlagID(76521, ON);
+            WarpPlayer(60, 51, 57, 0, 1051570980, -1);
+            SetPlayerRespawnPoint(1051572020);
+        }
+        // Mountaintops of the Giants: First Church of Marika
+        if(EventFlag(1047620002))
+        {
+            SetEventFlagID(76505, ON);
+            WarpPlayer(60, 54, 55, 0, 1054550980, -1);
+            SetPlayerRespawnPoint(1054552020);
+        }
     }
 });
 
@@ -7202,6 +7579,48 @@ $Event(11032, Default, function() {
         SetEventFlagID(1042379201, ON)
         AwardItemLot(100000)
     }
+    
+    // Reveal Map
+    if(EventFlag(1047610162))
+    {
+        SetEventFlagID(62010, ON);
+        SetEventFlagID(62011, ON);
+        SetEventFlagID(62012, ON);
+        SetEventFlagID(62020, ON);
+        SetEventFlagID(62021, ON);
+        SetEventFlagID(62022, ON);
+        SetEventFlagID(62030, ON);
+        SetEventFlagID(62031, ON);
+        SetEventFlagID(62032, ON);
+        SetEventFlagID(62040, ON);
+        SetEventFlagID(62041, ON);
+        SetEventFlagID(62050, ON);
+        SetEventFlagID(62051, ON);
+        SetEventFlagID(62060, ON);
+        SetEventFlagID(62061, ON);
+        SetEventFlagID(62063, ON);
+        SetEventFlagID(62062, ON);
+        SetEventFlagID(62064, ON);
+        SetEventFlagID(62052, ON);
+    }
+    
+    // Roundtable Hold
+    if(EventFlag(1047610161))
+    {
+        // Roundtable Hold
+        SetEventFlagID(10000851, ON);
+        SetEventFlagID(10009655, ON);
+        SetEventFlagID(11109786, ON);
+        SetEventFlagID(101, ON); // Grafted Scion encounter
+        
+        // Early Graces
+        SetEventFlagID(71190, ON); // Roundtable Hold
+        
+        //SetEventFlagID(71801, ON); // Stranded Graveyard
+        //SetEventFlagID(76101, ON); // The First Step
+        //SetEventFlagID(104, ON); // This triggers the warp script
+    }
+    
 });
 
 //-------------------

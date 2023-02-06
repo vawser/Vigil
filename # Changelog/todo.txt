@@ -91,21 +91,3 @@ AEG007_143  Base
 AEG700_204  Wall
 AEG007_144  Brazier
 
-1039501950
-
-# Limgrave
-Stormhill Shack: 60_41_38           # 61413800
-Third Church of Marika: 60_46_38    # 61463800
-
-# Weeping Penisula
-
-# Liurnia of the Lakes
-
-# Mt. Gelmir
-
-# Altus Plateau
-
-# Caelid
-
-# Mountaintops of the Giants
-
