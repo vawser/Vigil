@@ -39,6 +39,9 @@
 - The door from Stranded Graveyard into Limgrave will now automatically be opened.
 - The door within the Stranded Graveyard has been removed.
 
+# m19_00_00_00
+- Added a Fractured Marika statue in the Elden Hollow after the Elden Beast has been defeated, allowing for immediate return to the Stone Platform.
+
 #-------------------------------------------------
 # Items
 #-------------------------------------------------

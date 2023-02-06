@@ -6503,8 +6503,16 @@ $Event(9950, Default, function(X0_4, X4_4) {
 $Event(11000, Default, function() {
     EndIf(ThisEventSlot());
     
-    // Test Lot
-    //AwardItemLot(1000);
+    // DEBUG
+    // AwardItemLot(1000);
+    
+    // SetSpEffect(10000, 7000090);
+    // SetSpEffect(10000, 7000091);
+    // SetSpEffect(10000, 7000092);
+    // SetSpEffect(10000, 7000093);
+    // SetSpEffect(10000, 7000094);
+    
+    // DEBUG END
     
     // Default Setup - Applied only once
     if(!EventFlag(1047610010))
@@ -7117,11 +7125,11 @@ $Event(11021, Default, function() {
     //WarpPlayer(19, 0, 0, 0, 19000982, -1);
     
     // Elden Beast
-    //SetEventFlagID(19000800, OFF);
-    //SetEventFlagID(71901, OFF);
+    SetEventFlagID(19000800, OFF);
+    SetEventFlagID(71901, OFF);
     
     // Portal Test
-    WarpPlayer(60, 49, 55, 0, 1049550980, -1);
+    //WarpPlayer(60, 49, 55, 0, 1049550980, -1);
     
     RestartEvent();
 });
