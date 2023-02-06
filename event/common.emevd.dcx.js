@@ -6505,7 +6505,6 @@ $Event(11000, Default, function() {
     
     // Test Lot
     //AwardItemLot(1000);
-    SetEventFlagID(1042368540, OFF);
     
     // Default Setup - Applied only once
     if(!EventFlag(1047610010))
