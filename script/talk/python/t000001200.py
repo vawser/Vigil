@@ -806,11 +806,6 @@ def t000001200_x40():
         # Altus Plateau (Selected)
         AddTalkListDataIf(GetEventFlag(1047610176) == 1, 56, 80201156, -1)
         
-        # Moonlight Altar
-        AddTalkListDataIf(GetEventFlag(1047610177) == 0, 8, 80201107, -1)
-        # Moonlight Altar (Selected)
-        AddTalkListDataIf(GetEventFlag(1047610177) == 1, 57, 80201157, -1)
-        
         # Caelid
         AddTalkListDataIf(GetEventFlag(1047610178) == 0, 9, 80201108, -1)
         # Caelid (Selected)
@@ -820,6 +815,16 @@ def t000001200_x40():
         AddTalkListDataIf(GetEventFlag(1047610179) == 0, 10, 80201109, -1)
         # Mountaintops of the Giants (Selected)
         AddTalkListDataIf(GetEventFlag(1047610179) == 1, 59, 80201159, -1)
+        
+        # Moonlight Altar
+        AddTalkListDataIf(GetEventFlag(1047610177) == 0, 8, 80201107, -1)
+        # Moonlight Altar (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610177) == 1, 57, 80201157, -1)
+        
+        # Miquella's Haligtree
+        AddTalkListDataIf(GetEventFlag(1047610180) == 0, 11, 80201110, -1)
+        # Miquella's Haligtree (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610180) == 1, 60, 80201160, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -832,43 +837,47 @@ def t000001200_x40():
         # Here
         if GetTalkListEntryResult() == 1:
             assert t000001200_x120(80201200, 1047610170, 1)
-            return 0
+            continue
         # Random
         elif GetTalkListEntryResult() == 2:
             assert t000001200_x120(80201201, 1047610171, 1)
-            return 0
+            continue
         # Limgrave
         elif GetTalkListEntryResult() == 3:
             assert t000001200_x120(80201202, 1047610172, 1)
-            return 0
+            continue
         # Weeping Penisula
         elif GetTalkListEntryResult() == 4:
             assert t000001200_x120(80201203, 1047610173, 1)
-            return 0
+            continue
         # Liurnia of the Lakes
         elif GetTalkListEntryResult() == 5:
             assert t000001200_x120(80201204, 1047610174, 1)
-            return 0
+            continue
         # Mt. Gelmir
         elif GetTalkListEntryResult() == 6:
             assert t000001200_x120(80201205, 1047610175, 1)
-            return 0
+            continue
         # Altus Plateau
         elif GetTalkListEntryResult() == 7:
             assert t000001200_x120(80201206, 1047610176, 1)
-            return 0
+            continue
         # Moonlight Altar
         elif GetTalkListEntryResult() == 8:
             assert t000001200_x120(80201207, 1047610177, 1)
-            return 0
+            continue
         # Caelid
         elif GetTalkListEntryResult() == 9:
             assert t000001200_x120(80201208, 1047610178, 1)
-            return 0
+            continue
         # Mountaintops of the Giants
         elif GetTalkListEntryResult() == 10:
             assert t000001200_x120(80201209, 1047610179, 1)
-            return 0
+            continue
+        # Miquella's Haligtree
+        elif GetTalkListEntryResult() == 11:
+            assert t000001200_x120(80201210, 1047610180, 1)
+            continue
         """State 10"""
         assert CheckSpecificPersonTalkHasEnded(0) == 1
         

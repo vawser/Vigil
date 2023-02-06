@@ -7177,8 +7177,8 @@ $Event(11031, Default, function() {
     // Random
     if(EventFlag(1047610171))
     {
-        BatchSetEventFlags(1047620000, 1047620022, OFF);
-        RandomlySetEventFlagInRange(1047620000, 1047620022, ON);
+        BatchSetEventFlags(1047620000, 1047620023, OFF);
+        RandomlySetEventFlagInRange(1047620000, 1047620023, ON);
         
         // Limgrave: Stormhill Shack
         if(EventFlag(1047620000))
@@ -7347,6 +7347,14 @@ $Event(11031, Default, function() {
             SetEventFlagID(76505, ON);
             WarpPlayer(60, 54, 55, 0, 1054550980, -1);
             SetPlayerRespawnPoint(1054552020);
+        }
+        
+        // Miquella's Haligtree: Haligtree Canopy
+        if(EventFlag(1047620023))
+        {
+            SetEventFlagID(71506, ON);
+            WarpPlayer(15, 0, 0, 0, 15000986, -1);
+            SetPlayerRespawnPoint(15002020);
         }
     }
     
@@ -7566,6 +7574,15 @@ $Event(11031, Default, function() {
             WarpPlayer(60, 54, 55, 0, 1054550980, -1);
             SetPlayerRespawnPoint(1054552020);
         }
+    }
+    
+    // Miquella's Haligtree
+    if(EventFlag(1047610180))
+    {
+        // Miquella's Haligtree: Haligtree Canopy
+        SetEventFlagID(71506, ON);
+        WarpPlayer(15, 0, 0, 0, 15000986, -1);
+        SetPlayerRespawnPoint(15002020);
     }
 });
 

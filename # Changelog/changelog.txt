@@ -10,9 +10,10 @@
   - Liurnia of the Lakes (random spot out of 5 options)
   - Mt. Gelmir: (random spot out of 2 options)
   - Altus Plateau (random spot out of 3 options)
-  - Moonlight Altar
   - Caelid (random spot out of 3 options)
   - Mountaintops of the Giants (random spot out of 3 options)
+  - Moonlight Altar (fixed spot)
+  - Miquella's Haligtree (fixed spot)
   - Random (random spot from all of the possible spots)
  - Note that you will only have the grace that you are teleported to unlocked (and the Roundtable Hold if you use that option).
  - Warp gates with no cost have been added to the late-game areas to allow you to travel backwards if you start out in those areas.

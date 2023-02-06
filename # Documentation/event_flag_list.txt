@@ -374,6 +374,7 @@
 1047610177 Starting Location: Moonlight Altar
 1047610178 Starting Location: Caelid
 1047610179 Starting Location: Mountaintops of the Giants
+1047610180 Starting Location: Miquella's Haligtree
 
 1047610200 Custom Loadout: Selected
 1047610210 Custom Loadout: Itemlot Option
