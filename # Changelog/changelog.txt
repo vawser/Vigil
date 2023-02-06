@@ -35,6 +35,8 @@
 #-------------------------------------------------
 # World
 #-------------------------------------------------
+# m60_42_36_00 
+- The door to the tutorial section will now automatically open if approached from the outside (i.e. you started in a random location).
 
 #-------------------------------------------------
 # Items

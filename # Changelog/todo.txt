@@ -82,12 +82,3 @@
 #-------------------------------------------------
 Add class archetypes, via the Blessings ssytem
 
-# Random Start
-Add starting location cofiguration
-
-# Asset
-AEG099_510  Portal
-AEG007_143  Base
-AEG700_204  Wall
-AEG007_144  Brazier
-
