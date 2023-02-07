@@ -21,6 +21,9 @@
 - Moved the immediate Roundtable Hold option to Journey Modifiers. It now purely unlocks the ability to warp to the Hold.
 - Added "Reveal Maps" journey modifier: automatically reveals the map as if you had pickup all the map fragments.
 
+- Conqueror journey type now boosts enemies instead of reducing player absorption:
+ - Enemies gain +25% HP and damage.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

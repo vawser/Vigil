@@ -2,37 +2,37 @@
 # Overview
 #----------------------------------------
 - Crimson Crystal Tear (2)
- - Effect: Restores half of total HP in mixed physick
+ - Effect: Restores 50% HP
 
 - Crimsonspill Crystal Tear
- - Effect: Temporarily boosts max HP in mixed physick
+ - Effect: Increases max HP by 10% for 180 seconds.
 
 - Crimsonburst Crystal Tear
- - Effect: Steadily restores HP for a time in mixed physick
+ - Effect: Heals 7 HP per second for 180 seconds.
 
 - Cerulean Crystal Tear (2)
- - Effect: Restores half of total FP in mixed physick
+ - Effect: Restores 50% FP.
 
 - Greenspill Crystal Tear
- - Effect: Temporarily boosts stamina in mixed physick
+ - Effect: Increases max Stamina by 15% for 180 seconds.
 
 - Greenburst Crystal Tear 
- - Effect: Temporarily boosts stamina recovery speed in mixed physick
+ - Effect: Increases stamina recovery by 15 for 180 seconds.
 
 - Strength-knot Crystal Tear
- - Effect: Temporarily boosts strength in mixed physick
+ - Effect: Increases STR by 10 for 180 seconds.
 
 - Dexterity-knot Crystal Tear
- - Effect: Temporarily boosts dexterity in mixed physick
+ - Effect: Increases DEX by 10 for 180 seconds.
 
 - Intelligence-knot Crystal Tear 
- - Effect: Temporarily boosts intelligence in mixed physick
+ - Effect: Increases INT by 10 for 180 seconds.
 
 - Faith-knot Crystal Tear 
- - Effect: Temporarily boosts faith in mixed physick
+ - Effect: Increases FTH by 10 for 180 seconds.
 
 - Opaline Hardtear 
- - Effect: Temporarily boosts all damage negation in physick
+ - Effect: Increases absorption by 15% for 180 seconds.
 
 - Speckled Hardtear 
  - Effect: Boosts resistance and heals status in mixed physick

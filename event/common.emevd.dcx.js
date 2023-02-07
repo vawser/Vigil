@@ -7160,7 +7160,6 @@ $Event(11030, Restart, function() {
         SetSpEffect(10000, 7201300);
         SetSpEffect(10000, 7201301);
         SetSpEffect(10000, 7201302);
-        SetSpEffect(10000, 7201303);
     }
 });
 
@@ -8854,6 +8853,12 @@ $Event(14000, Restart, function() {
 // Enemy: 400005000
 // Boss: 400005010
 $Event(14001, Restart, function() {
+    // Journey Type: Conqueror
+    if(EventFlag(1047610153))
+    {
+        SetSpEffect(400005000, 7201310);
+    }
+    
     // Wounded Fury
     if(EventFlag(1047610900))
     {
