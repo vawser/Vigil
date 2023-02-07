@@ -24,6 +24,15 @@
 - Conqueror journey type now boosts enemies instead of reducing player absorption:
  - Enemies gain +25% HP and damage.
 
+- Added a new journey type: Accursed.
+ - Grants enemies +25% damage and absorption, and they are more interested in fighting.
+ - Every death will inflict a new detriment.
+  - There are 44 types of detriment.
+  - Each type can stack multiple times, upto 5 or 10 times depending on the detriment.
+  
+ - Defeating the Elden Beast in this journey type will reward Marika's Necklace.
+  - Detriments are removed upon defeating the Elden Beast.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -73,6 +82,9 @@
 #-------------------------------------------------
 # Talismans
 #-------------------------------------------------
+- Added Marika's Necklace:
+    - Reward for killing the Elden Beast in the Accursed journey type.
+    - +0 Effect: Boosts maximum HP, FP, Stamina and Equip Load by 25%, and increases rally restoration rate by 100%.
     
 #-------------------------------------------------
 # Misc

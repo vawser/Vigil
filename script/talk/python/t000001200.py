@@ -546,17 +546,17 @@ def t000001200_x38():
         # Select Journey Type
         AddTalkListDataIf(GetEventFlag(1047610150) == 0, 10, 80200000, -1)
         
-        # Select Journey Modifiers
-        AddTalkListDataIf(GetEventFlag(1047610150) == 0, 11, 80202000, -1)
-        
         # Select Starting Location
         AddTalkListDataIf(GetEventFlag(1047610150) == 0, 12, 80201000, -1)
+        
+        # Select Journey Modifiers
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0, 11, 80202000, -1)
         
         # Build Custom Loadout
         AddTalkListDataIf(GetEventFlag(1047610150) == 0 and GetEventFlag(1047610200) == 1, 13, 80203000, -1)
         
         # Finalize
-        AddTalkListDataIf(GetEventFlag(1047610150) == 0 and GetEventFlag(1047610151) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610152) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610153) == 1, 20, 80200002, -1)
+        AddTalkListDataIf(GetEventFlag(1047610150) == 0 and GetEventFlag(1047610151) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610152) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610153) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610154) == 1, 20, 80200002, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -636,10 +636,15 @@ def t000001200_x39():
         # Explorer (Selected)
         AddTalkListDataIf(GetEventFlag(1047610152) == 1, 11, 80200111, -1)
         
-        # Tarnished
+        # Conqueror
         AddTalkListDataIf(GetEventFlag(1047610153) == 0, 3, 80200102, -1)
-        # Tarnished (Selected)
+        # Conqueror (Selected)
         AddTalkListDataIf(GetEventFlag(1047610153) == 1, 12, 80200112, -1)
+        
+        # Accursed
+        AddTalkListDataIf(GetEventFlag(1047610154) == 0, 4, 80200103, -1)
+        # Accursed (Selected)
+        AddTalkListDataIf(GetEventFlag(1047610154) == 1, 13, 80200113, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -651,100 +656,20 @@ def t000001200_x39():
         
         # Tarnished
         if GetTalkListEntryResult() == 1:
-            assert t000001200_x101(80200200)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610151, 1)
-                SetEventFlag(1047610152, 0)
-                SetEventFlag(1047610153, 0)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
+            assert t000001200_x130(80200200, 1047610151, 1)
             continue
         # Explorer
         elif GetTalkListEntryResult() == 2:
-            assert t000001200_x101(80200201)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610151, 0)
-                SetEventFlag(1047610152, 1)
-                SetEventFlag(1047610153, 0)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
-            return 0
+            assert t000001200_x130(80200201, 1047610152, 1)
+            continue
         # Conqueror
         elif GetTalkListEntryResult() == 3:
-            assert t000001200_x101(80200202)
-            
-            c1_110()
-    
-            ClearTalkListData()
-            
-            # Yes
-            AddTalkListData(1, 80102101, -1)
-            
-            # No
-            AddTalkListData(2, 80102102, -1)
-            
-            OpenConversationChoicesMenu(0)
-            
-            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-            # Yes
-            if GetTalkListEntryResult() == 1:
-                SetEventFlag(1047610151, 0)
-                SetEventFlag(1047610152, 0)
-                SetEventFlag(1047610153, 1)
-                
-                return 0
-            # Cancel
-            elif GetTalkListEntryResult() == 2:
-                return 1
-            else:
-                return 2
-   
-            return 0
+            assert t000001200_x130(80200202, 1047610153, 1)
+            continue
+        # Accursed
+        elif GetTalkListEntryResult() == 4:
+            assert t000001200_x130(80200203, 1047610154, 1)
+            continue
         # Tarnished (selected)
         elif GetTalkListEntryResult() == 10:
             assert t000001200_x101(80200200)
@@ -756,6 +681,10 @@ def t000001200_x39():
         # Conqueror (selected)
         elif GetTalkListEntryResult() == 12:
             assert t000001200_x101(80200202)
+            return 0
+        # Accursed (selected)
+        elif GetTalkListEntryResult() == 13:
+            assert t000001200_x101(80200203)
             return 0
         else:
             """State 31"""
@@ -1105,3 +1034,37 @@ def t000001200_x120(text=_, flag=_, value=_):
         return 2
 
     return 0
+    
+# Difficulty - YES/NO Choice
+def t000001200_x130(text=_, flag=_, value=_):
+    assert t000001200_x101(text)
+            
+    c1_110()
+
+    ClearTalkListData()
+    
+    # Yes
+    AddTalkListData(1, 80102101, -1)
+    
+    # No
+    AddTalkListData(2, 80102102, -1)
+    
+    OpenConversationChoicesMenu(0)
+    
+    assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+    # Yes
+    if GetTalkListEntryResult() == 1:
+        SetEventFlag(1047610151, 0)
+        SetEventFlag(1047610152, 0)
+        SetEventFlag(1047610153, 0)
+        SetEventFlag(1047610154, 0)
+        
+        SetEventFlag(flag, value)
+        
+        return 0
+    # Cancel
+    elif GetTalkListEntryResult() == 2:
+        return 1
+    else:
+        return 2

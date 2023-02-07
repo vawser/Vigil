@@ -551,6 +551,10 @@
     - +2 Effect: Increases movement speed by 20%.
     - +3 Effect: Increases movement speed by 25%.
     
+- Marika's Necklace
+    - Reward for killing the Elden Beast in the Accursed journey type.
+    - +0 Effect: Boosts maximum HP, FP, Stamina and Equip Load by 25%, and increases rally restoration rate by 100%.
+    
 #----------------------------------------
 # Notes
 #----------------------------------------
