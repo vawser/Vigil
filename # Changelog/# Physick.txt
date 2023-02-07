@@ -1,0 +1,90 @@
+﻿#----------------------------------------
+# Overview
+#----------------------------------------
+- Crimson Crystal Tear (2)
+ - Effect: Restores half of total HP in mixed physick
+
+- Crimsonspill Crystal Tear
+ - Effect: Temporarily boosts max HP in mixed physick
+
+- Crimsonburst Crystal Tear
+ - Effect: Steadily restores HP for a time in mixed physick
+
+- Cerulean Crystal Tear (2)
+ - Effect: Restores half of total FP in mixed physick
+
+- Greenspill Crystal Tear
+ - Effect: Temporarily boosts stamina in mixed physick
+
+- Greenburst Crystal Tear 
+ - Effect: Temporarily boosts stamina recovery speed in mixed physick
+
+- Strength-knot Crystal Tear
+ - Effect: Temporarily boosts strength in mixed physick
+
+- Dexterity-knot Crystal Tear
+ - Effect: Temporarily boosts dexterity in mixed physick
+
+- Intelligence-knot Crystal Tear 
+ - Effect: Temporarily boosts intelligence in mixed physick
+
+- Faith-knot Crystal Tear 
+ - Effect: Temporarily boosts faith in mixed physick
+
+- Opaline Hardtear 
+ - Effect: Temporarily boosts all damage negation in physick
+
+- Speckled Hardtear 
+ - Effect: Boosts resistance and heals status in mixed physick
+
+- Leaden Hardtear
+ - Effect: Temporarily boosts poise in mixed physick
+
+- Magic-Shrouding Cracked Tear 
+ - Effect: Temporarily boosts magic attacks in mixed physick
+
+- Flame-Shrouding Cracked Tear 
+ - Effect: Temporarily boosts fire attacks in mixed physick
+
+- Lightning-Shrouding Cracked Tear
+ - Effect: Temporarily boosts lightning attacks in mixed physick
+
+- Holy-Shrouding Cracked Tear
+ - Effect: Temporarily boosts holy attacks in mixed physick
+
+- Stonebarb Cracked Tear
+ - Effect: Makes attacks more likely to break enemy stances in a mixed physick
+
+- Spiked Cracked Tear 
+ - Effect: Enhances charged attacks for a time in mixed physick
+
+- Thorny Cracked Tear
+ - Effect: Makes consecutive attacks grow stronger in mixed physick
+
+- Twiggy Cracked Tear
+ - Effect: Briefly stop rune loss on death in mixed physick
+
+- Winged Crystal Tear 
+ - Effect: Temporarily reduces equip load in mixed physick
+
+- Windy Crystal Tear
+ - Effect: Enhances dodge rolls for a time in mixed physick
+
+- Crimson Bubbletear
+ - Effect: Restores HP when near death in mixed physick
+
+- Crimsonwhorl Bubbletear 
+ - Effect: Converts damage received into HP in mixed physick
+
+- Opaline Bubbletear 
+ - Effect: Significantly negates damage in mixed physick
+
+- Cerulean Hidden Tear
+ - Effect: Eliminates all FP consumption in mixed physick
+
+- Purifying Crystal Tear 
+ - Effect: Purifies the Lord of Blood's curse in a mixed physick
+
+- Ruptured Crystal Tear (2)
+ - Effect: Causes concoction to explode in mixed physick
+ 
