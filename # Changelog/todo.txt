@@ -80,7 +80,6 @@
 - Expand Blood school
 - Expand Death school
 
-Golden Remembrance needs dupe shop support
 Combat castigations may still be too liberal with their application
 Remove aggro changes from Conqueror difficulty (leave on Accursed)
 Colosseum music needs to be shifted by 1 (e.g. Gideon Olfnir plays Maliketh)

@@ -7219,9 +7219,7 @@ $Event(11030, Restart, function() {
     // Conqueror
     if(EventFlag(1047610153))
     {
-        SetSpEffect(10000, 7201300);
-        SetSpEffect(10000, 7201301);
-        SetSpEffect(10000, 7201302);
+        
     }
     
     // Accursed
