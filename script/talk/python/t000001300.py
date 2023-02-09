@@ -2197,12 +2197,12 @@ def t000001300_x120(flag=_, message_id=_):
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                     SetEventFlag(flag, 0)
                 elif call.Done():
                     continue
@@ -2246,12 +2246,12 @@ def t000001300_x121(flag=_, flag2=_, message_id=_):
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                     SetEventFlag(flag, 0)
                     SetEventFlag(flag2, 0)
                 elif call.Done():
@@ -2296,12 +2296,12 @@ def t000001300_x122(flag=_, flag2=_, flag3=_, message_id=_):
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                     SetEventFlag(flag, 0)
                     SetEventFlag(flag2, 0)
                     SetEventFlag(flag3, 0)
@@ -2348,12 +2348,12 @@ def t000001300_x123(flag=_, flag2=_, flag3=_, flag4=_, message_id=_):
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                     SetEventFlag(flag, 0)
                     SetEventFlag(flag2, 0)
                     SetEventFlag(flag3, 0)
@@ -2400,12 +2400,12 @@ def t000001300_x124(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, message_id=_):
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                     SetEventFlag(flag, 0)
                     SetEventFlag(flag2, 0)
                     SetEventFlag(flag3, 0)
@@ -2453,12 +2453,12 @@ def t000001300_x125(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, flag6=_, message
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                     SetEventFlag(flag, 0)
                     SetEventFlag(flag2, 0)
                     SetEventFlag(flag3, 0)
@@ -2507,12 +2507,12 @@ def t000001300_x130(flag=_, bonfire_flag=_, message_id=_):
 
         # Resurrect
         if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 1760, 4, 1, 0) == 1:
+            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
                 # Use a Larval Tear to accept rebirth?
                 call = t000001300_x38(action2=80040000)
                 
                 if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 1760, -1)
+                    PlayerEquipmentQuantityChange(3, 8185, -1)
                         
                     SetEventFlag(flag, 0)
                     SetEventFlag(bonfire_flag, 0)
