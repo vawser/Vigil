@@ -81,6 +81,5 @@
 - Expand Death school
 
 Combat castigations may still be too liberal with their application
-Remove aggro changes from Conqueror difficulty (leave on Accursed)
 Colosseum music needs to be shifted by 1 (e.g. Gideon Olfnir plays Maliketh)
 Madness is not ticking its damage correctly
