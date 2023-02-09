@@ -6572,57 +6572,57 @@ $Event(11000, Default, function() {
     
     // General
     InitializeEvent( 0, 11041, 25000, 7300100, 1047610420); // Max HP (10)
-    InitializeEvent( 1, 11041, 25001, 7300101, 1047610421); // Max FP (10)
-    InitializeEvent( 2, 11041, 25002, 7300102, 1047610422); // Max Stamina (10)
-    InitializeEvent( 3, 11041, 25003, 7300103, 1047610423); // Max Equip Load (10)
-    InitializeEvent( 4, 11041, 25004, 7300104, 1047610424); // HP Recovery Effectiveness (10)
+    InitializeEvent( 1, 11041, 25001, 7300101, 1047610425); // Max FP (10)
+    InitializeEvent( 2, 11041, 25002, 7300102, 1047610430); // Max Stamina (10)
+    InitializeEvent( 3, 11041, 25003, 7300103, 1047610435); // Max Equip Load (10)
+    InitializeEvent( 4, 11041, 25004, 7300104, 1047610440); // HP Recovery Effectiveness (10)
     
-    InitializeEvent( 5, 11041, 25005, 7300105, 1047610425); // Vigor (10)
-    InitializeEvent( 6, 11041, 25006, 7300106, 1047610426); // Mind (10)
-    InitializeEvent( 7, 11041, 25007, 7300107, 1047610427); // Endurance (10)
-    InitializeEvent( 8, 11041, 25008, 7300108, 1047610428); // Strength (10)
-    InitializeEvent( 9, 11041, 25009, 7300109, 1047610429); // Dexterity (10)
-    InitializeEvent(10, 11041, 25010, 7300110, 1047610430); // Intelligence (10)
-    InitializeEvent(11, 11041, 25011, 7300111, 1047610431); // Faith (10)
-    InitializeEvent(12, 11041, 25012, 7300112, 1047610432); // Arcane (10)
+    InitializeEvent( 5, 11041, 25005, 7300105, 1047610445); // Vigor (10)
+    InitializeEvent( 6, 11041, 25006, 7300106, 1047610450); // Mind (10)
+    InitializeEvent( 7, 11041, 25007, 7300107, 1047610455); // Endurance (10)
+    InitializeEvent( 8, 11041, 25008, 7300108, 1047610460); // Strength (10)
+    InitializeEvent( 9, 11041, 25009, 7300109, 1047610465); // Dexterity (10)
+    InitializeEvent(10, 11041, 25010, 7300110, 1047610470); // Intelligence (10)
+    InitializeEvent(11, 11041, 25011, 7300111, 1047610475); // Faith (10)
+    InitializeEvent(12, 11041, 25012, 7300112, 1047610480); // Arcane (10)
     
-    InitializeEvent( 0, 11042, 25013, 7300113, 1047610433); // HP Loss (5)
-    InitializeEvent( 1, 11042, 25014, 7300114, 1047610434); // FP Loss (5)
-    InitializeEvent( 2, 11042, 25015, 7300115, 1047610435); // Stamina Recovery Drain (5)
+    InitializeEvent( 0, 11042, 25013, 7300113, 1047610485); // HP Loss (5)
+    InitializeEvent( 1, 11042, 25014, 7300114, 1047610490); // FP Loss (5)
+    InitializeEvent( 2, 11042, 25015, 7300115, 1047610495); // Stamina Recovery Drain (5)
     
-    InitializeEvent( 3, 11042, 25016, 7300116, 1047610436); // Physical Damage (5)
-    InitializeEvent( 4, 11042, 25017, 7300117, 1047610437); // Magic Damage (5)
-    InitializeEvent( 5, 11042, 25018, 7300118, 1047610438); // Fire Damage (5)
-    InitializeEvent( 6, 11042, 25019, 7300119, 1047610439); // Lightning Damage (5)
-    InitializeEvent( 7, 11042, 25020, 7300120, 1047610440); // Holy Damage (5)
+    InitializeEvent( 3, 11042, 25016, 7300116, 1047610530); // Physical Damage (5)
+    InitializeEvent( 4, 11042, 25017, 7300117, 1047610535); // Magic Damage (5)
+    InitializeEvent( 5, 11042, 25018, 7300118, 1047610540); // Fire Damage (5)
+    InitializeEvent( 6, 11042, 25019, 7300119, 1047610545); // Lightning Damage (5)
+    InitializeEvent( 7, 11042, 25020, 7300120, 1047610550); // Holy Damage (5)
     
-    InitializeEvent( 8, 11042, 25021, 7300121, 1047610441); // Slash Absorption (5)
-    InitializeEvent( 9, 11042, 25022, 7300122, 1047610442); // Strike Absorption (5)
-    InitializeEvent(10, 11042, 25023, 7300123, 1047610443); // Thrust Absorption (5)
-    InitializeEvent(11, 11042, 25024, 7300124, 1047610444); // Standard Absorption (5)
-    InitializeEvent(12, 11042, 25025, 7300125, 1047610445); // Magic Absorption (5)
-    InitializeEvent(13, 11042, 25026, 7300126, 1047610446); // Fire Absorption (5)
-    InitializeEvent(14, 11042, 25027, 7300127, 1047610447); // Lightning Absorption (5)
-    InitializeEvent(15, 11042, 25028, 7300128, 1047610448); // Holy Absorption (5)
-    InitializeEvent(16, 11042, 25029, 7300129, 1047610449); // Toughness Absorption (5)
+    InitializeEvent( 8, 11042, 25021, 7300121, 1047610555); // Slash Absorption (5)
+    InitializeEvent( 9, 11042, 25022, 7300122, 1047610560); // Strike Absorption (5)
+    InitializeEvent(10, 11042, 25023, 7300123, 1047610565); // Thrust Absorption (5)
+    InitializeEvent(11, 11042, 25024, 7300124, 1047610570); // Standard Absorption (5)
+    InitializeEvent(12, 11042, 25025, 7300125, 1047610575); // Magic Absorption (5)
+    InitializeEvent(13, 11042, 25026, 7300126, 1047610580); // Fire Absorption (5)
+    InitializeEvent(14, 11042, 25027, 7300127, 1047610585); // Lightning Absorption (5)
+    InitializeEvent(15, 11042, 25028, 7300128, 1047610590); // Holy Absorption (5)
+    InitializeEvent(16, 11042, 25029, 7300129, 1047610595); // Toughness Absorption (5)
     
-    InitializeEvent(17, 11042, 25030, 7300130, 1047610450); // Poison Resist (5)
-    InitializeEvent(18, 11042, 25031, 7300131, 1047610451); // Scarlet Rot Resist (5)
-    InitializeEvent(19, 11042, 25032, 7300132, 1047610452); // Hemorrhage Resist (5)
-    InitializeEvent(20, 11042, 25033, 7300133, 1047610453); // Blight Resist (5)
-    InitializeEvent(21, 11042, 25034, 7300134, 1047610454); // Frostbite Resist (5)
-    InitializeEvent(22, 11042, 25035, 7300135, 1047610455); // Sleep Resist (5)
-    InitializeEvent(23, 11042, 25036, 7300136, 1047610456); // Madness Resist (5)
+    InitializeEvent(17, 11042, 25030, 7300130, 1047610635); // Poison Resist (5)
+    InitializeEvent(18, 11042, 25031, 7300131, 1047610640); // Scarlet Rot Resist (5)
+    InitializeEvent(19, 11042, 25032, 7300132, 1047610645); // Hemorrhage Resist (5)
+    InitializeEvent(20, 11042, 25033, 7300133, 1047610650); // Blight Resist (5)
+    InitializeEvent(21, 11042, 25034, 7300134, 1047610655); // Frostbite Resist (5)
+    InitializeEvent(22, 11042, 25035, 7300135, 1047610660); // Sleep Resist (5)
+    InitializeEvent(23, 11042, 25036, 7300136, 1047610665); // Madness Resist (5)
     
-    InitializeEvent(24, 11042, 25037, 7300137, 1047610457); // Guard Stability (5)
+    InitializeEvent(24, 11042, 25037, 7300137, 1047610670); // Guard Stability (5)
     
-    InitializeEvent(13, 11041, 25038, 7300138, 1047610458); // Rune Absorption (10)
-    InitializeEvent(14, 11041, 25039, 7300139, 1047610459); // Skill FP Consumption (10)
-    InitializeEvent(15, 11041, 25040, 7300140, 1047610460); // Sorcery FP Consumption (10)
-    InitializeEvent(16, 11041, 25041, 7300141, 1047610461); // Incantation FP Consumption (10)
-    InitializeEvent(17, 11041, 25042, 7300142, 1047610462); // Cast Speed (10)
-    InitializeEvent(18, 11041, 25043, 7300143, 1047610463); // Weapon Stamina Consumption (10)
-    InitializeEvent(19, 11041, 25044, 7300144, 1047610464); // Vendor Greed (10)
+    InitializeEvent(13, 11041, 25038, 7300138, 1047610675); // Rune Absorption (10)
+    InitializeEvent(14, 11041, 25039, 7300139, 1047610680); // Skill FP Consumption (10)
+    InitializeEvent(15, 11041, 25040, 7300140, 1047610685); // Sorcery FP Consumption (10)
+    InitializeEvent(16, 11041, 25041, 7300141, 1047610690); // Incantation FP Consumption (10)
+    InitializeEvent(17, 11041, 25042, 7300142, 1047610695); // Cast Speed (10)
+    InitializeEvent(18, 11041, 25043, 7300143, 1047610725); // Weapon Stamina Consumption (10)
+    InitializeEvent(19, 11041, 25044, 7300144, 1047610730); // Vendor Greed (10)
     
     // Uniques
     // InitializeEvent(0, 11043, 25037, 7300137, 1047610420);
@@ -7747,50 +7747,50 @@ $Event(11040, Restart, function() {
     RandomlySetEventFlagInRange(1047620000, 1047620044, ON);
     
     InitializeEvent( 0, 11048, 1047620000, 1047620001, 1047610420, 25000, 60000, 10); // Max HP
-    InitializeEvent( 1, 11048, 1047620001, 1047620002, 1047610421, 25001, 60010, 10); // Max FP
-    InitializeEvent( 2, 11048, 1047620002, 1047620003, 1047610422, 25002, 60020, 10); // Max Stamina
-    InitializeEvent( 3, 11048, 1047620003, 1047620004, 1047610423, 25003, 60030, 10); // Max Equip Load
-    InitializeEvent( 4, 11048, 1047620004, 1047620005, 1047610424, 25004, 60040, 10); // HP Recovery Effectiveness
-    InitializeEvent( 5, 11048, 1047620005, 1047620006, 1047610425, 25005, 60050, 10); // Vigor
-    InitializeEvent( 6, 11048, 1047620006, 1047620007, 1047610426, 25006, 60060, 10); // Mind
-    InitializeEvent( 7, 11048, 1047620007, 1047620008, 1047610427, 25007, 60070, 10); // Endurance
-    InitializeEvent( 8, 11048, 1047620008, 1047620009, 1047610428, 25008, 60080, 10); // Strength
-    InitializeEvent( 9, 11048, 1047620009, 1047620010, 1047610429, 25009, 60090, 10); // Dexterity
-    InitializeEvent(10, 11048, 1047620010, 1047620011, 1047610430, 25010, 60100, 10); // Intelligence
-    InitializeEvent(11, 11048, 1047620011, 1047620012, 1047610431, 25011, 60110, 10); // Faith
-    InitializeEvent(12, 11048, 1047620012, 1047620013, 1047610432, 25012, 60120, 10); // Arcane
-    InitializeEvent(13, 11048, 1047620013, 1047620014, 1047610433, 25013, 60130, 5); // HP Loss
-    InitializeEvent(14, 11048, 1047620014, 1047620015, 1047610434, 25014, 60140, 5); // FP Loss
-    InitializeEvent(15, 11048, 1047620015, 1047620016, 1047610435, 25015, 60150, 5); // Stamina Recovery Drain
-    InitializeEvent(16, 11048, 1047620016, 1047620017, 1047610436, 25016, 60160, 5); // Physical Damage
-    InitializeEvent(17, 11048, 1047620017, 1047620018, 1047610437, 25017, 60170, 5); // Magic Damage
-    InitializeEvent(18, 11048, 1047620018, 1047620019, 1047610438, 25018, 60180, 5); // Fire Damage
-    InitializeEvent(19, 11048, 1047620019, 1047620020, 1047610439, 25019, 60190, 5); // Lightning Damage
-    InitializeEvent(20, 11048, 1047620020, 1047620021, 1047610440, 25020, 60200, 5); // Holy Damage
-    InitializeEvent(21, 11048, 1047620021, 1047620022, 1047610441, 25021, 60210, 5); // Slash Absorption
-    InitializeEvent(22, 11048, 1047620022, 1047620023, 1047610442, 25022, 60220, 5); // Strike Absorption
-    InitializeEvent(23, 11048, 1047620023, 1047620024, 1047610443, 25023, 60230, 5); // Thrust Absorption
-    InitializeEvent(24, 11048, 1047620024, 1047620025, 1047610444, 25024, 60240, 5); // Standard Absorption
-    InitializeEvent(25, 11048, 1047620025, 1047620026, 1047610445, 25025, 60250, 5); // Magic Absorption
-    InitializeEvent(26, 11048, 1047620026, 1047620027, 1047610446, 25026, 60260, 5); // Fire Absorption
-    InitializeEvent(27, 11048, 1047620027, 1047620028, 1047610447, 25027, 60270, 5); // Lightning Absorption
-    InitializeEvent(28, 11048, 1047620028, 1047620029, 1047610448, 25028, 60280, 5); // Holy Absorption
-    InitializeEvent(29, 11048, 1047620029, 1047620030, 1047610449, 25029, 60290, 5); // Toughness Absorption
-    InitializeEvent(30, 11048, 1047620030, 1047620031, 1047610450, 25030, 60300, 5); // Poison Resist
-    InitializeEvent(31, 11048, 1047620031, 1047620032, 1047610451, 25031, 60310, 5); // Scarlet Rot Resist
-    InitializeEvent(32, 11048, 1047620032, 1047620033, 1047610452, 25032, 60320, 5); // Hemorrhage Resist
-    InitializeEvent(33, 11048, 1047620033, 1047620034, 1047610453, 25033, 60330, 5); // Blight Resist
-    InitializeEvent(34, 11048, 1047620034, 1047620035, 1047610454, 25034, 60340, 5); // Frostbite Resist
-    InitializeEvent(35, 11048, 1047620035, 1047620036, 1047610455, 25035, 60350, 5); // Sleep Resist
-    InitializeEvent(36, 11048, 1047620036, 1047620037, 1047610456, 25036, 60360, 5); // Madness Resist
-    InitializeEvent(37, 11048, 1047620037, 1047620038, 1047610457, 25037, 60370, 5); // Guard Stability
-    InitializeEvent(38, 11048, 1047620038, 1047620039, 1047610458, 25038, 60380, 10); // Rune Absorption
-    InitializeEvent(39, 11048, 1047620039, 1047620040, 1047610459, 25039, 60390, 10); // Skill FP Consumption
-    InitializeEvent(40, 11048, 1047620040, 1047620041, 1047610460, 25040, 60400, 10); // Sorcery FP Consumption
-    InitializeEvent(41, 11048, 1047620041, 1047620042, 1047610461, 25041, 60410, 10); // Incantation FP Consumption
-    InitializeEvent(42, 11048, 1047620042, 1047620043, 1047610462, 25042, 60420, 10); // Cast Speed
-    InitializeEvent(43, 11048, 1047620043, 1047620044, 1047610463, 25043, 60430, 10); // Weapon Stamina Consumption
-    InitializeEvent(44, 11048, 1047620044, 1047620045, 1047610464, 25044, 60440, 10); // Vendor Greed
+    InitializeEvent( 1, 11048, 1047620001, 1047620002, 1047610425, 25001, 60010, 10); // Max FP
+    InitializeEvent( 2, 11048, 1047620002, 1047620003, 1047610430, 25002, 60020, 10); // Max Stamina
+    InitializeEvent( 3, 11048, 1047620003, 1047620004, 1047610435, 25003, 60030, 10); // Max Equip Load
+    InitializeEvent( 4, 11048, 1047620004, 1047620005, 1047610440, 25004, 60040, 10); // HP Recovery Effectiveness
+    InitializeEvent( 5, 11048, 1047620005, 1047620006, 1047610445, 25005, 60050, 10); // Vigor
+    InitializeEvent( 6, 11048, 1047620006, 1047620007, 1047610450, 25006, 60060, 10); // Mind
+    InitializeEvent( 7, 11048, 1047620007, 1047620008, 1047610455, 25007, 60070, 10); // Endurance
+    InitializeEvent( 8, 11048, 1047620008, 1047620009, 1047610460, 25008, 60080, 10); // Strength
+    InitializeEvent( 9, 11048, 1047620009, 1047620010, 1047610465, 25009, 60090, 10); // Dexterity
+    InitializeEvent(10, 11048, 1047620010, 1047620011, 1047610470, 25010, 60100, 10); // Intelligence
+    InitializeEvent(11, 11048, 1047620011, 1047620012, 1047610475, 25011, 60110, 10); // Faith
+    InitializeEvent(12, 11048, 1047620012, 1047620013, 1047610480, 25012, 60120, 10); // Arcane
+    InitializeEvent(13, 11048, 1047620013, 1047620014, 1047610485, 25013, 60130, 5); // HP Loss
+    InitializeEvent(14, 11048, 1047620014, 1047620015, 1047610490, 25014, 60140, 5); // FP Loss
+    InitializeEvent(15, 11048, 1047620015, 1047620016, 1047610495, 25015, 60150, 5); // Stamina Recovery Drain
+    InitializeEvent(16, 11048, 1047620016, 1047620017, 1047610530, 25016, 60160, 5); // Physical Damage
+    InitializeEvent(17, 11048, 1047620017, 1047620018, 1047610535, 25017, 60170, 5); // Magic Damage
+    InitializeEvent(18, 11048, 1047620018, 1047620019, 1047610540, 25018, 60180, 5); // Fire Damage
+    InitializeEvent(19, 11048, 1047620019, 1047620020, 1047610545, 25019, 60190, 5); // Lightning Damage
+    InitializeEvent(20, 11048, 1047620020, 1047620021, 1047610550, 25020, 60200, 5); // Holy Damage
+    InitializeEvent(21, 11048, 1047620021, 1047620022, 1047610555, 25021, 60210, 5); // Slash Absorption
+    InitializeEvent(22, 11048, 1047620022, 1047620023, 1047610560, 25022, 60220, 5); // Strike Absorption
+    InitializeEvent(23, 11048, 1047620023, 1047620024, 1047610565, 25023, 60230, 5); // Thrust Absorption
+    InitializeEvent(24, 11048, 1047620024, 1047620025, 1047610570, 25024, 60240, 5); // Standard Absorption
+    InitializeEvent(25, 11048, 1047620025, 1047620026, 1047610575, 25025, 60250, 5); // Magic Absorption
+    InitializeEvent(26, 11048, 1047620026, 1047620027, 1047610580, 25026, 60260, 5); // Fire Absorption
+    InitializeEvent(27, 11048, 1047620027, 1047620028, 1047610585, 25027, 60270, 5); // Lightning Absorption
+    InitializeEvent(28, 11048, 1047620028, 1047620029, 1047610590, 25028, 60280, 5); // Holy Absorption
+    InitializeEvent(29, 11048, 1047620029, 1047620030, 1047610595, 25029, 60290, 5); // Toughness Absorption
+    InitializeEvent(30, 11048, 1047620030, 1047620031, 1047610635, 25030, 60300, 5); // Poison Resist
+    InitializeEvent(31, 11048, 1047620031, 1047620032, 1047610640, 25031, 60310, 5); // Scarlet Rot Resist
+    InitializeEvent(32, 11048, 1047620032, 1047620033, 1047610645, 25032, 60320, 5); // Hemorrhage Resist
+    InitializeEvent(33, 11048, 1047620033, 1047620034, 1047610650, 25033, 60330, 5); // Blight Resist
+    InitializeEvent(34, 11048, 1047620034, 1047620035, 1047610655, 25034, 60340, 5); // Frostbite Resist
+    InitializeEvent(35, 11048, 1047620035, 1047620036, 1047610660, 25035, 60350, 5); // Sleep Resist
+    InitializeEvent(36, 11048, 1047620036, 1047620037, 1047610665, 25036, 60360, 5); // Madness Resist
+    InitializeEvent(37, 11048, 1047620037, 1047620038, 1047610670, 25037, 60370, 5); // Guard Stability
+    InitializeEvent(38, 11048, 1047620038, 1047620039, 1047610675, 25038, 60380, 10); // Rune Absorption
+    InitializeEvent(39, 11048, 1047620039, 1047620040, 1047610680, 25039, 60390, 10); // Skill FP Consumption
+    InitializeEvent(40, 11048, 1047620040, 1047620041, 1047610685, 25040, 60400, 10); // Sorcery FP Consumption
+    InitializeEvent(41, 11048, 1047620041, 1047620042, 1047610690, 25041, 60410, 10); // Incantation FP Consumption
+    InitializeEvent(42, 11048, 1047620042, 1047620043, 1047610695, 25042, 60420, 10); // Cast Speed
+    InitializeEvent(43, 11048, 1047620043, 1047620044, 1047610725, 25043, 60430, 10); // Weapon Stamina Consumption
+    InitializeEvent(44, 11048, 1047620044, 1047620045, 1047610730, 25044, 60440, 10); // Vendor Greed
 });
 
 //-------------------

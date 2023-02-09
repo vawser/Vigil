@@ -31,10 +31,6 @@
 # Bosses
 - Split Beast Clergyman and Maliketh into 2 fights
 
-# Spells
-- Expand Blood school
-- Expand Death school
-
 # Spirit Summons
 - Add more types.
 - Add method to allow multiple.
@@ -62,7 +58,7 @@
     - Fodder enemies will be hidden and new Caelid enemies will be added.
     - Caelid assets could also be added.
 
-# Soul
+# Blessings
 - Acting like the Skyrim stones, the sword shrine locations will allow the player to accept the soul from an 'entity'.
  - Acts like a 'archetype template', forcing the player into that specific niche.
  - Will be given via item when the player interacts with the shrine.
@@ -80,6 +76,12 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-Add class archetypes, via the Blessings ssytem
+# Spells
+- Expand Blood school
+- Expand Death school
 
-246 Marika's Necklace
+Golden Remembrance needs dupe shop support
+Combat castigations may still be too liberal with their application
+Remove aggro changes from Conqueror difficulty (leave on Accursed)
+Colosseum music needs to be shifted by 1 (e.g. Gideon Olfnir plays Maliketh)
+Madness is not ticking its damage correctly
