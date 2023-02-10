@@ -544,12 +544,6 @@ def t000004040_x100():
         ClearTalkListData()
         c1_110()
         
-        # Ashes of War
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 8590, 4, 1, 0) == 1, 8, 15000530, -1)
-        
-        # Memorize spell
-        AddTalkListData(4, 15000390, -1)
-        
         # Heal Player
         AddTalkListData(3, 80103502, -1)
         

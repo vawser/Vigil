@@ -33,6 +33,14 @@
  - Defeating the Elden Beast in this journey type will reward Marika's Necklace.
   - Detriments are removed upon defeating the Elden Beast.
 
+# Training System
+- Added a new enemy type to the dummy selection:
+ - Player: Self, which copies you.
+ - Player: Random, which selects NPCs like the Great Jar encounter.
+
+- Made the Dummy Configuration menu show what is enabled.
+- Added a site of grace in the lower hall.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

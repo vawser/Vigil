@@ -58,6 +58,10 @@
     - Fodder enemies will be hidden and new Caelid enemies will be added.
     - Caelid assets could also be added.
 
+# Spells
+- Expand Blood school
+- Expand Death school
+
 # Blessings
 - Acting like the Skyrim stones, the sword shrine locations will allow the player to accept the soul from an 'entity'.
  - Acts like a 'archetype template', forcing the player into that specific niche.
@@ -76,9 +80,10 @@
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-# Spells
-- Expand Blood school
-- Expand Death school
-
 Combat castigations may still be too liberal with their application
-Madness is not ticking its damage correctly
+
+11100820
+
+190060
+
+549000000 / 24020

@@ -536,6 +536,9 @@
 1047610711 Type: Black Knife Assassin 
 1047610712 Type: Runebear
 1047610713 Type: Imp
+1047610714 Type: Player: Self
+1047610715 Type: Player: Random
+
 
 1047610800 Dummy Setup
 1047610801 Enable HP Regeneration

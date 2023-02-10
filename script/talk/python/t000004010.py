@@ -544,20 +544,23 @@ def t000004010_x100():
         ClearTalkListData()
         c1_110()
         
-        # Core Configuration
-        AddTalkListData(1, 80103000, -1)
+        # Spawn Dummy
+        AddTalkListData(6, 80103004, -1)
         
-        # HP Configuration
-        AddTalkListData(2, 80103002, -1)
-        
-        # Absorption Configuration
-        AddTalkListData(3, 80103001, -1)
-        
-        # Formation Configuration
+        # Formation Type
         AddTalkListData(4, 80103003, -1)
         
-        # Type Configuration
+        # Enemy Type
         AddTalkListData(5, 80103400, -1)
+        
+        # Max HP
+        AddTalkListData(2, 80103002, -1)
+        
+        # Absorption
+        AddTalkListData(3, 80103001, -1)
+        
+        # Status
+        AddTalkListData(1, 80103000, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -581,6 +584,10 @@ def t000004010_x100():
         elif GetTalkListEntryResult() == 5:
             assert t000004010_x140()
             continue
+        elif GetTalkListEntryResult() == 6:
+            SetEventFlag(1047610700, 1)
+            assert t000004010_x150(80103080)
+            return 0
         else:
             """State 6,8"""
             return 0
@@ -593,23 +600,35 @@ def t000004010_x101():
         ClearTalkListData()
         c1_110()
         
-        # Toggle Regeneration
-        AddTalkListData(1, 80103010, -1)
+        # Can regenerate HP (off)
+        AddTalkListDataIf(GetEventFlag(1047610801) == 0, 1, 80103120, -1)
+        # Can regenerate HP (on)
+        AddTalkListDataIf(GetEventFlag(1047610801) == 1, 1, 80103130, -1)
         
-        # Toggle Aux Inflict
-        AddTalkListData(3, 80103012, -1)
+        # Can be staggered (off)
+        AddTalkListDataIf(GetEventFlag(1047610802) == 0, 2, 80103121, -1)
+        # Can be staggered (on)
+        AddTalkListDataIf(GetEventFlag(1047610802) == 1, 2, 80103131, -1)
         
-        # Toggle Stagger
-        AddTalkListData(2, 80103011, -1)
+        # Can be inflicted by status effects (off)
+        AddTalkListDataIf(GetEventFlag(1047610804) == 0, 3, 80103122, -1)
+        # Can be inflicted by status effects (on)
+        AddTalkListDataIf(GetEventFlag(1047610804) == 1, 3, 80103132, -1)
         
-        # Toggle Backstabs
-        AddTalkListData(5, 80103014, -1)
+        # Can fight back (off)
+        AddTalkListDataIf(GetEventFlag(1047610803) == 0, 4, 80103123, -1)
+        # Can fight back (on)
+        AddTalkListDataIf(GetEventFlag(1047610803) == 1, 4, 80103133, -1)
         
-        # Toggle Damage
-        AddTalkListData(6, 80103015, -1)
+        # Can be backstabbed (off)
+        AddTalkListDataIf(GetEventFlag(1047610805) == 0, 5, 80103124, -1)
+        # Can be backstabbed (off)
+        AddTalkListDataIf(GetEventFlag(1047610805) == 1, 5, 80103134, -1)
         
-        # Toggle Hostility
-        AddTalkListData(4, 80103013, -1)
+        # Can deal damage (off)
+        AddTalkListDataIf(GetEventFlag(1047610806) == 0, 6, 80103125, -1)
+        # Can deal damage (on)
+        AddTalkListDataIf(GetEventFlag(1047610806) == 1, 6, 80103135, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -665,22 +684,34 @@ def t000004010_x110():
         c1_110()
         
         # Set Max HP to 2,000
-        AddTalkListData(1, 80103100, -1)
+        AddTalkListDataIf(GetEventFlag(1047610810) == 0, 1, 80103100, -1)
+        # Set Max HP to 2,000 (selected)
+        AddTalkListDataIf(GetEventFlag(1047610810) == 1, 1, 80103110, -1)
         
         # Set Max HP to 5,000
-        AddTalkListData(2, 80103101, -1)
+        AddTalkListDataIf(GetEventFlag(1047610811) == 0, 2, 80103101, -1)
+        # Set Max HP to 5,000 (selected)
+        AddTalkListDataIf(GetEventFlag(1047610811) == 1, 2, 80103111, -1)
         
         # Set Max HP to 10,000
-        AddTalkListData(3, 80103102, -1)
+        AddTalkListDataIf(GetEventFlag(1047610812) == 0, 3, 80103102, -1)
+        # Set Max HP to 10,000 (selected)
+        AddTalkListDataIf(GetEventFlag(1047610812) == 1, 3, 80103112, -1)
         
         # Set Max HP to 20,000
-        AddTalkListData(4, 80103103, -1)
+        AddTalkListDataIf(GetEventFlag(1047610813) == 0, 4, 80103103, -1)
+        # Set Max HP to 20,000 (selected)
+        AddTalkListDataIf(GetEventFlag(1047610813) == 1, 4, 80103113, -1)
         
         # Set Max HP to 50,000
-        AddTalkListData(5, 80103104, -1)
+        AddTalkListDataIf(GetEventFlag(1047610814) == 0, 5, 80103104, -1)
+        # Set Max HP to 50,000 (selected)
+        AddTalkListDataIf(GetEventFlag(1047610814) == 1, 5, 80103114, -1)
         
         # Set Max HP to 10,000
-        AddTalkListData(6, 80103105, -1)
+        AddTalkListDataIf(GetEventFlag(1047610815) == 0, 6, 80103105, -1)
+        # Set Max HP to 10,000 (selected)
+        AddTalkListDataIf(GetEventFlag(1047610815) == 1, 6, 80103115, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -720,7 +751,7 @@ def t000004010_x111(flag=_):
     SetEventFlag(1047610815, 0)
     
     SetEventFlag(flag, 1)
-    assert t000004010_x150(80103110)
+    assert t000004010_x150(80103090)
           
     return 0
     
@@ -798,22 +829,34 @@ def t000004010_x121(base_flag=_):
         c1_110()
         
         # None
-        AddTalkListData(1, 80103210, -1)
+        AddTalkListDataIf(GetEventFlag(base_flag) == 0, 1, 80103210, -1)
+        # None (selected)
+        AddTalkListDataIf(GetEventFlag(base_flag) == 1, 1, 80103220, -1)
         
         # +20%
-        AddTalkListData(2, 80103211, -1)
+        AddTalkListDataIf(GetEventFlag(base_flag + 1) == 0, 2, 80103211, -1)
+        # +20% (selected)
+        AddTalkListDataIf(GetEventFlag(base_flag + 1) == 1, 2, 80103221, -1)
         
         # +40%
-        AddTalkListData(3, 80103212, -1)
+        AddTalkListDataIf(GetEventFlag(base_flag + 2) == 0, 3, 80103212, -1)
+        # +40% (selected)
+        AddTalkListDataIf(GetEventFlag(base_flag + 2) == 1, 3, 80103222, -1)
         
         # +60%
-        AddTalkListData(4, 80103213, -1)
+        AddTalkListDataIf(GetEventFlag(base_flag + 3) == 0, 4, 80103213, -1)
+        # +60% (selected)
+        AddTalkListDataIf(GetEventFlag(base_flag + 3) == 1, 4, 80103223, -1)
         
         # +80%
-        AddTalkListData(5, 80103214, -1)
+        AddTalkListDataIf(GetEventFlag(base_flag + 4) == 0, 5, 80103214, -1)
+        # +80% (selected)
+        AddTalkListDataIf(GetEventFlag(base_flag + 4) == 1, 5, 80103224, -1)
         
         # +100%
-        AddTalkListData(6, 80103215, -1)
+        AddTalkListDataIf(GetEventFlag(base_flag + 5) == 0, 6, 80103215, -1)
+        # +100% (selected)
+        AddTalkListDataIf(GetEventFlag(base_flag + 5) == 1, 6, 80103225, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -853,7 +896,7 @@ def t000004010_x122(base_flag=_, flag=_):
     SetEventFlag(base_flag + 5, 0)
     
     SetEventFlag(flag, 1)
-    assert t000004010_x150(80103220)
+    assert t000004010_x150(80103230)
           
     return 0
     
@@ -866,19 +909,29 @@ def t000004010_x130():
         c1_110()
         
         # Single
-        AddTalkListData(1, 80103300, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610701) == 0, 1, 80103300, -1)
+        # Single (selected)
+        AddTalkListDataIf(GetEventFlag(1047610701) == 1, 1, 80103310, -1)
+        
         # Triangle Triple
-        AddTalkListData(2, 80103301, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610702) == 0, 2, 80103301, -1)
+        # Triangle Triple (selected)
+        AddTalkListDataIf(GetEventFlag(1047610702) == 1, 2, 80103311, -1)
+        
         # Square Quad
-        AddTalkListData(3, 80103302, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610703) == 0, 3, 80103302, -1)
+        # Square Quad (selected)
+        AddTalkListDataIf(GetEventFlag(1047610703) == 1, 3, 80103312, -1)
+        
         # Parallel Duo
-        AddTalkListData(4, 80103303, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610704) == 0, 4, 80103303, -1)
+        # Parallel Duo (selected)
+        AddTalkListDataIf(GetEventFlag(1047610714) == 1, 4, 80103313, -1)
+        
         # Clustered Mass
-        AddTalkListData(5, 80103304, -1)
+        AddTalkListDataIf(GetEventFlag(1047610705) == 0, 5, 80103304, -1)
+        # Clustered Mass (selected)
+        AddTalkListDataIf(GetEventFlag(1047610705) == 1, 5, 80103314, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -916,7 +969,7 @@ def t000004010_x131(flag=_):
     SetEventFlag(flag, 1)
     SetEventFlag(1047610700, 1)
     
-    assert t000004010_x150(80103310)
+    assert t000004010_x150(80103320)
     
     return 0
     
@@ -928,15 +981,31 @@ def t000004010_x140():
         ClearTalkListData()
         c1_110()
         
+        # Player: Self
+        AddTalkListDataIf(GetEventFlag(1047610714) == 0, 4, 80103404, -1)
+        # Player: Self (selected)
+        AddTalkListDataIf(GetEventFlag(1047610714) == 1, 4, 80103413, -1)
+        
+        # Player: Random
+        AddTalkListDataIf(GetEventFlag(1047610715) == 0, 5, 80103405, -1)
+        # Player: Random (selected)
+        AddTalkListDataIf(GetEventFlag(1047610715) == 1, 5, 80103414, -1)
+        
         # Black Knife Assassin
-        AddTalkListData(1, 80103401, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610711) == 0, 1, 80103401, -1)
+        # Black Knife Assassin (selected)
+        AddTalkListDataIf(GetEventFlag(1047610711) == 1, 1, 80103410, -1)
+        
         # Runebear
-        AddTalkListData(2, 80103402, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610712) == 0, 2, 80103402, -1)
+        # Runebear (selected)
+        AddTalkListDataIf(GetEventFlag(1047610712) == 1, 2, 80103411, -1)
+        
         # Imp
-        AddTalkListData(3, 80103403, -1)
-
+        AddTalkListDataIf(GetEventFlag(1047610713) == 0, 3, 80103403, -1)
+        # Imp (selected)
+        AddTalkListDataIf(GetEventFlag(1047610713) == 1, 3, 80103412, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -953,6 +1022,12 @@ def t000004010_x140():
         elif GetTalkListEntryResult() == 3:
             assert t000004010_x141(1047610713)
             return 0
+        elif GetTalkListEntryResult() == 4:
+            assert t000004010_x141(1047610714)
+            return 0
+        elif GetTalkListEntryResult() == 5:
+            assert t000004010_x141(1047610715)
+            return 0
         else:
             """State 6,8"""
             return 0
@@ -961,6 +1036,8 @@ def t000004010_x141(flag=_):
     SetEventFlag(1047610711, 0)
     SetEventFlag(1047610712, 0)
     SetEventFlag(1047610713, 0)
+    SetEventFlag(1047610714, 0)
+    SetEventFlag(1047610715, 0)
     
     SetEventFlag(flag, 1)
     SetEventFlag(1047610710, 1)
