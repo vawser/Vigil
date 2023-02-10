@@ -899,8 +899,8 @@ def t000001200_x50():
         # Level Up
         AddTalkListData(7, 15000540, -1)
         
-        # Quit
-        AddTalkListData(99, 80100015, -1)
+        # Leave
+        AddTalkListData(99, 26080001, -1)
 
         ShowShopMessage(1)
         
