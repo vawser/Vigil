@@ -261,27 +261,46 @@ function ExecMultiJump()
 end
 
 -- Each Guard Start animation in the TAE has a Standard and Perfect Deflect window applied (via SpEffect).
--- VFX 61040 is useful in the trigger SpEffects for seeing the frames when testing
-function TrackDeflection()
-    -- Perfect Deflect visual
-    if env(GetSpEffectID, 150970) == TRUE then
-        if env(GetSpEffectID, 150020) == TRUE or env(GetSpEffectID, 150021) == TRUE then
-            act(AddSpEffect, 150971)
+function ApplyDeflectionWindow()
+    -- Don't apply if player was hit beforehand
+    if env(GetSpEffectID, 150001) == FALSE then
+        -- Shinobi Sight (adds icons tot he deflect effects)
+        if env(GetSpEffectID, 150970) == TRUE then
+            -- Deflect window
+            act(AddSpEffect, 150020)
+            
+            -- Shinobi's Whetstone
+            if env(GetSpEffectID, 150960) == TRUE then
+                act(AddSpEffect, 150022) -- Perfect Deflect extended window
+            else
+                act(AddSpEffect, 150021) -- Perfect Deflect window
+            end
+        -- No Sight
+        else
+            -- Deflect window
+            act(AddSpEffect, 150010)
+            
+            -- Shinobi's Whetstone
+            if env(GetSpEffectID, 150960) == TRUE then
+                act(AddSpEffect, 150012) -- Perfect Deflect extended window
+            else
+                act(AddSpEffect, 150011) -- Perfect Deflect window
+            end
         end
     end
+end
 
-    -- Is Guarding + Is Hit
-    if env(GetSpEffectID, 150000) == TRUE and env(GetSpEffectID, 150001) == TRUE then
-        -- Deflect hasn't occured for 1 second
-        if env(GetSpEffectID, 150002) == FALSE then
-            -- Using normal Perfect Deflect window
-            if env(GetSpEffectID, 150020) == TRUE then
-                HandleDeflect()
-            end
-            
-            -- Using extended Perfect Deflect window
-            if env(GetSpEffectID, 150960) == TRUE then
-                if env(GetSpEffectID, 150020) == TRUE or env(GetSpEffectID, 150021) == TRUE then
+function TrackDeflection()
+    -- Guard cooldown, stops guard spam from being effective.
+    if env(GetSpEffectID, 150003) == FALSE then
+        act(AddSpEffect, 150003)
+        
+        -- Was Hit
+        if env(GetSpEffectID, 150001) == TRUE then
+            -- Deflect Cooldown
+            if env(GetSpEffectID, 150002) == FALSE then
+                -- If Perfect Deflect window is active, apply bullet
+                if env(GetSpEffectID, 150011) == TRUE or env(GetSpEffectID, 150012) == TRUE or env(GetSpEffectID, 150021) == TRUE or env(GetSpEffectID, 150012) == TRUE then
                     HandleDeflect()
                 end
             end
@@ -758,8 +777,7 @@ function ExecGuard(event, blend_type)
                 hand = HAND_RIGHT
             end
             
-            -- Vigil: Is Guarding
-            act(AddSpEffect, 150000)
+            ApplyDeflectionWindow()
     
             local kind = env(GetEquipWeaponCategory, hand)
             local sp_kind = env(GetEquipWeaponSpecialCategoryNumber, hand)

@@ -6,35 +6,6 @@
 #-------------------------------------------------
 # Ideas
 #-------------------------------------------------
-# Concordats
-- Implement covenants for each of the factions of Elden Ring
-    - Operate like traditional covenants: 3 rewards at 10/20/30 turnins
-    - Each require own token, token will be from certain (non-trival) enemies
-    - Include TalkToPlayer stuff for this
-    - Tokens can also deepen bond (like Cinders), providing covenant buff. This is removed if pledge is changed to another covenant.
-
-# Shinobi's Challenge
-- A platforming challenge that makes use of the multi-jump mechanics:
-
-# Armor Ascension
-- Add reinforcement-like system to armor via Tailoring menu
-
-# Affinity Effects
-- Add elemental buffs during certain attacks when infused with Fire/Magic/etc.
-    For example: Fire Longsword would have a fire buff appear with the charged heavy attac
-    Implementation:
-        Notify HKS via notify SpEffect placed in TAE (0 duration)
-        HKS will apply the affinty buff (i.e. Fire buff is applied if notify SpEffect is detected)
-        
-- Can also extend to bullets (i.e. fireball)
-
-# Bosses
-- Split Beast Clergyman and Maliketh into 2 fights
-
-# Spirit Summons
-- Add more types.
-- Add method to allow multiple.
-
 # Friendly Settlements
 - Add in friendly settlements with NPCs and simple quests to give the player something to anchor their travel around:
     - Limgrave 
@@ -58,32 +29,45 @@
     - Fodder enemies will be hidden and new Caelid enemies will be added.
     - Caelid assets could also be added.
 
-# Spells
+# Concordats
+- Implement covenants for each of the factions of Elden Ring
+    - Operate like traditional covenants: 3 rewards at 10/20/30 turnins
+    - Each require own token, token will be from certain (non-trival) enemies
+    - Include TalkToPlayer stuff for this
+    - Tokens can also deepen bond (like Cinders), providing covenant buff. This is removed if pledge is changed to another covenant.
+
+# Shinobi's Challenge
+- A platforming challenge that makes use of the multi-jump mechanics:
+
+# Armor Ascension
+- Add reinforcement-like system to armor via Tailoring menu
+
+# Affinity Effects
+- Add elemental buffs during certain attacks when infused with Fire/Magic/etc.
+    For example: Fire Longsword would have a fire buff appear with the charged heavy attac
+    Implementation:
+        Notify HKS via notify SpEffect placed in TAE (0 duration)
+        HKS will apply the affinty buff (i.e. Fire buff is applied if notify SpEffect is detected)
+        
+- Can also extend to bullets (i.e. fireball)
+
+# Bosses
+- Split Beast Clergyman and Maliketh so once Beast Clergyman has been defeated once, the player can skip straight to Maliketh.
+
+# Content
 - Expand Blood school
 - Expand Death school
+- Add new physicks
+- Add new Spirit Summons.
 
-# Blessings
+#-------------------------------------------------
+# WIP
+#-------------------------------------------------
+# Sigils
 - Acting like the Skyrim stones, the sword shrine locations will allow the player to accept the soul from an 'entity'.
  - Acts like a 'archetype template', forcing the player into that specific niche.
  - Will be given via item when the player interacts with the shrine.
  - Use the cut content sleep enemy icons 
  
- IF player has no blessing
-    REMOVE all blessings
-    ADD shrine blessing
- ELSEIF player has shrine blessing
-    REMOVE shrine blessing
- ELSEIF player has different blessing
-    REMOVE all blessings
-    ADD shrine blessing
-
-#-------------------------------------------------
-# WIP
-#-------------------------------------------------
-Combat castigations may still be too liberal with their application
-
-11100820
-
-190060
-
-549000000 / 24020
+Assets:
+ AEG099_376

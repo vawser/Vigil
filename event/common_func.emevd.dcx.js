@@ -6909,3 +6909,16 @@ $Event(90006000, Default, function(X0_4, X4_4) {
     
     EndEvent();
 });
+
+// Vigil - Blessing Interaction
+$Event(90006100, Restart, function(X0_4, X4_4) {
+    DisableNetworkSync();
+    WaitFor(ActionButtonInArea(9330, X0_4));
+    
+    // 
+    
+    
+    WaitFixedTimeSeconds(2);
+    RestartEvent();
+});
+

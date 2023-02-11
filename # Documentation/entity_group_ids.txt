@@ -1,3 +1,6 @@
-﻿400005000 Enemy
+﻿# General
+400005000 Enemy
 400005010 Boss (included in Enemy too)
 
+# Enemy Types
+400005100 
