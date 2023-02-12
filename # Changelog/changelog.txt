@@ -82,6 +82,9 @@
 #-------------------------------------------------
 # Spells
 #-------------------------------------------------
+- Added Briarthorn Patch:
+ - Emits a blood shot, leaving behind a briarthorn patch for a few seconds.
+ - Found in the Weeping Peninsula.
 
 #-------------------------------------------------
 # Great Runes

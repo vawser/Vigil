@@ -6504,7 +6504,7 @@ $Event(11000, Default, function() {
     EndIf(ThisEventSlot());
     
     // DEBUG
-    // AwardItemLot(1000);
+    //AwardItemLot(1000);
     
     // SetSpEffect(10000, 7000090);
     // SetSpEffect(10000, 7000091);
@@ -7176,8 +7176,8 @@ $Event(11021, Default, function() {
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
     // Screenshot Zone
-    //SetEventFlagID(1047610014, ON);
-    //WarpPlayer(34, 14, 0, 0, 34140982, -1);
+    SetEventFlagID(1047610014, ON);
+    WarpPlayer(34, 14, 0, 0, 34140982, -1);
         
     // Radagon
     //SetEventFlagID(19000850, OFF);
@@ -7187,8 +7187,8 @@ $Event(11021, Default, function() {
     //WarpPlayer(19, 0, 0, 0, 19000982, -1);
     
     // Elden Beast
-    SetEventFlagID(19000800, OFF);
-    SetEventFlagID(71901, OFF);
+    //SetEventFlagID(19000800, OFF);
+    //SetEventFlagID(71901, OFF);
     
     // Portal Test
     //WarpPlayer(60, 49, 55, 0, 1049550980, -1);

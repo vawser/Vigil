@@ -3433,9 +3433,9 @@
 523903	Stars of Ruin (charged projectile burst)	
 523907	Stars of Ruin (projectile)	
 523908	Stars of Ruin (projectile burst)	
-523910	Briars of Sin (staff thorns)	
-523911	Briars of Sin (stab blood spray)	
-523912	Briars of Sin (thorn spiral 1)	
+523910	Briars of Sin (staff thorns) - Blood Bolt
+523911	Briars of Sin (stab blood spray) - Blood Burst
+523912	Briars of Sin (thorn spiral 1)
 523913	Briars of Sin (thorn spiral 2)	
 523914	Briars of Sin (thorn spiral 3)	
 523915	Briars of Sin (blood pool at feet)	
