@@ -52,6 +52,8 @@
 #-------------------------------------------------
 # Enemies
 #-------------------------------------------------
+- All instances of enemy absorption exceeding 50% has been capped at 50%, i.e. Elden Beast had 80% Holy absorption, it now has 50%.
+ - Increased affected enemy HP slightly to account for this change so difficulty isn't massively changed.
 
 #-------------------------------------------------
 # World
