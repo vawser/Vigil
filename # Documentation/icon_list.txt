@@ -23,7 +23,7 @@
 45020 Rotten Raisin
 45021 Volcanic Raisin
 45022 Briarthorn Patch
-45023
+45023 Flame of Destiny
 45024
 45025
 45026

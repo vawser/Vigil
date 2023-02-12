@@ -86,6 +86,10 @@
  - Emits a blood shot, leaving behind a briarthorn patch for a few seconds.
  - Found in the Weeping Peninsula.
 
+- Added Flame of Destiny:
+ - O' Flame but for Destined Death. Applies same debuffs as Black Blade.
+ - Found in Crumbling Farum Azula.
+ 
 #-------------------------------------------------
 # Great Runes
 #-------------------------------------------------
@@ -100,3 +104,12 @@
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
+525420	Black Blade (blade appears)	
+525421	Black Blade (?)	nothing
+525422	Black Blade (slash projectile, heavily tilted left)	
+525423	Black Blade (slash projectile burst)	
+525424	Black Blade (slash projectile, tilted left)	
+525425	Black Blade (slash projectile, heavily tilted right)	
+525426	Black Blade (slash projectile, tilted right)	
+
+12002000
