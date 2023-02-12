@@ -92,6 +92,10 @@
  - O' Flame but for Destined Death. Applies same debuffs as Black Blade.
  - Found in Crumbling Farum Azula.
  
+- Added Vow of Silence:
+ - Silences both the caster and nearby enemies.
+ - Sold by Brother Corhyn after giving him the Assassin's Prayerbook.
+ 
 #-------------------------------------------------
 # Great Runes
 #-------------------------------------------------
@@ -106,12 +110,13 @@
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
-525420	Black Blade (blade appears)	
-525421	Black Blade (?)	nothing
-525422	Black Blade (slash projectile, heavily tilted left)	
-525423	Black Blade (slash projectile burst)	
-525424	Black Blade (slash projectile, tilted left)	
-525425	Black Blade (slash projectile, heavily tilted right)	
-525426	Black Blade (slash projectile, tilted right)	
+45024 Vow of Silence
 
-12002000
+6540
+
+Incantation of the Two Fingers' servants, who once served as the assassins of the Roundtable Hold.
+
+Silences both the caster and nearby enemies.
+This incantation can be cast while in motion or crouching.
+
+The assassins were themselves once Tarnished who had strayed from guidance.

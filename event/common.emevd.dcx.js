@@ -6506,6 +6506,11 @@ $Event(11000, Default, function() {
     // DEBUG
     //AwardItemLot(1000);
     
+    // Hidden Helm/Armor
+    //SetSpEffect(10000, 7000030);
+    //SetSpEffect(10000, 7000051);
+    
+    // Easy Kill Mode
     // SetSpEffect(10000, 7000090);
     // SetSpEffect(10000, 7000091);
     // SetSpEffect(10000, 7000092);
