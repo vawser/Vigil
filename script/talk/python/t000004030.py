@@ -556,6 +556,9 @@ def t000004030_x100():
         # Combat Castigations
         AddTalkListData(4, 89100022, -1)
         
+        # Fun Castigations
+        AddTalkListData(5, 89100023, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -578,6 +581,10 @@ def t000004030_x100():
         # Combat Castigations
         elif GetTalkListEntryResult() == 4:
             assert t000004030_x103()
+            continue
+        # Fun Castigations
+        elif GetTalkListEntryResult() == 5:
+            assert t000004030_x104()
             continue
         else:
             return 0
@@ -839,6 +846,38 @@ def t000004030_x103():
         # Blighted Touch (enabled)
         elif GetTalkListEntryResult() == 204:
             assert t000004030_x111(1047610906, 0, 89100306)
+            continue
+        else:
+            return 0
+            
+#----------------------------------------------------
+# Castigations (Fun)
+#----------------------------------------------------
+def t000004030_x104():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Megamind
+        AddTalkListDataIf(GetEventFlag(1047610980) == 0, 100, 89100140, -1)
+        
+        # Megamind (selected)
+        AddTalkListDataIf(GetEventFlag(1047610980) == 1, 200, 89100180, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Megamind
+        if GetTalkListEntryResult() == 100:
+            assert t000004030_x111(1047610980, 1, 89100240)
+            continue
+        # Megamind (enabled)
+        elif GetTalkListEntryResult() == 200:
+            assert t000004030_x111(1047610980, 0, 89100340)
             continue
         else:
             return 0

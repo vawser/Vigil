@@ -9174,6 +9174,16 @@ $Event(14000, Restart, function() {
         ClearSpEffect(10000, 9420030);
     }
     
+    // Megamind
+    if(EventFlag(1047610980))
+    {
+        SetSpEffect(10000, 9442000);
+    }
+    else
+    {
+        ClearSpEffect(10000, 9442000);
+    }
+    
     WaitFixedTimeSeconds(2);
     
     RestartEvent();
@@ -9312,6 +9322,19 @@ $Event(14001, Restart, function() {
     else
     {
         ClearSpEffect(400005000, 9440040);
+    }
+    
+    //---------------------
+    // Castigations: Fun
+    //---------------------
+    // Megamind
+    if(EventFlag(1047610980))
+    {
+        SetSpEffect(400005000, 9442000);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9442000);
     }
     
     WaitFixedTimeSeconds(2);

@@ -54,6 +54,10 @@
 - Added a new player castigation: Brittle Bones
  - Reduces absorption by 30%.
  
+- Added a new category of castigation: Fun. This is for non-gameplay toggles such as Megamind.
+- Added new fun castigation: Megamind
+ - Enlarges the heads of all human npcs.
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
