@@ -167,7 +167,3 @@ Soporific Armament
 - Applies sleep
 303102	Soporific weapon buff (size 1)	
 
-
-30000 Lingering Rancor
-30010 Vengeful Barrage
-30020 Vengeful Strike

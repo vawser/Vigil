@@ -6770,6 +6770,7 @@ $Event(11000, Default, function() {
     InitializeEvent(80, 13000, 6210, 6211, 6212, 1047590900, 1047590901, 1047590902); // Signet of Fury
     InitializeEvent(81, 13000, 6220, 6221, 6222, 1047590910, 1047590911, 1047590912); // Forgotten Pendant
     InitializeEvent(82, 13000, 6230, 6231, 6232, 1047590920, 1047590921, 1047590922); // Blood Conduit
+    InitializeEvent(83, 13000, 6250, 6251, 6252, 1047590930, 1047590931, 1047590932); // Riding Horn
     
     //----------------------------
     // Castigations

@@ -21414,6 +21414,10 @@ GetFP = 2016
 IsCeremonyComplete = 2017
 IsCeremonyInterrupt = 2018
 
+IsSpeaking = 3000
+GetTalkID_3001 = 3001
+GetTalkID_3002 = 3002
+
 ------------------------
 -- Commands
 -- act( <command>, <args> )
