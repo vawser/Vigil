@@ -652,6 +652,12 @@ def t000004030_x102():
         # Spectral Shift (selected)
         AddTalkListDataIf(GetEventFlag(1047610910) == 1, 204, 89100160, -1)
         
+        # Relentless Approach
+        AddTalkListDataIf(GetEventFlag(1047610911) == 0, 105, 89100111, -1)
+        
+        # Relentless Approach (selected)
+        AddTalkListDataIf(GetEventFlag(1047610911) == 1, 205, 89100161, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -697,6 +703,13 @@ def t000004030_x102():
         # Spectral Shift (enabled)
         elif GetTalkListEntryResult() == 204:
             assert t000004030_x110(1047610910, 0, 89100310)
+        # Relentless Approach
+        elif GetTalkListEntryResult() == 105:
+            assert t000004030_x110(1047610911, 1, 89100211)
+            continue
+        # Relentless Approach (enabled)
+        elif GetTalkListEntryResult() == 205:
+            assert t000004030_x110(1047610911, 0, 89100311)
         else:
             return 0
             

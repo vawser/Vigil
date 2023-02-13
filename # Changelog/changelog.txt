@@ -41,9 +41,14 @@
 - Made the Dummy Configuration menu show what is enabled.
 - Added a site of grace in the lower hall.
 
+# Castigations
+- Added a new enemy castigation: Relentless Approach
+ - Causes enemies to always fight together in groups, meaning they won't wait around if multiple of them are targeting the player.
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
+- Adjusted HP curve from Vigor, moving the threshold for 1450 HP to 40 (was 30).
 
 #-------------------------------------------------
 # Bosses
@@ -166,3 +171,11 @@ Vengeful Strike
  523372	Ancient Death Rancor (charged projectile)	
  523373	Ancient Death Rancor (charged projectile burst)	
  Change launch angle, make slower
+ 
+Ghostflame Blade
+- Applies magic and frostbite
+303122	Ghostflame weapon buff (size 1)	
+
+Soporific Armament
+- Applies sleep
+303102	Soporific weapon buff (size 1)	

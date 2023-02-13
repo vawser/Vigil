@@ -7150,6 +7150,12 @@ $Event(11018, Default, function() {
         AwardItemLot(4200);
     }
     
+    // Relentless Approach
+    if(EventFlag(1047610911))
+    {
+        AwardItemLot(4210);
+    }
+    
     WaitFixedTimeSeconds(5.0); // Internal cooldown
     
     RestartEvent();
@@ -9108,11 +9114,11 @@ $Event(14000, Restart, function() {
     // Bloodthirsty Maw
     if(EventFlag(1047610907))
     {
-        SetSpEffect(10000, 9492070);
+        SetSpEffect(10000, 9420000);
     }
     else
     {
-        ClearSpEffect(10000, 9492070);
+        ClearSpEffect(10000, 9420000);
     }
 });
 
@@ -9120,6 +9126,9 @@ $Event(14000, Restart, function() {
 // Enemy: 400005000
 // Boss: 400005010
 $Event(14001, Restart, function() {
+    //---------------------
+    // Journey Type
+    //---------------------
     // Journey Type: Accursed
     if(EventFlag(1047610154))
     {
@@ -9132,104 +9141,120 @@ $Event(14001, Restart, function() {
         SetSpEffect(400005000, 7201310);
     }
     
+    //---------------------
+    // Castigations: Enemy
+    //---------------------
     // Wounded Fury
     if(EventFlag(1047610900))
     {
-        SetSpEffect(400005000, 9492000);
+        SetSpEffect(400005000, 9430000);
     }
     else
     {
-        ClearSpEffect(400005000, 9492000);
+        ClearSpEffect(400005000, 9430000);
     }
     
     // Thick Hides
     if(EventFlag(1047610901))
     {
-        SetSpEffect(400005000, 9492010);
+        SetSpEffect(400005000, 9430010);
     }
     else
     {
-        ClearSpEffect(400005000, 9492010);
+        ClearSpEffect(400005000, 9430010);
     }
     
     // Stalwart Adversaries
     if(EventFlag(1047610902))
     {
-        SetSpEffect(400005000, 9492020);
+        SetSpEffect(400005000, 9430020);
     }
     else
     {
-        ClearSpEffect(400005000, 9492020);
-    }
-    
-    // Crippling Strikes
-    if(EventFlag(1047610903))
-    {
-        SetSpEffect(400005000, 9492030);
-    }
-    else
-    {
-        ClearSpEffect(400005000, 9492030);
+        ClearSpEffect(400005000, 9430020);
     }
     
     // Regenerative Foes
     if(EventFlag(1047610904))
     {
-        SetSpEffect(400005000, 9492040);
+        SetSpEffect(400005000, 9430030);
     }
     else
     {
-        ClearSpEffect(400005000, 9492040);
-    }
-    
-    // Fetid Gash
-    if(EventFlag(1047610905))
-    {
-        SetSpEffect(400005000, 9492050);
-    }
-    else
-    {
-        ClearSpEffect(400005000, 9492050);
-    }
-    
-    // Blighted Touch
-    if(EventFlag(1047610906))
-    {
-        SetSpEffect(400005000, 9492060);
-    }
-    else
-    {
-        ClearSpEffect(400005000, 9492060);
-    }
-    
-    // Slumbering Blow
-    if(EventFlag(1047610908))
-    {
-        SetSpEffect(400005000, 9492080);
-    }
-    else
-    {
-        ClearSpEffect(400005000, 9492080);
-    }
-    
-    // Frenzying Swat
-    if(EventFlag(1047610909))
-    {
-        SetSpEffect(400005000, 9492090);
-    }
-    else
-    {
-        ClearSpEffect(400005000, 9492090);
+        ClearSpEffect(400005000, 9430030);
     }
     
     // Spectral Shift
     if(EventFlag(1047610910))
     {
-        SetSpEffect(400005000, 9492100);
+        SetSpEffect(400005000, 9430040);
     }
     else
     {
-        ClearSpEffect(400005000, 9492100);
+        ClearSpEffect(400005000, 9430040);
+    }
+    
+    // Relentless Approach
+    if(EventFlag(1047610911))
+    {
+        SetSpEffect(400005000, 9430050);
+    }
+    else
+    {
+        ClearSpEffect(400005001, 9430050);
+    }
+    
+    //---------------------
+    // Castigations: Combat
+    //---------------------
+    // Crippling Strikes
+    if(EventFlag(1047610903))
+    {
+        SetSpEffect(400005000, 9440000);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9440000);
+    }
+    
+    // Fetid Gash
+    if(EventFlag(1047610905))
+    {
+        SetSpEffect(400005000, 9440010);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9440010);
+    }
+    
+    // Blighted Touch
+    if(EventFlag(1047610906))
+    {
+        SetSpEffect(400005000, 9440020);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9440020);
+    }
+    
+    // Slumbering Blow
+    if(EventFlag(1047610908))
+    {
+        SetSpEffect(400005000, 9440030);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9440030);
+    }
+    
+    // Frenzying Swat
+    if(EventFlag(1047610909))
+    {
+        SetSpEffect(400005000, 9440040);
+    }
+    else
+    {
+        ClearSpEffect(400005000, 9440040);
     }
     
     WaitFixedTimeSeconds(2);
