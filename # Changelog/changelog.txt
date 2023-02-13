@@ -25,7 +25,7 @@
  - Enemies gain +25% HP and damage.
 
 - Added a new journey type: Accursed.
- - Grants enemies +25% damage and absorption, and they are more interested in fighting.
+ - Grants enemies +50% damage and absorption,.
  - Every death will inflict a new detriment.
   - There are 44 types of detriment.
   - Each type can stack multiple times, upto 5 or 10 times depending on the detriment.
@@ -44,6 +44,9 @@
 # Castigations
 - Added a new enemy castigation: Relentless Approach
  - Causes enemies to always fight together in groups, meaning they won't wait around if multiple of them are targeting the player.
+ 
+- Added a new player castigation: Fresh Meat
+ - Adds target priority to the player, and makes enemies much better at seeing and hearing the player.
  
 #-------------------------------------------------
 # Player

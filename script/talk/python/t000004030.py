@@ -596,6 +596,12 @@ def t000004030_x101():
         # Bloodthirsty Maw (selected)
         AddTalkListDataIf(GetEventFlag(1047610907) == 1, 200, 89100157, -1)
 
+        # Fresh Meat
+        AddTalkListDataIf(GetEventFlag(1047610912) == 0, 101, 89100112, -1)
+        
+        # Fresh Meat (selected)
+        AddTalkListDataIf(GetEventFlag(1047610912) == 1, 201, 89100162, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -610,6 +616,14 @@ def t000004030_x101():
         # Bloodthirsty Maw (enabled)
         elif GetTalkListEntryResult() == 200:
             assert t000004030_x110(1047610907, 0, 89100307)
+            continue
+        # Fresh Meat
+        elif GetTalkListEntryResult() == 101:
+            assert t000004030_x110(1047610912, 1, 89100212)
+            continue
+        # Fresh Meat (enabled)
+        elif GetTalkListEntryResult() == 201:
+            assert t000004030_x110(1047610912, 0, 89100312)
             continue
         else:
             return 0

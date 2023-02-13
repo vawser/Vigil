@@ -7156,6 +7156,12 @@ $Event(11018, Default, function() {
         AwardItemLot(4210);
     }
     
+    // Fresh Meat
+    if(EventFlag(1047610911))
+    {
+        AwardItemLot(4220);
+    }
+    
     WaitFixedTimeSeconds(5.0); // Internal cooldown
     
     RestartEvent();
@@ -7236,9 +7242,7 @@ $Event(11030, Restart, function() {
     // Accursed
     if(EventFlag(1047610154))
     {
-        SetSpEffect(10000, 7201400);
-        SetSpEffect(10000, 7201401);
-        SetSpEffect(10000, 7201402);
+        
     }
 });
 
@@ -9120,6 +9124,21 @@ $Event(14000, Restart, function() {
     {
         ClearSpEffect(10000, 9420000);
     }
+    
+    // Fresh Meat
+    if(EventFlag(1047610912))
+    {
+        SetSpEffect(10000, 9420010);
+        SetSpEffect(10000, 9420011);
+        SetSpEffect(10000, 9420012);
+    }
+    else
+    {
+        ClearSpEffect(10000, 9420010);
+        ClearSpEffect(10000, 9420011);
+        ClearSpEffect(10000, 9420012);
+    }
+    
 });
 
 // Enemies
