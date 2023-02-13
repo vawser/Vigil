@@ -1,7 +1,8 @@
 ﻿#-------------------------------------------------
 # Bugs
 #-------------------------------------------------
-- Add Grass Hair Ornament icon
+- Add Grass Hair Ornament icon.
+- Fixed Morgott not respawning correctly.
 
 #-------------------------------------------------
 # Ideas

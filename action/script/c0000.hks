@@ -14930,14 +14930,41 @@ end
 
 function Master_Layer_onGenerate()
     local offset = 0.8659999966621399
+    
     CalculateFootTarget2("L_Foot", offset, "L_Foot_Target2")
     CopyModelMatrix("L_Foot", "L_Foot_Target")
     CalculateFootTarget2("R_Foot", offset, "R_Foot_Target2")
     CopyModelMatrix("R_Foot", "R_Foot_Target")
+    
+    -- Test
+    -- HavokTest("Spine", 0, 2)
+    -- HavokTest("Spine", 1, 2)
+    -- HavokTest("Spine", 2, 2)
 end
 
 function ModifiersLayer_onGenerate()
     CopyLocalMatrix("Neck", "Collar")
+end
+
+-- Vigil: Utility
+function ModifyBonePosition(target, index, value)
+    local sourceMatrix = hkbGetBoneModelSpace(target)
+    local source = sourceMatrix:getTranslation()
+    
+    source[index] = source[index] + value
+    
+    sourceMatrix:setTranslation(source)
+    hkbSetBoneModelSpace(target, sourceMatrix)
+end
+
+function ModifyBoneScale(target, index, value)
+    local sourceMatrix = hkbGetBoneModelSpace(target)
+    local source = sourceMatrix:getScale()
+    
+    source[index] = source[index] + value
+    
+    sourceMatrix:setScale(source)
+    hkbSetBoneModelSpace(target, sourceMatrix)
 end
 
 ----------------------------------------

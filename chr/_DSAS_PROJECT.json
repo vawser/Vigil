@@ -9,7 +9,7 @@
       "LockAspectRatioDuringRemo": true,
       "Name": null,
       "CameraLocationInWorld": {
-        "Position": "-0.05296962, -0.10594496, 8.828164",
+        "Position": "-0.029997662, -0.059998564, 4.99955",
         "Rotation": {
           "X": 0.005999937,
           "Y": -0.0029999416,
@@ -37,7 +37,7 @@
         }
       },
       "CameraLocationInWorld_CloserForSound": {
-        "Position": "-0.05296962, -0.10594496, 8.828164",
+        "Position": "-0.029997662, -0.059998564, 4.99955",
         "Rotation": {
           "X": 0.005999937,
           "Y": -0.0029999416,
@@ -77,7 +77,7 @@
         "W": 0.9999775
       },
       "OrbitCamEuler": "0.012, -0.006, 0",
-      "OrbitCamDistanceInput": 8.8289585,
+      "OrbitCamDistanceInput": 5.0,
       "ProjectionVerticalFoV": 43.0,
       "ProjectionSkyboxVerticalFov": 70.0,
       "ProjectionNearClipDist": 0.1,
@@ -149,9 +149,9 @@
         "M32": 0.011999496,
         "M33": 0.99991,
         "M34": 0.0,
-        "M41": -3.7252903E-09,
-        "M42": -7.450581E-09,
-        "M43": -8.8289585,
+        "M41": 1.8626451E-09,
+        "M42": 3.7252903E-09,
+        "M43": -4.9999995,
         "M44": 1.0
       },
       "Matrix_View_Skybox": {
@@ -179,7 +179,7 @@
       "AngleSnap": 0.7853982,
       "AngleSnapEnable": false,
       "PivotPrimIsEnabled": false,
-      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.0011142492, 1.2635914, -0.37585717",
+      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.025386117, 1.2430762, -0.079762444",
       "OrbitCamCenter_DummyPolyFollowRefPoint_Init": "0, 0, 0",
       "OverallMouseSpeedMult": 1.0,
       "CameraTurnSpeedMouse": 1.0,
@@ -222,7 +222,7 @@
         "M43": 0.0,
         "M44": 1.0
       },
-      "OrbitCamDistance": 8.8289585,
+      "OrbitCamDistance": 5.0,
       "ProjectionIsOrthographic": false,
       "ProjectionVerticalFovRatio": 1.0,
       "PivotPrimVisRatio": 0.0

@@ -1,0 +1,56 @@
+﻿Spine
+- Spine1
+-- Spine2
+
+--- L_Clavicle
+---- L_Shoulder
+---- L_UpperArm
+----- L_UpArmTwist
+----- L_UpArmTwist1
+----- L_Elbow
+----- L_Forearm
+------ L_Hand
+------ L_ForeArmTwist
+------ L_ForeArmTwist1
+
+--- R_Clavicle
+---- R_Shoulder
+---- R_UpperArm
+----- R_UpArmTwist
+----- R_UpArmTwist1
+----- R_Elbow
+----- R_Forearm
+------ R_Hand
+------ R_ForeArmTwist
+------ R_ForeArmTwist1
+
+--- Neck
+---- Head
+--- L_Pectoral
+--- R_Pectoral
+--- L_Axilla
+--- R_Axilla
+
+Pelvis
+- L_Thigh
+-- L_ThighTwist
+-- L_ThighTwist1
+-- L_Knee
+-- L_Calf
+--- L_CalfTwist
+--- L_CalfTwist1
+--- L_Foot
+---- L_Toe0
+---- L_FootTwist
+- R_Thigh
+-- R_ThighTwist
+-- R_ThighTwist1
+-- R_Knee
+-- R_Calf
+--- R_CalfTwist
+--- R_CalfTwist1
+--- R_Foot
+---- R_Toe0
+---- R_FootTwist
+- R_Hip
+- L_Hip
