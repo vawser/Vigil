@@ -25,9 +25,9 @@
 45022 Briarthorn Patch
 45023 Flame of Destiny
 45024 Vow of Silence
-45025
-45026
-45027
+45025 Lingering Rancor
+45026 Vengeful Barrage
+45027 Vengeful Strike
 45028
 45029
 45030
