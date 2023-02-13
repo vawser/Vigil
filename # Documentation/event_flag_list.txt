@@ -625,6 +625,8 @@
 1047610910 Spectral Shift
 1047610911 Relentless Approach
 1047610912 Fresh Meat
+1047610913 Corrupted Flasks
+1047610914 Brittle Bones
 
 #------------------------------------
 104762_0000 Misc

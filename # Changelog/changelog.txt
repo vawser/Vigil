@@ -48,6 +48,12 @@
 - Added a new player castigation: Fresh Meat
  - Adds target priority to the player, and makes enemies much better at seeing and hearing the player.
  
+- Added a new player castigation: Corrupted Flasks
+ - Reduces the effectiveness of Flasks by 30%.
+ 
+- Added a new player castigation: Brittle Bones
+ - Reduces absorption by 30%.
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

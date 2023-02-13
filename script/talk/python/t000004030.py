@@ -602,6 +602,18 @@ def t000004030_x101():
         # Fresh Meat (selected)
         AddTalkListDataIf(GetEventFlag(1047610912) == 1, 201, 89100162, -1)
         
+        # Corrupted Flasks
+        AddTalkListDataIf(GetEventFlag(1047610913) == 0, 102, 89100113, -1)
+        
+        # Corrupted Flasks (selected)
+        AddTalkListDataIf(GetEventFlag(1047610913) == 1, 202, 89100163, -1)
+        
+        # Brittle Bones
+        AddTalkListDataIf(GetEventFlag(1047610914) == 0, 103, 89100114, -1)
+        
+        # Brittle Bones (selected)
+        AddTalkListDataIf(GetEventFlag(1047610914) == 1, 203, 89100164, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -624,6 +636,22 @@ def t000004030_x101():
         # Fresh Meat (enabled)
         elif GetTalkListEntryResult() == 201:
             assert t000004030_x110(1047610912, 0, 89100312)
+            continue
+        # Corrupted Flasks
+        elif GetTalkListEntryResult() == 102:
+            assert t000004030_x110(1047610913, 1, 89100213)
+            continue
+        # Corrupted Flasks
+        elif GetTalkListEntryResult() == 202:
+            assert t000004030_x110(1047610913, 0, 89100313)
+            continue
+        # Brittle Bones
+        elif GetTalkListEntryResult() == 103:
+            assert t000004030_x110(1047610914, 1, 89100214)
+            continue
+        # Brittle Bones (enabled)
+        elif GetTalkListEntryResult() == 203:
+            assert t000004030_x110(1047610914, 0, 89100314)
             continue
         else:
             return 0

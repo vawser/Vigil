@@ -7157,9 +7157,21 @@ $Event(11018, Default, function() {
     }
     
     // Fresh Meat
-    if(EventFlag(1047610911))
+    if(EventFlag(1047610912))
     {
         AwardItemLot(4220);
+    }
+    
+    // Corrupted Flasks
+    if(EventFlag(1047610913))
+    {
+        AwardItemLot(4230);
+    }
+    
+    // Brittle Bones
+    if(EventFlag(1047610914))
+    {
+        AwardItemLot(4240);
     }
     
     WaitFixedTimeSeconds(5.0); // Internal cooldown
@@ -9139,6 +9151,29 @@ $Event(14000, Restart, function() {
         ClearSpEffect(10000, 9420012);
     }
     
+    // Corrupted Flasks
+    if(EventFlag(1047610913))
+    {
+        SetSpEffect(10000, 9420020);
+    }
+    else
+    {
+        ClearSpEffect(10000, 9420020);
+    }
+    
+    // Brittle Bones
+    if(EventFlag(1047610914))
+    {
+        SetSpEffect(10000, 9420030);
+    }
+    else
+    {
+        ClearSpEffect(10000, 9420030);
+    }
+    
+    WaitFixedTimeSeconds(2);
+    
+    RestartEvent();
 });
 
 // Enemies
