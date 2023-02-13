@@ -2964,13 +2964,6 @@ function ExecMagic(quick_type, blend_type, is_ride)
     local action_arm = nil
     local action_arm_menu = nil
     
-    -- Magic VFX Swap
-    if env(GetBehaviorID, 1) == TRUE then
-        act(AddSpEffect, 7000302)
-    else
-        act(AddSpEffect, 7000301)
-    end
-    
     -- R1/L1 (while riding)
     if env(ActionRequest, ACTION_ARM_MAGIC_R) == TRUE or env(ActionRequest, ACTION_ARM_MAGIC_L) == TRUE and is_ride == TRUE then
         action_arm = ACTION_ARM_MAGIC_R

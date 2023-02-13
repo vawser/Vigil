@@ -117,6 +117,18 @@
  - Silences both the caster and nearby enemies.
  - Sold by Brother Corhyn after giving him the Assassin's Prayerbook.
  
+- Added Lingering Rancor:
+ - Forms a defensive arch of vengeful spirits. (similar to Glintblade Phalanx)
+ - Found near the Tibia Mariner in Liurnia.
+ 
+- Added Vengeful Barrage:
+ - Fires a volley of vengeful spirits (similar to Crystal Barrage)
+ - Found near the Tibia Mariner in Altus Plateau.
+ 
+- Added Vengeful Strike:
+ - Lobs multiple explosive vengeful spirits in an arc (mix of Cannon of Haima/Crystal Barrage)
+ - Found in Caelid, near to Caelem and Forsaken Ruins.
+ 
 #-------------------------------------------------
 # Great Runes
 #-------------------------------------------------

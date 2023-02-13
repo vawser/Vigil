@@ -159,27 +159,6 @@ Add new spells to custom loadout shop
 523390	Tibia's Summons (cast charge ghostflame flare)	
 523391	Tibia's Summons (summon pulse)	
 
-
-30000
-Lingering Rancor 12004000
-- Glintblade Phalanx
- 523367	Rancorcall (projectile)	- Small Skull
- 523368	Rancorcall (projectile burst)	
- 
-30010
-Vengeful Barrage 12005000
-- Crystal Barrage
- 523367	Rancorcall (projectile)	- Small Skull
- 523368	Rancorcall (projectile burst)	
- Slow down the projectiles, increase homing
- 
-30020
-Vengeful Strike 12006000
-- Cannon of Haima
- 523372	Ancient Death Rancor (charged projectile)	
- 523373	Ancient Death Rancor (charged projectile burst)	
- Change launch angle, make slower
- 
 Ghostflame Blade 12007000
 - Applies magic and frostbite
 303122	Ghostflame weapon buff (size 1)	
@@ -187,3 +166,8 @@ Ghostflame Blade 12007000
 Soporific Armament
 - Applies sleep
 303102	Soporific weapon buff (size 1)	
+
+
+30000 Lingering Rancor
+30010 Vengeful Barrage
+30020 Vengeful Strike

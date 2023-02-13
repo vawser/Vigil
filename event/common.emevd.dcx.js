@@ -7202,6 +7202,8 @@ $Event(11020, Default, function(X0_4, X4_4) {
 // Dev Tool: Toggle
 //-------------------
 $Event(11021, Default, function() {
+    //ChangeCamera(2200, 2200);
+    
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
     // Screenshot Zone
