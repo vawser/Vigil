@@ -72,7 +72,14 @@
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------
-  
+- Elden Lord Set
+- Now has the following effect on each piece:
+ - Strengthens the potency of Skills by 5%.  
+ 
+- General Radahn Set
+- Now has the following effect on each piece:
+ - Strengthens the potency of Gravity sorceries by 5%.
+ 
 #-------------------------------------------------
 # Weapons
 #-------------------------------------------------
@@ -110,13 +117,52 @@
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
-45024 Vow of Silence
+Add new spells to custom loadout shop
 
-6540
+523350	Fia's Mist (cast charge blight orb and Death sigil)	
+523351	Fia's Mist (cast sound)	
+523352	Fia's Mist (charged mist)	
+523354	Fia's Mist (charge gathering energy)	
+523357	Fia's Mist (mist)	
 
-Incantation of the Two Fingers' servants, who once served as the assassins of the Roundtable Hold.
+523360	Rancorcall (cast charge ghostflame orb and Death sigil)	
+523361	Rancorcall (cast sound)	
+523362	Rancorcall (charged projectile)	- Big Skull
+523363	Rancorcall (charged projectile burst)	
+523364	Rancorcall (charge gathering energy)	
+523367	Rancorcall (projectile)	- Small Skull
+523368	Rancorcall (projectile burst)	
 
-Silences both the caster and nearby enemies.
-This incantation can be cast while in motion or crouching.
+523370	Ancient Death Rancor (cast charge ghostflame orb and Death sigil)	
+523371	Ancient Death Rancor (cast sound)	
+523372	Ancient Death Rancor (charged projectile)	
+523373	Ancient Death Rancor (charged projectile burst)	
+523374	Ancient Death Rancor (charge gathering energy)	
+523377	Ancient Death Rancor (projectile)	
+523378	Ancient Death Rancor (projectile burst)	
 
-The assassins were themselves once Tarnished who had strayed from guidance.
+523380	Explosive Ghostflame (cast charge ghostflame flare)	
+523381	Explosive Ghostflame (Death sigil)	
+523382	Explosive Ghostflame (explosion)	
+523383	Explosive Ghostflame (lingering ghostflame)	
+
+523390	Tibia's Summons (cast charge ghostflame flare)	
+523391	Tibia's Summons (summon pulse)	
+
+
+Lingering Rancor
+- Glintblade Phalanx
+ 523367	Rancorcall (projectile)	- Small Skull
+ 523368	Rancorcall (projectile burst)	
+ 
+Vengeful Barrage
+- Crystal Barrage
+ 523367	Rancorcall (projectile)	- Small Skull
+ 523368	Rancorcall (projectile burst)	
+ Slow down the projectiles, increase homing
+ 
+Vengeful Strike
+- Cannon of Haima
+ 523372	Ancient Death Rancor (charged projectile)	
+ 523373	Ancient Death Rancor (charged projectile burst)	
+ Change launch angle, make slower

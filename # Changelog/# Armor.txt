@@ -66,10 +66,11 @@ Banished Knight Set
 
 General Radahn Set
 - Weight: 41.6
-- [Head]  Effect: Raises attack power by 5% for 60 seconds when poisoning or rot occurs in the vicinity. 
-- [Chest] Effect: Raises attack power by 5% for 60 seconds when poisoning or rot occurs in the vicinity.
-- [Arms]  Effect: Raises attack power by 5% for 60 seconds when poisoning or rot occurs in the vicinity.
-- [Legs]  Effect: Raises attack power by 5% for 60 seconds when poisoning or rot occurs in the vicinity.
+- [Head]  Effect: Strengthens the potency of Gravity sorceries by 5%.
+- [Chest] Effect: Strengthens the potency of Gravity sorceries by 5%.
+- [Arms]  Effect: Strengthens the potency of Gravity sorceries by 5%.
+- [Legs]  Effect: Strengthens the potency of Gravity sorceries by 5%.
+
 
 Malformed Dragon Set
 - Weight: 38
@@ -342,10 +343,10 @@ Exile Set
 
 Elden Lord Set
 - Weight: 21.4
-- [Head]  Effect: Increases the effectiveness of HP recovery for the wearer by 5%.
-- [Chest] Effect: Increases the effectiveness of HP recovery for the wearer by 5%. 
-- [Arms]  Effect: Increases the effectiveness of HP recovery for the wearer by 5%.
-- [Legs]  Effect: Increases the effectiveness of HP recovery for the wearer by 5%.
+- [Head]  Effect: Strengthens the potency of Skills by 5%. 
+- [Chest] Effect: Strengthens the potency of Skills by 5%.
+- [Arms]  Effect: Strengthens the potency of Skills by 5%.
+- [Legs]  Effect: Strengthens the potency of Skills by 5%.
 
 Ronin's Set
 - Weight: 21.1
