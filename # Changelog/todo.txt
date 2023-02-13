@@ -168,3 +168,6 @@ Soporific Armament
 - Applies sleep
 303102	Soporific weapon buff (size 1)	
 
+
+    act(AddSpEffect, 7000500)
+    act(SetMovementScaleMult, 5)
