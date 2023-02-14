@@ -21,6 +21,7 @@
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
+- Added the rune amounts in the names of the items that give runes to make it easier to assess which you want to use.
 
 #-------------------------------------------------
 # Armor
