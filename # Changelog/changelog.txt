@@ -55,4 +55,4 @@
 - Fixed some leftover invalid Smithing Stone drops.
 - Added boundry areas in the Colosseums that warp the player back if they try and exploit the geometry.
  
- 
+Left WA - Parry not working correctly

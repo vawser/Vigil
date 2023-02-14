@@ -464,18 +464,14 @@ g_FrameCount = 0
 
 function IncNum(num)
     local f1_local0 = nil
-    
     if num < 10 then
         f1_local0 = "Debug0"
     else
         f1_local0 = "Debug"
     end
-    
     local vec = GetVariable(f1_local0 .. num)
-    
     vec[0] = vec[0] + 1
     vec[1] = g_FrameCount
-    
     SetVariable(f1_local0 .. num, vec)
 end
 
@@ -529,16 +525,14 @@ function CallActionState(action_type)
 end
 
 function IsNodeActive(...)
-    -- Vigil: Reconstructed (based on c0000 version)
     local buff = {...}
-    
     for i = 1, #buff, 1 do
         if hkbIsNodeActive(buff[i]) then
             return TRUE
         end
     end
-    
     return FALSE
+
 end
 
 function SoulDropUp()
@@ -548,10 +542,8 @@ function SoulDropUp()
         IS_INITIALIZED_SOUL_DROP_UP = TRUE
         return
     end
-    
     local feversoul = math.random(1000)
     local feverchance = 0
-    
     if TRUE == env(GetSpEffectID, 5269) then
         feverchance = 1000
     elseif TRUE == env(GetSpEffectID, 5268) then
@@ -571,13 +563,11 @@ function SoulDropUp()
     elseif TRUE == env(GetSpEffectID, 5261) then
         feverchance = 5
     end
-    
     if feverchance > 0 and feversoul <= feverchance then
         act(AddSpEffect, 5250)
     else
         act(AddSpEffect, 5255)
     end
-    
     IS_INITIALIZED_SOUL_DROP_UP = TRUE
 end
 
@@ -593,20 +583,16 @@ function GolemConfusion()
             BORDER_CONFUSION = 30
             CAN_CONFUSION = TRUE
         end
-        
         IS_INITIALIZED_CONFUSION = TRUE
     end
-    
     if TRUE == CAN_CONFUSION then
         local dT = GetDeltaTime()
         local IsConfused = env(GetSpEffectType, SP_EFFECT_TYPE_GOLEM_CONFUSION)
-        
         if POINT_CONFUSION > 0 and IsConfused == FALSE then
             POINT_CONFUSION = POINT_CONFUSION - dT
         elseif BORDER_CONFUSION <= POINT_CONFUSION and IsConfused == TRUE then
             POINT_CONFUSION = 0
         end
-        
         if env(GetBehaviorID, BEH_IDENTIFIER_GOLEM_CONFUSION) == TRUE and IsConfused == FALSE then
             act(AddSpEffect, SP_EFFECT_CONFUSION_SIGN)
             if env(GetSpEffectID, SP_EFFECT_CONFUSION_POINT_A) == TRUE then
@@ -634,7 +620,6 @@ function ParryResist()
         end
         IS_INITIALIZED_PARRY_RESIST = TRUE
     end
-    
     if TRUE == CAN_PARRY_RESIST then
         local damage_type = env(GetReceivedDamageType)
         if damage_type == DAMAGE_TYPE_PARRY or damage_type >= DAMAGE_TYPE_PARRY_ENEMY1 and damage_type <= DAMAGE_TYPE_PARRY_ENEMY3 then
@@ -661,14 +646,11 @@ function ExecTurn(is_on_cancel)
     if is_on_cancel == TRUE and env(IsMoveCancelPossible) == FALSE then
         return FALSE
     end
-    
     local turn_angle = GetVariable("TurnAngle")
     if math.abs(turn_angle) <= 0 then
         return FALSE
     end
-    
     local is_emergency_turn = env(IsEmergencyQuickTurnActivated)
-    
     if math.abs(turn_angle) < 45 and is_emergency_turn == FALSE then
         return FALSE
     elseif TRUE == env(GetSpEffectID, 5841) or TRUE == env(GetSpEffectID, 5843) then
@@ -676,68 +658,59 @@ function ExecTurn(is_on_cancel)
     elseif TRUE == env(GetSpEffectID, 5840) and math.abs(turn_angle) < 135 then
         return FALSE
     end
-    
     local fly_route_state = env(GetFlyRouteState)
-    local turn_dir_index = nil
-    local turn_dir_angle = nil
-    
+    local f14_local0 = nil
+    local f14_local1 = nil
     if fly_route_state ~= AI_FLY_ROUTE_STATE_NOT_USE_FLY_ROUTE and fly_route_state ~= AI_FLY_ROUTE_STATE_ON_GROUND and fly_route_state ~= AI_FLY_ROUTE_STATE_ON_GROUND_TAKEOFF_REQUESTED then
         if math.abs(turn_angle) < 45 then
             return FALSE
         else
-            turn_dir_index = nil
+            f14_local0 = nil
             if turn_angle < 0 then
-                turn_dir_index = INDEX_TURN_DIRECTION_LEFT180
+                f14_local0 = INDEX_TURN_DIRECTION_LEFT180
             else
-                turn_dir_index = INDEX_TURN_DIRECTION_RIGHT180
+                f14_local0 = INDEX_TURN_DIRECTION_RIGHT180
             end
         end
-        
-        turn_dir_angle = 180
+        f14_local1 = 180
     elseif math.abs(turn_angle) < 67.5 then
         IncNum(1)
-        
         if turn_angle < 0 then
             if TRUE == env(GetSpEffectID, SP_EFFECT_IGNORE_TURN45) then
-                turn_dir_index = INDEX_TURN_DIRECTION_LEFT90
-                turn_dir_angle = 90
+                f14_local0 = INDEX_TURN_DIRECTION_LEFT90
+                f14_local1 = 90
             else
-                turn_dir_index = INDEX_TURN_DIRECTION_LEFT45
-                turn_dir_angle = 45
+                f14_local0 = INDEX_TURN_DIRECTION_LEFT45
+                f14_local1 = 45
             end
         elseif TRUE == env(GetSpEffectID, SP_EFFECT_IGNORE_TURN45) then
-            turn_dir_index = INDEX_TURN_DIRECTION_RIGHT90
-            turn_dir_angle = 90
+            f14_local0 = INDEX_TURN_DIRECTION_RIGHT90
+            f14_local1 = 90
         else
-            turn_dir_index = INDEX_TURN_DIRECTION_RIGHT45
-            turn_dir_angle = 45
+            f14_local0 = INDEX_TURN_DIRECTION_RIGHT45
+            f14_local1 = 45
         end
     elseif math.abs(turn_angle) < 135 then
-        turn_dir_index = nil
-        
+        f14_local0 = nil
         if turn_angle < 0 then
-            turn_dir_index = INDEX_TURN_DIRECTION_LEFT90
+            f14_local0 = INDEX_TURN_DIRECTION_LEFT90
         else
-            turn_dir_index = INDEX_TURN_DIRECTION_RIGHT90
+            f14_local0 = INDEX_TURN_DIRECTION_RIGHT90
         end
-        
-        turn_dir_angle = 90
+        f14_local1 = 90
     else
-        turn_dir_index = nil
-        
+        f14_local0 = nil
         if turn_angle < 0 then
-            turn_dir_index = INDEX_TURN_DIRECTION_LEFT180
+            f14_local0 = INDEX_TURN_DIRECTION_LEFT180
         else
-            turn_dir_index = INDEX_TURN_DIRECTION_RIGHT180
+            f14_local0 = INDEX_TURN_DIRECTION_RIGHT180
         end
-        
-        turn_dir_angle = 180
+        f14_local1 = 180
     end
     
     local buff = {}
     local ai_rec = env(GetAITargetAwareState)
     local action_type = env(GetAIActionType)
-    
     if action_type == ACTION_TYPE_GUARD then
         buff[1] = INDEX_TURN_GUARD
         buff[2] = INDEX_TURN_BATTLE
@@ -755,194 +728,45 @@ function ExecTurn(is_on_cancel)
         buff[2] = INDEX_TURN_BATTLE
         buff[3] = INDEX_TURN_GUARD
     end
-    
     local turn_index = INVALID
-    
-    -- Vigil: This is where the decompile fails
-    -- For now, commented, but the loop may have actually been important
-    -- local f14_local2 = 1
-    -- local f14_local3 = #buff
-    -- local f14_local4 = 1
-    
-    -- Vigil: this is the AST that fails, could be constructed manually
-    -- basicblock_50:
-        -- REG14 = ANIME_ID_TURN
-        -- REG15 = REG6[REG13]
-        -- REG15 = REG15 * 10
-        -- REG14 = REG14 + REG15
-        -- REG14 = REG14 + REG3
-        -- REG15 = IsExistAnime
-        -- REG16 = REG14
-        -- REG15 = REG15(REG16)
-        -- REG16 = TRUE
-        -- if REG15 == REG16 else goto basicblock_53:
-    -- basicblock_51:
-        -- REG9 = REG6[REG13]
-        -- goto basicblock_61:
-    -- basicblock_53:
-        -- REG15 = INDEX_TURN_DIRECTION_LEFT45
-        -- if REG3 == REG15 else goto basicblock_57:
-    -- basicblock_54:
-        -- REG15 = ANIME_ID_TURN
-        -- REG16 = REG6[REG13]
-        -- REG16 = REG16 * 10
-        -- REG15 = REG15 + REG16
-        -- REG16 = INDEX_TURN_DIRECTION_LEFT90
-        -- REG14 = REG15 + REG16
-        -- REG15 = IsExistAnime
-        -- REG16 = REG14
-        -- REG15 = REG15(REG16)
-        -- REG16 = TRUE
-        -- if REG15 == REG16 else goto basicblock_60:
-    -- basicblock_55:
-        -- REG9 = REG6[REG13]
-        -- REG3 = INDEX_TURN_DIRECTION_LEFT90
-        -- REG4 = 90
-        -- goto basicblock_61:
-    -- basicblock_57:
-        -- REG15 = INDEX_TURN_DIRECTION_RIGHT45
-        -- if REG3 == REG15 else goto basicblock_60:
-    -- basicblock_58:
-        -- REG15 = ANIME_ID_TURN
-        -- REG16 = REG6[REG13]
-        -- REG16 = REG16 * 10
-        -- REG15 = REG15 + REG16
-        -- REG16 = INDEX_TURN_DIRECTION_RIGHT90
-        -- REG14 = REG15 + REG16
-        -- REG15 = IsExistAnime
-        -- REG16 = REG14
-        -- REG15 = REG15(REG16)
-        -- REG16 = TRUE
-        -- if REG15 == REG16 else goto basicblock_60:
-    -- basicblock_59:
-        -- REG9 = REG6[REG13]
-        -- REG3 = INDEX_TURN_DIRECTION_RIGHT90
-        -- REG4 = 90
-        -- goto basicblock_61:
-    -- basicblock_60:
-        -- REG10 = REG10 + REG12
-        -- if REG10 >?= REG11 else goto basicblock_50:
-    -- basicblock_61:
-        -- if 0 <= REG9 else goto basicblock_82:
-    -- basicblock_62:
-        -- REG10 = act
-        -- REG11 = 9105
-        -- REG12 = REG4
-        -- REG10(REG11, REG12)
-        -- REG10 = act
-        -- REG11 = 9104
-        -- REG10(REG11)
-        -- REG10 = "W_Turn"
-        -- REG11 = AI_STATE_BATTLE
-        -- REG12 = INDEX_TURN_BATTLE
-        -- if REG9 == REG12 else goto basicblock_64:
-    -- basicblock_63:
-        -- REG12 = REG10
-        -- REG13 = "Battle"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_69:
-    -- basicblock_64:
-        -- REG12 = INDEX_TURN_GUARD
-        -- if REG9 == REG12 else goto basicblock_66:
-    -- basicblock_65:
-        -- REG12 = REG10
-        -- REG13 = "Guard"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_69:
-    -- basicblock_66:
-        -- REG12 = INDEX_TURN_PARRY
-        -- if REG9 == REG12 else goto basicblock_68:
-    -- basicblock_67:
-        -- REG12 = REG10
-        -- REG13 = "Parry"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_69:
-    -- basicblock_68:
-        -- REG12 = REG10
-        -- REG13 = "Default"
-        -- REG10 = REG12 .. REG13
-        -- REG11 = AI_STATE_DEFAULT
-    -- basicblock_69:
-        -- REG12 = SetIdleType
-        -- REG13 = REG11
-        -- REG12(REG13)
-        -- REG12 = INDEX_TURN_DIRECTION_LEFT90
-        -- if REG3 == REG12 else goto basicblock_71:
-    -- basicblock_70:
-        -- REG12 = REG10
-        -- REG13 = "_Left90"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_81:
-    -- basicblock_71:
-        -- REG12 = INDEX_TURN_DIRECTION_RIGHT90
-        -- if REG3 == REG12 else goto basicblock_73:
-    -- basicblock_72:
-        -- REG12 = REG10
-        -- REG13 = "_Right90"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_81:
-    -- basicblock_73:
-        -- REG12 = INDEX_TURN_DIRECTION_LEFT180
-        -- if REG3 == REG12 else goto basicblock_75:
-    -- basicblock_74:
-        -- REG12 = REG10
-        -- REG13 = "_Left180"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_81:
-    -- basicblock_75:
-        -- REG12 = INDEX_TURN_DIRECTION_RIGHT180
-        -- if REG3 == REG12 else goto basicblock_77:
-    -- basicblock_76:
-        -- REG12 = REG10
-        -- REG13 = "_Right180"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_81:
-    -- basicblock_77:
-        -- REG12 = INDEX_TURN_DIRECTION_LEFT45
-        -- if REG3 == REG12 else goto basicblock_79:
-    -- basicblock_78:
-        -- REG12 = REG10
-        -- REG13 = "_Left45"
-        -- REG10 = REG12 .. REG13
-        -- goto basicblock_81:
-    -- basicblock_79:
-        -- REG12 = INDEX_TURN_DIRECTION_RIGHT45
-        -- if REG3 == REG12 else goto basicblock_81:
-    -- basicblock_80:
-        -- REG12 = REG10
-        -- REG13 = "_Right45"
-        -- REG10 = REG12 .. REG13
-    -- basicblock_81:
-        -- REG12 = Fire
-        -- REG13 = REG10
-        -- REG12(REG13)
-        -- REG12 = TRUE
-        -- return REG12
-    -- basicblock_82:
-        -- REG10 = FALSE
-        -- return REG10
-        
-    -- Vigil: this is from DS3, hopefully this will allow the HKS to run
-    if action_type <= 0 then
-        if style == STYLE_DEFAULT then
-            return FALSE
-        elseif style == STYLE_GUARD then
-            Fire("W_GuardEnd")
-        elseif style == STYLE_PARRY then
-            Fire("W_ParryEnd")
+
+    -- Vigil: verify
+    for i = 1, #buff, 1 do
+        local anim = ANIME_ID_TURN + buff[i] * 10 + f14_local0
+        if IsExistRideAnime(anim) == TRUE then
+            turn_index = buff[i]
+            break
         end
-        return TRUE
-    elseif ExecArtEnd(action_type, style) == TRUE then
-        return TRUE
-    elseif ExecAIStep(action_type) == TRUE then
-        return TRUE
-    elseif ExecAIAttack(action_type, style) == TRUE then
-        return TRUE
-    elseif ExecAIGuard(action_type, style) == TRUE then
-        return TRUE
-    elseif TRUE == ExecRide() then
-        return TRUE
-    elseif ExecAIParry(action_type, style) == TRUE then
+    end
+    
+    if turn_index >= 0 then
+        act(SetTurnAnimCorrectionRate, f14_local1) -- Probably incorrect act, 9105 is for enemy ride
+        act(SetIsTurnAnimInProgress)
+        
+        local event = "W_Turn"
+        
+        local ai_state = AI_STATE_BATTLE
+        if turn_index == INDEX_TURN_BATTLE then
+            event = event .. "Battle"
+        else
+            event = event .. "Default"
+            ai_state = AI_STATE_DEFAULT
+        end
+        
+        SetIdleType(ai_state)
+        
+        if f14_local0 == INDEX_TURN_DIRECTION_LEFT90 then
+            event = event .. "_Left90"
+        elseif f14_local0 == INDEX_TURN_DIRECTION_RIGHT90 then
+            event = event .. "_Right90"
+        elseif f14_local0 == INDEX_TURN_DIRECTION_LEFT180 then
+            event = event .. "_Left180"
+        elseif f14_local0 == INDEX_TURN_DIRECTION_RIGHT180 then
+            event = event .. "_Right180"
+        end
+        
+        Fire(event)
+        
         return TRUE
     else
         return FALSE
@@ -951,7 +775,6 @@ end
 
 function ExecAIAction(style)
     local action_type = env(GetAIActionType)
-    
     if action_type <= 0 then
         if style == STYLE_DEFAULT then
             return FALSE
@@ -985,24 +808,21 @@ function ExecAICancelAction(style)
     local action_type_combo = env(GetAIChainActionType)
     local action_type_cancel = env(GetAIAtkCancelType)
     local action_type_step = env(GetAIChainStepType)
-    
-    local action_type = nil
-    
+    local f16_local0 = nil
     if action_type_combo > 0 then
         action_type_atk = action_type_combo
-        action_type = action_type_combo
+        f16_local0 = action_type_combo
     elseif action_type_cancel > 0 then
         action_type_atk = action_type_cancel
-        action_type = action_type_cancel
+        f16_local0 = action_type_cancel
     elseif action_type_step > 0 then
-        action_type = action_type_step
+        f16_local0 = action_type_step
     else
         return FALSE
     end
-    
-    if ExecArtEnd(action_type, style) == TRUE then
+    if ExecArtEnd(f16_local0, style) == TRUE then
         return TRUE
-    elseif ExecGuardEnd(action_type, style) == TRUE then
+    elseif ExecGuardEnd(f16_local0, style) == TRUE then
         return TRUE
     elseif ExecAIStep(action_type_step) == TRUE then
         return TRUE
@@ -1064,7 +884,6 @@ function ExecAIGuard(action_type, style)
     elseif TRUE == env(GetSpEffectID, 5822) then
         return FALSE
     end
-    
     local move_speed_level = GetVariable("MoveSpeedLevel")
     if move_speed_level > 0 then
         local i = GetMoveDir(move_speed_level)
@@ -1073,7 +892,6 @@ function ExecAIGuard(action_type, style)
             return FALSE
         end
     end
-    
     Fire("W_GuardStart")
     return TRUE
 end
@@ -1089,9 +907,7 @@ function ExecAIParry(action_type, style)
     elseif TRUE == env(GetSpEffectID, 5821) then
         return FALSE
     end
-    
     local move_speed_level = GetVariable("MoveSpeedLevel")
-    
     if move_speed_level > 0 then
         local i = GetMoveDir(move_speed_level)
         local anim_id = move_table_parry[i][1]
@@ -1099,7 +915,6 @@ function ExecAIParry(action_type, style)
             return FALSE
         end
     end
-    
     Fire("W_ParryStart")
     return TRUE
 end
@@ -1255,7 +1070,6 @@ function ExecLand(fall_type)
             SetVariable("IndexDeathVariation", index)
             event = "W_DeathStartDefault"
         end
-        
         Fire(event)
         return TRUE
     elseif env(CheckForEventAnimPlaybackRequest) == TRUE then
@@ -1266,7 +1080,6 @@ function ExecLand(fall_type)
         return TRUE
     elseif fall_type == FALL_DEFAULT then
         local height = env(GetFallHeight) / 100
-        
         if height > HEIGHT_TRANS_TO_HEAVY_LAND then
             if TRUE == IsExistAnime(ANIME_ID_LAND_HEAVY) then
                 Fire("W_LandHeavy")
@@ -1308,7 +1121,6 @@ function ExecTransToBattleFromIdleUnique(id)
     local ai_state = env(GetAITargetAwareState)
     local action_type = env(GetAIActionType)
     local move_speed_level = GetVariable("MoveSpeedLevel")
-    
     if ai_state ~= AI_RECOGNITION_NONE or action_type ~= -1 or move_speed_level > 0 or env(GetSpEffectType, SP_EFFECT_TYPE_SLEEP) == TRUE then
         local param_idle_unique = id
         local offset = param_idle_unique % 100
@@ -1365,7 +1177,6 @@ end
 function ExecAIStateChange(is_on_cancel)
     local cur_ai_state = env(GetAITargetAwareState)
     env(GetAITargetAwareStatePreviousFrame)
-    
     if cur_ai_state > AI_RECOGNITION_NONE then
         cur_ai_state = AI_STATE_BATTLE
     elseif IsExistAnime(ANIME_ID_IDLE_DEFAULT) == TRUE then
@@ -1373,15 +1184,12 @@ function ExecAIStateChange(is_on_cancel)
     else
         cur_ai_state = AI_STATE_BATTLE
     end
-    
     if is_on_cancel == TRUE and env(IsMoveCancelPossible) == FALSE then
         return FALSE
     elseif cur_ai_state == GetVariable("IndexAiState") then
         return FALSE
     end
-    
     SetIdleType(cur_ai_state)
-    
     if cur_ai_state == AI_STATE_DEFAULT then
         if env(GetSpEffectID, 5815) == TRUE then
             return FALSE
@@ -1395,13 +1203,11 @@ function ExecAIStateChange(is_on_cancel)
         Fire("W_TransToBattleFromDefault")
         return TRUE
     end
-    
     return FALSE
 end
 
 function ExecTransToDefaultFromBattle(is_on_cancel, is_check_AIStateChange)
     local cur_ai_state = env(GetAITargetAwareState)
-    
     if cur_ai_state > AI_RECOGNITION_NONE then
         cur_ai_state = AI_STATE_BATTLE
     elseif IsExistAnime(ANIME_ID_IDLE_DEFAULT) == TRUE then
@@ -1409,15 +1215,12 @@ function ExecTransToDefaultFromBattle(is_on_cancel, is_check_AIStateChange)
     else
         cur_ai_state = AI_STATE_BATTLE
     end
-    
     if is_on_cancel == TRUE and env(IsMoveCancelPossible) == FALSE then
         return FALSE
     elseif is_check_AIStateChange == TRUE and cur_ai_state == GetVariable("IndexAiState") then
         return FALSE
     end
-    
     SetIdleType(cur_ai_state)
-    
     if cur_ai_state == AI_STATE_DEFAULT then
         if env(GetSpEffectID, 5815) == TRUE then
             return FALSE
@@ -1433,7 +1236,6 @@ end
 
 function ExecTransToBattleFromDefault(is_on_cancel, is_check_AIStateChange)
     local cur_ai_state = env(GetAITargetAwareState)
-    
     if cur_ai_state > AI_RECOGNITION_NONE then
         cur_ai_state = AI_STATE_BATTLE
     elseif IsExistAnime(ANIME_ID_IDLE_DEFAULT) == TRUE then
@@ -1441,15 +1243,12 @@ function ExecTransToBattleFromDefault(is_on_cancel, is_check_AIStateChange)
     else
         cur_ai_state = AI_STATE_BATTLE
     end
-    
     if is_on_cancel == TRUE and env(IsMoveCancelPossible) == FALSE then
         return FALSE
     elseif is_check_AIStateChange == TRUE and cur_ai_state == GetVariable("IndexAiState") then
         return FALSE
     end
-    
     SetIdleType(cur_ai_state)
-    
     if cur_ai_state == AI_STATE_BATTLE then
         if env(GetSpEffectID, 5815) == TRUE then
             return FALSE
@@ -1464,7 +1263,6 @@ end
 function IsDead()
     local hp = env(GetHP)
     local height = env(GetFallHeight) / 100
-    
     if env(GetReceivedDamageType) == DAMAGE_TYPE_DEATH or hp <= 0 then
         return TRUE
     elseif env(IsLanding) == TRUE and height > HEIGHT_FORCE_DEATH and env(GetStateChangeType, SP_EFFECT_TYPE_CAT_LANDING) == FALSE then
@@ -1514,11 +1312,9 @@ function ExecDeath()
     elseif IsDead() == FALSE then
         return FALSE
     end
-    
     local death_type = GetDeathType()
     local anim_id = -1
     local event = "W_DeathStartDefault"
-    
     if death_type == DEATH_TYPE_WEAK then
         anim_id = ANIME_ID_DEATH_WEAK
         event = "W_DeathStartWeak"
@@ -1541,12 +1337,10 @@ function ExecDeath()
         anim_id = ANIME_ID_DEATH_START_SLEEP_COLLECT
         event = "W_DeathStartSleepCollect"
     end
-    
     if anim_id >= 0 and IsExistAnime(anim_id) == FALSE then
         event = "W_DeathStartDefault"
         death_type = DEATH_TYPE_DEFAULT
     end
-    
     if death_type == DEATH_TYPE_DEFAULT then
         local num = GetExistAnimeNum(ANIME_ID_DEATH_VARIATION, 2, 10) + 1
         local index = math.random(0, num - 1)
@@ -1555,7 +1349,6 @@ function ExecDeath()
         local index = GetRandomIndex(ANIME_ID_DEATH_FIRE, 2, 10)
         SetVariable("IndexDeathVariation", index)
     end
-    
     if env(GetSpEffectID, 14397) == TRUE then
         event = "W_Event20000"
     elseif env(GetSpEffectID, 18681) == TRUE or env(GetSpEffectID, 18682) == TRUE then
@@ -1699,11 +1492,9 @@ function ExecTransToDeathIdle(death_type)
     elseif env(IsAnimEnd, 1) == FALSE then
         return FALSE
     end
-    
     local event = "W_DeathIdleDefault"
     local anim_id = -1
     local index = -1
-    
     if death_type == DEATH_TYPE_FIRE then
         index = GetVariable("IndexDeathVariation")
         anim_id = ANIME_ID_DEATH_FIRE + index * 10 + 1
@@ -1781,7 +1572,6 @@ function ExecTransToDeathIdle(death_type)
             anim_id = ANIME_ID_DEATH_VARIATION + 10 * (index - 1) + 1
         end
     end
-    
     if anim_id >= 0 then
         if IsExistAnime(anim_id) == FALSE then
             event = "W_DeathIdleDefault"
@@ -1790,14 +1580,12 @@ function ExecTransToDeathIdle(death_type)
             SetVariable("IndexDeathIdleVariation", index)
         end
     end
-    
     Fire(event)
     return TRUE
 end
 
 function ExecSpEffectEventAction()
     local anim_id = env(GetSpEffectEventAnimID)
-    
     if anim_id >= 0 then
         Fire("W_Event" .. anim_id)
         return TRUE
@@ -1808,15 +1596,12 @@ end
 
 function ExecTalkTransition(anim_id)
     local talk_ref_Id = env(GetTalkID_3001)
-    
     if talk_ref_Id == TALK_BEH_IDENTIFIER__NOT_TALKING then
         talk_ref_Id = env(GetTalkID_3002)
     end
-    
     if talk_ref_Id == TALK_BEH_IDENTIFIER__NOT_TALKING or talk_ref_Id ~= GetVariable("TalkPlayPrevID") then
         SetVariable("IsDoneTalkPlayOneshot", false)
     end
-    
     SetVariable("TalkPlayPrevID", talk_ref_Id)
     if ExecTalkTransitionIndividual(anim_id, talk_ref_Id) == TRUE then
         local cur_ai_state = AI_STATE_DEFAULT
@@ -1844,7 +1629,6 @@ end
 
 function CheckSpDamageRand()
     local damage_elem = env(GetSpecialAttribute)
-    
     if damage_elem == DAMAGE_ELEMENT_FIRE then
         if env(GetSpEffectID, 5721) == TRUE then
             return TRUE
@@ -1852,9 +1636,7 @@ function CheckSpDamageRand()
             return TRUE
         end
     end
-    
     local damage_part = env(GetPartGroup)
-    
     if damage_part == 1 then
         if env(GetSpEffectID, SP_EFFECT_COBRA_ASSASSIN) == TRUE or env(GetSpEffectID, SP_EFFECT_SANDWORM) == TRUE or env(GetSpEffectID, SP_EFFECT_MOTHER_DORAGON) == TRUE then
             return TRUE
@@ -1884,7 +1666,6 @@ function ExecSpDamage()
             return TRUE
         end
     end
-    
     if TRUE == env(GetSpEffectID, SP_EFFECT_SKELETON_KNIGHT) and env(GetPhysicalAttribute) == 2 then
         local damage_level = env(GetDamageLevel)
         if (damage_level == DAMAGE_LEVEL_MIDDLE or damage_level == DAMAGE_LEVEL_LARGE or damage_level == DAMAGE_LEVEL_SMALL_BLOW or damage_level == DAMAGE_LEVEL_LARGE_BLOW) and TRUE == IsSpDamageAllowed() then
@@ -1903,7 +1684,6 @@ function ExecSpDamage()
             return TRUE
         end
     end
-    
     if TRUE == CAN_CONFUSION and TRUE == env(GetBehaviorID, BEH_IDENTIFIER_GOLEM_CONFUSION) and POINT_CONFUSION > BORDER_CONFUSION and env(GetSpEffectType, SP_EFFECT_TYPE_GOLEM_CONFUSION) == FALSE and TRUE == IsSpDamageAllowed() then
         if TRUE == env(GetSpEffectID, 12156) then
             Replanning()
@@ -1973,7 +1753,6 @@ function ExecSpDamage()
             return TRUE
         end
     end
-    
     if (TRUE == env(GetSpEffectID, 17102) or TRUE == env(GetSpEffectID, 17103) or TRUE == env(GetSpEffectID, 17117) or TRUE == env(GetSpEffectID, 17118)) and TRUE == IsSpDamageAllowed() then
         if 1 == env(GetPartGroup) or env(GetPartGroup) == 2 then
             Replanning()
@@ -2037,7 +1816,6 @@ function ExecSpDamage()
             return TRUE
         end
     end
-    
     if TRUE == env(GetSpEffectID, 5725) and TRUE == IsSpDamageAllowed() then
         local damage_elem = env(GetSpecialAttribute)
         if damage_elem == DAMAGE_ELEMENT_FIRE and env(GetSpEffectID, 5726) == FALSE then
@@ -2049,7 +1827,6 @@ function ExecSpDamage()
             return TRUE
         end
     end
-    
     if TRUE == env(GetSpEffectID, 14856) and 1 == env(GetPartGroup) and env(GetPoise) > 0 and TRUE == IsSpDamageAllowed() then
         Replanning()
         act(SetDamageAnimType, DAMAGE_FLAG_LARGE)
@@ -2478,11 +2255,9 @@ end
 function ExecGuardBlock(damage_type, ignore_guard_block)
     if damage_type == DAMAGE_TYPE_GUARD and env(GetDamageSpecialAttribute, STATUS_EFFECT_BLOOD) == FALSE and env(GetDamageSpecialAttribute, STATUS_EFFECT_COLD) == FALSE then
         local guard_damage = env(GetGuardLevelAction)
-        
         if ignore_guard_block == TRUE then
             guard_damage = GUARD_LEVEL_SMALL
         end
-        
         if guard_damage == GUARD_LEVEL_SMALL then
             act(SetDamageAnimType, DAMAGE_FLAG_GUARD_SMALL)
             if GetStaminaRatio() < 0.4000000059604645 and TRUE == IsExistAnime(ANIME_ID_GUARD_DAMAGE_SMALL_LOW) then
@@ -2606,10 +2381,8 @@ function ExecWeakDamage()
             else
                 damage_direction = DIRECTION_FORWARD
             end
-            
             local offset = GetDamageDirectionOffset(damage_direction)
             local id_with_direction = ANIME_ID_DAMAGE_WEAK + offset
-            
             if offset ~= 0 then
                 if IsExistAnime(id_with_direction) == TRUE then
                     SetVariable("IndexDamageDirection", DIRECTION_BACK)
@@ -2911,10 +2684,8 @@ function ExecNewDamageDefault(damage_level)
             return TRUE
         end
     end
-    
     local damage_direction = env(GetReceivedDamageDirection)
     local attack_direction = env(GetAtkDirection)
-    
     if damage_direction == DIRECTION_FORWARD then
         if attack_direction == ATTACK_DIR_FRONT then
             if damage_level == DAMAGE_LEVEL_SMALL then
@@ -4209,10 +3980,8 @@ end
 
 function GetDirOfPlayableDamage(id, check_atk_dir)
     local damage_direction = env(GetReceivedDamageDirection)
-    
     if check_atk_dir == TRUE and damage_direction == DIRECTION_FORWARD then
         local dir_real = GetRealDir()
-        
         if dir_real == LEFT_ADD then
             if IsExistAnime(id + DIRECTION_FRONTLEFT) == TRUE then
                 return DIRECTION_FRONTLEFT
@@ -4221,10 +3990,8 @@ function GetDirOfPlayableDamage(id, check_atk_dir)
             return DIRECTION_FRONTRIGHT
         end
     end
-    
     local offset = GetDamageDirectionOffset(damage_direction)
     local id_with_direction = id + offset
-    
     if IsExistAnime(id_with_direction) == TRUE then
         return damage_direction
     elseif IsExistAnime(id) == TRUE then
@@ -4247,20 +4014,29 @@ function ExecSyncAddDamage(damage_level)
         elseif damage_level == DAMAGE_LEVEL_MIDDLE or damage_level == DAMAGE_LEVEL_LARGE then
             buff[1] = ANIME_ID_BLEND_DAMAGE_FIRE_MIDDLE
         end
-        
         if buff[1] >= 0 then
             local anim_id = -1
-            
-            -- Vigil: FOR LOOP
-            -- local f58_local0 = 1
-            -- local f58_local1 = #buff
-            -- local f58_local2 = 1
-            -- goto basicblock_15:
+            for i = 1, #buff, 1 do
+                if IsExistAnime(buff[i]) == TRUE then
+                    anim_id = buff[i]
+                    break
+                end
+            end
+            if anim_id >= 0 then
+                local event = "W_FireSmallDamageBlend_Add"
+                if anim_id == ANIME_ID_BLEND_DAMAGE_FIRE_MIDDLE then
+                    event = "W_FireMiddleDamageBlend_Add"
+                end
+                SetVariable("BlendDamageFire", 1)
+                local index = GetRandomIndex(anim_id, 3, 1)
+                SetVariable("IndexFireDamageVariation", index)
+                Fire(event)
+                return
+            end
+
         end
     end
-    
     local buff = {-1}
-    
     if damage_level == DAMAGE_LEVEL_SMALL then
         buff[1] = ANIME_ID_BLEND_DAMAGE_SMALL_FRONT
     elseif damage_level == DAMAGE_LEVEL_MIDDLE then
@@ -4271,16 +4047,28 @@ function ExecSyncAddDamage(damage_level)
         buff[2] = ANIME_ID_BLEND_DAMAGE_MIDDLE_FRONT
         buff[3] = ANIME_ID_BLEND_DAMAGE_SMALL_FRONT
     end
-    
     if buff[1] >= 0 then
         local dir = GetRealDir()
         local anim_id = -1
-        
-        -- Vigil: FOR LOOP
-        -- local f58_local1 = 1
-        -- local f58_local2 = #buff
-        -- local f58_local3 = 1
-        -- goto basicblock_30:
+        for i = 1, #buff, 1 do
+            if IsExistAnime(buff[i] + dir) == TRUE then
+                anim_id = buff[i]
+                break
+            end
+        end
+        if anim_id >= 0 then
+            local event = "W_DirDamageSmall"
+            if anim_id == ANIME_ID_BLEND_DAMAGE_MIDDLE_FRONT then
+                event = "W_DirDamageMiddle"
+            elseif anim_id == ANIME_ID_BLEND_DAMAGE_LARGE_FRONT then
+                event = "W_DirDamageLarge"
+            end
+            local dir_set = {"Front_Add", "Back_Add", "Left_Add", "Right_Add", "FrontUp_Add", "FrontDown_Add"}
+            SetVariable("BlendDamageDir", 1)
+            Fire(event .. dir_set[dir + 1])
+        else
+        end
+
     end
 end
 
@@ -4326,7 +4114,6 @@ function GetRealDir()
     local pos_dir = env(GetReceivedDamageDirection)
     local atk_dir = env(GetAtkDirection)
     local real_dir = FRONT_ADD
-    
     if atk_dir == ATTACK_DIR_FRONT then
         if pos_dir == DIRECTION_FORWARD then
             real_dir = FRONT_ADD
@@ -4386,11 +4173,9 @@ function ExecDamage(is_weak, ignore_guard_block)
         Fire("W_Event20000")
         return TRUE
     end
-    
     local damage_level = env(GetDamageLevel)
     local damage_type = env(GetReceivedDamageType)
     local is_damaged = env(HasReceivedAnyDamage)
-    
     if env(GetBehaviorID, BEH_IDENTIFIER_ROLLING) == TRUE and env(GetSpEffectID, SP_EFFECT_ROLLING_PUSH) == FALSE then
         return FALSE
     elseif env(GetBehaviorID, BEH_IDENTIFIER_ROLLING) == TRUE and env(GetSpEffectID, SP_EFFECT_ROLLING_PUSH) == TRUE and env(GetSpEffectID, SP_EFFECT_IGNORE_ROLLING_PUSH) == FALSE then
@@ -4407,7 +4192,6 @@ function ExecDamage(is_weak, ignore_guard_block)
     elseif env(GetBehaviorID, BEH_IDENTIFIER_TRAUMA_GREATER_DEMON) == TRUE and env(GetSpEffectID, 10680) == FALSE then
         return FALSE
     end
-    
     SetVariable("BlendDamageDir", 0)
     SetVariable("BlendDamageFire", 0)
     SetVariable("BlendNewDamageDir", 0)
@@ -4417,7 +4201,6 @@ function ExecDamage(is_weak, ignore_guard_block)
     SetVariable("BlendDamageLargeFrontFire", 0)
     SetVariable("BlendGuard", 0)
     SetVariable("BlendDamageMinimumSA", 0)
-    
     if (env(GetDamageSpecialAttribute, STATUS_EFFECT_BLOOD) == TRUE or env(GetDamageSpecialAttribute, STATUS_EFFECT_COLD) == TRUE) and (damage_level == DAMAGE_LEVEL_NONE or damage_level == DAMAGE_LEVEL_MINIMUM or damage_level == DAMAGE_LEVEL_SMALL or damage_level == DAMAGE_LEVEL_MIDDLE) and env(GetSpEffectID, 5890) == FALSE and env(GetSpEffectID, 5891) == FALSE and env(GetSpEffectID, 89) == TRUE then
         damage_level = DAMAGE_LEVEL_MIDDLE
     elseif (env(GetDamageSpecialAttribute, STATUS_EFFECT_BLOOD) == TRUE or env(GetDamageSpecialAttribute, STATUS_EFFECT_COLD) == TRUE) and damage_level == DAMAGE_LEVEL_NONE and env(GetSpEffectID, 5890) == FALSE and env(GetSpEffectID, 5891) == FALSE and TRUE == IsExistAnime(8040) then
@@ -4427,7 +4210,6 @@ function ExecDamage(is_weak, ignore_guard_block)
     elseif (env(GetDamageSpecialAttribute, STATUS_EFFECT_BLOOD) == TRUE or env(GetDamageSpecialAttribute, STATUS_EFFECT_COLD) == TRUE) and (damage_level == DAMAGE_LEVEL_SMALL or damage_level == DAMAGE_LEVEL_MIDDLE or damage_level == DAMAGE_LEVEL_PUSH) and env(GetSpEffectID, 5890) == FALSE and env(GetSpEffectID, 5891) == FALSE and (TRUE == IsExistAnime(8040) or TRUE == IsExistAnime(8050)) then
         damage_level = DAMAGE_LEVEL_LARGE
     end
-    
     if ExecNpcDamage(damage_level, damage_type, is_damaged) == TRUE then
         return TRUE
     elseif ExecJumpDamage(damage_level, damage_type, is_damaged) == TRUE then
@@ -4443,7 +4225,6 @@ function ExecDamage(is_weak, ignore_guard_block)
             end
         end
     end
-    
     if ExecGuardBlock(damage_type, ignore_guard_block) == TRUE then
         return TRUE
     elseif env(IsDamageMotionOff) == FALSE and ExecSaBreakDamage(damage_level, is_damaged) == TRUE then
@@ -4454,7 +4235,6 @@ function ExecDamage(is_weak, ignore_guard_block)
             return TRUE
         end
     end
-    
     if env(IsDamageMotionOff) == FALSE then
         if TRUE == ExecSpDamage() then
             return TRUE
@@ -4462,7 +4242,6 @@ function ExecDamage(is_weak, ignore_guard_block)
             return TRUE
         end
     end
-    
     if ExecTypeDamage(damage_type) == TRUE then
         return TRUE
     elseif ExecNoSyncAddDamage(damage_level, is_damaged) == TRUE then
@@ -4481,7 +4260,6 @@ end
 function GetDeathType()
     local damage_level = env(GetDamageLevel)
     local death_type = DEATH_TYPE_DEFAULT
-    
     if env(GetSpEffectID, 89) == TRUE and (damage_level == DAMAGE_LEVEL_LARGE or damage_level == DAMAGE_LEVEL_LARGE_BLOW or damage_level == DAMAGE_LEVEL_PUSH or damage_level == DAMAGE_LEVEL_FLING or damage_level == DAMAGE_LEVEL_SMALL_BLOW or damage_level == DAMAGE_LEVEL_UPPER or damage_level == DAMAGE_LEVEL_EX_BLAST or damage_level == DAMAGE_LEVEL_BREATH) then
         death_type = DEATH_TYPE_BLAST
     elseif damage_level == DAMAGE_LEVEL_LARGE_BLOW or damage_level == DAMAGE_LEVEL_SMALL_BLOW or damage_level == DAMAGE_LEVEL_EX_BLAST or damage_level == DAMAGE_LEVEL_BREATH then
@@ -4499,7 +4277,6 @@ function GetDeathType()
     elseif env(GetSpecialAttribute) == DAMAGE_ELEMENT_FIRE then
         death_type = DEATH_TYPE_FIRE
     end
-    
     return death_type
 end
 
@@ -4517,12 +4294,16 @@ end
 
 function GetExistAnimeNum(base_anim_id, anim_num, offset)
     local num = 0
-    
-    -- Vigil: FOR LOOP
-    -- local f64_local0 = 0
-    -- local f64_local1 = anim_num - 1
-    -- local f64_local2 = 1
-    -- goto basicblock_6:
+    for i = 0, anim_num - 1, 1 do
+        local anim_offset = i * offset
+        local anim_id = base_anim_id + anim_offset
+        if IsExistAnime(anim_id) == FALSE then
+            break
+        end
+        num = num + 1
+    end
+    return num
+
 end
 
 function GetRandomIndex(base_anim_id, anim_num, offset)
@@ -4539,7 +4320,6 @@ function GetMoveDir(move_speed_level)
     local angular_velocity = GetVariable("AngularVelocity")
     local angular_velocity_max = GetVariable("AngularVelocityMax")
     local fly_route_state = env(GetFlyRouteState)
-    
     if fly_route_state == AI_FLY_ROUTE_STATE_NOMAL_CRUISE or fly_route_state == AI_FLY_ROUTE_STATE_NOMAL_CRUISE_LAND_REQUESTED then
         if angular_velocity == 0 then
             angular_velocity_max = 0
@@ -4592,6 +4372,7 @@ end
 
 function ExecMove(move_type, is_on_cancel)
     local move_speed_level = GetVariable("MoveSpeedLevel")
+    
     if move_speed_level <= 0 then
         return FALSE
     elseif is_on_cancel == TRUE and FALSE == env(IsMoveCancelPossible) then
@@ -4613,12 +4394,10 @@ function ExecMove(move_type, is_on_cancel)
     if ai_rec > AI_RECOGNITION_NONE then
         ai_state = AI_STATE_BATTLE
     end
-    
     local event = ""
     local move_table = {}
     local j = move_dir
     local action_type = env(GetAIActionType)
-    
     if action_type == ACTION_TYPE_GUARD then
         move_table[1] = move_table_guard[j]
         if move_dir == MOVE_TYPE_RUN then
@@ -4652,29 +4431,37 @@ function ExecMove(move_type, is_on_cancel)
         move_table[2] = move_table_battle[MOVE_TYPE_WALK_FRONT]
     end
     local hit_move_type = MOVE_TYPE_NONE
-    
-    -- Vigil: FOR LOOP
-    -- local f67_local0 = 1
-    -- local f67_local1 = #move_table
-    -- local f67_local2 = 1
+    for i = 1, #move_table, 1 do
+        if IsExistAnime(move_table[i][1]) == TRUE then
+            event = move_table[i][2]
+            hit_move_type = move_table[i][3]
+            break
+        end
+    end
+    if hit_move_type == MOVE_TYPE_NONE then
+        return FALSE
+    elseif hit_move_type == move_type then
+        return FALSE
+    else
+        SetIdleType(ai_state)
+
+        Fire(event)
+        return TRUE
+    end
 end
 
 function ExecStop()
     local move_speed_level = GetVariable("MoveSpeedLevel")
-    
     if move_speed_level > 0 then
         return FALSE
     end
-    
     local action_type = env(GetAIActionType)
     local event = "W_Idle"
-    
     if action_type == ACTION_TYPE_GUARD then
         event = "W_GuardIdle"
     elseif action_type == ACTION_TYPE_PARRY then
         event = "W_ParryIdle"
     end
-    
     Fire(event)
     return TRUE
 end
@@ -4904,7 +4691,6 @@ function MoveCommonFunction(style, move_type)
     act(Unknown2050, 0, style)
     act(Unknown2040)
     local fly_route_state = env(GetFlyRouteState)
-    
     if ExecPassiveTransition(JUDGE_FALL_TYPE_DEFAULT, FALSE, FALSE, TRUE) == TRUE then
         return TRUE
     elseif TRUE == ExecAILadder() then
@@ -4914,7 +4700,7 @@ function MoveCommonFunction(style, move_type)
     elseif fly_route_state == AI_FLY_ROUTE_STATE_DESCENR then
         Fire("W_Event30001")
         return TRUE
-    elseif fly_route_state == AI_FLY_ROUTE_STATE_NOMAL_CRUISE_TO_DESCENT and env(Unknown9999) < 40 then
+    elseif fly_route_state == AI_FLY_ROUTE_STATE_NOMAL_CRUISE_TO_DESCENT and env(9999) < 40 then
         Fire("W_Event20002")
         return TRUE
     elseif (env(GetSpEffectID, 6004) == TRUE or fly_route_state ~= AI_FLY_ROUTE_STATE_NOT_USE_FLY_ROUTE and fly_route_state ~= AI_FLY_ROUTE_STATE_ON_GROUND and fly_route_state ~= AI_FLY_ROUTE_STATE_ON_GROUND_TAKEOFF_REQUESTED) and ExecActiveTransition(FALSE, style, move_type, TRUE) == TRUE then
@@ -5113,13 +4899,11 @@ end
 
 function ExecLadderFall()
     local hp = env(GetHP)
-    
     if env(IsVersusDivineDamage) == TRUE then
         FLAG_HOLY_DAMAGE = TRUE
     else
         FLAG_HOLY_DAMAGE = FALSE
     end
-    
     if env(GetSpEffectID, 16566) == TRUE and env(GetSpecialAttribute) == DAMAGE_ELEMENT_FIRE then
         Fire("W_Event20020")
         return TRUE
@@ -5160,7 +4944,6 @@ function ExecLadderDamage(hand)
     local stamina_ratio = GetStaminaRatio()
     local ladder_damage_large = -(0.6000000238418579 * env(GetMaxStamina))
     local ladder_damage_small = -(0.6000000238418579 * env(GetMaxStamina))
-    
     if stamina_ratio <= 0.800000011920929 then
         act(ChangeStamina, ladder_damage_large)
         Fire("W_LadderDamageLarge" .. event_hand)
@@ -5182,7 +4965,6 @@ function ExecLadderNextAction(hand, is_idle)
         event_hand = "Right"
     end
     local action_type = env(GetAIActionType)
-    
     if action_type == LADDER_REQUEST_UP then
         if env(IsReachTopOfLadder) == TRUE then
             Fire("W_LadderEndTop" .. event_hand)
@@ -7889,11 +7671,26 @@ function GetNextIndexLipSync(base_anim_id, min, max, offset, index_start, index_
     local cur_index_val = GetVariable(index_name)
     local ret = INVALID
     
-    -- Vigil: FOR LOOP
-    -- local f602_local0 = min
-    -- local f602_local1 = max
-    -- local f602_local2 = 1
-    -- goto basicblock_8:
+    for i = min, max, 1 do
+        local anim_offset = i * offset
+        local anim_id = base_anim_id + anim_offset
+        
+        if IsExistAnime(anim_id) == FALSE then
+        elseif is_selectable_cur_index == false and cur_index_val == i + index_start then
+        else
+            table.insert(msg_array, i + index_start)
+        end
+    end
+    
+    if #msg_array > 0 then
+        local rand = math.random(1, #msg_array)
+        ret = msg_array[rand]
+    else
+        ret = cur_index_val
+    end
+    
+    return ret
+
 end
 
 function DamageBlend_NoAdd_onUpdate()
@@ -7936,12 +7733,10 @@ function ParallelMove_Update()
     local gap = move_angle - move_angle_real
     local gap_abs = math.abs(gap)
     local inverse = FALSE
-    
     if gap_abs > 180 then
         gap_abs = 360 - gap_abs
         inverse = TRUE
     end
-    
     local f611_local0 = nil
     if threshold < gap_abs then
         f611_local0 = nil
@@ -7987,7 +7782,6 @@ function ThrowAtk_Update()
     local blend_weight = GetVariable("ThrowHoldBlendWeight")
     local is_holding = GetVariable("ThrowHolding")
     local no_regist_time = GetVariable("ThrowNoRegistTime")
-    
     if regist_num > 0 then
         is_holding = true
     end
@@ -8144,7 +7938,7 @@ function IsRideDead()
     local height = env(GetMountFallHeight) / 100
     if env(GetReceivedDamageType) == DAMAGE_TYPE_DEATH or hp_top <= 0 or env(GetMountRecievedDamageType) == DAMAGE_TYPE_DEATH or hp_under <= 0 then
         return TRUE
-    elseif env(IsMountInFallLoop) == TRUE and height > HEIGHT_FORCE_DEATH and env(GetStateChangeType, SP_EFFECT_TYPE_CAT_LANDING) == FALSE and env(550, SP_EFFECT_TYPE_CAT_LANDING) == FALSE then
+    elseif env(IsMountInFallLoop) == TRUE and height > HEIGHT_FORCE_DEATH and env(GetStateChangeType, SP_EFFECT_TYPE_CAT_LANDING) == FALSE and env(GetMountSpEffectType, SP_EFFECT_TYPE_CAT_LANDING) == FALSE then
         return TRUE
     elseif env(GetMountSpEffectID, 11840) == TRUE and hp_under <= 1 then
         return TRUE
@@ -8498,7 +8292,6 @@ end
 function RideRequestFunction(is_on_cancel, move_type, enable_turn, lower_only)
     local direction_num = -1
     local state_num = -1
-    
     if env(IsOnMount) == TRUE then
         if ExecRideSleepResist(is_on_cancel) == TRUE then
             return TRUE
@@ -8613,11 +8406,49 @@ function ExecRideTurn(is_on_cancel)
         buff[2] = INDEX_TURN_BATTLE
     end
     local turn_index = INVALID
+
+    for i = 1, #buff, 1 do
+        local anim = ANIME_ID_TURN + buff[i] * 10 + f641_local0
+        if IsExistRideAnime(anim) == TRUE then
+            turn_index = buff[i]
+            break
+        end
+    end
     
-    -- Vigil: FOR LOOP
-    -- local f641_local2 = 1
-    -- local f641_local3 = #buff
-    -- local f641_local4 = 1
+    if turn_index >= 0 then
+        act(SetTurnAnimCorrectionRate, f641_local1)
+        act(SetIsTurnAnimInProgress)
+        local event_top = "W_Ride_Enemy_Turn"
+        local event_under = "W_Ridden_Enemy_Turn"
+        local ai_state = AI_STATE_BATTLE
+        if turn_index == INDEX_TURN_BATTLE then
+            event_top = event_top .. "Battle"
+            event_under = event_under .. "Battle"
+        else
+            event_top = event_top .. "Default"
+            event_under = event_under .. "Default"
+            ai_state = AI_STATE_DEFAULT
+        end
+        SetRideIdleType(ai_state)
+        if f641_local0 == INDEX_TURN_DIRECTION_LEFT90 then
+            event_top = event_top .. "_Left90"
+            event_under = event_under .. "_Left90"
+        elseif f641_local0 == INDEX_TURN_DIRECTION_RIGHT90 then
+            event_top = event_top .. "_Right90"
+            event_under = event_under .. "_Right90"
+        elseif f641_local0 == INDEX_TURN_DIRECTION_LEFT180 then
+            event_top = event_top .. "_Left180"
+            event_under = event_under .. "_Left180"
+        elseif f641_local0 == INDEX_TURN_DIRECTION_RIGHT180 then
+            event_top = event_top .. "_Right180"
+            event_under = event_under .. "_Right180"
+        end
+        FireRideEvent(event_top, event_under, FALSE)
+        return TRUE
+    else
+        return FALSE
+    end
+
 end
 
 function ExecRideMove(move_type, is_on_cancel)
@@ -8640,7 +8471,6 @@ function ExecRideMove(move_type, is_on_cancel)
     local event_under = ""
     local move_table = {}
     local j = move_dir
-    
     if ai_state == AI_STATE_BATTLE then
         move_table[1] = move_table_ride_battle[j]
         if move_dir == MOVE_TYPE_RUN then
@@ -8656,11 +8486,24 @@ function ExecRideMove(move_type, is_on_cancel)
         move_table[2] = move_table_ride_battle[MOVE_TYPE_WALK_FRONT]
     end
     local hit_move_type = MOVE_TYPE_NONE
-    
-    -- Vigil: FOR LOOP
-    -- local f642_local0 = 1
-    -- local f642_local1 = #move_table
-    -- local f642_local2 = 1
+    for i = 1, #move_table, 1 do
+        if IsExistRideAnime(move_table[i][1]) == TRUE then
+            event_top = move_table[i][2]
+            event_under = move_table[i][3]
+            hit_move_type = move_table[i][4]
+            break
+        end
+    end
+    if hit_move_type == MOVE_TYPE_NONE then
+        return FALSE
+    elseif hit_move_type == move_type then
+        return FALSE
+    else
+        SetRideIdleType(ai_state)
+        FireRideEvent(event_top, event_under, FALSE)
+        return TRUE
+    end
+
 end
 
 function ExecRideStop()
@@ -11351,22 +11194,18 @@ end
 function Update()
     g_FrameCount = g_FrameCount + 1
     act(Unknown9999)
-    
     if env(GetSpEffectID, 5980) == TRUE then
         act(Unknown2027)
     end
-    
     if env(IsSpeaking) == TRUE and GetVariable("LipSyncBlend00") <= 0 then
         SetVariable("LipSyncBlend00", 0.10000000149011612)
         SetVariable("IndexLipSync", GetNextIndexLipSync(ANIME_ID_GENERAL_LIP_SYNC, 0, 9, 1, 0, "IndexLipSync", false))
         Fire("W_LipSync")
     end
-    
     if env(IsSpeaking) == TRUE and GetVariable("TalkHeadBlend00") <= 0 and TRUE == IsExistAnime(ANIME_ID_TALK_HEAD_BLEND) then
         SetVariable("TalkHeadBlend00", 0.10000000149011612)
         Fire("W_TalkHeadBlend00")
     end
-    
     SoulDropUp()
     GolemConfusion()
     ParryResist()

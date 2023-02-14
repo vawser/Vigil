@@ -1,4 +1,7 @@
-﻿TRUE = 1
+﻿-- Vigil:
+-- Causing issue with Sword Arts on left hand when used
+
+TRUE = 1
 FALSE = 0
 INVALID = -1
 PLAYER_STATE_IDLE = 0
