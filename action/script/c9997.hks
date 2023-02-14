@@ -1,4 +1,12 @@
-﻿------------------------------------------
+﻿-------------------------------
+-- Vigil: Global Variables
+-------------------------------
+
+------------------------------------------
+-- Vigil: Functions
+------------------------------------------
+
+------------------------------------------
 -- Core: Functions
 ------------------------------------------
 function IncNum(num)
@@ -10748,6 +10756,20 @@ function Update()
     SoulDropUp()
     GolemConfusion()
     ParryResist()
+    
+    ModifyBoneScale("Ctrl_Head", 0, 3)
+    ModifyBoneScale("Ctrl_Head", 1, 3)
+    ModifyBoneScale("Ctrl_Head", 2, 3)
+end
+
+function ModifyBoneScale(target, index, value)
+    local sourceMatrix = hkbGetBoneModelSpace(target)
+    local source = sourceMatrix:getScale()
+    
+    source[index] = source[index] + value
+    
+    sourceMatrix:setScale(source)
+    hkbSetBoneModelSpace(target, sourceMatrix)
 end
 
 ------------------------
