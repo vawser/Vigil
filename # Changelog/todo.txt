@@ -128,38 +128,6 @@ Assets:
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-Add new spells to custom loadout shop
-
-523350	Fia's Mist (cast charge blight orb and Death sigil)	
-523351	Fia's Mist (cast sound)	
-523352	Fia's Mist (charged mist)	
-523354	Fia's Mist (charge gathering energy)	
-523357	Fia's Mist (mist)	
-
-523360	Rancorcall (cast charge ghostflame orb and Death sigil)	
-523361	Rancorcall (cast sound)	
-523362	Rancorcall (charged projectile)	- Big Skull
-523363	Rancorcall (charged projectile burst)	
-523364	Rancorcall (charge gathering energy)	
-523367	Rancorcall (projectile)	- Small Skull
-523368	Rancorcall (projectile burst)	
-
-523370	Ancient Death Rancor (cast charge ghostflame orb and Death sigil)	
-523371	Ancient Death Rancor (cast sound)	
-523372	Ancient Death Rancor (charged projectile)	
-523373	Ancient Death Rancor (charged projectile burst)	
-523374	Ancient Death Rancor (charge gathering energy)	
-523377	Ancient Death Rancor (projectile)	
-523378	Ancient Death Rancor (projectile burst)	
-
-523380	Explosive Ghostflame (cast charge ghostflame flare)	
-523381	Explosive Ghostflame (Death sigil)	
-523382	Explosive Ghostflame (explosion)	
-523383	Explosive Ghostflame (lingering ghostflame)	
-
-523390	Tibia's Summons (cast charge ghostflame flare)	
-523391	Tibia's Summons (summon pulse)	
-
 Ghostflame Blade 12007000
 - Applies magic and frostbite
 303122	Ghostflame weapon buff (size 1)	
@@ -169,5 +137,15 @@ Soporific Armament
 303102	Soporific weapon buff (size 1)	
 
 
-    act(AddSpEffect, 7000500)
-    act(SetMovementScaleMult, 5)
+act(AddSpEffect, 7000500)
+act(SetMovementScaleMult, 5)
+
+local buff = {...}
+    
+for i = 1, #buff, 1 do
+    if hkbIsNodeActive(buff[i]) then
+        return TRUE
+    end
+end
+
+return FALSE

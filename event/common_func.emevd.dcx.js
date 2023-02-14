@@ -6922,3 +6922,13 @@ $Event(90006100, Restart, function(X0_4, X4_4) {
     RestartEvent();
 });
 
+// Vigil - Enforced Boundry Area
+$Event(90006200, Restart, function(X0_4, X4_4) {
+    DisableNetworkSync();
+    
+    WaitFor(InArea(10000, X0_4, 1));
+    
+    IssueShortWarpRequest(10000, TargetEntityType.Area, X4_4, 0);
+
+    RestartEvent();
+});

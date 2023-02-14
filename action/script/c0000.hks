@@ -4701,7 +4701,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
         end
     end
     
-    if env(Unknown362, 32) == TRUE then
+    if env(GetSpEffectType, 32) == TRUE then
         act(SetDamageAnimType, DAMAGE_FLAG_SMALL)
         ResetRequest()
         ExecEventAllBody("W_DamageBind")
@@ -7757,7 +7757,7 @@ function DamageBind_onUpdate()
     
     if DamageCommonFunction(FALSE, ESTEP_NONE, FALL_TYPE_FORCE) == TRUE then
         return
-    elseif FALSE == env(Unknown362, 32) then
+    elseif FALSE == env(GetSpEffectType, 32) then
         ExecEventAllBody("W_Idle")
     end
 end
@@ -13702,12 +13702,12 @@ end
 
 function Event60505_onUpdate()
     if env(IsAnimEnd, 1) == TRUE then
-        act(Unknown2030)
+        act(ChangeBuddyState)
     end
 end
 
 function Event60505_onDeactivate()
-    act(Unknown2030)
+    act(ChangeBuddyState)
 end
 
 function Event60520_onActivate()
@@ -15136,7 +15136,7 @@ function RideReActionFunction()
         if env(Unknown548) == TRUE and env(Unknown555) == TRUE and env(IsMountInFallLoop) == TRUE then
             isEnableForceRideOff = TRUE
         end
-    elseif (env(Unknown548) == TRUE or env(Unknown365) == TRUE or env(Unknown362, 433) == TRUE) and env(Unknown555) == TRUE and env(IsMountInFallLoop) == TRUE then
+    elseif (env(Unknown548) == TRUE or env(Unknown365) == TRUE or env(GetSpEffectType, 433) == TRUE) and env(Unknown555) == TRUE and env(IsMountInFallLoop) == TRUE then
         isEnableForceRideOff = TRUE
     end
     
@@ -15247,7 +15247,7 @@ function ExecRideDamage()
         
         return TRUE
     -- Torrent Dismount from Poise Damage
-    elseif env(Unknown400) <= 0 and (damage_level > DAMAGE_LEVEL_NONE or damage_level_under > DAMAGE_LEVEL_NONE) and (is_damaged == TRUE or is_damaged_under == TRUE) then
+    elseif env(GetPoise) <= 0 and (damage_level > DAMAGE_LEVEL_NONE or damage_level_under > DAMAGE_LEVEL_NONE) and (is_damaged == TRUE or is_damaged_under == TRUE) then
         
         -- Vigil: Frozen Raisin
         if env(GetSpEffectID, 500815) == TRUE then
@@ -21351,13 +21351,16 @@ GetStayAnimCategory = 358
 GetWeaponSwitchStatus = 359
 IsEquipmentMenuOpen = 360
 GetRemainingArrowCount = 361
-Unknown362 = 362 -- args: <unknown>
+GetSpEffectType = 362 -- args: <enum> SP_EFFECT_TYPE_
+Unknown363 = 363
 GetEventID = 364
 Unknown365 = 365
 GetSpiritspringJumpHeight = 366
 Unknown368 = 368
 
-Unknown400 = 400
+GetPoise = 400
+GetMaxPoise = 402
+GetSpEffectEventAnimID = 403
 Unknown404 = 404
 Unknown405 = 405
 GetRollAngle = 406
@@ -21366,6 +21369,7 @@ GetSwordArtsRollAngle = 408
 GetDamageSpecialAttribute = 409 -- args: <index>
 
 IsOnMount = 500
+Unknown502 = 502
 IsSummoningRide = 504
 IsMovingOnMount = 505
 IsIdleOnMount = 506
@@ -21381,10 +21385,17 @@ IsMountTrulyLanding = 540
 GetMountSpecialAttribute = 543
 IsMountDead = 545
 GetMountIsWeakPoint = 546
+GetMountDamageAnimID = 547
 Unknown548 = 548
 GetMountSpEffectID = 549
+GetMountSpEffectType = 550
+GetMountStateInfo = 551
 Unknown552 = 552
+GetMountBehaviorID = 553
+GetMountStatusEffect = 554
 Unknown555 = 555
+
+GetFlyRouteState = 600
 
 Unknown700 = 700
 Unknown701 = 701
@@ -21568,7 +21579,7 @@ Unknown2025 = 2025 -- args: <value>
 Unknown2026 = 2026
 Unknown2027 = 2027
 Unknown2029 = 2029 -- args: <value>
-Unknown2030 = 2030
+ChangeBuddyState = 2030
 PlayEventSync = 2031
 Unknown2040 = 2040
 Unknown2050 = 2050 -- args: <index>, <index> # IDX_AINOTE_STATETYPE, IDX_AINOTE_STATETYPE
@@ -21579,6 +21590,7 @@ Unknown3002 = 3002
 PlayRideAnim = 3003
 ApplyRideBlend = 3004 -- args: <blend anim>, <rate>
 Unknown3005 = 3005
+Unknown3006 = 3006
 ApplyDamageFlag = 3007 -- args: <index>
 
 Unknown4000 = 4000

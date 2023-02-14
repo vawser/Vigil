@@ -1,0 +1,162 @@
+﻿#-------------------------------------------------
+# Changelog 0.0.6
+#-------------------------------------------------
+#-------------------------------------------------
+# Features
+#-------------------------------------------------
+# Journey Configuration
+- Added the ability to start in different/random locations:
+ - You can choose between:
+  - Here (vanilla tutorial route)
+  - Limgrave (random spot out of 3 options)
+  - Weeping Penisula (random spot out of 3 options)
+  - Liurnia of the Lakes (random spot out of 5 options)
+  - Mt. Gelmir: (random spot out of 2 options)
+  - Altus Plateau (random spot out of 3 options)
+  - Caelid (random spot out of 3 options)
+  - Mountaintops of the Giants (random spot out of 3 options)
+  - Moonlight Altar (fixed spot)
+  - Miquella's Haligtree (fixed spot)
+  - Random (random spot from all of the possible spots)
+ - Note that you will only have the grace that you are teleported to unlocked (and the Roundtable Hold if you use that option).
+ - Warp gates with no cost have been added to the late-game areas to allow you to travel backwards if you start out in those areas.
+ 
+- Moved the immediate Roundtable Hold option to Journey Modifiers. It now purely unlocks the ability to warp to the Hold.
+- Added "Reveal Maps" journey modifier: automatically reveals the map as if you had pickup all the map fragments.
+
+- Conqueror journey type now boosts enemies instead of reducing player absorption:
+ - Enemies gain +25% HP and damage.
+
+- Added a new journey type: Accursed.
+ - Grants enemies +50% damage and absorption,.
+ - Every death will inflict a new detriment.
+  - There are 44 types of detriment.
+  - Each type can stack multiple times, upto 5 or 10 times depending on the detriment.
+  
+ - Defeating the Elden Beast in this journey type will reward Marika's Necklace.
+  - Detriments are removed upon defeating the Elden Beast.
+
+# Training System
+- Added a new enemy type to the dummy selection:
+ - Player: Self, which copies you.
+ - Player: Random, which selects NPCs like the Great Jar encounter.
+
+- Made the Dummy Configuration menu show what is enabled.
+- Added a site of grace in the lower hall.
+
+# Castigations
+- Added a new enemy castigation: Relentless Approach
+ - Causes enemies to always fight together in groups, meaning they won't wait around if multiple of them are targeting the player.
+ 
+- Added a new player castigation: Fresh Meat
+ - Adds target priority to the player, and makes enemies much better at seeing and hearing the player.
+ 
+- Added a new player castigation: Corrupted Flasks
+ - Reduces the effectiveness of Flasks by 30%.
+ 
+- Added a new player castigation: Brittle Bones
+ - Reduces absorption by 30%.
+ 
+- Added a new category of castigation: Fun. This is for non-gameplay toggles such as Megamind.
+- Added new fun castigation: Megamind
+ - Enlarges the heads of all human npcs.
+ 
+#-------------------------------------------------
+# Player
+#-------------------------------------------------
+- Adjusted HP curve from Vigor, moving the threshold for 1450 HP to 40 (was 30).
+
+#-------------------------------------------------
+# Bosses
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Enemies
+#-------------------------------------------------
+- All instances of enemy absorption exceeding 50% has been capped at 50%, i.e. Elden Beast had 80% Holy absorption, it now has 50%.
+ - Increased affected enemy HP slightly to account for this change so difficulty isn't massively changed.
+
+#-------------------------------------------------
+# World
+#-------------------------------------------------
+# m60_42_36_00 
+- The door from Stranded Graveyard into Limgrave will now automatically be opened.
+- The door within the Stranded Graveyard has been removed.
+
+# m19_00_00_00
+- Added a Fractured Marika statue in the Elden Hollow after the Elden Beast has been defeated, allowing for immediate return to the Stone Platform.
+
+#-------------------------------------------------
+# Items
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Armor
+#-------------------------------------------------
+- Elden Lord Set
+- Now has the following effect on each piece:
+ - Strengthens the potency of Skills by 5%.  
+ 
+- General Radahn Set
+- Now has the following effect on each piece:
+ - Strengthens the potency of Gravity sorceries by 5%.
+ 
+#-------------------------------------------------
+# Weapons
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Catalysts
+#-------------------------------------------------
+    
+#-------------------------------------------------
+# Spells
+#-------------------------------------------------
+- Added Briarthorn Patch:
+ - Emits a blood shot, leaving behind a briarthorn patch for a few seconds.
+ - Found in the Weeping Peninsula.
+
+- Added Flame of Destiny:
+ - O' Flame but for Destined Death. Applies same debuffs as Black Blade.
+ - Found in Crumbling Farum Azula.
+ 
+- Added Vow of Silence:
+ - Silences both the caster and nearby enemies.
+ - Sold by Brother Corhyn after giving him the Assassin's Prayerbook.
+ 
+- Added Lingering Rancor:
+ - Forms a defensive arch of vengeful spirits. (similar to Glintblade Phalanx)
+ - Found near the Tibia Mariner in Liurnia.
+ 
+- Added Vengeful Barrage:
+ - Fires a volley of vengeful spirits (similar to Crystal Barrage)
+ - Found near the Tibia Mariner in Altus Plateau.
+ 
+- Added Vengeful Strike:
+ - Lobs multiple explosive vengeful spirits in an arc (mix of Cannon of Haima/Crystal Barrage)
+ - Found in Caelid, near to Caelem and Forsaken Ruins.
+ 
+#-------------------------------------------------
+# Great Runes
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Talismans
+#-------------------------------------------------
+- Added Marika's Necklace:
+    - Reward for killing the Elden Beast in the Accursed journey type.
+    - +0 Effect: Boosts maximum HP, FP, Stamina and Equip Load by 25%, and increases rally restoration rate by 100%.
+    
+- Riding Horn
+    - Sold by Kale the Merchant.
+    - +0 Effect: Increases movement speed of Torrent by 25%.
+    - +1 Effect: Increases movement speed of Torrent by 30%.
+    - +2 Effect: Increases movement speed of Torrent by 40%.
+    - +3 Effect: Increases movement speed of Torrent by 50%.
+    
+#-------------------------------------------------
+# Misc
+#-------------------------------------------------
+
+ 
+ 
