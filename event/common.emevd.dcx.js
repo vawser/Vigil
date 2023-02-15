@@ -7175,6 +7175,12 @@ $Event(11018, Default, function() {
         AwardItemLot(4240);
     }
     
+    // Alacrity
+    if(EventFlag(1047610915))
+    {
+        AwardItemLot(4250);
+    }
+    
     WaitFixedTimeSeconds(5.0); // Internal cooldown
     
     RestartEvent();
@@ -9269,6 +9275,16 @@ $Event(14001, Restart, function() {
     else
     {
         ClearSpEffect(400005001, 9430050);
+    }
+    
+    // Alacrity
+    if(EventFlag(1047610915))
+    {
+        SetSpEffect(400005000, 7000510);
+    }
+    else
+    {
+        ClearSpEffect(400005001, 7000510);
     }
     
     //---------------------

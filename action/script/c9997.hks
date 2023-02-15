@@ -82,6 +82,7 @@ function IsNodeActive(...)
 
 end
 
+-- Golden Eyes mechanic
 function SoulDropUp()
     if IS_INITIALIZED_SOUL_DROP_UP == TRUE then
         return
@@ -277,17 +278,17 @@ function ExecTurn(is_on_cancel)
     end
     local turn_index = INVALID
 
-    -- Vigil: verify
+    -- Was added based on the ExecRideTurn section that was decompiled, as this section was skipped to allow the decompile to finish.
     for i = 1, #buff, 1 do
         local anim = ANIME_ID_TURN + buff[i] * 10 + f14_local0
-        if IsExistRideAnime(anim) == TRUE then
+        if IsExistAnime(anim) == TRUE then
             turn_index = buff[i]
             break
         end
     end
     
     if turn_index >= 0 then
-        act(SetTurnAnimCorrectionRate, f14_local1) -- Probably incorrect act, 9105 is for enemy ride
+        act(SetTurnAnimCorrectionRate, f14_local1)
         act(SetIsTurnAnimInProgress)
         
         local event = "W_Turn"
@@ -3920,6 +3921,45 @@ end
 function ExecMove(move_type, is_on_cancel)
     local move_speed_level = GetVariable("MoveSpeedLevel")
     
+    local movement_speed_mult = 1.0
+    
+    -- Alacrity
+    if env(GetSpEffectID, 7000500) == TRUE then
+        movement_speed_mult = 0.5
+    elseif env(GetSpEffectID, 7000501) == TRUE then
+        movement_speed_mult = 0.6
+    elseif env(GetSpEffectID, 7000502) == TRUE then
+        movement_speed_mult = 0.7
+    elseif env(GetSpEffectID, 7000503) == TRUE then
+        movement_speed_mult = 0.8
+    elseif env(GetSpEffectID, 7000504) == TRUE then
+        movement_speed_mult = 0.9
+    elseif env(GetSpEffectID, 7000505) == TRUE then
+        movement_speed_mult = 1.0
+    elseif env(GetSpEffectID, 7000506) == TRUE then
+        movement_speed_mult = 1.1
+    elseif env(GetSpEffectID, 7000507) == TRUE then
+        movement_speed_mult = 1.2
+    elseif env(GetSpEffectID, 7000508) == TRUE then
+        movement_speed_mult = 1.3
+    elseif env(GetSpEffectID, 7000509) == TRUE then
+        movement_speed_mult = 1.4
+    elseif env(GetSpEffectID, 7000510) == TRUE then
+        movement_speed_mult = 1.5
+    elseif env(GetSpEffectID, 7000511) == TRUE then
+        movement_speed_mult = 1.6
+    elseif env(GetSpEffectID, 7000512) == TRUE then
+        movement_speed_mult = 1.7
+    elseif env(GetSpEffectID, 7000513) == TRUE then
+        movement_speed_mult = 1.8
+    elseif env(GetSpEffectID, 7000514) == TRUE then
+        movement_speed_mult = 1.9
+    elseif env(GetSpEffectID, 7000515) == TRUE then
+        movement_speed_mult = 2.0
+    end
+    
+    act(SetMovementScaleMult, movement_speed_mult)
+    
     if move_speed_level <= 0 then
         return FALSE
     elseif is_on_cancel == TRUE and FALSE == env(IsMoveCancelPossible) then
@@ -7232,6 +7272,7 @@ function GetNextIndexLipSync(base_anim_id, min, max, offset, index_start, index_
     if #msg_array > 0 then
         local rand = math.random(1, #msg_array)
         ret = msg_array[rand]
+    -- Minor edit here to remove REG9 decompile artifact.
     else
         ret = cur_index_val
     end
@@ -10756,20 +10797,6 @@ function Update()
     SoulDropUp()
     GolemConfusion()
     ParryResist()
-    
-    ModifyBoneScale("Ctrl_Head", 0, 3)
-    ModifyBoneScale("Ctrl_Head", 1, 3)
-    ModifyBoneScale("Ctrl_Head", 2, 3)
-end
-
-function ModifyBoneScale(target, index, value)
-    local sourceMatrix = hkbGetBoneModelSpace(target)
-    local source = sourceMatrix:getScale()
-    
-    source[index] = source[index] + value
-    
-    sourceMatrix:setScale(source)
-    hkbSetBoneModelSpace(target, sourceMatrix)
 end
 
 ------------------------

@@ -2,7 +2,6 @@
 # Bugs
 #-------------------------------------------------
 - Add Grass Hair Ornament icon.
-- Fixed Morgott not respawning correctly.
 
 #-------------------------------------------------
 # Ideas
@@ -128,6 +127,8 @@ Assets:
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
+Add Haste Raisin for Torrent
+
 Ghostflame Blade 12007000
 - Applies magic and frostbite
 303122	Ghostflame weapon buff (size 1)	
@@ -136,17 +137,4 @@ Soporific Armament
 - Applies sleep
 303102	Soporific weapon buff (size 1)	
 
-
-act(AddSpEffect, 7000500)
-act(SetMovementScaleMult, 5)
-
-local buff = {...}
-    
-for i = 1, #buff, 1 do
-    if hkbIsNodeActive(buff[i]) then
-        return TRUE
-    end
-end
-
-return FALSE
-
+Fix Morgott not respawning correctly via Boss Revival

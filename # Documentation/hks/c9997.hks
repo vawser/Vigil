@@ -269,17 +269,17 @@ function ExecTurn(is_on_cancel)
     end
     local turn_index = INVALID
 
-    -- Vigil: verify
+    -- Was added based on the ExecRideTurn section that was decompiled, as this section was skipped to allow the decompile to finish.
     for i = 1, #buff, 1 do
         local anim = ANIME_ID_TURN + buff[i] * 10 + f14_local0
-        if IsExistRideAnime(anim) == TRUE then
+        if IsExistAnime(anim) == TRUE then
             turn_index = buff[i]
             break
         end
     end
     
     if turn_index >= 0 then
-        act(SetTurnAnimCorrectionRate, f14_local1) -- Probably incorrect act, 9105 is for enemy ride
+        act(SetTurnAnimCorrectionRate, f14_local1)
         act(SetIsTurnAnimInProgress)
         
         local event = "W_Turn"
@@ -7224,6 +7224,7 @@ function GetNextIndexLipSync(base_anim_id, min, max, offset, index_start, index_
     if #msg_array > 0 then
         local rand = math.random(1, #msg_array)
         ret = msg_array[rand]
+    -- Minor edit here to remove REG9 decompile artifact.
     else
         ret = cur_index_val
     end

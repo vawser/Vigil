@@ -1,6 +1,8 @@
 ﻿#-------------------------------------------------
 # Features
 #-------------------------------------------------
+- Added a new enemy castigation:
+ - Alacrity: increases enemy movement speed by 50%.
  
 #-------------------------------------------------
 # Player
@@ -13,6 +15,7 @@
 #-------------------------------------------------
 # Enemies
 #-------------------------------------------------
+- Corrected a Vulgar Militia type that dropped 25,000 runes instead of the intended 2500 runes.
 
 #-------------------------------------------------
 # World
@@ -54,5 +57,5 @@
 - Fixed a localization issue.
 - Fixed some leftover invalid Smithing Stone drops.
 - Added boundry areas in the Colosseums that warp the player back if they try and exploit the geometry.
- 
-Left WA - Parry not working correctly
+- Fixed a flag bug causing the Riding Horn +2 and +3 not to appear in the Bloodforge correctly.
+- Fixed Torrent taking damage if ridden with the Riding Horn equipped and a weapon buff active.

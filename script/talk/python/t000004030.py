@@ -707,6 +707,12 @@ def t000004030_x102():
         # Relentless Approach (selected)
         AddTalkListDataIf(GetEventFlag(1047610911) == 1, 205, 89100161, -1)
         
+        # Alacrity
+        AddTalkListDataIf(GetEventFlag(1047610915) == 0, 106, 89100115, -1)
+        
+        # Alacrity (selected)
+        AddTalkListDataIf(GetEventFlag(1047610915) == 1, 206, 89100165, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -759,6 +765,13 @@ def t000004030_x102():
         # Relentless Approach (enabled)
         elif GetTalkListEntryResult() == 205:
             assert t000004030_x110(1047610911, 0, 89100311)
+        # Alacrity
+        elif GetTalkListEntryResult() == 106:
+            assert t000004030_x110(1047610915, 1, 89100215)
+            continue
+        # Alacrity (enabled)
+        elif GetTalkListEntryResult() == 206:
+            assert t000004030_x110(1047610915, 0, 89100315)
         else:
             return 0
             

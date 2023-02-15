@@ -697,24 +697,6 @@ function Move_onGenerate()
     SetVariable("YawTwistAngle", offset * 340)
     SetVariable("InternalOffset", offset)
     SetVariable("YawTwistAngle_Twistroot", offset * 340 / 4)
-    
-    local movement_mult = 1.0
-    
-    -- Riding Horn
-    if env(GetSpEffectID, 362501) == TRUE then
-        movement_mult = 1.25
-    -- Riding Horn +1
-    elseif env(GetSpEffectID, 362511) == TRUE then
-        movement_mult = 1.3
-    -- Riding Horn +2
-    elseif env(GetSpEffectID, 362521) == TRUE then
-        movement_mult = 1.4
-    -- Riding Horn +3
-    elseif env(GetSpEffectID, 362531) == TRUE then
-        movement_mult = 1.5
-    end
-    
-    act(SetMovementScaleMult, movement_mult)
 end
 
 ------------------------
