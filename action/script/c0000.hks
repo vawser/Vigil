@@ -262,61 +262,61 @@ end
 
 -- Each Guard Start animation in the TAE has a Standard and Perfect Deflect window applied (via SpEffect).
 function ApplyDeflectionWindow()
-    -- Don't apply if player was hit beforehand
-    if env(GetSpEffectID, 150001) == FALSE then
-        -- Shinobi Sight (adds icons tot he deflect effects)
-        if env(GetSpEffectID, 150970) == TRUE then
-            -- Deflect window
-            act(AddSpEffect, 150020)
-            
-            -- Shinobi's Whetstone
-            if env(GetSpEffectID, 150960) == TRUE then
-                act(AddSpEffect, 150022) -- Perfect Deflect extended window
+    -- Deflect Cooldown
+    if env(GetSpEffectID, 150002) == FALSE then
+        act(AddSpEffect, 150002) -- Deflect Cooldown
+                    
+        -- Don't apply if player was hit beforehand
+        if env(GetSpEffectID, 150001) == FALSE then
+            -- Shinobi Sight (adds icons tot he deflect effects)
+            if env(GetSpEffectID, 150970) == TRUE then
+                -- Deflect window
+                act(AddSpEffect, 150020)
+                
+                -- Shinobi's Whetstone
+                if env(GetSpEffectID, 150960) == TRUE then
+                    act(AddSpEffect, 150022) -- Perfect Deflect extended window
+                else
+                    act(AddSpEffect, 150021) -- Perfect Deflect window
+                end
+            -- No Sight
             else
-                act(AddSpEffect, 150021) -- Perfect Deflect window
-            end
-        -- No Sight
-        else
-            -- Deflect window
-            act(AddSpEffect, 150010)
-            
-            -- Shinobi's Whetstone
-            if env(GetSpEffectID, 150960) == TRUE then
-                act(AddSpEffect, 150012) -- Perfect Deflect extended window
-            else
-                act(AddSpEffect, 150011) -- Perfect Deflect window
-            end
-        end
-    end
-end
-
-function TrackDeflection()
-    -- Guard cooldown, stops guard spam from being effective.
-    if env(GetSpEffectID, 150003) == FALSE then
-        act(AddSpEffect, 150003)
-        
-        -- Was Hit
-        if env(GetSpEffectID, 150001) == TRUE then
-            -- Deflect Cooldown
-            if env(GetSpEffectID, 150002) == FALSE then
-                -- If Perfect Deflect window is active, apply bullet
-                if env(GetSpEffectID, 150011) == TRUE or env(GetSpEffectID, 150012) == TRUE or env(GetSpEffectID, 150021) == TRUE or env(GetSpEffectID, 150012) == TRUE then
-                    HandleDeflect()
+                -- Deflect window
+                act(AddSpEffect, 150010)
+                
+                -- Shinobi's Whetstone
+                if env(GetSpEffectID, 150960) == TRUE then
+                    act(AddSpEffect, 150012) -- Perfect Deflect extended window
+                else
+                    act(AddSpEffect, 150011) -- Perfect Deflect window
                 end
             end
         end
     end
 end
 
+function TrackDeflection()
+    -- Was Hit
+    if env(GetSpEffectID, 150001) == TRUE then
+        -- If Perfect Deflect window is active, apply bullet
+        if env(GetSpEffectID, 150011) == TRUE or env(GetSpEffectID, 150012) == TRUE or env(GetSpEffectID, 150021) == TRUE or env(GetSpEffectID, 150022) == TRUE then
+            HandleDeflect()
+        end
+    end
+end
+
 function HandleDeflect()
-    act(AddSpEffect, 150002) -- Deflect Cooldown
-                    
-    -- Fire the deflect bullet based on the marker SpEffects the player has
-    FireBulletForDeflect(150900, 150100) -- Storm
-    FireBulletForDeflect(150901, 150110) -- Holy
-    FireBulletForDeflect(150902, 150120) -- Moon
-    FireBulletForDeflect(150903, 150130) -- Fire
-    FireBulletForDeflect(150904, 150140) -- Thorn
+    -- Bullet Cooldown
+    if env(GetSpEffectID, 150003) == FALSE then
+        act(AddSpEffect, 150003) -- Deflect Cooldown
+
+        -- Fire the deflect bullet based on the marker SpEffects the player has
+        FireBulletForDeflect(150900, 150100) -- Storm
+        FireBulletForDeflect(150901, 150110) -- Holy
+        FireBulletForDeflect(150902, 150120) -- Moon
+        FireBulletForDeflect(150903, 150130) -- Fire
+        FireBulletForDeflect(150904, 150140) -- Thorn
+    end
 end
 
 function FireBulletForDeflect(deflect_type, bullet_effect)

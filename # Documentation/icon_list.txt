@@ -28,9 +28,190 @@
 45025 Lingering Rancor
 45026 Vengeful Barrage
 45027 Vengeful Strike
-45028
+45028 Sour Raisin
 45029
 45030
+45031
+45032
+45033
+45034
+45035
+45036
+45037
+45038
+45039
+45040 
 
 ...
 45273
+
+#------------------------
+# Added Small Icon IDs
+#------------------------
+20600 Torrent (Green)
+20601 Torrent (Red)
+20602 Torrent (Scarlet)
+20603 Torrent (Golden)
+20604 Torrent
+20605 Deflect
+20606 Torrent (Light Blue)
+20607
+20608
+
+#------------------------
+# Small Icons
+#------------------------
+# No Background
+20005 Sword - UP
+20006 Flask - BLOCKED
+20007 Magic - UP
+20008 Armor - UP
+20009 Flesh - UP
+20010 Turtle Neck - UP
+20011 Crimson Tear with Sparkles
+20012 Cerulean Tear with Sparkles
+20022 Foot with White Cicles
+20027 Silver Fowl Foot - UP
+20028 Gold Fowl Foot - UP
+20031 Shabiri
+20050 Silver Ring
+20057 Statue of Marika
+20058 Grace on Map - BLOCKED
+20059 Grace on Map with White Fog - BLOCKED
+20064 Starscourge Greatsword - UP
+20065 Hammer - UP
+20066 Shield Guard - UP
+20068 Sword - DOWN
+20069 Armor - DOWN
+20070 Magic - BLOCKED
+20096 Memory Stone
+
+# Square Background
+20200 Taunter's Tongue 
+20202 Recusant Finger 
+20204 Crimson Flask - DOWN 
+20206 Sword - UP 
+20207 Magic - UP 
+20208 Armor - UP 
+20209 Flesh - UP 
+20210 Turtle Neck - UP 
+20211 Crimson Tear with Sparkles 
+20212 Cerulean Tear with Sparkles 
+20213 Crimson Flask - UP 
+20214 Cerulean Flask - UP 
+20215 Red Assassin Dagger 
+20216 Blue Assassin Dagger 
+20217 Magic - FP 
+20218 Skill - FP 
+20220 Roll - UP 
+20221 Cat Talisman 
+20222 Silenced Footstep 
+20223 Bewitching Branch 
+20224 Arrow's Reach Talisman - UP 
+20225 Spear Talisman - UP 
+20227 Rune Absorption - UP 
+20228 Item Discovery - UP 
+20229 Shabriri's Woe 
+20230 Poise - UP 
+20231 Daedicar's Woe 
+20245 Circle with Pattern 
+20246 Symbol - DOWN 
+20247 Furlcalling Finger Remedy 
+20248 Blue Cipher Ring 
+20249 Stake of Marika 
+20250 White Cipher Ring 
+20252 Roar Talisman 
+20253 Axe Talisman 
+20254 Claw Talisman 
+20260 Max HP - Down 
+20261 Winged Sword Insignia - UP 
+20262 Soft Cotton 
+20263 Twinblade Talisman - UP 
+20264 Starscourge Greatsword - UP 
+20265 Hammer Talisman - UP 
+20266 Guard Talisman - UP 
+20267 Item - FP 
+20268 Sword - DOWN 
+20269 Armor - DOWN 
+20271 Red Crystal Tear 
+20272 Crucible Knot Talisman 
+20273 Red Stake of Marika 
+20274 Red Symbol - DOWN 
+20275 Dagger Talisman - UP 
+20276 Blue Dancer Talisman - UP 
+20278 Lance Talisman - UP 
+20278 Arrow's Sting Talisman - UP 
+20279 Curved Sword Talisman - UP  
+20280 Pot - UP 
+20281 Perfume - UP 
+20282 Old Lord's Talisman  
+20283 Radagon Icon 
+20284 Crucible Scale Talisman 
+20285 Lord of Blood's Exultation 
+20286 Kindred of Rot's Exultation 
+20287 Radagon's Scarseal  - UP
+20288 Marika's Scarseal  - UP
+20289 Scorpion Charm - UP
+20290 Taker's Cameo
+20291 Max HP - UP
+20292 Max FP - UP
+20293 Max Stamina - UP
+20294 Arsenal Charm
+20295 Charged Skill - UP
+20297 Orange Trick-Mirror
+20298 Blue Trick-Mirror
+20299 Ancestral Spirit's Horn
+20300 Moon of Nokstella
+
+# Diamond Background
+20404 Crimson Flask - DOWN
+20405 Flask - BLOCKED
+20406 Sword - UP
+
+20407 Magic - UP
+20408 Armor - UP
+20409 Flesh - UP
+20410 Turtle Neck - UP
+20411 Crimson Tear with Sparkles
+20412 Cerulean Tear with Sparkles
+20415 Red Assassin Dagger
+20416 Blue Assassin Dagger
+20417 Magic - FP
+20418 Skill - FP
+20420 Roll - UP
+
+20421 Cat Talisman
+20422 Silenced Footstep
+20423 Betwitching Branch
+20424 Arrow's Reach Talisman - UP
+20425 Spear Talisman - UP
+20426 Scriptstone
+20427 Rune Absorption - UP
+20428 Item Discovery - UP
+20429 Shabriri's Woe 
+20430 Poise - UP
+20431 Daedicar's Woe 
+
+20453 Axe Talisman - UP
+20454 Claw Talisman - UP
+20460 Max HP - Down
+20461 Winged Sword Insignia - UP  
+20462 Soft Cotton
+20463 Twinblade Talisman
+20464 Starscourge Greatsword - UP
+20465 Hammer Talisman - UP
+20466 Guard Talisman - UP
+20467 Item - FP
+20468 Sword - DOWN
+
+20469 Armor - DOWN
+20470 Magic - Blocked
+20472 Crucible Scale Talisman 
+20490 Lord of Blood's Exultation 
+20491 Max HP - UP
+20492 Max FP - UP
+20493 Max Stamina - UP
+20494 Arsenal Charm
+20495 Charged Skill - UP
+20496 Memory Stone
+20499 Ancestral Spirit's Horn

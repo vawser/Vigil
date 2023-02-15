@@ -6777,6 +6777,8 @@ $Event(11000, Default, function() {
     //----------------------------
     InitializeEvent(0, 14000, 0); // Player Effects
     InitializeEvent(0, 14001, 0); // Enemy Effects
+    
+    
 });
 
 //----------------------------
@@ -9280,11 +9282,11 @@ $Event(14001, Restart, function() {
     // Alacrity
     if(EventFlag(1047610915))
     {
-        SetSpEffect(400005000, 7000510);
+        SetSpEffect(400005000, 7000500);
     }
     else
     {
-        ClearSpEffect(400005001, 7000510);
+        ClearSpEffect(400005001, 7000500);
     }
     
     //---------------------

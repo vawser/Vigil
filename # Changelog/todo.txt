@@ -127,7 +127,7 @@ Assets:
 #-------------------------------------------------
 # WIP
 #-------------------------------------------------
-Add Haste Raisin for Torrent
+Fix Morgott not respawning correctly via Boss Revival
 
 Ghostflame Blade 12007000
 - Applies magic and frostbite
@@ -137,4 +137,11 @@ Soporific Armament
 - Applies sleep
 303102	Soporific weapon buff (size 1)	
 
-Fix Morgott not respawning correctly via Boss Revival
+
+Add Haste Raisin for Torrent
+Add FP Regen block castigation
+
+815 Sour Raisin
+     20652 Fulgurbloom
+     
+     302050 

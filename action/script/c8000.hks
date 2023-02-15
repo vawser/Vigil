@@ -714,6 +714,11 @@ function Move_onGenerate()
         movement_mult = 1.5
     end
     
+    -- Sour Raisin
+    if env(GetSpEffectID, 500920) == TRUE then
+        movement_mult = movement_mult + 0.25
+    end
+    
     act(SetMovementScaleMult, movement_mult)
 end
 

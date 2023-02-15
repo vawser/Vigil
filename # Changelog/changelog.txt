@@ -26,6 +26,11 @@
 #-------------------------------------------------
 - Added the rune amounts in the names of the items that give runes to make it easier to assess which you want to use.
 
+- All the raisin items can now be crafted by default.
+- Added Sparking Raisin:
+    - Increases Torrent's movement speed by 25% for 60 seconds when fed to Torrent.
+    - Can be crafted from Rowa Fruit and 2 Fulgurbloom. Is available by default.
+    
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------

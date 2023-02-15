@@ -3925,39 +3925,10 @@ function ExecMove(move_type, is_on_cancel)
     
     -- Alacrity
     if env(GetSpEffectID, 7000500) == TRUE then
-        movement_speed_mult = 0.5
-    elseif env(GetSpEffectID, 7000501) == TRUE then
-        movement_speed_mult = 0.6
-    elseif env(GetSpEffectID, 7000502) == TRUE then
-        movement_speed_mult = 0.7
-    elseif env(GetSpEffectID, 7000503) == TRUE then
-        movement_speed_mult = 0.8
-    elseif env(GetSpEffectID, 7000504) == TRUE then
-        movement_speed_mult = 0.9
-    elseif env(GetSpEffectID, 7000505) == TRUE then
-        movement_speed_mult = 1.0
-    elseif env(GetSpEffectID, 7000506) == TRUE then
-        movement_speed_mult = 1.1
-    elseif env(GetSpEffectID, 7000507) == TRUE then
-        movement_speed_mult = 1.2
-    elseif env(GetSpEffectID, 7000508) == TRUE then
-        movement_speed_mult = 1.3
-    elseif env(GetSpEffectID, 7000509) == TRUE then
-        movement_speed_mult = 1.4
-    elseif env(GetSpEffectID, 7000510) == TRUE then
-        movement_speed_mult = 1.5
-    elseif env(GetSpEffectID, 7000511) == TRUE then
-        movement_speed_mult = 1.6
-    elseif env(GetSpEffectID, 7000512) == TRUE then
-        movement_speed_mult = 1.7
-    elseif env(GetSpEffectID, 7000513) == TRUE then
-        movement_speed_mult = 1.8
-    elseif env(GetSpEffectID, 7000514) == TRUE then
-        movement_speed_mult = 1.9
-    elseif env(GetSpEffectID, 7000515) == TRUE then
-        movement_speed_mult = 2.0
+        movement_speed_mult = movement_speed_mult + 0.5
     end
     
+    -- Apply movement speed change
     act(SetMovementScaleMult, movement_speed_mult)
     
     if move_speed_level <= 0 then
