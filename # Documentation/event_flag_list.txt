@@ -1315,6 +1315,14 @@ Vanilla
 65290 Magic-Shrouding Cracked Tear
 65300 Lightning-Shrouding Cracked Tear
 65310 Holy-Shrouding Cracked Tear
+65320 Arcane-knot Crystal Tear
+65330
+65340
+65350
+65360
+65370
+65380
+65390
 
 # Whetblade
 65610 Iron Whetblade

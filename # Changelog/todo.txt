@@ -55,10 +55,6 @@
 - Split Beast Clergyman and Maliketh so once Beast Clergyman has been defeated once, the player can skip straight to Maliketh.
 
 # Content
-- Expand Blood school
-- Expand Death school
-- Add Vow of Silence (Ofnir spell?) - Quietus
-- Add Poison Bolt (Servant of Rot spell)
 - Add new physicks
 - Add new Spirit Summons.
 
@@ -68,59 +64,6 @@
  - Will be given via item when the player interacts with the shrine.
  - Use the cut content sleep enemy icons 
  
-Assets:
- AEG099_376
-
-
-# Blessing of the Warrior
-
-# Blessing of the Scholar
-
-# Blessing of the Nomad
-
-# Blessing of the Merchant
-
-# Blessing of the Sorceress
-
-# Blessing of the Master
-
-# Blessing of the Pastor
-
-# Blessing of the Counselor
-
-# Blessing of the Seamster
-
-# Blessing of the Hunter
-
-# Blessing of the Clergyman
-
-# Blessing of the Servant
-
-# Blessing of the Iron Fist
-
-# Blessing of the Bloody Finger
-
-# Blessing of the White Mask
-
-# Blessing of the Fingers
-
-# Blessing of the All-Knowing
-
-# Blessing of the Barbarian
-
-# Blessing of the Maiden
-
-# Blessing of the Crone
-
-# Blessing of the Serpent
-
-# Blessing of the Great Jar
-
-# Blessing of the Albinauric
-
-# Blessing of the Aeonian
-
-# Blessing of the Primeval
 
 
 
@@ -129,3 +72,22 @@ Assets:
 #-------------------------------------------------
 Fix Morgott not respawning correctly via Boss Revival
 
+# Spell Schools to expand:
+ - Bestial (+2)
+ - Blood (+3)
+ - Dragon Cult - Frozen Lightning (+2)
+ - Aspects of the Crucible (+2)
+ - Frenzied Flame (+2)
+ - Black Flame (+3)
+ - Servants of Rot (+3)
+ - Claymen (+3)
+ - Gravity (+3)
+ - Magma (+2)
+ 
+45031
+
+511100
+
+11032
+
+AEG099_075

@@ -34,6 +34,10 @@
     - Increases Torrent's movement speed by 25% for 60 seconds when fed to Torrent.
     - Can be crafted from Rowa Fruit and 2 Fulgurbloom. Is available by default.
     
+Added the Arcane-knot Crystal Tear:
+ - Effect: Increases ARC by 10 for 180 seconds.
+ - Found near the Siofra Well entrance in Limgrave.
+ 
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------

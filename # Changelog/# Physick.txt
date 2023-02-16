@@ -35,56 +35,59 @@
  - Effect: Increases absorption by 15% for 180 seconds.
 
 - Speckled Hardtear 
- - Effect: Boosts resistance and heals status in mixed physick
+ - Effect: Boosts resistance by 90 and heals status for 180 seconds.
 
 - Leaden Hardtear
- - Effect: Temporarily boosts poise in mixed physick
+ - Effect: Prevents stagger for 10 seconds.
 
 - Magic-Shrouding Cracked Tear 
- - Effect: Temporarily boosts magic attacks in mixed physick
+ - Effect: Increases magic attack by 20% for 180 seconds.
 
 - Flame-Shrouding Cracked Tear 
- - Effect: Temporarily boosts fire attacks in mixed physick
+ - Effect: Increases fire attack by 20% for 180 seconds.
 
 - Lightning-Shrouding Cracked Tear
- - Effect: Temporarily boosts lightning attacks in mixed physick
+ - Effect: Increases lightning attack by 20% for 180 seconds.
 
 - Holy-Shrouding Cracked Tear
- - Effect: Temporarily boosts holy attacks in mixed physick
+ - Effect: Increases holy attack by 20% for 180 seconds.
 
 - Stonebarb Cracked Tear
- - Effect: Makes attacks more likely to break enemy stances in a mixed physick
+ - Effect: Increases poise damage by 30% for 30 seconds.
 
 - Spiked Cracked Tear 
- - Effect: Enhances charged attacks for a time in mixed physick
+ - Effect: Increases charged attack damage by 15% for 180 seconds.
 
 - Thorny Cracked Tear
- - Effect: Makes consecutive attacks grow stronger in mixed physick
+ - Effect: Increases consecutive attack damage by up to 20% for 180 seconds.
 
 - Twiggy Cracked Tear
- - Effect: Briefly stop rune loss on death in mixed physick
+ - Effect: Prevents rune loss upon death for 180 seconds.
 
 - Winged Crystal Tear 
- - Effect: Temporarily reduces equip load in mixed physick
+ - Effect: Increases equipment load by 450% for 180 seconds.
 
 - Windy Crystal Tear
- - Effect: Enhances dodge rolls for a time in mixed physick
+ - Effect: Increases iframes during rolls for 180 seconds.
 
 - Crimson Bubbletear
- - Effect: Restores HP when near death in mixed physick
+ - Effect: Restores 30% HP when HP dips below 20%. Lasts for 180 seconds.
 
 - Crimsonwhorl Bubbletear 
- - Effect: Converts damage received into HP in mixed physick
+ - Effect: Converts damage received into HP. Lasts for 15 seconds.
 
 - Opaline Bubbletear 
- - Effect: Significantly negates damage in mixed physick
+ - Effect: Increases absorption by 90% for 180 seconds.
 
 - Cerulean Hidden Tear
- - Effect: Eliminates all FP consumption in mixed physick
+ - Effect: Reduces FP consumption to 0 for 15 seconds.
 
 - Purifying Crystal Tear 
- - Effect: Purifies the Lord of Blood's curse in a mixed physick
+ - Effect: Negates Mohg's Nihil damage when active. Lasts until death.
 
 - Ruptured Crystal Tear (2)
- - Effect: Causes concoction to explode in mixed physick
+ - Effect: Causes concoction to explode.
  
+- Arcane-knot Crystal Tear
+ - Effect: Increases ARC by 10 for 180 seconds.
+ - Found near the Siofra Well entrance in Limgrave.

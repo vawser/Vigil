@@ -6816,7 +6816,7 @@ $Event(11021, Default, function() {
     //WarpPlayer(34, 14, 0, 0, 34140982, -1);
     
     // Items
-    //AwardItemLot(1000);
+    AwardItemLot(1046380300);
     
     // Hidden Helm/Armor
     //SetSpEffect(10000, 9402427);
