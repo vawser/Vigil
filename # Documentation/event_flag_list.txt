@@ -1316,10 +1316,10 @@ Vanilla
 65300 Lightning-Shrouding Cracked Tear
 65310 Holy-Shrouding Cracked Tear
 65320 Arcane-knot Crystal Tear
-65330
-65340
-65350
-65360
+65330 Void-Tainted Cracked Tear 
+65340 Death-Tainted Cracked Tear 
+65350 Dragon-Tainted Cracked Tear 
+65360 Beast-Tainted Cracked Tear 
 65370
 65380
 65390

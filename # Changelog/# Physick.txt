@@ -91,3 +91,19 @@
 - Arcane-knot Crystal Tear
  - Effect: Increases ARC by 10 for 180 seconds.
  - Found near the Siofra Well entrance in Limgrave.
+
+- Void-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Void enemies for 180 seconds.
+ - Found near the Onyx Lord evergaol, beyond Caria Manor.
+ 
+- Death-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Undead enemies for 180 seconds.
+ - Found atop a collapsed pillar in the Weeping Penisula, near to the Walking Mausoleum.
+ 
+- Dragon-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Dragons enemies for 180 seconds.
+ - Found near to Elder Dragon Greyoll in the Dragonbarrow.
+ 
+- Beast-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Beasts enemies for 180 seconds.
+ - Found in the Morne Moangrave at the end of Castle Morne.

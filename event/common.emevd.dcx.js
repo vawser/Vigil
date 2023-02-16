@@ -6811,12 +6811,16 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
+    SetEventFlagID(65340, OFF);
+    SetEventFlagID(65350, OFF);
+    SetEventFlagID(65360, OFF);
+    
     // Screenshot Zone
     //SetEventFlagID(1047610014, ON);
     //WarpPlayer(34, 14, 0, 0, 34140982, -1);
     
     // Items
-    AwardItemLot(1046380300);
+    //AwardItemLot(1000);
     
     // Hidden Helm/Armor
     //SetSpEffect(10000, 9402427);

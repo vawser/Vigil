@@ -29,12 +29,6 @@
     - Fodder enemies will be hidden and new Caelid enemies will be added.
     - Caelid assets could also be added.
 
-# Concordats
-- Implement covenants for each of the factions of Elden Ring
-    - Operate like traditional covenants: 3 rewards at 10/20/30 turnins
-    - Each require own token, token will be from certain (non-trival) enemies
-    - Include TalkToPlayer stuff for this
-    - Tokens can also deepen bond (like Cinders), providing covenant buff. This is removed if pledge is changed to another covenant.
 
 # Shinobi's Challenge
 - A platforming challenge that makes use of the multi-jump mechanics:
@@ -54,23 +48,12 @@
 # Bosses
 - Split Beast Clergyman and Maliketh so once Beast Clergyman has been defeated once, the player can skip straight to Maliketh.
 
+# Boss Resurrection
+- Add ability to teleport to fight (after first victory).
+
 # Content
 - Add new physicks
 - Add new Spirit Summons.
-
-# Sigils
-- Acting like the Skyrim stones, the sword shrine locations will allow the player to accept the soul from an 'entity'.
- - Acts like a 'archetype template', forcing the player into that specific niche.
- - Will be given via item when the player interacts with the shrine.
- - Use the cut content sleep enemy icons 
- 
-
-
-
-#-------------------------------------------------
-# WIP
-#-------------------------------------------------
-Fix Morgott not respawning correctly via Boss Revival
 
 # Spell Schools to expand:
  - Bestial (+2)
@@ -83,11 +66,26 @@ Fix Morgott not respawning correctly via Boss Revival
  - Claymen (+3)
  - Gravity (+3)
  - Magma (+2)
+
+# Concordats
+- Act like a class/covenant choice, where you pledge to a covenant and get their 'covenant' key item. 
+ - This item will provide benefits that suit specific class archetypes.
+ - Turns ins (Bloodsoaked Runes, or specific) will empower the pledge, allowing a player to commit hard into the class archetype.
+ - Switching pledge will remove bonuses (but progress will be retained.)
+ - Minor cost to pledge to discourage constant switching
+
+- Simple quests given by the leader, similar to the Volcano Manor questline.
+ - Reward specific items, like traditional Covenant rewards from DS1/DS3.
  
-45031
+#-------------------------------------------------
+# WIP
+#-------------------------------------------------
+Fix Morgott not respawning correctly via Boss Revival
 
-511100
 
-11032
+11033 Void-Tainted Cracked Tear 
+11034 Death-Tainted Cracked Tear 
+11035 Dragon-Tainted Cracked Tear 
+11036 Beast-Tainted Cracked Tear 
 
 AEG099_075

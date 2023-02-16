@@ -32,10 +32,10 @@
 45029 Ghostflame Blade
 45030 Soporific Armament
 45031 Arcane-knot Crystal Tear
-45032
-45033
-45034
-45035
+45032 Void-Tainted Cracked Tear 
+45033 Death-Tainted Cracked Tear 
+45034 Dragon-Tainted Cracked Tear 
+45035 Beast-Tainted Cracked Tear 
 45036
 45037
 45038
