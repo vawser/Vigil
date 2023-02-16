@@ -338,15 +338,19 @@ function FireBulletForDeflect(deflect_type, bullet_effect)
 end
 
 function RegenerateFP()
-    if env(GetSpEffectID, 151000) == FALSE then    
-        act(AddSpEffect, 151000) 
-        
-        if env(GetFP) < 100 then
-            act(AddSpEffect, 151003) 
-        elseif env(GetFP) >= 100 and env(GetFP) < 250 then
-            act(AddSpEffect, 151002) 
-        elseif env(GetFP) >= 250 then
-            act(AddSpEffect, 151001) 
+    -- Lethargic Mind check
+    if env(GetSpEffectID, 9420040) == FALSE then
+        -- FP Regen cooldown
+        if env(GetSpEffectID, 151000) == FALSE then    
+            act(AddSpEffect, 151000) 
+            
+            if env(GetFP) < 100 then
+                act(AddSpEffect, 151003) 
+            elseif env(GetFP) >= 100 and env(GetFP) < 250 then
+                act(AddSpEffect, 151002) 
+            elseif env(GetFP) >= 250 then
+                act(AddSpEffect, 151001) 
+            end
         end
     end
 end

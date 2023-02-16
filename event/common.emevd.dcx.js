@@ -7183,6 +7183,12 @@ $Event(11018, Default, function() {
         AwardItemLot(4250);
     }
     
+    // Lethargic Mind
+    if(EventFlag(1047610916))
+    {
+        AwardItemLot(4260);
+    }
+    
     WaitFixedTimeSeconds(5.0); // Internal cooldown
     
     RestartEvent();
@@ -9180,6 +9186,16 @@ $Event(14000, Restart, function() {
     else
     {
         ClearSpEffect(10000, 9420030);
+    }
+    
+    // Lethargic Mind
+    if(EventFlag(1047610916))
+    {
+        SetSpEffect(10000, 9420040);
+    }
+    else
+    {
+        ClearSpEffect(10000, 9420040);
     }
     
     // Megamind

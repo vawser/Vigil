@@ -621,6 +621,12 @@ def t000004030_x101():
         # Brittle Bones (selected)
         AddTalkListDataIf(GetEventFlag(1047610914) == 1, 203, 89100164, -1)
         
+        # Lethargic Mind
+        AddTalkListDataIf(GetEventFlag(1047610916) == 0, 104, 89100116, -1)
+        
+        # Lethargic Mind (selected)
+        AddTalkListDataIf(GetEventFlag(1047610916) == 1, 204, 89100166, -1)
+        
         # Leave
         AddTalkListData(9, 20000009, -1)
         
@@ -659,6 +665,14 @@ def t000004030_x101():
         # Brittle Bones (enabled)
         elif GetTalkListEntryResult() == 203:
             assert t000004030_x110(1047610914, 0, 89100314)
+            continue
+        # Lethargic Mind
+        elif GetTalkListEntryResult() == 104:
+            assert t000004030_x110(1047610916, 1, 89100216)
+            continue
+        # Lethargic Mind (enabled)
+        elif GetTalkListEntryResult() == 204:
+            assert t000004030_x110(1047610916, 0, 89100316)
             continue
         else:
             return 0

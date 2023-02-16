@@ -4,6 +4,9 @@
 - Added a new enemy castigation:
  - Alacrity: increases enemy movement speed by 50%.
  
+- Added a new player castigation:
+ - Lethargic Mind: reduces passive FP regeneration to 0.
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

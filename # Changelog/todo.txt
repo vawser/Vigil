@@ -138,10 +138,5 @@ Soporific Armament
 303102	Soporific weapon buff (size 1)	
 
 
-Add Haste Raisin for Torrent
 Add FP Regen block castigation
 
-815 Sour Raisin
-     20652 Fulgurbloom
-     
-     302050 
