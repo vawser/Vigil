@@ -28,9 +28,9 @@
 45025 Lingering Rancor
 45026 Vengeful Barrage
 45027 Vengeful Strike
-45028 Sour Raisin
-45029
-45030
+45028 Sparking Raisin
+45029 Ghostflame Blade
+45030 Soporific Armament
 45031
 45032
 45033

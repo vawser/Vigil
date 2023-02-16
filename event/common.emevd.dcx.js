@@ -6503,22 +6503,6 @@ $Event(9950, Default, function(X0_4, X4_4) {
 $Event(11000, Default, function() {
     EndIf(ThisEventSlot());
     
-    // DEBUG
-    //AwardItemLot(1000);
-    
-    // Hidden Helm/Armor
-    //SetSpEffect(10000, 7000030);
-    //SetSpEffect(10000, 7000051);
-    
-    // Easy Kill Mode
-    // SetSpEffect(10000, 7000090);
-    // SetSpEffect(10000, 7000091);
-    // SetSpEffect(10000, 7000092);
-    // SetSpEffect(10000, 7000093);
-    // SetSpEffect(10000, 7000094);
-    
-    // DEBUG END
-    
     // Default Setup - Applied only once
     if(!EventFlag(1047610010))
     {
@@ -6815,6 +6799,53 @@ $Event(11001, Default, function() {
     InitializeEvent(13, 11016, 1047610523, Weather.RainyHeavyFog);
     InitializeEvent(14, 11016, 1047610524, Weather.SnowyHeavyFog);
     InitializeEvent(15, 11016, 1047610525, Weather.ScatteredRain);
+});
+
+
+
+//-------------------
+// Dev Tool: Toggle
+//-------------------
+$Event(11021, Default, function() {
+    //ChangeCamera(2200, 2200);
+    
+    WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
+    
+    // Screenshot Zone
+    //SetEventFlagID(1047610014, ON);
+    //WarpPlayer(34, 14, 0, 0, 34140982, -1);
+    
+    // Items
+    //AwardItemLot(1000);
+    
+    // Hidden Helm/Armor
+    //SetSpEffect(10000, 9402427);
+    //SetSpEffect(10000, 9402428);
+    
+    // Easy Kill Mode
+    // SetSpEffect(10000, 7000090);
+    // SetSpEffect(10000, 7000091);
+    // SetSpEffect(10000, 7000092);
+    // SetSpEffect(10000, 7000093);
+    // SetSpEffect(10000, 7000094);
+    
+    // DEBUG END
+        
+    // Radagon
+    //SetEventFlagID(19000850, OFF);
+    //SetEventFlagID(71900, OFF);
+    //SetEventFlagID(9123, OFF);
+    //SetEventFlagID(510850, OFF);
+    //WarpPlayer(19, 0, 0, 0, 19000982, -1);
+    
+    // Elden Beast
+    //SetEventFlagID(19000800, OFF);
+    //SetEventFlagID(71901, OFF);
+    
+    // Portal Test
+    //WarpPlayer(60, 49, 55, 0, 1049550980, -1);
+    
+    RestartEvent();
 });
 
 //-------------------
@@ -7209,35 +7240,6 @@ $Event(11020, Default, function(X0_4, X4_4) {
             ClearSpEffect(10000, X4_4);
         }
     }
-    
-    RestartEvent();
-});
-
-//-------------------
-// Dev Tool: Toggle
-//-------------------
-$Event(11021, Default, function() {
-    //ChangeCamera(2200, 2200);
-    
-    WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
-    
-    // Screenshot Zone
-    //SetEventFlagID(1047610014, ON);
-    //WarpPlayer(34, 14, 0, 0, 34140982, -1);
-        
-    // Radagon
-    //SetEventFlagID(19000850, OFF);
-    //SetEventFlagID(71900, OFF);
-    //SetEventFlagID(9123, OFF);
-    //SetEventFlagID(510850, OFF);
-    //WarpPlayer(19, 0, 0, 0, 19000982, -1);
-    
-    // Elden Beast
-    //SetEventFlagID(19000800, OFF);
-    //SetEventFlagID(71901, OFF);
-    
-    // Portal Test
-    //WarpPlayer(60, 49, 55, 0, 1049550980, -1);
     
     RestartEvent();
 });

@@ -49,6 +49,13 @@
 #-------------------------------------------------
 # Spells
 #-------------------------------------------------
+- Added a new sorcery: Ghostflame Blade
+ - Adds ghostflame to the right-hand weapon, adding Magic damage and Frostbite. The magic damage scales with INT and FTH.
+ - Found in Deathtouched Catacombs.
+ 
+- Added a new sorcery: Soporific Armament
+ - Adds sleep to the right-hand weapon.
+ - Found in Academy of Raya Lucaria.
  
 #-------------------------------------------------
 # Great Runes

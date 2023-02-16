@@ -129,14 +129,3 @@ Assets:
 #-------------------------------------------------
 Fix Morgott not respawning correctly via Boss Revival
 
-Ghostflame Blade 12007000
-- Applies magic and frostbite
-303122	Ghostflame weapon buff (size 1)	
-
-Soporific Armament
-- Applies sleep
-303102	Soporific weapon buff (size 1)	
-
-
-Add FP Regen block castigation
-

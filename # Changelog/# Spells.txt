@@ -1,8 +1,38 @@
 ﻿#----------------------------------------
 # Overview
 #----------------------------------------
-- Blood Shard:
+# Blood Shard:
  - School: Blood
- - FTH Requirement: 14
- - ARC Requirement: 17
  - Found in the Weeping Penisula.
+ 
+# Briarthorn Patch
+ - School: Blood
+ - Found in the Weeping Peninsula.
+
+# Flame of Destiny
+ - School: Destined Death
+ - Found in Crumbling Farum Azula.
+ 
+# Vow of Silence
+ - School: Erdtree Worship
+ - Sold by Brother Corhyn after giving him the Assassin's Prayerbook.
+ 
+# Lingering Rancor
+ - School: Death
+ - Found near the Tibia Mariner in Liurnia.
+ 
+# Vengeful Barrage
+ - School: Death
+ - Found near the Tibia Mariner in Altus Plateau.
+ 
+# Vengeful Strike
+ - School: Death
+ - Found in Caelid, near to Caelem and Forsaken Ruins.
+ 
+# Ghostflame Blade
+ - School: Death
+ - Found in Deathtouched Catacombs.
+ 
+# Soporific Armament
+ - School: Glintstone
+ - Found in Academy of Raya Lucaria. 
