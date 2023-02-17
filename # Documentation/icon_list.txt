@@ -36,8 +36,8 @@
 45033 Death-Tainted Cracked Tear 
 45034 Dragon-Tainted Cracked Tear 
 45035 Beast-Tainted Cracked Tear 
-45036
-45037
+45036 Manure
+45037 
 45038
 45039
 45040 
@@ -55,8 +55,17 @@
 20604 Torrent
 20605 Deflect
 20606 Torrent (Light Blue)
-20607
+20607 Farm Ready
 20608
+20609
+20610
+20611
+20612
+20613
+20614
+20615
+20616
+20617
 
 #------------------------
 # Small Icons

@@ -27,9 +27,9 @@
 - Added a farm near Summonwater Village called Jarfield.
  - Staffed by the Jar of Cultivation, the player can give the Jar manure to spread over the fields.
   - You can select three sizes of crop:
-   - Small (2 types of plants) - 1 Manure
-   - Medium (4 types of plants) - 2 Manure
-   - Large (6 types of plants) - 3 Manure
+   - Small (2 types of plants) - 4 Manure
+   - Medium (4 types of plants) - 8 Manure
+   - Large (6 types of plants) - 12 Manure
   - Once you have asked the Jar of Cultivation to cultivate the field, a timer will start. 
   - Once approximately 5 minutes has passed, the field will be ready. This time has to be continuous, map reloads will reset the timer.
   - Once the field is ready, an icon will appear in the player's top bar so the player is notified. 
@@ -65,6 +65,9 @@
 - Added east-Tainted Cracked Tear 
  - Effect: Raises attack power by 20% against Beasts enemies for 180 seconds.
  - Found in the Morne Moangrave at the end of Castle Morne.
+ 
+- Added Manure
+ - Dropped by the passive animals such as Deer, Bears, etc.
  
 #-------------------------------------------------
 # Armor

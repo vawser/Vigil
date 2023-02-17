@@ -103,3 +103,6 @@ AEG700_066 Fence
 AEG700_069 Fence
 
 Add cost mechanic to the farm
+
+20832 Manure
+20607 Farm Ready

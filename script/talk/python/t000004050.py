@@ -590,13 +590,13 @@ def t000004050_x101():
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
         if GetTalkListEntryResult() == 1:
-            assert t000004050_x111(1049630010)
+            assert t000004050_x120(1049630010, 89200020, 89200010, 4, -4)
             return 0
         elif GetTalkListEntryResult() == 2:
-            assert t000004050_x111(1049630011)
+            assert t000004050_x120(1049630011, 89200021, 89200011, 8, -8)
             return 0
         elif GetTalkListEntryResult() == 3:
-            assert t000004050_x111(1049630012)
+            assert t000004050_x120(1049630012, 89200022, 89200012, 12, -12)
             return 0
         else:
             """State 6,8"""
@@ -610,16 +610,40 @@ def t000004050_x110(action1=_):
     """State 2"""
     return 0
     
+def t000004050_x111(action2=_):
+    """State 0,1"""
+    
+    OpenGenericDialog(8, action2, 3, 4, 2)
+    assert not CheckSpecificPersonGenericDialogIsOpen(0)
+    """State 2"""
+    if GetGenericDialogButtonResult() == 1:
+        """State 3"""
+        return 0
+    else:
+        """State 4"""
+        return 1
+        
 # Set Cultivation
-def t000004050_x111(flag=_):
-    assert t000004050_x110(89200010)
+def t000004050_x120(flag=_, cost_message_id=_, plant_message_id=_, cost_amount=_, removal_amount=_):
+    if ComparePlayerInventoryNumber(3, 20832, 4, cost_amount, 0) == 1:
+        # Spend X Manure for a Small Crop?
+        call = t000004050_x111(cost_message_id)
+        
+        if call.Done() and GetGenericDialogButtonResult() == 1:
+            PlayerEquipmentQuantityChange(3, 20832, removal_amount)
+                
+            SetEventFlag(1049630010, 0)
+            SetEventFlag(1049630011, 0)
+            SetEventFlag(1049630012, 0)
+    
+            SetEventFlag(flag, 1)
+            SetEventFlag(1049630002, 1)
             
-    SetEventFlag(1049630010, 0)
-    SetEventFlag(1049630011, 0)
-    SetEventFlag(1049630012, 0)
-    
-    SetEventFlag(flag, 1)
-    SetEventFlag(1049630002, 1)
-    
+            assert t000004050_x110(plant_message_id)
+        elif call.Done():
+            return 0
+    else:
+        assert t000004050_x110(89200030)
+        return 0
+        
     return 0
-    
