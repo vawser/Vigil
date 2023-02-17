@@ -1,6 +1,33 @@
-﻿# General
+﻿# Enemies
 400005000 Enemy
 400005010 Boss (included in Enemy too)
 
-# Enemy Types
-400005100 
+# Assets
+400005100 Invulnerable Assets
+
+400005110 Asset: Empty Plot
+400005200 Asset: St. Trina's Lily
+400005201 Asset: Miquella's Lily
+400005202 Asset: Grave Violet 
+400005203 Asset: Faded Erdleaf Flower 
+400005204 Asset: Erdtree Flower
+400005205 Asset: Altus Bloom
+400005206 Asset: Fire Blossom
+400005207 Asset: Golden Sunflower
+400005208 Asset: Fulgurbloom
+400005209 Asset: Tarnished Golden Sunflower
+400005210 Asset: Herba
+400005211 Asset: Arteria Leaf
+400005212 Asset: Dewkissed Herba
+400005213 Asset: Rowa Fruit
+400005214 Asset: Golden Rowa
+400005215 Asset: Rimed Rowa
+400005216 Asset: Bloodrose
+400005217 Asset: Eye of Yelough
+400005218 Asset: Crystal Bud
+400005219 Asset: Rimed Crystal Bud
+400005220 Asset: Sacramental Bud
+400005221 Asset: Mushroom
+400005222 Asset: Melted Mushroom
+400005223 Asset: Toxic Mushroom
+400005224 Asset: Root Resin

@@ -644,9 +644,69 @@
 1047621100 
 
 #------------------------------------
-104963_0000 EMEVD Functions
+104963_0000 Systems
 #------------------------------------
-104963900 -> 104963999 Random Range
+1049630000 Farm Ready
+1049630001 Farm Visited
+1049630002 Started Farm Grow Cycle (Set by Farmer Jar)
+
+1049630010 Small Crop
+1049630011 Medium Crop
+1049630012 Large Crop
+
+1049630100 Type: St. Trina's Lily
+1049630101 Type: Miquella's Lily
+1049630102 Type: Grave Violet 
+1049630103 Type: Faded Erdleaf Flower 
+1049630104 Type: Erdtree Flower
+1049630105 Type: Altus Bloom
+1049630106 Type: Fire Blossom
+1049630107 Type: Golden Sunflower
+1049630108 Type: Fulgurbloom
+1049630109 Type: Tarnished Golden Sunflower
+1049630110 Type: Herba
+1049630111 Type: Arteria Leaf
+1049630112 Type: Dewkissed Herba
+1049630113 Type: Rowa Fruit
+1049630114 Type: Golden Rowa
+1049630115 Type: Rimed Rowa
+1049630116 Type: Bloodrose
+1049630117 Type: Eye of Yelough
+1049630118 Type: Crystal Bud
+1049630119 Type: Rimed Crystal Bud
+1049630120 Type: Sacramental Bud
+1049630121 Type: Mushroom
+1049630122 Type: Melted Mushroom
+1049630123 Type: Toxic Mushroom
+1049630124 Type: Root Resin
+
+1049630150 Block Pickup: St. Trina's Lily
+1049630151 Block Pickup: Miquella's Lily
+1049630152 Block Pickup: Grave Violet 
+1049630153 Block Pickup: Faded Erdleaf Flower 
+1049630154 Block Pickup: Erdtree Flower
+1049630155 Block Pickup: Altus Bloom
+1049630156 Block Pickup: Fire Blossom
+1049630157 Block Pickup: Golden Sunflower
+1049630158 Block Pickup: Fulgurbloom
+1049630159 Block Pickup: Tarnished Golden Sunflower
+1049630160 Block Pickup: Herba
+1049630161 Block Pickup: Arteria Leaf
+1049630162 Block Pickup: Dewkissed Herba
+1049630163 Block Pickup: Rowa Fruit
+1049630164 Block Pickup: Golden Rowa
+1049630165 Block Pickup: Rimed Rowa
+1049630166 Block Pickup: Bloodrose
+1049630167 Block Pickup: Eye of Yelough
+1049630168 Block Pickup: Crystal Bud
+1049630169 Block Pickup: Rimed Crystal Bud
+1049630170 Block Pickup: Sacramental Bud
+1049630171 Block Pickup: Mushroom
+1049630172 Block Pickup: Melted Mushroom
+1049630173 Block Pickup: Toxic Mushroom
+1049630174 Block Pickup: Root Resin
+
+
 
 #------------------------------------
 104760_0000 Transmog

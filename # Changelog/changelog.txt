@@ -7,6 +7,7 @@
 - Added a new player castigation:
  - Lethargic Mind: reduces passive FP regeneration to 0.
  
+ 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -23,7 +24,18 @@
 #-------------------------------------------------
 # World
 #-------------------------------------------------
-
+- Added a farm near Summonwater Village called Jarfield.
+ - Staffed by the Jar of Cultivation, the player can give the Jar manure to spread over the fields.
+  - You can select three sizes of crop:
+   - Small (2 types of plants) - 1 Manure
+   - Medium (4 types of plants) - 2 Manure
+   - Large (6 types of plants) - 3 Manure
+  - Once you have asked the Jar of Cultivation to cultivate the field, a timer will start. 
+  - Once approximately 5 minutes has passed, the field will be ready. This time has to be continuous, map reloads will reset the timer.
+  - Once the field is ready, an icon will appear in the player's top bar so the player is notified. 
+  - Once the field is ready, the player can return to Jarfield at anytime, the crops will remain ready until they do so.
+  - Once the player has visited the field and picked the crops, resting or reloading will cause the fields to become barren again.
+  
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
@@ -44,15 +56,15 @@
  
 - Added Death-Tainted Cracked Tear 
  - Effect: Raises attack power by 20% against Undead enemies for 180 seconds.
- - Found 
+ - Found atop a collapsed pillar in the Weeping Penisula, near to the Walking Mausoleum.
  
 - Added Dragon-Tainted Cracked Tear 
  - Effect: Raises attack power by 20% against Dragons enemies for 180 seconds.
- - Found 
+ - Found near to Elder Dragon Greyoll in the Dragonbarrow.
  
-- Added Beast-Tainted Cracked Tear 
+- Added east-Tainted Cracked Tear 
  - Effect: Raises attack power by 20% against Beasts enemies for 180 seconds.
- - Found 
+ - Found in the Morne Moangrave at the end of Castle Morne.
  
 #-------------------------------------------------
 # Armor

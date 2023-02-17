@@ -82,10 +82,24 @@
 #-------------------------------------------------
 Fix Morgott not respawning correctly via Boss Revival
 
+c4491 Small Jar
 
-11033 Void-Tainted Cracked Tear 
-11034 Death-Tainted Cracked Tear 
-11035 Dragon-Tainted Cracked Tear 
-11036 Beast-Tainted Cracked Tear 
+AEG003_404 House
+AEG003_069 Fence
+AEG201_033 Crate
+AEG201_031 Barrel
+AEG003_063 Wagon
+AEG201_027 Sticks
+AEG003_055 Sacks
+AEG003_057 Stacked Barrels
+AEG003_056 Jars
+AEG003_054 Bundles of Sticks
 
-AEG099_075
+AEG201_001 Cabin
+AEG201_002 Cabin
+AEG201_004 Cabin
+
+AEG700_066 Fence
+AEG700_069 Fence
+
+Add cost mechanic to the farm

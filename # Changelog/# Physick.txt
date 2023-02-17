@@ -107,3 +107,6 @@
 - Beast-Tainted Cracked Tear 
  - Effect: Raises attack power by 20% against Beasts enemies for 180 seconds.
  - Found in the Morne Moangrave at the end of Castle Morne.
+ 
+ 
+# Asset: AEG099_075

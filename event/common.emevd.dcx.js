@@ -6528,6 +6528,9 @@ $Event(11000, Default, function() {
         SetEventFlagID(1047610620, ON); // Unlocked Deflect Type: Storm
     }
     
+    // By default, allow collection of materials - This is to ensure the flags are reset after visiting the farm
+    BatchSetEventFlags(1049630150, 1049630199, OFF);
+    
     //----------------------
     // General
     //----------------------
@@ -6762,7 +6765,10 @@ $Event(11000, Default, function() {
     InitializeEvent(0, 14000, 0); // Player Effects
     InitializeEvent(0, 14001, 0); // Enemy Effects
     
-    
+    //----------------------------
+    // Farm
+    //----------------------------
+    InitializeEvent(0, 14100, 0);
 });
 
 //----------------------------
@@ -6811,9 +6817,7 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
-    SetEventFlagID(65340, OFF);
-    SetEventFlagID(65350, OFF);
-    SetEventFlagID(65360, OFF);
+    SetEventFlagID(1049630000, ON);
     
     // Screenshot Zone
     //SetEventFlagID(1047610014, ON);
@@ -6848,6 +6852,9 @@ $Event(11021, Default, function() {
     
     // Portal Test
     //WarpPlayer(60, 49, 55, 0, 1049550980, -1);
+    
+    // Farmer
+    
     
     RestartEvent();
 });
@@ -7356,18 +7363,11 @@ $Event(11031, Default, function() {
             SetPlayerRespawnPoint(1034422020);
         }
         // Liurnia: The Four Belfries
-        if(EventFlag(1047620008))
+        if(EventFlag(1047620008) || EventFlag(1047620009))
         {
             SetEventFlagID(76227, ON);
             WarpPlayer(60, 33, 47, 0, 1033470980, -1);
             SetPlayerRespawnPoint(1033472020);
-        }
-        // Liurnia: Ruin-Strewn Precipice Overlook
-        if(EventFlag(1047620009))
-        {
-            SetEventFlagID(73902, ON);
-            WarpPlayer(39, 20, 0, 0, 39200980, -1);
-            SetPlayerRespawnPoint(39202020);
         }
         // Liurnia: Frenzied Flame Village Outskirts
         if(EventFlag(1047620010))
@@ -9380,4 +9380,52 @@ $Event(14001, Restart, function() {
     WaitFixedTimeSeconds(2);
     
     RestartEvent();
+});
+
+// Farm Timer
+$Event(14100, Restart, function() {
+    // Once farm has been visited, empty farm
+    if(EventFlag(1049630001))
+    {
+        SetEventFlagID(1049630000, OFF);
+        SetEventFlagID(1049630001, OFF);
+        SetEventFlagID(1049630002, OFF);
+        EndEvent();
+    }
+    
+    // Notify player if they reload after having readied the farm
+    if(EventFlag(1049630000))
+    {
+        SetSpEffect(10000, 7000003);
+    }
+    
+    EndIf(EventFlag(1049630000)); // Farm Ready is ON
+    EndIf(!EventFlag(1049630002)); // Not Started Farm Grow Cycle
+    
+    // Base Wait
+    WaitFixedTimeSeconds(300);
+    
+    // Small Crop
+    if(EventFlag(1049630010))
+    {
+        WaitFixedTimeSeconds(60);
+    }
+    // Medium Crop
+    else if(EventFlag(1049630011))
+    {
+        WaitFixedTimeSeconds(90);
+    }
+    // Large Crop
+    else if(EventFlag(1049630012))
+    {
+        WaitFixedTimeSeconds(120);
+    }
+    else
+    {
+        WaitFixedTimeSeconds(120);
+    }    
+    
+    SetSpEffect(10000, 7000003);
+    SetEventFlagID(1049630000, ON); // Toggle Farm Ready ON
+    SetEventFlagID(1049630002, OFF); // Toggle Started Farm Grow Cycle OFF
 });
