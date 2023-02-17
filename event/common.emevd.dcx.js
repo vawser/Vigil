@@ -6817,12 +6817,9 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
-    SetEventFlagID(1049630000, ON);
-    SetSpEffect(10000, 7000003);
-    
     // Screenshot Zone
-    //SetEventFlagID(1047610014, ON);
-    //WarpPlayer(34, 14, 0, 0, 34140982, -1);
+    SetEventFlagID(1047610014, ON);
+    WarpPlayer(34, 14, 0, 0, 34140982, -1);
     
     // Items
     //AwardItemLot(1000);
@@ -6853,9 +6850,6 @@ $Event(11021, Default, function() {
     
     // Portal Test
     //WarpPlayer(60, 49, 55, 0, 1049550980, -1);
-    
-    // Farmer
-    
     
     RestartEvent();
 });

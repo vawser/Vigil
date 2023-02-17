@@ -1,7 +1,6 @@
 ﻿#-------------------------------------------------
 # Bugs
 #-------------------------------------------------
-- Add Grass Hair Ornament icon.
 
 #-------------------------------------------------
 # Ideas
@@ -82,27 +81,3 @@
 #-------------------------------------------------
 Fix Morgott not respawning correctly via Boss Revival
 
-c4491 Small Jar
-
-AEG003_404 House
-AEG003_069 Fence
-AEG201_033 Crate
-AEG201_031 Barrel
-AEG003_063 Wagon
-AEG201_027 Sticks
-AEG003_055 Sacks
-AEG003_057 Stacked Barrels
-AEG003_056 Jars
-AEG003_054 Bundles of Sticks
-
-AEG201_001 Cabin
-AEG201_002 Cabin
-AEG201_004 Cabin
-
-AEG700_066 Fence
-AEG700_069 Fence
-
-Add cost mechanic to the farm
-
-20832 Manure
-20607 Farm Ready
