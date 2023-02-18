@@ -1,0 +1,35 @@
+﻿#----------------------------------------
+# Overview
+#----------------------------------------
+# Fledgling Bell Bearing
+- Found in Stormveil Castle.
+ 
+# Budding Bell Bearing
+- Dropped by Erdtree Burial Watchdog in Wyndham Catacombs (Altus Plateau).
+ 
+# Blooming Bell Bearing
+- Found in upper Siofra River.
+
+# Resplendent Bell Bearing
+- Found in Crumbling Farum Azula.
+
+# Crude Bell Bearing
+- Dropped by the Stonedigger Troll in Limgrave Tunnels.
+
+# Rough Bell Bearing
+- Dropped by the Crystalian in Raya Lucaria Crystal Tunnel.
+
+# Refined Bell Bearing
+- Found in the Divine Tower of West Altus.
+
+# Pure Bell Bearing
+- Dropped by the Godskin Duo in Crumbling Farum Azula.
+
+# Glintstone Bell Bearing
+- Dropped by the Crystalians in Altus Tunnel.
+
+# Explosive Bell Bearing
+- Found in Volcano Manor.
+
+# Sanctuary Bell Bearing
+- Found in Morne Tunnel in the Weeping Penisula.

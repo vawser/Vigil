@@ -558,6 +558,9 @@ def t000001200_x38():
         # Finalize
         AddTalkListDataIf(GetEventFlag(1047610150) == 0 and GetEventFlag(1047610151) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610152) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610153) == 1 or GetEventFlag(1047610150) == 0 and GetEventFlag(1047610154) == 1, 20, 80200002, -1)
         
+        # Memorize spell
+        AddTalkListData(4, 15000390, -1)
+        
         # Leave
         AddTalkListData(99, 20000009, -1)
         
@@ -611,7 +614,10 @@ def t000001200_x38():
             else:
                 return 2
    
-            return 0  
+            return 0
+        elif GetTalkListEntryResult() == 4:
+            OpenMagicEquip(-1, -1)
+            assert not (CheckSpecificPersonMenuIsOpen(11, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         else:
             """State 31"""
             return 0

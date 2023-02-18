@@ -7,7 +7,8 @@
 - Added a new player castigation:
  - Lethargic Mind: reduces passive FP regeneration to 0.
  
- 
+- Added "Memorize Spell" to the Jar of Promise, allowing custom loadouts to equip their selected spells immediately.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -69,6 +70,62 @@
 - Added Manure
  - Dropped by the passive animals such as Deer, Bears, etc.
  
+# Glovewort
+- Simplified the Glovewort material paths:
+ - There are now 4 gloveworts:
+  - Fledgling Glovewort (+1 to +3)
+  - Budding Glovewort (+4 to +6)
+  - Blooming Glovewort (+7 to +9)
+  - Resplendent Glovewort (+10)
+ - Spirit Summon reinforcement now uses these in both cases, but for those that used to require Ghost Glovewort, they require 2 per tier (excluding +10).
+
+# Bell Bearings
+- Changed the Glovewort Bell Bearing setup, there are now only 4.
+- Fledgling Bell Bearing
+ - Unlocks Fledgling Glovewort in the shop.
+ - Found in Stormveil Castle.
+ 
+- Budding Bell Bearing
+ - Unlocks Budding Glovewort in the shop.
+ - Dropped by Erdtree Burial Watchdog in Wyndham Catacombs (Altus Plateau).
+ 
+- Blooming Bell Bearing
+ - Unlocks Blooming Glovewort in the shop.
+ - Found in upper Siofra River.
+
+- Resplendent Bell Bearing
+ - Unlocks Resplendent Glovewort in the shop.
+ - Found in Crumbling Farum Azula.
+ 
+- Changed the Miner Bell Bearing setup, there are now 4.
+- Crude Bell Bearing
+ - Unlocks Crude Erdstone and Crude Somberstone in the shop.
+ - Dropped by the Stonedigger Troll in Limgrave Tunnels.
+
+- Rough Bell Bearing
+ - Unlocks Rough Erdstone and Rough Somberstone in the shop.
+ - Dropped by the Crystalian in Raya Lucaria Crystal Tunnel.
+
+- Refined Bell Bearing
+ - Unlocks Refined Erdstone and Refined Somberstone in the shop.
+ - Found in the Divine Tower of West Altus.
+
+- Pure Bell Bearing
+ - Unlocks Pure Erdstone and Pure Somberstone in the shop.
+ - Dropped by the Godskin Duo in Crumbling Farum Azula.
+
+- Added Glintstone Bell Bearing
+ - Unlocks Glintstone Scrap and Cracked Crystal in the shop.
+ - Dropped by the Crystalians in Altus Tunnel.
+
+- Added Explosive Bell Bearing
+ - Unlocks Explosive Stone in the shop.
+ - Found in Volcano Manor.
+
+- Added Sanctuary Bell Bearing
+ - Unlocks Ruin Fragment and Sanctuary Stone in the shop.
+ - Found in Morne Tunnel in the Weeping Penisula.
+
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------
@@ -109,3 +166,4 @@
 - Added boundry areas in the Colosseums that warp the player back if they try and exploit the geometry.
 - Fixed a flag bug causing the Riding Horn +2 and +3 not to appear in the Bloodforge correctly.
 - Fixed Torrent taking damage if ridden with the Riding Horn equipped and a weapon buff active.
+- Fixed Altar of Anticaption leave option using a bad text id.

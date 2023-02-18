@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #-----------------------------------------------------
-# Stone of Ascension
+# Altar of Ascension
 #-----------------------------------------------------
 def t000001500_1():
     """State 0,1"""
@@ -548,8 +548,8 @@ def t000001500_x38():
         # Begin Journey <?nextLoopCount?>
         AddTalkListData(1, 80102200, -1)
         
-        # Quit
-        AddTalkListData(99, 80100015, -1)
+        # Leave
+        AddTalkListData(99, 20000009, -1)
 
         ShowShopMessage(1)
         

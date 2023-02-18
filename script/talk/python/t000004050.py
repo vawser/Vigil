@@ -548,7 +548,7 @@ def t000004050_x100():
         AddTalkListDataIf(GetEventFlag(1049630002) == 0, 1, 89200000, -1)
         
         # Talk
-        # AddTalkListData(2, 80105451, -1)
+        AddTalkListData(2, 20000000, -1)
         
         # Leave
         AddTalkListData(9, 20000009, -1)
@@ -560,9 +560,13 @@ def t000004050_x100():
         if GetTalkListEntryResult() == 1:
             assert t000004050_x101()
             continue
-        # elif GetTalkListEntryResult() == 2:
-            # assert t000004050_x101()
-            # continue
+        elif GetTalkListEntryResult() == 2:
+            if GetEventFlag(1049630005) == 0:
+                assert t000004050_x130(1000000, 1049630005, 1)
+            else:
+                assert t000004050_x130(1000100, -1, 1)
+            
+            return 0
         else:
             """State 6,8"""
             return 0
@@ -647,3 +651,20 @@ def t000004050_x120(flag=_, cost_message_id=_, plant_message_id=_, cost_amount=_
         return 0
         
     return 0
+    
+# Talk
+def t000004050_x130(talk_id=_, flag=_, flag_state=_):
+    assert t000004050_x2() and CheckSpecificPersonTalkHasEnded(0) == 1
+
+    TalkToPlayer(talk_id, -1, -1, 0)
+    
+    assert CheckSpecificPersonTalkHasEnded(0) == 1
+    assert GetCurrentStateElapsedFrames() > 500
+    
+    ReportConversationEndToHavokBehavior()
+    
+    SetEventFlag(flag, flag_state)
+    
+    return 0
+    
+    

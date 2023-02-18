@@ -2,6 +2,8 @@
 400005000 Enemy
 400005010 Boss (included in Enemy too)
 
+400005080 Enemy for Sound
+
 # Assets
 400005100 Invulnerable Assets
 
