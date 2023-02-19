@@ -1,0 +1,209 @@
+﻿#-------------------------------------------------
+# Changelog 0.0.7
+#-------------------------------------------------
+#-------------------------------------------------
+# Features
+#-------------------------------------------------
+- Added a new enemy castigation:
+ - Alacrity: increases enemy movement speed by 50%.
+ 
+- Added a new player castigation:
+ - Lethargic Mind: reduces passive FP regeneration to 0.
+ 
+- Added "Memorize Spell" to the Jar of Promise, allowing custom loadouts to equip their selected spells immediately.
+
+#-------------------------------------------------
+# Player
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Bosses
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Enemies
+#-------------------------------------------------
+- Corrected a Vulgar Militia type that dropped 25,000 runes instead of the intended 2500 runes.
+
+#-------------------------------------------------
+# World
+#-------------------------------------------------
+- Added a farm near Summonwater Village called Jarfield.
+ - Staffed by the Jar of Cultivation, the player can give the Jar manure to spread over the fields.
+  - You can select three sizes of crop:
+   - Small (2 types of plants) - 4 Manure
+   - Medium (4 types of plants) - 8 Manure
+   - Large (6 types of plants) - 12 Manure
+  - Once you have asked the Jar of Cultivation to cultivate the field, a timer will start. 
+  - Once approximately 5 minutes has passed, the field will be ready. This time has to be continuous, map reloads will reset the timer.
+  - Once the field is ready, an icon will appear in the player's top bar so the player is notified. 
+  - Once the field is ready, the player can return to Jarfield at anytime, the crops will remain ready until they do so.
+  - Once the player has visited the field and picked the crops, resting or reloading will cause the fields to become barren again.
+  
+#-------------------------------------------------
+# Items
+#-------------------------------------------------
+- Added the rune amounts in the names of the items that give runes to make it easier to assess which you want to use.
+
+- All the raisin items can now be crafted by default.
+- Added Sparking Raisin:
+    - Increases Torrent's movement speed by 25% for 60 seconds when fed to Torrent.
+    - Can be crafted from Rowa Fruit and 2 Fulgurbloom. Is available by default.
+    
+- Added Arcane-knot Crystal Tear:
+ - Effect: Increases ARC by 10 for 180 seconds.
+ - Found near the Siofra Well entrance in Limgrave.
+ 
+- Added Void-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Void enemies for 180 seconds.
+ - Found near the Onyx Lord evergaol, beyond Caria Manor.
+ 
+- Added Death-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Undead enemies for 180 seconds.
+ - Found atop a collapsed pillar in the Weeping Penisula, near to the Walking Mausoleum.
+ 
+- Added Dragon-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Dragons enemies for 180 seconds.
+ - Found near to Elder Dragon Greyoll in the Dragonbarrow.
+ 
+- Added Beast-Tainted Cracked Tear 
+ - Effect: Raises attack power by 20% against Beasts enemies for 180 seconds.
+ - Found in the Morne Moangrave at the end of Castle Morne.
+ 
+- Added Manure
+ - Dropped by the passive animals such as Deer, Bears, etc.
+ 
+# Glovewort
+- Simplified the Glovewort material paths:
+ - There are now 4 gloveworts:
+  - Fledgling Glovewort (+1 to +3)
+  - Budding Glovewort (+4 to +6)
+  - Blooming Glovewort (+7 to +9)
+  - Resplendent Glovewort (+10)
+ - Spirit Summon reinforcement now uses these in both cases, but for those that used to require Ghost Glovewort, they require 2 per tier (excluding +10).
+
+# Bell Bearings
+- Changed the Glovewort Bell Bearing setup, there are now only 4.
+- Fledgling Bell Bearing
+ - Unlocks Fledgling Glovewort in the shop.
+ - Found in Stormveil Castle.
+ 
+- Budding Bell Bearing
+ - Unlocks Budding Glovewort in the shop.
+ - Dropped by Erdtree Burial Watchdog in Wyndham Catacombs (Altus Plateau).
+ 
+- Blooming Bell Bearing
+ - Unlocks Blooming Glovewort in the shop.
+ - Found in upper Siofra River.
+
+- Resplendent Bell Bearing
+ - Unlocks Resplendent Glovewort in the shop.
+ - Found in Crumbling Farum Azula.
+ 
+- Changed the Miner Bell Bearing setup, there are now 4.
+- Crude Bell Bearing
+ - Unlocks Crude Erdstone and Crude Somberstone in the shop.
+ - Dropped by the Stonedigger Troll in Limgrave Tunnels.
+
+- Rough Bell Bearing
+ - Unlocks Rough Erdstone and Rough Somberstone in the shop.
+ - Dropped by the Crystalian in Raya Lucaria Crystal Tunnel.
+
+- Refined Bell Bearing
+ - Unlocks Refined Erdstone and Refined Somberstone in the shop.
+ - Found in the Divine Tower of West Altus.
+
+- Pure Bell Bearing
+ - Unlocks Pure Erdstone and Pure Somberstone in the shop.
+ - Dropped by the Godskin Duo in Crumbling Farum Azula.
+
+- Added Glintstone Bell Bearing
+ - Unlocks Glintstone Scrap and Cracked Crystal in the shop.
+ - Dropped by the Crystalians in Altus Tunnel.
+
+- Added Explosive Bell Bearing
+ - Unlocks Explosive Stone in the shop.
+ - Found in Volcano Manor.
+
+- Added Sanctuary Bell Bearing
+ - Unlocks Ruin Fragment and Sanctuary Stone in the shop.
+ - Found in Morne Tunnel in the Weeping Penisula.
+
+# Cookbooks
+- Made many of the recipes available by default to make crafting more useful throughout the game.
+- Simplfied the cookbooks down into 8 cookbooks.
+
+- Pot-Maker's Cookbook
+ - Unlocks the more advanced pot recipes.
+ - Found in Jarburg in Liurnia of the Lakes.
+
+- Pickler's Cookbook
+ - Unlocks the Silver and Gold Fowl Foot recipes.
+ - Found in the lake of Liurnia of the Lakes, surrounded by 3 lobsters.
+ 
+- Alchemist's Cookbook
+ - Unlocks the more advanced grease recipes.
+ - Found int he Divine Tower of Liurnia.
+ 
+- Perfumer's Cookbook
+ - Unlocks the aromatic recipes
+ - Found at the Perfumer's Ruins in Altus Plateau.
+
+- Fletcher's Cookbook
+ - Unlocks the fletched arrow recipes
+ - Found on the outside of the Divine Tower of Caelid.
+ 
+- Scholar's Cookbook
+ - Unlocks the Larval Tear and Starlight Shard recipes.
+ - Found in the Academy of Raya Lucaria.
+ 
+- Mason's Cookbook
+ - Unlocks the Stonesword Key and Imbued Stonesword Key recuoes,
+ - Given by Gideon Ofnir after visiting the Mohgwyn Dynasty Mausoleum.
+
+- Artificer's Cookbook
+ - Unlocks the throwable explosive stone recipes.
+ - Found in the Academy Crystal Cave in Liurnia of the Lakes.
+
+
+#-------------------------------------------------
+# Armor
+#-------------------------------------------------
+ 
+#-------------------------------------------------
+# Weapons
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Catalysts
+#-------------------------------------------------
+    
+#-------------------------------------------------
+# Spells
+#-------------------------------------------------
+- Added a new sorcery: Ghostflame Blade
+ - Adds ghostflame to the right-hand weapon, adding Magic damage and Frostbite. The magic damage scales with INT and FTH.
+ - Found in Deathtouched Catacombs.
+ 
+- Added a new sorcery: Soporific Armament
+ - Adds sleep to the right-hand weapon.
+ - Found in Academy of Raya Lucaria.
+ 
+#-------------------------------------------------
+# Great Runes
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Talismans
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Misc
+#-------------------------------------------------
+- Fixed a tracking SpEffect accidently giving the player 100% aux immunity
+- Fixed a localization issue.
+- Fixed some leftover invalid Smithing Stone drops.
+- Added boundry areas in the Colosseums that warp the player back if they try and exploit the geometry.
+- Fixed a flag bug causing the Riding Horn +2 and +3 not to appear in the Bloodforge correctly.
+- Fixed Torrent taking damage if ridden with the Riding Horn equipped and a weapon buff active.
+- Fixed Altar of Anticaption leave option using a bad text id.
