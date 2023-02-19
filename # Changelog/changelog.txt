@@ -126,6 +126,43 @@
  - Unlocks Ruin Fragment and Sanctuary Stone in the shop.
  - Found in Morne Tunnel in the Weeping Penisula.
 
+# Cookbooks
+- Made many of the recipes available by default to make crafting more useful throughout the game.
+- Simplfied the cookbooks down into 8 cookbooks.
+
+- Pot-Maker's Cookbook
+ - Unlocks the more advanced pot recipes.
+ - Found in Jarburg in Liurnia of the Lakes.
+
+- Pickler's Cookbook
+ - Unlocks the Silver and Gold Fowl Foot recipes.
+ - Found in the lake of Liurnia of the Lakes, surrounded by 3 lobsters.
+ 
+- Alchemist's Cookbook
+ - Unlocks the more advanced grease recipes.
+ - Found int he Divine Tower of Liurnia.
+ 
+- Perfumer's Cookbook
+ - Unlocks the aromatic recipes
+ - Found at the Perfumer's Ruins in Altus Plateau.
+
+- Fletcher's Cookbook
+ - Unlocks the fletched arrow recipes
+ - Found on the outside of the Divine Tower of Caelid.
+ 
+- Scholar's Cookbook
+ - Unlocks the Larval Tear and Starlight Shard recipes.
+ - Found in the Academy of Raya Lucaria.
+ 
+- Mason's Cookbook
+ - Unlocks the Stonesword Key and Imbued Stonesword Key recuoes,
+ - Given by Gideon Ofnir after visiting the Mohgwyn Dynasty Mausoleum.
+
+- Artificer's Cookbook
+ - Unlocks the throwable explosive stone recipes.
+ - Found in the Academy Crystal Cave in Liurnia of the Lakes.
+
+
 #-------------------------------------------------
 # Armor
 #-------------------------------------------------

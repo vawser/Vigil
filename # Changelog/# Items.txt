@@ -33,3 +33,30 @@
 
 # Sanctuary Bell Bearing
 - Found in Morne Tunnel in the Weeping Penisula.
+
+# Pot-Maker's Cookbook
+- Found in Jarburg in Liurnia of the Lakes.
+
+# Pickler's Cookbook
+- Found in the lake of Liurnia of the Lakes, surrounded by 3 lobsters.
+ 
+# Alchemist's Cookbook
+- Found int he Divine Tower of Liurnia.
+ 
+# Perfumer's Cookbook
+- Found at the Perfumer's Ruins in Altus Plateau.
+
+# Fletcher's Cookbook
+- Found on the outside of the Divine Tower of Caelid.
+ 
+# Scholar's Cookbook
+- Found in the Academy of Raya Lucaria.
+ 
+# Mason's Cookbook
+- Given by Gideon Ofnir after visiting the Mohgwyn Dynasty Mausoleum.
+
+# Artificer's Cookbook
+- Found in the Academy Crystal Cave in Liurnia of the Lakes.
+
+
+
