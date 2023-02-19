@@ -81,8 +81,8 @@
 #-------------------------------------------------
 # Bugs to Fix
 Fix Morgott not respawning correctly via Boss Revival
-Farm not re-enabling pickup properly after entering area (first visit only?)
 
 # Small Stuff
 Add raisin that allows Torrent to 'charge' enemies
 
+Add timer save flags to the farm progress

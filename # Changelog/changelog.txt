@@ -50,3 +50,4 @@
 # Misc
 #-------------------------------------------------
 - Added a bugfix to the Farm scripts so the ability to pickup materials isn't blocked outside of the farm in certain situations.
+- Fixed some items giving 100% aux immunity when they should not have.
