@@ -1,6 +1,8 @@
 ﻿#-------------------------------------------------
 # Features
 #-------------------------------------------------
+# Farm
+- The farm timer now saves progress in 20 seconds increments, meaning you warp and reload without losing much progress towards crop growth.
 
 #-------------------------------------------------
 # Player
@@ -50,4 +52,5 @@
 # Misc
 #-------------------------------------------------
 - Added a bugfix to the Farm scripts so the ability to pickup materials isn't blocked outside of the farm in certain situations.
+- Farm timer should now start properly after starting a Cultivation without reloading.
 - Fixed some items giving 100% aux immunity when they should not have.

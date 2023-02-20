@@ -9397,32 +9397,162 @@ $Event(14100, Restart, function() {
     }
     
     EndIf(EventFlag(1049630000)); // Farm Ready is ON
-    EndIf(!EventFlag(1049630002)); // Not Started Farm Grow Cycle
     
-    // Base Wait
-    WaitFixedTimeSeconds(300);
+    // Wait for Started Farm Grow Cycle
+    WaitFor(EventFlag(1049630002));
     
-    // Small Crop
+    // Base Timer
+    if(!EventFlag(1049630020))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630020, ON);
+    }
+    if(!EventFlag(1049630021))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630021, ON);
+    }
+    if(!EventFlag(1049630022))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630022, ON);
+    }
+    if(!EventFlag(1049630023))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630023, ON);
+    }
+    if(!EventFlag(1049630024))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630024, ON);
+    }
+    if(!EventFlag(1049630025))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630025, ON);
+    }
+    if(!EventFlag(1049630026))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630026, ON);
+    }
+    if(!EventFlag(1049630027))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630027, ON);
+    }
+    if(!EventFlag(1049630028))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630028, ON);
+    }
+    if(!EventFlag(1049630029))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630029, ON);
+    }
+    if(!EventFlag(1049630030))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630030, ON);
+    }
+    if(!EventFlag(1049630031))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630031, ON);
+    }
+    if(!EventFlag(1049630032))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630032, ON);
+    }
+    if(!EventFlag(1049630033))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630033, ON);
+    }
+    if(!EventFlag(1049630034))
+    {
+        WaitFixedTimeSeconds(20);
+        SetEventFlagID(1049630034, ON);
+    }
+    
+    // Crop Timer
     if(EventFlag(1049630010))
     {
-        WaitFixedTimeSeconds(60);
+        if(!EventFlag(1049630035))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630035, ON);
+        }
+        if(!EventFlag(1049630036))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630036, ON);
+        }
+        if(!EventFlag(1049630037))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630037, ON);
+        }
     }
     // Medium Crop
     else if(EventFlag(1049630011))
     {
-        WaitFixedTimeSeconds(90);
+        if(!EventFlag(1049630035))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630035, ON);
+        }
+        if(!EventFlag(1049630036))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630036, ON);
+        }
+        if(!EventFlag(1049630037))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630037, ON);
+        }
+        if(!EventFlag(1049630038))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630038, ON);
+        }
     }
     // Large Crop
     else if(EventFlag(1049630012))
     {
-        WaitFixedTimeSeconds(120);
+        if(!EventFlag(1049630035))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630035, ON);
+        }
+        if(!EventFlag(1049630036))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630036, ON);
+        }
+        if(!EventFlag(1049630037))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630037, ON);
+        }
+        if(!EventFlag(1049630038))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630038, ON);
+        }
+        if(!EventFlag(1049630039))
+        {
+            WaitFixedTimeSeconds(20);
+            SetEventFlagID(1049630039, ON);
+        }
     }
-    else
-    {
-        WaitFixedTimeSeconds(120);
-    }    
     
     SetSpEffect(10000, 7000003);
     SetEventFlagID(1049630000, ON); // Toggle Farm Ready ON
     SetEventFlagID(1049630002, OFF); // Toggle Started Farm Grow Cycle OFF
+    BatchSetEventFlags(1049630020, 1049630049, OFF); // Reset the timer flags
 });

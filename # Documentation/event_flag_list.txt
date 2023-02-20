@@ -656,6 +656,32 @@
 1049630011 Medium Crop
 1049630012 Large Crop
 
+1049630020 Timer: 20 seconds
+1049630021 Timer: 40 seconds
+1049630022 Timer: 60 seconds
+1049630123 Timer: 80 seconds
+1049630024 Timer: 100 seconds
+1049630025 Timer: 120 seconds
+1049630026 Timer: 140 seconds
+1049630027 Timer: 160 seconds
+1049630028 Timer: 180 seconds
+1049630029 Timer: 200 seconds
+1049630030 Timer: 220 seconds
+1049630031 Timer: 240 seconds
+1049630032 Timer: 260 seconds
+1049630033 Timer: 280 seconds
+1049630034 Timer: 300 seconds
+1049630035 Timer: 320 seconds
+1049630036 Timer: 340 seconds
+1049630037 Timer: 360 seconds
+1049630038 Timer: 380 seconds
+1049630039 Timer: 400 seconds
+1049630040 Timer: 420 seconds
+1049630041 Timer: 440 seconds
+1049630042 Timer: 460 seconds
+1049630043 Timer: 480 seconds
+1049630044 Timer: 500 seconds
+
 1049630100 Type: St. Trina's Lily
 1049630101 Type: Miquella's Lily
 1049630102 Type: Grave Violet 
