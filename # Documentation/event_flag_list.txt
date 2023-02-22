@@ -734,7 +734,232 @@
 1049630173 Block Pickup: Toxic Mushroom
 1049630174 Block Pickup: Root Resin
 
-
+# Stranded Graveyard
+1049630200 Ulcerated Tree Spirit
+1049630201 Soldier of Godrick
+1049630202 Grafted Scion
+# Limgrave
+1049630203 Cemetery Shade
+1049630204 Erdtree Burial Watchdog
+1049630205 Grave Warden Duelist
+1049630206 Black Knife Assassin
+1049630207 Patches
+1049630208 Demi-Human Chief
+1049630209 Guardian Golem
+1049630210 Miranda the Blighted Bloom
+1049630211 Beastman of Farum Azula
+1049630212 Stonedigger Troll
+1049630213 Tree Sentinel
+1049630214 Crucible Knight
+1049630215 Death Rite Bird
+1049630216 Bell-Bearing Hunter
+1049630217 Flying Dragon Agheel
+1049630218 Night's Cavalry
+1049630219 Bloodhound Knight Darriwil
+1049630220 Mad Pumpkin Head
+1049630221 Tibia Mariner
+# Stormveil Castle
+1049630222 Margit
+1049630223 Godrick
+# Weeping Penisula
+1049630224 Erdtree Burial Watchdog
+1049630225 Runebear
+1049630226 Scaly Misbegotten
+1049630227 Ancient Hero of Zamor
+1049630228 Leonine Misbegotten
+1049630229 Erdtree Avatar
+1049630230 Death Rite Bird
+1049630231 Night's Cavalry
+# Liurnia of the Lakes 
+1049630232 Spirit-Caller Snail
+1049630233 Cemetery Shade
+1049630234 Black Knife Assassin
+1049630235 Erdtree Burial Watchdog
+1049630236 Cleanrot Knight
+1049630237 Bloodhound Knight
+1049630238 Crystalians (Academy Crystal Cave)
+1049630239 Crystalians (Raya Lucaria Crystal Tunnel)
+1049630240 Magma Wyrm Makar
+1049630241 Alecto, Black Knife Ringleader
+1049630242 Bols, Carian Knight
+1049630243 Glintstone Dragon Adula
+1049630244 Glintstone Dragon Smarag
+1049630245 Royal Revenant
+1049630246 Omenkiller
+1049630247 Royal Knight Loretta
+1049630248 Onyx Lord
+1049630249 Bell-Bearing Hunter
+1049630250 Adan, Thief of Fire
+1049630251 Tibia Mariner
+1049630252 Night's Cavalry (East Raya Lucaria Gate)
+1049630253 Night's Cavalry (Liurnia Highway)
+1049630254 Death Rite Bird (Gate Town North)
+1049630255 Death Rite Bird (Scenic Isle)
+1049630256 Erdtree Avatar (Minor Erdtree)
+1049630257 Erdtree Avatar (Bellum Highway)
+# Academy of Raya Lucaria
+1049630258 Rennala, Queen of the Full Moon
+1049630259 Red Wolf of Radagon
+# Mt. Gelmir
+1049630260 Red Wolf of the Champion
+1049630261 Misbegotten Warrior/Perfumer Tricia
+1049630262 Kindred of Rot
+1049630263 Demi-Human Queen Margot
+1049630264 Magma Wyrm
+1049630265 Full-Grown Fallingstar Beast
+1049630266 Demi-Human Queen Maggie
+1049630267 Ulcerated Tree Spirit
+# Volcano Manor
+1049630268 Rykard, Lord of Blasphemy
+1049630269 Godskin Noble
+1049630270 Abductor Virgins
+# Altus Plateau 
+1049630271 Erdtree Burial Watchdog
+1049630272 Ancient Hero of Zamor
+1049630273 Crucible Knight Ordovis/Crucible Knight
+1049630274 Grave Warden Duelist
+1049630275 Miranda the Blighted Bloom
+1049630276 Black Knife Assassin (Sage's Cave)
+1049630277 Black Knife Assassin (Sainted Hero's Grave)
+1049630278 Necromancer Garris
+1049630279 Stonedigger Troll
+1049630280 Crystalians
+1049630281 Onyx Lord
+1049630282 Ancient Dragon Lansseax
+1049630283 Demi-Human Queen
+1049630284 Tibia Mariner
+1049630285 Godefroy the Grafted
+1049630286 Night's Cavalry
+1049630287 Sanguine Noble
+1049630288 Fallingstar Beast
+1049630289 Tree Sentinel Duo
+1049630290 Wormface
+1049630291 Godskin Apostle
+# Caelid
+1049630292 Starscourge Radahn
+1049630293 Erdtree Burial Watchdog
+1049630294 Cemetery Shade
+1049630295 Beastman of Farum Azula
+1049630296 Putrid Crystalians
+1049630297 Cleanrot Knight
+1049630298 Frenzied Duelist
+1049630299 Magma Wyrm
+1049630300 Fallingstar Beast
+1049630301 Godskin Apostle
+1049630302 Decaying Ekzykes
+1049630303 Mad Pumpkin Head
+1049630304 Bell-Bearing Hunter
+1049630305 Death Rite Bird
+1049630306 Commander O'Neil
+1049630307 Nox Priest and Swordstress
+1049630308 Battlemage Hugues
+1049630309 Crucible Knight
+1049630310 Black Blade Kindred
+1049630311 Flying Dragon Greyll
+1049630312 Elder Dragon Greyoll
+1049630313 Night's Cavalry (Southern Aeonia)
+1049630314 Night's Cavalry (Lenne's Rise)
+1049630315 Putrid Tree Spirit
+1049630316 Putrid Avatar (Minor Erdtree)
+1049630317 Putrid Avatar (Minor Erdtree)
+# Capital Outskirts
+1049630318 Fell Twins
+1049630319 Bell-Bearing Hunter
+1049630320 Death Rite Bird
+1049630321 Draconic Tree Sentinel
+# Leyndell
+1049630322 Godfrey, First Elden Lord
+1049630323 Morgott, the Omen King
+# Subterranean Shunning-Grounds
+1049630324 Mohg, The Omen
+1049630325 Esgar, Priest of Blood
+# Siofra River
+1049630326 Valiant Gargoyles
+1049630327 Dragonkin Soldier
+1049630328 Ancestor Spirit
+# Ainsel River
+1049630329 Dragonkin Soldier of Nokstella
+# Lake of Rot
+1049630330 Dragonkin Soldier
+1049630331 Astel, Naturalborn of the Void
+# Deeproot Depths
+1049630332 Crucible Knight Sirulia
+1049630333 Fia's Champions
+1049630334 Lichdragon Fortissax
+# Mohgwyn Palace
+1049630335 Mohg, Lord of Blood
+# Nokron, Eternal City
+1049630336 Regal Ancestor Spirit
+1049630337 Mimic Tear
+# Consecrated Snowfield
+1049630338 Putrid Grave Warden Duelist
+1049630339 Astel, Stars of Darkness
+1049630340 Death Rite Bird
+# Mountaintops of the Giants
+1049630341 Fire Giant
+1049630342 Ancient Hero of Zamor
+1049630343 Ulcerated Tree Sprit
+1049630344 Misbegotten Crusader
+1049630345 Spirit-Caller Snail
+1049630346 Black Blade Kindred
+1049630347 Great Wyrm Theodorix
+1049630348 Death Rite Bird
+1049630349 Commander Niall
+1049630350 Erdtree Avatar
+1049630351 Roundtable Knight Vyke
+1049630352 Borealis the Freezing Fog
+1049630353 Night's Cavalry (Forbidden Lands)
+1049630354 Night's Cavalry (Foggy Snowfield)
+1049630355 Putrid Avatar
+# Ashen Leyndell
+1049630356 Hoarah Loux
+1049630357 Sir Gideon Ofnir
+# Crumbling Farum Azula
+1049630358 Maliketh, The Black Blade
+1049630359 Dragonlord Placidusax
+1049630360 Godskin Duo
+# Miquella's Haligtree
+1049630361 Malenia, Blade of Miquella
+1049630362 Loretta, Knight of the Haligtree
+1049630363 Stray Mimic Tear
+# Elden Throne
+1049630364 Radagon of the Golden Order
+1049630365 Elden Beast
+# Misc
+1049630366 Elemer of the Briar
+1049630367
+1049630368
+1049630369
+1049630370
+1049630371
+1049630372
+1049630373
+1049630374
+1049630375
+1049630376
+1049630377
+1049630378
+1049630379
+1049630380
+1049630381
+1049630382
+1049630383
+1049630384
+1049630385
+1049630386
+1049630387
+1049630388
+1049630389
+1049630390
+1049630391
+1049630392
+1049630393
+1049630394
+1049630395
+1049630396
+1049630397
+1049630398
+1049630399 Night Boss: Toggle Night on reload
 
 #------------------------------------
 104760_0000 Transmog

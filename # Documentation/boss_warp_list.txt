@@ -1,4 +1,19 @@
 ﻿#------------
+# Stranded Graveyard 
+#------------
+- Ulcerated Tree Spirit
+18000976 # player
+18002030 # spawn
+
+- Soldier of Godrick
+18000977 # player
+18002031 # spawn
+
+- Grafted Scion
+10010970 # player
+10012021 # spawn
+
+#------------
 # Limgrave
 #------------
 - Cemetery Shade
@@ -54,7 +69,7 @@
 1042382810 # spawn
 # Change to Night
 
-- Bell-Bearing Hunte
+- Bell-Bearing Hunter
 1042380982 # Player
 1042382811 # Spawn
 # Change to Night
@@ -71,7 +86,7 @@
 1044350973 # Player
 1044352021 # Spawn
 
--  Mad Pumpkin Head
+- Mad Pumpkin Head
 1044360971 # Player
 1044362021 # Spawn
 
@@ -152,7 +167,7 @@
 
 - Bloodhound Knight
 31050981 # player
-31062841 # spawn
+31052841 # spawn
 
 - Crystalians (Academy Crystal Cave)
 31060981 # player
@@ -354,213 +369,391 @@
 1038512020 # spawn
 
 - Tibia Mariner
+1038520980 # player
+1038522020 # spawn
 
 - Godefroy the Grafted
+1039500971 # player
+1039502811 # spawn
 
 - Night's Cavalry
+1039510981 # player
+1039512021 # spawn
 
 - Elemer of the Briar
+1039540983 # player
+1039542021 # spawn
 
 - Sanguine Noble
+1040530981 # player
+1040532021 # spawn
 
 - Fallingstar Beast
+1041500981 # player
+1041502021 # spawn
 
 - Tree Sentinel Duo
+1041510971 # player
+1041512691 # spawn
 
 - Wormface
+1041530971 # player
+1041532021 # spawn
 
 - Godskin Apostle
+1042553921 # player
+1042552021 # spawn
 
 #------------
 # Caelid
 #------------
 - Starscourge Radahn
+1051360601 # player
+1051362021 # spawn
 
 - Erdtree Burial Watchdog
+30140981 # player
+30142841 # spawn
 
 - Cemetery Shade
+30150981 # player
+30152841 # spawn
 
 - Beastman of Farum Azula
+31100981 # player
+31102841 # spawn
 
 - Putrid Crystalians
+31110971 # player
+31112841 # spawn
 
 - Cleanrot Knight
+31200981 # player
+31202841 # spawn
 
 - Frenzied Duelist
+31210971 # player
+31212191 # spawn
 
 - Magma Wyrm
+32070982 # player
+32072841 # spawn
 
 - Fallingstar Beast
+32080981 # player
+32082841 # spawn
 
 - Godskin Apostle
+34130984 # player
+34132020 # spawn
 
 - Decaying Ekzykes
+1048370981 # player
+1048372021 # spawn
 
-- Monstrous Dog
+- Mad Pumpkin Head
+1048400982 # player
+1048402020 # spawn
 
 - Bell-Bearing Hunter
+1048410981 # player
+1048412020 # spawn
+# Spawn at Night
 
 - Death Rite Bird
+1049370981 # player
+1049372020 # spawn
+# Spawn at Night
 
 - Commander O'Neil
+1049380982 # player
+1049382020 # spawn
 
 - Nox Priest and Swordstress
+1049390983 # player
+1049392861 # spawn
 
 - Battlemage Hugues
+1049390984 # player
+1049392862 # spawn
 
 - Crucible Knight
+1051360602 # player
+1051362022 # spawn
 
 - Black Blade Kindred
+1051430601 # player
+1051432020 # spawn
 
 - Flying Dragon Greyll
+1052410981 # player
+1052412020 # spawn
 
 - Elder Dragon Greyoll
+1050400981 # player
+1050402020 # spawn
 
-- Night's Cavalry #1
+- Night's Cavalry (Southern Aeonia)
+1049370982 # player
+1049372021 # spawn
+# Spawn at Night
 
-- Night's Cavalry #2
+- Night's Cavalry (Lenne's Rise)
+1052410982 # player
+1052412021 # spawn
+# Spawn at Night
 
 - Putrid Tree Spirit
+30160981 # player
+30162841 # spawn
 
-- Putrid Avatar #1
+- Putrid Avatar (Minor Erdtree)
+1051400971 # player
+1051402020 # spawn
 
-- Putrid Avatar #2
+- Putrid Avatar (Minor Erdtree)
+1047400971 # player
+1047402020 # spawn
 
 #------------
 # Capital Outskirts
 #------------
 - Fell Twins
+34140983 # player
+34142020 # spawn
 
 - Bell-Bearing Hunter
+1043530982 # player
+1043532021 # spawn
+# Spawn at Night
 
 - Death Rite Bird
+1044530971 # player
+1044532020 # spawn
+# Spawn at Night
 
 - Draconic Tree Sentinel
+1045520982 # player
+1045522020 # spawn
 
 #------------
 # Leyndell
 #------------
 - Godfrey, First Elden Lord
+11000971 # player
+11002501 # spawn
 
 - Morgott, the Omen King
+11000972 # player
+11002502 # spawn
 
+#------------
+# Subterranean Shunning-Grounds
+#------------
 - Mohg, The Omen
+35000985 # player
+35002841 # spawn
 
 - Esgar, Priest of Blood
+35000986 # player
+35002842 # spawn
 
 #------------
 # Siofra River
 #------------
 - Valiant Gargoyles
+12020973 # player
+12022020 # spawn
 
 - Dragonkin Soldier
+12020974 # player
+12022021 # spawn
 
 - Ancestor Spirit
+12020975 # player
+12022022 # spawn
 
 #------------
 # Ainsel River
 #------------
 - Dragonkin Soldier of Nokstella
-
+12010972 # player
+12012020 # spawn
 
 #------------
 # Lake of Rot
 #------------
 - Dragonkin Soldier
+12010973 # player
+12012021 # spawn
 
 - Astel, Naturalborn of the Void
+12040971 # player
+12042020 # spawn
 
 #------------
 # Deeproot Depths
 #------------
 - Crucible Knight Sirulia
+12030986 # player
+12032020 # spawn
 
 - Fia's Champions
+12030987 # player
+12032021 # spawn
 
 - Lichdragon Fortissax
+12030988 # player
+12032022 # spawn
 
 #------------
 # Mohgwyn Palace
 #------------
 - Mohg, Lord of Blood
+12050972 # player
+12052022 # spawn
 
 #------------
 # Nokron, Eternal City
 #------------
 - Regal Ancestor Spirit
+12090971 # player
+12092020 # spawn
 
 - Mimic Tear
+12020976 # player
+12022023 # spawn
 
 #------------
 # Consecrated Snowfield
 #------------
 - Putrid Grave Warden Duelist
+30190981 # player
+30192020 # spawn
 
 - Astel, Stars of Darkness
+32110981 # player
+32112841 # spawn
 
 - Death Rite Bird
-
-- Putrid Avatar
+1048570981 # player
+1048572020 # spawn
+# Spawn at Night
 
 #------------
 # Mountaintops of the Giants
 #------------
 - Fire Giant
+1052523801 # player
+1052522020 # spawn
 
 - Ancient Hero of Zamor
+30170981 # player
+30172020 # spawn
 
 - Ulcerated Tree Sprit
+30180981 # player
+30182020 # spawn
 
 - Misbegotten Crusader
+31120981 # player
+31122020 # spawn
 
 - Spirit-Caller Snail
+31220981 # player
+31222020 # spawn
 
 - Black Blade Kindred
+1049520971 # player
+1049522020 # spawn
 
 - Great Wyrm Theodorix
+1050560970 # player
+1050562020 # spawn
 
 - Death Rite Bird
+1050570972 # player
+1050572021 # spawn
+# Spawn at Night
 
 - Commander Niall
+1051570984 # player
+1051572021 # spawn
 
 - Erdtree Avatar
+1052560981 # player
+1052562020 # spawn
 
 - Roundtable Knight Vyke
+1053560971 # player
+1053562020 # spawn
 
 - Borealis the Freezing Fog
+1054560970 # player
+1054562020 # spawn
 
-- Night's Cavalry #1
+- Night's Cavalry (Forbidden Lands)
+1048510970 # player
+1048512020 # spawn
+# Spawn at Night
 
-- Night's Cavalry #2
+- Night's Cavalry (Foggy Snowfield)
+1048550971 # player
+1048552020 # spawn
+# Spawn at Night
+
+- Putrid Avatar
+1050570971 # player
+1050572020 # spawn
 
 #------------
 # Ashen Leyndell
 #------------
 - Hoarah Loux
+11050972 # player
+11052020 # spawn
 
 - Sir Gideon Ofnir
+11050973 # player
+11052021 # spawn
 
 #------------
 # Crumbling Farum Azula
 #------------
 - Maliketh, The Black Blade
+13000971 # player
+13002030 # spawn
 
 - Dragonlord Placidusax
+13000972 # player
+13002031 # spawn
 
 - Godskin Duo
+13000973 # player
+13002032 # spawn
 
 #------------
 # Miquella's Haligtree
 #------------
 - Malenia, Blade of Miquella
+15000975 # player
+15002021 # spawn
 
 - Loretta, Knight of the Haligtree
+15000976 # player
+15002022 # spawn
 
 - Stray Mimic Tear
+30200972 # player
+30202020 # spawn
 
 #------------
 # Elden Throne
 #------------
 - Radagon of the Golden Order
+19000983 # player
+19002020 # spawn
 
 - Elden Beast
+19000984 # player
+19002021 # spawn

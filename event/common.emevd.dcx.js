@@ -6616,8 +6616,16 @@ $Event(11000, Default, function() {
     InitializeEvent(18, 11041, 25043, 7300143, 1047610725); // Weapon Stamina Consumption (10)
     InitializeEvent(19, 11041, 25044, 7300144, 1047610730); // Vendor Greed (10)
     
-    // Uniques
-    // InitializeEvent(0, 11043, 25037, 7300137, 1047610420);
+    //----------------------------
+    // Castigations
+    //----------------------------
+    InitializeEvent(0, 14000, 0); // Player Effects
+    InitializeEvent(0, 14001, 0); // Enemy Effects
+    
+    //----------------------------
+    // Farm
+    //----------------------------
+    InitializeEvent(0, 14100, 0);
     
     //----------------------
     // Transmog
@@ -6759,17 +6767,229 @@ $Event(11000, Default, function() {
     InitializeEvent(82, 13000, 6230, 6231, 6232, 1047590920, 1047590921, 1047590922); // Blood Conduit
     InitializeEvent(83, 13000, 6250, 6251, 6252, 1047590930, 1047590931, 1047590932); // Riding Horn
     
-    //----------------------------
-    // Castigations
-    //----------------------------
-    InitializeEvent(0, 14000, 0); // Player Effects
-    InitializeEvent(0, 14001, 0); // Enemy Effects
+    //----------------------
+    // Boss Teleports
+    //----------------------
+    InitializeEvent(0, 14022, 0); // Night Toggle
     
-    //----------------------------
-    // Farm
-    //----------------------------
-    InitializeEvent(0, 14100, 0);
+    // Stranded Graveyard
+    InitializeEvent( 0, 14020, 1049630200, 18000940, 18002030, 18, 0, 0, 0);         // Ulcerated Tree Spirit
+    InitializeEvent( 1, 14020, 1049630201, 18000941, 18002031, 18, 0, 0, 0);         // Soldier of Godrick
+    InitializeEvent( 2, 14020, 1049630202, 10010970, 10012021, 10, 1, 0, 0);         // Grafted Scion
+    
+    // Limgrave
+    InitializeEvent( 3, 14020, 1049630203, 30000981, 30002841, 30, 0, 0, 0);         // Cemetery Shade
+    InitializeEvent( 4, 14020, 1049630204, 30020191, 30022841, 30, 2, 0, 0);         // Erdtree Burial Watchdog
+    InitializeEvent( 5, 14020, 1049630205, 30040191, 30042841, 30, 4, 0, 0);         // Grave Warden Duelist
+    InitializeEvent( 6, 14020, 1049630206, 30110981, 30112841, 30, 11, 0, 0);        // Black Knife Assassin
+    InitializeEvent( 7, 14020, 1049630207, 31000981, 31002841, 31, 0, 0, 0);         // Patches
+    InitializeEvent( 8, 14020, 1049630208, 31150982, 31152841, 31, 15, 0, 0);        // Demi-Human Chief
+    InitializeEvent( 9, 14020, 1049630209, 31170971, 31172841, 31, 17, 0, 0);        // Guardian Golem
+    InitializeEvent(10, 14020, 1049630210, 31020981, 31022841, 31, 2, 0, 0);         // Miranda the Blighted Bloom
+    InitializeEvent(11, 14020, 1049630211, 31030981, 31032841, 31, 3, 0, 0);         // Beastman of Farum Azula
+    InitializeEvent(12, 14020, 1049630212, 32010971, 32012841, 32, 1, 0, 0);         // Stonedigger Troll
+    InitializeEvent(13, 14020, 1049630213, 1042360982, 1042362021, 60, 42, 36, 0);   // Tree Sentinel
+    InitializeEvent(14, 14020, 1049630214, 1042370972, 1042372811, 60, 42, 37, 0);   // Crucible Knight
+    InitializeEvent( 0, 14021, 1049630215, 1042380981, 1042382810, 60, 42, 38, 0);   // Death Rite Bird
+    InitializeEvent( 1, 14021, 1049630216, 1042380982, 1042382811, 60, 42, 38, 0);   // Bell-Bearing Hunter
+    InitializeEvent(15, 14020, 1049630217, 1043360972, 1043362810, 60, 43, 36, 0);   // Flying Dragon Agheel
+    InitializeEvent( 2, 14021, 1049630218, 1043370972, 1043372810, 60, 43, 37, 0);   // Night's Cavalry
+    InitializeEvent(16, 14020, 1049630219, 1044350973, 1044352021, 60, 44, 35, 0);   // Bloodhound Knight Darriwil
+    InitializeEvent(17, 14020, 1049630220, 1044360971, 1044362021, 60, 44, 36, 0);   // Mad Pumpkin Head
+    InitializeEvent(18, 14020, 1049630221, 1045390970, 1045392020, 60, 45, 39, 0);   // Tibia Mariner
+    
+    // Stormveil Castle
+    InitializeEvent(19, 14020, 1049630222, 10000989, 10003901, 10, 0, 0, 0);         // Margit, the Fell Omen
+    InitializeEvent(20, 14020, 1049630223, 10000990, 10003902, 10, 0, 0, 0);         // Godrick the Grafted
+    
+    // Weeping Penisula
+    InitializeEvent(21, 14020, 1049630224, 30010981, 30012841, 30, 1, 0, 0);         // Erdtree Burial Watchdog
+    InitializeEvent(22, 14020, 1049630225, 31010981, 31012841, 31, 1, 0, 0);         // Runebear
+    InitializeEvent(23, 14020, 1049630226, 32000981, 32002841, 32, 0, 0, 0);         // Scaly Misbegotten
+    InitializeEvent(24, 14020, 1049630227, 1042330971, 1042332811, 60, 42, 33, 0);   // Ancient Hero of Zamor
+    InitializeEvent(25, 14020, 1049630228, 1043300981, 1043302811, 60, 43, 30, 0);   // Leonine Misbegotten
+    InitializeEvent(26, 14020, 1049630229, 1043330972, 1043332811, 60, 43, 33, 0);   // Erdtree Avatar
+    InitializeEvent( 3, 14021, 1049630230, 1044320973, 1044322811, 60, 44, 32, 0);   // Death Rite Bird
+    InitializeEvent( 4, 14021, 1049630231, 1044320974, 1044322812, 60, 44, 32, 0);   // Night's Cavalry
+    
+    // Liurnia of the Lakes
+    InitializeEvent(27, 14020, 1049630232, 30030981, 30032841, 30, 3, 0, 0);         // Spirit-Caller Snail
+    InitializeEvent(28, 14020, 1049630233, 30050981, 30052841, 30, 5, 0, 0);         // Cemetery Shade
+    InitializeEvent(29, 14020, 1049630234, 30050982, 30052842, 30, 5, 0, 0);         // Black Knife Assassin
+    InitializeEvent(30, 14020, 1049630235, 30060981, 30062841, 30, 6, 0, 0);         // Erdtree Burial Watchdog
+    InitializeEvent(31, 14020, 1049630236, 31040971, 31042841, 31, 4, 0, 0);         // Cleanrot Knight
+    InitializeEvent(32, 14020, 1049630237, 31050981, 31052841, 31, 5, 0, 0);         // Bloodhound Knight
+    InitializeEvent(33, 14020, 1049630238, 31060981, 31062841, 31, 6, 0, 0);         // Crystalians (Academy Crystal Cave)
+    InitializeEvent(34, 14020, 1049630239, 32020981, 32022841, 32, 2, 0, 0);         // Crystalians (Raya Lucaria Crystal Tunnel)
+    InitializeEvent(35, 14020, 1049630240, 39200983, 39202021, 39, 20, 0, 0);        // Magma Wyrm Makar
+    InitializeEvent(36, 14020, 1049630241, 1033420971, 1033422811, 60, 33, 42, 0);   // Alecto, Black Knife Ringleader
+    InitializeEvent(37, 14020, 1049630242, 1033450971, 1033452811, 60, 33, 45, 0);   // Bols, Carian Knight
+    InitializeEvent(38, 14020, 1049630243, 1034420971, 1034422021, 60, 34, 42, 0);   // Glintstone Dragon Adula
+    InitializeEvent(39, 14020, 1049630244, 1034450970, 1034452020, 60, 34, 45, 0);   // Glintstone Dragon Smarag
+    InitializeEvent(40, 14020, 1049630245, 1034480971, 1034482621, 60, 34, 48, 0);   // Royal Revenant
+    InitializeEvent(41, 14020, 1049630246, 1035420981, 1035422020, 60, 35, 42, 0);   // Omenkiller
+    InitializeEvent(42, 14020, 1049630247, 1035500971, 1035502020, 60, 35, 50, 0);   // Royal Knight Loretta
+    InitializeEvent(43, 14020, 1049630248, 1036500981, 1036502811, 60, 36, 50, 0);   // Onyx Lord
+    InitializeEvent( 5, 14021, 1049630249, 1037460971, 1037462651, 60, 37, 46, 0);   // Bell-Bearing Hunter
+    InitializeEvent(44, 14020, 1049630250, 1038410981, 1038412811, 60, 38, 41, 0);   // Adan, Thief of Fire
+    InitializeEvent(45, 14020, 1049630251, 1039440981, 1039442020, 60, 39, 44, 0);   // Tibia Mariner
+    InitializeEvent( 6, 14021, 1049630252, 1036480981, 1036482020, 60, 36, 48, 0);   // Night's Cavalry (East Raya Lucaria Gate)
+    InitializeEvent( 7, 14021, 1049630253, 1039430971, 1039432020, 60, 39, 43, 0);   // Night's Cavalry (Liurnia Highway)
+    InitializeEvent( 8, 14021, 1049630254, 1036450971, 1036452020, 60, 36, 45, 0);   // Death Rite Bird (Gate Town North)
+    InitializeEvent( 9, 14021, 1049630255, 1037420981, 1037422020, 60, 37, 42, 0);   // Death Rite Bird (Scenic Isle)
+    InitializeEvent(46, 14020, 1049630256, 1033430971, 1033432020, 60, 33, 43, 0);   // Erdtree Avatar (Minor Erdtree)
+    InitializeEvent(47, 14020, 1049630257, 1038480971, 1038482021, 60, 38, 48, 0);   // Erdtree Avatar (Bellum Highway)
+    
+    // Academy of Raya Lucaria
+    InitializeEvent(48, 14020, 1049630258, 14000971, 14002715, 14, 0, 0, 0);         // Rennala, Queen of the Full Moon
+    InitializeEvent(49, 14020, 1049630259, 14000972, 14002716, 14, 0, 0, 0);         // Red Wolf of Radagon
+    
+    // Mt. Gelmir
+    InitializeEvent(50, 14020, 1049630260, 30090971, 30092841, 30, 9, 0, 0);         // Red Wolf of the Champion
+    InitializeEvent(51, 14020, 1049630261, 30120981, 30122841, 30, 12, 0, 0);        // Misbegotten Warrior/Perfumer Tricia
+    InitializeEvent(52, 14020, 1049630262, 31070971, 31072841, 31, 7, 0, 0);         // Kindred of Rot
+    InitializeEvent(53, 14020, 1049630263, 31090981, 31092841, 31, 9, 0, 0);         // Demi-Human Queen Margot
+    InitializeEvent(54, 14020, 1049630264, 1035530981, 1035532020, 60, 35, 53, 0);   // Magma Wyrm
+    InitializeEvent(55, 14020, 1049630265, 1036540983, 1036542021, 60, 36, 54, 0);   // Full-Grown Fallingstar Beast
+    InitializeEvent(56, 14020, 1049630266, 1037530981, 1037532021, 60, 37, 53, 0);   // Demi-Human Queen
+    InitializeEvent(57, 14020, 1049630267, 1037540971, 1037542691, 60, 37, 54, 0);   // Ulcerated Tree Spirit
+    
+    // Volcano Manor
+    InitializeEvent(58, 14020, 1049630268, 16000995, 16002571, 16, 0, 0, 0);         // Rykard, Lord of Blasphemy
+    InitializeEvent(59, 14020, 1049630269, 16000996, 16002572, 16, 0, 0, 0);         // Godskin Noble
+    InitializeEvent(60, 14020, 1049630270, 16000997, 16000997, 16, 0, 0, 0);         // Abductor Virgins
+    
+    // Altus Plateau
+    InitializeEvent(61, 14020, 1049630271, 30070981, 30072841, 30, 7, 0, 0);         // Erdtree Burial Watchdog
+    InitializeEvent(62, 14020, 1049630272, 30080971, 30082841, 30, 8, 0, 0);         // Ancient Hero of Zamor
+    InitializeEvent(63, 14020, 1049630273, 30100971, 30102841, 30, 10, 0, 0);        // Crucible Knight Ordovis/Crucible Knight
+    InitializeEvent(64, 14020, 1049630274, 30130981, 30132841, 30, 13, 0, 0);        // Grave Warden Duelist
+    InitializeEvent(65, 14020, 1049630275, 31180981, 31182841, 31, 18, 0, 0);        // Miranda the Blighted Bloom
+    InitializeEvent(66, 14020, 1049630276, 31190981, 31192841, 31, 19, 0, 0);        // Black Knife Assassin (Sage's Cave)
+    InitializeEvent(67, 14020, 1049630277, 1040520981, 1040522020, 60, 40, 52, 0);   // Black Knife Assassin (Sainted Hero's Grave)
+    InitializeEvent(68, 14020, 1049630278, 31190982, 31192842, 31, 19, 0, 0);        // Necromancer Garris
+    InitializeEvent(69, 14020, 1049630279, 32040981, 32042841, 32, 4, 0, 0);         // Stonedigger Troll
+    InitializeEvent(70, 14020, 1049630280, 32050981, 32052841, 32, 5, 0, 0);         // Crystalians
+    InitializeEvent(71, 14020, 1049630281, 34120983, 34122841, 34, 12, 0, 0);        // Onyx Lord
+    InitializeEvent(72, 14020, 1049630282, 1037510981, 1037512020, 60, 37, 51, 0);   // Ancient Dragon Lansseax
+    InitializeEvent(73, 14020, 1049630283, 1038510981, 1038512020, 60, 38, 51, 0);   // Demi-Human Queen
+    InitializeEvent(74, 14020, 1049630284, 1038520980, 1038522020, 60, 38, 52, 0);   // Tibia Mariner
+    InitializeEvent(75, 14020, 1049630285, 1039500971, 1039502811, 60, 39, 50, 0);   // Godefroy the Grafted
+    InitializeEvent(10, 14021, 1049630286, 1039510981, 1039512021, 60, 39, 51, 0);   // Night's Cavalry
+    InitializeEvent(77, 14020, 1049630287, 1040530981, 1040532021, 60, 40, 53, 0);   // Sanguine Noble
+    InitializeEvent(78, 14020, 1049630288, 1041500981, 1041502021, 60, 41, 50, 0);   // Fallingstar Beast
+    InitializeEvent(79, 14020, 1049630289, 1041510971, 1041512691, 60, 41, 51, 0);   // Tree Sentinel Duo
+    InitializeEvent(80, 14020, 1049630290, 1041530971, 1041532021, 60, 41, 53, 0);   // Wormface
+    InitializeEvent(81, 14020, 1049630291, 1042553921, 1042552021, 60, 42, 55, 0);   // Godskin Apostle
+    InitializeEvent(82, 14020, 1049630366, 1039540983, 1039542021, 60, 39, 54, 0);   // Elemer of the Briar
+    
+    // Caelid
+    InitializeEvent(83, 14020, 1049630292, 1051360601, 1051362021, 60, 51, 36, 0);   // Starscourge Radahn
+    InitializeEvent(84, 14020, 1049630293, 30140981, 30142841, 30, 14, 0, 0);        // Erdtree Burial Watchdog
+    InitializeEvent(85, 14020, 1049630294, 30150981, 30152841, 30, 15, 0, 0);        // Cemetery Shade
+    InitializeEvent(86, 14020, 1049630295, 31100981, 31102841, 31, 10, 0, 0);        // Beastman of Farum Azula
+    InitializeEvent(87, 14020, 1049630296, 31110971, 31112841, 31, 11, 0, 0);        // Putrid Crystalians
+    InitializeEvent(88, 14020, 1049630297, 31200981, 31202841, 31, 20, 0, 0);        // Cleanrot Knight
+    InitializeEvent(89, 14020, 1049630298, 31210971, 31212191, 31, 21, 0, 0);        // Frenzied Duelist
+    InitializeEvent(90, 14020, 1049630299, 32070982, 32072841, 32, 7, 0, 0);         // Magma Wyrm
+    InitializeEvent(91, 14020, 1049630300, 32080981, 32082841, 32, 8, 0, 0);         // Fallingstar Beast
+    InitializeEvent(92, 14020, 1049630301, 34130984, 34132020, 34, 13, 0, 0);        // Godskin Apostle
+    InitializeEvent(93, 14020, 1049630302, 1048370981, 1048372021, 60, 48, 37, 0);   // Decaying Ekzykes
+    InitializeEvent(94, 14020, 1049630303, 1048400982, 1048402020, 60, 48, 40, 0);   // Mad Pumpkin Head
+    InitializeEvent(11, 14021, 1049630304, 1048410981, 1048412020, 60, 48, 41, 0);   // Bell-Bearing Hunter
+    InitializeEvent(12, 14021, 1049630305, 1049370981, 1049372020, 60, 49, 37, 0);   // Death Rite Bird
+    InitializeEvent(97, 14020, 1049630306, 1049380982, 1049382020, 60, 49, 38, 0);   // Commander O'Neil
+    InitializeEvent(98, 14020, 1049630307, 1049390983, 1049392861, 60, 49, 39, 0);   // Nox Priest and Swordstress
+    InitializeEvent(99, 14020, 1049630308, 1049390984, 1049392862, 60, 49, 39, 0);   // Battlemage Hugues
+    InitializeEvent(100, 14020, 1049630309, 1051360602, 1051362022, 60, 51, 36, 0);  // Crucible Knight
+    InitializeEvent(101, 14020, 1049630310, 1051430601, 1051432020, 60, 51, 43, 0);  // Black Blade Kindred
+    InitializeEvent(102, 14020, 1049630311, 1052410981, 1052412020, 60, 52, 41, 0);  // Flying Dragon Greyll
+    InitializeEvent(103, 14020, 1049630312, 1050400981, 1050402020, 60, 50, 40, 0);  // Elder Dragon Greyoll
+    InitializeEvent( 13, 14021, 1049630313, 1049370982, 1049372021, 60, 49, 37, 0);  // Night's Cavalry (Southern Aeonia)
+    InitializeEvent( 14, 14021, 1049630314, 1052410982, 1052412021, 60, 52, 41, 0);  // Night's Cavalry (Lenne's Rise)
+    InitializeEvent(106, 14020, 1049630315, 30160981, 30162841, 30, 16, 0, 0);       // Putrid Tree Spirit
+    InitializeEvent(107, 14020, 1049630316, 1051400971, 1051402020, 60, 51, 40, 0);  // Putrid Avatar (Minor Erdtree)
+    InitializeEvent(108, 14020, 1049630317, 1047400971, 1047402020, 60, 47, 40, 0);  // Putrid Avatar (Minor Erdtree)
+    
+    // Capital Outskirts
+    InitializeEvent(109, 14020, 1049630318, 34140983, 34142020, 34, 14, 0, 0);       // Fell Twins
+    InitializeEvent( 15, 14021, 1049630319, 1043530982, 1043532021, 60, 43, 53, 0);  // Bell-Bearing Hunter
+    InitializeEvent( 16, 14021, 1049630320, 1044530971, 1044532020, 60, 44, 53, 0);  // Death Rite Bird
+    InitializeEvent(110, 14020, 1049630321, 1045520982, 1045522020, 60, 45, 52, 0);  // Draconic Tree Sentinel
+    
+    // Leyndell
+    InitializeEvent(111, 14020, 1049630322, 11000971, 11002501, 11, 0, 0, 0);        // Godfrey, First Elden Lord
+    InitializeEvent(112, 14020, 1049630323, 11000972, 11002502, 11, 0, 0, 0);        // Morgott, the Omen King
+    
+    // Subterranean Shunning-Grounds
+    InitializeEvent(113, 14020, 1049630324, 35000985, 35002841, 35, 0, 0, 0);        // Mohg, The Omen
+    InitializeEvent(114, 14020, 1049630325, 35000986, 35002842, 35, 0, 0, 0);        // Esgar, Priest of Blood
+    
+    // Siofra River
+    InitializeEvent(115, 14020, 1049630326, 12020973, 12022020, 12, 2, 0, 0);        // Valiant Gargoyles
+    InitializeEvent(116, 14020, 1049630327, 12020974, 12022021, 12, 2, 0, 0);        // Dragonkin Soldier
+    InitializeEvent(117, 14020, 1049630328, 12020975, 12022022, 12, 2, 0, 0);        // Ancestor Spirit
+    
+    // Ainsel River
+    InitializeEvent(118, 14020, 1049630329, 12010972, 12012020, 12, 1, 0, 0);        // Dragonkin Soldier of Nokstella
+    
+    // Lake of Rot
+    InitializeEvent(119, 14020, 1049630330, 12010973, 12012021, 12, 1, 0, 0);        // Dragonkin Soldier
+    InitializeEvent(120, 14020, 1049630331, 12040971, 12042020, 12, 4, 0, 0);        // Astel, Naturalborn of the Void
+    
+    // Deeproot Depths
+    InitializeEvent(121, 14020, 1049630332, 12030986, 12032020, 12, 3, 0, 0);        // Crucible Knight Sirulia
+    InitializeEvent(122, 14020, 1049630333, 12030987, 12032021, 12, 3, 0, 0);        // Fia's Champions
+    InitializeEvent(123, 14020, 1049630334, 12030988, 12032022, 12, 3, 0, 0);        // Lichdragon Fortissax
+    
+    // Mohgwyn Palace
+    InitializeEvent(124, 14020, 1049630335, 12050972, 12052022, 12, 5, 0, 0);        // Mohg, Lord of Blood
+    
+    // Nokron, Eternal City
+    InitializeEvent(125, 14020, 1049630336, 12090971, 12092020, 12, 9, 0, 0);        // Regal Ancestor Spirit
+    InitializeEvent(126, 14020, 1049630337, 12020976, 12022023, 12, 2, 0, 0);        // Mimic Tear
+    
+    // Consecrated Snowfield
+    InitializeEvent(127, 14020, 1049630338, 30190981, 30192020, 30, 19, 0, 0);        // Putrid Grave Warden Duelist
+    InitializeEvent(128, 14020, 1049630339, 32110981, 32112841, 32, 11, 0, 0);        // Astel, Stars of Darkness
+    InitializeEvent( 17, 14021, 1049630340, 1048570981, 1048572020, 60, 48, 57, 0);   // Death Rite Bird
+    
+    // Mountaintops of the Giants
+    InitializeEvent(129, 14020, 1049630341, 1052523801, 1052522020, 60, 52, 52, 0);   // Fire Giant
+    InitializeEvent(130, 14020, 1049630342, 30170981, 30172020, 30, 17, 0, 0);        // Ancient Hero of Zamor
+    InitializeEvent(131, 14020, 1049630343, 30180981, 30182020, 30, 18, 0, 0);        // Ulcerated Tree Sprit
+    InitializeEvent(132, 14020, 1049630344, 31120981, 31122020, 31, 12, 0, 0);        // Misbegotten Crusader
+    InitializeEvent(133, 14020, 1049630345, 31220981, 31222020, 31, 22, 0, 0);        // Spirit-Caller Snail
+    InitializeEvent(134, 14020, 1049630346, 1049520971, 1049522020, 60, 49, 52, 0);   // Black Blade Kindred
+    InitializeEvent(135, 14020, 1049630347, 1050560970, 1050562020, 60, 50, 56, 0);   // Great Wyrm Theodorix
+    InitializeEvent( 18, 14021, 1049630348, 1050570972, 1050572021, 60, 50, 57, 0);   // Death Rite Bird
+    InitializeEvent(137, 14020, 1049630349, 1051570984, 1051572021, 60, 51, 57, 0);   // Commander Niall
+    InitializeEvent(138, 14020, 1049630350, 1052560981, 1052562020, 60, 52, 56, 0);   // Erdtree Avatar
+    InitializeEvent(139, 14020, 1049630351, 1053560971, 1053562020, 60, 53, 56, 0);   // Roundtable Knight Vyke
+    InitializeEvent(140, 14020, 1049630352, 1054560970, 1054562020, 60, 54, 56, 0);   // Borealis the Freezing Fog
+    InitializeEvent( 19, 14021, 1049630353, 1048510970, 1048512020, 60, 48, 51, 0);   // Night's Cavalry (Forbidden Lands)
+    InitializeEvent( 20, 14021, 1049630354, 1048550971, 1048552020, 60, 48, 55, 0);   // Night's Cavalry (Foggy Snowfield)
+    InitializeEvent(143, 14020, 1049630355, 1050570971, 1050572020, 60, 50, 57, 0);   // Putrid Avatar
+    
+    // Ashen Leyndell
+    InitializeEvent(144, 14020, 1049630356, 11050972, 11052020, 11, 5, 0, 0);         // Hoarah Loux
+    InitializeEvent(145, 14020, 1049630357, 11050973, 11052021, 11, 5, 0, 0);         // Sir Gideon Ofnir
+    
+    // Crumbling Farum Azula
+    InitializeEvent(146, 14020, 1049630358, 13000971, 13002030, 13, 0, 0, 0);         // Maliketh, The Black Blade
+    InitializeEvent(147, 14020, 1049630359, 13000972, 13002031, 13, 0, 0, 0);         // Dragonlord Placidusax
+    InitializeEvent(148, 14020, 1049630360, 13000973, 13002032, 13, 0, 0, 0);         // Godskin Duo
+    
+    // Miquella's Haligtree
+    InitializeEvent(149, 14020, 1049630361, 15000975, 15002021, 15, 0, 0, 0);         // Malenia, Blade of Miquella
+    InitializeEvent(150, 14020, 1049630362, 15000976, 15002022, 15, 0, 0, 0);         // Loretta, Knight of the Haligtree
+    InitializeEvent(151, 14020, 1049630363, 30200972, 30202020, 30, 20, 0, 0);         // Stray Mimic Tear
+    
+    // Elden Throne
+    InitializeEvent(152, 14020, 1049630364, 19000983, 19002020, 19, 0, 0, 0);         // Radagon of the Golden Order
+    InitializeEvent(153, 14020, 1049630365, 19000984, 19002021, 19, 0, 0, 0);         // Elden Beast
 });
+
 
 //----------------------------
 // Vigil - Own World Only
@@ -6817,9 +7037,14 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
+    SetEventFlagID(1049630222, ON);
     
-    
-    //SetEventFlagID(1049630000, ON);
+    // Easy Kill Mode
+    //SetSpEffect(10000, 7000090);
+    //SetSpEffect(10000, 7000091);
+    //SetSpEffect(10000, 7000092);
+    //SetSpEffect(10000, 7000093);
+    //SetSpEffect(10000, 7000094);
     
     // Screenshot Zone
     //SetEventFlagID(1047610014, ON);
@@ -6832,12 +7057,7 @@ $Event(11021, Default, function() {
     //SetSpEffect(10000, 9402427);
     //SetSpEffect(10000, 9402428);
     
-    // Easy Kill Mode
-    // SetSpEffect(10000, 7000090);
-    // SetSpEffect(10000, 7000091);
-    // SetSpEffect(10000, 7000092);
-    // SetSpEffect(10000, 7000093);
-    // SetSpEffect(10000, 7000094);
+    
     
     // DEBUG END
         
@@ -9558,3 +9778,41 @@ $Event(14100, Restart, function() {
     SetEventFlagID(1049630002, OFF); // Toggle Started Farm Grow Cycle OFF
     BatchSetEventFlags(1049630020, 1049630049, OFF); // Reset the timer flags
 });
+
+
+// Boss Teleport
+$Event(14020, Restart, function(X0_4, X4_4, X8_4, X12_1, X16_1, X20_1, X24_1) {
+    WaitFor(EventFlag(X0_4));
+    SetEventFlagID(X0_4, OFF);
+    
+    WaitFixedTimeSeconds(0.5);
+    
+    WarpPlayer(X12_1, X16_1, X20_1, X24_1, X4_4, -1);
+    SetPlayerRespawnPoint(X8_4);
+});
+
+// Boss Teleport - Night
+$Event(14021, Restart, function(X0_4, X4_4, X8_4, X12_1, X16_1, X20_1, X24_1) {
+    WaitFor(EventFlag(X0_4));
+    SetEventFlagID(X0_4, OFF);
+    
+    WaitFixedTimeSeconds(0.5);
+    
+    SetEventFlagID(1049630399, ON);
+    WarpPlayer(X12_1, X16_1, X20_1, X24_1, X4_4, -1);
+    SetPlayerRespawnPoint(X8_4);
+    
+});
+
+// Boss Teleport - Enable Night for Night-only boss
+$Event(14022, Restart, function() {
+    WaitFixedTimeSeconds(0.1);
+    
+    if(EventFlag(1049630399))
+    {
+        SetEventFlagID(1049630399, OFF);
+        
+        SetCurrentTime(22, 0, 0, false, false, false, 0, 0, 0);
+    }
+});
+

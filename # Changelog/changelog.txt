@@ -4,6 +4,11 @@
 # Farm
 - The farm timer now saves progress in 20 seconds increments, meaning you warp and reload without losing much progress towards crop growth.
 
+# Boss Resurrection
+- Changed the material used to resurrect bosses to the Bloodsoaked Rune instead of the Larval Tear.
+- Ressurect will now teleport you to the boss entrance of the resurrected boss.
+- Removed the location description (the teleport effectively replaces this).
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------

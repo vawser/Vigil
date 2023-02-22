@@ -82,13 +82,9 @@
 # Bugs to Fix
 Fix Morgott not respawning correctly via Boss Revival
 
-Add warp gate to Moonlight Altar into Liurnia
-
-# Small Stuff
 Add raisin that allows Torrent to 'charge' enemies
+Add warp gate to Moonlight Altar into Liurnia
+Add Ashes of War to custom loadout
 
 Boss Resurrection teleport support
 
-12052370 Warp
-12052371 Area
-12050371 Bird

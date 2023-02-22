@@ -594,6 +594,8 @@ def t000001300_x40():
         AddTalkListData(11, 80001100, -1)
         # Leyndell, Royal Capital 
         AddTalkListData(12, 80001200, -1)
+        # Subterranean Shunning-Grounds
+        AddTalkListData(25, 80002401, -1)
         # Siofra River
         AddTalkListData(13, 80001300, -1)
         # Ainsel River
@@ -699,6 +701,9 @@ def t000001300_x40():
         # Elden Throne
         elif GetTalkListEntryResult() == 24:
             assert t000001300_x114()
+        # Subterranean Shunning-Grounds
+        elif GetTalkListEntryResult() == 25:
+            assert t000001300_x115()
         else:
             return 0
 
@@ -733,13 +738,13 @@ def t000001300_x91():
         
         # Ulcerated Tree Spirit 
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(18000800, 9128, 61128, 80020100)
+            assert t000001300_x122(18000800, 9128, 61128, 1049630200)
         # Soldier of Godrick
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x120(18000850, 80020101)
+            assert t000001300_x120(18000850, 1049630201)
         # Grafted Scion
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(10010800, 9103, 61103, 80020102)
+            assert t000001300_x122(10010800, 9103, 61103, 1049630202)
         else:
             return 0
 
@@ -806,61 +811,61 @@ def t000001300_x92():
         
         # Cemetery Shade
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(30000800, 9200, 61200, 80020200)
+            assert t000001300_x122(30000800, 9200, 61200, 1049630203)
         # Erdtree Burial Watchdog
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(30020800, 9202, 61202, 80020201)
+            assert t000001300_x122(30020800, 9202, 61202, 1049630204)
         # Grave Warden Duelist
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(30040800, 9204, 61204, 80020202)
+            assert t000001300_x122(30040800, 9204, 61204, 1049630205)
         # Black Knife Assassin
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(30110800, 9203, 61203, 80020203)
+            assert t000001300_x122(30110800, 9203, 61203, 1049630206)
         # Patches
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x122(31000800, 9232, 61232, 80020204)
+            assert t000001300_x122(31000800, 9232, 61232, 1049630207)
         # Demi-Human Chief
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x122(31150800, 9234, 61234, 80020205)
+            assert t000001300_x122(31150800, 9234, 61234, 1049630208)
         # Guardian Golem
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x122(31170800, 9235, 61235, 80020206)
+            assert t000001300_x122(31170800, 9235, 61235, 1049630209)
         # Miranda the Blighted Bloom
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x122(31020800, 9230, 61230, 80020207)
+            assert t000001300_x122(31020800, 9230, 61230, 1049630210)
         # Beastman of Farum Azula
         elif GetTalkListEntryResult() == 9:
-            assert t000001300_x122(31030800, 9233, 61233, 80020208)
+            assert t000001300_x122(31030800, 9233, 61233, 1049630211)
         # Stonedigger Troll
         elif GetTalkListEntryResult() == 10:
-            assert t000001300_x122(32010800, 9261, 61261, 80020209)
+            assert t000001300_x122(32010800, 9261, 61261, 1049630212)
         # Tree Sentinel
         elif GetTalkListEntryResult() == 11:
-            assert t000001300_x120(1042360800, 80020210)
+            assert t000001300_x120(1042360800, 1049630213)
         # Crucible Knight
         elif GetTalkListEntryResult() == 12:
-            assert t000001300_x120(1042370800, 80020211)
+            assert t000001300_x120(1042370800, 1049630214)
         # Death Rite Bird
         elif GetTalkListEntryResult() == 13:
-            assert t000001300_x120(1042380800, 80020212)
+            assert t000001300_x120(1042380800, 1049630215)
         # Bell-Bearing Hunter
         elif GetTalkListEntryResult() == 14:
-            assert t000001300_x120(1042380850, 80020213)
+            assert t000001300_x120(1042380850, 1049630216)
         # Flying Dragon Agheel
         elif GetTalkListEntryResult() == 15:
-            assert t000001300_x120(1043360800, 80020214)
+            assert t000001300_x120(1043360800, 1049630217)
         # Night's Cavalry
         elif GetTalkListEntryResult() == 16:
-            assert t000001300_x120(1043370340, 80020215)
+            assert t000001300_x120(1043370340, 1049630218)
         # Bloodhound Knight Darriwil
         elif GetTalkListEntryResult() == 17:
-            assert t000001300_x120(1044350800, 80020216)
+            assert t000001300_x120(1044350800, 1049630219)
         # Mad Pumpkin Head
         elif GetTalkListEntryResult() == 18:
-            assert t000001300_x120(1044360800, 80020217)
+            assert t000001300_x120(1044360800, 1049630220)
         # Tibia Mariner
         elif GetTalkListEntryResult() == 19:
-            assert t000001300_x120(1045390800, 80020218)
+            assert t000001300_x120(1045390800, 1049630221)
         else:
             return 0
 
@@ -893,10 +898,10 @@ def t000001300_x93():
         
         # Margit, the Fell Omen
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(10000850, 71001, 9100, 61100, 80020300) 
+            assert t000001300_x123(10000850, 71001, 9100, 61100, 1049630222) 
         # Godrick the Grafted
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x124(10000800, 71000, 9101, 61101, 10000802, 80020301)
+            assert t000001300_x124(10000800, 71000, 9101, 61101, 10000802, 1049630223)
         else:
             return 0
 
@@ -941,28 +946,28 @@ def t000001300_x94():
         
         # Erdtree Burial Watchdog
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(30010800, 9201, 61201, 80020400)
+            assert t000001300_x122(30010800, 9201, 61201, 1049630224)
         # Runebear
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(31010800, 9231, 61231, 80020401)
+            assert t000001300_x122(31010800, 9231, 61231, 1049630225)
         # Scaly Misbegotten
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(32000800, 9260, 61260, 80020402)
+            assert t000001300_x122(32000800, 9260, 61260, 1049630226)
         # Ancient Hero of Zamor
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x120(1042330800, 80020403)
+            assert t000001300_x120(1042330800, 1049630227)
         # Leonine Misbegotten
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x122(1043300800, 9180, 61180, 80020404)
+            assert t000001300_x122(1043300800, 9180, 61180, 1049630228)
         # Erdtree Avatar
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x120(1043330800, 80020405)
+            assert t000001300_x120(1043330800, 1049630229)
         # Death Rite Bird
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x120(1044320340, 80020406)
+            assert t000001300_x120(1044320340, 1049630230)
         # Night's Cavalry
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x120(1044320342, 80020407)
+            assert t000001300_x120(1044320342, 1049630231)
         else:
             return 0
 
@@ -1043,82 +1048,82 @@ def t000001300_x95():
         
         # Spirit-Caller Snail
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(30030800, 9206, 61206, 80020500)
+            assert t000001300_x122(30030800, 9206, 61206, 1049630232)
         # Cemetery Shade
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(30050800, 9205, 61205, 80020501)
+            assert t000001300_x122(30050800, 9205, 61205, 1049630233)
         # Black Knife Assassin
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(30050850, 9221, 61221, 80020502)
+            assert t000001300_x122(30050850, 9221, 61221, 1049630234)
         # Erdtree Burial Watchdog
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(30060800, 9207, 61207, 80020503)
+            assert t000001300_x122(30060800, 9207, 61207, 1049630235)
         # Cleanrot Knight
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x122(31040800, 9236, 61236, 80020504)
+            assert t000001300_x122(31040800, 9236, 61236, 1049630236)
         # Bloodhound Knight
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x122(31050800, 9237, 61237, 80020505)
+            assert t000001300_x122(31050800, 9237, 61237, 1049630237)
         # Crystalians (Academy Crystal Cave)
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x123(31060800, 31060801, 61238, 9238, 80020506)
+            assert t000001300_x123(31060800, 31060801, 61238, 9238, 1049630238)
         # Crystalians (Raya Lucaria Crystal Tunnel)
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x122(32020800, 9262, 61262, 80020507)
+            assert t000001300_x122(32020800, 9262, 61262, 1049630239)
         # Magma Wyrm Makar
         elif GetTalkListEntryResult() == 9:
-            assert t000001300_x123(39200800, 73900, 9126, 61126, 80020508)
+            assert t000001300_x123(39200800, 73900, 9126, 61126, 1049630240)
         # Alecto, Black Knife Ringleader
         elif GetTalkListEntryResult() == 10:
-            assert t000001300_x120(1033420800, 80020509)
+            assert t000001300_x120(1033420800, 1049630241)
         # Bols, Carian Knight
         elif GetTalkListEntryResult() == 11:
-            assert t000001300_x120(1033450800, 80020510)
+            assert t000001300_x120(1033450800, 1049630242)
         # Glintstone Dragon Adula
         elif GetTalkListEntryResult() == 12:
-            assert t000001300_x121(1034420800, 1034500800, 80020511)
+            assert t000001300_x121(1034420800, 1034500800, 1049630243)
         # Glintstone Dragon Smarag
         elif GetTalkListEntryResult() == 13:
-            assert t000001300_x120(1034450800, 80020512)
+            assert t000001300_x120(1034450800, 1049630244)
         # Royal Revenant
         elif GetTalkListEntryResult() == 14:
-            assert t000001300_x120(1034480800, 80020513)
+            assert t000001300_x120(1034480800, 1049630245)
         # Omenkiller
         elif GetTalkListEntryResult() == 15:
-            assert t000001300_x120(1035420800, 80020514)
+            assert t000001300_x120(1035420800, 1049630246)
         # Royal Knight Loretta
         elif GetTalkListEntryResult() == 16:
-            assert t000001300_x122(1035500800, 9181, 61181, 80020515)
+            assert t000001300_x122(1035500800, 9181, 61181, 1049630247)
         # Onyx Lord
         elif GetTalkListEntryResult() == 17:
-            assert t000001300_x120(1036500800, 80020516)
+            assert t000001300_x120(1036500800, 1049630248)
         # Bell-Bearing Hunter
         elif GetTalkListEntryResult() == 18:
-            assert t000001300_x120(1037460800, 80020517)
+            assert t000001300_x120(1037460800, 1049630249)
         # Adan, Thief of Fire
         elif GetTalkListEntryResult() == 19:
-            assert t000001300_x120(1038410800, 80020518)
+            assert t000001300_x120(1038410800, 1049630250)
         # Tibia Mariner
         elif GetTalkListEntryResult() == 20:
-            assert t000001300_x120(1039440800, 80020519)
+            assert t000001300_x120(1039440800, 1049630251)
         # Night's Cavalry (East Raya Lucaria Gate)
         elif GetTalkListEntryResult() == 21:
-            assert t000001300_x120(1036480340, 80020520)
+            assert t000001300_x120(1036480340, 1049630252)
         # Night's Cavalry (Liurnia Highway)
         elif GetTalkListEntryResult() == 22:
-            assert t000001300_x120(1039430340, 80020521)
+            assert t000001300_x120(1039430340, 1049630253)
         # Death Rite Bird (Gate Town North)
         elif GetTalkListEntryResult() == 23:
-            assert t000001300_x120(1036450340, 80020522)
+            assert t000001300_x120(1036450340, 1049630254)
         # Death Rite Bird (Scenic Isle)
         elif GetTalkListEntryResult() == 24:
-            assert t000001300_x120(1037420340, 80020523)
+            assert t000001300_x120(1037420340, 1049630255)
         # Erdtree Avatar (Minor Erdtree)
         elif GetTalkListEntryResult() == 25:
-            assert t000001300_x120(1033430800, 80020524)
+            assert t000001300_x120(1033430800, 1049630256)
         # Erdtree Avatar (Bellum Highway)
         elif GetTalkListEntryResult() == 26:
-            assert t000001300_x120(1038480800, 80020525)
+            assert t000001300_x120(1038480800, 1049630257)
         else:
             return 0
 
@@ -1151,10 +1156,10 @@ def t000001300_x96():
         
         # Rennala, Queen of the Full Moon
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x124(14000800, 71400, 9118, 61118, 14000804, 80020600)
+            assert t000001300_x124(14000800, 71400, 9118, 61118, 14000804, 1049630258)
         # Red Wolf of Radagon
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(14000850, 71401, 9117, 61117, 80020601)
+            assert t000001300_x123(14000850, 71401, 9117, 61117, 1049630259)
         else:
             return 0
 
@@ -1199,28 +1204,28 @@ def t000001300_x97():
         
         # Red Wolf of the Champion  
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(30090800, 9209, 61209, 80020700)
+            assert t000001300_x122(30090800, 9209, 61209, 1049630260)
         # Misbegotten Warrior/Perfumer Tricia
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(30120800, 30120801, 9211, 61211, 80020701)
+            assert t000001300_x123(30120800, 30120801, 9211, 61211, 1049630261)
         # Kindred of Rot  
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(31070800, 9239, 61239, 80020702)
+            assert t000001300_x122(31070800, 9239, 61239, 1049630262)
         # Demi-Human Queen Margot  
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(31090800, 9240, 61240, 80020703)
+            assert t000001300_x122(31090800, 9240, 61240, 1049630263)
         # Magma Wyrm 
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x120(1035530800, 80020704)
+            assert t000001300_x120(1035530800, 1049630264)
         # Full-Grown Fallingstar Beast
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x120(1036540800, 80020705)
+            assert t000001300_x120(1036540800, 1049630265)
         # Demi-Human Queen
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x120(1037530800, 80020706)
+            assert t000001300_x120(1037530800, 1049630266)
         # Ulcerated Tree Spirit
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x120(1037540810, 80020707)
+            assert t000001300_x120(1037540810, 1049630267)
         else:
             return 0
 
@@ -1255,13 +1260,13 @@ def t000001300_x98():
         
         # Rykard, Lord of Blasphemy
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(16000800, 71600, 9122, 61122, 80020800)
+            assert t000001300_x123(16000800, 71600, 9122, 61122, 1049630268)
         # Godskin Noble  
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(16000850, 71601, 9121, 61121, 80020801)
+            assert t000001300_x123(16000850, 71601, 9121, 61121, 1049630269)
         # Abductor Virgins
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x123(16000860, 71606, 9129, 61129, 80020802)
+            assert t000001300_x123(16000860, 71606, 9129, 61129, 1049630270)
         else:
             return 0
 
@@ -1334,70 +1339,70 @@ def t000001300_x99():
         
         # Erdtree Burial Watchdog  
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(30070800, 9212, 61212, 80020900)
+            assert t000001300_x122(30070800, 9212, 61212, 1049630271)
         # Ancient Hero of Zamor
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(30080800, 9208, 61208, 80020901)
+            assert t000001300_x122(30080800, 9208, 61208, 1049630272)
         # Crucible Knight Ordovis  
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x123(30100800, 30100801, 9210, 61210, 80020902)
+            assert t000001300_x123(30100800, 30100801, 9210, 61210, 1049630273)
         # Grave Warden Duelist  
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(30130800, 9213, 61213, 80020903)
+            assert t000001300_x122(30130800, 9213, 61213, 1049630274)
         # Miranda the Blighted Bloom   
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x122(31180800, 9241, 61241, 80020904)
+            assert t000001300_x122(31180800, 9241, 61241, 1049630275)
         # Black Knife Assassin (Sage's Cave)
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x122(31190800, 9242, 61242, 80020905)
+            assert t000001300_x122(31190800, 9242, 61242, 1049630276)
         # Black Knife Assassin (Sainted Hero's Grave)
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x120(1040520800, 80020906)
+            assert t000001300_x120(1040520800, 1049630277)
         # Necromancer Garris
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x122(31190850, 9249, 61249, 80020907)
+            assert t000001300_x122(31190850, 9249, 61249, 1049630278)
         # Stonedigger Troll
         elif GetTalkListEntryResult() == 9:
-            assert t000001300_x122(32040800, 9263, 61263, 80020908)
+            assert t000001300_x122(32040800, 9263, 61263, 1049630279)
         # Crystalians    
         elif GetTalkListEntryResult() == 10:
-            assert t000001300_x123(32050800, 32050801, 9265, 61265, 80020909)
+            assert t000001300_x123(32050800, 32050801, 9265, 61265, 1049630280)
         # Onyx Lord 
         elif GetTalkListEntryResult() == 11:
-            assert t000001300_x122(34120800, 9264, 61264, 80020910)
+            assert t000001300_x122(34120800, 9264, 61264, 1049630281)
         # Ancient Dragon Lansseax 
         elif GetTalkListEntryResult() == 12:
-            assert t000001300_x121(1037510800, 1041520800, 80020911)
+            assert t000001300_x121(1037510800, 1041520800, 1049630282)
         # Demi-Human Queen   
         elif GetTalkListEntryResult() == 13:
-            assert t000001300_x120(1038510800, 80020912)
+            assert t000001300_x120(1038510800, 1049630283)
         # Tibia Mariner  
         elif GetTalkListEntryResult() == 14:
-            assert t000001300_x120(1038520340, 80020913)
+            assert t000001300_x120(1038520340, 1049630284)
         # Godefroy the Grafted
         elif GetTalkListEntryResult() == 15:
-            assert t000001300_x120(1039500800, 80020914)
+            assert t000001300_x120(1039500800, 1049630285)
         # Night's Cavalry
         elif GetTalkListEntryResult() == 16:
-            assert t000001300_x120(1039510800, 80020915)
+            assert t000001300_x120(1039510800, 1049630286)
         # Elemer of the Briar
         elif GetTalkListEntryResult() == 17:
-            assert t000001300_x122(1039540800, 9182, 61182, 80020916)
+            assert t000001300_x122(1039540800, 9182, 61182, 1049630366)
         # Sanguine Noble 
         elif GetTalkListEntryResult() == 18:
-            assert t000001300_x120(1040530800, 80020917)
+            assert t000001300_x120(1040530800, 1049630287)
         # Fallingstar Beast    
         elif GetTalkListEntryResult() == 19:
-            assert t000001300_x120(1041500800, 80020918)
+            assert t000001300_x120(1041500800, 1049630288)
         # Tree Sentinel Duo
         elif GetTalkListEntryResult() == 20:
-            assert t000001300_x120(1041510800, 80020919)
+            assert t000001300_x120(1041510800, 1049630289)
         # Wormface 
         elif GetTalkListEntryResult() == 21:
-            assert t000001300_x120(1041530800, 80020920)
+            assert t000001300_x120(1041530800, 1049630290)
         # Godskin Apostle
         elif GetTalkListEntryResult() == 22:
-            assert t000001300_x120(1042550800, 80020921)
+            assert t000001300_x120(1042550800, 1049630291)
         else:
             return 0
 
@@ -1437,7 +1442,7 @@ def t000001300_x100():
         AddTalkListData(10, 80011009, -1)
         # Decaying Ekzykes
         AddTalkListData(11, 80011010, -1)
-        # Monstrous Dog
+        # Mad Pumpkin Head
         AddTalkListData(12, 80011011, -1)
         # Bell-Bearing Hunter
         AddTalkListData(13, 80011012, -1)
@@ -1457,12 +1462,12 @@ def t000001300_x100():
         AddTalkListData(20, 80011019, -1)
         # Elder Dragon Greyoll
         AddTalkListData(26, 80012500, -1)
-        # Night's Cavalry #1
-        AddTalkListData(21, 80011020, -1)
-        # Night's Cavalry #2
-        AddTalkListData(22, 80011021, -1)
+        # Night's Cavalry (Southern Aeonia)
+        AddTalkListData(21, 80011021, -1)
+        # Night's Cavalry (Lenne's Rise)
+        AddTalkListData(22, 80011022, -1)
         # Putrid Tree Spirit
-        AddTalkListData(23, 80011022, -1)
+        AddTalkListData(23, 80011020, -1)
         # Putrid Avatar #1
         AddTalkListData(24, 80011023, -1)
         # Putrid Avatar #2
@@ -1478,82 +1483,82 @@ def t000001300_x100():
         
         # Starscourge Radahn
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x124(1052380800, 76422, 9130, 61130, 9412, 80021000)
+            assert t000001300_x124(1052380800, 76422, 9130, 61130, 9412, 1049630292)
         # Erdtree Burial Watchdog
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(30140800, 9214, 61214, 80021001)
+            assert t000001300_x122(30140800, 9214, 61214, 1049630293)
         # Cemetery Shade
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(30150800, 9215, 61215, 80021002)
+            assert t000001300_x122(30150800, 9215, 61215, 1049630294)
         # Beastman of Farum Azula    
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(31100800, 9244, 61244, 80021003)
+            assert t000001300_x122(31100800, 9244, 61244, 1049630295)
         # Putrid Crystalians
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x122(31110800, 9246, 61246, 80021004)
+            assert t000001300_x122(31110800, 9246, 61246, 1049630296)
         # Cleanrot Knight
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x122(31200800, 9245, 61245, 80021005)
+            assert t000001300_x122(31200800, 9245, 61245, 1049630297)
         # Frenzied Duelist
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x122(31210800, 9243, 61243, 80021006)
+            assert t000001300_x122(31210800, 9243, 61243, 1049630298)
         # Magma Wyrm 
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x122(32070800, 9266, 61266, 80021007)
+            assert t000001300_x122(32070800, 9266, 61266, 1049630299)
         # Fallingstar Beast   
         elif GetTalkListEntryResult() == 9:
-            assert t000001300_x122(32080800, 9267, 61267, 80021008)
+            assert t000001300_x122(32080800, 9267, 61267, 1049630300)
         # Godskin Apostle
         elif GetTalkListEntryResult() == 10:
-            assert t000001300_x122(34130800, 9173, 61173, 80021009)
+            assert t000001300_x122(34130800, 9173, 61173, 1049630301)
         # Decaying Ekzykes
         elif GetTalkListEntryResult() == 11:
-            assert t000001300_x120(1048370800, 80021010)
-        # Monstrous Dog 
+            assert t000001300_x120(1048370800, 1049630302)
+        # Mad Pumpkin Head
         elif GetTalkListEntryResult() == 12:
-            assert t000001300_x120(1048400800, 80021011)
+            assert t000001300_x120(1048400800, 1049630303)
         # Bell-Bearing Hunter
         elif GetTalkListEntryResult() == 13:
-            assert t000001300_x120(1048410800, 80021012)
+            assert t000001300_x120(1048410800, 1049630304)
         # Death Rite Bird  
         elif GetTalkListEntryResult() == 14:
-            assert t000001300_x120(1049370850, 80021013)
+            assert t000001300_x120(1049370850, 1049630305)
         # Commander O'Neil  
         elif GetTalkListEntryResult() == 15:
-            assert t000001300_x120(1049380800, 80021014)
+            assert t000001300_x120(1049380800, 1049630306)
         # Nox Priest and Swordstress
         elif GetTalkListEntryResult() == 16:
-            assert t000001300_x120(1049390800, 80021015)
+            assert t000001300_x120(1049390800, 1049630307)
         # Battlemage Hugues
         elif GetTalkListEntryResult() == 17:
-            assert t000001300_x120(1049390850, 80021016)
+            assert t000001300_x120(1049390850, 1049630308)
         # Crucible Knight
         elif GetTalkListEntryResult() == 18:
-            assert t000001300_x120(1051360800, 80021017)
+            assert t000001300_x120(1051360800, 1049630309)
         # Black Blade Kindred  
         elif GetTalkListEntryResult() == 19:
-            assert t000001300_x120(1051430800, 80021018)
+            assert t000001300_x120(1051430800, 1049630310)
         # Flying Dragon Greyll
         elif GetTalkListEntryResult() == 20:
-            assert t000001300_x120(1052410800, 80021019)
-        # Night's Cavalry #1 
+            assert t000001300_x120(1052410800, 1049630311)
+        # Night's Cavalry (Southern Aeonia)
         elif GetTalkListEntryResult() == 21:
-            assert t000001300_x120(1049370800, 80021020)
-        # Night's Cavalry #2
+            assert t000001300_x120(1049370800, 1049630313)
+        # Night's Cavalry (Lenne's Rise)
         elif GetTalkListEntryResult() == 22:
-            assert t000001300_x120(1052410850, 80021021)
+            assert t000001300_x120(1052410850, 1049630314)
         # Putrid Tree Spirit
         elif GetTalkListEntryResult() == 23:
-            assert t000001300_x122(30160800, 9216, 61216, 80021022)
-        # Putrid Avatar #1
+            assert t000001300_x122(30160800, 9216, 61216, 1049630315)
+        # Putrid Avatar (Minor Erdtree)
         elif GetTalkListEntryResult() == 24:
-            assert t000001300_x120(1051400800, 80021023)
-        # Putrid Avatar #2    
+            assert t000001300_x120(1051400800, 1049630316)
+        # Putrid Avatar (Minor Erdtree) 
         elif GetTalkListEntryResult() == 25:
-            assert t000001300_x120(1047400800, 80021024)
+            assert t000001300_x120(1047400800, 1049630317)
         # Elder Dragon Greyoll
         elif GetTalkListEntryResult() == 26:
-            assert t000001300_x120(1050400599, 80022500)
+            assert t000001300_x121(1050400599, 1050400800, 1049630312)
         else:
             return 0
 
@@ -1590,16 +1595,16 @@ def t000001300_x101():
         
         # Fell Twins
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(34140850, 9174, 10740, 80021100)
+            assert t000001300_x122(34140850, 9174, 10740, 1049630318)
         # Bell-Bearing Hunter  
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x120(1043530800, 80021100)
+            assert t000001300_x120(1043530800, 1049630319)
         # Death Rite Bird
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x120(1044530800, 80021100)
+            assert t000001300_x120(1044530800, 1049630320)
         # Draconic Tree Sentinel  
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x120(1045520800, 80021100)
+            assert t000001300_x120(1045520800, 1049630321)
         else:
             return 0
 
@@ -1621,10 +1626,6 @@ def t000001300_x102():
         AddTalkListData(1, 80011200, -1)
         # Morgott, the Omen King
         AddTalkListData(2, 80011201, -1)
-        # Mohg, The Omen
-        AddTalkListData(3, 80011202, -1)
-        # Esgar, Priest of Blood
-        AddTalkListData(4, 80011203, -1)
         
         # Return
         AddTalkListData(99, 80000001, -1)
@@ -1636,20 +1637,46 @@ def t000001300_x102():
         
         # Godfrey, First Elden Lord    
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(11000850, 71101, 9105, 61105, 80021200)
+            assert t000001300_x123(11000850, 71101, 9105, 61105, 1049630322)
         # Morgott, the Omen King
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x125(11000800, 71100, 9104, 61104, 9100, 61100, 80021201)
-        # Mohg, The Omen
-        elif GetTalkListEntryResult() == 3:
-            assert t000001300_x123(35000800, 73500, 9125, 61125, 80021202)
-        # Esgar, Priest of Blood
-        elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(35000850, 9222, 61222, 80021203)
+            assert t000001300_x125(11000800, 71100, 9104, 61104, 9100, 61100, 1049630323)
         else:
             return 0
 
+# Subterranean Shunning-Grounds
+def t000001300_x115():
+    """State 0,10"""
+    assert GetCurrentStateElapsedTime() > 0.1
 
+    """State 5"""
+    c1_110()
+    
+    while True:
+        """State 1"""
+        ClearTalkListData()
+        
+        # Mohg, The Omen
+        AddTalkListData(1, 80011202, -1)
+        # Esgar, Priest of Blood
+        AddTalkListData(2, 80011203, -1)
+        
+        # Return
+        AddTalkListData(99, 80000001, -1)
+    
+        c1_140(1)
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Mohg, The Omen
+        if GetTalkListEntryResult() == 1:
+            assert t000001300_x123(35000800, 73500, 9125, 61125, 1049630324)
+        # Esgar, Priest of Blood
+        elif GetTalkListEntryResult() == 2:
+            assert t000001300_x122(35000850, 9222, 61222, 1049630325)
+        else:
+            return 0
     
 # Siofra River
 def t000001300_x103():
@@ -1680,13 +1707,13 @@ def t000001300_x103():
         
         # Valiant Gargoyles  
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(12020800, 9110, 61110, 80021300)
+            assert t000001300_x122(12020800, 9110, 61110, 1049630326)
         # Dragonkin Soldier
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x120(12020830, 80021301)
+            assert t000001300_x120(12020830, 1049630327)
         # Ancestor Spirit
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(12080800, 9132, 61132, 80021302)
+            assert t000001300_x122(12080800, 9132, 61132, 1049630328)
         else:
             return 0
 
@@ -1717,7 +1744,7 @@ def t000001300_x104():
         
         # Dragonkin Soldier of Nokstella 
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(12010800, 71210, 9109, 61109, 80021400)
+            assert t000001300_x124(12010800, 12010801, 71210, 9109, 61109, 1049630329)
         else:
             return 0
 
@@ -1750,10 +1777,10 @@ def t000001300_x105():
         
         # Dragonkin Soldier  
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x120(12010850, 80021500)
+            assert t000001300_x120(12010850, 1049630330)
         # Astel, Naturalborn of the Void
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(12040800, 71240, 9108, 61108, 80021501)
+            assert t000001300_x123(12040800, 71240, 9108, 61108, 1049630331)
         else:
             return 0
 
@@ -1788,13 +1815,13 @@ def t000001300_x106():
         
         # Crucible Knight Sirulia 
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x120(12030390, 80021600)
+            assert t000001300_x120(12030390, 1049630332)
         # Fia's Champions    
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(12030800, 71230, 9135, 61135, 80021601)
+            assert t000001300_x123(12030800, 71230, 9135, 61135, 1049630333)
         # Lichdragon Fortissax 
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(12030850, 9111, 61111, 80021602)
+            assert t000001300_x122(12030850, 9111, 61111, 1049630334)
         else:
             return 0
 
@@ -1825,7 +1852,7 @@ def t000001300_x107():
         
         # Mohg, Lord of Blood
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(12050800, 71250, 9112, 61112, 80021700)
+            assert t000001300_x123(12050800, 71250, 9112, 61112, 1049630335)
         else:
             return 0
 
@@ -1858,10 +1885,10 @@ def t000001300_x108():
         
         # Regal Ancestor Spirit   
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(12090800, 9133, 91133, 80021800)
+            assert t000001300_x122(12090800, 9133, 91133, 1049630336)
         # Mimic Tear  
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(12020850, 71221, 9134, 91134, 80021801)
+            assert t000001300_x123(12020850, 71221, 9134, 91134, 1049630337)
         else:
             return 0
 
@@ -1885,8 +1912,6 @@ def t000001300_x109():
         AddTalkListData(2, 80011901, -1)
         # Death Rite Bird
         AddTalkListData(3, 80011902, -1)
-        # Putrid Avatar
-        AddTalkListData(4, 80011903, -1)
         
         # Return
         AddTalkListData(99, 80000001, -1)
@@ -1898,16 +1923,13 @@ def t000001300_x109():
         
         # Putrid Grave Warden Duelist   
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x122(30190800, 9219, 61219, 80021900)
+            assert t000001300_x122(30190800, 9219, 61219, 1049630338)
         # Astel, Stars of Darkness   
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(32110800, 9268, 61268, 80021901)
+            assert t000001300_x122(32110800, 9268, 61268, 1049630339)
         # Death Rite Bird   
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x120(1048570800, 80021902)
-        # Putrid Avatar
-        elif GetTalkListEntryResult() == 4:
-            assert t000001300_x120(1050570850, 80021903)
+            assert t000001300_x120(1048570800, 1049630340)
         else:
             return 0
 
@@ -1949,10 +1971,12 @@ def t000001300_x110():
         AddTalkListData(11, 80012010, -1)
         # Borealis the Freezing Fog
         AddTalkListData(12, 80012011, -1)
-        # Night's Cavalry #1
+        # Night's Cavalry (Forbidden Lands)
         AddTalkListData(13, 80012012, -1)
-        # Night's Cavalry #2
+        # Night's Cavalry (Foggy Snowfield)
         AddTalkListData(14, 80012013, -1)
+        # Putrid Avatar
+        AddTalkListData(15, 80011903, -1)
         
         # Return
         AddTalkListData(99, 80000001, -1)
@@ -1964,46 +1988,49 @@ def t000001300_x110():
         
         # Fire Giant
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x124(1052520800, 76509, 1252520800, 9131, 61131, 80022000)
+            assert t000001300_x124(1052520800, 76509, 1252520800, 9131, 61131, 1049630341)
         # Ancient Hero of Zamor  
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x122(30170800, 9217, 61217, 80022001)
+            assert t000001300_x122(30170800, 9217, 61217, 1049630342)
         # Ulcerated Tree Sprit
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(30180800, 9218, 61218, 80022002)
+            assert t000001300_x122(30180800, 9218, 61218, 1049630343)
         # Misbegotten Crusader 
         elif GetTalkListEntryResult() == 4:
-            assert t000001300_x122(31120800, 9247, 61247, 80022003)
+            assert t000001300_x122(31120800, 9247, 61247, 1049630344)
         # Spirit-Caller Snail 
         elif GetTalkListEntryResult() == 5:
-            assert t000001300_x122(31220800, 9248, 61248, 80022004)
+            assert t000001300_x122(31220800, 9248, 61248, 1049630345)
         # Black Blade Kindred 
         elif GetTalkListEntryResult() == 6:
-            assert t000001300_x120(1049520800, 80022005)
+            assert t000001300_x120(1049520800, 1049630346)
         # Great Wyrm Theodorix  
         elif GetTalkListEntryResult() == 7:
-            assert t000001300_x120(1050560800, 80022006)
+            assert t000001300_x120(1050560800, 1049630347)
         # Death Rite Bird  
         elif GetTalkListEntryResult() == 8:
-            assert t000001300_x120(1050570800, 80022007)
+            assert t000001300_x120(1050570800, 1049630348)
         # Commander Niall 
         elif GetTalkListEntryResult() == 9:
-            assert t000001300_x122(1051570800, 9184, 61184, 80022008)
+            assert t000001300_x122(1051570800, 9184, 61184, 1049630349)
         # Erdtree Avatar  
         elif GetTalkListEntryResult() == 10:
-            assert t000001300_x120(1052560800, 80022009)
+            assert t000001300_x120(1052560800, 1049630350)
         # Roundtable Knight Vyke  
         elif GetTalkListEntryResult() == 11:
-            assert t000001300_x120(1053560800, 80022010)
+            assert t000001300_x120(1053560800, 1049630351)
         # Borealis the Freezing Fog
         elif GetTalkListEntryResult() == 12:
-            assert t000001300_x120(1054560800, 80022011)
-        # Night's Cavalry #1  
+            assert t000001300_x120(1054560800, 1049630352)
+        # Night's Cavalry (Forbidden Lands)
         elif GetTalkListEntryResult() == 13:
-            assert t000001300_x120(1048510800, 80022012)
-        # Night's Cavalry #2 
+            assert t000001300_x120(1048510800, 1049630353)
+        # Night's Cavalry (Foggy Snowfield)
         elif GetTalkListEntryResult() == 14:
-            assert t000001300_x120(1248550800, 80022013)
+            assert t000001300_x120(1248550800, 1049630354)
+        # Putrid Avatar
+        elif GetTalkListEntryResult() == 15:
+            assert t000001300_x120(1050570850, 1049630355)
         else:
             return 0
 
@@ -2036,10 +2063,10 @@ def t000001300_x111():
         
         # Hoarah Loux  
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(11050800, 71120, 9107, 61107, 80022100)
+            assert t000001300_x123(11050800, 71120, 9107, 61107, 1049630356)
         # Sir Gideon Ofnir 
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(11050850, 71121, 9106, 61106, 80022101)
+            assert t000001300_x123(11050850, 71121, 9106, 61106, 1049630357)
         else:
             return 0
 
@@ -2074,13 +2101,13 @@ def t000001300_x112():
         
         # Maliketh, The Black Blade
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x123(13000800, 71300, 9116, 61116, 80022200)
+            assert t000001300_x123(13000800, 71300, 9116, 61116, 1049630358)
         # Dragonlord Placidusax 
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(13000830, 71301, 9115, 61115, 80022201)
+            assert t000001300_x123(13000830, 71301, 9115, 61115, 1049630359)
         # Godskin Duo   
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x123(13000850, 71302, 9114, 61114, 80022202)
+            assert t000001300_x123(13000850, 71302, 9114, 61114, 1049630360)
         else:
             return 0
 
@@ -2115,18 +2142,16 @@ def t000001300_x113():
         
         # Malenia, Blade of Miquella
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x124(15000800, 71500, 9120, 61120, 15009212, 80022300)
+            assert t000001300_x124(15000800, 71500, 9120, 61120, 15009212, 1049630361)
         # Loretta, Knight of the Haligtree
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x123(15000850, 71505, 9119, 61119, 80022301)
+            assert t000001300_x123(15000850, 71505, 9119, 61119, 1049630362)
         # Stray Mimic Tear
         elif GetTalkListEntryResult() == 3:
-            assert t000001300_x122(30200800, 9220, 61220, 80022302)
+            assert t000001300_x122(30200800, 9220, 61220, 1049630363)
         else:
             return 0
 
-
-    
 # Elden Throne
 def t000001300_x114():
     """State 0,10"""
@@ -2155,374 +2180,168 @@ def t000001300_x114():
         
         # Elden Beast
         if GetTalkListEntryResult() == 1:
-            assert t000001300_x130(19000800, 71901, 80022400)
+            assert t000001300_x130(19000800, 71901, 1049630365)
         # Radagon of the Golden Order
         elif GetTalkListEntryResult() == 2:
-            assert t000001300_x130(19000850, 71900, 80022400)
+            assert t000001300_x130(19000850, 71900, 1049630364)
         else:
             return 0
 
 
     
 # Boss Menu - 1 Flag
-def t000001300_x120(flag=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                    SetEventFlag(flag, 0)
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x120(flag=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
     
 # Boss Menu - 2 Flags
-def t000001300_x121(flag=_, flag2=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                    SetEventFlag(flag, 0)
-                    SetEventFlag(flag2, 0)
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x121(flag=_, flag2=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(flag2, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
     
 # Boss Menu - 3 Flags
-def t000001300_x122(flag=_, flag2=_, flag3=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                    SetEventFlag(flag, 0)
-                    SetEventFlag(flag2, 0)
-                    SetEventFlag(flag3, 0)
-                    
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x122(flag=_, flag2=_, flag3=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(flag2, 0)
+                SetEventFlag(flag3, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
 
 # Boss Menu - 4 Flags
-def t000001300_x123(flag=_, flag2=_, flag3=_, flag4=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                    SetEventFlag(flag, 0)
-                    SetEventFlag(flag2, 0)
-                    SetEventFlag(flag3, 0)
-                    SetEventFlag(flag4, 0)
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x123(flag=_, flag2=_, flag3=_, flag4=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(flag2, 0)
+                SetEventFlag(flag3, 0)
+                SetEventFlag(flag4, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
             
 # Boss Menu - 5 Flags
-def t000001300_x124(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                    SetEventFlag(flag, 0)
-                    SetEventFlag(flag2, 0)
-                    SetEventFlag(flag3, 0)
-                    SetEventFlag(flag4, 0)
-                    SetEventFlag(flag5, 0)
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x124(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(flag2, 0)
+                SetEventFlag(flag3, 0)
+                SetEventFlag(flag4, 0)
+                SetEventFlag(flag5, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
             
 # Boss Menu - 6 Flags
-def t000001300_x125(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, flag6=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                    SetEventFlag(flag, 0)
-                    SetEventFlag(flag2, 0)
-                    SetEventFlag(flag3, 0)
-                    SetEventFlag(flag4, 0)
-                    SetEventFlag(flag5, 0)
-                    SetEventFlag(flag6, 0)
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x125(flag=_, flag2=_, flag3=_, flag4=_, flag5=_, flag6=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(flag2, 0)
+                SetEventFlag(flag3, 0)
+                SetEventFlag(flag4, 0)
+                SetEventFlag(flag5, 0)
+                SetEventFlag(flag6, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
             
 # Boss Menu - Radagon/Elden Beast
-def t000001300_x130(flag=_, bonfire_flag=_, message_id=_):
-    """State 0,10"""
-    assert GetCurrentStateElapsedTime() > 0.1
-
-    """State 5"""
-    c1_110()
-    
-    while True:
-        """State 1"""
-        ClearTalkListData()
-        
-        # Alive
-        AddTalkListDataIf(GetEventFlag(flag) == 0, 2, 80000010, -1)
-        # Dead
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 3, 80000011, -1)
-        
-        # Location
-        AddTalkListData(4, message_id, -1)
-        
-        # Resurrect
-        AddTalkListDataIf(GetEventFlag(flag) == 1, 1, 80000004, -1)
-        
-        # Return
-        AddTalkListData(99, 80000001, -1)
-    
-        c1_140(1)
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-
-        # Resurrect
-        if GetTalkListEntryResult() == 1:
-            if ComparePlayerInventoryNumber(3, 8185, 4, 1, 0) == 1:
-                # Use a Larval Tear to accept rebirth?
-                call = t000001300_x38(action2=80040000)
-                
-                if call.Done() and GetGenericDialogButtonResult() == 1:
-                    PlayerEquipmentQuantityChange(3, 8185, -1)
-                        
-                    SetEventFlag(flag, 0)
-                    SetEventFlag(bonfire_flag, 0)
-                    SetEventFlag(9123, 0)
-                    
-                elif call.Done():
-                    continue
-            else:
-                # A Larval Tear is required for rebirth
-                assert t000001300_x37(action1=80040001)
-                continue
+def t000001300_x130(flag=_, bonfire_flag=_, teleport_flag=_):
+    # Resurrect
+    if GetEventFlag(flag) == 1:
+        if ComparePlayerInventoryNumber(3, 22000, 4, 1, 0) == 1:
+            call = t000001300_x38(action2=80040000)
+            
+            if call.Done() and GetGenericDialogButtonResult() == 1:
+                PlayerEquipmentQuantityChange(3, 22000, -1)
+                SetEventFlag(flag, 0)
+                SetEventFlag(bonfire_flag, 0)
+                SetEventFlag(9123, 0)
+                SetEventFlag(teleport_flag, 1)
+            elif call.Done():
+                return 0
         else:
+            assert t000001300_x37(action1=80040001)
             return 0
+    else:
+        assert t000001300_x37(action1=80040002)
+        return 0
