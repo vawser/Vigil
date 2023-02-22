@@ -9,10 +9,19 @@
 - Ressurect will now teleport you to the boss entrance of the resurrected boss.
 - Removed the location description (the teleport effectively replaces this).
 
+# Custom Loadout
+- Added Ashes of War to the loadout shop.
+- Added Spirit Summons to the loadout shop.
+ - Normal ones cost 1.
+ - Powerful ones cost 2.
+- Added the ability to buy certain items in the loadout shop.
+- Made Bloodsoaked Tome the default gift so new mod users notice the feature more easily.
+
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
-
+- The player now starts with the Flask of Wondrous Physick.
+ 
 #-------------------------------------------------
 # Bosses
 #-------------------------------------------------
@@ -37,6 +46,7 @@
 #-------------------------------------------------
 # Weapons
 #-------------------------------------------------
+- Given Death's Poker and Death Ritual Spear the FTH scaling they should have been given.
 
 #-------------------------------------------------
 # Catalysts

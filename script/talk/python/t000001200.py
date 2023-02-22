@@ -899,11 +899,20 @@ def t000001200_x50():
         # Ammunition
         AddTalkListData(5, 99999004, -1)
         
+        # Ashes of War
+        AddTalkListData(6, 99999006, -1)
+        
+        # Spirit Summons
+        AddTalkListData(7, 99999007, -1)
+        
+        # Items
+        AddTalkListData(8, 99999008, -1)
+        
         # Runes
-        AddTalkListDataIf(GetEventFlag(1047610220) == 0, 6, 99999005, -1)
+        AddTalkListDataIf(GetEventFlag(1047610220) == 0, 9, 99999005, -1)
         
         # Level Up
-        AddTalkListData(7, 15000540, -1)
+        AddTalkListData(10, 15000540, -1)
         
         # Leave
         AddTalkListData(99, 26080001, -1)
@@ -914,37 +923,44 @@ def t000001200_x50():
         
         # Weapons
         if GetTalkListEntryResult() == 1:
-            """State 3"""
             OpenChampionsEquipmentShop(9100000, 9109999)
             assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Spells
         elif GetTalkListEntryResult() == 2:
-            """State 6"""
             OpenChampionsEquipmentShop(9120000, 9129999)
             assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Armor
         elif GetTalkListEntryResult() == 3:
-            """State 5"""
             OpenChampionsEquipmentShop(9110000, 9119999)
             assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Talismans
         elif GetTalkListEntryResult() == 4:
-            """State 7"""
             OpenChampionsEquipmentShop(9130000, 9139999)
             assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Ammunition
         elif GetTalkListEntryResult() == 5:
-            """State 8"""
             OpenChampionsEquipmentShop(9140000, 9149999)
             assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        # Runes
+        # Ashes of War
         elif GetTalkListEntryResult() == 6:
+            OpenChampionsEquipmentShop(9150000, 9159999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Spirit Summons
+        elif GetTalkListEntryResult() == 7:
+            OpenChampionsEquipmentShop(9160000, 9169999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Items
+        elif GetTalkListEntryResult() == 8:
+            OpenChampionsEquipmentShop(9190000, 9199999)
+            assert not (CheckSpecificPersonMenuIsOpen(33, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        # Runes
+        elif GetTalkListEntryResult() == 9:
             SetEventFlag(1047610220, 1)
             GiveSpEffectToPlayer(7000040)
             PlayerEquipmentQuantityChange(3, 22000, -1)
             assert t000001200_x101(99999010)
         # Levelup
-        elif GetTalkListEntryResult() == 7:
+        elif GetTalkListEntryResult() == 10:
             OpenSoul()
             assert not (CheckSpecificPersonMenuIsOpen(10, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         # Leave

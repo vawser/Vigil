@@ -219,7 +219,7 @@ $Event(0, Default, function() {
     InitializeEvent(84, 1100, 9184, 10840, 0, 510840);  // Commander Niall
     InitializeEvent(85, 1100, 9123, 10850, 0, 510850);  // Radagon of the Golden Order
     
-    InitializeEvent(0, 1200, 9200, 20000, 0, 520000);
+    InitializeEvent(0, 1200, 9200, 20000, 0, 520000);   // Cemetery Shade (Tombsward Catacombs)
     InitializeEvent(1, 1200, 9201, 20010, 0, 520010);
     InitializeEvent(2, 1200, 9202, 20020, 0, 520020);
     InitializeEvent(3, 1200, 9203, 20030, 0, 520030);
@@ -271,6 +271,7 @@ $Event(0, Default, function() {
     InitializeEvent(66, 1200, 9266, 20660, 0, 520660);
     InitializeEvent(67, 1200, 9267, 20670, 0, 520670);
     InitializeEvent(68, 1200, 9268, 20680, 0, 520680);
+    
     InitializeEvent(0, 65810, 65810, 100750, 0, 0, 0, 0);
     InitializeEvent(1, 65810, 65811, 400163, 0, 0, 0, 0);
     InitializeEvent(2, 65810, 65812, 100760, 0, 0, 0, 0);
@@ -6509,7 +6510,6 @@ $Event(11000, Default, function() {
     if(!EventFlag(1047610010))
     {
         SetEventFlagID(60120, ON); // Crafting Kit
-        SetEventFlagID(60510, ON); // Talisman Pouch 1
         SetEventFlagID(1047610010, ON); // Default setup complete
         
         // Configuration Defaults

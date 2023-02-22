@@ -386,6 +386,9 @@
 1047610220 Custom Loadout: Free Souls Option
 1047610230 Custom Loadout: Material Removal Done
 1047610231 Custom Loadout: Material Remove
+1047610240 Perfume Bottle Kit
+1047610250 Cracked Pot Kit
+1047610260 Ritual Pot Kit
 
 # Arena Challenge
 1047610300 Warp to Arena
