@@ -86,5 +86,5 @@ Add raisin that allows Torrent to 'charge' enemies
 Add warp gate to Moonlight Altar into Liurnia
 Add Ashes of War to custom loadout
 
-Boss Resurrection teleport support
+
 

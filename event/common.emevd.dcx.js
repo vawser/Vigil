@@ -172,50 +172,52 @@ $Event(0, Default, function() {
     InitializeEvent(5, 730, 185, 5);
     InitializeEvent(6, 730, 186, 6);
     InitializeEvent(7, 730, 187, 7);
-    InitializeEvent(0, 1100, 9100, 10000, 0, 60510);
-    InitializeEvent(1, 1100, 9101, 10010, 0, 510010);
-    InitializeEvent(2, 1100, 9102, 10020, 0, 510020);
-    InitializeEvent(3, 1100, 9103, 10030, 0, 510030);
-    InitializeEvent(4, 1100, 9104, 10040, 0, 510040);
-    InitializeEvent(5, 1100, 9105, 10050, 0, 60520);
-    InitializeEvent(6, 1100, 9106, 10060, 0, 510060);
-    InitializeEvent(7, 1100, 9107, 10070, 0, 510070);
-    InitializeEvent(8, 1100, 9108, 10080, 0, 510080);
-    InitializeEvent(9, 1100, 9109, 10090, 0, 510090);
-    InitializeEvent(10, 1100, 9110, 10100, 0, 510100);
-    InitializeEvent(11, 1100, 9111, 10110, 0, 510110);
-    InitializeEvent(12, 1100, 9112, 10120, 0, 510120);
-    InitializeEvent(13, 1100, 9113, 10130, 0, 510130);
-    InitializeEvent(14, 1100, 9114, 10140, 0, 510140);
-    InitializeEvent(15, 1100, 9115, 10150, 0, 510150);
-    InitializeEvent(16, 1100, 9116, 10160, 0, 510160);
-    InitializeEvent(17, 1100, 9117, 10170, 0, 60440);
-    InitializeEvent(18, 1100, 9118, 10180, 0, 197);
-    InitializeEvent(19, 1100, 9119, 10190, 0, 510190);
-    InitializeEvent(20, 1100, 9120, 10200, 0, 510200);
-    InitializeEvent(21, 1100, 9121, 10210, 0, 510210);
-    InitializeEvent(22, 1100, 9122, 10220, 0, 510220);
-    InitializeEvent(23, 1100, 9190, 10230, 0, 510230); // Elden Remembrance
-    InitializeEvent(24, 1100, 9124, 10240, 0, 510240);
-    InitializeEvent(25, 1100, 9125, 10250, 0, 510250);
-    InitializeEvent(26, 1100, 9126, 10260, 0, 510260);
-    InitializeEvent(27, 1100, 9127, 10270, 0, 510270);
-    InitializeEvent(28, 1100, 9128, 10280, 0, 510280);
-    InitializeEvent(29, 1100, 9129, 10290, 0, 510290);
-    InitializeEvent(30, 1100, 9130, 10300, 0, 510300);
-    InitializeEvent(31, 1100, 9131, 10310, 0, 510310);
-    InitializeEvent(32, 1100, 9132, 10320, 0, 510320);
-    InitializeEvent(33, 1100, 9133, 10330, 0, 510330);
-    InitializeEvent(34, 1100, 9134, 10340, 0, 510340);
-    InitializeEvent(35, 1100, 9135, 10350, 0, 510350);
-    InitializeEvent(73, 1100, 9173, 10730, 0, 510730);
-    InitializeEvent(74, 1100, 9174, 10740, 0, 510740);
-    InitializeEvent(80, 1100, 9180, 10800, 0, 510800);
-    InitializeEvent(81, 1100, 9181, 10810, 0, 510810);
-    InitializeEvent(82, 1100, 9182, 10820, 0, 510820);
-    InitializeEvent(83, 1100, 9183, 10830, 0, 510830);
-    InitializeEvent(84, 1100, 9184, 10840, 0, 510840);
-    InitializeEvent(85, 1100, 9123, 10850, 0, 510850); // Golden Remembrance
+    
+    // Progression Itemlots
+    InitializeEvent(0, 1100, 9100, 10000, 0, 60510);    // Margit, the Fell Omen (Talisman Pouch)
+    InitializeEvent(1, 1100, 9101, 10010, 0, 510010);   // Godrick the Grafted
+    InitializeEvent(2, 1100, 9102, 10020, 0, 510020);   // 
+    InitializeEvent(3, 1100, 9103, 10030, 0, 510030);   // Grafted Scion
+    InitializeEvent(4, 1100, 9104, 10040, 0, 510040);   // Morgott, the Omen King
+    InitializeEvent(5, 1100, 9105, 10050, 0, 60520);    // Enia (Talisman Pouch)
+    InitializeEvent(6, 1100, 9106, 10060, 0, 510060);   // Sir Gideon Ofnir
+    InitializeEvent(7, 1100, 9107, 10070, 0, 510070);   // Hoarch Loux
+    InitializeEvent(8, 1100, 9108, 10080, 0, 510080);   // Astel
+    InitializeEvent(9, 1100, 9109, 10090, 0, 510090);   // Dragonkin Soldier of Nokstella
+    InitializeEvent(10, 1100, 9110, 10100, 0, 510100);  // Valiant Gargoyles
+    InitializeEvent(11, 1100, 9111, 10110, 0, 510110);  // Lichdragon Fortissax
+    InitializeEvent(12, 1100, 9112, 10120, 0, 510120);  // Mohg, the Lord of Blood
+    InitializeEvent(13, 1100, 9113, 10130, 0, 510130);  // 
+    InitializeEvent(14, 1100, 9114, 10140, 0, 510140);  // Godskin Duo
+    InitializeEvent(15, 1100, 9115, 10150, 0, 510150);  // Dragonlord Placidusax
+    InitializeEvent(16, 1100, 9116, 10160, 0, 510160);  // Maliketh, the Blade Blade
+    InitializeEvent(17, 1100, 9117, 10170, 0, 60440);   // Red Wolf of Radagon
+    InitializeEvent(18, 1100, 9118, 10180, 0, 197);     // Rennala, Queen of the Full Moon
+    InitializeEvent(19, 1100, 9119, 10190, 0, 510190);  // Loretta, Knight of the Haligtree
+    InitializeEvent(20, 1100, 9120, 10200, 0, 510200);  // Malenia, Blade of Miquella
+    InitializeEvent(21, 1100, 9121, 10210, 0, 510210);  // Godskin Noble (Volcano Manor)
+    InitializeEvent(22, 1100, 9122, 10220, 0, 510220);  // Rykard, Lord of Blasphemy
+    InitializeEvent(23, 1100, 9190, 10230, 0, 510230);  // Elden Beast
+    InitializeEvent(24, 1100, 9124, 10240, 0, 510240);  // 
+    InitializeEvent(25, 1100, 9125, 10250, 0, 510250);  // Mohg, the Omen  
+    InitializeEvent(26, 1100, 9126, 10260, 0, 510260);  // Magma Wyrm Makar
+    InitializeEvent(27, 1100, 9127, 10270, 0, 510270);  // 
+    InitializeEvent(28, 1100, 9128, 10280, 0, 510280);  // Ulcerated Tree Spirit (Golden Seed)
+    InitializeEvent(29, 1100, 9129, 10290, 0, 510290);  // Abducator Virgins
+    InitializeEvent(30, 1100, 9130, 10300, 0, 510300);  // Starscourge Radahn
+    InitializeEvent(31, 1100, 9131, 10310, 0, 510310);  // Fire Giant
+    InitializeEvent(32, 1100, 9132, 10320, 0, 510320);  // Ancestor Spirit
+    InitializeEvent(33, 1100, 9133, 10330, 0, 510330);  // Regal Ancestor Spirit
+    InitializeEvent(34, 1100, 9134, 10340, 0, 510340);  // Mimic Tear
+    InitializeEvent(35, 1100, 9135, 10350, 0, 510350);  // Fia's Champions
+    InitializeEvent(73, 1100, 9173, 10730, 0, 510730);  // Sanguine Noble
+    InitializeEvent(74, 1100, 9174, 10740, 0, 510740);  // Fell Twins
+    InitializeEvent(80, 1100, 9180, 10800, 0, 510800);  // Leonine Misbegotten
+    InitializeEvent(81, 1100, 9181, 10810, 0, 510810);  // Royal Knight Loretta
+    InitializeEvent(82, 1100, 9182, 10820, 0, 510820);  // Elemer of the Briar
+    InitializeEvent(83, 1100, 9183, 10830, 0, 510830);  // Crucible Knight/Misbegotten Warrior (Redmane)
+    InitializeEvent(84, 1100, 9184, 10840, 0, 510840);  // Commander Niall
+    InitializeEvent(85, 1100, 9123, 10850, 0, 510850);  // Radagon of the Golden Order
     
     InitializeEvent(0, 1200, 9200, 20000, 0, 520000);
     InitializeEvent(1, 1200, 9201, 20010, 0, 520010);
@@ -6507,6 +6509,7 @@ $Event(11000, Default, function() {
     if(!EventFlag(1047610010))
     {
         SetEventFlagID(60120, ON); // Crafting Kit
+        SetEventFlagID(60510, ON); // Talisman Pouch 1
         SetEventFlagID(1047610010, ON); // Default setup complete
         
         // Configuration Defaults
@@ -6523,8 +6526,8 @@ $Event(11000, Default, function() {
         SetEventFlagID(1047610320, ON); // Type: The Family
         
         // Deflection Defaults
-        SetEventFlagID(1047610600, ON);  // Selected Deflect Type: Storm
-        SetEventFlagID(1047610610, ON);  // Unlocked eflect Level: Standard
+        SetEventFlagID(1047610600, ON); // Selected Deflect Type: Storm
+        SetEventFlagID(1047610610, ON); // Unlocked eflect Level: Standard
         SetEventFlagID(1047610620, ON); // Unlocked Deflect Type: Storm
     }
     
@@ -9815,4 +9818,3 @@ $Event(14022, Restart, function() {
         SetCurrentTime(22, 0, 0, false, false, false, 0, 0, 0);
     }
 });
-
