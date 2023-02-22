@@ -19,6 +19,7 @@
 #-------------------------------------------------
 # World
 #-------------------------------------------------
+- The Putrid Crow in Mohgwyn Palace will now have his revenge if you try and exploit him.
 
 #-------------------------------------------------
 # Items

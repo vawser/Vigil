@@ -81,8 +81,14 @@
 #-------------------------------------------------
 # Bugs to Fix
 Fix Morgott not respawning correctly via Boss Revival
-Farm not re-enabling pickup properly after entering area (first visit only?)
+
+Add warp gate to Moonlight Altar into Liurnia
 
 # Small Stuff
 Add raisin that allows Torrent to 'charge' enemies
 
+Boss Resurrection teleport support
+
+12052370 Warp
+12052371 Area
+12050371 Bird

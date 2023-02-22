@@ -783,7 +783,7 @@ def t000001300_x92():
         AddTalkListData(12, 80010211, -1)
         # Death Rite Bird
         AddTalkListData(13, 80010212, -1)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         AddTalkListData(14, 80010213, -1)
         # Flying Dragon Agheel
         AddTalkListData(15, 80010214, -1)
@@ -843,7 +843,7 @@ def t000001300_x92():
         # Death Rite Bird
         elif GetTalkListEntryResult() == 13:
             assert t000001300_x120(1042380800, 80020212)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         elif GetTalkListEntryResult() == 14:
             assert t000001300_x120(1042380850, 80020213)
         # Flying Dragon Agheel
@@ -992,9 +992,9 @@ def t000001300_x95():
         AddTalkListData(5, 80010504, -1)
         # Bloodhound Knight
         AddTalkListData(6, 80010505, -1)
-        # Crystalians #1
+        # Crystalians (Academy Crystal Cave)
         AddTalkListData(7, 80010506, -1)
-        # Crystalians #2
+        # Crystalians (Raya Lucaria Crystal Tunnel)
         AddTalkListData(8, 80010507, -1)
         # Magma Wyrm Makar
         AddTalkListData(9, 80010508, -1)
@@ -1014,23 +1014,23 @@ def t000001300_x95():
         AddTalkListData(16, 80010515, -1)
         # Onyx Lord
         AddTalkListData(17, 80010516, -1)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         AddTalkListData(18, 80010517, -1)
         # Adan, Thief of Fire
         AddTalkListData(19, 80010518, -1)
         # Tibia Mariner
         AddTalkListData(20, 80010519, -1)
-        # Night's Cavalry #1
+        # Night's Cavalry (East Raya Lucaria Gate)
         AddTalkListData(21, 80010520, -1)
-        # Night's Cavalry #2
+        # Night's Cavalry (Liurnia Highway)
         AddTalkListData(22, 80010521, -1)
-        # Death Rite Bird #1
+        # Death Rite Bird (Gate Town North)
         AddTalkListData(23, 80010522, -1)
-        # Death Rite Bird #2
+        # Death Rite Bird (Scenic Isle)
         AddTalkListData(24, 80010523, -1)
-        # Erdtree Avatar #1
+        # Erdtree Avatar (Minor Erdtree)
         AddTalkListData(25, 80010524, -1)
-        # Erdtree Avatar #2
+        # Erdtree Avatar (Bellum Highway)
         AddTalkListData(26, 80010525, -1)
         
         # Return
@@ -1059,10 +1059,10 @@ def t000001300_x95():
         # Bloodhound Knight
         elif GetTalkListEntryResult() == 6:
             assert t000001300_x122(31050800, 9237, 61237, 80020505)
-        # Crystalians #1
+        # Crystalians (Academy Crystal Cave)
         elif GetTalkListEntryResult() == 7:
             assert t000001300_x123(31060800, 31060801, 61238, 9238, 80020506)
-        # Crystalians #2
+        # Crystalians (Raya Lucaria Crystal Tunnel)
         elif GetTalkListEntryResult() == 8:
             assert t000001300_x122(32020800, 9262, 61262, 80020507)
         # Magma Wyrm Makar
@@ -1092,7 +1092,7 @@ def t000001300_x95():
         # Onyx Lord
         elif GetTalkListEntryResult() == 17:
             assert t000001300_x120(1036500800, 80020516)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         elif GetTalkListEntryResult() == 18:
             assert t000001300_x120(1037460800, 80020517)
         # Adan, Thief of Fire
@@ -1101,22 +1101,22 @@ def t000001300_x95():
         # Tibia Mariner
         elif GetTalkListEntryResult() == 20:
             assert t000001300_x120(1039440800, 80020519)
-        # Night's Cavalry #1
+        # Night's Cavalry (East Raya Lucaria Gate)
         elif GetTalkListEntryResult() == 21:
             assert t000001300_x120(1036480340, 80020520)
-        # Night's Cavalry #2
+        # Night's Cavalry (Liurnia Highway)
         elif GetTalkListEntryResult() == 22:
             assert t000001300_x120(1039430340, 80020521)
-        # Death Rite Bird #1
+        # Death Rite Bird (Gate Town North)
         elif GetTalkListEntryResult() == 23:
             assert t000001300_x120(1036450340, 80020522)
-        # Death Rite Bird #2
+        # Death Rite Bird (Scenic Isle)
         elif GetTalkListEntryResult() == 24:
             assert t000001300_x120(1037420340, 80020523)
-        # Erdtree Avatar #1
+        # Erdtree Avatar (Minor Erdtree)
         elif GetTalkListEntryResult() == 25:
             assert t000001300_x120(1033430800, 80020524)
-        # Erdtree Avatar #2
+        # Erdtree Avatar (Bellum Highway)
         elif GetTalkListEntryResult() == 26:
             assert t000001300_x120(1038480800, 80020525)
         else:
@@ -1289,9 +1289,9 @@ def t000001300_x99():
         AddTalkListData(4, 80010903, -1)
         # Miranda the Blighted Bloom
         AddTalkListData(5, 80010904, -1)
-        # Black Knife Assassin #1
+        # Black Knife Assassin (Sage's Cave)
         AddTalkListData(6, 80010905, -1)
-        # Black Knife Assassin #2
+        # Black Knife Assassin (Sainted Hero's Grave)
         AddTalkListData(7, 80010906, -1)
         # Necromancer Garris
         AddTalkListData(8, 80010907, -1)
@@ -1347,10 +1347,10 @@ def t000001300_x99():
         # Miranda the Blighted Bloom   
         elif GetTalkListEntryResult() == 5:
             assert t000001300_x122(31180800, 9241, 61241, 80020904)
-        # Black Knife Assassin #1
+        # Black Knife Assassin (Sage's Cave)
         elif GetTalkListEntryResult() == 6:
             assert t000001300_x122(31190800, 9242, 61242, 80020905)
-        # Black Knife Assassin #2   
+        # Black Knife Assassin (Sainted Hero's Grave)
         elif GetTalkListEntryResult() == 7:
             assert t000001300_x120(1040520800, 80020906)
         # Necromancer Garris
@@ -1439,7 +1439,7 @@ def t000001300_x100():
         AddTalkListData(11, 80011010, -1)
         # Monstrous Dog
         AddTalkListData(12, 80011011, -1)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         AddTalkListData(13, 80011012, -1)
         # Death Rite Bird
         AddTalkListData(14, 80011013, -1)
@@ -1512,7 +1512,7 @@ def t000001300_x100():
         # Monstrous Dog 
         elif GetTalkListEntryResult() == 12:
             assert t000001300_x120(1048400800, 80021011)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         elif GetTalkListEntryResult() == 13:
             assert t000001300_x120(1048410800, 80021012)
         # Death Rite Bird  
@@ -1573,7 +1573,7 @@ def t000001300_x101():
         
         # Fell Twins
         AddTalkListData(1, 80011100, -1)
-        # Ball-Bearing Hunter
+        # Bell-Bearing Hunter
         AddTalkListData(2, 80011101, -1)
         # Death Rite Bird
         AddTalkListData(3, 80011102, -1)
@@ -1591,7 +1591,7 @@ def t000001300_x101():
         # Fell Twins
         if GetTalkListEntryResult() == 1:
             assert t000001300_x122(34140850, 9174, 10740, 80021100)
-        # Ball-Bearing Hunter  
+        # Bell-Bearing Hunter  
         elif GetTalkListEntryResult() == 2:
             assert t000001300_x120(1043530800, 80021100)
         # Death Rite Bird

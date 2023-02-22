@@ -6817,7 +6817,9 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
-    SetEventFlagID(1049630000, ON);
+    
+    
+    //SetEventFlagID(1049630000, ON);
     
     // Screenshot Zone
     //SetEventFlagID(1047610014, ON);

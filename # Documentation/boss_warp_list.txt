@@ -1,0 +1,566 @@
+﻿#------------
+# Limgrave
+#------------
+- Cemetery Shade
+30000981 # Player
+30002841 # Spawn
+
+- Erdtree Burial Watchdog
+30020191 # Player
+30022841 # Spawn
+
+- Grave Warden Duelist
+30040191 # Player
+30042841 # Spawn
+
+- Black Knife Assassin
+30110981 # Player
+30112841 # Spawn
+
+- Patches
+31000981 # Player
+31002841 # Spawn
+
+- Demi-Human Chief
+31150982 # Player
+31152841 # Spawn
+
+- Guardian Golem
+31170971 # Player
+31172841 # Spawn
+
+- Miranda the Blighted Bloom
+31020981 # Player
+31022841 # Spawn
+
+- Beastman of Farum Azula
+31030981 # Player
+31032841 # Spawn
+
+- Stonedigger Troll
+32010971 # Player
+32012841 # Spawn
+
+- Tree Sentinel
+1042360982 # Player
+1042362021 # Spawn
+
+- Crucible Knight
+1042370972 # Player
+1042372811 # Spawn
+
+- Death Rite Bird
+1042380981 # Player
+1042382810 # spawn
+# Change to Night
+
+- Bell-Bearing Hunte
+1042380982 # Player
+1042382811 # Spawn
+# Change to Night
+
+- Flying Dragon Agheel
+1043360972 # Player
+1043362810 # spawn
+
+- Night's Cavalry
+1043370972 # Player
+1043372810 # Spawn
+
+- Bloodhound Knight Darriwil
+1044350973 # Player
+1044352021 # Spawn
+
+-  Mad Pumpkin Head
+1044360971 # Player
+1044362021 # Spawn
+
+- Tibia Mariner
+1045390970 # Player
+1045392020 # Spawn
+
+#------------
+# Stormveil Castle
+#------------
+- Margit
+10000989 # Player
+10003901 # spawn
+
+- Godrick
+10000990 # Player
+10003902 # Spawn
+
+#------------
+# Weeping Penisula
+#------------
+- Erdtree Burial Watchdog
+30010981 # Player
+30012841 # Spawn
+
+- Runebear
+31010981 # Player
+31012841 # Spawn
+
+- Scaly Misbegotten
+32000981 # player
+32002841 # spawn
+
+- Ancient Hero of Zamor
+1042330971 # player
+1042332811 # spawn
+
+- Leonine Misbegotten
+1043300981 # player
+1043302811 # spawn
+
+- Erdtree Avatar
+1043330972 # player
+1043332811 # spawn
+
+- Death Rite Bird
+1044320973 # player
+1044322811 # spawn
+# Spawn at Night
+
+- Night's Cavalry
+1044320974 # player
+1044322812 # spawn
+# Spawn at Night
+
+#------------
+# Liurnia of the Lakes 
+#------------
+- Spirit-Caller Snail
+30030981 # player
+30032841 # spawn
+
+- Cemetery Shade
+30050981 # player
+30052841 # spawn
+
+- Black Knife Assassin
+30050982 # player
+30052842 # spawn
+
+- Erdtree Burial Watchdog
+30060981 # player
+30062841 # spawn
+
+- Cleanrot Knight
+31040971 # player
+31042841 # spawn
+
+- Bloodhound Knight
+31050981 # player
+31062841 # spawn
+
+- Crystalians (Academy Crystal Cave)
+31060981 # player
+31062841 # spawn
+
+- Crystalians (Raya Lucaria Crystal Tunnel)
+32020981 # player
+32022841 # spawn
+
+- Magma Wyrm Makar
+39200983 # player
+39202021 # spawn
+
+- Alecto, Black Knife Ringleader
+1033420971 # player
+1033422811 # spawn
+
+- Bols, Carian Knight
+1033450971 # player
+1033452811 # spawn
+
+- Glintstone Dragon Adula
+1034420971 # player
+1034422021 # spawn
+
+- Glintstone Dragon Smarag
+1034450970 # player
+1034452020 # spawn
+
+- Royal Revenant
+1034480971 # player
+1034482621 # spawn
+
+- Omenkiller
+1035420981 # player
+1035422020 # spawn
+
+- Royal Knight Loretta
+1035500971 # player
+1035502020 # spawn
+
+- Onyx Lord
+1036500981 # player
+1036502811 # spawn
+
+- Bell-Bearing Hunter
+1037460971 # player
+1037462651 # spawn
+# Spawn at Night
+
+- Adan, Thief of Fire
+1038410981 # player
+1038412811 # spawn
+
+- Tibia Mariner
+1039440981 # player
+1039442020 # spawn
+
+- Night's Cavalry (East Raya Lucaria Gate)
+1036480981 # player
+1036482020 # spawn
+# Spawn at Night
+
+- Night's Cavalry (Liurnia Highway)
+1039430971 # player
+1039432020 # spawn
+# Spawn at Night
+
+- Death Rite Bird (Gate Town North)
+1036450971 # player
+1036452020 # spawn
+
+- Death Rite Bird (Scenic Isle)
+1037420981 # player
+1037422020 # spawn
+
+- Erdtree Avatar (Minor Erdtree)
+1033430971 # player
+1033432020 # spawn
+
+- Erdtree Avatar (Bellum Highway)
+1038480971 # player
+1038482021 # spawn
+
+#------------
+# Academy of Raya Lucaria
+#------------
+- Rennala, Queen of the Full Moon
+14000971 # player
+14002715 # spawn
+
+- Red Wolf of Radagon
+14000972 # player
+14002716 # spawn
+
+#------------
+# Mt. Gelmir
+#------------
+- Red Wolf of the Champion
+30090971 # player
+30092841 # spawn
+
+- Misbegotten Warrior/Perfumer Tricia
+30120981 # player
+30122841 # spawn
+
+- Kindred of Rot
+31070971 # player
+31072841 # spawn
+
+- Demi-Human Queen Margot
+31090981 # player
+31092841 # spawn
+
+- Magma Wyrm
+1035530981 # player
+1035532020 # spawn
+
+- Full-Grown Fallingstar Beast
+1036540983 # player
+1036542021 # spawn
+
+- Demi-Human Queen
+1037530981 # player
+1037532021 # spawn
+
+- Ulcerated Tree Spirit
+1037540971 # player
+1037542691 # spawn
+
+#------------
+# Volcano Manor
+#------------
+- Rykard, Lord of Blasphemy
+16000995 # player
+16002571 # spawn
+
+- Godskin Noble
+16000996 # player
+16002572 # spawn
+
+- Abductor Virgins
+16000997 # player
+16000997 # spawn
+
+#------------ 
+# Altus Plateau
+#------------
+- Erdtree Burial Watchdog
+30070981 # player
+30072841 # spawn
+
+- Ancient Hero of Zamor
+30080971 # player
+30082841 # spawn
+
+- Crucible Knight Ordovis/Crucible Knight
+30100971 # player
+30102841 # spawn
+
+- Grave Warden Duelist
+30130981 # player
+30132841 # spawn
+
+- Miranda the Blighted Bloom
+31180981 # player
+31182841 # spawn
+
+- Black Knife Assassin (Sage's Cave)
+31190981 # player
+31192841 # spawn
+
+- Black Knife Assassin (Sainted Hero's Grave)
+1040520981 # player
+1040522020 # spawn
+
+- Necromancer Garris
+31190982 # player
+31192842 # spawn
+
+- Stonedigger Troll
+32040981 # player
+32042841 # spawn
+
+- Crystalians
+32050981 # player
+32052841 # spawn
+
+- Onyx Lord
+34120983 # player
+34122841 # spawn
+
+- Ancient Dragon Lansseax
+1037510981 # player
+1037512020 # spawn
+
+- Demi-Human Queen
+1038510981 # player
+1038512020 # spawn
+
+- Tibia Mariner
+
+- Godefroy the Grafted
+
+- Night's Cavalry
+
+- Elemer of the Briar
+
+- Sanguine Noble
+
+- Fallingstar Beast
+
+- Tree Sentinel Duo
+
+- Wormface
+
+- Godskin Apostle
+
+#------------
+# Caelid
+#------------
+- Starscourge Radahn
+
+- Erdtree Burial Watchdog
+
+- Cemetery Shade
+
+- Beastman of Farum Azula
+
+- Putrid Crystalians
+
+- Cleanrot Knight
+
+- Frenzied Duelist
+
+- Magma Wyrm
+
+- Fallingstar Beast
+
+- Godskin Apostle
+
+- Decaying Ekzykes
+
+- Monstrous Dog
+
+- Bell-Bearing Hunter
+
+- Death Rite Bird
+
+- Commander O'Neil
+
+- Nox Priest and Swordstress
+
+- Battlemage Hugues
+
+- Crucible Knight
+
+- Black Blade Kindred
+
+- Flying Dragon Greyll
+
+- Elder Dragon Greyoll
+
+- Night's Cavalry #1
+
+- Night's Cavalry #2
+
+- Putrid Tree Spirit
+
+- Putrid Avatar #1
+
+- Putrid Avatar #2
+
+#------------
+# Capital Outskirts
+#------------
+- Fell Twins
+
+- Bell-Bearing Hunter
+
+- Death Rite Bird
+
+- Draconic Tree Sentinel
+
+#------------
+# Leyndell
+#------------
+- Godfrey, First Elden Lord
+
+- Morgott, the Omen King
+
+- Mohg, The Omen
+
+- Esgar, Priest of Blood
+
+#------------
+# Siofra River
+#------------
+- Valiant Gargoyles
+
+- Dragonkin Soldier
+
+- Ancestor Spirit
+
+#------------
+# Ainsel River
+#------------
+- Dragonkin Soldier of Nokstella
+
+
+#------------
+# Lake of Rot
+#------------
+- Dragonkin Soldier
+
+- Astel, Naturalborn of the Void
+
+#------------
+# Deeproot Depths
+#------------
+- Crucible Knight Sirulia
+
+- Fia's Champions
+
+- Lichdragon Fortissax
+
+#------------
+# Mohgwyn Palace
+#------------
+- Mohg, Lord of Blood
+
+#------------
+# Nokron, Eternal City
+#------------
+- Regal Ancestor Spirit
+
+- Mimic Tear
+
+#------------
+# Consecrated Snowfield
+#------------
+- Putrid Grave Warden Duelist
+
+- Astel, Stars of Darkness
+
+- Death Rite Bird
+
+- Putrid Avatar
+
+#------------
+# Mountaintops of the Giants
+#------------
+- Fire Giant
+
+- Ancient Hero of Zamor
+
+- Ulcerated Tree Sprit
+
+- Misbegotten Crusader
+
+- Spirit-Caller Snail
+
+- Black Blade Kindred
+
+- Great Wyrm Theodorix
+
+- Death Rite Bird
+
+- Commander Niall
+
+- Erdtree Avatar
+
+- Roundtable Knight Vyke
+
+- Borealis the Freezing Fog
+
+- Night's Cavalry #1
+
+- Night's Cavalry #2
+
+#------------
+# Ashen Leyndell
+#------------
+- Hoarah Loux
+
+- Sir Gideon Ofnir
+
+#------------
+# Crumbling Farum Azula
+#------------
+- Maliketh, The Black Blade
+
+- Dragonlord Placidusax
+
+- Godskin Duo
+
+#------------
+# Miquella's Haligtree
+#------------
+- Malenia, Blade of Miquella
+
+- Loretta, Knight of the Haligtree
+
+- Stray Mimic Tear
+
+#------------
+# Elden Throne
+#------------
+- Radagon of the Golden Order
+
+- Elden Beast
