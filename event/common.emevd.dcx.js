@@ -7040,7 +7040,7 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
-    SetEventFlagID(1049630222, ON);
+    WarpPlayer(60, 34, 42, 0, 1034420971, -1);
     
     // Easy Kill Mode
     //SetSpEffect(10000, 7000090);

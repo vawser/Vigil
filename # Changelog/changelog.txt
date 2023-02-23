@@ -35,6 +35,10 @@
 #-------------------------------------------------
 - The Putrid Crow in Mohgwyn Palace will now have his revenge if you try and exploit him.
 
+- Added warp gate from Moonlight Altar to Village of the Albinaurics.
+- Added warp gate from Slumbering Wolf's Shack (Liurnia) to Consecrated Snowfield.
+- Added warp gate from Bestial Sanctum (Caelid) to Crumbling Farum Azula.
+
 #-------------------------------------------------
 # Items
 #-------------------------------------------------
