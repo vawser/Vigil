@@ -11,7 +11,7 @@ t000004020 Duelist Lysander
 t000004030 Emissary of Mohgwyn
 t000004040 Apprentice Frasca
 t000004050 Jar of Cultivation
-t000004060
+t000004060 Stitchmaster Gerald
 t000004070
 t000004080
 t000004090

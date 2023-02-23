@@ -47,12 +47,12 @@
 # Bosses
 - Split Beast Clergyman and Maliketh so once Beast Clergyman has been defeated once, the player can skip straight to Maliketh.
 
-# Boss Resurrection
-- Add ability to teleport to fight (after first victory).
-
 # Content
 - Add new physicks
 - Add new Spirit Summons.
+
+# Items
+Add raisin that allows Torrent to 'charge' enemies
 
 # Spell Schools to expand:
  - Bestial (+2)
@@ -66,6 +66,12 @@
  - Gravity (+3)
  - Magma (+2)
 
+#-------------------------------------------------
+# WIP
+#-------------------------------------------------
+# Bugs to Fix
+Fix Morgott not respawning correctly via Boss Revival
+
 # Concordats
 - Act like a class/covenant choice, where you pledge to a covenant and get their 'covenant' key item. 
  - This item will provide benefits that suit specific class archetypes.
@@ -76,11 +82,29 @@
 - Simple quests given by the leader, similar to the Volcano Manor questline.
  - Reward specific items, like traditional Covenant rewards from DS1/DS3.
  
-#-------------------------------------------------
-# WIP
-#-------------------------------------------------
-# Bugs to Fix
-Fix Morgott not respawning correctly via Boss Revival
+# Servants of the Grafted
+- Found in Stormveil Castle.
 
-Add raisin that allows Torrent to 'charge' enemies
+- Benefits:
+ - Enemy kills will empower physical damage by 1%. Only 1 kill is counted per second.
+  - Each stack lasts 300 seconds.
+  - Can stack upto 25 times. This is called 'Fully Grafted'.
 
+- Drawbacks:
+ - Each stack will reduce physical absorption by 1%.
+ - Every time the player becomes fully grafted, they will be made slightly taller. This can stack up to 5 times. This can not be removed (other than visiting a secret location).
+
+163
+
+Stitchmaster Gerald
+
+550000200 / 30110
+
+t000004060 Stitchmaster Gerald
+
+AEG210_643
+AEG210_627
+AEG210_642
+AEG210_628
+
+70000 Codex: Servants of the Grafted

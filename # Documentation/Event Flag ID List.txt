@@ -356,6 +356,76 @@
 1047610021 Journey Modifiers completed
 1047610025 Accursed run completed
 
+1047610030 Covenant: Servants of the Grafted
+1047610031 Covenant: Servants of the Grafted - Rank 1
+1047610032 Covenant: Servants of the Grafted - Rank 2
+1047610033 Covenant: Servants of the Grafted - Rank 3
+
+1047610035 Covenant: X
+1047610036 Covenant: X - Rank 1
+1047610037 Covenant: X - Rank 2
+1047610038 Covenant: X - Rank 3
+
+1047610040 Covenant: X
+1047610041 Covenant: X - Rank 1
+1047610042 Covenant: X - Rank 2
+1047610043 Covenant: X - Rank 3
+
+1047610045 Covenant: X
+1047610046 Covenant: X - Rank 1
+1047610047 Covenant: X - Rank 2
+1047610048 Covenant: X - Rank 3
+
+1047610050 Covenant: X
+1047610051 Covenant: X - Rank 1
+1047610052 Covenant: X - Rank 2
+1047610053 Covenant: X - Rank 3
+
+1047610055 Covenant: X
+1047610056 Covenant: X - Rank 1
+1047610057 Covenant: X - Rank 2
+1047610058 Covenant: X - Rank 3
+
+1047610060 Covenant: X
+1047610061 Covenant: X - Rank 1
+1047610062 Covenant: X - Rank 2
+1047610063 Covenant: X - Rank 3
+
+1047610065 Covenant: X
+1047610066 Covenant: X - Rank 1
+1047610067 Covenant: X - Rank 2
+1047610068 Covenant: X - Rank 3
+
+1047610070 Covenant: X
+1047610071 Covenant: X - Rank 1
+1047610072 Covenant: X - Rank 2
+1047610073 Covenant: X - Rank 3
+
+1047610075 Covenant: X
+1047610076 Covenant: X - Rank 1
+1047610077 Covenant: X - Rank 2
+1047610078 Covenant: X - Rank 3
+
+1047610080 Covenant: X
+1047610081 Covenant: X - Rank 1
+1047610082 Covenant: X - Rank 2
+1047610083 Covenant: X - Rank 3
+
+1047610085 Covenant: X
+1047610086 Covenant: X - Rank 1
+1047610087 Covenant: X - Rank 2
+1047610088 Covenant: X - Rank 3
+
+1047610090 Covenant: X
+1047610091 Covenant: X - Rank 1
+1047610092 Covenant: X - Rank 2
+1047610093 Covenant: X - Rank 3
+
+1047610095 Covenant: X
+1047610096 Covenant: X - Rank 1
+1047610097 Covenant: X - Rank 2
+1047610098 Covenant: X - Rank 3
+
 1047610100 Hidden Helm enabled (obsolete)
 1047610101 Transmog Change toggle
 
@@ -544,7 +614,6 @@
 1047610713 Type: Imp
 1047610714 Type: Player: Self
 1047610715 Type: Player: Random
-
 
 1047610800 Dummy Setup
 1047610801 Enable HP Regeneration

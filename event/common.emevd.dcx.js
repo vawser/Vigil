@@ -6630,6 +6630,11 @@ $Event(11000, Default, function() {
     //----------------------------
     InitializeEvent(0, 14100, 0);
     
+    //----------------------------
+    // Covenants
+    //----------------------------
+    InitializeEvent(0, 14200, 0);
+    
     //----------------------
     // Transmog
     //----------------------
@@ -9815,5 +9820,31 @@ $Event(14022, Restart, function() {
         SetEventFlagID(1049630399, OFF);
         
         SetCurrentTime(22, 0, 0, false, false, false, 0, 0, 0);
+    }
+});
+
+// Covenant - Servants of the Grafted
+$Event(14200, Restart, function() {
+    WaitFor(EventFlag(1047610030));
+    
+    // Allegiance to Covenant
+    SetSpEffect(10000, 7400100);
+    
+    // Rank 1
+    if(EventFlag(1047610030))
+    {
+        SetSpEffect(10000, 7400101);
+    }
+    
+    // Rank 2
+    if(EventFlag(1047610031))
+    {
+        SetSpEffect(10000, 7400102);
+    }
+    
+    // Rank 3
+    if(EventFlag(1047610032))
+    {
+        SetSpEffect(10000, 7400103);
     }
 });

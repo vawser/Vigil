@@ -9,6 +9,57 @@ g_JumpMovementMultiplier = 1.25
 ------------------------------------------
 -- Vigil: Functions
 ------------------------------------------
+g_GraftedLevel = 0
+
+function TrackGraftedStatus()
+    -- Is in Grafted covenant
+    if env(GetSpEffectID, 7400100) == TRUE then
+        -- Enemy Kill occurs
+        if env(GetSpEffectID, 7000002) == TRUE and env(GetSpEffectID, 7400130) == FALSE then
+            act(AddSpEffect, 7400130) -- Kill counter cooldown
+            g_GraftedLevel = g_GraftedLevel + 1
+            
+            -- Add Grafted bonus if count is below 25
+            if g_GraftedLevel < 25 then
+                -- Rank 1
+                if env(GetSpEffectID, 7400101) == TRUE then
+                    act(AddSpEffect, 7400110)
+                end
+                -- Rank 2
+                if env(GetSpEffectID, 7400101) == TRUE then
+                    act(AddSpEffect, 7400111)
+                end
+                -- Rank 3
+                if env(GetSpEffectID, 7400101) == TRUE then
+                    act(AddSpEffect, 7400112)
+                end
+            end
+        end
+        
+        -- If enemy stack counter falls off, reset grafted level
+        -- Rank 1
+        if env(GetSpEffectID, 7400101) == TRUE then
+            if env(GetSpEffectID, 7400110) == FALSE then
+                g_GraftedLevel = 0
+            end
+        -- Rank 2
+        elseif env(GetSpEffectID, 7400102) == TRUE then
+            if env(GetSpEffectID, 7400111) == FALSE then
+                g_GraftedLevel = 0
+            end
+        -- Rank 3
+        elseif env(GetSpEffectID, 7400103) == TRUE then
+            if env(GetSpEffectID, 7400112) == FALSE then
+                g_GraftedLevel = 0
+            end
+        end
+        
+        if g_GraftedLevel > 25 then
+            g_GraftedLevel = 25
+        end
+    end
+end
+
 function ApplyThrowEffects()
     -- Applied on backstabs and ripostes.
     
@@ -14865,6 +14916,7 @@ function Update()
     TrackDeflection()
     TrackMultiJump()
     RegenerateFP()
+    TrackGraftedStatus()
     
     act(SwitchMotion, FALSE)
     
@@ -14963,6 +15015,46 @@ function Master_Layer_onGenerate()
         ModifyBoneScale("Head", 0, 3)
         ModifyBoneScale("Head", 1, 3)
         ModifyBoneScale("Head", 2, 3)
+    end
+    
+    -- Is in Grafted covenant or Covenant NPC
+    if env(GetSpEffectID, 7400100) == TRUE or env(GetSpEffectID, 7400120) == TRUE then
+        -- Grafted Covenant NPC
+        if env(GetSpEffectID, 7400120) == TRUE then
+            g_GraftedLevel = 25
+        end
+    
+        -- Spine
+        local spine_scale = (g_GraftedLevel/250)
+        ModifyBonePosition("Spine", 1, spine_scale)
+        
+        -- Toe
+        local toe_scale = (g_GraftedLevel/200) * -1
+        ModifyBonePosition("R_Toe0", 2, toe_scale)
+        ModifyBonePosition("L_Toe0", 2, toe_scale)
+        
+        -- Pec
+        local pec_scale = (g_GraftedLevel/6)
+        ModifyBoneScale("R_Pectoral", 2, pec_scale)
+        ModifyBoneScale("L_Pectoral", 2, pec_scale)
+        
+        -- Shoulder
+        local shoulder_scale = (g_GraftedLevel/100)
+        ModifyBoneScale("R_Clavicle", 0, shoulder_scale)
+        ModifyBoneScale("R_Clavicle", 1, shoulder_scale)
+        ModifyBoneScale("R_Clavicle", 2, shoulder_scale)
+        ModifyBoneScale("L_Clavicle", 0, shoulder_scale)
+        ModifyBoneScale("L_Clavicle", 1, shoulder_scale)
+        ModifyBoneScale("L_Clavicle", 2, shoulder_scale)
+        
+        -- Thigh
+        local thigh_scale = (g_GraftedLevel/100)
+        ModifyBoneScale("R_Thigh", 0, thigh_scale)
+        ModifyBoneScale("R_Thigh", 1, thigh_scale)
+        ModifyBoneScale("R_Thigh", 2, thigh_scale)
+        ModifyBoneScale("L_Thigh", 0, thigh_scale)
+        ModifyBoneScale("L_Thigh", 1, thigh_scale)
+        ModifyBoneScale("L_Thigh", 2, thigh_scales)
     end
 end
 

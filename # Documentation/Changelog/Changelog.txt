@@ -18,6 +18,22 @@
 - Made Bloodsoaked Tome the default gift so new mod users notice the feature more easily.
 - Jar of Promise now allows the player to change their Ashes of War immediately.
 
+# Covenant
+- Covenants are groups that the player can commit their allegiance to. Once commited, they must stay commited to gain the benefits of the covenant.
+- Joining another covenant will remove all other alliegances.
+- Abandoning a covenant will remove all alliegances and reset progress to rank 1.
+- When you join a covenant, you start at rank 1. 
+ - You can progress to Rank 2 by giving the covenant 10 Bloodstained Runes.
+ - you can progress to Rank 3 by giving the covenant 20 Bloodstained Runes.
+- Each covenant will grant the player a Codex that describes the benefits and drawbacks of belonging to the covenant.
+
+- Added the Servants of the Grafted covenant:
+ - Available at Stitchmaster Geralt in Stormveil Castle, at the Rampart Tower grace.
+ - Grants Opportunistic Grafting:
+    - Enemy kills will increase Physical damage by 1/1.5/2%, but reduces absorption by 1/1.5/2% and corrupts the physical form of the committed.
+    - Each stack lasts 300 seconds.
+    - This can stack up to 25 times.
+    
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
@@ -89,3 +105,4 @@
 - Added a bugfix to the Farm scripts so the ability to pickup materials isn't blocked outside of the farm in certain situations.
 - Farm timer should now start properly after starting a Cultivation without reloading.
 - Fixed some items giving 100% aux immunity when they should not have.
+- Lethargic Mind no longer reduces absorption accidently.
