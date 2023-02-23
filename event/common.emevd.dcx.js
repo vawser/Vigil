@@ -7038,16 +7038,19 @@ $Event(11001, Default, function() {
 $Event(11021, Default, function() {
     //ChangeCamera(2200, 2200);
     
-    WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
-    
-    WarpPlayer(60, 34, 42, 0, 1034420971, -1);
-    
-    // Easy Kill Mode
     //SetSpEffect(10000, 7000090);
     //SetSpEffect(10000, 7000091);
     //SetSpEffect(10000, 7000092);
     //SetSpEffect(10000, 7000093);
     //SetSpEffect(10000, 7000094);
+    
+    WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
+    
+    SetEventFlagID(11000801, OFF);
+    
+    //SetEventFlagID(1049630323, ON);
+    
+    // Easy Kill Mode
     
     // Screenshot Zone
     //SetEventFlagID(1047610014, ON);

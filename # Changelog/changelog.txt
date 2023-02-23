@@ -23,6 +23,19 @@
 #-------------------------------------------------
 - The player now starts with the Flask of Wondrous Physick and the Whetstone Knife.
  
+# Deflection
+- Increased the frame windows for deflects:
+ - 16 frames for Standard Deflect
+ - 8 frames for Perfect Deflect window
+ - 12 frames for Extended Perfect Deflect window
+ 
+- Consecutive deflects in a row will now parry an enemy if done within a short window.
+ - 4 deflects are required.
+ - Each deflect starts a 10 second window, the next deflect needs to be within this window.
+ - The 4th deflect will cause the parry.
+ 
+- Reduced the poise damage the deflect bullets inflict to account for the new ability to force a parry.
+
 #-------------------------------------------------
 # Bosses
 #-------------------------------------------------
@@ -52,6 +65,7 @@
 # Weapons
 #-------------------------------------------------
 - Given Death's Poker and Death Ritual Spear the FTH scaling they should have been given.
+- Crossbows can now parry enemies if they hit the enemy during their counter damage window.
 
 #-------------------------------------------------
 # Catalysts

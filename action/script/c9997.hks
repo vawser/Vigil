@@ -1846,6 +1846,31 @@ function ExecGuardBlock(damage_type, ignore_guard_block)
 end
 
 function ExecTypeDamage(damage_type)
+    -- Vigil: Crossbow Parry
+    if env(GetSpEffectID, 31) == TRUE and env(GetSpEffectID, 7000300) == TRUE then
+        Fire("W_DamageParryEnemy1")
+        Replanning()
+        return TRUE
+    end
+    
+    -- Vigil: Deflect Parry
+    if env(GetSpEffectID, 7000301) == TRUE then
+        if env(GetSpEffectID, 7000304) == TRUE and env(GetSpEffectID, 7000305) == FALSE then
+            act(AddSpEffect, 7000305)
+            Fire("W_DamageParryEnemy1")
+            Replanning()
+            return TRUE
+        end
+    
+        if env(GetSpEffectID, 7000302) == FALSE then
+            act(AddSpEffect, 7000302)
+        elseif env(GetSpEffectID, 7000303) == FALSE then
+            act(AddSpEffect, 7000303)
+        elseif env(GetSpEffectID, 7000304) == FALSE then
+            act(AddSpEffect, 7000304)
+        end
+    end
+
     if damage_type == DAMAGE_TYPE_PARRY or damage_type >= DAMAGE_TYPE_PARRY_ENEMY1 and damage_type <= DAMAGE_TYPE_PARRY_ENEMY3 then
         if CAN_PARRY_RESIST == TRUE and BORDER_PARRY_RESIST >= POINT_PARRY_RESIST and (damage_type == DAMAGE_TYPE_PARRY_ENEMY1 or damage_type == DAMAGE_TYPE_PARRY_ENEMY2) then
             if TRUE == env(GetSpEffectID, 14560) then

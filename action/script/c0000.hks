@@ -9,10 +9,6 @@ g_JumpMovementMultiplier = 1.25
 ------------------------------------------
 -- Vigil: Functions
 ------------------------------------------
-function DebugFunction()
-    
-end
-
 function ApplyThrowEffects()
     -- Applied on backstabs and ripostes.
     
@@ -4705,6 +4701,29 @@ function ExecDamage(is_parry, is_attackwhileguard)
         end
     end
     
+    -- Vigil: Crossbow Parry
+    if env(GetSpEffectID, 31) == TRUE and env(GetSpEffectID, 7000300) == TRUE then
+        ExecEventAllBody("W_DamageParry")
+        return TRUE
+    end
+    
+    -- Vigil: Deflect Parry
+    if env(GetSpEffectID, 7000301) == TRUE then
+        if env(GetSpEffectID, 7000304) == TRUE and env(GetSpEffectID, 7000305) == FALSE then
+            act(AddSpEffect, 7000305)
+            ExecEventAllBody("W_DamageParry")
+            return TRUE
+        end
+    
+        if env(GetSpEffectID, 7000302) == FALSE then
+            act(AddSpEffect, 7000302)
+        elseif env(GetSpEffectID, 7000303) == FALSE then
+            act(AddSpEffect, 7000303)
+        elseif env(GetSpEffectID, 7000304) == FALSE then
+            act(AddSpEffect, 7000304)
+        end
+    end
+    
     if env(GetSpEffectType, 32) == TRUE then
         act(SetDamageAnimType, DAMAGE_FLAG_SMALL)
         ResetRequest()
@@ -4752,7 +4771,7 @@ function ExecDamage(is_parry, is_attackwhileguard)
     local attack_dir = env(GetAtkDirection)
     local damage_angle = env(GetReceivedDamageDirection)
     local style = c_Style
-    
+
     if damage_type == DAMAGE_TYPE_PARRY then
         ExecEventAllBody("W_DamageParry")
         
@@ -14846,7 +14865,6 @@ function Update()
     TrackDeflection()
     TrackMultiJump()
     RegenerateFP()
-    DebugFunction()
     
     act(SwitchMotion, FALSE)
     
