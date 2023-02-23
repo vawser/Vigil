@@ -72,39 +72,34 @@ Add raisin that allows Torrent to 'charge' enemies
 # Bugs to Fix
 Fix Morgott not respawning correctly via Boss Revival
 
-# Concordats
-- Act like a class/covenant choice, where you pledge to a covenant and get their 'covenant' key item. 
- - This item will provide benefits that suit specific class archetypes.
- - Turns ins (Bloodsoaked Runes, or specific) will empower the pledge, allowing a player to commit hard into the class archetype.
- - Switching pledge will remove bonuses (but progress will be retained.)
- - Minor cost to pledge to discourage constant switching
+# Covenants
+- Radahn
 
-- Simple quests given by the leader, similar to the Volcano Manor questline.
- - Reward specific items, like traditional Covenant rewards from DS1/DS3.
- 
-# Servants of the Grafted
-- Found in Stormveil Castle.
+- Morgott
 
-- Benefits:
- - Enemy kills will empower physical damage by 1%. Only 1 kill is counted per second.
-  - Each stack lasts 300 seconds.
-  - Can stack upto 25 times. This is called 'Fully Grafted'.
+- Rykad
 
-- Drawbacks:
- - Each stack will reduce physical absorption by 1%.
- - Every time the player becomes fully grafted, they will be made slightly taller. This can stack up to 5 times. This can not be removed (other than visiting a secret location).
+- Malenia
 
-163
+- Mohg
 
-Stitchmaster Gerald
+- Malikeht
 
-550000200 / 30110
+- Hoarah Loux
 
-t000004060 Stitchmaster Gerald
+- Fortissax
 
-AEG210_643
-AEG210_627
-AEG210_642
-AEG210_628
+- Rennala
 
-70000 Codex: Servants of the Grafted
+- Placidusax
+
+- Fire Giant
+
+- Regal Ancestor Spirit
+
+- Elden Beast
+
+- Astel
+
+- Radagon
+

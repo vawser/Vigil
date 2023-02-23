@@ -52,6 +52,10 @@
  
 - Reduced the poise damage the deflect bullets inflict to account for the new ability to force a parry.
 
+# Castigations
+- Increased the Bloodstained Rune drop chances:
+ - 0.5% ones are now 1%
+ - 1% ones are now 2%
 #-------------------------------------------------
 # Bosses
 #-------------------------------------------------
