@@ -561,6 +561,9 @@ def t000001200_x38():
         # Memorize spell
         AddTalkListData(4, 15000390, -1)
         
+        # Ashes of War
+        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 8590, 4, 1, 0) == 1, 8, 15000530, -1)
+        
         # Leave
         AddTalkListData(99, 20000009, -1)
         
@@ -618,6 +621,9 @@ def t000001200_x38():
         elif GetTalkListEntryResult() == 4:
             OpenMagicEquip(-1, -1)
             assert not (CheckSpecificPersonMenuIsOpen(11, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        elif GetTalkListEntryResult() == 8:
+            OpenEquipmentChangeOfPurposeShop()
+            assert not (CheckSpecificPersonMenuIsOpen(7, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         else:
             """State 31"""
             return 0
@@ -772,48 +778,49 @@ def t000001200_x40():
         # Here
         if GetTalkListEntryResult() == 1:
             assert t000001200_x120(80201200, 1047610170, 1)
-            continue
+            return 0
         # Random
         elif GetTalkListEntryResult() == 2:
             assert t000001200_x120(80201201, 1047610171, 1)
-            continue
+            return 0
         # Limgrave
         elif GetTalkListEntryResult() == 3:
             assert t000001200_x120(80201202, 1047610172, 1)
-            continue
+            return 0
         # Weeping Penisula
         elif GetTalkListEntryResult() == 4:
             assert t000001200_x120(80201203, 1047610173, 1)
-            continue
+            return 0
         # Liurnia of the Lakes
         elif GetTalkListEntryResult() == 5:
             assert t000001200_x120(80201204, 1047610174, 1)
-            continue
+            return 0
         # Mt. Gelmir
         elif GetTalkListEntryResult() == 6:
             assert t000001200_x120(80201205, 1047610175, 1)
-            continue
+            return 0
         # Altus Plateau
         elif GetTalkListEntryResult() == 7:
             assert t000001200_x120(80201206, 1047610176, 1)
-            continue
+            return 0
         # Moonlight Altar
         elif GetTalkListEntryResult() == 8:
             assert t000001200_x120(80201207, 1047610177, 1)
-            continue
+            return 0
         # Caelid
         elif GetTalkListEntryResult() == 9:
             assert t000001200_x120(80201208, 1047610178, 1)
-            continue
+            return 0
         # Mountaintops of the Giants
         elif GetTalkListEntryResult() == 10:
             assert t000001200_x120(80201209, 1047610179, 1)
-            continue
+            return 0
         # Miquella's Haligtree
         elif GetTalkListEntryResult() == 11:
             assert t000001200_x120(80201210, 1047610180, 1)
-            continue
-        """State 10"""
+            return 0
+        else:
+            return 0
         assert CheckSpecificPersonTalkHasEnded(0) == 1
         
 # Journey Modifiers

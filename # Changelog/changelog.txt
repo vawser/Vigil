@@ -16,11 +16,12 @@
  - Powerful ones cost 2.
 - Added the ability to buy certain items in the loadout shop.
 - Made Bloodsoaked Tome the default gift so new mod users notice the feature more easily.
+- Jar of Promise now allows the player to change their Ashes of War immediately.
 
 #-------------------------------------------------
 # Player
 #-------------------------------------------------
-- The player now starts with the Flask of Wondrous Physick.
+- The player now starts with the Flask of Wondrous Physick and the Whetstone Knife.
  
 #-------------------------------------------------
 # Bosses

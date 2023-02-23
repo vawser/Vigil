@@ -7277,34 +7277,30 @@ $Event(11016, Default, function(X0_4, X4_4) {
 // Affinities
 //-------------------
 $Event(11017, Default, function() {
-    // Whetstone Knife
-    if(PlayerHasItem(ItemType.Goods, 8590))
-    {
-        SetEventFlagID(65610, ON);
-        SetEventFlagID(65620, ON);
-        SetEventFlagID(65630, ON);
-        SetEventFlagID(65640, ON);
-        SetEventFlagID(65650, ON);
-        SetEventFlagID(65660, ON);
-        SetEventFlagID(65670, ON);
-        SetEventFlagID(65680, ON);
-        SetEventFlagID(65690, ON);
-        SetEventFlagID(65700, ON);
-        SetEventFlagID(65710, ON);
-        SetEventFlagID(65720, ON);
-        SetEventFlagID(65730, ON);
-        SetEventFlagID(65740, ON);
-        SetEventFlagID(65750, ON);
-        SetEventFlagID(65760, ON);
-        SetEventFlagID(65770, ON);
-        SetEventFlagID(65780, ON);
-        SetEventFlagID(65790, ON);
-        SetEventFlagID(65800, ON);
-        SetEventFlagID(65810, ON);
-        SetEventFlagID(65820, ON);
-        SetEventFlagID(65830, ON);
-        SetEventFlagID(65840, ON);
-    }
+    SetEventFlagID(65610, ON);
+    SetEventFlagID(65620, ON);
+    SetEventFlagID(65630, ON);
+    SetEventFlagID(65640, ON);
+    SetEventFlagID(65650, ON);
+    SetEventFlagID(65660, ON);
+    SetEventFlagID(65670, ON);
+    SetEventFlagID(65680, ON);
+    SetEventFlagID(65690, ON);
+    SetEventFlagID(65700, ON);
+    SetEventFlagID(65710, ON);
+    SetEventFlagID(65720, ON);
+    SetEventFlagID(65730, ON);
+    SetEventFlagID(65740, ON);
+    SetEventFlagID(65750, ON);
+    SetEventFlagID(65760, ON);
+    SetEventFlagID(65770, ON);
+    SetEventFlagID(65780, ON);
+    SetEventFlagID(65790, ON);
+    SetEventFlagID(65800, ON);
+    SetEventFlagID(65810, ON);
+    SetEventFlagID(65820, ON);
+    SetEventFlagID(65830, ON);
+    SetEventFlagID(65840, ON);
 });
 
 //-------------------

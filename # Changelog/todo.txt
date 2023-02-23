@@ -84,3 +84,4 @@ Fix Morgott not respawning correctly via Boss Revival
 
 Add raisin that allows Torrent to 'charge' enemies
 
+400210 # 8590
