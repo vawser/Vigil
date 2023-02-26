@@ -30,7 +30,7 @@
 - Added the Servants of the Grafted covenant:
  - Available at Stitchmaster Geralt in Stormveil Castle, at the Rampart Tower grace.
  - Grants Opportunistic Grafting:
-    - Enemy kills will increase Physical damage by 1/1.5/2%, but reduces absorption by 1/1.5/2% and corrupts the physical form of the committed.
+    - Enemy kills will increase Physical damage by 1/1.5/2%, but reduces absorption by 0.5/1/1.5% and corrupts the physical form of the committed.
     - Each stack lasts 300 seconds.
     - This can stack up to 25 times.
     

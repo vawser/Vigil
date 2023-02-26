@@ -83,7 +83,7 @@ Fix Morgott not respawning correctly via Boss Revival
 
 - Mohg
 
-- Malikeht
+- Maliketh
 
 - Hoarah Loux
 
