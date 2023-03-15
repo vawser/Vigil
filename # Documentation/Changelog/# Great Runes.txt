@@ -8,7 +8,7 @@
 - Effect: Raises maximum HP, FP and Stamina by 15%.
 
 # Morgott's Great Rune
-- Effect: Restores 2% HP every second.
+- Effect: Restores 1% HP every second.
 
 # Rykard's Great Rune
 - Effect: Grants alacrity, with enemy kills boost stamina recovery by 5, stacking with each kill. Each stack lasts 30 seconds.
