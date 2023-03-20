@@ -104,7 +104,7 @@ Add raisin that allows Torrent to 'charge' enemies
 Fix Morgott not respawning correctly via Boss Revival
 
 Add notes for the new items
-Nerf Multi-Jump talisman: add max of 3 jumps in one instance.
-Nerf deflections (tighten window, add modifiers to parry counter based on enemy, i.e. Malenia should take more than 3 deflects to induce a parry
 Greyoll resurrection doesnt reset the auto-kills state
 Torchpole update
+
+6160 Techniques of the Windwalker

@@ -120,6 +120,30 @@
     - +2 Effect: Increases movement speed by 10%.
     - +3 Effect: Increases movement speed by 12%.
 
+- Thumb Ring of Pharris
+    - Found within Gelmir Hero's Grave in Mt. Gelmir.
+    - Weight: 1.0
+    - +0 Effect: Increases arrow shot count by 1, but reduces maximum HP by 50%.
+    - +1 Effect: Increases arrow shot count by 1, but reduces maximum HP by 40%.
+    - +2 Effect: Increases arrow shot count by 1, but reduces maximum HP by 30%.
+    - +3 Effect: Increases arrow shot count by 1, but reduces maximum HP by 20%.
+
+- Vambrace of Trefin
+    - Dropped by the Omenkiller in the Village of the Albinaurics.
+    - Weight: 3.0
+    - +0 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 50%.
+    - +1 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 40%.
+    - +2 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 30%.
+    - +3 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 20%.
+    
+- Bracing Ring of Ergoth
+    - Dropped by the Runebear in Earthbore Cave in the Weeping Penisula.
+    - Weight: 1.0
+    - +0 Effect: Increases bolt shot count by 1, but reduces maximum HP by 50%.
+    - +1 Effect: Increases bolt shot count by 1, but reduces maximum HP by 40%.
+    - +2 Effect: Increases bolt shot count by 1, but reduces maximum HP by 30%.
+    - +3 Effect: Increases bolt shot count by 1, but reduces maximum HP by 20%.
+    
 #-------------------------------------------------
 # Misc
 #-------------------------------------------------
