@@ -546,10 +546,10 @@
     
 - Prisoner's Chain 
     - Dropped by a fast-walking commoner in Stormhill.
-    - +0 Effect: Increases movement speed by 10%.
-    - +1 Effect: Increases movement speed by 15%.
-    - +2 Effect: Increases movement speed by 20%.
-    - +3 Effect: Increases movement speed by 25%.
+    - +0 Effect: Increases movement speed by 6%.
+    - +1 Effect: Increases movement speed by 8%.
+    - +2 Effect: Increases movement speed by 10%.
+    - +3 Effect: Increases movement speed by 12%.
     
 - Marika's Necklace
     - Reward for killing the Elden Beast in the Accursed journey type.

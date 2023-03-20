@@ -7579,13 +7579,13 @@ function Move_onUpdate()
     
     -- Vigil: Prisoner's Chain
     if env(GetSpEffectID, 362300) == TRUE then
-       base_speed_percent = base_speed_percent * 1.1
+       base_speed_percent = base_speed_percent * 1.06
     elseif env(GetSpEffectID, 362301) == TRUE then
-       base_speed_percent = base_speed_percent * 1.15
+       base_speed_percent = base_speed_percent * 1.08
     elseif env(GetSpEffectID, 362302) == TRUE then
-       base_speed_percent = base_speed_percent * 1.2
+       base_speed_percent = base_speed_percent * 1.1
     elseif env(GetSpEffectID, 362303) == TRUE then
-       base_speed_percent = base_speed_percent * 1.25
+       base_speed_percent = base_speed_percent * 1.12
     end
     
     if hkbGetVariable("MoveDirection") == 3 or 2 == hkbGetVariable("MoveDirection") then
