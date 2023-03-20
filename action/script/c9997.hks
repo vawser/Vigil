@@ -1855,19 +1855,62 @@ function ExecTypeDamage(damage_type)
     
     -- Vigil: Deflect Parry
     if env(GetSpEffectID, 7000301) == TRUE then
-        if env(GetSpEffectID, 7000304) == TRUE and env(GetSpEffectID, 7000305) == FALSE then
-            act(AddSpEffect, 7000305)
-            Fire("W_DamageParryEnemy1")
-            Replanning()
-            return TRUE
+        if env(GetSpEffectID, 7000350) == FALSE then
+            -- +6
+            if env(GetSpEffectID, 7000352) == TRUE then
+                if env(GetSpEffectID, 7000310) == TRUE then
+                    act(AddSpEffect, 7000350)
+                    Fire("W_DamageParryEnemy1")
+                    Replanning()
+                    return TRUE
+                end
+            -- +3
+            elseif env(GetSpEffectID, 7000351) == TRUE then
+                if env(GetSpEffectID, 7000307) == TRUE then
+                    act(AddSpEffect, 7000350)
+                    Fire("W_DamageParryEnemy1")
+                    Replanning()
+                    return TRUE
+                end
+            -- Default
+            else
+                if env(GetSpEffectID, 7000304) == TRUE then
+                    act(AddSpEffect, 7000350)
+                    Fire("W_DamageParryEnemy1")
+                    Replanning()
+                    return TRUE
+                end
+            end
         end
-    
+        
         if env(GetSpEffectID, 7000302) == FALSE then
             act(AddSpEffect, 7000302)
         elseif env(GetSpEffectID, 7000303) == FALSE then
             act(AddSpEffect, 7000303)
         elseif env(GetSpEffectID, 7000304) == FALSE then
             act(AddSpEffect, 7000304)
+        end
+        
+        -- +3
+        if env(GetSpEffectID, 7000351) == TRUE then
+            if env(GetSpEffectID, 7000304) == FALSE then
+                act(AddSpEffect, 7000305)
+            elseif env(GetSpEffectID, 7000305) == FALSE then
+                act(AddSpEffect, 7000306)
+            elseif env(GetSpEffectID, 7000306) == FALSE then
+                act(AddSpEffect, 7000307)
+            end
+        end
+        
+        -- +6
+        if env(GetSpEffectID, 7000352) == TRUE then
+            if env(GetSpEffectID, 7000307) == FALSE then
+                act(AddSpEffect, 7000308)
+            elseif env(GetSpEffectID, 7000308) == FALSE then
+                act(AddSpEffect, 7000309)
+            elseif env(GetSpEffectID, 7000309) == FALSE then
+                act(AddSpEffect, 7000310)
+            end
         end
     end
 

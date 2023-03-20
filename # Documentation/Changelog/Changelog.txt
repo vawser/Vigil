@@ -47,6 +47,7 @@
  
 - Consecutive deflects in a row will now parry an enemy if done within a short window.
  - 4 deflects are required.
+  - Certain enemies will require either 7 or 10 deflects.
  - Each deflect starts a 10 second window, the next deflect needs to be within this window.
  - The 4th deflect will cause the parry.
  
@@ -55,6 +56,8 @@
 - Reduced damage for all Perfect deflect bursts to 60/80/100 (was 100/200/300).
 - Vampiric Burst:
  - Now heals 5% HP on perfect deflect. (was 20%)
+ 
+- Multi-Jump is now capped at 5 jumps in mid-air. You must land to reset this count.
 
 # Castigations
 - Increased the Bloodstained Rune drop chances:
@@ -101,11 +104,12 @@
 #-------------------------------------------------
 - Flame of Destiny:
     - Max HP reduction is now only 5% (was 10%), and the Black Flame burn is less effective.
+    
 #-------------------------------------------------
 # Great Runes
 #-------------------------------------------------
 - Morgott's Great Rune:
-    - Its blessing grants health restoration, restoring 1% HP every second.
+    - Restores 0.5% + 5 HP every second.
     
 #-------------------------------------------------
 # Talismans

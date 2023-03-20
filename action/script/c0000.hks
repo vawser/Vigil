@@ -94,9 +94,17 @@ function ApplyThrowEffects()
     end
 end
 
+g_JumpCount = 0
+g_JumpCountMax = 5
+
 function TrackMultiJump()
+    -- Reset jump count
+    if env(IsLanding) == TRUE then
+        g_JumpCount = 0
+    end
+    
     -- Wearing "Techniques of the Windwalker"
-    if env(GetSpEffectID, 150999) == TRUE then
+    if env(GetSpEffectID, 150999) == TRUE and g_JumpCount < g_JumpCountMax then
     
         -- Jump action has not occured within the last 0.5 seconds
         -- And stamina is above 0
@@ -167,6 +175,8 @@ end
 function ExecMultiJump()
     AddStamina(STAMINA_REDUCE_JUMP)
     SetWeightIndex()
+    
+    g_JumpCount = g_JumpCount + 1
     
     -- Jump: Overweight
     if GetVariable("EvasionWeightIndex") == EVASION_WEIGHT_INDEX_OVERWEIGHT and env(Unknown700) == FALSE then
