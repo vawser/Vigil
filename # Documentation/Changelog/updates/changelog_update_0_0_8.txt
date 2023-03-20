@@ -1,0 +1,156 @@
+﻿#-------------------------------------------------
+# Changelog 0.0.8
+#-------------------------------------------------
+#-------------------------------------------------
+# Features
+#-------------------------------------------------
+# Farm
+- The farm timer now saves progress in 20 seconds increments, meaning you warp and reload without losing much progress towards crop growth.
+
+# Boss Resurrection
+- Changed the material used to resurrect bosses to the Bloodsoaked Rune instead of the Larval Tear.
+- Ressurect will now teleport you to the boss entrance of the resurrected boss.
+- Removed the location description (the teleport effectively replaces this).
+
+# Custom Loadout
+- Added Ashes of War to the loadout shop.
+- Added Spirit Summons to the loadout shop.
+ - Normal ones cost 1.
+ - Powerful ones cost 2.
+- Added the ability to buy certain items in the loadout shop.
+- Made Bloodsoaked Tome the default gift so new mod users notice the feature more easily.
+- Jar of Promise now allows the player to change their Ashes of War immediately.
+
+# Covenant
+- Covenants are groups that the player can commit their allegiance to. Once commited, they must stay commited to gain the benefits of the covenant.
+- Joining another covenant will remove all other alliegances.
+- Abandoning a covenant will remove all alliegances and reset progress to rank 1.
+- When you join a covenant, you start at rank 1. 
+ - You can progress to Rank 2 by giving the covenant 10 Bloodstained Runes.
+ - you can progress to Rank 3 by giving the covenant 20 Bloodstained Runes.
+- Each covenant will grant the player a Codex that describes the benefits and drawbacks of belonging to the covenant.
+
+- Added the Servants of the Grafted covenant:
+ - Available at Stitchmaster Geralt in Stormveil Castle, at the Rampart Tower grace.
+ - Grants Opportunistic Grafting:
+    - Enemy kills will increase Physical damage by 1/1.5/2%, but reduces absorption by 0.5/1/1.5% and corrupts the physical form of the committed.
+    - Each stack lasts 300 seconds.
+    - This can stack up to 25 times.
+    
+#-------------------------------------------------
+# Player
+#-------------------------------------------------
+- The player now starts with the Flask of Wondrous Physick and the Whetstone Knife.
+ 
+# Deflection
+- Increased the frame windows for deflects:
+ - 12 frames for Standard Deflect
+ - 6 frames for Perfect Deflect window
+ - 8 frames for Extended Perfect Deflect window
+ 
+- Consecutive deflects in a row will now parry an enemy if done within a short window.
+ - 4 deflects are required.
+  - Certain enemies will require either 7 or 10 deflects.
+ - Each deflect starts a 10 second window, the next deflect needs to be within this window.
+ - The 4th deflect will cause the parry.
+ 
+- Reduced the poise damage the deflect bullets inflict to account for the new ability to force a parry.
+
+- Reduced damage for all Perfect deflect bursts to 60/80/100 (was 100/200/300).
+- Vampiric Burst:
+ - Now heals 5% HP on perfect deflect. (was 20%)
+ 
+- Multi-Jump is now capped at 5 jumps in mid-air. You must land to reset this count.
+
+# Castigations
+- Increased the Bloodstained Rune drop chances:
+ - 0.5% ones are now 1%
+ - 1% ones are now 2%
+ 
+#-------------------------------------------------
+# Bosses
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Enemies
+#-------------------------------------------------
+
+#-------------------------------------------------
+# World
+#-------------------------------------------------
+- The Putrid Crow in Mohgwyn Palace will now have his revenge if you try and exploit him.
+
+- Added warp gate from Moonlight Altar to Village of the Albinaurics.
+- Added warp gate from Slumbering Wolf's Shack (Liurnia) to Consecrated Snowfield.
+- Added warp gate from Bestial Sanctum (Caelid) to Crumbling Farum Azula.
+
+#-------------------------------------------------
+# Items
+#-------------------------------------------------
+
+#-------------------------------------------------
+# Armor
+#-------------------------------------------------
+ 
+#-------------------------------------------------
+# Weapons
+#-------------------------------------------------
+- Given Death's Poker and Death Ritual Spear the FTH scaling they should have been given.
+- Crossbows can now parry enemies if they hit the enemy during their counter damage window.
+
+#-------------------------------------------------
+# Catalysts
+#-------------------------------------------------
+    
+#-------------------------------------------------
+# Spells
+#-------------------------------------------------
+- Flame of Destiny:
+    - Max HP reduction is now only 5% (was 10%), and the Black Flame burn is less effective.
+    
+#-------------------------------------------------
+# Great Runes
+#-------------------------------------------------
+- Morgott's Great Rune:
+    - Restores 0.5% + 5 HP every second.
+    
+#-------------------------------------------------
+# Talismans
+#-------------------------------------------------
+- Prisoner's Chain:
+    - +0 Effect: Increases movement speed by 6%.
+    - +1 Effect: Increases movement speed by 8%.
+    - +2 Effect: Increases movement speed by 10%.
+    - +3 Effect: Increases movement speed by 12%.
+
+- Thumb Ring of Pharris
+    - Found within Gelmir Hero's Grave in Mt. Gelmir.
+    - Weight: 1.0
+    - +0 Effect: Increases arrow shot count by 1, but reduces maximum HP by 50%.
+    - +1 Effect: Increases arrow shot count by 1, but reduces maximum HP by 40%.
+    - +2 Effect: Increases arrow shot count by 1, but reduces maximum HP by 30%.
+    - +3 Effect: Increases arrow shot count by 1, but reduces maximum HP by 20%.
+
+- Vambrace of Trefin
+    - Dropped by the Omenkiller in the Village of the Albinaurics.
+    - Weight: 3.0
+    - +0 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 50%.
+    - +1 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 40%.
+    - +2 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 30%.
+    - +3 Effect: Increases great-arrow shot count by 1, but reduces maximum HP by 20%.
+    
+- Bracing Ring of Ergoth
+    - Dropped by the Runebear in Earthbore Cave in the Weeping Penisula.
+    - Weight: 1.0
+    - +0 Effect: Increases bolt shot count by 1, but reduces maximum HP by 50%.
+    - +1 Effect: Increases bolt shot count by 1, but reduces maximum HP by 40%.
+    - +2 Effect: Increases bolt shot count by 1, but reduces maximum HP by 30%.
+    - +3 Effect: Increases bolt shot count by 1, but reduces maximum HP by 20%.
+    
+#-------------------------------------------------
+# Misc
+#-------------------------------------------------
+- Added a bugfix to the Farm scripts so the ability to pickup materials isn't blocked outside of the farm in certain situations.
+- Farm timer should now start properly after starting a Cultivation without reloading.
+- Fixed some items giving 100% aux immunity when they should not have.
+- Lethargic Mind no longer reduces absorption accidently.

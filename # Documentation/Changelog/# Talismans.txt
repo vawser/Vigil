@@ -492,7 +492,7 @@
 - Shinobi's Whetstone
     - Purchased from the Mysterious Shinobi.
     - Weight: 3.0
-    - +0 Effect: Extends the perfect deflect window to 9 frames
+    - +0 Effect: Extends the perfect deflect window to 8 frames
 
 - Techniques of the Windwalker
     - Purchased from the Mysterious Shinobi.
