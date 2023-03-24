@@ -6774,6 +6774,7 @@ $Event(11000, Default, function() {
     InitializeEvent(81, 13000, 6220, 6221, 6222, 1047590910, 1047590911, 1047590912); // Forgotten Pendant
     InitializeEvent(82, 13000, 6230, 6231, 6232, 1047590920, 1047590921, 1047590922); // Blood Conduit
     InitializeEvent(83, 13000, 6250, 6251, 6252, 1047590930, 1047590931, 1047590932); // Riding Horn
+    InitializeEvent(84, 13000, 6260, 6261, 6262, 1047590940, 1047590941, 1047590942); // Clarifying Elixir
     
     //----------------------
     // Boss Teleports
@@ -7051,7 +7052,8 @@ $Event(11021, Default, function() {
     
     WaitFor(CharacterHasSpEffect(10000, 7000050, Equal, 1));
     
-    SetEventFlagID(11000801, OFF);
+    AwardItemLot(1000);
+    //SetEventFlagID(11000801, OFF);
     
     //SetEventFlagID(1049630323, ON);
     

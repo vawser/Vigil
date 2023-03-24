@@ -562,6 +562,12 @@
     - +2 Effect: Increases movement speed of Torrent by 40%.
     - +3 Effect: Increases movement speed of Torrent by 50%.
     
+- Clarifying Elixir
+    - +0 Effect: Raises attack power of arrows and great-arrows by up to 25% when the shot is held for a short period.
+    - +1 Effect: Raises attack power of arrows and great-arrows by up to 50% when the shot is held for a short period.
+    - +2 Effect: Raises attack power of arrows and great-arrows by up to 75% when the shot is held for a short period.
+    - +3 Effect: Raises attack power of arrows and great-arrows by up to 100% when the shot is held for a short period.
+    
 #----------------------------------------
 # Notes
 #----------------------------------------

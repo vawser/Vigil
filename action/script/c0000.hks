@@ -7,7 +7,7 @@ g_BackstepMovementMultiplier = 1.25
 g_JumpMovementMultiplier = 1.25
 
 ------------------------------------------
--- Vigil: Functions
+-- Vigil: Grafted Covenant
 ------------------------------------------
 g_GraftedLevel = 0
 
@@ -60,6 +60,9 @@ function TrackGraftedStatus()
     end
 end
 
+------------------------------------------
+-- Throw Effects
+------------------------------------------
 function ApplyThrowEffects()
     -- Applied on backstabs and ripostes.
     
@@ -94,6 +97,9 @@ function ApplyThrowEffects()
     end
 end
 
+------------------------------------------
+-- Multi-Jump
+------------------------------------------
 g_JumpCount = 0
 g_JumpCountMax = 5
 
@@ -317,6 +323,9 @@ function ExecMultiJump()
     return TRUE
 end
 
+------------------------------------------
+-- Deflects
+------------------------------------------
 -- Each Guard Start animation in the TAE has a Standard and Perfect Deflect window applied (via SpEffect).
 function ApplyDeflectionWindow()
     -- Deflect Cooldown
@@ -394,6 +403,9 @@ function FireBulletForDeflect(deflect_type, bullet_effect)
     end
 end
 
+------------------------------------------
+-- FP Regeneration
+------------------------------------------
 function RegenerateFP()
     -- Lethargic Mind check
     if env(GetSpEffectID, 9420040) == FALSE then
@@ -409,6 +421,128 @@ function RegenerateFP()
                 act(AddSpEffect, 151001) 
             end
         end
+    end
+end
+
+------------------------------------------
+-- Clarifying Elixir
+------------------------------------------
+g_HeldFrames = 0
+g_PowerTier1 = 25
+g_PowerTier2 = 50
+g_PowerTier3 = 75
+g_PowerTier4 = 100
+g_PowerTier5 = 125
+g_CurrentPowerTier = 0
+g_IconSwap = false
+
+function HasEquipped_ClarifyingElixir()
+    if env(GetSpEffectID, 362600) == TRUE or
+       env(GetSpEffectID, 362601) == TRUE or 
+       env(GetSpEffectID, 362602) == TRUE or
+       env(GetSpEffectID, 362603) == TRUE then
+        return true
+    else
+        return false
+    end
+end
+
+function ClarifyingElixir_StartShot()
+    if HasEquipped_ClarifyingElixir() then
+        g_CurrentPowerTier = 0
+        g_HeldFrames = 0
+    end
+end
+
+function ClarifyingElixir_HoldShot()
+    if HasEquipped_ClarifyingElixir() then
+        g_HeldFrames = g_HeldFrames + 1
+        
+        -- Show Power Tier icon based on current hold time
+        if g_CurrentPowerTier == 0 then
+            if g_HeldFrames >= g_PowerTier1 then
+                g_CurrentPowerTier = 1
+                g_IconSwap = true
+            end
+        elseif g_CurrentPowerTier == 1 then
+            if g_IconSwap == true then
+                g_IconSwap = false
+            else
+                act(AddSpEffect, 362661)
+            end
+            
+            if g_HeldFrames >= g_PowerTier2 then
+                g_CurrentPowerTier = 2
+                g_IconSwap = true
+            end
+        elseif g_CurrentPowerTier == 2 then
+            if g_IconSwap == true then
+                g_IconSwap = false
+            else
+                act(AddSpEffect, 362662)
+            end
+            
+            if g_HeldFrames >= g_PowerTier3 then
+                g_CurrentPowerTier = 3
+                g_IconSwap = true
+            end
+        elseif g_CurrentPowerTier == 3 then
+            if g_IconSwap == true then
+                g_IconSwap = false
+            else
+                act(AddSpEffect, 362663)
+            end
+            
+            if g_HeldFrames >= g_PowerTier4 then
+                g_CurrentPowerTier = 4
+                g_IconSwap = true
+            end
+        elseif g_CurrentPowerTier == 4 then
+            if g_IconSwap == true then
+                g_IconSwap = false
+            else
+                act(AddSpEffect, 362664)
+            end
+            
+            if g_HeldFrames >= g_PowerTier5 then
+                g_CurrentPowerTier = 5
+                g_IconSwap = true
+            end
+        elseif g_CurrentPowerTier == 5 then
+            if g_IconSwap == true then
+                g_IconSwap = false
+            else
+                act(AddSpEffect, 362665)
+            end
+        end
+    end
+end
+
+function ClarifyingElixir_FireShot()
+    if HasEquipped_ClarifyingElixir() then
+        -- Assign power boost based on hold time
+        local tier_offset = g_CurrentPowerTier - 1
+        local talisman_offset = 20
+        
+        if env(GetSpEffectID, 362600) == TRUE then
+            talisman_offset = 20
+        elseif env(GetSpEffectID, 362601) == TRUE then
+            talisman_offset = 30
+        elseif env(GetSpEffectID, 362602) == TRUE then
+            talisman_offset = 40
+        elseif env(GetSpEffectID, 362603) == TRUE then
+            talisman_offset = 50
+        end
+        
+        -- If minimum tier is reached, apply boost
+        if g_CurrentPowerTier > 0 then
+            local boost_id = 362600 + talisman_offset + tier_offset
+            
+            act(AddSpEffect, boost_id)
+        end
+    
+        g_CurrentPowerTier = 0
+        g_HeldFrames = 0
     end
 end
 
@@ -8771,6 +8905,9 @@ end
 
 function AttackArrowRightStart_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_StartShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -8801,6 +8938,9 @@ end
 
 function AttackArrowRightStartContinue_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_HoldShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -8831,6 +8971,9 @@ end
 
 function AttackArrowRightLoop_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_HoldShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -8854,6 +8997,9 @@ end
 
 function AttackArrowRightFire_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     if ArrowCommonFunction(ALLBODY, TRUE, TURN_TYPE_DEFAULT) == TRUE then
         return
     elseif env(GetStamina) > 0 then
@@ -8883,6 +9029,9 @@ end
 
 function AttackArrowRightFireMove_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -8924,6 +9073,9 @@ end
 
 function AttackArrowRightFireDash_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     if ArrowCommonFunction(ALLBODY, TRUE, TURN_TYPE_DEFAULT) == TRUE then
         return
     elseif env(GetStamina) > 0 then
@@ -8953,6 +9105,9 @@ end
 
 function AttackArrowRightFireStep_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     if ArrowCommonFunction(ALLBODY, TRUE, TURN_TYPE_DEFAULT) == TRUE then
         return
     elseif env(GetStamina) > 0 then
@@ -8982,6 +9137,9 @@ end
 
 function AttackArrowLeftStart_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_StartShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -9012,6 +9170,9 @@ end
 
 function AttackArrowLeftStartContinue_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_HoldShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -9042,6 +9203,9 @@ end
 
 function AttackArrowLeftLoop_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_HoldShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -9065,6 +9229,9 @@ end
 
 function AttackArrowLeftFire_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     if ArrowCommonFunction(ALLBODY, TRUE, TURN_TYPE_DEFAULT) == TRUE then
         return
     elseif env(GetStamina) <= 0 then
@@ -9095,6 +9262,9 @@ end
 
 function AttackArrowLeftFireMove_Upper_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     local blend_type, lower_state = GetHalfBlendInfo()
     if lower_state == LOWER_IDLE then
         act(LockonSystemUnableToTurnAngle, 45, 45)
@@ -9134,6 +9304,9 @@ end
 
 function AttackArrowLeftFireDash_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     if ArrowCommonFunction(ALLBODY, TRUE, TURN_TYPE_DEFAULT) == TRUE then
         return
     elseif TRUE == MoveStartonCancelTiming(Event_Move, FALSE) then
@@ -9142,6 +9315,9 @@ end
 
 function AttackArrowLeftFireStep_onUpdate()
     act(SetIsPreciseShootingPossible)
+    
+    ClarifyingElixir_FireShot()
+    
     if ArrowCommonFunction(ALLBODY, TRUE, TURN_TYPE_DEFAULT) == TRUE then
         return
     elseif TRUE == MoveStartonCancelTiming(Event_Move, FALSE) then

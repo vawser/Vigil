@@ -103,7 +103,5 @@ Add raisin that allows Torrent to 'charge' enemies
 # Bugs to Fix
 Fix Morgott not respawning correctly via Boss Revival
 
-Add notes for the new items
-Greyoll resurrection doesnt reset the auto-kills state
-Torchpole update
-
+# Treasure to Place
+6260 Clarifying Elixir

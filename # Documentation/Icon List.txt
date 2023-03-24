@@ -56,11 +56,11 @@
 20605 Deflect
 20606 Torrent (Light Blue)
 20607 Farm Ready
-20608
-20609
-20610
-20611
-20612
+20608 Power Tier: 1
+20609 Power Tier: 2
+20610 Power Tier: 3
+20611 Power Tier: 4
+20612 Power Tier: 5
 20613
 20614
 20615
