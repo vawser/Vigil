@@ -107,4 +107,3 @@ Add notes for the new items
 Greyoll resurrection doesnt reset the auto-kills state
 Torchpole update
 
-6160 Techniques of the Windwalker
